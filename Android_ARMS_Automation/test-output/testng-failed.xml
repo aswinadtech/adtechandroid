@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test verbose="2" name="Default test">
+    <classes>
+      <class name="ANDROID_ARMS.ANDROID_ARMS.FeedAdVAlidationonUI"/>
+    </classes>
+  </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="ANDROID_ARMS.ANDROID_ARMS.FeedAdVAlidationonUI">
+        <methods>
+          <include name="Extended_Maps_Radar_page_Ad"/>
+          <include name="Extended_hourly_page_Ad"/>
+          <include name="Validating_Home_page_Ad"/>
+          <include name="Extended_Runningpage_Ad"/>
+          <include name="Validating_Health_and_Activities_feed__card"/>
+          <include name="Extended_Today_datailpage_Ad"/>
+          <include name="Extended_Deatail_Airpollution_Ad"/>
+          <include name="Extended_Detailed_NewsPage_Ad"/>
+          <include name="Validating_Dailyforecast_feed__card"/>
+          <include name="Extended_ColdFlu_Ad"/>
+          <include name="Validating_Radar_Maps_feed__card"/>
+          <include name="Validating_Airpollution_feed_card"/>
+          <include name="Validating_seasonalhub_feed__card"/>
+          <include name="Extended_Deatail_MapsPage_Ad"/>
+          <include name="Before_Test"/>
+          <include name="End_Test"/>
+        </methods>
+      </class> <!-- ANDROID_ARMS.ANDROID_ARMS.FeedAdVAlidationonUI -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
