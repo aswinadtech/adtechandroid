@@ -1,0 +1,17 @@
+twc/Regression/Driver/Drivers.class
+twc/Regression/ReadDataFromFile/read_xml_data_into_buffer.class
+twc/Automation/HandleMapLocal/MapLocalFunctions.class
+twc/Regression/General/DeviceStatus.class
+twc/Regression/utils/ReadExcelData.class
+twc/Regression/ReadDataFromFile/write_excel_data.class
+twc/Regression/utils/DeleteFiles.class
+twc/Regression/HandleWithAppium/AppiumFunctions.class
+twc/Regression/utils/ReadXMLData.class
+twc/Regression/CustomParamValidation/CustomParamFunctions.class
+twc/Regression/Driver/read_Property_File_Info.class
+twc/Regression/TestCases/Custom_Parameters_Verification.class
+twc/Regression/CustomParamValidation/validate_CustomParameter.class
+twc/Regression/General/Functions.class
+twc/Regression/TestCases/regressionTestCases.class
+twc/Regression/ReadDataFromFile/read_excel_data.class
+twc/Regression/HandleWithCharles/CharlesFunctions.class
