@@ -727,6 +727,20 @@ public static void killADB() throws IOException, Exception{
 	}
 	}
 	
+	public static void clickOnBackArrowElement_trending() throws Exception
+	{
+		try {
+			
+		//	Navigate up
+	     Ad.findElementById("com.weather.Weather:id/trending_up_navigation_icon").click();
+	     Thread.sleep(3000);
+		}
+		catch(Exception e) {
+			Ad.findElementByAccessibilityId("Navigate up").click();
+			Thread.sleep(3000);
+		}
+	}
+	
 	public static void click_daily_element() throws Exception
 	{try {
 		Ad.findElementByAccessibilityId("Daily").click();
