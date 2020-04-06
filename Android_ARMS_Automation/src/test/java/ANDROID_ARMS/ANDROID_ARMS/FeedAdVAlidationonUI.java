@@ -43,7 +43,7 @@ extends Drivers
 		logStep("Validating Home page Ad TestCase End");
 
 	}
-		@Test(priority =3,enabled = true)
+		/*@Test(priority =3,enabled = true)
 		@Title("Validating Extended Maps page Ad")
 		public void Extended_Deatail_MapsPage_Ad() throws Exception
 		{
@@ -54,7 +54,7 @@ extends Drivers
 			AppiumFunctions.Check_submodules_Maps_ad();
 			//AppFunctions.clickOnBackArrowElement();
 			System.out.println("====== Validating Extended Deatail MapsPage Ad TestCase End =======");    
-		}
+		}*/
 		//Validating Radar&Maps feed card
 		@Test(priority =4,enabled = true)
 		@Title("Validating Radar&Maps feed card Ad")
@@ -84,7 +84,7 @@ extends Drivers
 					System.out.println("====== Validating Dailyforecast feed card TestCase End =======");
 				}
 
-		@Test(priority =5,enabled = true)
+	/*	@Test(priority =5,enabled = true)
 		@Title("Validating Extended Today page Ad")
 		public void Extended_Today_datailpage_Ad() throws Exception
 		{
@@ -96,7 +96,7 @@ extends Drivers
 			AppiumFunctions.Check_submodules_Today_ad();
 			//AppFunctions.clickOnBackArrowElement();
 			System.out.println("====== Validating Extended today datail page Ad TestCase End =======");    
-		}
+		}*/
 
              
 		@Test(priority =6,enabled = true)
@@ -126,7 +126,7 @@ extends Drivers
 				System.out.println("====== Validating Extended Boat&Beach page Ad TestCase End =======");    
 			}*/
 			        //Validating Running Module page Ad
-					@Test(priority =9,enabled = true)
+				/*	@Test(priority =9,enabled = true)
 					@Title("Validating Extended Running page Ad")
 					public void Extended_Runningpage_Ad() throws Exception
 					{
@@ -154,7 +154,7 @@ extends Drivers
 						AppiumFunctions.Check_ColdFlu_bb_ad();
 						//AppFunctions.clickOnBackArrowElement();
 						System.out.println("====== Validating Extended Cold_flu page Ad TestCase End =======");    
-					}
+					}*/
 					//Validating Allergy Module page Ad
 					/*@Test(priority =10,enabled = true)
 					@Title("Validating Extended Allergy page Ad")
