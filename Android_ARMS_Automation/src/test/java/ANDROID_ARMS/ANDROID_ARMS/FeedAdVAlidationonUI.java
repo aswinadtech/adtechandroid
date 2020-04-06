@@ -43,7 +43,7 @@ extends Drivers
 		logStep("Validating Home page Ad TestCase End");
 
 	}
-		/*@Test(priority =3,enabled = true)
+		@Test(priority =3,enabled = true)
 		@Title("Validating Extended Maps page Ad")
 		public void Extended_Deatail_MapsPage_Ad() throws Exception
 		{
@@ -54,7 +54,7 @@ extends Drivers
 			AppiumFunctions.Check_submodules_Maps_ad();
 			//AppFunctions.clickOnBackArrowElement();
 			System.out.println("====== Validating Extended Deatail MapsPage Ad TestCase End =======");    
-		}*/
+		}
 		//Validating Radar&Maps feed card
 		@Test(priority =4,enabled = true)
 		@Title("Validating Radar&Maps feed card Ad")
@@ -105,7 +105,8 @@ extends Drivers
 		{
 			System.out.println("====== Validating Health and Activities feed card testCase Started =======");
 			//AppFunctions.Kill_Launch_App();
-			AppFunctions.SwipeUp_Counter(2);		
+			 AppFunctions.Swipeforappdeckapk();
+			AppFunctions.SwipeUp_Counter(1);		
 			logStep("Checking the  Health and Activities feed card ad is presnted or not");
 			AppiumFunctions.Check_Health_and_Activities_feedad();
 			System.out.println("====== Validating Health and Activities feed card testCase End =======");    
@@ -169,7 +170,7 @@ extends Drivers
 						//AppFunctions.clickOnBackArrowElement();
 						System.out.println("====== Validating Extended Allergy page Ad TestCase End =======");    
 					}*/
-                                         @Test(priority =11,enabled = true)
+                                         @Test(priority =13,enabled = true)
 					@Title("Validating SeasonalHub feed Ad")
 					public void Validating_seasonalhub_feed__card() throws Exception
 					{
@@ -185,7 +186,7 @@ extends Drivers
 
 	
 	
-	@Test(priority =12,enabled = true)
+	@Test(priority =11,enabled = true)
 	@Title("Validating Extended Airpollution page Ad")
 	public void Extended_Deatail_Airpollution_Ad() throws Exception
 	{
@@ -198,7 +199,7 @@ extends Drivers
 		System.out.println("====== Validating Extended Deatail Airpollution Ad TestCase End =======");    
 	}
 	// Validating Air Pollution feed card
-		@Test(priority =13,enabled = true)
+		@Test(priority =12,enabled = true)
 		@Title("Validating  Airpollution feed card")
 		public void Validating_Airpollution_feed_card() throws Exception
 		{
