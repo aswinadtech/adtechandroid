@@ -84,28 +84,28 @@ extends Drivers
 					System.out.println("====== Validating Dailyforecast feed card TestCase End =======");
 				}
 
-	/*	@Test(priority =5,enabled = true)
+		@Test(priority =6,enabled = true)
 		@Title("Validating Extended Today page Ad")
 		public void Extended_Today_datailpage_Ad() throws Exception
 		{
 			System.out.println("====== Validating Extended today datail page testCase Started =======");
 			//AppFunctions.Kill_Launch_App();
-			AppFunctions.SwipeUp_Counter(2);
+			AppFunctions.SwipeUp_Counter(1);
 			AppFunctions.click_Todaydetails_element();			
 			logStep("Checking the  Extended today datail page ad is presnted or not");
 			AppiumFunctions.Check_submodules_Today_ad();
-			//AppFunctions.clickOnBackArrowElement();
+			AppFunctions.clickOnBackArrowElement_trending();
 			System.out.println("====== Validating Extended today datail page Ad TestCase End =======");    
-		}*/
+		}
 
              
-		@Test(priority =6,enabled = true)
+		@Test(priority =5,enabled = true)
 		@Title("Validating Health_and_Activities feed Ad")
 		public void Validating_Health_and_Activities_feed__card() throws Exception
 		{
 			System.out.println("====== Validating Health and Activities feed card testCase Started =======");
 			//AppFunctions.Kill_Launch_App();
-			AppFunctions.SwipeUp_Counter(1);		
+			AppFunctions.SwipeUp_Counter(2);		
 			logStep("Checking the  Health and Activities feed card ad is presnted or not");
 			AppiumFunctions.Check_Health_and_Activities_feedad();
 			System.out.println("====== Validating Health and Activities feed card testCase End =======");    

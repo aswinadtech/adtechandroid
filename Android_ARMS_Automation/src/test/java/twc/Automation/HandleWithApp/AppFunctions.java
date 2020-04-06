@@ -706,7 +706,19 @@ public class AppFunctions extends Drivers{
 		}
 	}
 
-
+public static void clickOnBackArrowElement_trending() throws Exception
+	{
+		try {
+			
+		//	Navigate up
+	     Ad.findElementById("com.weather.Weather:id/trending_up_navigation_icon").click();
+	     Thread.sleep(3000);
+		}
+		catch(Exception e) {
+			Ad.findElementByAccessibilityId("Navigate up").click();
+			Thread.sleep(3000);
+		}
+	}
 
 	//Swipe based on counter  //by naresh
 	public static void Swipe_Conter(int Counter) throws Exception{
@@ -1794,12 +1806,20 @@ catch(Exception e)
 	}
 	public static void click_Airpollution_element() throws Exception
 	{
-		Ad.findElementById("com.weather.Weather:id/air_quality_dial").click();
-		Thread.sleep(3000);		
-	}
+		
+		try {
+			Ad.findElementById("com.weather.Weather:id/air_quality_primary_pollutant_container").click();
+			Thread.sleep(3000);	
+		}
+		catch(Exception e) {
+			Ad.findElementById("com.weather.Weather:id/air_quality_dial").click();
+			Thread.sleep(3000);	
+		}
+		
+		}
 	public static void click_news_element() throws Exception
 	{
-		Ad.findElementById("com.weather.Weather:id/video_backdrop").click();
+		Ad.findElementById("com.weather.Weather:id/video_player_thumbnail_extra").click();
 		Thread.sleep(3000);		
 	}
 	public static void click_Todaydetails_element() throws Exception
