@@ -1839,12 +1839,13 @@ catch(Exception e)
 	{
 		try {
 		
-		com.weather.Weather:id/details_button
+		//com.weather.Weather:id/details_button
 		Ad.findElementById("com.weather.Weather:id/details_button").click();
 		Thread.sleep(3000);	
 		}
 		catch(Exception e) {
 			Ad.findElementById("com.weather.Weather:id/wind_title").click();
+			Thread.sleep(3000);	
 		}
 		
 	}
