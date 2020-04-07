@@ -84,7 +84,7 @@ extends Drivers
 					System.out.println("====== Validating Dailyforecast feed card TestCase End =======");
 				}
 
-		@Test(priority =6,enabled = true)
+		/*@Test(priority =6,enabled = true)
 		@Title("Validating Extended Today page Ad")
 		public void Extended_Today_datailpage_Ad() throws Exception
 		{
@@ -96,7 +96,7 @@ extends Drivers
 			AppiumFunctions.Check_submodules_Today_ad();
 			AppFunctions.clickOnBackArrowElement_trending();
 			System.out.println("====== Validating Extended today datail page Ad TestCase End =======");    
-		}
+		}*/
 
              
 		@Test(priority =5,enabled = true)
@@ -106,7 +106,7 @@ extends Drivers
 			System.out.println("====== Validating Health and Activities feed card testCase Started =======");
 			//AppFunctions.Kill_Launch_App();
 			 AppFunctions.Swipeforappdeckapk();
-			AppFunctions.SwipeUp_Counter(1);		
+			AppFunctions.SwipeUp_Counter(2);		
 			logStep("Checking the  Health and Activities feed card ad is presnted or not");
 			AppiumFunctions.Check_Health_and_Activities_feedad();
 			System.out.println("====== Validating Health and Activities feed card testCase End =======");    
@@ -186,7 +186,7 @@ extends Drivers
 
 	
 	
-	@Test(priority =11,enabled = true)
+	/*@Test(priority =11,enabled = true)
 	@Title("Validating Extended Airpollution page Ad")
 	public void Extended_Deatail_Airpollution_Ad() throws Exception
 	{
@@ -197,7 +197,7 @@ extends Drivers
 		AppiumFunctions.Check_submodules_Airpollution_ad();
 		//AppFunctions.clickOnBackArrowElement();
 		System.out.println("====== Validating Extended Deatail Airpollution Ad TestCase End =======");    
-	}
+	}*/
 	// Validating Air Pollution feed card
 		@Test(priority =12,enabled = true)
 		@Title("Validating  Airpollution feed card")

@@ -1838,11 +1838,13 @@ catch(Exception e)
 	public static void click_Todaydetails_element() throws Exception
 	{
 		try {
+		
+		com.weather.Weather:id/details_button
 		Ad.findElementById("com.weather.Weather:id/details_button").click();
 		Thread.sleep(3000);	
 		}
 		catch(Exception e) {
-			Ad.findElementByName("See Details").click();
+			Ad.findElementById("com.weather.Weather:id/wind_title").click();
 		}
 		
 	}
