@@ -588,8 +588,16 @@ public static void killADB() throws IOException, Exception{
 		//}
 	}
 	public static void clickOnVideoElement() throws Exception{
+try {
+		//com.weather.Weather:id/ok_button
 		Ad.findElementById("com.weather.Weather:id/ok_button").click();	
 		Thread.sleep(3000);
+		}
+		catch(Exception e) {
+			Ad.findElementById("com.weather.Weather:id/video_player_thumbnail_extra").click();	
+			Thread.sleep(3000);
+		}
+		
 		
 	}
 	public static void clickOnMaps() throws Exception{
