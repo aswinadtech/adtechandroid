@@ -479,6 +479,7 @@ public class regressionTestCases extends Drivers{
 		CharlesFunctions.startSessionBrowserData();
 		//CharlesFunctions.startSessionBrowserData();
 	    AppiumFunctions.LaunchAppWithFullReset();
+	    Thread.sleep(30000);
 	//	Functions.Change_to_Test_Mode("TestMode");
 		//Functions.Kill_launch();
 
