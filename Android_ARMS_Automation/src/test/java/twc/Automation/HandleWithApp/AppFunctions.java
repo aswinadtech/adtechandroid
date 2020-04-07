@@ -1800,7 +1800,7 @@ catch(Exception e)
 		Thread.sleep(3000);		
 		}
 		catch(Exception e) {
-			Ad.findElementById("com.weather.Weather:id/mapBig").click();
+			Ad.findElementById("com.weather.Weather:id/radar_map_image").click();
 			Thread.sleep(3000);
 		}	
 	}
@@ -1819,6 +1819,19 @@ catch(Exception e)
 		}
 	public static void click_news_element() throws Exception
 	{
+	try {
+		List<WebElement> airlock=Ad.findElementsById("com.weather.Weather:id/video_player_thumbnail_extra");
+		airlock.get(0).click();
+		Thread.sleep(3000);
+	
+	}
+	catch(Exception e) {
+		List<WebElement> airlock=Ad.findElementsById("com.weather.Weather:id/video_player_thumbnail_extra");
+		airlock.get(1).click();
+		Thread.sleep(3000);
+	}	
+
+	
 		Ad.findElementById("com.weather.Weather:id/video_player_thumbnail_extra").click();
 		Thread.sleep(3000);		
 	}
