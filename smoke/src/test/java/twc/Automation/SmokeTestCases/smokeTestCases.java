@@ -54,7 +54,7 @@ public class smokeTestCases extends Drivers {
 	protected String email;
 
 
-	/*@Test(priority=1,enabled = true)
+	@Test(priority=1,enabled = true)
 	@Title("Verifying amazon aax home screen today preload ad call")
 	public void Smoke_Test_amazon_aax_home_screen_today_preload_adcall__iu()
 			throws Exception {
@@ -147,7 +147,7 @@ public class smokeTestCases extends Drivers {
 		System.out.println("================= verifying iu value for home screen marquee test case started =========================");
 		Functions.finding_Homescreen_marquee_iu_value();
      	System.out.println("================= verifying iu value for home screen marquee test case End =========================");
-	}*/
+	}
 
 
 		
