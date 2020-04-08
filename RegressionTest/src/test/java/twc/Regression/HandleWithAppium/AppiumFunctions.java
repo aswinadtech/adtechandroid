@@ -601,8 +601,14 @@ try {
 		
 	}
 	public static void clickOnMaps() throws Exception{
-		Ad.findElementById("com.weather.Weather:id/ok_button").click();	
-		Thread.sleep(3000);	
+try {
+		Ad.findElementById("com.weather.Weather:id/details_button").click();
+		Thread.sleep(3000);		
+		}
+		catch(Exception e) {
+			Ad.findElementById("com.weather.Weather:id/radar_map_image").click();
+			Thread.sleep(3000);
+		}	
 	}
 	public static void clickOnRadarMaps() throws Exception{
 	try {
@@ -713,8 +719,18 @@ try {
 	}
 	public static void click_news_element() throws Exception
 	{
-		Ad.findElementById("com.weather.Weather:id/video_backdrop").click();
-		Thread.sleep(3000);		
+	
+	try {
+		List<WebElement> airlock=Ad.findElementsById("com.weather.Weather:id/video_player_thumbnail_extra");
+		airlock.get(0).click();
+		Thread.sleep(3000);
+	
+	}
+	catch(Exception e) {
+		List<WebElement> airlock=Ad.findElementsById("com.weather.Weather:id/video_player_thumbnail_extra");
+		airlock.get(1).click();
+		Thread.sleep(3000);
+	}		
 	}
 	public static void click_hourly_element() throws Exception
 	{ try {
