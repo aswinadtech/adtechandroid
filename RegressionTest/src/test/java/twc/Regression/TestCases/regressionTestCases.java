@@ -488,8 +488,8 @@ public class regressionTestCases extends Drivers{
 			AppiumFunctions.clickOnBackArrowElement();
 
                     AppiumFunctions.SwipeUp_Counter(2);
-			AppiumFunctions.clickOnRadarMaps();
-			AppiumFunctions.clickOnBackArrowElement();	
+			//AppiumFunctions.clickOnRadarMaps();
+		//	AppiumFunctions.clickOnBackArrowElement();	
                         AppiumFunctions.SwipeUp_Counter(5);					
 			//AppiumFunctions.click_Todaydetails_element();
 		//	AppiumFunctions.clickOnBackArrowElement_trending();
