@@ -497,8 +497,8 @@ public class regressionTestCases extends Drivers{
 			//AppiumFunctions.click_Airpollution_element();
 		//	AppiumFunctions.clickOnBackArrowElement();
 			AppiumFunctions.SwipeUp_Counter(2);
-			AppiumFunctions.click_news_element();
-			AppiumFunctions.clickOnBackArrowElement();
+			//AppiumFunctions.click_news_element();
+			//AppiumFunctions.clickOnBackArrowElement();
 			AppiumFunctions.click_hourly_element();
 			AppiumFunctions.click_home_element();
 			//AppiumFunctions.click_daily_element();

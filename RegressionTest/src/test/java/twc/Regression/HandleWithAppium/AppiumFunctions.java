@@ -717,7 +717,7 @@ try {
 		Ad.findElementById("com.weather.Weather:id/air_quality_dial").click();
 		Thread.sleep(3000);		
 	}
-	public static void click_news_element() throws Exception
+	/*public static void click_news_element() throws Exception
 	{
 	
 	try {
@@ -731,7 +731,7 @@ try {
 		airlock.get(1).click();
 		Thread.sleep(3000);
 	}		
-	}
+	}*/
 	public static void click_hourly_element() throws Exception
 	{ try {
 		Ad.findElementByAccessibilityId("Hourly").click();
