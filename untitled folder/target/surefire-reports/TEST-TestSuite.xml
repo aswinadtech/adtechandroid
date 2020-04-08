@@ -1,0 +1,978 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="77" failures="70" name="TestSuite" time="2,135.54" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.181-b13"/>
+    <property name="user.country.format" value="IN"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke"/>
+    <property name="java.runtime.version" value="1.8.0_181-b13"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="basedir" value="/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="surefire.real.class.path" value="/var/folders/sq/6ytcx3fj2yd8dmgrjt1_jjm80000gn/T/surefirebooter4419888905219739.jar:/Users/aswinikumar/.m2/repository/org/aspectj/aspectjweaver/1.8.13/aspectjweaver-1.8.13.jar"/>
+    <property name="java.io.tmpdir" value="/var/folders/sq/6ytcx3fj2yd8dmgrjt1_jjm80000gn/T/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/aswinikumar/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="surefire.test.class.path" value="/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/target/test-classes:/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/target/classes:/Users/aswinikumar/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar:/Users/aswinikumar/.m2/repository/org/testng/testng/6.9.4/testng-6.9.4.jar:/Users/aswinikumar/.m2/repository/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar:/Users/aswinikumar/.m2/repository/com/beust/jcommander/1.48/jcommander-1.48.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-server/2.51.0/selenium-server-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.48/bcprov-jdk15on-1.48.jar:/Users/aswinikumar/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.48/bcpkix-jdk15on-1.48.jar:/Users/aswinikumar/.m2/repository/mx4j/mx4j-tools/3.0.1/mx4j-tools-3.0.1.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/jetty-repacked/9.2.13.v20150730/jetty-repacked-9.2.13.v20150730.jar:/Users/aswinikumar/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/jetty-rc-repacked/5/jetty-rc-repacked-5.jar:/Users/aswinikumar/.m2/repository/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar:/Users/aswinikumar/.m2/repository/org/yaml/snakeyaml/1.8/snakeyaml-1.8.jar:/Users/aswinikumar/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-java/2.51.0/selenium-java-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/2.51.0/selenium-chrome-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/2.51.0/selenium-edge-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-htmlunit-driver/2.51.0/selenium-htmlunit-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/net/sourceforge/htmlunit/htmlunit/2.18/htmlunit-2.18.jar:/Users/aswinikumar/.m2/repository/xalan/xalan/2.7.2/xalan-2.7.2.jar:/Users/aswinikumar/.m2/repository/xalan/serializer/2.7.2/serializer-2.7.2.jar:/Users/aswinikumar/.m2/repository/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar:/Users/aswinikumar/.m2/repository/org/apache/httpcomponents/httpmime/4.5/httpmime-4.5.jar:/Users/aswinikumar/.m2/repository/net/sourceforge/htmlunit/htmlunit-core-js/2.17/htmlunit-core-js-2.17.jar:/Users/aswinikumar/.m2/repository/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0.jar:/Users/aswinikumar/.m2/repository/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar:/Users/aswinikumar/.m2/repository/net/sourceforge/nekohtml/nekohtml/1.9.22/nekohtml-1.9.22.jar:/Users/aswinikumar/.m2/repository/net/sourceforge/cssparser/cssparser/0.9.16/cssparser-0.9.16.jar:/Users/aswinikumar/.m2/repository/org/w3c/css/sac/1.3/sac-1.3.jar:/Users/aswinikumar/.m2/repository/org/eclipse/jetty/websocket/websocket-client/9.2.12.v20150709/websocket-client-9.2.12.v20150709.jar:/Users/aswinikumar/.m2/repository/org/eclipse/jetty/jetty-util/9.2.12.v20150709/jetty-util-9.2.12.v20150709.jar:/Users/aswinikumar/.m2/repository/org/eclipse/jetty/jetty-io/9.2.12.v20150709/jetty-io-9.2.12.v20150709.jar:/Users/aswinikumar/.m2/repository/org/eclipse/jetty/websocket/websocket-common/9.2.12.v20150709/websocket-common-9.2.12.v20150709.jar:/Users/aswinikumar/.m2/repository/org/eclipse/jetty/websocket/websocket-api/9.2.12.v20150709/websocket-api-9.2.12.v20150709.jar:/Users/aswinikumar/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/2.51.0/selenium-ie-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/net/java/dev/jna/jna/4.1.0/jna-4.1.0.jar:/Users/aswinikumar/.m2/repository/net/java/dev/jna/jna-platform/4.1.0/jna-platform-4.1.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/2.51.0/selenium-safari-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-support/2.51.0/selenium-support-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/webbitserver/webbit/0.4.14/webbit-0.4.14.jar:/Users/aswinikumar/.m2/repository/io/netty/netty/3.5.2.Final/netty-3.5.2.Final.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-leg-rc/2.51.0/selenium-leg-rc-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/2.51.0/selenium-firefox-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/2.51.0/selenium-remote-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/cglib/cglib-nodep/2.1_3/cglib-nodep-2.1_3.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-api/2.51.0/selenium-api-2.51.0.jar:/Users/aswinikumar/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/aswinikumar/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/aswinikumar/.m2/repository/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1.jar:/Users/aswinikumar/.m2/repository/org/apache/poi/poi/3.9/poi-3.9.jar:/Users/aswinikumar/.m2/repository/io/appium/java-client/3.2.0/java-client-3.2.0.jar:/Users/aswinikumar/.m2/repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar:/Users/aswinikumar/.m2/repository/org/apache/httpcomponents/httpclient/4.3.3/httpclient-4.3.3.jar:/Users/aswinikumar/.m2/repository/org/apache/httpcomponents/httpcore/4.3.2/httpcore-4.3.2.jar:/Users/aswinikumar/.m2/repository/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar:/Users/aswinikumar/.m2/repository/com/google/guava/guava/17.0/guava-17.0.jar:/Users/aswinikumar/.m2/repository/cglib/cglib/3.1/cglib-3.1.jar:/Users/aswinikumar/.m2/repository/org/ow2/asm/asm/4.2/asm-4.2.jar:/Users/aswinikumar/.m2/repository/commons-validator/commons-validator/1.4.1/commons-validator-1.4.1.jar:/Users/aswinikumar/.m2/repository/commons-beanutils/commons-beanutils/1.8.3/commons-beanutils-1.8.3.jar:/Users/aswinikumar/.m2/repository/commons-digester/commons-digester/1.8.1/commons-digester-1.8.1.jar:/Users/aswinikumar/.m2/repository/ru/yandex/qatools/allure/allure-testng-adaptor/1.5.4/allure-testng-adaptor-1.5.4.jar:/Users/aswinikumar/.m2/repository/ru/yandex/qatools/allure/allure-java-aspects/1.5.4/allure-java-aspects-1.5.4.jar:/Users/aswinikumar/.m2/repository/ru/yandex/qatools/allure/allure-java-adaptor-api/1.5.4/allure-java-adaptor-api-1.5.4.jar:/Users/aswinikumar/.m2/repository/ru/yandex/qatools/allure/allure-java-annotations/1.5.4/allure-java-annotations-1.5.4.jar:/Users/aswinikumar/.m2/repository/ru/yandex/qatools/allure/allure-model/1.5.4/allure-model-1.5.4.jar:/Users/aswinikumar/.m2/repository/org/jvnet/jaxb2_commons/jaxb2-basics-runtime/0.9.3/jaxb2-basics-runtime-0.9.3.jar:/Users/aswinikumar/.m2/repository/ru/qatools/commons/properties/2.0.RC5/properties-2.0.RC5.jar:/Users/aswinikumar/.m2/repository/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar:/Users/aswinikumar/.m2/repository/org/apache/tika/tika-core/1.7/tika-core-1.7.jar:/Users/aswinikumar/.m2/repository/org/aspectj/aspectjrt/1.8.3/aspectjrt-1.8.3.jar:/Users/aswinikumar/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.14.6"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="user.home" value="/Users/aswinikumar"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="aswinikumar"/>
+    <property name="java.class.path" value="/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/target/test-classes:/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/target/classes:/Users/aswinikumar/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar:/Users/aswinikumar/.m2/repository/org/testng/testng/6.9.4/testng-6.9.4.jar:/Users/aswinikumar/.m2/repository/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar:/Users/aswinikumar/.m2/repository/com/beust/jcommander/1.48/jcommander-1.48.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-server/2.51.0/selenium-server-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.48/bcprov-jdk15on-1.48.jar:/Users/aswinikumar/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.48/bcpkix-jdk15on-1.48.jar:/Users/aswinikumar/.m2/repository/mx4j/mx4j-tools/3.0.1/mx4j-tools-3.0.1.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/jetty-repacked/9.2.13.v20150730/jetty-repacked-9.2.13.v20150730.jar:/Users/aswinikumar/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/jetty-rc-repacked/5/jetty-rc-repacked-5.jar:/Users/aswinikumar/.m2/repository/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar:/Users/aswinikumar/.m2/repository/org/yaml/snakeyaml/1.8/snakeyaml-1.8.jar:/Users/aswinikumar/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-java/2.51.0/selenium-java-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/2.51.0/selenium-chrome-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/2.51.0/selenium-edge-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-htmlunit-driver/2.51.0/selenium-htmlunit-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/net/sourceforge/htmlunit/htmlunit/2.18/htmlunit-2.18.jar:/Users/aswinikumar/.m2/repository/xalan/xalan/2.7.2/xalan-2.7.2.jar:/Users/aswinikumar/.m2/repository/xalan/serializer/2.7.2/serializer-2.7.2.jar:/Users/aswinikumar/.m2/repository/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar:/Users/aswinikumar/.m2/repository/org/apache/httpcomponents/httpmime/4.5/httpmime-4.5.jar:/Users/aswinikumar/.m2/repository/net/sourceforge/htmlunit/htmlunit-core-js/2.17/htmlunit-core-js-2.17.jar:/Users/aswinikumar/.m2/repository/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0.jar:/Users/aswinikumar/.m2/repository/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar:/Users/aswinikumar/.m2/repository/net/sourceforge/nekohtml/nekohtml/1.9.22/nekohtml-1.9.22.jar:/Users/aswinikumar/.m2/repository/net/sourceforge/cssparser/cssparser/0.9.16/cssparser-0.9.16.jar:/Users/aswinikumar/.m2/repository/org/w3c/css/sac/1.3/sac-1.3.jar:/Users/aswinikumar/.m2/repository/org/eclipse/jetty/websocket/websocket-client/9.2.12.v20150709/websocket-client-9.2.12.v20150709.jar:/Users/aswinikumar/.m2/repository/org/eclipse/jetty/jetty-util/9.2.12.v20150709/jetty-util-9.2.12.v20150709.jar:/Users/aswinikumar/.m2/repository/org/eclipse/jetty/jetty-io/9.2.12.v20150709/jetty-io-9.2.12.v20150709.jar:/Users/aswinikumar/.m2/repository/org/eclipse/jetty/websocket/websocket-common/9.2.12.v20150709/websocket-common-9.2.12.v20150709.jar:/Users/aswinikumar/.m2/repository/org/eclipse/jetty/websocket/websocket-api/9.2.12.v20150709/websocket-api-9.2.12.v20150709.jar:/Users/aswinikumar/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/2.51.0/selenium-ie-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/net/java/dev/jna/jna/4.1.0/jna-4.1.0.jar:/Users/aswinikumar/.m2/repository/net/java/dev/jna/jna-platform/4.1.0/jna-platform-4.1.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/2.51.0/selenium-safari-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-support/2.51.0/selenium-support-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/webbitserver/webbit/0.4.14/webbit-0.4.14.jar:/Users/aswinikumar/.m2/repository/io/netty/netty/3.5.2.Final/netty-3.5.2.Final.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-leg-rc/2.51.0/selenium-leg-rc-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/2.51.0/selenium-firefox-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/2.51.0/selenium-remote-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/cglib/cglib-nodep/2.1_3/cglib-nodep-2.1_3.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-api/2.51.0/selenium-api-2.51.0.jar:/Users/aswinikumar/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/aswinikumar/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/aswinikumar/.m2/repository/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1.jar:/Users/aswinikumar/.m2/repository/org/apache/poi/poi/3.9/poi-3.9.jar:/Users/aswinikumar/.m2/repository/io/appium/java-client/3.2.0/java-client-3.2.0.jar:/Users/aswinikumar/.m2/repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar:/Users/aswinikumar/.m2/repository/org/apache/httpcomponents/httpclient/4.3.3/httpclient-4.3.3.jar:/Users/aswinikumar/.m2/repository/org/apache/httpcomponents/httpcore/4.3.2/httpcore-4.3.2.jar:/Users/aswinikumar/.m2/repository/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar:/Users/aswinikumar/.m2/repository/com/google/guava/guava/17.0/guava-17.0.jar:/Users/aswinikumar/.m2/repository/cglib/cglib/3.1/cglib-3.1.jar:/Users/aswinikumar/.m2/repository/org/ow2/asm/asm/4.2/asm-4.2.jar:/Users/aswinikumar/.m2/repository/commons-validator/commons-validator/1.4.1/commons-validator-1.4.1.jar:/Users/aswinikumar/.m2/repository/commons-beanutils/commons-beanutils/1.8.3/commons-beanutils-1.8.3.jar:/Users/aswinikumar/.m2/repository/commons-digester/commons-digester/1.8.1/commons-digester-1.8.1.jar:/Users/aswinikumar/.m2/repository/ru/yandex/qatools/allure/allure-testng-adaptor/1.5.4/allure-testng-adaptor-1.5.4.jar:/Users/aswinikumar/.m2/repository/ru/yandex/qatools/allure/allure-java-aspects/1.5.4/allure-java-aspects-1.5.4.jar:/Users/aswinikumar/.m2/repository/ru/yandex/qatools/allure/allure-java-adaptor-api/1.5.4/allure-java-adaptor-api-1.5.4.jar:/Users/aswinikumar/.m2/repository/ru/yandex/qatools/allure/allure-java-annotations/1.5.4/allure-java-annotations-1.5.4.jar:/Users/aswinikumar/.m2/repository/ru/yandex/qatools/allure/allure-model/1.5.4/allure-model-1.5.4.jar:/Users/aswinikumar/.m2/repository/org/jvnet/jaxb2_commons/jaxb2-basics-runtime/0.9.3/jaxb2-basics-runtime-0.9.3.jar:/Users/aswinikumar/.m2/repository/ru/qatools/commons/properties/2.0.RC5/properties-2.0.RC5.jar:/Users/aswinikumar/.m2/repository/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar:/Users/aswinikumar/.m2/repository/org/apache/tika/tika-core/1.7/tika-core-1.7.jar:/Users/aswinikumar/.m2/repository/org/aspectj/aspectjrt/1.8.3/aspectjrt-1.8.3.jar:/Users/aswinikumar/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="/var/folders/sq/6ytcx3fj2yd8dmgrjt1_jjm80000gn/T/surefirebooter4419888905219739.jar /var/folders/sq/6ytcx3fj2yd8dmgrjt1_jjm80000gn/T/surefire7371237629041129149tmp /var/folders/sq/6ytcx3fj2yd8dmgrjt1_jjm80000gn/T/surefire1055622500458080602tmp"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_181"/>
+    <property name="java.ext.dirs" value="/Users/aswinikumar/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="localRepository" value="/Users/aswinikumar/.m2/repository"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_amazon_aax_home_screen_today_preload_adcall__iu" time="321.759">
+    <failure message="slotID 69c843c-7cf8-47ae-b6ed-088057e4bc8a is not trigred for aax call db_display/home_screen/today" type="java.lang.AssertionError">java.lang.AssertionError: slotID 69c843c-7cf8-47ae-b6ed-088057e4bc8a is not trigred for aax call db_display/home_screen/today
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.get_aaxcal_homescreen_today(Functions.java:2769)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_home_screen_today_preload_adcall__iu(smokeTestCases.java:65)
+</failure>
+    <system-out>================= Before Test Started =========================
+Uninstall the APP and Installing
+Uninstall completed
+Deleted all the files in the specified folder
+Cleared Session
+app : /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/The_Weather_Channel_DEBUG (22).apk
+Location already set
+Capabilities have been launched  with fullreset 
+Unable To Launch The Appium Capabilities
+================= Before Test End =========================
+================= Verify amazon aax home screentoday preload adcall Started =========================
+Deleted all the files in the specified folder
+/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile
+Exporting The Session Data Into XML File
+Exported Session
+XML File Name is : charles202004081946.chlsx
+slotID 69c843c-7cf8-47ae-b6ed-088057e4bc8a is not trigred for aax call db_display/home_screen/today
+</system-out>
+    <system-err>SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+log4j:WARN No appenders could be found for logger (org.apache.http.client.protocol.RequestAddCookies).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+</system-err>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_amazon_aax_rader_card_preload_adcall" time="0.116">
+    <failure message="slotID 752a96eb-3198-4991-b572-17ec04883b6c is not trigred for aax call db_display/card/radar" type="java.lang.AssertionError">java.lang.AssertionError: slotID 752a96eb-3198-4991-b572-17ec04883b6c is not trigred for aax call db_display/card/radar
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.get_aaxcal_radar(Functions.java:2795)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_rader_card_preload_adcall(smokeTestCases.java:73)
+</failure>
+    <system-out>================= Verify amazon aax radar card preload adcall Started =========================
+XML File Name is : charles202004081946.chlsx
+slotID 752a96eb-3198-4991-b572-17ec04883b6c is not trigred for aax call db_display/card/radar
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_amazon_aax_AQ_card_preload_adcall" time="0.055">
+    <failure message="slotID 9384272f-b27f-4686-935f-02e6c5763abd is not trigred for aax calldb_display/card/aq" type="java.lang.AssertionError">java.lang.AssertionError: slotID 9384272f-b27f-4686-935f-02e6c5763abd is not trigred for aax calldb_display/card/aq
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.get_aaxcal_AirQuality(Functions.java:2782)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_AQ_card_preload_adcall(smokeTestCases.java:81)
+</failure>
+    <system-out>================= Verify amazon aax AQ card preload adcall Started =========================
+XML File Name is : charles202004081946.chlsx
+slotID 9384272f-b27f-4686-935f-02e6c5763abd is not trigred for aax call db_display/card/aq
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_amazon_aax_Hourly_preload_adcall" time="0.053">
+    <failure message="slotID 9be28769-4207-4d51-8063-dc8e645383b2 is not trigred for aax call db_display/details/hourly" type="java.lang.AssertionError">java.lang.AssertionError: slotID 9be28769-4207-4d51-8063-dc8e645383b2 is not trigred for aax call db_display/details/hourly
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.get_aaxcal_Hourly(Functions.java:2808)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Hourly_preload_adcall(smokeTestCases.java:89)
+</failure>
+    <system-out>================= Verify amazon aax Hourly card preload adcall Started =========================
+XML File Name is : charles202004081946.chlsx
+slotID 9be28769-4207-4d51-8063-dc8e645383b2 is not trigred for aax call db_display/details/hourly
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_amazon_aax_Daily_preload_adcall" time="0.07">
+    <failure message="slotID f063079f-11ac-45b5-b4fc-bb76d54b50b2 is not trigred for aax call db_display/details/10day" type="java.lang.AssertionError">java.lang.AssertionError: slotID f063079f-11ac-45b5-b4fc-bb76d54b50b2 is not trigred for aax call db_display/details/10day
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.get_aaxcal_Daily(Functions.java:2821)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Daily_preload_adcall(smokeTestCases.java:97)
+</failure>
+    <system-out>================= Verify amazon aax Daily card preload adcall Started =========================
+XML File Name is : charles202004081946.chlsx
+slotID f063079f-11ac-45b5-b4fc-bb76d54b50b2 is not trigred for aax call db_display/details/10day
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_amazon_aax_mapsdetails_preload_adcall" time="0.057">
+    <failure message="slotID 5db1161b-b504-4640-9496-dfe6284f84ab is not trigred for aax call db_display/details/maps" type="java.lang.AssertionError">java.lang.AssertionError: slotID 5db1161b-b504-4640-9496-dfe6284f84ab is not trigred for aax call db_display/details/maps
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.get_aaxcal_map_details(Functions.java:2834)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_mapsdetails_preload_adcall(smokeTestCases.java:106)
+</failure>
+    <system-out>================= Verify amazon aax Maps card preload adcall Started =========================
+XML File Name is : charles202004081946.chlsx
+slotID 5db1161b-b504-4640-9496-dfe6284f84ab is not trigred for aax call db_display/details/maps 
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_CaseVerify_Homescreen_ad_iu" time="0.052"/>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_CaseVerify_WeatherFXAPI_url" time="0.087"/>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_CaseVerify_turbo_url" time="0.069"/>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_CaseVerify_adcrwdcntrlnet_url" time="0.063">
+    <failure message="https://ad.crwdcntrl.net/ url was not trigred" type="java.lang.AssertionError">java.lang.AssertionError: https://ad.crwdcntrl.net/ url was not trigred
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.validating_adcrw(Functions.java:2684)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_CaseVerify_adcrwdcntrlnet_url(smokeTestCases.java:139)
+</failure>
+    <system-out>================= Verifying Lotame ad.crwdcntrl.net url started =========================
+XML File Name is : charles202004081946.chlsx
+https://ad.crwdcntrl.net/ url was not trigred
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_CaseVerify_Homescreen_marque_ad_iu" time="0.043"/>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_Case_Verify_Video_adCalll" time="340.994">
+    <failure message="An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 60.79 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.51.0&apos;, revision: &apos;1af067dbcaedd7d2ab9af5151fc471d363d97193&apos;, time: &apos;2016-02-05 11:20:57&apos;
+System info: host: &apos;Aswinikumars-MacBook-Pro.local&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.weather.Weather, statBarHeight=98, noReset=true, viewportRect={top=98, left=0, width=1440, height=2614}, deviceName=803KPXV1599674, platform=LINUX, deviceUDID=803KPXV1599674, desired={app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/The_Weather_Channel_DEBUG (22).apk, appPackage=com.weather.Weather, appium-version=1.4.13, noReset=true, newCommandTimeout=100000, platformVersion=10.0, platformName=Android, deviceName=Samsung}, appium-version=1.4.13, newCommandTimeout=100000, platformVersion=10, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceApiLevel=29, deviceManufacturer=Google, app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/The_Weather_Channel_DEBUG (22).apk, deviceScreenSize=1440x2880, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, pixelRatio=3.5, locationContextEnabled=false, deviceScreenDensity=560, deviceModel=Pixel 2 XL}]
+Session ID: e1304691-2ee2-4e6a-9b18-90e4373c1e28
+*** Element info: {Using=id, value=com.weather.Weather:id/mapBig}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 60.79 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.51.0&apos;, revision: &apos;1af067dbcaedd7d2ab9af5151fc471d363d97193&apos;, time: &apos;2016-02-05 11:20:57&apos;
+System info: host: &apos;Aswinikumars-MacBook-Pro.local&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.weather.Weather, statBarHeight=98, noReset=true, viewportRect={top=98, left=0, width=1440, height=2614}, deviceName=803KPXV1599674, platform=LINUX, deviceUDID=803KPXV1599674, desired={app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/The_Weather_Channel_DEBUG (22).apk, appPackage=com.weather.Weather, appium-version=1.4.13, noReset=true, newCommandTimeout=100000, platformVersion=10.0, platformName=Android, deviceName=Samsung}, appium-version=1.4.13, newCommandTimeout=100000, platformVersion=10, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceApiLevel=29, deviceManufacturer=Google, app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/The_Weather_Channel_DEBUG (22).apk, deviceScreenSize=1440x2880, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, pixelRatio=3.5, locationContextEnabled=false, deviceScreenDensity=560, deviceModel=Pixel 2 XL}]
+Session ID: e1304691-2ee2-4e6a-9b18-90e4373c1e28
+*** Element info: {Using=id, value=com.weather.Weather:id/mapBig}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at twc.Automation.HandleWithAppium.AppiumFunctions.clickOnRadarMaps(AppiumFunctions.java:464)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Case_Verify_Video_adCalll(smokeTestCases.java:180)
+</failure>
+    <system-out>================= Verifying Video ad call testcase  started =========================
+Deleted all the files in the specified folder
+clicked clear session
+Deleted all the files in the specified folder
+/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_CaseVerify_Radar_Maps_feedcard_adcall" time="0.009">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.finding_Radar_Map_feedcard_iu_value(Functions.java:2376)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_CaseVerify_Radar_Maps_feedcard_adcall(smokeTestCases.java:219)
+</failure>
+    <system-out>================= verifying iu value for Radar&amp;Maps feed card started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_CaseVerify_Radar_Maps_deatailscard_adcall" time="0.007">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.finding_Radar_Map_card_iu_value(Functions.java:2358)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_CaseVerify_Radar_Maps_deatailscard_adcall(smokeTestCases.java:228)
+</failure>
+    <system-out>================= verifying iu value for Radar&amp;Maps deatail card started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_CaseVerify_Health_Activities_feed_adcall" time="0.007">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.finding_H_C_adcalL_iu(Functions.java:2413)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_CaseVerify_Health_Activities_feed_adcall(smokeTestCases.java:256)
+</failure>
+    <system-out>================= verifying iu value Health&amp;Activities feed card started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_Verify_health_and_activities_Running_spotlight_adcall_iu" time="0.006">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.health_and_activities_Running_spotlight_adcall_iu(Functions.java:2468)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_health_and_activities_Running_spotlight_adcall_iu(smokeTestCases.java:263)
+</failure>
+    <system-out>================= Verify_health_and_activities_Running_spotlight_adcall_iu Started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_Verify_health_and_activities_Bot_beach_detailpage_adcall_iu" time="0.005">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.health_and_activities_Boat_beach_detailpage_adcall_iu(Functions.java:2503)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_health_and_activities_Bot_beach_detailpage_adcall_iu(smokeTestCases.java:271)
+</failure>
+    <system-out>================= Verify_health_and_activities_Bot&amp;beach_Spotlight_adcall_iu Started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_Verify_health_and_activities_Allergy_detailpage_adcall_iu" time="0.006">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.health_and_activities_Allergy_detailpage_adcall_iu(Functions.java:2521)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_health_and_activities_Allergy_detailpage_adcall_iu(smokeTestCases.java:279)
+</failure>
+    <system-out>================= Verify_health_and_activities_Allergy_Spotlight_adcall_iu Started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_Verify_health_and_activities_cold_flu_Spotlight_adcall_iu" time="0.006">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.health_and_activities_Cold_Flu_detailpage_adcall_iu(Functions.java:2539)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_health_and_activities_cold_flu_Spotlight_adcall_iu(smokeTestCases.java:287)
+</failure>
+    <system-out>================= Verify_health_and_activities_cold_flu_Spotlight_adcall_iu Started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_Verify_SeasonalHub_detailpage_adcall_iu" time="0.008">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.Verify_SH_detailpage_adcall_iu(Functions.java:4027)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_SeasonalHub_detailpage_adcall_iu(smokeTestCases.java:297)
+</failure>
+    <system-out>================= Verify_SH_detailpage_adcall_iu Started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_Verify_WatsonFlu_adcall" time="0.007">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.finding_watsonFlu_card_iu_value(Functions.java:4046)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_WatsonFlu_adcall(smokeTestCases.java:307)
+</failure>
+    <system-out>================= Verify_WatsonFlu adcall Started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_Verify_amazon_aax_Running_Bigbanner_ad" time="0.005">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.get_aaxcal_Running_Bigbanner(Functions.java:2960)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_amazon_aax_Running_Bigbanner_ad(smokeTestCases.java:334)
+</failure>
+    <system-out>================= verifying amazon aax slot for Running BigBanner adcall started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_CaseVerify_seasonalhub_feed_adcall" time="0.009">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.finding_Seasonalhub_adcalL_iu(Functions.java:2432)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_CaseVerify_seasonalhub_feed_adcall(smokeTestCases.java:350)
+</failure>
+    <system-out>================= verifying iu value SeasonalHub feed card started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_Verify_health_and_activities_Air_Quality_detailpage_adcall_iu" time="0.008">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.health_and_activities_AirQuality_detailpage_adcall_iu(Functions.java:2556)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_health_and_activities_Air_Quality_detailpage_adcall_iu(smokeTestCases.java:358)
+</failure>
+    <system-out>================= Verify_health_and_activities_AirQuality_detailpage_adcall_iu Started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_Verify_News_detailpage_adcall_iu" time="0.007">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.Verify_News_detailpage_adcall_iu(Functions.java:2590)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_News_detailpage_adcall_iu(smokeTestCases.java:374)
+</failure>
+    <system-out>================= Verify_News_detailpage_adcall_iu Started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_Verify_News_hurricane_detail_adcall_iu" time="0.007">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.Verify_Hurricane_detailpage_adcall_iu(Functions.java:2573)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_News_hurricane_detail_adcall_iu(smokeTestCases.java:382)
+</failure>
+    <system-out>================= Verify_hurricane_detailpage_adcall_iu Started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_Verify_daily_card_adcall_iu" time="0.007">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.Verify_dailycard_iu(Functions.java:2625)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_daily_card_adcall_iu(smokeTestCases.java:398)
+</failure>
+    <system-out>================= Verifyig daily adcall_iu Started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_CaseVerify_AQ_aax_amazon_adcalll" time="0.005">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.get_aaxcal_AQ(Functions.java:2919)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_CaseVerify_AQ_aax_amazon_adcalll(smokeTestCases.java:407)
+</failure>
+    <system-out>================= Verifying amazon AQ aax call  started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_CaseVerify_news_aax_amazon_adcalll" time="0.005">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.get_aaxcal_news(Functions.java:2933)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_CaseVerify_news_aax_amazon_adcalll(smokeTestCases.java:416)
+</failure>
+    <system-out>================= Verifying amazon news aax call  started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_Verify_hourly_detailpage_adcall_iu" time="0.006">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.Verify_hourly_detailpage_adcall_iu(Functions.java:2607)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_hourly_detailpage_adcall_iu(smokeTestCases.java:426)
+</failure>
+    <system-out>================= Verify_hourly_detailpage_adcall_iu Started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll" time="0.004">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.get_aaxcal_hurricanedetails(Functions.java:2947)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll(smokeTestCases.java:434)
+</failure>
+    <system-out>================= Verifying amazon hurricane details aax call  started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_Verify_PrivacyCard_onScreen" time="25.113">
+    <failure message="Swipe did not complete successfully (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 853 milliseconds
+Build info: version: &apos;2.51.0&apos;, revision: &apos;1af067dbcaedd7d2ab9af5151fc471d363d97193&apos;, time: &apos;2016-02-05 11:20:57&apos;
+System info: host: &apos;Aswinikumars-MacBook-Pro.local&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.weather.Weather, statBarHeight=98, noReset=true, viewportRect={top=98, left=0, width=1440, height=2614}, deviceName=803KPXV1599674, platform=LINUX, deviceUDID=803KPXV1599674, desired={app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/The_Weather_Channel_DEBUG (22).apk, appPackage=com.weather.Weather, appium-version=1.4.13, noReset=true, newCommandTimeout=100000, platformVersion=10.0, platformName=Android, deviceName=Samsung}, appium-version=1.4.13, newCommandTimeout=100000, platformVersion=10, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceApiLevel=29, deviceManufacturer=Google, app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/The_Weather_Channel_DEBUG (22).apk, deviceScreenSize=1440x2880, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, pixelRatio=3.5, locationContextEnabled=false, deviceScreenDensity=560, deviceModel=Pixel 2 XL}]
+Session ID: e1304691-2ee2-4e6a-9b18-90e4373c1e28" type="org.openqa.selenium.InvalidElementStateException">org.openqa.selenium.InvalidElementStateException: Swipe did not complete successfully (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 853 milliseconds
+Build info: version: &apos;2.51.0&apos;, revision: &apos;1af067dbcaedd7d2ab9af5151fc471d363d97193&apos;, time: &apos;2016-02-05 11:20:57&apos;
+System info: host: &apos;Aswinikumars-MacBook-Pro.local&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.weather.Weather, statBarHeight=98, noReset=true, viewportRect={top=98, left=0, width=1440, height=2614}, deviceName=803KPXV1599674, platform=LINUX, deviceUDID=803KPXV1599674, desired={app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/The_Weather_Channel_DEBUG (22).apk, appPackage=com.weather.Weather, appium-version=1.4.13, noReset=true, newCommandTimeout=100000, platformVersion=10.0, platformName=Android, deviceName=Samsung}, appium-version=1.4.13, newCommandTimeout=100000, platformVersion=10, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceApiLevel=29, deviceManufacturer=Google, app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/The_Weather_Channel_DEBUG (22).apk, deviceScreenSize=1440x2880, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, pixelRatio=3.5, locationContextEnabled=false, deviceScreenDensity=560, deviceModel=Pixel 2 XL}]
+Session ID: e1304691-2ee2-4e6a-9b18-90e4373c1e28
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at io.appium.java_client.AppiumDriver.performTouchAction(AppiumDriver.java:297)
+	at io.appium.java_client.TouchAction.perform(TouchAction.java:301)
+	at io.appium.java_client.AppiumDriver.swipe(AppiumDriver.java:352)
+	at twc.Automation.General.Functions.Swipe(Functions.java:2305)
+	at twc.Automation.General.Functions.Swipe_Conter(Functions.java:3067)
+	at twc.Automation.General.Functions.Verify_Privacy_Card_onScreen(Functions.java:3038)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_PrivacyCard_onScreen(smokeTestCases.java:445)
+</failure>
+    <system-out>=================Verifying Privacy Card is present on the screen testcase started =========================
+Scroll the app till Privay card
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_Selecting_Opt_out_mode_scenario" time="36.247"/>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test__Smoke_Test_Verifying_videoadcall_Optoutmode_scenario" time="0.045">
+    <failure message="Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.51.0&apos;, revision: &apos;1af067dbcaedd7d2ab9af5151fc471d363d97193&apos;, time: &apos;2016-02-05 11:20:57&apos;
+System info: host: &apos;Aswinikumars-MacBook-Pro.local&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: AppiumDriver
+Capabilities [{appPackage=com.weather.Weather, statBarHeight=98, noReset=true, viewportRect={top=98, left=0, width=1440, height=2614}, deviceName=803KPXV1599674, platform=LINUX, deviceUDID=803KPXV1599674, desired={app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/The_Weather_Channel_DEBUG (22).apk, appPackage=com.weather.Weather, appium-version=1.4.13, noReset=true, newCommandTimeout=100000, platformVersion=10.0, platformName=Android, deviceName=Samsung}, appium-version=1.4.13, newCommandTimeout=100000, platformVersion=10, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceApiLevel=29, deviceManufacturer=Google, app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/The_Weather_Channel_DEBUG (22).apk, deviceScreenSize=1440x2880, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, pixelRatio=3.5, locationContextEnabled=false, deviceScreenDensity=560, deviceModel=Pixel 2 XL}]
+Session ID: e1304691-2ee2-4e6a-9b18-90e4373c1e28" type="org.openqa.selenium.remote.UnreachableBrowserException">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.51.0&apos;, revision: &apos;1af067dbcaedd7d2ab9af5151fc471d363d97193&apos;, time: &apos;2016-02-05 11:20:57&apos;
+System info: host: &apos;Aswinikumars-MacBook-Pro.local&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: AppiumDriver
+Capabilities [{appPackage=com.weather.Weather, statBarHeight=98, noReset=true, viewportRect={top=98, left=0, width=1440, height=2614}, deviceName=803KPXV1599674, platform=LINUX, deviceUDID=803KPXV1599674, desired={app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/The_Weather_Channel_DEBUG (22).apk, appPackage=com.weather.Weather, appium-version=1.4.13, noReset=true, newCommandTimeout=100000, platformVersion=10.0, platformName=Android, deviceName=Samsung}, appium-version=1.4.13, newCommandTimeout=100000, platformVersion=10, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceApiLevel=29, deviceManufacturer=Google, app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/The_Weather_Channel_DEBUG (22).apk, deviceScreenSize=1440x2880, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, pixelRatio=3.5, locationContextEnabled=false, deviceScreenDensity=560, deviceModel=Pixel 2 XL}]
+Session ID: e1304691-2ee2-4e6a-9b18-90e4373c1e28
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:189)
+	at io.appium.java_client.AppiumDriver.closeApp(AppiumDriver.java:245)
+	at twc.Automation.HandleWithApp.AppFunctions.Kill_Launch_App(AppFunctions.java:903)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test__Smoke_Test_Verifying_videoadcall_Optoutmode_scenario(smokeTestCases.java:467)
+Caused by: org.openqa.selenium.WebDriverException: java.net.SocketException: Connection reset
+Build info: version: &apos;2.51.0&apos;, revision: &apos;1af067dbcaedd7d2ab9af5151fc471d363d97193&apos;, time: &apos;2016-02-05 11:20:57&apos;
+System info: host: &apos;Aswinikumars-MacBook-Pro.local&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: AppiumDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:64)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 35 more
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at org.apache.http.impl.conn.LoggingInputStream.read(LoggingInputStream.java:87)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:136)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:152)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:270)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:260)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:161)
+	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.http.impl.conn.CPoolProxy.invoke(CPoolProxy.java:138)
+	at com.sun.proxy.$Proxy6.receiveResponseHeader(Unknown Source)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:271)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:123)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:254)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:186)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:52)
+	... 36 more
+</failure>
+    <system-out>=================Verifying video Feed ad call when user selecting Optoutmode scenario in privacy card started =========================
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_Verifying_Feedadcall_Optoutmode_scenario" time="0.006">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.Verifying_gampadcalls_Optoutmode(Functions.java:3141)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_Feedadcall_Optoutmode_scenario(smokeTestCases.java:486)
+</failure>
+    <system-out>=================Verifying Feed ad call when user selecting Optoutmode scenario in privacy card started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_Verifying_detailpageadcall_Optoutmode_scenario" time="0.003">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.Verifying_detail_gampadcalls_Optoutmode(Functions.java:3154)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_detailpageadcall_Optoutmode_scenario(smokeTestCases.java:498)
+</failure>
+    <system-out>=================Verifying detail page Feed ad call when user selecting Optoutmode scenario in privacy card started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test__Verifying_Bcp_apicall_Optoutmode_scenario" time="0.005">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validating_bcp_privacy_Optoutmode_scenarion(Functions.java:3176)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test__Verifying_Bcp_apicall_Optoutmode_scenario(smokeTestCases.java:511)
+</failure>
+    <system-out>=================Verifying BCP api call when user selecting Optoutmode scenario in privacy card started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test__Verifying_adcrw_apicall_Optoutmode_scenario" time="0.005">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validating_adcrw_privacy_Optoutmode_scenarion(Functions.java:3195)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test__Verifying_adcrw_apicall_Optoutmode_scenario(smokeTestCases.java:523)
+</failure>
+    <system-out>=================Verifying adcrw api call when user selecting Optoutmode scenario in privacy card started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test__Verifying_locaion_apicall_Optoutmode_scenario" time="0.004">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validating_Fatualcall_privacy_Optoutmode_scenarion(Functions.java:3216)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test__Verifying_locaion_apicall_Optoutmode_scenario(smokeTestCases.java:535)
+</failure>
+    <system-out>=================Verifying Fatual api call when user selecting Optoutmode scenario in privacy card started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test__Verifying_amaozn_aax_calls_Optoutmode_scenario" time="0.004">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validating_aax_privacy_Optoutmode_scenario(Functions.java:3541)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test__Verifying_amaozn_aax_calls_Optoutmode_scenario(smokeTestCases.java:547)
+</failure>
+    <system-out>=================Verifying amazon aax calls when user selecting Optoutmode scenario in privacy card started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test__Verifying_homescreenhourly_calls_Optoutmode_scenario" time="0.006">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.finding_Homescreen_iu_value(Functions.java:2317)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test__Verifying_homescreenhourly_calls_Optoutmode_scenario(smokeTestCases.java:558)
+</failure>
+    <system-out>=================Verifying homescreen hourly ad calls when user selecting Optoutmode scenario in privacy card started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test__Verifying_marqueehomescreecall_Optoutmode_scenario" time="0.005">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.finding_Homescreen_marquee_iu_value(Functions.java:3022)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test__Verifying_marqueehomescreecall_Optoutmode_scenario(smokeTestCases.java:570)
+</failure>
+    <system-out>=================Verifying homescreen marquee ad calls when user selecting Optoutmode scenario in privacy card started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_Verifying_SOD_Cust_Param_homescreenad_Optoutmode_scenario" time="0.006">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validate_SOD_Cust_param_homescreen_Optoutmode(Functions.java:3583)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_SOD_Cust_Param_homescreenad_Optoutmode_scenario(smokeTestCases.java:580)
+</failure>
+    <system-out>================= Verifying SOD CUST_PARAM value for home screen call  when user selecting Optoutmode scenario in privacy card started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_Verifying_SOD_Cust_Param_Feedad_Optoutmode_scenario" time="0.005">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validate_SOD_Cust_param_feed_Optoutmode(Functions.java:3612)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_SOD_Cust_Param_Feedad_Optoutmode_scenario(smokeTestCases.java:590)
+</failure>
+    <system-out>================= Verifying SOD CUST_PARAM value for Feed ad call  when user selecting Optoutmode scenario in privacy card started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_Verifying_SOD_Cust_Param_detail_Feedad_Optoutmode_scenario" time="0.005">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validate_SOD_Cust_param_deatiledfeed_Optoutmode(Functions.java:3640)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_SOD_Cust_Param_detail_Feedad_Optoutmode_scenario(smokeTestCases.java:599)
+</failure>
+    <system-out>================= Verifying SOD CUST_PARAM value for  detailed Feed ad call  when user selecting Optoutmode scenario in privacy card started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_Verifying_SOD_Cust_Param_videoad_Optoutmode_scenario" time="0.005">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validate_SOD_Cust_param_video_Optoutmode(Functions.java:3668)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_SOD_Cust_Param_videoad_Optoutmode_scenario(smokeTestCases.java:608)
+</failure>
+    <system-out>================= Verifying SOD CUST_PARAM value for video ad call  when user selecting Optoutmode scenario in privacy card started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_Verifying_RDP_value_homescreenad_Optoutmode_scenario" time="0.006">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validate_RDP_homescreen_Optoutmode(Functions.java:3835)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_RDP_value_homescreenad_Optoutmode_scenario(smokeTestCases.java:617)
+</failure>
+    <system-out>================= Verifying RDP value for home screen call  when user selecting Optoutmode scenario in privacy card started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_Verifying_RDP_value_feedad_Optoutmode_scenario" time="0.006">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validate_RDP_feed_Optoutmode(Functions.java:3856)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_RDP_value_feedad_Optoutmode_scenario(smokeTestCases.java:626)
+</failure>
+    <system-out>================= Verifying RDP value for feed ad  call  when user selecting Optoutmode scenario in privacy card started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_Verifying_RDP_value_detailed_feedad_Optoutmode_scenario" time="0.006">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validate_RDP_detailed_feed_Optoutmode(Functions.java:3877)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_RDP_value_detailed_feedad_Optoutmode_scenario(smokeTestCases.java:636)
+</failure>
+    <system-out>================= Verifying RDP value for detailed feed ad  call  when user selecting Optoutmode scenario in privacy card started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_Verifying_RDP_value_video_adcall_Optoutmode_scenario" time="0.006">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validate_RDP_video_ad_Optoutmode(Functions.java:3898)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_RDP_value_video_adcall_Optoutmode_scenario(smokeTestCases.java:645)
+</failure>
+    <system-out>================= Verifying RDP value for video  ad call  when user selecting Optoutmode scenario in privacy card started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_Selecting_Opt_in_mode_scenario" time="69.565">
+    <failure message="Swipe did not complete successfully (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.21 seconds
+Build info: version: &apos;2.51.0&apos;, revision: &apos;1af067dbcaedd7d2ab9af5151fc471d363d97193&apos;, time: &apos;2016-02-05 11:20:57&apos;
+System info: host: &apos;Aswinikumars-MacBook-Pro.local&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.weather.Weather, statBarHeight=98, noReset=true, viewportRect={top=98, left=0, width=1440, height=2614}, deviceName=803KPXV1599674, platform=LINUX, deviceUDID=803KPXV1599674, desired={app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/The_Weather_Channel_DEBUG (22).apk, appPackage=com.weather.Weather, appium-version=1.4.13, noReset=true, newCommandTimeout=100000, platformVersion=10.0, platformName=Android, deviceName=Samsung}, appium-version=1.4.13, newCommandTimeout=100000, platformVersion=10, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceApiLevel=29, deviceManufacturer=Google, app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/The_Weather_Channel_DEBUG (22).apk, deviceScreenSize=1440x2880, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, pixelRatio=3.5, locationContextEnabled=false, deviceScreenDensity=560, deviceModel=Pixel 2 XL}]
+Session ID: e1304691-2ee2-4e6a-9b18-90e4373c1e28" type="org.openqa.selenium.InvalidElementStateException">org.openqa.selenium.InvalidElementStateException: Swipe did not complete successfully (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.21 seconds
+Build info: version: &apos;2.51.0&apos;, revision: &apos;1af067dbcaedd7d2ab9af5151fc471d363d97193&apos;, time: &apos;2016-02-05 11:20:57&apos;
+System info: host: &apos;Aswinikumars-MacBook-Pro.local&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.weather.Weather, statBarHeight=98, noReset=true, viewportRect={top=98, left=0, width=1440, height=2614}, deviceName=803KPXV1599674, platform=LINUX, deviceUDID=803KPXV1599674, desired={app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/The_Weather_Channel_DEBUG (22).apk, appPackage=com.weather.Weather, appium-version=1.4.13, noReset=true, newCommandTimeout=100000, platformVersion=10.0, platformName=Android, deviceName=Samsung}, appium-version=1.4.13, newCommandTimeout=100000, platformVersion=10, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceApiLevel=29, deviceManufacturer=Google, app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/The_Weather_Channel_DEBUG (22).apk, deviceScreenSize=1440x2880, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, pixelRatio=3.5, locationContextEnabled=false, deviceScreenDensity=560, deviceModel=Pixel 2 XL}]
+Session ID: e1304691-2ee2-4e6a-9b18-90e4373c1e28
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at io.appium.java_client.AppiumDriver.performTouchAction(AppiumDriver.java:297)
+	at io.appium.java_client.TouchAction.perform(TouchAction.java:301)
+	at io.appium.java_client.AppiumDriver.swipe(AppiumDriver.java:352)
+	at twc.Automation.General.Functions.Swipe(Functions.java:2305)
+	at twc.Automation.General.Functions.Swipe_Conter(Functions.java:3067)
+	at twc.Automation.General.Functions.Verify_Privacy_Card_onScreen(Functions.java:3038)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Selecting_Opt_in_mode_scenario(smokeTestCases.java:657)
+</failure>
+    <system-out>=================Slecting Opt in mode scenario in privacy card testcase started =========================
+Scroll the app till Privay card
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test__Smoke_Test_Verifying_videoadcall_Optinmode_scenario" time="125.954">
+    <failure message="An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 64.29 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.51.0&apos;, revision: &apos;1af067dbcaedd7d2ab9af5151fc471d363d97193&apos;, time: &apos;2016-02-05 11:20:57&apos;
+System info: host: &apos;Aswinikumars-MacBook-Pro.local&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.weather.Weather, statBarHeight=98, noReset=true, viewportRect={top=98, left=0, width=1440, height=2614}, deviceName=803KPXV1599674, platform=LINUX, deviceUDID=803KPXV1599674, desired={app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/The_Weather_Channel_DEBUG (22).apk, appPackage=com.weather.Weather, appium-version=1.4.13, noReset=true, newCommandTimeout=100000, platformVersion=10.0, platformName=Android, deviceName=Samsung}, appium-version=1.4.13, newCommandTimeout=100000, platformVersion=10, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceApiLevel=29, deviceManufacturer=Google, app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/The_Weather_Channel_DEBUG (22).apk, deviceScreenSize=1440x2880, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, pixelRatio=3.5, locationContextEnabled=false, deviceScreenDensity=560, deviceModel=Pixel 2 XL}]
+Session ID: e1304691-2ee2-4e6a-9b18-90e4373c1e28
+*** Element info: {Using=id, value=com.weather.Weather:id/mapBig}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 64.29 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.51.0&apos;, revision: &apos;1af067dbcaedd7d2ab9af5151fc471d363d97193&apos;, time: &apos;2016-02-05 11:20:57&apos;
+System info: host: &apos;Aswinikumars-MacBook-Pro.local&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.weather.Weather, statBarHeight=98, noReset=true, viewportRect={top=98, left=0, width=1440, height=2614}, deviceName=803KPXV1599674, platform=LINUX, deviceUDID=803KPXV1599674, desired={app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/The_Weather_Channel_DEBUG (22).apk, appPackage=com.weather.Weather, appium-version=1.4.13, noReset=true, newCommandTimeout=100000, platformVersion=10.0, platformName=Android, deviceName=Samsung}, appium-version=1.4.13, newCommandTimeout=100000, platformVersion=10, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceApiLevel=29, deviceManufacturer=Google, app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/The_Weather_Channel_DEBUG (22).apk, deviceScreenSize=1440x2880, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, pixelRatio=3.5, locationContextEnabled=false, deviceScreenDensity=560, deviceModel=Pixel 2 XL}]
+Session ID: e1304691-2ee2-4e6a-9b18-90e4373c1e28
+*** Element info: {Using=id, value=com.weather.Weather:id/mapBig}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at twc.Automation.General.Functions.click_Mapsdetails_element(Functions.java:3116)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test__Smoke_Test_Verifying_videoadcall_Optinmode_scenario(smokeTestCases.java:675)
+</failure>
+    <system-out>=================Verifying video Feed ad call when user selecting Optinmode scenario in privacy card started =========================
+Deleted all the files in the specified folder
+/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile
+Back button element was clicked
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_Verifying_Feedadcall_Optinmode_scenario" time="0.005">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.Verifying_gampadcalls_Optoutmode(Functions.java:3141)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_Feedadcall_Optinmode_scenario(smokeTestCases.java:689)
+</failure>
+    <system-out>=================Verifying Feed ad call when user selecting Optinmode scenario in privacy card started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_Verifying_detailpageadcall_Optinmode_scenario" time="0.004">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.Verifying_detail_gampadcalls_Optoutmode(Functions.java:3154)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_detailpageadcall_Optinmode_scenario(smokeTestCases.java:701)
+</failure>
+    <system-out>=================Verifying detail page Feed ad call when user selecting Optinmode scenario in privacy card started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test__Verifying_Bcp_apicall_Optinmode_scenario" time="0.005">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validating_bcp_privacy_Optinmode_scenarion(Functions.java:3255)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test__Verifying_Bcp_apicall_Optinmode_scenario(smokeTestCases.java:713)
+</failure>
+    <system-out>=================Verifying BCP api call when user selecting Optinmode scenario in privacy card started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test__Verifying_adcrw_apicall_Optinmode_scenario" time="0.005">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validating_adcrw_privacy_Optinmode_scenarion(Functions.java:3275)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test__Verifying_adcrw_apicall_Optinmode_scenario(smokeTestCases.java:725)
+</failure>
+    <system-out>=================Verifying adcrw api call when user selecting Optinmode scenario in privacy card started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test__Verifying_locaion_apicall_Optinmode_scenario" time="0.007">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validating_Fatualcall_privacy_Optinmode_scenarion(Functions.java:3295)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test__Verifying_locaion_apicall_Optinmode_scenario(smokeTestCases.java:737)
+</failure>
+    <system-out>=================Verifying Fatcual api call when user selecting Optinmode scenario in privacy card started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test__Verifying_amaozn_aax_calls_Optinmode_scenario" time="0.004">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validating_aax_privacy_Optinmode_scenario(Functions.java:3560)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test__Verifying_amaozn_aax_calls_Optinmode_scenario(smokeTestCases.java:749)
+</failure>
+    <system-out>=================Verifying amazon aax calls when user selecting Optinmode scenario in privacy card started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test__Verifying_homescreenhourly_calls_Optinmode_scenario" time="0.008">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.finding_Homescreen_iu_value(Functions.java:2317)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test__Verifying_homescreenhourly_calls_Optinmode_scenario(smokeTestCases.java:760)
+</failure>
+    <system-out>=================Verifying homescreen hourly ad calls when user selecting Optinmode scenario in privacy card started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test__Verifying_marqueehomescreecall_Optinmode_scenario" time="0.006">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.finding_Homescreen_marquee_iu_value(Functions.java:3022)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test__Verifying_marqueehomescreecall_Optinmode_scenario(smokeTestCases.java:772)
+</failure>
+    <system-out>=================Verifying homescreen marquee ad calls when user selecting Optinmode scenario in privacy card started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_Verifying_SOD_Cust_Param_homescreenad_Optinmode_scenario" time="0.006">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validate_SOD_Cust_param_homescreen_Optinmode(Functions.java:3720)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_SOD_Cust_Param_homescreenad_Optinmode_scenario(smokeTestCases.java:785)
+</failure>
+    <system-out>================= Verifying SOD CUST_PARAM value for home screen call  when user selecting Optinmode scenario in privacy card started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_Verifying_SOD_Cust_Param_Feedad_Optinmode_scenario" time="0.008">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validate_SOD_Cust_param_feed_Optinmode(Functions.java:3749)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_SOD_Cust_Param_Feedad_Optinmode_scenario(smokeTestCases.java:795)
+</failure>
+    <system-out>================= Verifying SOD CUST_PARAM value for Feed ad call  when user selecting Optinmode scenario in privacy card started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_Verifying_SOD_Cust_Param_detail_Feedad_Optinmode_scenario" time="0.01">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validate_SOD_Cust_param_deatiledfeed_Optinmode(Functions.java:3777)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_SOD_Cust_Param_detail_Feedad_Optinmode_scenario(smokeTestCases.java:804)
+</failure>
+    <system-out>================= Verifying SOD CUST_PARAM value for  detailed Feed ad call  when user selecting Optinmode scenario in privacy card started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_Verifying_SOD_Cust_Param_videoad_Optinmode_scenario" time="0.008">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validate_SOD_Cust_param_video_Optinmode(Functions.java:3805)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_SOD_Cust_Param_videoad_Optinmode_scenario(smokeTestCases.java:813)
+</failure>
+    <system-out>================= Verifying SOD CUST_PARAM value for video ad call  when user selecting Optinmode scenario in privacy card started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_Verifying_RDP_value_homescreenad_Optinmode_scenario" time="0.016">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validate_RDP_homescreen_Optinmode(Functions.java:3926)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_RDP_value_homescreenad_Optinmode_scenario(smokeTestCases.java:821)
+</failure>
+    <system-out>================= Verifying RDP value for home screen call  when user selecting Optinmode scenario in privacy card started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_Verifying_RDP_value_feedad_Optinmode_scenario" time="0.007">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validate_RDP_feed_Optinmode(Functions.java:3948)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_RDP_value_feedad_Optinmode_scenario(smokeTestCases.java:830)
+</failure>
+    <system-out>================= Verifying RDP value for feed ad  call  when user selecting Optinmode scenario in privacy card started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_Verifying_RDP_value_detailed_feedad_Optinmode_scenario" time="0.007">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validate_RDP_detailed_feed_Optinmode(Functions.java:3970)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_RDP_value_detailed_feedad_Optinmode_scenario(smokeTestCases.java:840)
+</failure>
+    <system-out>================= Verifying RDP value for detailed feed ad  call  when user selecting Optinmode scenario in privacy card started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_Verifying_RDP_value_video_adcall_Optinmode_scenario" time="0.007">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validate_RDP_video_ad_Optinmode(Functions.java:3992)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_RDP_value_video_adcall_Optinmode_scenario(smokeTestCases.java:849)
+</failure>
+    <system-out>================= Verifying RDP value for video  ad call  when user selecting Optinmode scenario in privacy card started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_Verifying_homescreenhourly__backfromdetailedpage_scenario" time="107.829"/>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_Verifying_homescreenmarquee_backfromdetailedpage__scenario" time="0.076"/>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_NextGen_IM_adunit" time="318.208">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.nextgenim_adunit(Functions.java:3354)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_NextGen_IM_adunit(smokeTestCases.java:951)
+</failure>
+    <system-out>================= Verify  NextGen IM adunit testcase Started =========================
+Cleared Session
+Deleted all the files in the specified folder
+/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile
+Exporting The Session Data Into XML File
+Exported Session
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_verifying_NextGenIM_response" time="0.441">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.nextgenim_adcall_response(Functions.java:3370)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_verifying_NextGenIM_response(smokeTestCases.java:960)
+</failure>
+    <system-out>================= Verify  NextGen IM ad response testcase started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_verifying_FG_BG_urls_NextgenIm_Ad" time="0.003">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validate_FG_BG_adcalls_NextGenIM(Functions.java:3422)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_verifying_FG_BG_urls_NextgenIm_Ad(smokeTestCases.java:971)
+</failure>
+    <system-out>================= Verify  Nextgen Im adunit response testcase started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_verifying_Size_NextgenIm_Ad" time="0.003">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validate_Size_NextGenIM(Functions.java:3443)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_verifying_Size_NextgenIm_Ad(smokeTestCases.java:983)
+</failure>
+    <system-out>================= Verify  Nextgen Im adunit response testcase started =========================
+No Data Found in XML File
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_Verify_dailyIF_card_adcall_iu" time="332.336">
+    <failure message="7646/app_android_us/db_display/card/daily call was not trigred" type="java.lang.AssertionError">java.lang.AssertionError: 7646/app_android_us/db_display/card/daily call was not trigred
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Automation.General.Functions.Verify_dailycard_iu(Functions.java:2632)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_dailyIF_card_adcall_iu(smokeTestCases.java:999)
+</failure>
+    <system-out>================= Verifyig daily adcall_iu Started =========================
+Cleared Session
+Deleted all the files in the specified folder
+/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/CapturedSessionFile
+Exporting The Session Data Into XML File
+Exported Session
+XML File Name is : charles202004082012.chlsx
+/7646/app_android_us/db_display/card/daily call was not trigred
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_verifying_DailyIFcardResponse" time="0.348">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_excel_data.exceldataread(read_excel_data.java:25)
+	at twc.Automation.General.Functions.dailyIFCard_adcall_response(Functions.java:3471)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_verifying_DailyIFcardResponse(smokeTestCases.java:1008)
+</failure>
+    <system-out>================= Verify  Daily IF card response testcase started =========================
+XML File Name is : charles202004082012.chlsx
+</system-out>
+  </testcase>
+  <testcase classname="twc.Automation.SmokeTestCases.smokeTestCases" name="Smoke_Test_verifying_FG_BG_urls_DailyIF_Card" time="0.354">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_excel_data.exceldataread(read_excel_data.java:25)
+	at twc.Automation.General.Functions.validate_FG_BG_adcalls_DailyIFcards(Functions.java:3523)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_verifying_FG_BG_urls_DailyIF_Card(smokeTestCases.java:1017)
+</failure>
+    <system-out>================= Verify  Nextgen Im adunit response testcase started =========================
+XML File Name is : charles202004082012.chlsx
+</system-out>
+  </testcase>
+</testsuite>

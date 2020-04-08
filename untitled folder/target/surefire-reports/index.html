@@ -1,0 +1,2438 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 70 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">77 methods, 70 failed,   7 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_CaseVerify_AQ_aax_amazon_adcalll">Smoke_Test_CaseVerify_AQ_aax_amazon_adcalll</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_CaseVerify_Health_Activities_feed_adcall">Smoke_Test_CaseVerify_Health_Activities_feed_adcall</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_CaseVerify_Radar_Maps_deatailscard_adcall">Smoke_Test_CaseVerify_Radar_Maps_deatailscard_adcall</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_CaseVerify_Radar_Maps_feedcard_adcall">Smoke_Test_CaseVerify_Radar_Maps_feedcard_adcall</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_CaseVerify_adcrwdcntrlnet_url">Smoke_Test_CaseVerify_adcrwdcntrlnet_url</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll">Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_CaseVerify_news_aax_amazon_adcalll">Smoke_Test_CaseVerify_news_aax_amazon_adcalll</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_CaseVerify_seasonalhub_feed_adcall">Smoke_Test_CaseVerify_seasonalhub_feed_adcall</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Case_Verify_Video_adCalll">Smoke_Test_Case_Verify_Video_adCalll</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_NextGen_IM_adunit">Smoke_Test_NextGen_IM_adunit</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Selecting_Opt_in_mode_scenario">Smoke_Test_Selecting_Opt_in_mode_scenario</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verify_News_detailpage_adcall_iu">Smoke_Test_Verify_News_detailpage_adcall_iu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verify_News_hurricane_detail_adcall_iu">Smoke_Test_Verify_News_hurricane_detail_adcall_iu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verify_PrivacyCard_onScreen">Smoke_Test_Verify_PrivacyCard_onScreen</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verify_SeasonalHub_detailpage_adcall_iu">Smoke_Test_Verify_SeasonalHub_detailpage_adcall_iu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verify_WatsonFlu_adcall">Smoke_Test_Verify_WatsonFlu_adcall</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verify_amazon_aax_Running_Bigbanner_ad">Smoke_Test_Verify_amazon_aax_Running_Bigbanner_ad</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verify_dailyIF_card_adcall_iu">Smoke_Test_Verify_dailyIF_card_adcall_iu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verify_daily_card_adcall_iu">Smoke_Test_Verify_daily_card_adcall_iu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verify_health_and_activities_Air_Quality_detailpage_adcall_iu">Smoke_Test_Verify_health_and_activities_Air_Quality_detailpage_adcall_iu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verify_health_and_activities_Allergy_detailpage_adcall_iu">Smoke_Test_Verify_health_and_activities_Allergy_detailpage_adcall_iu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verify_health_and_activities_Bot_beach_detailpage_adcall_iu">Smoke_Test_Verify_health_and_activities_Bot_beach_detailpage_adcall_iu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verify_health_and_activities_Running_spotlight_adcall_iu">Smoke_Test_Verify_health_and_activities_Running_spotlight_adcall_iu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verify_health_and_activities_cold_flu_Spotlight_adcall_iu">Smoke_Test_Verify_health_and_activities_cold_flu_Spotlight_adcall_iu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verify_hourly_detailpage_adcall_iu">Smoke_Test_Verify_hourly_detailpage_adcall_iu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verifying_Feedadcall_Optinmode_scenario">Smoke_Test_Verifying_Feedadcall_Optinmode_scenario</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verifying_Feedadcall_Optoutmode_scenario">Smoke_Test_Verifying_Feedadcall_Optoutmode_scenario</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verifying_RDP_value_detailed_feedad_Optinmode_scenario">Smoke_Test_Verifying_RDP_value_detailed_feedad_Optinmode_scenario</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verifying_RDP_value_detailed_feedad_Optoutmode_scenario">Smoke_Test_Verifying_RDP_value_detailed_feedad_Optoutmode_scenario</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verifying_RDP_value_feedad_Optinmode_scenario">Smoke_Test_Verifying_RDP_value_feedad_Optinmode_scenario</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verifying_RDP_value_feedad_Optoutmode_scenario">Smoke_Test_Verifying_RDP_value_feedad_Optoutmode_scenario</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verifying_RDP_value_homescreenad_Optinmode_scenario">Smoke_Test_Verifying_RDP_value_homescreenad_Optinmode_scenario</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verifying_RDP_value_homescreenad_Optoutmode_scenario">Smoke_Test_Verifying_RDP_value_homescreenad_Optoutmode_scenario</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verifying_RDP_value_video_adcall_Optinmode_scenario">Smoke_Test_Verifying_RDP_value_video_adcall_Optinmode_scenario</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verifying_RDP_value_video_adcall_Optoutmode_scenario">Smoke_Test_Verifying_RDP_value_video_adcall_Optoutmode_scenario</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verifying_SOD_Cust_Param_Feedad_Optinmode_scenario">Smoke_Test_Verifying_SOD_Cust_Param_Feedad_Optinmode_scenario</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verifying_SOD_Cust_Param_Feedad_Optoutmode_scenario">Smoke_Test_Verifying_SOD_Cust_Param_Feedad_Optoutmode_scenario</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verifying_SOD_Cust_Param_detail_Feedad_Optinmode_scenario">Smoke_Test_Verifying_SOD_Cust_Param_detail_Feedad_Optinmode_scenario</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verifying_SOD_Cust_Param_detail_Feedad_Optoutmode_scenario">Smoke_Test_Verifying_SOD_Cust_Param_detail_Feedad_Optoutmode_scenario</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verifying_SOD_Cust_Param_homescreenad_Optinmode_scenario">Smoke_Test_Verifying_SOD_Cust_Param_homescreenad_Optinmode_scenario</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verifying_SOD_Cust_Param_homescreenad_Optoutmode_scenario">Smoke_Test_Verifying_SOD_Cust_Param_homescreenad_Optoutmode_scenario</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verifying_SOD_Cust_Param_videoad_Optinmode_scenario">Smoke_Test_Verifying_SOD_Cust_Param_videoad_Optinmode_scenario</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verifying_SOD_Cust_Param_videoad_Optoutmode_scenario">Smoke_Test_Verifying_SOD_Cust_Param_videoad_Optoutmode_scenario</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verifying_detailpageadcall_Optinmode_scenario">Smoke_Test_Verifying_detailpageadcall_Optinmode_scenario</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verifying_detailpageadcall_Optoutmode_scenario">Smoke_Test_Verifying_detailpageadcall_Optoutmode_scenario</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test__Smoke_Test_Verifying_videoadcall_Optinmode_scenario">Smoke_Test__Smoke_Test_Verifying_videoadcall_Optinmode_scenario</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test__Smoke_Test_Verifying_videoadcall_Optoutmode_scenario">Smoke_Test__Smoke_Test_Verifying_videoadcall_Optoutmode_scenario</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test__Verifying_Bcp_apicall_Optinmode_scenario">Smoke_Test__Verifying_Bcp_apicall_Optinmode_scenario</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test__Verifying_Bcp_apicall_Optoutmode_scenario">Smoke_Test__Verifying_Bcp_apicall_Optoutmode_scenario</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test__Verifying_adcrw_apicall_Optinmode_scenario">Smoke_Test__Verifying_adcrw_apicall_Optinmode_scenario</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test__Verifying_adcrw_apicall_Optoutmode_scenario">Smoke_Test__Verifying_adcrw_apicall_Optoutmode_scenario</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test__Verifying_amaozn_aax_calls_Optinmode_scenario">Smoke_Test__Verifying_amaozn_aax_calls_Optinmode_scenario</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test__Verifying_amaozn_aax_calls_Optoutmode_scenario">Smoke_Test__Verifying_amaozn_aax_calls_Optoutmode_scenario</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test__Verifying_homescreenhourly_calls_Optinmode_scenario">Smoke_Test__Verifying_homescreenhourly_calls_Optinmode_scenario</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test__Verifying_homescreenhourly_calls_Optoutmode_scenario">Smoke_Test__Verifying_homescreenhourly_calls_Optoutmode_scenario</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test__Verifying_locaion_apicall_Optinmode_scenario">Smoke_Test__Verifying_locaion_apicall_Optinmode_scenario</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test__Verifying_locaion_apicall_Optoutmode_scenario">Smoke_Test__Verifying_locaion_apicall_Optoutmode_scenario</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test__Verifying_marqueehomescreecall_Optinmode_scenario">Smoke_Test__Verifying_marqueehomescreecall_Optinmode_scenario</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test__Verifying_marqueehomescreecall_Optoutmode_scenario">Smoke_Test__Verifying_marqueehomescreecall_Optoutmode_scenario</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_amazon_aax_AQ_card_preload_adcall">Smoke_Test_amazon_aax_AQ_card_preload_adcall</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_amazon_aax_Daily_preload_adcall">Smoke_Test_amazon_aax_Daily_preload_adcall</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_amazon_aax_Hourly_preload_adcall">Smoke_Test_amazon_aax_Hourly_preload_adcall</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_amazon_aax_home_screen_today_preload_adcall__iu">Smoke_Test_amazon_aax_home_screen_today_preload_adcall__iu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_amazon_aax_mapsdetails_preload_adcall">Smoke_Test_amazon_aax_mapsdetails_preload_adcall</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_amazon_aax_rader_card_preload_adcall">Smoke_Test_amazon_aax_rader_card_preload_adcall</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_verifying_DailyIFcardResponse">Smoke_Test_verifying_DailyIFcardResponse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_verifying_FG_BG_urls_DailyIF_Card">Smoke_Test_verifying_FG_BG_urls_DailyIF_Card</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_verifying_FG_BG_urls_NextgenIm_Ad">Smoke_Test_verifying_FG_BG_urls_NextgenIm_Ad</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_verifying_NextGenIM_response">Smoke_Test_verifying_NextGenIM_response</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_verifying_Size_NextgenIm_Ad">Smoke_Test_verifying_Size_NextgenIm_Ad</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_CaseVerify_Homescreen_ad_iu">Smoke_Test_CaseVerify_Homescreen_ad_iu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_CaseVerify_Homescreen_marque_ad_iu">Smoke_Test_CaseVerify_Homescreen_marque_ad_iu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_CaseVerify_WeatherFXAPI_url">Smoke_Test_CaseVerify_WeatherFXAPI_url</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_CaseVerify_turbo_url">Smoke_Test_CaseVerify_turbo_url</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Selecting_Opt_out_mode_scenario">Smoke_Test_Selecting_Opt_out_mode_scenario</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verifying_homescreenhourly__backfromdetailedpage_scenario">Smoke_Test_Verifying_homescreenhourly__backfromdetailedpage_scenario</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="twc.Automation.SmokeTestCases.smokeTestCases" hash-for-method="Smoke_Test_Verifying_homescreenmarquee_backfromdetailedpage__scenario">Smoke_Test_Verifying_homescreenmarquee_backfromdetailedpage__scenario</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">twc.Automation.SmokeTestCases.smokeTestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_CaseVerify_AQ_aax_amazon_adcalll">
+                  </a> <!-- Smoke_Test_CaseVerify_AQ_aax_amazon_adcalll -->
+                  <span class="method-name">Smoke_Test_CaseVerify_AQ_aax_amazon_adcalll</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.get_aaxcal_AQ(Functions.java:2919)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_CaseVerify_AQ_aax_amazon_adcalll(smokeTestCases.java:407)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_CaseVerify_Health_Activities_feed_adcall">
+                  </a> <!-- Smoke_Test_CaseVerify_Health_Activities_feed_adcall -->
+                  <span class="method-name">Smoke_Test_CaseVerify_Health_Activities_feed_adcall</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.finding_H_C_adcalL_iu(Functions.java:2413)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_CaseVerify_Health_Activities_feed_adcall(smokeTestCases.java:256)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_CaseVerify_Radar_Maps_deatailscard_adcall">
+                  </a> <!-- Smoke_Test_CaseVerify_Radar_Maps_deatailscard_adcall -->
+                  <span class="method-name">Smoke_Test_CaseVerify_Radar_Maps_deatailscard_adcall</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.finding_Radar_Map_card_iu_value(Functions.java:2358)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_CaseVerify_Radar_Maps_deatailscard_adcall(smokeTestCases.java:228)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_CaseVerify_Radar_Maps_feedcard_adcall">
+                  </a> <!-- Smoke_Test_CaseVerify_Radar_Maps_feedcard_adcall -->
+                  <span class="method-name">Smoke_Test_CaseVerify_Radar_Maps_feedcard_adcall</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.finding_Radar_Map_feedcard_iu_value(Functions.java:2376)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_CaseVerify_Radar_Maps_feedcard_adcall(smokeTestCases.java:219)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_CaseVerify_adcrwdcntrlnet_url">
+                  </a> <!-- Smoke_Test_CaseVerify_adcrwdcntrlnet_url -->
+                  <span class="method-name">Smoke_Test_CaseVerify_adcrwdcntrlnet_url</span>
+                  <div class="stack-trace">java.lang.AssertionError: https://ad.crwdcntrl.net/ url was not trigred
+	at twc.Automation.General.Functions.validating_adcrw(Functions.java:2684)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_CaseVerify_adcrwdcntrlnet_url(smokeTestCases.java:139)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll">
+                  </a> <!-- Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll -->
+                  <span class="method-name">Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.get_aaxcal_hurricanedetails(Functions.java:2947)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll(smokeTestCases.java:434)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_CaseVerify_news_aax_amazon_adcalll">
+                  </a> <!-- Smoke_Test_CaseVerify_news_aax_amazon_adcalll -->
+                  <span class="method-name">Smoke_Test_CaseVerify_news_aax_amazon_adcalll</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.get_aaxcal_news(Functions.java:2933)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_CaseVerify_news_aax_amazon_adcalll(smokeTestCases.java:416)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_CaseVerify_seasonalhub_feed_adcall">
+                  </a> <!-- Smoke_Test_CaseVerify_seasonalhub_feed_adcall -->
+                  <span class="method-name">Smoke_Test_CaseVerify_seasonalhub_feed_adcall</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.finding_Seasonalhub_adcalL_iu(Functions.java:2432)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_CaseVerify_seasonalhub_feed_adcall(smokeTestCases.java:350)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Case_Verify_Video_adCalll">
+                  </a> <!-- Smoke_Test_Case_Verify_Video_adCalll -->
+                  <span class="method-name">Smoke_Test_Case_Verify_Video_adCalll</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 60.79 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.51.0&apos;, revision: &apos;1af067dbcaedd7d2ab9af5151fc471d363d97193&apos;, time: &apos;2016-02-05 11:20:57&apos;
+System info: host: &apos;Aswinikumars-MacBook-Pro.local&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.weather.Weather, statBarHeight=98, noReset=true, viewportRect={top=98, left=0, width=1440, height=2614}, deviceName=803KPXV1599674, platform=LINUX, deviceUDID=803KPXV1599674, desired={app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/The_Weather_Channel_DEBUG (22).apk, appPackage=com.weather.Weather, appium-version=1.4.13, noReset=true, newCommandTimeout=100000, platformVersion=10.0, platformName=Android, deviceName=Samsung}, appium-version=1.4.13, newCommandTimeout=100000, platformVersion=10, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceApiLevel=29, deviceManufacturer=Google, app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/The_Weather_Channel_DEBUG (22).apk, deviceScreenSize=1440x2880, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, pixelRatio=3.5, locationContextEnabled=false, deviceScreenDensity=560, deviceModel=Pixel 2 XL}]
+Session ID: e1304691-2ee2-4e6a-9b18-90e4373c1e28
+*** Element info: {Using=id, value=com.weather.Weather:id/mapBig}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at twc.Automation.HandleWithAppium.AppiumFunctions.clickOnRadarMaps(AppiumFunctions.java:464)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Case_Verify_Video_adCalll(smokeTestCases.java:180)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_NextGen_IM_adunit">
+                  </a> <!-- Smoke_Test_NextGen_IM_adunit -->
+                  <span class="method-name">Smoke_Test_NextGen_IM_adunit</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.nextgenim_adunit(Functions.java:3354)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_NextGen_IM_adunit(smokeTestCases.java:951)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Selecting_Opt_in_mode_scenario">
+                  </a> <!-- Smoke_Test_Selecting_Opt_in_mode_scenario -->
+                  <span class="method-name">Smoke_Test_Selecting_Opt_in_mode_scenario</span>
+                  <div class="stack-trace">org.openqa.selenium.InvalidElementStateException: Swipe did not complete successfully (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.21 seconds
+Build info: version: &apos;2.51.0&apos;, revision: &apos;1af067dbcaedd7d2ab9af5151fc471d363d97193&apos;, time: &apos;2016-02-05 11:20:57&apos;
+System info: host: &apos;Aswinikumars-MacBook-Pro.local&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.weather.Weather, statBarHeight=98, noReset=true, viewportRect={top=98, left=0, width=1440, height=2614}, deviceName=803KPXV1599674, platform=LINUX, deviceUDID=803KPXV1599674, desired={app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/The_Weather_Channel_DEBUG (22).apk, appPackage=com.weather.Weather, appium-version=1.4.13, noReset=true, newCommandTimeout=100000, platformVersion=10.0, platformName=Android, deviceName=Samsung}, appium-version=1.4.13, newCommandTimeout=100000, platformVersion=10, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceApiLevel=29, deviceManufacturer=Google, app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/The_Weather_Channel_DEBUG (22).apk, deviceScreenSize=1440x2880, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, pixelRatio=3.5, locationContextEnabled=false, deviceScreenDensity=560, deviceModel=Pixel 2 XL}]
+Session ID: e1304691-2ee2-4e6a-9b18-90e4373c1e28
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at io.appium.java_client.AppiumDriver.performTouchAction(AppiumDriver.java:297)
+	at io.appium.java_client.TouchAction.perform(TouchAction.java:301)
+	at io.appium.java_client.AppiumDriver.swipe(AppiumDriver.java:352)
+	at twc.Automation.General.Functions.Swipe(Functions.java:2305)
+	at twc.Automation.General.Functions.Swipe_Conter(Functions.java:3067)
+	at twc.Automation.General.Functions.Verify_Privacy_Card_onScreen(Functions.java:3038)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Selecting_Opt_in_mode_scenario(smokeTestCases.java:657)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verify_News_detailpage_adcall_iu">
+                  </a> <!-- Smoke_Test_Verify_News_detailpage_adcall_iu -->
+                  <span class="method-name">Smoke_Test_Verify_News_detailpage_adcall_iu</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.Verify_News_detailpage_adcall_iu(Functions.java:2590)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_News_detailpage_adcall_iu(smokeTestCases.java:374)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verify_News_hurricane_detail_adcall_iu">
+                  </a> <!-- Smoke_Test_Verify_News_hurricane_detail_adcall_iu -->
+                  <span class="method-name">Smoke_Test_Verify_News_hurricane_detail_adcall_iu</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.Verify_Hurricane_detailpage_adcall_iu(Functions.java:2573)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_News_hurricane_detail_adcall_iu(smokeTestCases.java:382)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verify_PrivacyCard_onScreen">
+                  </a> <!-- Smoke_Test_Verify_PrivacyCard_onScreen -->
+                  <span class="method-name">Smoke_Test_Verify_PrivacyCard_onScreen</span>
+                  <div class="stack-trace">org.openqa.selenium.InvalidElementStateException: Swipe did not complete successfully (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 853 milliseconds
+Build info: version: &apos;2.51.0&apos;, revision: &apos;1af067dbcaedd7d2ab9af5151fc471d363d97193&apos;, time: &apos;2016-02-05 11:20:57&apos;
+System info: host: &apos;Aswinikumars-MacBook-Pro.local&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.weather.Weather, statBarHeight=98, noReset=true, viewportRect={top=98, left=0, width=1440, height=2614}, deviceName=803KPXV1599674, platform=LINUX, deviceUDID=803KPXV1599674, desired={app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/The_Weather_Channel_DEBUG (22).apk, appPackage=com.weather.Weather, appium-version=1.4.13, noReset=true, newCommandTimeout=100000, platformVersion=10.0, platformName=Android, deviceName=Samsung}, appium-version=1.4.13, newCommandTimeout=100000, platformVersion=10, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceApiLevel=29, deviceManufacturer=Google, app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/The_Weather_Channel_DEBUG (22).apk, deviceScreenSize=1440x2880, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, pixelRatio=3.5, locationContextEnabled=false, deviceScreenDensity=560, deviceModel=Pixel 2 XL}]
+Session ID: e1304691-2ee2-4e6a-9b18-90e4373c1e28
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at io.appium.java_client.AppiumDriver.performTouchAction(AppiumDriver.java:297)
+	at io.appium.java_client.TouchAction.perform(TouchAction.java:301)
+	at io.appium.java_client.AppiumDriver.swipe(AppiumDriver.java:352)
+	at twc.Automation.General.Functions.Swipe(Functions.java:2305)
+	at twc.Automation.General.Functions.Swipe_Conter(Functions.java:3067)
+	at twc.Automation.General.Functions.Verify_Privacy_Card_onScreen(Functions.java:3038)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_PrivacyCard_onScreen(smokeTestCases.java:445)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verify_SeasonalHub_detailpage_adcall_iu">
+                  </a> <!-- Smoke_Test_Verify_SeasonalHub_detailpage_adcall_iu -->
+                  <span class="method-name">Smoke_Test_Verify_SeasonalHub_detailpage_adcall_iu</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.Verify_SH_detailpage_adcall_iu(Functions.java:4027)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_SeasonalHub_detailpage_adcall_iu(smokeTestCases.java:297)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verify_WatsonFlu_adcall">
+                  </a> <!-- Smoke_Test_Verify_WatsonFlu_adcall -->
+                  <span class="method-name">Smoke_Test_Verify_WatsonFlu_adcall</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.finding_watsonFlu_card_iu_value(Functions.java:4046)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_WatsonFlu_adcall(smokeTestCases.java:307)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verify_amazon_aax_Running_Bigbanner_ad">
+                  </a> <!-- Smoke_Test_Verify_amazon_aax_Running_Bigbanner_ad -->
+                  <span class="method-name">Smoke_Test_Verify_amazon_aax_Running_Bigbanner_ad</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.get_aaxcal_Running_Bigbanner(Functions.java:2960)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_amazon_aax_Running_Bigbanner_ad(smokeTestCases.java:334)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verify_dailyIF_card_adcall_iu">
+                  </a> <!-- Smoke_Test_Verify_dailyIF_card_adcall_iu -->
+                  <span class="method-name">Smoke_Test_Verify_dailyIF_card_adcall_iu</span>
+                  <div class="stack-trace">java.lang.AssertionError: 7646/app_android_us/db_display/card/daily call was not trigred
+	at twc.Automation.General.Functions.Verify_dailycard_iu(Functions.java:2632)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_dailyIF_card_adcall_iu(smokeTestCases.java:999)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verify_daily_card_adcall_iu">
+                  </a> <!-- Smoke_Test_Verify_daily_card_adcall_iu -->
+                  <span class="method-name">Smoke_Test_Verify_daily_card_adcall_iu</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.Verify_dailycard_iu(Functions.java:2625)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_daily_card_adcall_iu(smokeTestCases.java:398)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verify_health_and_activities_Air_Quality_detailpage_adcall_iu">
+                  </a> <!-- Smoke_Test_Verify_health_and_activities_Air_Quality_detailpage_adcall_iu -->
+                  <span class="method-name">Smoke_Test_Verify_health_and_activities_Air_Quality_detailpage_adcall_iu</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.health_and_activities_AirQuality_detailpage_adcall_iu(Functions.java:2556)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_health_and_activities_Air_Quality_detailpage_adcall_iu(smokeTestCases.java:358)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verify_health_and_activities_Allergy_detailpage_adcall_iu">
+                  </a> <!-- Smoke_Test_Verify_health_and_activities_Allergy_detailpage_adcall_iu -->
+                  <span class="method-name">Smoke_Test_Verify_health_and_activities_Allergy_detailpage_adcall_iu</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.health_and_activities_Allergy_detailpage_adcall_iu(Functions.java:2521)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_health_and_activities_Allergy_detailpage_adcall_iu(smokeTestCases.java:279)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verify_health_and_activities_Bot_beach_detailpage_adcall_iu">
+                  </a> <!-- Smoke_Test_Verify_health_and_activities_Bot_beach_detailpage_adcall_iu -->
+                  <span class="method-name">Smoke_Test_Verify_health_and_activities_Bot_beach_detailpage_adcall_iu</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.health_and_activities_Boat_beach_detailpage_adcall_iu(Functions.java:2503)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_health_and_activities_Bot_beach_detailpage_adcall_iu(smokeTestCases.java:271)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verify_health_and_activities_Running_spotlight_adcall_iu">
+                  </a> <!-- Smoke_Test_Verify_health_and_activities_Running_spotlight_adcall_iu -->
+                  <span class="method-name">Smoke_Test_Verify_health_and_activities_Running_spotlight_adcall_iu</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.health_and_activities_Running_spotlight_adcall_iu(Functions.java:2468)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_health_and_activities_Running_spotlight_adcall_iu(smokeTestCases.java:263)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verify_health_and_activities_cold_flu_Spotlight_adcall_iu">
+                  </a> <!-- Smoke_Test_Verify_health_and_activities_cold_flu_Spotlight_adcall_iu -->
+                  <span class="method-name">Smoke_Test_Verify_health_and_activities_cold_flu_Spotlight_adcall_iu</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.health_and_activities_Cold_Flu_detailpage_adcall_iu(Functions.java:2539)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_health_and_activities_cold_flu_Spotlight_adcall_iu(smokeTestCases.java:287)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verify_hourly_detailpage_adcall_iu">
+                  </a> <!-- Smoke_Test_Verify_hourly_detailpage_adcall_iu -->
+                  <span class="method-name">Smoke_Test_Verify_hourly_detailpage_adcall_iu</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.Verify_hourly_detailpage_adcall_iu(Functions.java:2607)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verify_hourly_detailpage_adcall_iu(smokeTestCases.java:426)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verifying_Feedadcall_Optinmode_scenario">
+                  </a> <!-- Smoke_Test_Verifying_Feedadcall_Optinmode_scenario -->
+                  <span class="method-name">Smoke_Test_Verifying_Feedadcall_Optinmode_scenario</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.Verifying_gampadcalls_Optoutmode(Functions.java:3141)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_Feedadcall_Optinmode_scenario(smokeTestCases.java:689)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verifying_Feedadcall_Optoutmode_scenario">
+                  </a> <!-- Smoke_Test_Verifying_Feedadcall_Optoutmode_scenario -->
+                  <span class="method-name">Smoke_Test_Verifying_Feedadcall_Optoutmode_scenario</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.Verifying_gampadcalls_Optoutmode(Functions.java:3141)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_Feedadcall_Optoutmode_scenario(smokeTestCases.java:486)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verifying_RDP_value_detailed_feedad_Optinmode_scenario">
+                  </a> <!-- Smoke_Test_Verifying_RDP_value_detailed_feedad_Optinmode_scenario -->
+                  <span class="method-name">Smoke_Test_Verifying_RDP_value_detailed_feedad_Optinmode_scenario</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validate_RDP_detailed_feed_Optinmode(Functions.java:3970)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_RDP_value_detailed_feedad_Optinmode_scenario(smokeTestCases.java:840)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verifying_RDP_value_detailed_feedad_Optoutmode_scenario">
+                  </a> <!-- Smoke_Test_Verifying_RDP_value_detailed_feedad_Optoutmode_scenario -->
+                  <span class="method-name">Smoke_Test_Verifying_RDP_value_detailed_feedad_Optoutmode_scenario</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validate_RDP_detailed_feed_Optoutmode(Functions.java:3877)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_RDP_value_detailed_feedad_Optoutmode_scenario(smokeTestCases.java:636)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verifying_RDP_value_feedad_Optinmode_scenario">
+                  </a> <!-- Smoke_Test_Verifying_RDP_value_feedad_Optinmode_scenario -->
+                  <span class="method-name">Smoke_Test_Verifying_RDP_value_feedad_Optinmode_scenario</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validate_RDP_feed_Optinmode(Functions.java:3948)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_RDP_value_feedad_Optinmode_scenario(smokeTestCases.java:830)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verifying_RDP_value_feedad_Optoutmode_scenario">
+                  </a> <!-- Smoke_Test_Verifying_RDP_value_feedad_Optoutmode_scenario -->
+                  <span class="method-name">Smoke_Test_Verifying_RDP_value_feedad_Optoutmode_scenario</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validate_RDP_feed_Optoutmode(Functions.java:3856)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_RDP_value_feedad_Optoutmode_scenario(smokeTestCases.java:626)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verifying_RDP_value_homescreenad_Optinmode_scenario">
+                  </a> <!-- Smoke_Test_Verifying_RDP_value_homescreenad_Optinmode_scenario -->
+                  <span class="method-name">Smoke_Test_Verifying_RDP_value_homescreenad_Optinmode_scenario</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validate_RDP_homescreen_Optinmode(Functions.java:3926)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_RDP_value_homescreenad_Optinmode_scenario(smokeTestCases.java:821)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verifying_RDP_value_homescreenad_Optoutmode_scenario">
+                  </a> <!-- Smoke_Test_Verifying_RDP_value_homescreenad_Optoutmode_scenario -->
+                  <span class="method-name">Smoke_Test_Verifying_RDP_value_homescreenad_Optoutmode_scenario</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validate_RDP_homescreen_Optoutmode(Functions.java:3835)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_RDP_value_homescreenad_Optoutmode_scenario(smokeTestCases.java:617)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verifying_RDP_value_video_adcall_Optinmode_scenario">
+                  </a> <!-- Smoke_Test_Verifying_RDP_value_video_adcall_Optinmode_scenario -->
+                  <span class="method-name">Smoke_Test_Verifying_RDP_value_video_adcall_Optinmode_scenario</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validate_RDP_video_ad_Optinmode(Functions.java:3992)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_RDP_value_video_adcall_Optinmode_scenario(smokeTestCases.java:849)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verifying_RDP_value_video_adcall_Optoutmode_scenario">
+                  </a> <!-- Smoke_Test_Verifying_RDP_value_video_adcall_Optoutmode_scenario -->
+                  <span class="method-name">Smoke_Test_Verifying_RDP_value_video_adcall_Optoutmode_scenario</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validate_RDP_video_ad_Optoutmode(Functions.java:3898)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_RDP_value_video_adcall_Optoutmode_scenario(smokeTestCases.java:645)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verifying_SOD_Cust_Param_Feedad_Optinmode_scenario">
+                  </a> <!-- Smoke_Test_Verifying_SOD_Cust_Param_Feedad_Optinmode_scenario -->
+                  <span class="method-name">Smoke_Test_Verifying_SOD_Cust_Param_Feedad_Optinmode_scenario</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validate_SOD_Cust_param_feed_Optinmode(Functions.java:3749)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_SOD_Cust_Param_Feedad_Optinmode_scenario(smokeTestCases.java:795)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verifying_SOD_Cust_Param_Feedad_Optoutmode_scenario">
+                  </a> <!-- Smoke_Test_Verifying_SOD_Cust_Param_Feedad_Optoutmode_scenario -->
+                  <span class="method-name">Smoke_Test_Verifying_SOD_Cust_Param_Feedad_Optoutmode_scenario</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validate_SOD_Cust_param_feed_Optoutmode(Functions.java:3612)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_SOD_Cust_Param_Feedad_Optoutmode_scenario(smokeTestCases.java:590)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verifying_SOD_Cust_Param_detail_Feedad_Optinmode_scenario">
+                  </a> <!-- Smoke_Test_Verifying_SOD_Cust_Param_detail_Feedad_Optinmode_scenario -->
+                  <span class="method-name">Smoke_Test_Verifying_SOD_Cust_Param_detail_Feedad_Optinmode_scenario</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validate_SOD_Cust_param_deatiledfeed_Optinmode(Functions.java:3777)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_SOD_Cust_Param_detail_Feedad_Optinmode_scenario(smokeTestCases.java:804)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verifying_SOD_Cust_Param_detail_Feedad_Optoutmode_scenario">
+                  </a> <!-- Smoke_Test_Verifying_SOD_Cust_Param_detail_Feedad_Optoutmode_scenario -->
+                  <span class="method-name">Smoke_Test_Verifying_SOD_Cust_Param_detail_Feedad_Optoutmode_scenario</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validate_SOD_Cust_param_deatiledfeed_Optoutmode(Functions.java:3640)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_SOD_Cust_Param_detail_Feedad_Optoutmode_scenario(smokeTestCases.java:599)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verifying_SOD_Cust_Param_homescreenad_Optinmode_scenario">
+                  </a> <!-- Smoke_Test_Verifying_SOD_Cust_Param_homescreenad_Optinmode_scenario -->
+                  <span class="method-name">Smoke_Test_Verifying_SOD_Cust_Param_homescreenad_Optinmode_scenario</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validate_SOD_Cust_param_homescreen_Optinmode(Functions.java:3720)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_SOD_Cust_Param_homescreenad_Optinmode_scenario(smokeTestCases.java:785)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verifying_SOD_Cust_Param_homescreenad_Optoutmode_scenario">
+                  </a> <!-- Smoke_Test_Verifying_SOD_Cust_Param_homescreenad_Optoutmode_scenario -->
+                  <span class="method-name">Smoke_Test_Verifying_SOD_Cust_Param_homescreenad_Optoutmode_scenario</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validate_SOD_Cust_param_homescreen_Optoutmode(Functions.java:3583)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_SOD_Cust_Param_homescreenad_Optoutmode_scenario(smokeTestCases.java:580)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verifying_SOD_Cust_Param_videoad_Optinmode_scenario">
+                  </a> <!-- Smoke_Test_Verifying_SOD_Cust_Param_videoad_Optinmode_scenario -->
+                  <span class="method-name">Smoke_Test_Verifying_SOD_Cust_Param_videoad_Optinmode_scenario</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validate_SOD_Cust_param_video_Optinmode(Functions.java:3805)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_SOD_Cust_Param_videoad_Optinmode_scenario(smokeTestCases.java:813)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verifying_SOD_Cust_Param_videoad_Optoutmode_scenario">
+                  </a> <!-- Smoke_Test_Verifying_SOD_Cust_Param_videoad_Optoutmode_scenario -->
+                  <span class="method-name">Smoke_Test_Verifying_SOD_Cust_Param_videoad_Optoutmode_scenario</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validate_SOD_Cust_param_video_Optoutmode(Functions.java:3668)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_SOD_Cust_Param_videoad_Optoutmode_scenario(smokeTestCases.java:608)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verifying_detailpageadcall_Optinmode_scenario">
+                  </a> <!-- Smoke_Test_Verifying_detailpageadcall_Optinmode_scenario -->
+                  <span class="method-name">Smoke_Test_Verifying_detailpageadcall_Optinmode_scenario</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.Verifying_detail_gampadcalls_Optoutmode(Functions.java:3154)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_detailpageadcall_Optinmode_scenario(smokeTestCases.java:701)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verifying_detailpageadcall_Optoutmode_scenario">
+                  </a> <!-- Smoke_Test_Verifying_detailpageadcall_Optoutmode_scenario -->
+                  <span class="method-name">Smoke_Test_Verifying_detailpageadcall_Optoutmode_scenario</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.Verifying_detail_gampadcalls_Optoutmode(Functions.java:3154)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_Verifying_detailpageadcall_Optoutmode_scenario(smokeTestCases.java:498)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test__Smoke_Test_Verifying_videoadcall_Optinmode_scenario">
+                  </a> <!-- Smoke_Test__Smoke_Test_Verifying_videoadcall_Optinmode_scenario -->
+                  <span class="method-name">Smoke_Test__Smoke_Test_Verifying_videoadcall_Optinmode_scenario</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 64.29 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.51.0&apos;, revision: &apos;1af067dbcaedd7d2ab9af5151fc471d363d97193&apos;, time: &apos;2016-02-05 11:20:57&apos;
+System info: host: &apos;Aswinikumars-MacBook-Pro.local&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.weather.Weather, statBarHeight=98, noReset=true, viewportRect={top=98, left=0, width=1440, height=2614}, deviceName=803KPXV1599674, platform=LINUX, deviceUDID=803KPXV1599674, desired={app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/The_Weather_Channel_DEBUG (22).apk, appPackage=com.weather.Weather, appium-version=1.4.13, noReset=true, newCommandTimeout=100000, platformVersion=10.0, platformName=Android, deviceName=Samsung}, appium-version=1.4.13, newCommandTimeout=100000, platformVersion=10, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceApiLevel=29, deviceManufacturer=Google, app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/The_Weather_Channel_DEBUG (22).apk, deviceScreenSize=1440x2880, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, pixelRatio=3.5, locationContextEnabled=false, deviceScreenDensity=560, deviceModel=Pixel 2 XL}]
+Session ID: e1304691-2ee2-4e6a-9b18-90e4373c1e28
+*** Element info: {Using=id, value=com.weather.Weather:id/mapBig}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at twc.Automation.General.Functions.click_Mapsdetails_element(Functions.java:3116)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test__Smoke_Test_Verifying_videoadcall_Optinmode_scenario(smokeTestCases.java:675)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test__Smoke_Test_Verifying_videoadcall_Optoutmode_scenario">
+                  </a> <!-- Smoke_Test__Smoke_Test_Verifying_videoadcall_Optoutmode_scenario -->
+                  <span class="method-name">Smoke_Test__Smoke_Test_Verifying_videoadcall_Optoutmode_scenario</span>
+                  <div class="stack-trace">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: &apos;2.51.0&apos;, revision: &apos;1af067dbcaedd7d2ab9af5151fc471d363d97193&apos;, time: &apos;2016-02-05 11:20:57&apos;
+System info: host: &apos;Aswinikumars-MacBook-Pro.local&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: AppiumDriver
+Capabilities [{appPackage=com.weather.Weather, statBarHeight=98, noReset=true, viewportRect={top=98, left=0, width=1440, height=2614}, deviceName=803KPXV1599674, platform=LINUX, deviceUDID=803KPXV1599674, desired={app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/The_Weather_Channel_DEBUG (22).apk, appPackage=com.weather.Weather, appium-version=1.4.13, noReset=true, newCommandTimeout=100000, platformVersion=10.0, platformName=Android, deviceName=Samsung}, appium-version=1.4.13, newCommandTimeout=100000, platformVersion=10, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceApiLevel=29, deviceManufacturer=Google, app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/APKFile/The_Weather_Channel_DEBUG (22).apk, deviceScreenSize=1440x2880, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, pixelRatio=3.5, locationContextEnabled=false, deviceScreenDensity=560, deviceModel=Pixel 2 XL}]
+Session ID: e1304691-2ee2-4e6a-9b18-90e4373c1e28
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:189)
+	at io.appium.java_client.AppiumDriver.closeApp(AppiumDriver.java:245)
+	at twc.Automation.HandleWithApp.AppFunctions.Kill_Launch_App(AppFunctions.java:903)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test__Smoke_Test_Verifying_videoadcall_Optoutmode_scenario(smokeTestCases.java:467)
+Caused by: org.openqa.selenium.WebDriverException: java.net.SocketException: Connection reset
+Build info: version: &apos;2.51.0&apos;, revision: &apos;1af067dbcaedd7d2ab9af5151fc471d363d97193&apos;, time: &apos;2016-02-05 11:20:57&apos;
+System info: host: &apos;Aswinikumars-MacBook-Pro.local&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_181&apos;
+Driver info: driver.version: AppiumDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:64)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 35 more
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:210)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at org.apache.http.impl.conn.LoggingInputStream.read(LoggingInputStream.java:87)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:136)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:152)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:270)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:260)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:161)
+	at org.apache.http.impl.conn.CPoolProxy.invoke(CPoolProxy.java:138)
+	at com.sun.proxy.$Proxy6.receiveResponseHeader(Unknown Source)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:271)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:123)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:254)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:186)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:52)
+	... 36 more
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test__Verifying_Bcp_apicall_Optinmode_scenario">
+                  </a> <!-- Smoke_Test__Verifying_Bcp_apicall_Optinmode_scenario -->
+                  <span class="method-name">Smoke_Test__Verifying_Bcp_apicall_Optinmode_scenario</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validating_bcp_privacy_Optinmode_scenarion(Functions.java:3255)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test__Verifying_Bcp_apicall_Optinmode_scenario(smokeTestCases.java:713)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test__Verifying_Bcp_apicall_Optoutmode_scenario">
+                  </a> <!-- Smoke_Test__Verifying_Bcp_apicall_Optoutmode_scenario -->
+                  <span class="method-name">Smoke_Test__Verifying_Bcp_apicall_Optoutmode_scenario</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validating_bcp_privacy_Optoutmode_scenarion(Functions.java:3176)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test__Verifying_Bcp_apicall_Optoutmode_scenario(smokeTestCases.java:511)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test__Verifying_adcrw_apicall_Optinmode_scenario">
+                  </a> <!-- Smoke_Test__Verifying_adcrw_apicall_Optinmode_scenario -->
+                  <span class="method-name">Smoke_Test__Verifying_adcrw_apicall_Optinmode_scenario</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validating_adcrw_privacy_Optinmode_scenarion(Functions.java:3275)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test__Verifying_adcrw_apicall_Optinmode_scenario(smokeTestCases.java:725)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test__Verifying_adcrw_apicall_Optoutmode_scenario">
+                  </a> <!-- Smoke_Test__Verifying_adcrw_apicall_Optoutmode_scenario -->
+                  <span class="method-name">Smoke_Test__Verifying_adcrw_apicall_Optoutmode_scenario</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validating_adcrw_privacy_Optoutmode_scenarion(Functions.java:3195)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test__Verifying_adcrw_apicall_Optoutmode_scenario(smokeTestCases.java:523)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test__Verifying_amaozn_aax_calls_Optinmode_scenario">
+                  </a> <!-- Smoke_Test__Verifying_amaozn_aax_calls_Optinmode_scenario -->
+                  <span class="method-name">Smoke_Test__Verifying_amaozn_aax_calls_Optinmode_scenario</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validating_aax_privacy_Optinmode_scenario(Functions.java:3560)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test__Verifying_amaozn_aax_calls_Optinmode_scenario(smokeTestCases.java:749)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test__Verifying_amaozn_aax_calls_Optoutmode_scenario">
+                  </a> <!-- Smoke_Test__Verifying_amaozn_aax_calls_Optoutmode_scenario -->
+                  <span class="method-name">Smoke_Test__Verifying_amaozn_aax_calls_Optoutmode_scenario</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validating_aax_privacy_Optoutmode_scenario(Functions.java:3541)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test__Verifying_amaozn_aax_calls_Optoutmode_scenario(smokeTestCases.java:547)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test__Verifying_homescreenhourly_calls_Optinmode_scenario">
+                  </a> <!-- Smoke_Test__Verifying_homescreenhourly_calls_Optinmode_scenario -->
+                  <span class="method-name">Smoke_Test__Verifying_homescreenhourly_calls_Optinmode_scenario</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.finding_Homescreen_iu_value(Functions.java:2317)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test__Verifying_homescreenhourly_calls_Optinmode_scenario(smokeTestCases.java:760)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test__Verifying_homescreenhourly_calls_Optoutmode_scenario">
+                  </a> <!-- Smoke_Test__Verifying_homescreenhourly_calls_Optoutmode_scenario -->
+                  <span class="method-name">Smoke_Test__Verifying_homescreenhourly_calls_Optoutmode_scenario</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.finding_Homescreen_iu_value(Functions.java:2317)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test__Verifying_homescreenhourly_calls_Optoutmode_scenario(smokeTestCases.java:558)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test__Verifying_locaion_apicall_Optinmode_scenario">
+                  </a> <!-- Smoke_Test__Verifying_locaion_apicall_Optinmode_scenario -->
+                  <span class="method-name">Smoke_Test__Verifying_locaion_apicall_Optinmode_scenario</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validating_Fatualcall_privacy_Optinmode_scenarion(Functions.java:3295)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test__Verifying_locaion_apicall_Optinmode_scenario(smokeTestCases.java:737)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test__Verifying_locaion_apicall_Optoutmode_scenario">
+                  </a> <!-- Smoke_Test__Verifying_locaion_apicall_Optoutmode_scenario -->
+                  <span class="method-name">Smoke_Test__Verifying_locaion_apicall_Optoutmode_scenario</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validating_Fatualcall_privacy_Optoutmode_scenarion(Functions.java:3216)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test__Verifying_locaion_apicall_Optoutmode_scenario(smokeTestCases.java:535)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test__Verifying_marqueehomescreecall_Optinmode_scenario">
+                  </a> <!-- Smoke_Test__Verifying_marqueehomescreecall_Optinmode_scenario -->
+                  <span class="method-name">Smoke_Test__Verifying_marqueehomescreecall_Optinmode_scenario</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.finding_Homescreen_marquee_iu_value(Functions.java:3022)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test__Verifying_marqueehomescreecall_Optinmode_scenario(smokeTestCases.java:772)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test__Verifying_marqueehomescreecall_Optoutmode_scenario">
+                  </a> <!-- Smoke_Test__Verifying_marqueehomescreecall_Optoutmode_scenario -->
+                  <span class="method-name">Smoke_Test__Verifying_marqueehomescreecall_Optoutmode_scenario</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.finding_Homescreen_marquee_iu_value(Functions.java:3022)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test__Verifying_marqueehomescreecall_Optoutmode_scenario(smokeTestCases.java:570)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_amazon_aax_AQ_card_preload_adcall">
+                  </a> <!-- Smoke_Test_amazon_aax_AQ_card_preload_adcall -->
+                  <span class="method-name">Smoke_Test_amazon_aax_AQ_card_preload_adcall</span>
+                  <div class="stack-trace">java.lang.AssertionError: slotID 9384272f-b27f-4686-935f-02e6c5763abd is not trigred for aax calldb_display/card/aq
+	at twc.Automation.General.Functions.get_aaxcal_AirQuality(Functions.java:2782)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_AQ_card_preload_adcall(smokeTestCases.java:81)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_amazon_aax_Daily_preload_adcall">
+                  </a> <!-- Smoke_Test_amazon_aax_Daily_preload_adcall -->
+                  <span class="method-name">Smoke_Test_amazon_aax_Daily_preload_adcall</span>
+                  <div class="stack-trace">java.lang.AssertionError: slotID f063079f-11ac-45b5-b4fc-bb76d54b50b2 is not trigred for aax call db_display/details/10day
+	at twc.Automation.General.Functions.get_aaxcal_Daily(Functions.java:2821)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Daily_preload_adcall(smokeTestCases.java:97)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_amazon_aax_Hourly_preload_adcall">
+                  </a> <!-- Smoke_Test_amazon_aax_Hourly_preload_adcall -->
+                  <span class="method-name">Smoke_Test_amazon_aax_Hourly_preload_adcall</span>
+                  <div class="stack-trace">java.lang.AssertionError: slotID 9be28769-4207-4d51-8063-dc8e645383b2 is not trigred for aax call db_display/details/hourly
+	at twc.Automation.General.Functions.get_aaxcal_Hourly(Functions.java:2808)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_Hourly_preload_adcall(smokeTestCases.java:89)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_amazon_aax_home_screen_today_preload_adcall__iu">
+                  </a> <!-- Smoke_Test_amazon_aax_home_screen_today_preload_adcall__iu -->
+                  <span class="method-name">Smoke_Test_amazon_aax_home_screen_today_preload_adcall__iu</span>
+                  <div class="stack-trace">java.lang.AssertionError: slotID 69c843c-7cf8-47ae-b6ed-088057e4bc8a is not trigred for aax call db_display/home_screen/today
+	at twc.Automation.General.Functions.get_aaxcal_homescreen_today(Functions.java:2769)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_home_screen_today_preload_adcall__iu(smokeTestCases.java:65)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_amazon_aax_mapsdetails_preload_adcall">
+                  </a> <!-- Smoke_Test_amazon_aax_mapsdetails_preload_adcall -->
+                  <span class="method-name">Smoke_Test_amazon_aax_mapsdetails_preload_adcall</span>
+                  <div class="stack-trace">java.lang.AssertionError: slotID 5db1161b-b504-4640-9496-dfe6284f84ab is not trigred for aax call db_display/details/maps
+	at twc.Automation.General.Functions.get_aaxcal_map_details(Functions.java:2834)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_mapsdetails_preload_adcall(smokeTestCases.java:106)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_amazon_aax_rader_card_preload_adcall">
+                  </a> <!-- Smoke_Test_amazon_aax_rader_card_preload_adcall -->
+                  <span class="method-name">Smoke_Test_amazon_aax_rader_card_preload_adcall</span>
+                  <div class="stack-trace">java.lang.AssertionError: slotID 752a96eb-3198-4991-b572-17ec04883b6c is not trigred for aax call db_display/card/radar
+	at twc.Automation.General.Functions.get_aaxcal_radar(Functions.java:2795)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_amazon_aax_rader_card_preload_adcall(smokeTestCases.java:73)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_verifying_DailyIFcardResponse">
+                  </a> <!-- Smoke_Test_verifying_DailyIFcardResponse -->
+                  <span class="method-name">Smoke_Test_verifying_DailyIFcardResponse</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_excel_data.exceldataread(read_excel_data.java:25)
+	at twc.Automation.General.Functions.dailyIFCard_adcall_response(Functions.java:3471)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_verifying_DailyIFcardResponse(smokeTestCases.java:1008)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_verifying_FG_BG_urls_DailyIF_Card">
+                  </a> <!-- Smoke_Test_verifying_FG_BG_urls_DailyIF_Card -->
+                  <span class="method-name">Smoke_Test_verifying_FG_BG_urls_DailyIF_Card</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_excel_data.exceldataread(read_excel_data.java:25)
+	at twc.Automation.General.Functions.validate_FG_BG_adcalls_DailyIFcards(Functions.java:3523)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_verifying_FG_BG_urls_DailyIF_Card(smokeTestCases.java:1017)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_verifying_FG_BG_urls_NextgenIm_Ad">
+                  </a> <!-- Smoke_Test_verifying_FG_BG_urls_NextgenIm_Ad -->
+                  <span class="method-name">Smoke_Test_verifying_FG_BG_urls_NextgenIm_Ad</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validate_FG_BG_adcalls_NextGenIM(Functions.java:3422)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_verifying_FG_BG_urls_NextgenIm_Ad(smokeTestCases.java:971)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_verifying_NextGenIM_response">
+                  </a> <!-- Smoke_Test_verifying_NextGenIM_response -->
+                  <span class="method-name">Smoke_Test_verifying_NextGenIM_response</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.nextgenim_adcall_response(Functions.java:3370)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_verifying_NextGenIM_response(smokeTestCases.java:960)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_verifying_Size_NextgenIm_Ad">
+                  </a> <!-- Smoke_Test_verifying_Size_NextgenIm_Ad -->
+                  <span class="method-name">Smoke_Test_verifying_Size_NextgenIm_Ad</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at twc.Automation.ReadDataFromFile.read_xml_data_into_buffer.read_xml_file_into_buffer_string(read_xml_data_into_buffer.java:47)
+	at twc.Automation.General.Functions.validate_Size_NextGenIM(Functions.java:3443)
+	at twc.Automation.SmokeTestCases.smokeTestCases.Smoke_Test_verifying_Size_NextgenIm_Ad(smokeTestCases.java:983)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">twc.Automation.SmokeTestCases.smokeTestCases</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_CaseVerify_Homescreen_ad_iu">
+                  </a> <!-- Smoke_Test_CaseVerify_Homescreen_ad_iu -->
+                  <span class="method-name">Smoke_Test_CaseVerify_Homescreen_ad_iu</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_CaseVerify_Homescreen_marque_ad_iu">
+                  </a> <!-- Smoke_Test_CaseVerify_Homescreen_marque_ad_iu -->
+                  <span class="method-name">Smoke_Test_CaseVerify_Homescreen_marque_ad_iu</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_CaseVerify_WeatherFXAPI_url">
+                  </a> <!-- Smoke_Test_CaseVerify_WeatherFXAPI_url -->
+                  <span class="method-name">Smoke_Test_CaseVerify_WeatherFXAPI_url</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_CaseVerify_turbo_url">
+                  </a> <!-- Smoke_Test_CaseVerify_turbo_url -->
+                  <span class="method-name">Smoke_Test_CaseVerify_turbo_url</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Selecting_Opt_out_mode_scenario">
+                  </a> <!-- Smoke_Test_Selecting_Opt_out_mode_scenario -->
+                  <span class="method-name">Smoke_Test_Selecting_Opt_out_mode_scenario</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verifying_homescreenhourly__backfromdetailedpage_scenario">
+                  </a> <!-- Smoke_Test_Verifying_homescreenhourly__backfromdetailedpage_scenario -->
+                  <span class="method-name">Smoke_Test_Verifying_homescreenhourly__backfromdetailedpage_scenario</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Smoke_Test_Verifying_homescreenmarquee_backfromdetailedpage__scenario">
+                  </a> <!-- Smoke_Test_Verifying_homescreenmarquee_backfromdetailedpage__scenario -->
+                  <span class="method-name">Smoke_Test_Verifying_homescreenmarquee_backfromdetailedpage__scenario</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Smoke/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite verbose=&quot;0&quot; name=&quot;Suite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;twc.Automation.SmokeTestCases.smokeTestCases&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(77);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'Smoke_Test_Case_Verify_Video_adCalll')
+data.setCell(0, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(0, 3, 340994);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'Smoke_Test_Verify_dailyIF_card_adcall_iu')
+data.setCell(1, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(1, 3, 332336);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Smoke_Test_amazon_aax_home_screen_today_preload_adcall__iu')
+data.setCell(2, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(2, 3, 321757);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'Smoke_Test_NextGen_IM_adunit')
+data.setCell(3, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(3, 3, 318208);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'Smoke_Test__Smoke_Test_Verifying_videoadcall_Optinmode_scenario')
+data.setCell(4, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(4, 3, 125955);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'Smoke_Test_Verifying_homescreenhourly__backfromdetailedpage_scenario')
+data.setCell(5, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(5, 3, 107829);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'Smoke_Test_Selecting_Opt_in_mode_scenario')
+data.setCell(6, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(6, 3, 69565);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'Smoke_Test_Selecting_Opt_out_mode_scenario')
+data.setCell(7, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(7, 3, 36247);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'Smoke_Test_Verify_PrivacyCard_onScreen')
+data.setCell(8, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(8, 3, 25113);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'Smoke_Test_verifying_NextGenIM_response')
+data.setCell(9, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(9, 3, 440);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'Smoke_Test_verifying_FG_BG_urls_DailyIF_Card')
+data.setCell(10, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(10, 3, 354);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'Smoke_Test_verifying_DailyIFcardResponse')
+data.setCell(11, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(11, 3, 348);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'Smoke_Test_amazon_aax_rader_card_preload_adcall')
+data.setCell(12, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(12, 3, 116);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'Smoke_Test_CaseVerify_WeatherFXAPI_url')
+data.setCell(13, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(13, 3, 87);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'Smoke_Test_Verifying_homescreenmarquee_backfromdetailedpage__scenario')
+data.setCell(14, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(14, 3, 75);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'Smoke_Test_amazon_aax_Daily_preload_adcall')
+data.setCell(15, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(15, 3, 70);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'Smoke_Test_CaseVerify_turbo_url')
+data.setCell(16, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(16, 3, 68);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'Smoke_Test_CaseVerify_adcrwdcntrlnet_url')
+data.setCell(17, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(17, 3, 63);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'Smoke_Test_amazon_aax_mapsdetails_preload_adcall')
+data.setCell(18, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(18, 3, 57);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'Smoke_Test_amazon_aax_AQ_card_preload_adcall')
+data.setCell(19, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(19, 3, 55);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'Smoke_Test_amazon_aax_Hourly_preload_adcall')
+data.setCell(20, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(20, 3, 53);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'Smoke_Test_CaseVerify_Homescreen_ad_iu')
+data.setCell(21, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(21, 3, 52);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'Smoke_Test__Smoke_Test_Verifying_videoadcall_Optoutmode_scenario')
+data.setCell(22, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(22, 3, 45);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'Smoke_Test_CaseVerify_Homescreen_marque_ad_iu')
+data.setCell(23, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(23, 3, 43);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'Smoke_Test_Verifying_RDP_value_homescreenad_Optinmode_scenario')
+data.setCell(24, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(24, 3, 15);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'Smoke_Test_Verifying_SOD_Cust_Param_detail_Feedad_Optinmode_scenario')
+data.setCell(25, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(25, 3, 10);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'Smoke_Test_CaseVerify_seasonalhub_feed_adcall')
+data.setCell(26, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(26, 3, 9);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'Smoke_Test_Verifying_SOD_Cust_Param_videoad_Optinmode_scenario')
+data.setCell(27, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(27, 3, 8);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'Smoke_Test_Verifying_RDP_value_video_adcall_Optinmode_scenario')
+data.setCell(28, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(28, 3, 8);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'Smoke_Test_Verifying_SOD_Cust_Param_Feedad_Optinmode_scenario')
+data.setCell(29, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(29, 3, 8);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'Smoke_Test_CaseVerify_Radar_Maps_feedcard_adcall')
+data.setCell(30, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(30, 3, 8);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'Smoke_Test__Verifying_homescreenhourly_calls_Optinmode_scenario')
+data.setCell(31, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(31, 3, 8);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'Smoke_Test_Verifying_RDP_value_feedad_Optinmode_scenario')
+data.setCell(32, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(32, 3, 7);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'Smoke_Test_Verifying_RDP_value_detailed_feedad_Optinmode_scenario')
+data.setCell(33, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(33, 3, 7);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'Smoke_Test_Verify_health_and_activities_Air_Quality_detailpage_adcall_iu')
+data.setCell(34, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(34, 3, 7);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'Smoke_Test_Verify_SeasonalHub_detailpage_adcall_iu')
+data.setCell(35, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(35, 3, 7);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'Smoke_Test_CaseVerify_Health_Activities_feed_adcall')
+data.setCell(36, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(36, 3, 7);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'Smoke_Test__Verifying_locaion_apicall_Optinmode_scenario')
+data.setCell(37, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(37, 3, 7);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'Smoke_Test_Verify_WatsonFlu_adcall')
+data.setCell(38, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(38, 3, 7);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'Smoke_Test_Verify_News_detailpage_adcall_iu')
+data.setCell(39, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(39, 3, 7);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'Smoke_Test_Verify_daily_card_adcall_iu')
+data.setCell(40, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(40, 3, 7);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'Smoke_Test_Verifying_SOD_Cust_Param_homescreenad_Optinmode_scenario')
+data.setCell(41, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(41, 3, 6);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'Smoke_Test_Verify_health_and_activities_cold_flu_Spotlight_adcall_iu')
+data.setCell(42, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(42, 3, 6);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'Smoke_Test__Verifying_marqueehomescreecall_Optinmode_scenario')
+data.setCell(43, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(43, 3, 6);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'Smoke_Test_Verify_hourly_detailpage_adcall_iu')
+data.setCell(44, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(44, 3, 6);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'Smoke_Test_Verifying_RDP_value_video_adcall_Optoutmode_scenario')
+data.setCell(45, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(45, 3, 6);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'Smoke_Test_Verifying_Feedadcall_Optoutmode_scenario')
+data.setCell(46, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(46, 3, 6);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'Smoke_Test_CaseVerify_Radar_Maps_deatailscard_adcall')
+data.setCell(47, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(47, 3, 6);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'Smoke_Test_Verifying_RDP_value_detailed_feedad_Optoutmode_scenario')
+data.setCell(48, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(48, 3, 6);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'Smoke_Test_Verifying_RDP_value_feedad_Optoutmode_scenario')
+data.setCell(49, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(49, 3, 6);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'Smoke_Test_Verify_health_and_activities_Allergy_detailpage_adcall_iu')
+data.setCell(50, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(50, 3, 6);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'Smoke_Test_Verify_health_and_activities_Running_spotlight_adcall_iu')
+data.setCell(51, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(51, 3, 6);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'Smoke_Test_Verifying_RDP_value_homescreenad_Optoutmode_scenario')
+data.setCell(52, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(52, 3, 6);
+data.setCell(53, 0, 53)
+data.setCell(53, 1, 'Smoke_Test_Verify_News_hurricane_detail_adcall_iu')
+data.setCell(53, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(53, 3, 6);
+data.setCell(54, 0, 54)
+data.setCell(54, 1, 'Smoke_Test__Verifying_Bcp_apicall_Optoutmode_scenario')
+data.setCell(54, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(54, 3, 5);
+data.setCell(55, 0, 55)
+data.setCell(55, 1, 'Smoke_Test_CaseVerify_news_aax_amazon_adcalll')
+data.setCell(55, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(55, 3, 5);
+data.setCell(56, 0, 56)
+data.setCell(56, 1, 'Smoke_Test_Verifying_SOD_Cust_Param_Feedad_Optoutmode_scenario')
+data.setCell(56, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(56, 3, 5);
+data.setCell(57, 0, 57)
+data.setCell(57, 1, 'Smoke_Test__Verifying_Bcp_apicall_Optinmode_scenario')
+data.setCell(57, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(57, 3, 5);
+data.setCell(58, 0, 58)
+data.setCell(58, 1, 'Smoke_Test_Verifying_SOD_Cust_Param_videoad_Optoutmode_scenario')
+data.setCell(58, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(58, 3, 5);
+data.setCell(59, 0, 59)
+data.setCell(59, 1, 'Smoke_Test__Verifying_adcrw_apicall_Optoutmode_scenario')
+data.setCell(59, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(59, 3, 5);
+data.setCell(60, 0, 60)
+data.setCell(60, 1, 'Smoke_Test_Verifying_SOD_Cust_Param_homescreenad_Optoutmode_scenario')
+data.setCell(60, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(60, 3, 5);
+data.setCell(61, 0, 61)
+data.setCell(61, 1, 'Smoke_Test_Verifying_SOD_Cust_Param_detail_Feedad_Optoutmode_scenario')
+data.setCell(61, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(61, 3, 5);
+data.setCell(62, 0, 62)
+data.setCell(62, 1, 'Smoke_Test_Verify_health_and_activities_Bot_beach_detailpage_adcall_iu')
+data.setCell(62, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(62, 3, 5);
+data.setCell(63, 0, 63)
+data.setCell(63, 1, 'Smoke_Test__Verifying_marqueehomescreecall_Optoutmode_scenario')
+data.setCell(63, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(63, 3, 5);
+data.setCell(64, 0, 64)
+data.setCell(64, 1, 'Smoke_Test__Verifying_adcrw_apicall_Optinmode_scenario')
+data.setCell(64, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(64, 3, 5);
+data.setCell(65, 0, 65)
+data.setCell(65, 1, 'Smoke_Test__Verifying_homescreenhourly_calls_Optoutmode_scenario')
+data.setCell(65, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(65, 3, 5);
+data.setCell(66, 0, 66)
+data.setCell(66, 1, 'Smoke_Test_Verify_amazon_aax_Running_Bigbanner_ad')
+data.setCell(66, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(66, 3, 5);
+data.setCell(67, 0, 67)
+data.setCell(67, 1, 'Smoke_Test_CaseVerify_AQ_aax_amazon_adcalll')
+data.setCell(67, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(67, 3, 5);
+data.setCell(68, 0, 68)
+data.setCell(68, 1, 'Smoke_Test_Verifying_Feedadcall_Optinmode_scenario')
+data.setCell(68, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(68, 3, 5);
+data.setCell(69, 0, 69)
+data.setCell(69, 1, 'Smoke_Test__Verifying_locaion_apicall_Optoutmode_scenario')
+data.setCell(69, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(69, 3, 5);
+data.setCell(70, 0, 70)
+data.setCell(70, 1, 'Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll')
+data.setCell(70, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(70, 3, 4);
+data.setCell(71, 0, 71)
+data.setCell(71, 1, 'Smoke_Test_Verifying_detailpageadcall_Optinmode_scenario')
+data.setCell(71, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(71, 3, 4);
+data.setCell(72, 0, 72)
+data.setCell(72, 1, 'Smoke_Test__Verifying_amaozn_aax_calls_Optoutmode_scenario')
+data.setCell(72, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(72, 3, 4);
+data.setCell(73, 0, 73)
+data.setCell(73, 1, 'Smoke_Test__Verifying_amaozn_aax_calls_Optinmode_scenario')
+data.setCell(73, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(73, 3, 4);
+data.setCell(74, 0, 74)
+data.setCell(74, 1, 'Smoke_Test_verifying_Size_NextgenIm_Ad')
+data.setCell(74, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(74, 3, 3);
+data.setCell(75, 0, 75)
+data.setCell(75, 1, 'Smoke_Test_Verifying_detailpageadcall_Optoutmode_scenario')
+data.setCell(75, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(75, 3, 3);
+data.setCell(76, 0, 76)
+data.setCell(76, 1, 'Smoke_Test_verifying_FG_BG_urls_NextgenIm_Ad')
+data.setCell(76, 2, 'twc.Automation.SmokeTestCases.smokeTestCases')
+data.setCell(76, 3, 3);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 28 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">twc.Automation.SmokeTestCases.smokeTestCases</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">Before_Test</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_amazon_aax_home_screen_today_preload_adcall__iu</span>
+                <span class="method-start">453350 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_amazon_aax_rader_card_preload_adcall</span>
+                <span class="method-start">775125 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_amazon_aax_AQ_card_preload_adcall</span>
+                <span class="method-start">775242 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_amazon_aax_Hourly_preload_adcall</span>
+                <span class="method-start">775298 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_amazon_aax_Daily_preload_adcall</span>
+                <span class="method-start">775352 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_amazon_aax_mapsdetails_preload_adcall</span>
+                <span class="method-start">775423 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Smoke_Test_CaseVerify_Homescreen_ad_iu</span>
+                <span class="method-start">775481 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Smoke_Test_CaseVerify_WeatherFXAPI_url</span>
+                <span class="method-start">775535 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Smoke_Test_CaseVerify_turbo_url</span>
+                <span class="method-start">775623 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_CaseVerify_adcrwdcntrlnet_url</span>
+                <span class="method-start">775692 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Smoke_Test_CaseVerify_Homescreen_marque_ad_iu</span>
+                <span class="method-start">775756 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_Case_Verify_Video_adCalll</span>
+                <span class="method-start">775800 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_CaseVerify_Radar_Maps_feedcard_adcall</span>
+                <span class="method-start">1117044 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_CaseVerify_Radar_Maps_deatailscard_adcall</span>
+                <span class="method-start">1117053 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_CaseVerify_Health_Activities_feed_adcall</span>
+                <span class="method-start">1117060 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_Verify_health_and_activities_Running_spotlight_adcall_iu</span>
+                <span class="method-start">1117068 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_Verify_health_and_activities_Bot_beach_detailpage_adcall_iu</span>
+                <span class="method-start">1117075 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_Verify_health_and_activities_Allergy_detailpage_adcall_iu</span>
+                <span class="method-start">1117081 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_Verify_health_and_activities_cold_flu_Spotlight_adcall_iu</span>
+                <span class="method-start">1117088 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_Verify_SeasonalHub_detailpage_adcall_iu</span>
+                <span class="method-start">1117095 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_Verify_WatsonFlu_adcall</span>
+                <span class="method-start">1117103 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_Verify_amazon_aax_Running_Bigbanner_ad</span>
+                <span class="method-start">1117111 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_CaseVerify_seasonalhub_feed_adcall</span>
+                <span class="method-start">1117118 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_Verify_health_and_activities_Air_Quality_detailpage_adcall_iu</span>
+                <span class="method-start">1117128 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_Verify_News_detailpage_adcall_iu</span>
+                <span class="method-start">1117136 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_Verify_News_hurricane_detail_adcall_iu</span>
+                <span class="method-start">1117144 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_Verify_daily_card_adcall_iu</span>
+                <span class="method-start">1117151 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_CaseVerify_AQ_aax_amazon_adcalll</span>
+                <span class="method-start">1117159 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_CaseVerify_news_aax_amazon_adcalll</span>
+                <span class="method-start">1117166 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_Verify_hourly_detailpage_adcall_iu</span>
+                <span class="method-start">1117172 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll</span>
+                <span class="method-start">1117180 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_Verify_PrivacyCard_onScreen</span>
+                <span class="method-start">1117185 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Smoke_Test_Selecting_Opt_out_mode_scenario</span>
+                <span class="method-start">1142300 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test__Smoke_Test_Verifying_videoadcall_Optoutmode_scenario</span>
+                <span class="method-start">1178548 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_Verifying_Feedadcall_Optoutmode_scenario</span>
+                <span class="method-start">1178596 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_Verifying_detailpageadcall_Optoutmode_scenario</span>
+                <span class="method-start">1178603 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test__Verifying_Bcp_apicall_Optoutmode_scenario</span>
+                <span class="method-start">1178607 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test__Verifying_adcrw_apicall_Optoutmode_scenario</span>
+                <span class="method-start">1178613 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test__Verifying_locaion_apicall_Optoutmode_scenario</span>
+                <span class="method-start">1178618 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test__Verifying_amaozn_aax_calls_Optoutmode_scenario</span>
+                <span class="method-start">1178624 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test__Verifying_homescreenhourly_calls_Optoutmode_scenario</span>
+                <span class="method-start">1178628 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test__Verifying_marqueehomescreecall_Optoutmode_scenario</span>
+                <span class="method-start">1178634 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_Verifying_SOD_Cust_Param_homescreenad_Optoutmode_scenario</span>
+                <span class="method-start">1178640 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_Verifying_SOD_Cust_Param_Feedad_Optoutmode_scenario</span>
+                <span class="method-start">1178646 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_Verifying_SOD_Cust_Param_detail_Feedad_Optoutmode_scenario</span>
+                <span class="method-start">1178652 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_Verifying_SOD_Cust_Param_videoad_Optoutmode_scenario</span>
+                <span class="method-start">1178658 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_Verifying_RDP_value_homescreenad_Optoutmode_scenario</span>
+                <span class="method-start">1178664 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_Verifying_RDP_value_feedad_Optoutmode_scenario</span>
+                <span class="method-start">1178670 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_Verifying_RDP_value_detailed_feedad_Optoutmode_scenario</span>
+                <span class="method-start">1178677 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_Verifying_RDP_value_video_adcall_Optoutmode_scenario</span>
+                <span class="method-start">1178684 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_Selecting_Opt_in_mode_scenario</span>
+                <span class="method-start">1178691 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test__Smoke_Test_Verifying_videoadcall_Optinmode_scenario</span>
+                <span class="method-start">1248695 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_Verifying_Feedadcall_Optinmode_scenario</span>
+                <span class="method-start">1374835 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_Verifying_detailpageadcall_Optinmode_scenario</span>
+                <span class="method-start">1374841 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test__Verifying_Bcp_apicall_Optinmode_scenario</span>
+                <span class="method-start">1374846 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test__Verifying_adcrw_apicall_Optinmode_scenario</span>
+                <span class="method-start">1374852 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test__Verifying_locaion_apicall_Optinmode_scenario</span>
+                <span class="method-start">1374857 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test__Verifying_amaozn_aax_calls_Optinmode_scenario</span>
+                <span class="method-start">1374865 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test__Verifying_homescreenhourly_calls_Optinmode_scenario</span>
+                <span class="method-start">1374870 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test__Verifying_marqueehomescreecall_Optinmode_scenario</span>
+                <span class="method-start">1374878 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_Verifying_SOD_Cust_Param_homescreenad_Optinmode_scenario</span>
+                <span class="method-start">1374885 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_Verifying_SOD_Cust_Param_Feedad_Optinmode_scenario</span>
+                <span class="method-start">1374892 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_Verifying_SOD_Cust_Param_detail_Feedad_Optinmode_scenario</span>
+                <span class="method-start">1374901 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_Verifying_SOD_Cust_Param_videoad_Optinmode_scenario</span>
+                <span class="method-start">1374911 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_Verifying_RDP_value_homescreenad_Optinmode_scenario</span>
+                <span class="method-start">1374919 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_Verifying_RDP_value_feedad_Optinmode_scenario</span>
+                <span class="method-start">1374935 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_Verifying_RDP_value_detailed_feedad_Optinmode_scenario</span>
+                <span class="method-start">1374943 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_Verifying_RDP_value_video_adcall_Optinmode_scenario</span>
+                <span class="method-start">1374950 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Smoke_Test_Verifying_homescreenhourly__backfromdetailedpage_scenario</span>
+                <span class="method-start">1374958 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Smoke_Test_Verifying_homescreenmarquee_backfromdetailedpage__scenario</span>
+                <span class="method-start">1482788 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_NextGen_IM_adunit</span>
+                <span class="method-start">1482864 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_verifying_NextGenIM_response</span>
+                <span class="method-start">1801073 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_verifying_FG_BG_urls_NextgenIm_Ad</span>
+                <span class="method-start">1801514 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_verifying_Size_NextgenIm_Ad</span>
+                <span class="method-start">1801518 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_Verify_dailyIF_card_adcall_iu</span>
+                <span class="method-start">1801522 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_verifying_DailyIFcardResponse</span>
+                <span class="method-start">2133858 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Smoke_Test_verifying_FG_BG_urls_DailyIF_Card</span>
+                <span class="method-start">2134206 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">After_Test</span>
+                <span class="method-start">2134562 ms</span>
+              </div> <!-- configuration-test after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

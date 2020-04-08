@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Suite]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="twc.Automation.SmokeTestCases.smokeTestCases">
+        <methods>
+          <include name="Smoke_Test_Verifying_SOD_Cust_Param_Feedad_Optinmode_scenario"/>
+          <include name="Smoke_Test_verifying_DailyIFcardResponse"/>
+          <include name="Smoke_Test_Verifying_RDP_value_homescreenad_Optinmode_scenario"/>
+          <include name="Smoke_Test_verifying_FG_BG_urls_DailyIF_Card"/>
+          <include name="Smoke_Test_CaseVerify_news_aax_amazon_adcalll"/>
+          <include name="Smoke_Test_Verify_News_detailpage_adcall_iu"/>
+          <include name="Smoke_Test_Verify_daily_card_adcall_iu"/>
+          <include name="Smoke_Test__Verifying_locaion_apicall_Optinmode_scenario"/>
+          <include name="Smoke_Test__Verifying_locaion_apicall_Optoutmode_scenario"/>
+          <include name="After_Test"/>
+          <include name="Smoke_Test__Verifying_amaozn_aax_calls_Optinmode_scenario"/>
+          <include name="Smoke_Test__Verifying_amaozn_aax_calls_Optoutmode_scenario"/>
+          <include name="Smoke_Test__Verifying_marqueehomescreecall_Optoutmode_scenario"/>
+          <include name="Smoke_Test_verifying_Size_NextgenIm_Ad"/>
+          <include name="Smoke_Test_CaseVerify_adcrwdcntrlnet_url"/>
+          <include name="Smoke_Test_Verify_hourly_detailpage_adcall_iu"/>
+          <include name="Smoke_Test_CaseVerify_seasonalhub_feed_adcall"/>
+          <include name="Smoke_Test_Verifying_SOD_Cust_Param_homescreenad_Optoutmode_scenario"/>
+          <include name="Smoke_Test_Verify_amazon_aax_Running_Bigbanner_ad"/>
+          <include name="Smoke_Test_Verifying_SOD_Cust_Param_homescreenad_Optinmode_scenario"/>
+          <include name="Smoke_Test__Verifying_adcrw_apicall_Optinmode_scenario"/>
+          <include name="Smoke_Test__Verifying_Bcp_apicall_Optoutmode_scenario"/>
+          <include name="Smoke_Test_amazon_aax_Daily_preload_adcall"/>
+          <include name="Smoke_Test_Selecting_Opt_in_mode_scenario"/>
+          <include name="Smoke_Test_Verifying_RDP_value_homescreenad_Optoutmode_scenario"/>
+          <include name="Smoke_Test__Verifying_homescreenhourly_calls_Optoutmode_scenario"/>
+          <include name="Smoke_Test_Verifying_detailpageadcall_Optoutmode_scenario"/>
+          <include name="Smoke_Test_amazon_aax_home_screen_today_preload_adcall__iu"/>
+          <include name="Smoke_Test_Verify_health_and_activities_Allergy_detailpage_adcall_iu"/>
+          <include name="Smoke_Test_Verifying_Feedadcall_Optoutmode_scenario"/>
+          <include name="Smoke_Test_Verifying_RDP_value_detailed_feedad_Optinmode_scenario"/>
+          <include name="Smoke_Test_Verify_health_and_activities_Air_Quality_detailpage_adcall_iu"/>
+          <include name="Smoke_Test_Verifying_SOD_Cust_Param_detail_Feedad_Optinmode_scenario"/>
+          <include name="Smoke_Test_verifying_FG_BG_urls_NextgenIm_Ad"/>
+          <include name="Smoke_Test_NextGen_IM_adunit"/>
+          <include name="Smoke_Test_Verifying_Feedadcall_Optinmode_scenario"/>
+          <include name="Before_Test"/>
+          <include name="Smoke_Test_Verifying_SOD_Cust_Param_videoad_Optoutmode_scenario"/>
+          <include name="Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll"/>
+          <include name="Smoke_Test_Verifying_RDP_value_detailed_feedad_Optoutmode_scenario"/>
+          <include name="Smoke_Test_amazon_aax_rader_card_preload_adcall"/>
+          <include name="Smoke_Test_Verifying_RDP_value_feedad_Optinmode_scenario"/>
+          <include name="Smoke_Test_amazon_aax_AQ_card_preload_adcall"/>
+          <include name="Smoke_Test_Verify_WatsonFlu_adcall"/>
+          <include name="Smoke_Test_Verifying_SOD_Cust_Param_Feedad_Optoutmode_scenario"/>
+          <include name="Smoke_Test_Verifying_detailpageadcall_Optinmode_scenario"/>
+          <include name="Smoke_Test_Case_Verify_Video_adCalll"/>
+          <include name="Smoke_Test__Verifying_Bcp_apicall_Optinmode_scenario"/>
+          <include name="Smoke_Test_Verify_health_and_activities_Running_spotlight_adcall_iu"/>
+          <include name="Smoke_Test_Verifying_RDP_value_feedad_Optoutmode_scenario"/>
+          <include name="Smoke_Test_verifying_NextGenIM_response"/>
+          <include name="Smoke_Test_CaseVerify_Health_Activities_feed_adcall"/>
+          <include name="Smoke_Test__Smoke_Test_Verifying_videoadcall_Optoutmode_scenario"/>
+          <include name="Smoke_Test_Verify_PrivacyCard_onScreen"/>
+          <include name="Smoke_Test_CaseVerify_Radar_Maps_feedcard_adcall"/>
+          <include name="Smoke_Test_Verifying_SOD_Cust_Param_detail_Feedad_Optoutmode_scenario"/>
+          <include name="Smoke_Test__Verifying_homescreenhourly_calls_Optinmode_scenario"/>
+          <include name="Smoke_Test_Verifying_RDP_value_video_adcall_Optinmode_scenario"/>
+          <include name="Smoke_Test_Verify_dailyIF_card_adcall_iu"/>
+          <include name="Smoke_Test_Verify_News_hurricane_detail_adcall_iu"/>
+          <include name="Smoke_Test_Verifying_RDP_value_video_adcall_Optoutmode_scenario"/>
+          <include name="Smoke_Test_Verify_SeasonalHub_detailpage_adcall_iu"/>
+          <include name="Smoke_Test_CaseVerify_AQ_aax_amazon_adcalll"/>
+          <include name="Smoke_Test__Verifying_marqueehomescreecall_Optinmode_scenario"/>
+          <include name="Smoke_Test_CaseVerify_Radar_Maps_deatailscard_adcall"/>
+          <include name="Smoke_Test_Verifying_SOD_Cust_Param_videoad_Optinmode_scenario"/>
+          <include name="Smoke_Test__Verifying_adcrw_apicall_Optoutmode_scenario"/>
+          <include name="Smoke_Test_amazon_aax_mapsdetails_preload_adcall"/>
+          <include name="Smoke_Test_Verify_health_and_activities_cold_flu_Spotlight_adcall_iu"/>
+          <include name="Smoke_Test__Smoke_Test_Verifying_videoadcall_Optinmode_scenario"/>
+          <include name="Smoke_Test_amazon_aax_Hourly_preload_adcall"/>
+          <include name="Smoke_Test_Verify_health_and_activities_Bot_beach_detailpage_adcall_iu"/>
+        </methods>
+      </class> <!-- twc.Automation.SmokeTestCases.smokeTestCases -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
