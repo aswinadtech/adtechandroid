@@ -106,7 +106,7 @@ extends Drivers
 			System.out.println("====== Validating Health and Activities feed card testCase Started =======");
 			//AppFunctions.Kill_Launch_App();
 			 AppFunctions.Swipeforappdeckapk();
-			AppFunctions.SwipeUp_Counter(4);		
+			AppFunctions.SwipeUp_Counter(3);		
 			logStep("Checking the  Health and Activities feed card ad is presnted or not");
 			AppiumFunctions.Check_Health_and_Activities_feedad();
 			System.out.println("====== Validating Health and Activities feed card testCase End =======");    
@@ -221,7 +221,7 @@ extends Drivers
 		AppFunctions.SwipeUp_Counter(1);
 		AppFunctions.click_news_element();				
 		logStep("Checking the  Extended Deatail News Page ad is presnted or not");
-		//AppiumFunctions.Check_submodules_news_ad();
+		AppiumFunctions.Check_submodules_news_ad();
 	   AppFunctions.clickOnBackArrowElement();
 		System.out.println("====== Validating Extended Deatailnews page Ad TestCase End =======");    
 	}
