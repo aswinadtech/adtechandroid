@@ -485,6 +485,7 @@ public class regressionTestCases extends Drivers{
 
                        AppiumFunctions.SwipeUp_Counter(1);	
 			AppiumFunctions.clickOnVideoElement();
+			 Thread.sleep(10000);
 			AppiumFunctions.clickOnBackArrowElement();
 
                     AppiumFunctions.SwipeUp_Counter(2);
