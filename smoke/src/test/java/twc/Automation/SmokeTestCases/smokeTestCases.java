@@ -211,7 +211,7 @@ Thread.sleep(5000);
                          AppiumFunctions.SwipeUp_Counter(1);
                        AppiumFunctions.click_SH_element();
 			AppiumFunctions.clickOnBackArrowElement();
-			Thread.sleep(5000);
+			Thread.sleep(8000);
 			AppiumFunctions.SwipeUp_Counter(1);
 			AppiumFunctions.click_news_element();
 			AppiumFunctions.clickOnBackArrowElement();
