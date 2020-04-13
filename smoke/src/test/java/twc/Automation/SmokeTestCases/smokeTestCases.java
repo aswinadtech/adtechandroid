@@ -197,8 +197,8 @@ Thread.sleep(5000);
 			 Thread.sleep(8000);
 			 AppiumFunctions.SwipeUp_Counter(1);
 				
-			AppiumFunctions.click_Todaydetails_element();
-			AppiumFunctions.clickOnBackArrowElement_trending();
+		//	AppiumFunctions.click_Todaydetails_element();
+		//	AppiumFunctions.clickOnBackArrowElement_trending();
                         AppiumFunctions.SwipeUp_Counter(1);
 			
 	     
@@ -215,7 +215,7 @@ Thread.sleep(5000);
 			AppiumFunctions.SwipeUp_Counter(1);
 			AppiumFunctions.click_news_element();
 			AppiumFunctions.clickOnBackArrowElement();
-			Thread.sleep(5000);
+			Thread.sleep(8000);
 			AppiumFunctions.click_hourly_element();
 			CharlesFunctions.ExportSession();
 			Functions.finding_VideoCard_iu_value();	
