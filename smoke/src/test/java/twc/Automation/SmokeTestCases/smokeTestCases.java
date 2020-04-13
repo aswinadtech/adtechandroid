@@ -213,8 +213,8 @@ Thread.sleep(5000);
 			AppiumFunctions.clickOnBackArrowElement();
 			Thread.sleep(8000);
 			AppiumFunctions.SwipeUp_Counter(1);
-			AppiumFunctions.click_news_element();
-			AppiumFunctions.clickOnBackArrowElement();
+			//AppiumFunctions.click_news_element();
+			//AppiumFunctions.clickOnBackArrowElement();
 			Thread.sleep(8000);
 			AppiumFunctions.click_hourly_element();
 			CharlesFunctions.ExportSession();
@@ -361,14 +361,14 @@ Thread.sleep(5000);
 		Functions.finding_Seasonalhub_adcalL_iu();
      	System.out.println("================= verifying iu value SeasonalHub feed card End =========================");
 	}
-	@Test(priority=27,enabled = true)
+	/*@Test(priority=27,enabled = true)
 	@Title("Verifying iu value for  Air Quality detailpage ad call iu")
 	public void Smoke_Test_Verify_health_and_activities_Air_Quality_detailpage_adcall_iu()
 			throws Exception {
 		System.out.println("================= Verify_health_and_activities_AirQuality_detailpage_adcall_iu Started =========================");
 		Functions.health_and_activities_AirQuality_detailpage_adcall_iu();
      	System.out.println("================= Verify_health_and_activities_AirQuality_detailpage_adcall_iu End =========================");
-	}
+	}*/
 	/*@Test(priority=28,enabled = true)			
 	@Title("Verifying amazon axx slot for Boat&Beach Bigbanner ad")
 	public void Smoke_Test_Verify_amazon_aax_AirQuality_adcall()
@@ -377,14 +377,14 @@ Thread.sleep(5000);
 		Functions.get_aaxcal_AQ();	
      	System.out.println("================= verifying amazon aax slot for Boat&Beach BigBanner adcall  End =========================");
 	}*/
-	@Test(priority=29,enabled = true)
+	/8@Test(priority=29,enabled = true)
 	@Title("Verifying iu value for news detailpage ad call iu")
 	public void Smoke_Test_Verify_News_detailpage_adcall_iu()
 			throws Exception {
 		System.out.println("================= Verify_News_detailpage_adcall_iu Started =========================");
 		Functions.Verify_News_detailpage_adcall_iu();
      	System.out.println("================= Verify_News_detailpage_adcall_iu End =========================");	
-     	}
+     	}*/
 /*@Test(priority=30,enabled = true)
 @Title("Verifying iu value for news detailpage ad call iu")
 public void Smoke_Test_Verify_News_hurricane_detail_adcall_iu()
@@ -430,21 +430,21 @@ public void Smoke_Test_CaseVerify_news_aax_amazon_adcalll()
 
 
 @Test(priority=33,enabled = true)
-@Title("Verifying iu value for news detailpage ad call iu")
+@Title("Verifying iu value for hourly detailpage ad call iu")
 public void Smoke_Test_Verify_hourly_detailpage_adcall_iu()
 		throws Exception {
 	System.out.println("================= Verify_hourly_detailpage_adcall_iu Started =========================");
 	Functions.Verify_hourly_detailpage_adcall_iu();
  	System.out.println("================= Verify_hourly_detailpage_adcall_iu End =========================");	
  	}
-@Test(priority=34,enabled = true)
+/*@Test(priority=34,enabled = true)
 @Title("Verifying news aax call")
 public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 		throws Exception {
 	System.out.println("================= Verifying amazon hurricane details aax call  started =========================");
 	Functions.get_aaxcal_hurricanedetails();
  	System.out.println("================= Verifying amazon hurricane details aax call End =========================");
-}
+}*/
 
 @Test(priority = 41, enabled = true)
 	@Title("Verifying Privacy Card is present on the screen")
