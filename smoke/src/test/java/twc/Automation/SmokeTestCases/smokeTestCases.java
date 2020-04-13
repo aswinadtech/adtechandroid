@@ -377,7 +377,7 @@ Thread.sleep(5000);
 		Functions.get_aaxcal_AQ();	
      	System.out.println("================= verifying amazon aax slot for Boat&Beach BigBanner adcall  End =========================");
 	}*/
-	/8@Test(priority=29,enabled = true)
+	/*@Test(priority=29,enabled = true)
 	@Title("Verifying iu value for news detailpage ad call iu")
 	public void Smoke_Test_Verify_News_detailpage_adcall_iu()
 			throws Exception {
