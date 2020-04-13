@@ -209,9 +209,9 @@ public class AppiumFunctions extends Drivers{
 	@SuppressWarnings("rawtypes")
 	public static void LaunchAppWithFullReset() throws Exception{
 //
-		//killADB();
-		//AppiumServerStop();
-		//AppiumServerStart();
+		/*killADB();
+		AppiumServerStop();
+		AppiumServerStart();*/
 
 		DeviceStatus device_status = new DeviceStatus();
 		int Cap = device_status.Device_Status();
@@ -447,6 +447,48 @@ public class AppiumFunctions extends Drivers{
 
 		}
 	}
+public static void Check_submodules_Flu_ad() throws Exception
+	{ 
+		try{
+			logStep("Checking for Detailed flu card ad");
+			System.out.println("Checking for Detailed flu card  ad");
+			Thread.sleep(5000);
+			//WebElement submodulead=Ad.findElement(By.xpath("//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[4]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.ViewSwitcher[1]/android.widget.FrameLayout[1]/android.webkit.WebView[1]/android.webkit.WebView[1]"));
+			//WebElement submodulead  =Ad.findElementById("com.weather.Weather:id/ad_view_holder");
+			//WebElement submodulead=Ad.findElement(By.xpath("/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]"));
+			//WebElement submodulead=Ad.findElement(By.xpath("//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.ViewSwitcher[1]/android.widget.FrameLayout[1]/android.webkit.WebView[1]/android.webkit.WebView[1]/android.view.View[1]"));			
+			//WebElement submodulead=	Ad.findElementByXPath("//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.support.v4.widget.DrawerLayout[1]/android.widget.RelativeLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]/android.widget.ListView[1]/android.widget.FrameLayout[1]/android.widget.FrameLayout[1]/android.view.ViewGroup[1]");
+			//WebElement submodulead=	Ad.findElementByXPath("//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]");
+			WebElement submodulead=Ad.findElementByClassName("android.webkit.WebView");
+			Thread.sleep(2000);
+
+			if(submodulead.isDisplayed())
+			{
+				logStep("Detailed flu card ad present");
+				System.out.println("Detailed flu card ad present");
+				//System.out.println("Maps submodule ad present ad present and size is"+submodulead.getSize());			
+				ScreenShot("Detailed flu card","Passed");
+				attachScreen();
+				System.out.println("took the passed Detailed flucard ad screenshot");
+				System.out.println("took the Detailed flu card ad screenshot");
+			}		    
+		}
+		catch(Exception e)
+		{
+			logStep("flu detalied card ad is not presented on the screen");
+			System.out.println("Flu detailed  card ad is not presented on the screen");
+			ScreenShot("Flu deatiled page  ad","Failed");
+			attachScreen();
+			logStep("took the failed screenshot");
+			System.out.println("took the failed Flu deatiled page  ad screenshot");
+			Assert.fail("Flu deatiled page ad is not  present");
+		}
+		finally {
+			AppFunctions.clickOnBackArrowElement();
+		}
+		
+	}
+
 	public static void Check_Health_Activities_ad() throws Exception
 	{
 		WebElement feedad=null;
@@ -1622,6 +1664,40 @@ public static void Check_Health_and_Activities_feedad() throws Exception
 
 		}
 	}
+
+
+public static void Check_Flu_feedcard() throws Exception
+	{ 
+		
+		WebElement feedad=null;
+		try{
+			logStep("Checking for Flu feed card");
+			System.out.println("Checking for FLu feed card");
+			feedad=Ad.findElementByClassName("android.webkit.WebView");
+			Thread.sleep(2000);
+			if(feedad.isDisplayed())
+			{
+				logStep("Flu card ad present");
+				System.out.println("Flu feed card ad present");
+				//System.out.println("fee4 ad present and size is"+feedad.getSize());
+				ScreenShot("Flu feed card","Passed");
+				System.out.println("took the Flu feed card screenshot");
+			}		    		  	
+		}
+		catch(Exception e)
+		{
+			logStep("Flu feed card ad not present");
+			ScreenShot("Flu feed card","Failed");
+			attachScreen();
+			logStep("took the failed Flu feed card screen shot");
+			System.out.println("took the failed Flu feed card screen shot");
+		Assert.fail("Flu feed card ad not present");
+		} 
+	
+	}
+
+
+
 public static void Check_seasonalhub_feedad() throws Exception
 	{
 		WebElement feedad=null;
@@ -1655,5 +1731,7 @@ public static void Check_seasonalhub_feedad() throws Exception
 
 		}
 	}
+
+
 
 }

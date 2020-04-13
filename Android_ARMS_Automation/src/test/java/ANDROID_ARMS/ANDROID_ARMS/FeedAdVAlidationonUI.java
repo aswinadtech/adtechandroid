@@ -41,14 +41,16 @@ extends Drivers
 		AppiumFunctions.Check_Home_ad();
 		System.out.println("====== Validating Home page Ad TestCase End =======");
 		logStep("Validating Home page Ad TestCase End");
+                Thread.sleep(5000);
 
 	}
-		@Test(priority =3,enabled = true)
+		@Test(priority =5,enabled = true)
 		@Title("Validating Extended Maps page Ad")
 		public void Extended_Deatail_MapsPage_Ad() throws Exception
 		{
 			System.out.println("====== Validating Extended Deatail MapsPage TestCase Started =======");
 			AppFunctions.SwipeUp_Counter(1);
+                        Thread.sleep(5000);
 			AppFunctions.click_Mapsdetails_element();				
 			logStep("Checking the  Extended Deatail MapsPage ad is presnted or not");
 			AppiumFunctions.Check_submodules_Maps_ad();
@@ -56,7 +58,7 @@ extends Drivers
 			System.out.println("====== Validating Extended Deatail MapsPage Ad TestCase End =======");    
 		}
 		//Validating Radar&Maps feed card
-		@Test(priority =4,enabled = true)
+		@Test(priority =6,enabled = true)
 		@Title("Validating Radar&Maps feed card Ad")
 		public void Validating_Radar_Maps_feed__card() throws Exception
 		{
@@ -64,33 +66,65 @@ extends Drivers
 			System.out.println("====== Validating Radar&Maps Ad TestCase Started =======");
 			//scroll app to feed_2
 			logStep("Scroll the App to Radar&Maps feed card");
+                         Thread.sleep(5000);
 			AppiumFunctions.Check_feed2_ad();
 			System.out.println("====== Validating Radar&Maps feed card TestCase End =======");
 		}
-                              //Validating  Dailyforecast feed card
-				@Test(priority =2,enabled = true)
+                      
+
+               //Validating Flu  feed card
+		/*@Test(priority =2,enabled = true)
+		@Title("Validating  Flu feed card")
+		public void Validating_FLu_feed_card() throws Exception
+		{
+			logStep("Validating the FLu_feed_card TestCase");
+			System.out.println("======= Validating Flu_feed_card Ad TestCase Started =======");
+			//Scroll the app to feed_2 ad
+			logStep("scrolling the app till Flu_feed_card");
+			AppFunctions.SwipeUp_Counter(2);
+			//checking the feed_1 ad is coming or not
+			logStep("Checking the Flu_feed_card is presnted or not");
+			AppiumFunctions.Check_Flu_feedcard();
+		    System.out.println("====== Validating Flu_feed_card TestCase End =========");
+		}
+@Test(priority=3,enabled = true)
+	@Title("Validating Flu Detailed card card Ad")
+	public void Extended_Flu_Deatailard_Ad() throws Exception
+	{
+		System.out.println("====== Validating Detailed flu card ad TestCase Started =======");
+		//AppFunctions.SwipeUp_Counter(1);
+		AppFunctions.click_flu_element();				
+		logStep("Checking the Detailed flu card Ad  ad is presnted or not");
+		AppiumFunctions.Check_submodules_Flu_ad();
+		//AppFunctions.clickOnBackArrowElement();
+		System.out.println("====== Validating Detailed flu card Ad TestCase End =======");    
+	}*/
+		
+        //Validating  Dailyforecast feed card
+				@Test(priority =4,enabled = true)
 				@Title("Validating Daily feed card Ad")
 				public void Validating_Dailyforecast_feed__card() throws Exception
 				{
 					logStep("Validating Dailyforecast Ad TestCase Started");
 					System.out.println("====== Validating Dailyforecast Ad TestCase Started =======");
 					//scrolled app till Dailyforecast feed
-					
-                                       AppFunctions.Swipeforappdeckapk();
-                                       AppFunctions.SwipeUp_Counter(1);	
-			
+					Thread.sleep(5000);
+                                     AppFunctions.Swipeforappdeckapk();
+                                       AppFunctions.SwipeUp_Counter(2);	
+			                Thread.sleep(5000);
 					logStep("Scroll the App to  Dailyforecast  feed card");
 					AppiumFunctions.Check_dailyforecast_feedad();
 					System.out.println("====== Validating Dailyforecast feed card TestCase End =======");
 				}
 
-		/*@Test(priority =6,enabled = true)
+		/*@Test(priority =8,enabled = true)
 		@Title("Validating Extended Today page Ad")
 		public void Extended_Today_datailpage_Ad() throws Exception
 		{
 			System.out.println("====== Validating Extended today datail page testCase Started =======");
 			//AppFunctions.Kill_Launch_App();
-			AppFunctions.SwipeUp_Counter(1);
+			AppFunctions.SwipeUp_Counter(2);
+                        Thread.sleep(5000);
 			AppFunctions.click_Todaydetails_element();			
 			logStep("Checking the  Extended today datail page ad is presnted or not");
 			AppiumFunctions.Check_submodules_Today_ad();
@@ -99,17 +133,18 @@ extends Drivers
 		}*/
 
              
-		@Test(priority =5,enabled = true)
+		@Test(priority =7,enabled = true)
 		@Title("Validating Health_and_Activities feed Ad")
 		public void Validating_Health_and_Activities_feed__card() throws Exception
 		{
 			System.out.println("====== Validating Health and Activities feed card testCase Started =======");
 			//AppFunctions.Kill_Launch_App();
-			 AppFunctions.Swipeforappdeckapk();
-			AppFunctions.SwipeUp_Counter(3);		
+			AppFunctions.SwipeUp_Counter(1);
+                        Thread.sleep(5000);		
 			logStep("Checking the  Health and Activities feed card ad is presnted or not");
 			AppiumFunctions.Check_Health_and_Activities_feedad();
 			System.out.println("====== Validating Health and Activities feed card testCase End =======");    
+                        Thread.sleep(3000);
 		}
 		//Validating Health&Activities Module page Ads
 		//Validating Boat&Beach Module page Ad
@@ -127,7 +162,7 @@ extends Drivers
 				System.out.println("====== Validating Extended Boat&Beach page Ad TestCase End =======");    
 			}*/
 			        //Validating Running Module page Ad
-				/*	@Test(priority =9,enabled = true)
+					/*@Test(priority =9,enabled = true)
 					@Title("Validating Extended Running page Ad")
 					public void Extended_Runningpage_Ad() throws Exception
 					{
@@ -157,7 +192,7 @@ extends Drivers
 						System.out.println("====== Validating Extended Cold_flu page Ad TestCase End =======");    
 					}*/
 					//Validating Allergy Module page Ad
-					/*@Test(priority =10,enabled = true)
+				/*	@Test(priority =10,enabled = true)
 					@Title("Validating Extended Allergy page Ad")
 					public void Extended_Allergy_Ad() throws Exception
 					{
@@ -170,13 +205,14 @@ extends Drivers
 						//AppFunctions.clickOnBackArrowElement();
 						System.out.println("====== Validating Extended Allergy page Ad TestCase End =======");    
 					}*/
-                                         @Test(priority =13,enabled = true)
+                                      @Test(priority =13,enabled = true)
 					@Title("Validating SeasonalHub feed Ad")
 					public void Validating_seasonalhub_feed__card() throws Exception
 					{
 						System.out.println("====== Validating SeasonalHub feed card testCase Started =======");
 						//AppFunctions.Kill_Launch_App();
-						AppFunctions.SwipeUp_Counter(1);		
+						AppFunctions.SwipeUp_Counter(1);
+                                                Thread.sleep(3000);		
 						logStep("Checking the  SeasonalHub feed card ad is presnted or not");
 						AppiumFunctions. Check_seasonalhub_feedad();
 						System.out.println("====== Validating SeasonalHub feed  card testCase End =======");    
@@ -192,6 +228,7 @@ extends Drivers
 	{
 		System.out.println("====== Validating Extended Deatail Airpollution TestCase Started =======");
 		AppFunctions.SwipeUp_Counter(1);
+            Thread.sleep(5000);
 		AppFunctions.click_Airpollution_element();				
 		logStep("Checking the  Extended Deatail Airpollution ad is presnted or not");
 		AppiumFunctions.Check_submodules_Airpollution_ad();
@@ -210,10 +247,11 @@ extends Drivers
 			AppFunctions.SwipeUp_Counter(2);
 			//checking the feed_1 ad is coming or not
 			logStep("Checking the Airpollution_feed_card is presnted or not");
+                        Thread.sleep(5000);
 			AppiumFunctions.Check_Airpollution_feedcard();
 		    System.out.println("====== Validating Airpollution_feed_card TestCase End =========");
 		}
-	@Test(priority =14,enabled = true)
+	/*@Test(priority =14,enabled = true)
 	@Title("Validating Extended News page Ad")
 	public void Extended_Detailed_NewsPage_Ad() throws Exception
 	{
@@ -221,10 +259,10 @@ extends Drivers
 		AppFunctions.SwipeUp_Counter(1);
 		AppFunctions.click_news_element();				
 		logStep("Checking the  Extended Deatail News Page ad is presnted or not");
-	//	AppiumFunctions.Check_submodules_news_ad();
-	   //AppFunctions.clickOnBackArrowElement();
+		AppiumFunctions.Check_submodules_news_ad();
+		//AppFunctions.clickOnBackArrowElement();
 		System.out.println("====== Validating Extended Deatailnews page Ad TestCase End =======");    
-	}
+	}*/
 	//Validating Extended hourly page Ad
 			@Test(priority =15,enabled = true)
 			@Title("Validating Extended hourly page Ad")
@@ -233,7 +271,7 @@ extends Drivers
 				System.out.println("====== Validating Extended Hourly page Ad TestCase Started =======");
 				AppFunctions.click_hourly_element();
 				logStep("Checking the hourly ad is presnted or not");
-			//	AppiumFunctions.Check_submodules_Hourly_ad(); 		
+				AppiumFunctions.Check_submodules_Hourly_ad(); 		
 				AppFunctions.click_home_element(); 
 				System.out.println("====== Validating Extended Hourly page Ad TestCase End =======");
 

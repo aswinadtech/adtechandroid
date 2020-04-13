@@ -667,6 +667,17 @@ public class AppFunctions extends Drivers{
 		}
 	}
 
+public static void click_flu_element() throws Exception
+	{
+		try {
+		Ad.findElementById("com.weather.Weather:id/map_image").click();
+		Thread.sleep(3000);		
+		}
+		catch(Exception e ) {
+			Ad.findElementByAccessibilityId("Flu risk over the next 5 days").click();
+		}
+	}
+
 	public static void SwipeUp_Counter_Maps_submodule() throws Exception{
 
 		//int swipeup = Counter;
@@ -706,19 +717,7 @@ public class AppFunctions extends Drivers{
 		}
 	}
 
-public static void clickOnBackArrowElement_trending() throws Exception
-	{
-		try {
-			
-		//	Navigate up
-	     Ad.findElementById("com.weather.Weather:id/trending_up_navigation_icon").click();
-	     Thread.sleep(3000);
-		}
-		catch(Exception e) {
-			Ad.findElementByAccessibilityId("Navigate up").click();
-			Thread.sleep(3000);
-		}
-	}
+
 
 	//Swipe based on counter  //by naresh
 	public static void Swipe_Conter(int Counter) throws Exception{
@@ -1731,6 +1730,21 @@ catch(Exception e)
 			Thread.sleep(3000);
 		}
 	}
+	
+
+public static void clickOnBackArrowElement_trending() throws Exception
+{
+	try {
+		
+	//	Navigate up
+     Ad.findElementById("com.weather.Weather:id/trending_up_navigation_icon").click();
+     Thread.sleep(3000);
+	}
+	catch(Exception e) {
+		Ad.findElementByAccessibilityId("Navigate up").click();
+		Thread.sleep(3000);
+	}
+}
 	public static void click_home_element() throws Exception
 	{
 	try {
@@ -1800,52 +1814,28 @@ catch(Exception e)
 		Thread.sleep(3000);		
 		}
 		catch(Exception e) {
-			Ad.findElementById("com.weather.Weather:id/radar_map_image").click();
+			Ad.findElementById("com.weather.Weather:id/mapBig").click();
 			Thread.sleep(3000);
 		}	
 	}
 	public static void click_Airpollution_element() throws Exception
 	{
-		
-		try {
-			Ad.findElementById("com.weather.Weather:id/air_quality_primary_pollutant_container").click();
-			Thread.sleep(3000);	
-		}
-		catch(Exception e) {
-			Ad.findElementById("com.weather.Weather:id/air_quality_dial").click();
-			Thread.sleep(3000);	
-		}
-		
-		}
+		Ad.findElementById("com.weather.Weather:id/air_quality_dial").click();
+		Thread.sleep(3000);		
+	}
 	public static void click_news_element() throws Exception
 	{
-	try {
-		List<WebElement> airlock=Ad.findElementsById("com.weather.Weather:id/video_player_thumbnail_extra");
-		airlock.get(0).click();
-		Thread.sleep(3000);
-	
-	}
-	catch(Exception e) {
-		List<WebElement> airlock=Ad.findElementsById("com.weather.Weather:id/video_player_thumbnail_extra");
-		airlock.get(1).click();
-		Thread.sleep(3000);
-	}	
-
-	
-		Ad.findElementById("com.weather.Weather:id/video_player_thumbnail_extra").click();
+		Ad.findElementById("com.weather.Weather:id/video_backdrop").click();
 		Thread.sleep(3000);		
 	}
 	public static void click_Todaydetails_element() throws Exception
 	{
 		try {
-		
-		//com.weather.Weather:id/details_button
 		Ad.findElementById("com.weather.Weather:id/details_button").click();
 		Thread.sleep(3000);	
 		}
 		catch(Exception e) {
-			Ad.findElementById("com.weather.Weather:id/wind_title").click();
-			Thread.sleep(3000);	
+			Ad.findElementByName("See Details").click();
 		}
 		
 	}
