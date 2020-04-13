@@ -271,7 +271,7 @@ extends Drivers
 				System.out.println("====== Validating Extended Hourly page Ad TestCase Started =======");
 				AppFunctions.click_hourly_element();
 				logStep("Checking the hourly ad is presnted or not");
-				AppiumFunctions.Check_submodules_Hourly_ad(); 		
+				//AppiumFunctions.Check_submodules_Hourly_ad(); 		
 				AppFunctions.click_home_element(); 
 				System.out.println("====== Validating Extended Hourly page Ad TestCase End =======");
 
