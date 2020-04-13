@@ -221,8 +221,8 @@ extends Drivers
 		AppFunctions.SwipeUp_Counter(1);
 		AppFunctions.click_news_element();				
 		logStep("Checking the  Extended Deatail News Page ad is presnted or not");
-		AppiumFunctions.Check_submodules_news_ad();
-	   AppFunctions.clickOnBackArrowElement();
+	//	AppiumFunctions.Check_submodules_news_ad();
+	   //AppFunctions.clickOnBackArrowElement();
 		System.out.println("====== Validating Extended Deatailnews page Ad TestCase End =======");    
 	}
 	//Validating Extended hourly page Ad
