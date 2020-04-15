@@ -4705,11 +4705,11 @@ public static void enable_QA_Usergroup()  throws Exception{
 				
 				//clicking on build number 10 times 
 
-				for(int i=0;i<=10;i++)
+				/*for(int i=0;i<=10;i++)
 				{
 						Ad.findElementById("com.weather.Weather:id/about_version").click();
 						Thread.sleep(3000);
-				}
+				}*/
 					
 				//clicking on testmode
 				
@@ -5009,11 +5009,11 @@ public static void clickbranch()  throws Exception{
 			
 			//clicking on build number 10 times 
 
-			for(int i=0;i<=10;i++)
+			/*for(int i=0;i<=10;i++)
 			{
 					Ad.findElementById("com.weather.Weather:id/about_version").click();
 					Thread.sleep(3000);
-			}
+			}*/
 				
 			//clicking on testmode
 			
