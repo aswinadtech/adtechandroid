@@ -448,7 +448,7 @@ public class AppiumFunctions extends Drivers{
     					Thread.sleep(3000);
     				}
     			}catch(Exception e){
-    				System.out.println("Location already set");
+    				//System.out.println("Location already set");
     			}
     			
     			try{
@@ -457,7 +457,7 @@ public class AppiumFunctions extends Drivers{
     					Thread.sleep(3000);
     				}
     			}catch(Exception e){
-    				System.out.println("Location already set");
+    				//System.out.println("Location already set");
     			}
     			
     			try{
@@ -466,7 +466,7 @@ public class AppiumFunctions extends Drivers{
     					Thread.sleep(3000);
     				}
     			}catch(Exception e){
-    				System.out.println("Location already set");
+    			//	System.out.println("Location already set");
     			}
     			/*clickONNext();
     		    ClickonIUnderstand();
