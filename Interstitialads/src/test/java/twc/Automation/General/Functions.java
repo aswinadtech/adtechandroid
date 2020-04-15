@@ -6507,8 +6507,8 @@ public static void settheTimer() throws Exception {
 	logStep("wait for 3 minutes for getting agian interstitial ad call");
 	System.out.println("wait for 3 minutes for getting again interstitial ad call");
 	Thread.sleep(180000);
-	logStep("completed the 3 minutes go to hourly details");
-	System.out.println("completed the 3 minutes go to hourly details");
+	logStep("completed the 3 minutes need to go same details");
+	System.out.println("completed the 3 minutes need to go same details");
 	long millis1=System. currentTimeMillis();
 	java. util. Date date1=new java. util. Date(millis1);
 	logStep(date1);
@@ -6518,7 +6518,13 @@ public static void settheTimer() throws Exception {
 	logStep("current system time");
 }
 
-
+public static void Swipeforappdeckapk(){
+	Dimension dimensions = Ad.manage().window().getSize();//throwing exception
+	Double startY1 = dimensions.getHeight() * 0.6;  
+	startY = startY1.intValue();
+	Double endY1 = (double) (dimensions.getHeight()/30);  //  dimensions.getHeight()  0.2;  == 512.0
+	endY = endY1.intValue();
+}
 }
 
 

@@ -1952,7 +1952,7 @@ public class smokeTestCases extends Drivers {
 		System.out.println("================= Verifying video details Interstal ads test case  Started =========================");
 		
 		Thread.sleep(5000);
-		AppFunctions.Swipe_Conter(1);
+		Functions.Swipeforappdeckapk();
 		CharlesFunctions.clearSessionBrowserData();
 		CharlesFunctions.startSessionBrowserData();
 		Functions.clickOnVideoElement();
