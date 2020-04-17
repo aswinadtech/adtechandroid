@@ -202,16 +202,16 @@ Thread.sleep(5000);
                         AppiumFunctions.SwipeUp_Counter(1);
 			
 	     
-               Thread.sleep(3000);
+               Thread.sleep(300000);
 		
-			AppiumFunctions.SwipeUp_Counter(1);
-			AppiumFunctions.click_Airpollution_element();
-			AppiumFunctions.clickOnBackArrowElement();
+			//AppiumFunctions.SwipeUp_Counter(1);
+			//AppiumFunctions.click_Airpollution_element();
+			//AppiumFunctions.clickOnBackArrowElement();
                     Thread.sleep(8000);
-                         AppiumFunctions.SwipeUp_Counter(1);
-                       AppiumFunctions.click_SH_element();
-			AppiumFunctions.clickOnBackArrowElement();
-			Thread.sleep(8000);
+                      //   AppiumFunctions.SwipeUp_Counter(1);
+                      // AppiumFunctions.click_SH_element();
+			//AppiumFunctions.clickOnBackArrowElement();
+			//Thread.sleep(8000);
 		//	AppiumFunctions.SwipeUp_Counter(1);
 			//AppiumFunctions.click_news_element();
 			//AppiumFunctions.clickOnBackArrowElement();
