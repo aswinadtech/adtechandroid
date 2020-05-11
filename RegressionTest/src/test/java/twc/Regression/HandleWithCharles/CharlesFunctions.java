@@ -105,32 +105,26 @@ public class CharlesFunctions extends Drivers{
 	}
 	
 	public static void startSessionBrowserData() throws Exception{
-		
+
 		DeviceStatus device_status = new DeviceStatus();
 		int Cap = device_status.Device_Status();
-		
+
 		String[][] charlesdata = read_excel_data.exceldataread("Charlesdeatils");
 		String[][] paths = read_excel_data.exceldataread("Paths");
-		
+
 		File index = new File(paths[4][Cap]);
-		
+
 		if (!index.exists()) {
-			System.out.println("Specified folder is not exist and creating the same folder now");
-		    index.mkdir();
+			//System.out.println("Specified folder is not exist and creating the same folder now");
+			index.mkdir();
 		} else {
-			System.out.println("Specified folder is exist and deleting the same folder");
+			//System.out.println("Specified folder is exist and deleting the same folder");
 			FileUtils.cleanDirectory(index);
 			System.out.println("Deleted all the files in the specified folder");
+			//System.out.println(dir.usage().trim());
+			System.out.println(index);
 		}
-		/*
-		Thread.sleep(1000);
-		driver.findElement(By.linkText(charlesdata[2][0])).click();
-		Thread.sleep(1000);
-		driver.findElement(By.linkText(charlesdata[3][0])).click();
-		Thread.sleep(1000);
-		driver.findElement(By.linkText(charlesdata[4][0])).click();
-		Thread.sleep(1000);
-		driver.findElement(By.linkText(charlesdata[5][0])).click();*/
+
 		Thread.sleep(1000);
 		//driver.findElement(By.linkText(charlesdata[2][0])).click();
 		Thread.sleep(1000);
@@ -143,6 +137,7 @@ public class CharlesFunctions extends Drivers{
 		driver.findElement(By.linkText(charlesdata[3][0])).click();
 		Thread.sleep(1000);
 		driver.findElement(By.linkText(charlesdata[1][0])).click();
+
 	}
 	
 	

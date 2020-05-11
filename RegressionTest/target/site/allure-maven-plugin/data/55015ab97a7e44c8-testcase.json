@@ -1,0 +1,209 @@
+{
+  "uid" : "55015ab97a7e44c8",
+  "name" : "C333216_Verify_cust_param_cnd",
+  "title" : "Verify custom parameter cnd",
+  "time" : {
+    "start" : 1588968317001,
+    "stop" : 1588968322667,
+    "duration" : 5666
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 10
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "5a28fef0eaef3b76",
+    "name" : "Suite : Test",
+    "title" : "Suite : Test"
+  },
+  "steps" : [ {
+    "name" : "logStep[Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly Pub Ad Call cnd Custm_Parameter E...]",
+    "title" : "Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly Pub Ad Call cnd Custm_Parameter Expected ...",
+    "time" : {
+      "start" : 1588968317363,
+      "stop" : 1588968317364,
+      "duration" : 1
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fmarquee Pub Ad Call cnd Custm_Parameter ...]",
+    "title" : "Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fmarquee Pub Ad Call cnd Custm_Parameter Expected...",
+    "time" : {
+      "start" : 1588968317863,
+      "stop" : 1588968317863,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fradar Pub Ad Call cnd Custm_Parameter Expected ...]",
+    "title" : "Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fradar Pub Ad Call cnd Custm_Parameter Expected value pr...",
+    "time" : {
+      "start" : 1588968318712,
+      "stop" : 1588968318712,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Flifestyle Pub Ad Call cnd Custm_Parameter Expec...]",
+    "title" : "Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Flifestyle Pub Ad Call cnd Custm_Parameter Expected valu...",
+    "time" : {
+      "start" : 1588968319603,
+      "stop" : 1588968319603,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fseason Pub Ad Call cnd Custm_Parameter Expected...]",
+    "title" : "Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fseason Pub Ad Call cnd Custm_Parameter Expected value p...",
+    "time" : {
+      "start" : 1588968319937,
+      "stop" : 1588968319937,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Faq Pub Ad Call cnd Custm_Parameter Expected val...]",
+    "title" : "Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Faq Pub Ad Call cnd Custm_Parameter Expected value prese...",
+    "time" : {
+      "start" : 1588968320364,
+      "stop" : 1588968320364,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps Pub Ad Call cnd Custm_Parameter Expecte...]",
+    "title" : "Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps Pub Ad Call cnd Custm_Parameter Expected value ...",
+    "time" : {
+      "start" : 1588968321219,
+      "stop" : 1588968321219,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Ftoday Pub Ad Call cnd Custm_Parameter Expect...]",
+    "title" : "Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Ftoday Pub Ad Call cnd Custm_Parameter Expected value...",
+    "time" : {
+      "start" : 1588968322021,
+      "stop" : 1588968322021,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly Pub Ad Call cnd Custm_Parameter Expec...]",
+    "title" : "Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly Pub Ad Call cnd Custm_Parameter Expected valu...",
+    "time" : {
+      "start" : 1588968322252,
+      "stop" : 1588968322252,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day Pub Ad Call cnd Custm_Parameter Expect...]",
+    "title" : "Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day Pub Ad Call cnd Custm_Parameter Expected value...",
+    "time" : {
+      "start" : 1588968322504,
+      "stop" : 1588968322504,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "testSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "testGroup",
+    "value" : "Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "C333216_Verify_cust_param_cnd"
+  }, {
+    "name" : "testClass",
+    "value" : "twc.Regression.TestCases.regressionTestCases"
+  }, {
+    "name" : "suite-name",
+    "value" : "Suite : Test"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "host",
+    "value" : "Aswinikumars-MacBook-Pro.local"
+  }, {
+    "name" : "suite-title",
+    "value" : "Suite : Test"
+  }, {
+    "name" : "thread",
+    "value" : "14430@Aswinikumars-MacBook-Pro.local.main(1)"
+  } ],
+  "parameters" : [ ]
+}

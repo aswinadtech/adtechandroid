@@ -5,12 +5,15 @@ import java.io.FileInputStream;
 
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.testng.asserts.SoftAssert;
 
+import junit.framework.Assert;
 import twc.Regression.Driver.Drivers;
 import twc.Regression.ReadDataFromFile.*;
 
 public class validate_CustomParameter extends Drivers {
 	
+	public static SoftAssert sf=new SoftAssert();
 	public static String validateVal =null;
 	
 	public static String validate_Custom_Parameter(String sheetname, String expectedVal, String actualVal) throws Exception{
@@ -65,17 +68,44 @@ public class validate_CustomParameter extends Drivers {
 		}
 		else{
 			for(int i =1;i<rownum;i++){
+				
 				if(data[i][1].contains(expectedVal) && data[i][2].contains(actualVal)){
-					System.out.println("Expected Value :: "+expectedVal);
-					System.out.println("Actual Value :: "+actualVal);
+					//System.out.println("Expected Value :: "+expectedVal);
+					//System.out.println("Actual Value :: "+actualVal);
+					System.out.println("turbo call Value :: "+expectedVal);
+					System.out.println("pubad call Value :: "+actualVal);
 					wrResult.writeResult(sheetname,expectedVal,i,3);
 					validateVal = "Pass";
 					break;
 				}
-
-			}
+				if(actualVal.contains("nl")) {
+					System.out.println("turbo call Value :: "+expectedVal);
+					System.out.println("pubad call Value :: "+actualVal);
+					wrResult.writeResult(sheetname,expectedVal,i,3);
+					validateVal = "Fail";
+					break;
+				}
+}
+				/*else{
+					System.out.println("turbo call Value :: "+expectedVal);
+					System.out.println("pubad call Value :: "+actualVal);
+					//System.out.println("Expected Value :: "+expectedVal);
+					//System.out.println("Actual Value :: "+actualVal);
+					wrResult.writeResult(sheetname,expectedVal,i,3);
+					validateVal = "Fail";
+					
+					break;
+				}*/
 				
+				
+
+			
+			
+			
+			
 		}
+		
+	
 		return validateVal;
 	}
 	

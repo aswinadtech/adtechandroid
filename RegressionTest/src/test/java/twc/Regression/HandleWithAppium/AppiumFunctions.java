@@ -7,6 +7,7 @@ import io.appium.java_client.android.AndroidDriver;
 import java.io.IOException;
 import java.net.URL;
 import java.util.HashMap;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.exec.CommandLine;
@@ -16,6 +17,7 @@ import org.apache.commons.exec.ExecuteException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -28,6 +30,7 @@ import twc.Regression.Driver.Drivers;
 import twc.Regression.ReadDataFromFile.read_excel_data;
 import twc.Regression.utils.ReadExcelData;
 import twc.Regression.General.DeviceStatus;
+import twc.Regression.HandleWithCharles.CharlesFunctions;
 
 public class AppiumFunctions extends Drivers{
 	static int startY;
@@ -490,8 +493,8 @@ public static void killADB() throws IOException, Exception{
 	public static void LaunchApp() throws InterruptedException, IOException{
 			
 			//killADB();
-			AppiumServerStop();
-			AppiumServerStart();
+			//AppiumServerStop();
+			//AppiumServerStart();
 			
 			DeviceStatus device_status = new DeviceStatus();
 			int Cap = device_status.Device_Status();
@@ -512,28 +515,34 @@ public static void killADB() throws IOException, Exception{
 				capabilities.setCapability(capabilitydata[12][0],capabilitydata[12][Cap]);
 				capabilities.setCapability(capabilitydata[13][0],capabilitydata[13][Cap]);
 				capabilities.setCapability(capabilitydata[14][0],capabilitydata[14][Cap]);
-				capabilities.setCapability("appActivity","com.weather.Weather.app.SplashScreenActivity");
 				Ad = new AndroidDriver(new URL(capabilitydata[15][Cap]), capabilities);
 				}
+				Thread.sleep(10000);
+				clickONNext();
+			    ClickonIUnderstand();
+				
 				/* ---End Android Device Capabilities --- */
 				Ad.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+				
 				System.out.println("Capabilities have been launched");
 				Thread.sleep(5000);
 			} catch (Exception e) {
 				System.out.println("Unable To Launch The Appium Capabilities");
 			}
+			
+			
 	}
 	@SuppressWarnings("rawtypes")
 	public static void LaunchAppWithFullReset() throws Exception{
 		
-		//killADB();
-		//AppiumServerStop();
-		//AppiumServerStart();
+	/*	killADB();
+		AppiumServerStop();
+		AppiumServerStart();*/
 		
 		DeviceStatus device_status = new DeviceStatus();
 		int Cap = device_status.Device_Status();
 		
-		//try {
+		try {
 			
 			String[][] capabilitydata = read_excel_data.exceldataread("Capabilities");
 			DesiredCapabilities capabilities = new DesiredCapabilities();
@@ -544,17 +553,17 @@ public static void killADB() throws IOException, Exception{
 				capabilities.setCapability(capabilitydata[2][0], capabilitydata[2][Cap]); 
 				capabilities.setCapability(capabilitydata[3][0], capabilitydata[3][Cap]);
 				capabilities.setCapability(capabilitydata[7][0], capabilitydata[7][Cap]); 
-				capabilities.setCapability(capabilitydata[9][0], capabilitydata[9][Cap]);
+				//capabilities.setCapability(capabilitydata[9][0], capabilitydata[9][Cap]);
 				capabilities.setCapability(capabilitydata[10][0],capabilitydata[10][Cap]);
 				capabilities.setCapability(capabilitydata[12][0],capabilitydata[12][Cap]);
-				//capabilities.setCapability("appActivity","com.weather.Weather.splash.SplashScreenActivity");
+			//	capabilities.setCapability("appActivity","com.weather.Weather.splash.SplashScreenActivity");
 				//capabilities.setCapability("appActivity","com.weather.android.daybreak.MainActivity");
 				//capabilities.setCapability("automationName","UiAutomator2");
 				System.out.println("app : "+capabilitydata[10][Cap]);
 				capabilities.setCapability(capabilitydata[13][0],capabilitydata[13][Cap]);
 				//capabilities.setCapability(capabilitydata[14][0],capabilitydata[14][Cap]);
 				
-				Thread.sleep(50000);
+				Thread.sleep(10000);
 				
 				Ad = new AndroidDriver(new URL(capabilitydata[15][Cap]), capabilities);
 				Thread.sleep(30000);
@@ -562,95 +571,113 @@ public static void killADB() throws IOException, Exception{
 			/* ---End Android Device Capabilities --- */
 			Ad.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			//####added ths to handle allow button
-			Thread.sleep(20000);
+			Thread.sleep(10000);
 			
-			try{
-				if((Ad.findElementById("com.android.packageinstaller:id/permission_allow_button").isDisplayed())){
-					Ad.findElementById("com.android.packageinstaller:id/permission_allow_button").click();
-				}
-			}catch(Exception e){
-				System.out.println("Location already set");
-			}
-			
-			/*clickONNext();
+        	clickONNext();
 		    ClickonIUnderstand();
-    		clickOnAllow();*/
-    		 			//######
-			try{
-				// WelcomeAppLaunchCooredinates();
-			}catch(Exception e){
-
-				}
-			System.out.println("Capabilities have been launched  with fullreset ");
+    		clickOnAllow();
+    		System.out.println("Capabilities have been launched  with fullreset ");
 			Thread.sleep(5000);
-		//} catch (Exception e) {
+		} catch (Exception e) {
 			System.out.println("Unable To Launch The Appium Capabilities");
-		//}
+		}
 	}
 	public static void clickOnVideoElement() throws Exception{
-try {
-		//com.weather.Weather:id/ok_button
+		System.out.println("clicking video element");
+		logStep("clicking video element");
+		try {
 		Ad.findElementById("com.weather.Weather:id/ok_button").click();	
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		}
 		catch(Exception e) {
-			Ad.findElementById("com.weather.Weather:id/video_player_thumbnail_extra").click();	
-			Thread.sleep(3000);
+			try {
+			Ad.findElementById("Id com.weather.Weather:id/video_player_thumbnail_extra").click();	
+			Thread.sleep(2000);
+			}
+			catch(Exception e1) {
+				Ad.findElementById("com.weather.Weather:id/ok_button").click();	
+				Thread.sleep(2000);
+			}
 		}
-		
 		
 	}
 	public static void clickOnMaps() throws Exception{
-try {
+		Ad.findElementById("com.weather.Weather:id/ok_button").click();	
+		Thread.sleep(3000);	
+	}
+	public static void clickOnRadarMaps() throws Exception{
+		System.out.println("clicking maps element");
+		logStep("clicking maps element");
+		try {
 		Ad.findElementById("com.weather.Weather:id/details_button").click();
-		Thread.sleep(3000);		
+		Thread.sleep(2000);		
 		}
 		catch(Exception e) {
 			Ad.findElementById("com.weather.Weather:id/radar_map_image").click();
-			Thread.sleep(3000);
-		}	
-	}
-	public static void clickOnRadarMaps() throws Exception{
-	try {
-		Ad.findElementById("com.weather.Weather:id/details_button").click();
-		Thread.sleep(3000);		
-		}
-		catch(Exception e) {
-			Ad.findElementById("com.weather.Weather:id/mapBig").click();
-			Thread.sleep(3000);
+			Thread.sleep(2000);
 		}
 	}	
 	public static void click_Todaydetails_element() throws Exception
 	{
+		System.out.println("clicking today element");
+		logStep("clicking today element");
 		try {
 		Ad.findElementById("com.weather.Weather:id/details_button").click();
-		Thread.sleep(3000);	
+		Thread.sleep(2000);	
 		}
 		catch(Exception e) {
-			Ad.findElementByName("See Details").click();
+			Ad.findElementById("com.weather.Weather:id/today_details_container").click();
+			Thread.sleep(2000);
 		}	
 	}
 	public static void clickOnBackArrowElement() throws Exception
 	{
 		try {
-	     Ad.findElementById("com.weather.Weather:id/fake_toolbar_back_button").click();
-	     Thread.sleep(3000);
+			Ad.findElementByAccessibilityId("Navigate up").click();
+			Thread.sleep(2000);
+	     
 		}
 		catch(Exception e) {
+			Ad.findElementById("com.weather.Weather:id/fake_toolbar_back_button").click();
+		     Thread.sleep(2000);
+		}
+	}
+	
+	public static void clickOnBackArrowElement_today() throws Exception
+	{
+		try {
 			Ad.findElementByAccessibilityId("Navigate up").click();
-			Thread.sleep(3000);
+			Thread.sleep(2000);
+	     
+		}
+		catch(Exception e) {
+			Ad.findElementById("com.weather.Weather:id/trending_up_navigation_icon").click();
+		     Thread.sleep(2000);
 		}
 	}
 	public static void clickONNext() throws Exception{
 
-		Ad.findElementById("com.weather.Weather:id/ok_button").click();
-		Thread.sleep(10000);
+		try{
+			if((Ad.findElementById("com.weather.Weather:id/ok_button").isDisplayed())){
+				Ad.findElementById("com.weather.Weather:id/ok_button").click();
+				Thread.sleep(2000);
+			}
+		}catch(Exception e){
+			
+		}
 
 	}
 	public static void clickOnAllow() throws Exception{
 
-		Ad.findElementById("com.android.packageinstaller:id/permission_allow_button").click();
-		Thread.sleep(10000);
+		try{
+			if((Ad.findElementById("com.android.permissioncontroller:id/permission_allow_foreground_only_button").isDisplayed())){
+				Ad.findElementById("com.android.permissioncontroller:id/permission_allow_foreground_only_button").click();
+				Thread.sleep(2000);
+			}
+		}catch(Exception e){
+			
+		}
+		
 	}
 	public static void clickOnSearch() throws Exception{
 	Ad.findElementByAccessibilityId("Search").click();
@@ -717,25 +744,15 @@ try {
 		Ad.findElementById("com.weather.Weather:id/air_quality_dial").click();
 		Thread.sleep(3000);		
 	}
-	/*public static void click_news_element() throws Exception
+	public static void click_news_element() throws Exception
 	{
-	
-	try {
-		List<WebElement> airlock=Ad.findElementsById("com.weather.Weather:id/video_player_thumbnail_extra");
-		airlock.get(0).click();
-		Thread.sleep(3000);
-	
+		Ad.findElementById("com.weather.Weather:id/video_backdrop").click();
+		Thread.sleep(3000);		
 	}
-	catch(Exception e) {
-		List<WebElement> airlock=Ad.findElementsById("com.weather.Weather:id/video_player_thumbnail_extra");
-		airlock.get(1).click();
-		Thread.sleep(3000);
-	}		
-	}*/
 	public static void click_hourly_element() throws Exception
 	{ try {
 		Ad.findElementByAccessibilityId("Hourly").click();
-		Thread.sleep(3000);	
+		Thread.sleep(2000);	
 	}
 	catch(Exception e) {
 		
@@ -744,25 +761,14 @@ try {
 	public static void click_home_element() throws Exception
 	{ try {
 		Ad.findElementById("com.weather.Weather:id/bottom_nav_home_icon").click();
-		Thread.sleep(3000);	
+		Thread.sleep(2000);	
 	}
 	catch(Exception e) {
+		List<WebElement> home=Ad.findElementsById("com.weather.Weather:id/icon");
+		home.get(2).click();
+		Thread.sleep(2000);
 		
 	}
-	}
-	
-	public static void clickOnBackArrowElement_trending() throws Exception
-	{
-		try {
-			
-		//	Navigate up
-	     Ad.findElementById("com.weather.Weather:id/trending_up_navigation_icon").click();
-	     Thread.sleep(3000);
-		}
-		catch(Exception e) {
-			Ad.findElementByAccessibilityId("Navigate up").click();
-			Thread.sleep(3000);
-		}
 	}
 	
 	public static void click_daily_element() throws Exception
@@ -776,7 +782,42 @@ try {
 	}
 	}
 	public static void ClickonIUnderstand() throws Exception{
-		Ad.findElementById("com.weather.Weather:id/next_button_text").click();
-	Thread.sleep(10000);
+		try{
+			if((Ad.findElementById("com.weather.Weather:id/next_button_text").isDisplayed())){
+				Ad.findElementById("com.weather.Weather:id/next_button_text").click();
+				Thread.sleep(2000);
+			}
+		}catch(Exception e){
+			
+		}
 }
+	
+	
+	public static void entering_Zip() throws Exception {
+		
+		Ad.findElementByAccessibilityId("Search").click();
+		 CharlesFunctions.ClearSessions();
+		Ad.findElementById("com.weather.Weather:id/search_text").sendKeys("10014");
+		Ad.findElementById("com.weather.Weather:id/search_item_container").click();		
+		 CharlesFunctions.startSessionBrowserData();
+          AppiumFunctions.SwipeUp_Counter(1);	
+			AppiumFunctions.clickOnVideoElement();
+			AppiumFunctions.clickOnBackArrowElement();
+			AppiumFunctions.SwipeUp_Counter(2);
+			AppiumFunctions.clickOnRadarMaps();
+			AppiumFunctions.clickOnBackArrowElement();	
+              AppiumFunctions.SwipeUp_Counter(3);					
+			AppiumFunctions.click_Todaydetails_element();
+			AppiumFunctions.clickOnBackArrowElement_today();
+             		AppiumFunctions.SwipeUp_Counter(4);
+			//AppiumFunctions.click_Airpollution_element();
+			//AppiumFunctions.clickOnBackArrowElement();
+			//AppiumFunctions.SwipeUp_Counter(1);
+			//AppiumFunctions.click_news_element();
+			//AppiumFunctions.clickOnBackArrowElement();
+			AppiumFunctions.click_hourly_element();
+			AppiumFunctions.click_home_element();
+			AppiumFunctions.click_daily_element();
+	        Thread.sleep(10000);
+	}
 }

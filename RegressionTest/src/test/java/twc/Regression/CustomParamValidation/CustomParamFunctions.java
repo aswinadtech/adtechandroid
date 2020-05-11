@@ -4,6 +4,7 @@ import io.appium.java_client.MobileElement;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -86,9 +87,10 @@ public class CustomParamFunctions extends Drivers {
 		String lang = "en";
 		String plat = "wx_droid_phone";
 		String ftl = "new";
-		String pos = "p1,p2,p3,p4,top300";
+		String pos = "p1,p2,p3,p4,p5,p6,top300";
 		String tile = "1";
 		String par = "nl";
+		String zip="17015";
 
 		if(parameter.equals("lang")){
 			hardcode=lang;
@@ -108,6 +110,9 @@ public class CustomParamFunctions extends Drivers {
 		else if(parameter.equals("par")){
 			hardcode=par;
 		}
+		else if(parameter.equals("zip")){
+			hardcode=zip;
+		}
 
 
 		Map<String, String> pubad = get_pub_ad_custom_value(feed);
@@ -123,15 +128,28 @@ public class CustomParamFunctions extends Drivers {
 		for(int i = 1;i<rownum;i++){
 			if(data[i][2].contains(parameter)){
 				String pubad_val =pubad.get(data[i][2]);
-				System.out.println("PubAd "+parameter+" Data : "+pubad_val);
-				System.out.println("Turbo "+parameter+" Data : " +hardcode);
-				if(pubad_val.equals(hardcode) || pubad_val.contains("nl")||hardcode.contains(pubad_val)){
+				System.out.println("Expected "+parameter+" value : " +hardcode);
+				
+				System.out.println("PubAd "+parameter+" value : "+pubad_val);
+				
+				if(pubad_val.equals(hardcode)){
 					System.out.println(parameter +" value is matched with : "+hardcode+"===="+pubad_val);
 					result="Pass";
 					System.out.println("Result "+result);
 					break;
-				}else {
-					System.out.println(parameter +" value is : "+pubad_val);
+				}
+				
+				if(pubad_val.contains("nl")){
+					System.out.println(parameter +" value is matched with : "+hardcode+"===="+pubad_val);
+					result="Fail";
+					System.out.println("Result "+result);
+					break;
+				}
+				if(pubad_val.isEmpty()){
+					System.out.println(parameter +" value is matched with : "+hardcode+"===="+pubad_val);
+					result="Fail";
+					System.out.println("Result "+result);
+					break;
 				}
 			}
 		}
@@ -150,9 +168,21 @@ public class CustomParamFunctions extends Drivers {
 		else{
 			pubad_val = pubad.get(parameter);
 		}
+		
 		if(!pubad_val.isEmpty()){
 			System.out.println("PubAd "+parameter+" Data : "+pubad_val);
 			result="Pass";
+			System.out.println("Result "+result);
+		}
+		if(pubad_val.isEmpty() ){
+			System.out.println("PubAd "+parameter+" Data : "+pubad_val);
+			result="Fail";
+			System.out.println("Result "+result);
+		}
+		
+		if(pubad_val.contains("nl") ){
+			System.out.println("PubAd "+parameter+" Data : "+pubad_val);
+			result="Fail";
 			System.out.println("Result "+result);
 		}
 		return result;
@@ -278,8 +308,8 @@ public class CustomParamFunctions extends Drivers {
 
 		String result=null;
 		Map<String, String> pubad = get_pub_ad_custom_value(feed);
-		Map<String, String> dsxcall = get_dsx_call_value();
-
+		Map<String, String> dsxcall = get_dsx_call_value1();
+	
 
 		String[][] data = read_excel_data.exceldataread_Custom_Parameters("Cust_Param", "Validate");
 		File f_validation= new File(properties.getProperty("ExcelFilePath_CustParam"));
@@ -290,11 +320,13 @@ public class CustomParamFunctions extends Drivers {
 
 		int rownum = ws.getLastRowNum()+1;
 		for(int i = 1;i<rownum;i++){
-			if(data[i][2].contains(parameter)){
+			if(data[i][2].equals(parameter)){
 				String pubad_val =pubad.get(data[i][2]).replace("%2520", " ");
+				System.out.println("Turbo Call "+parameter+" Data : " +dsxcall.get(data[i][1]));
 				System.out.println("PubAd "+parameter+" Data : "+pubad_val);
-				System.out.println("DSX Call "+parameter+" Data : " +dsxcall.get(data[i][1]));
+				
 				if(pubad_val.equalsIgnoreCase(dsxcall.get(data[i][1]))){
+					//System.out.println("DSX Call Data " +dsxcall.get(data[i][1]+ "matched with PubAd call Data" +pubad_val);
 					result="Pass";
 					System.out.println("Result "+result);
 					break;
@@ -470,34 +502,107 @@ public class CustomParamFunctions extends Drivers {
 		Map<String , String> expected_map_results = new HashMap<String, String>();
 
 		String expectedValues =null;
+		String expectedValues1 =null;
+		String expectedValues2=null;
+		String expectedValues3=null;
+		String expectedValues4=null;
+		Map<String, String> expectedValues5=null;
 		String[][] exceldata = read_excel_data.exceldataread_Custom_Parameters("Cust_Param","TurboCall");
 
 		//		read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
 		//		String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
 
 		if(sb.toString().contains(exceldata[1][Cap])){
-			String Read_API_Call_Data = sb.toString().substring(sb.toString().indexOf(exceldata[3][Cap]));
+			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf(exceldata[3][Cap]));
+			
+			//System.out.println(Read_API_Call_Data);
 			String required_info = Read_API_Call_Data.toString().substring(Read_API_Call_Data.toString().
 					indexOf(exceldata[3][Cap]));
 			required_info=required_info.replaceAll(" decoded=\"true\"", "");
-			String expected_data =required_info.toString().substring(required_info.indexOf(exceldata[4][Cap])+9,required_info.indexOf(exceldata[5][Cap]));
+			//System.out.println(required_info);
+		//	String expected_data =required_info.toString().substring(required_info.indexOf(exceldata[4][Cap]),required_info.indexOf(exceldata[5][Cap]));
+			String expected_data =required_info.toString().substring(required_info.indexOf(", \"v3-wx-observations-current\": "),required_info.indexOf("  , \"v3-wx-forecast-daily-15day\": "));
+			
 			//String expected_data = required_info.toString().substring(required_info.indexOf(exceldata[4][Cap])+9,
 			//required_info.indexOf(exceldata[5][Cap]));
+		
+			
+			//"cloudCoverPhrase":"Partly Cloudy","dayOfWeek":"Tuesday","dayOrNight":"N","expirationTimeUtc":1588618803,"iconCode":33,"iconCodeExtend":3300,"obsQualifierCode":null,"obsQualifierSeverity":null,"precip1Hour":0.00,"precip6Hour":0.00,"precip24Hour":0.00,"pressureAltimeter":29.75,"pressureChange":0.01,"pressureMeanSeaLevel":1007.4,"pressureTendencyCode":1,"pressureTendencyTrend":"Rising","relativeHumidity":58,"snow1Hour":0.0,"snow6Hour":0.0,"snow24Hour":0.0,"sunriseTimeLocal":"2020-05-05T05:47:59+0530","sunriseTimeUtc":1588637879,"sunsetTimeLocal":"2020-05-05T18:38:02+0530","sunsetTimeUtc":1588684082,"temperature":85,"temperatureChange24Hour":-1,"temperatureDewPoint":68,"temperatureFeelsLike":90,"temperatureHeatIndex":90,"temperatureMax24Hour":103,"temperatureMaxSince7Am":103,"temperatureMin24Hour":81,"temperatureWindChill":85,"uvDescription":"Low","uvIndex":0,"validTimeLocal":"2020-05-05T00:20:03+0530","validTimeUtc":1588618203,"visibility":5.000,"windDirection":170,"windDirectionCardinal":"S","windGust":null,"windSpeed":0,"wxPhraseLong":"Fair","wxPhraseMedium":"Fair","wxPhraseShort":"Fair"};
+			
 			expectedValues = expected_data.toString();
+			
+			expectedValues2=expectedValues.replaceAll("\"cloudCeiling\":null,", "");
+			expectedValues3=expectedValues2.replaceFirst(",", "");
+			expectedValues4=expectedValues3.replace(expectedValues3,"{" + expectedValues3 + "}" );
+		
+			//expected_map_results=expectedValues4;
+			//expectedValues3.replaceFirst(regex, replacement);
+			
+			//String value1= " /, "v3-wx-observations-current"= ","/" ;
+				//	String value2="}";
+					
+			//System.out.println("vaue");
+			
+			//expectedValues1=expectedValues.replaceFirst(",", "");
+			//expectedValues2=expectedValues.replaceAll(":", "=");
+			
+			//System.out.println(expectedValues2);
+			
+			//expectedValues2.replaceAll(replaceAll("/ , "v3-wx-observations-current"= ","/", "="), "");
+			
+			
+			//expectedValues2=expectedValues1.replace(expectedValues1, value1+expectedValues1+value2);
+			//expectedValues2=expectedValues1.concat(value1+expectedValues1+value2);
+			//expectedValues2 = "{" + expectedValues1 + "}";
+			//expectedValues2="{"v3-wx-observations-current": {"cloudCeiling":null,"cloudCoverPhrase":"Partly Cloudy","dayOfWeek":"Tuesday","dayOrNight":"N","expirationTimeUtc":1588618803,"iconCode":33,"iconCodeExtend":3300,"obsQualifierCode":null,"obsQualifierSeverity":null,"precip1Hour":0.00,"precip6Hour":0.00,"precip24Hour":0.00,"pressureAltimeter":29.75,"pressureChange":0.01,"pressureMeanSeaLevel":1007.4,"pressureTendencyCode":1,"pressureTendencyTrend":"Rising","relativeHumidity":58,"snow1Hour":0.0,"snow6Hour":0.0,"snow24Hour":0.0,"sunriseTimeLocal":"2020-05-05T05:47:59+0530","sunriseTimeUtc":1588637879,"sunsetTimeLocal":"2020-05-05T18:38:02+0530","sunsetTimeUtc":1588684082,"temperature":85,"temperatureChange24Hour":-1,"temperatureDewPoint":68,"temperatureFeelsLike":90,"temperatureHeatIndex":90,"temperatureMax24Hour":103,"temperatureMaxSince7Am":103,"temperatureMin24Hour":81,"temperatureWindChill":85,"uvDescription":"Low","uvIndex":0,"validTimeLocal":"2020-05-05T00:20:03+0530","validTimeUtc":1588618203,"visibility":5.000,"windDirection":170,"windDirectionCardinal":"S","windGust":null,"windSpeed":0,"wxPhraseLong":"Fair","wxPhraseMedium":"Fair","wxPhraseShort":"Fair"}} ";
+	
+			//expectedValues2=expectedValues1.replaceAll(expectedValues1, "{" +expectedValues1+ "}");
+			//System.out.println(expectedValues2);
+			 
 
+			
+			
 			JSONParser parser = new JSONParser();
-			Object obj = parser.parse(expectedValues);
+			Object obj = parser.parse(expectedValues4);
 			JSONObject jsonObject = (JSONObject) obj;
 
 			JSONObject jsonObservation = (JSONObject) jsonObject.get("v3-wx-observations-current");
+				
 			for(Object key:jsonObservation.keySet()){
 				if(jsonObservation.get(key) != null){
 					expected_map_results.put(key.toString(), jsonObservation.get(key).toString());
 				}
+			
+              
+				
+				}
 			}
-		}
-		return expected_map_results;
-	}
+
+		
+		/*expected_map_results.put("iconCode", "33");
+		expected_map_results.put("temperatureFeelsLike", "90");
+		expected_map_results.put("windSpeed", "0");
+		expected_map_results.put("relativeHumidity", "58");
+		expected_map_results.put("uvIndex", "0");
+		expected_map_results.put("temperatureFeelsLike", "90");
+		expected_map_results.put("temperature", "85");*/
+			
+			
+			
+		/*	for(Object key:((HashMap) obj).keySet()){
+				
+				expected_map_results.put(jsonObservation.get, value);
+				
+				
+				
+					expected_map_results.put(key.toString(), ((ArrayList) obj).get((Integer) key).toString());
+			
+				}*/
+	
+		
+	
+	return expected_map_results;
+}
 
 	public static Map<String, String> get_plln_from_turbo_call() throws Exception{
 
@@ -660,6 +765,49 @@ public class CustomParamFunctions extends Drivers {
 		return expected_map_results;
 	}
 
+	public static Map<String, String> get_dsx_call_value1() throws Exception{
+
+		DeviceStatus device_status = new DeviceStatus();
+		int Cap = device_status.Device_Status();
+
+		Map<String , String> expected_map_results = new HashMap<String, String>();
+
+		String expectedValues =null;
+		String[][] exceldata = read_excel_data.exceldataread_Custom_Parameters("Cust_Param","DsxCall");
+
+		//		read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+		//		String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
+
+		if(sb.toString().contains(exceldata[1][Cap])){
+			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf(exceldata[3][Cap]));
+			String required_info = Read_API_Call_Data.toString().substring(Read_API_Call_Data.toString().indexOf(exceldata[3][Cap]));
+			String expected_data;
+			String expectedValues2=null;
+			String expectedValues3=null;
+			expected_data = required_info.toString().substring(required_info.indexOf(exceldata[4][Cap]),required_info.indexOf(exceldata[5][Cap]));
+			expectedValues = expected_data.toString();
+			expectedValues2=expectedValues.replaceFirst(",", "");
+			expectedValues3=expectedValues2.replace(expectedValues2,"{" + expectedValues2 + "}" );
+			JSONParser parser = new JSONParser();
+			Object obj = parser.parse(expectedValues3);
+			JSONObject jsonObject = (JSONObject) obj;
+			JSONObject jsonObservation = (JSONObject) jsonObject.get("v3-location-point");
+			JSONObject jsonObservation1 = (JSONObject) jsonObservation.get("location");
+			
+			for(Object key:jsonObservation1.keySet()){
+				if(jsonObservation1.get(key) != null){
+					expected_map_results.put(key.toString(), jsonObservation1.get(key).toString());
+				}
+			}
+		}
+		else{
+			System.out.println("DsxCall Call Not Generated");
+			Assert.fail("DsxCall Call Not Generated");
+		}
+		return expected_map_results;
+		
+	}
+	
 	public static Map<String, String> get_wfxtg_call_value(String parameter) throws Exception{
 
 		DeviceStatus device_status = new DeviceStatus();
@@ -765,5 +913,80 @@ public class CustomParamFunctions extends Drivers {
 			Assert.fail("DsxCMSCall Call Not Generated");
 		}
 		return expected_map_results;
+	}
+	
+	public static String validate_hard_code_zip_results(String parameter,int feed) throws Exception{
+
+
+		String result = null;
+		String hardcode = null;
+		String lang = "en";
+		String plat = "wx_droid_phone";
+		String ftl = "new";
+		String pos = "p1,p2,p3,p4,p5,p6,top300";
+		String tile = "1";
+		String par = "nl";
+		String zip="500034";
+
+		if(parameter.equals("lang")){
+			hardcode=lang;
+		}
+		else if(parameter.equals("plat")){
+			hardcode=plat;
+		}
+		else if(parameter.equals("ftl")){
+			hardcode=ftl;
+		}
+		else if(parameter.equals("pos")){
+			hardcode=pos;
+		}
+		else if(parameter.equals("tile")){
+			hardcode=tile;
+		}
+		else if(parameter.equals("zip")){
+			hardcode=zip;
+		}
+		
+
+		Map<String, String> pubad = get_pub_ad_custom_value(feed);
+
+		String[][] data = read_excel_data.exceldataread_Custom_Parameters("Cust_Param", "Validate1");
+		File f_validation= new File(properties.getProperty("ExcelFilePath_CustParam"));
+
+		FileInputStream fis_validation = new FileInputStream(f_validation);
+		HSSFWorkbook wb_validation = new HSSFWorkbook(fis_validation);
+		HSSFSheet ws = wb_validation.getSheet("Validate1");
+
+		int rownum = ws.getLastRowNum()+1;
+		for(int i = 1;i<rownum;i++){
+			if(data[i][2].equals(parameter)){
+				String pubad_val =pubad.get(data[i][2]);
+				System.out.println("Expected "+parameter+" value : " +hardcode);
+				
+				System.out.println("PubAd "+parameter+" value : "+pubad_val);
+				
+				if(pubad_val.equals(hardcode)){
+					System.out.println(parameter +" value is matched with : "+hardcode+"===="+pubad_val);
+					result="Pass";
+					System.out.println("Result "+result);
+					break;
+				}
+			if(pubad_val.contains("nl"))
+				{
+				System.out.println(parameter +" value is not matched with : "+hardcode+"===="+pubad_val);
+				result="Fail";
+				System.out.println("Result "+result);
+				break;
+				}
+			if(!hardcode.matches(pubad_val)) {
+				System.out.println(parameter +" value is not matched with : "+hardcode+"===="+pubad_val);
+				result="Fail";
+				System.out.println("Result "+result);
+				break;
+			}
+		}
+	
+	}
+		return result;
 	}
 }

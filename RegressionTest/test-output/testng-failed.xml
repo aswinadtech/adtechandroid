@@ -5,51 +5,10 @@
     <classes>
       <class name="twc.Regression.TestCases.regressionTestCases">
         <methods>
-          <include name="C333240_Verify_cust_param_zcs"/>
-          <include name="C658712_Verify_cust_param_plat"/>
-          <include name="C333203_Verify_cust_param_dma"/>
-          <include name="C333225_Verify_cust_param_layer"/>
-          <include name="C333210_Verify_cust_param_vw"/>
-          <include name="C333221_Verify_cust_param_wind"/>
-          <include name="C333228_Verify_cust_param_wfxtg"/>
-          <include name="C333242_Verify_cust_param_hzcs"/>
+          <include name="C333213_Verify_cust_param_adid"/>
+          <include name="C333216_Verify_cust_param_cnd"/>
           <include name="Before_Test"/>
-          <include name="C658714_Verify_cust_param_ch"/>
-          <include name="C333205_Verify_cust_param_tile"/>
-          <include name="C333238_Verify_cust_param_floc"/>
-          <include name="C333229_Verify_cust_param_faud"/>
-          <include name="C658713_Verify_cust_param_par"/>
-          <include name="C344259_Verify_Video_Url_Parameter_vid"/>
-          <include name="C333226_Verify_cust_param_st"/>
-          <include name="C333200_Verify_cust_param_ord"/>
-          <include name="C456970_Verify_Parameter_BN"/>
-          <include name="C333207_Verify_cust_param_hmid"/>
-          <include name="C333224_Verify_cust_param_uv"/>
-          <include name="C333233_Verify_cust_param_filtmpc"/>
-          <include name="C333230_Verify_cust_param_fgeo"/>
-          <include name="C333235_Verify_cust_param_a"/>
-          <include name="C333209_Verify_cust_param_cc"/>
-          <include name="C333236_Verify_cust_param_g"/>
-          <include name="C333214_Verify_cust_param_hlzip"/>
-          <include name="C333232_Verify_cust_param_fhic"/>
-          <include name="C344261_Verify_Video_Url_Parameter_iu"/>
-          <include name="C333213_Verify_cust_param_aid"/>
-          <include name="C333217_Verify_cust_param_tmpr"/>
-          <include name="C344257_Verify_Video_Url_Parameter_cmsid"/>
-          <include name="C333212_Verify_cust_param_ct"/>
-          <include name="C628160_Verify_Parameter_DyNght"/>
-          <include name="C658711_Verify_cust_param_lang"/>
-          <include name="C333211_Verify_cust_param_locale"/>
-          <include name="C333215_Verify_cust_param_ftl"/>
-          <include name="C333219_Verify_cust_param_ver"/>
-          <include name="C344258_Verify_Video_Url_Parameter_ttid"/>
-          <include name="C344260_Verify_Video_Url_Parameter_lnid"/>
-          <include name="C333202_Verify_cust_param_zip"/>
-          <include name="C333204_Verify_cust_param_rmid"/>
-          <include name="C333239_Verify_cust_param_tmpc"/>
-          <include name="C658715_Verify_cust_param_fam"/>
-          <include name="C658716_Verify_cust_param_tf"/>
-          <include name="C333227_Verify_cust_param_sg"/>
+          <include name="After_Test"/>
         </methods>
       </class> <!-- twc.Regression.TestCases.regressionTestCases -->
     </classes>

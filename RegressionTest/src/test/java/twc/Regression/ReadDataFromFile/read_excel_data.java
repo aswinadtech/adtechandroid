@@ -87,7 +87,7 @@ public static String[][] exceldataread(String Type) throws Exception {
 			int ResultColumn_n2=8+Getresult1;
 
 			write_excel_data cleardata=new write_excel_data();
-			for(int testcase=1;testcase<=43;testcase++)
+			for(int testcase=1;testcase<=50;testcase++)
 			{
 				cleardata.enterResult("SMOKE", "n", "n", testcase, ResultColumn_n1, ResultColumn_n2);
 

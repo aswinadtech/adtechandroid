@@ -3,40 +3,45 @@
   "plugins" : {
     "total" : {
       "statistic" : {
-        "total" : 46,
-        "passed" : 0,
+        "total" : 28,
+        "passed" : 19,
         "pending" : 0,
-        "canceled" : 45,
-        "failed" : 0,
-        "broken" : 1
+        "canceled" : 0,
+        "failed" : 1,
+        "broken" : 8
       },
       "time" : {
-        "start" : 1586074415074,
-        "stop" : 1586074415155,
-        "duration" : 81
+        "start" : 1588968317001,
+        "stop" : 1588968388410,
+        "duration" : 71409
       }
     },
     "defects" : {
-      "totalCount" : 1,
+      "totalCount" : 2,
       "items" : [ {
         "count" : 1,
-        "uid" : "f60b2a55166a9394",
-        "message" : "UnreachableBrowserException: Error communicating with the remote browser. It may have died.\nBuild info: version: '2.51.0', revision: '1af067dbcaedd7d2ab9af5151fc471d363d97193', time: '2016-02-05 11:20:57'\nSystem info: host: 'aswinikumarsmbp', ip: '192.168.1.5', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_181'\nDriver info: driver.version: AndroidDriver\nCapabilities [{appPackage=com.weather.Weather, statBarHeight=98, viewportRect={top=98, left=0, width=1440, height=2614}, deviceName=803KPXV1599674, noRest=true, platform=LINUX, deviceUDID=803KPXV1599674, desired={app=/Users/aswinikumar/Downloads/RegressionTest/APKFile/The_Weather_Channel_DEBUG.apk, appPackage=com.weather.Weather, appium-version=1.4.13, newCommandTimeout=100000, platformVersion=10.0, platformName=Android, deviceName=Samsung S6, noRest=true}, appium-version=1.4.13, newCommandTimeout=100000, platformVersion=10, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceApiLevel=29, deviceManufacturer=Google, app=/Users/aswinikumar/Downloads/RegressionTest/APKFile/The_Weather_Channel_DEBUG.apk, deviceScreenSize=1440x2880, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, pixelRatio=3.5, locationContextEnabled=false, deviceScreenDensity=560, deviceModel=Pixel 2 XL}]\nSession ID: 2960bcf2-8ae6-42d8-a4e7-af4cfc3ed409",
+        "uid" : "643ffb5beae6df31",
+        "message" : "AssertionError: The following asserts failed:\nexpected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false]",
+        "status" : "FAILED"
+      }, {
+        "count" : 8,
+        "uid" : "9d89a0c9f9dab27a",
+        "message" : "StringIndexOutOfBoundsException: String index out of range: -1",
         "status" : "BROKEN"
       } ]
     },
     "xunit" : {
       "totalCount" : 1,
       "items" : [ {
-        "uid" : "a8b7ac77b7f40886",
+        "uid" : "5a28fef0eaef3b76",
         "title" : "Suite : Test",
         "statistic" : {
-          "total" : 46,
-          "passed" : 0,
+          "total" : 28,
+          "passed" : 19,
           "pending" : 0,
-          "canceled" : 45,
-          "failed" : 0,
-          "broken" : 1
+          "canceled" : 0,
+          "failed" : 1,
+          "broken" : 8
         }
       } ]
     },
@@ -45,12 +50,12 @@
       "items" : [ {
         "title" : "Without feature",
         "statistic" : {
-          "total" : 46,
-          "passed" : 0,
+          "total" : 28,
+          "passed" : 19,
           "pending" : 0,
-          "canceled" : 45,
-          "failed" : 0,
-          "broken" : 1
+          "canceled" : 0,
+          "failed" : 1,
+          "broken" : 8
         }
       } ]
     },

@@ -1,0 +1,697 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1589217921956" stop="1589218454448" version="1.5.4" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default suite : Default test</name>
+    <title>Default suite : Default test</title>
+    <test-cases>
+        <test-case start="1589218322880" stop="1589218324595" status="broken">
+            <name>C333216_Verify_cust_param_cnd</name>
+            <title>Verify custom parameter cnd</title>
+            <failure>
+                <message>NullPointerException: null</message>
+                <stack-trace>java.lang.NullPointerException
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:184)
+	at twc.Regression.TestCases.regressionTestCases.C333216_Verify_cust_param_cnd(regressionTestCases.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</stack-trace>
+            </failure>
+            <steps>
+                <step start="1589218058947" stop="1589218058948" status="passed">
+                    <name>logStep[clicking video element]</name>
+                    <title>clicking video element</title>
+                </step>
+                <step start="1589218323900" stop="1589218323900" status="passed">
+                    <name>logStep[Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly Pub Ad Call cnd Custm_Parameter E...]</name>
+                    <title>Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly Pub Ad Call cnd Custm_Parameter Expected ...</title>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="Default test"/>
+                <label name="testClass" value="twc.Regression.TestCases.regressionTestCases"/>
+                <label name="testMethod" value="C333216_Verify_cust_param_cnd"/>
+                <label name="host" value="Aswinikumars-MacBook-Pro.local"/>
+                <label name="thread" value="10705@Aswinikumars-MacBook-Pro.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1589218322880" stop="1589218324595" status="broken">
+            <name>C333216_Verify_cust_param_cnd</name>
+            <title>Verify custom parameter cnd</title>
+            <failure>
+                <message>NullPointerException: null</message>
+                <stack-trace>java.lang.NullPointerException
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:184)
+	at twc.Regression.TestCases.regressionTestCases.C333216_Verify_cust_param_cnd(regressionTestCases.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</stack-trace>
+            </failure>
+            <steps>
+                <step start="1589218058947" stop="1589218058948" status="passed">
+                    <name>logStep[clicking video element]</name>
+                    <title>clicking video element</title>
+                </step>
+                <step start="1589218323900" stop="1589218323900" status="passed">
+                    <name>logStep[Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly Pub Ad Call cnd Custm_Parameter E...]</name>
+                    <title>Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly Pub Ad Call cnd Custm_Parameter Expected ...</title>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="Default test"/>
+                <label name="testClass" value="twc.Regression.TestCases.regressionTestCases"/>
+                <label name="testMethod" value="C333216_Verify_cust_param_cnd"/>
+                <label name="host" value="Aswinikumars-MacBook-Pro.local"/>
+                <label name="thread" value="10705@Aswinikumars-MacBook-Pro.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1589218324599" stop="1589218333790" status="passed">
+            <name>C333202_Verify_cust_param_zip</name>
+            <title>Verify custom parameter zip from  turbo api</title>
+            <steps>
+                <step start="1589218325638" stop="1589218325638" status="passed">
+                    <name>logStep[Verifyied Feed:0 Pub Ad Call zip Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:0 Pub Ad Call zip Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589218326113" stop="1589218326113" status="passed">
+                    <name>logStep[Verifyied Feed:1 Pub Ad Call zip Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:1 Pub Ad Call zip Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589218326623" stop="1589218326623" status="passed">
+                    <name>logStep[Verifyied Feed:2 Pub Ad Call zip Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:2 Pub Ad Call zip Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589218327782" stop="1589218327782" status="passed">
+                    <name>logStep[Verifyied Feed:3 Pub Ad Call zip Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:3 Pub Ad Call zip Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589218329435" stop="1589218329435" status="passed">
+                    <name>logStep[Verifyied Feed:4 Pub Ad Call zip Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:4 Pub Ad Call zip Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589218330967" stop="1589218330967" status="passed">
+                    <name>logStep[Verifyied Feed:5 Pub Ad Call zip Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:5 Pub Ad Call zip Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589218331929" stop="1589218331929" status="passed">
+                    <name>logStep[Verifyied Feed:0 Pub Ad Call zip Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:0 Pub Ad Call zip Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589218332270" stop="1589218332270" status="passed">
+                    <name>logStep[Verifyied Feed:1 Pub Ad Call zip Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:1 Pub Ad Call zip Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589218333084" stop="1589218333084" status="passed">
+                    <name>logStep[Verifyied Feed:3 Pub Ad Call zip Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:3 Pub Ad Call zip Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="Default test"/>
+                <label name="testClass" value="twc.Regression.TestCases.regressionTestCases"/>
+                <label name="testMethod" value="C333202_Verify_cust_param_zip"/>
+                <label name="host" value="Aswinikumars-MacBook-Pro.local"/>
+                <label name="thread" value="10705@Aswinikumars-MacBook-Pro.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1589218324599" stop="1589218333790" status="passed">
+            <name>C333202_Verify_cust_param_zip</name>
+            <title>Verify custom parameter zip from  turbo api</title>
+            <steps>
+                <step start="1589218325638" stop="1589218325638" status="passed">
+                    <name>logStep[Verifyied Feed:0 Pub Ad Call zip Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:0 Pub Ad Call zip Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589218326113" stop="1589218326113" status="passed">
+                    <name>logStep[Verifyied Feed:1 Pub Ad Call zip Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:1 Pub Ad Call zip Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589218326623" stop="1589218326623" status="passed">
+                    <name>logStep[Verifyied Feed:2 Pub Ad Call zip Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:2 Pub Ad Call zip Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589218327782" stop="1589218327782" status="passed">
+                    <name>logStep[Verifyied Feed:3 Pub Ad Call zip Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:3 Pub Ad Call zip Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589218329435" stop="1589218329435" status="passed">
+                    <name>logStep[Verifyied Feed:4 Pub Ad Call zip Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:4 Pub Ad Call zip Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589218330967" stop="1589218330967" status="passed">
+                    <name>logStep[Verifyied Feed:5 Pub Ad Call zip Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:5 Pub Ad Call zip Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589218331929" stop="1589218331929" status="passed">
+                    <name>logStep[Verifyied Feed:0 Pub Ad Call zip Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:0 Pub Ad Call zip Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589218332270" stop="1589218332270" status="passed">
+                    <name>logStep[Verifyied Feed:1 Pub Ad Call zip Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:1 Pub Ad Call zip Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589218333084" stop="1589218333084" status="passed">
+                    <name>logStep[Verifyied Feed:3 Pub Ad Call zip Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:3 Pub Ad Call zip Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="Default test"/>
+                <label name="testClass" value="twc.Regression.TestCases.regressionTestCases"/>
+                <label name="testMethod" value="C333202_Verify_cust_param_zip"/>
+                <label name="host" value="Aswinikumars-MacBook-Pro.local"/>
+                <label name="thread" value="10705@Aswinikumars-MacBook-Pro.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1589218333797" stop="1589218341993" status="passed">
+            <name>C333213_Verify_cust_param_adid</name>
+            <title>Verify custom parameter adid</title>
+            <steps>
+                <step start="1589218334432" stop="1589218334432" status="passed">
+                    <name>logStep[Verifyied Feed:0 Pub Ad Call adid Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:0 Pub Ad Call adid Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589218334875" stop="1589218334875" status="passed">
+                    <name>logStep[Verifyied Feed:1 Pub Ad Call adid Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:1 Pub Ad Call adid Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589218335339" stop="1589218335339" status="passed">
+                    <name>logStep[Verifyied Feed:2 Pub Ad Call adid Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:2 Pub Ad Call adid Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589218336293" stop="1589218336293" status="passed">
+                    <name>logStep[Verifyied Feed:3 Pub Ad Call adid Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:3 Pub Ad Call adid Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589218337696" stop="1589218337696" status="passed">
+                    <name>logStep[Verifyied Feed:4 Pub Ad Call adid Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:4 Pub Ad Call adid Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589218339285" stop="1589218339285" status="passed">
+                    <name>logStep[Verifyied Feed:5 Pub Ad Call adid Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:5 Pub Ad Call adid Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589218340293" stop="1589218340293" status="passed">
+                    <name>logStep[Verifyied Feed:0 Pub Ad Call adid Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:0 Pub Ad Call adid Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589218340609" stop="1589218340609" status="passed">
+                    <name>logStep[Verifyied Feed:1 Pub Ad Call adid Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:1 Pub Ad Call adid Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589218341367" stop="1589218341367" status="passed">
+                    <name>logStep[Verifyied Feed:3 Pub Ad Call adid Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:3 Pub Ad Call adid Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="Default test"/>
+                <label name="testClass" value="twc.Regression.TestCases.regressionTestCases"/>
+                <label name="testMethod" value="C333213_Verify_cust_param_adid"/>
+                <label name="host" value="Aswinikumars-MacBook-Pro.local"/>
+                <label name="thread" value="10705@Aswinikumars-MacBook-Pro.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1589218333797" stop="1589218341993" status="passed">
+            <name>C333213_Verify_cust_param_adid</name>
+            <title>Verify custom parameter adid</title>
+            <steps>
+                <step start="1589218334432" stop="1589218334432" status="passed">
+                    <name>logStep[Verifyied Feed:0 Pub Ad Call adid Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:0 Pub Ad Call adid Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589218334875" stop="1589218334875" status="passed">
+                    <name>logStep[Verifyied Feed:1 Pub Ad Call adid Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:1 Pub Ad Call adid Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589218335339" stop="1589218335339" status="passed">
+                    <name>logStep[Verifyied Feed:2 Pub Ad Call adid Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:2 Pub Ad Call adid Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589218336293" stop="1589218336293" status="passed">
+                    <name>logStep[Verifyied Feed:3 Pub Ad Call adid Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:3 Pub Ad Call adid Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589218337696" stop="1589218337696" status="passed">
+                    <name>logStep[Verifyied Feed:4 Pub Ad Call adid Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:4 Pub Ad Call adid Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589218339285" stop="1589218339285" status="passed">
+                    <name>logStep[Verifyied Feed:5 Pub Ad Call adid Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:5 Pub Ad Call adid Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589218340293" stop="1589218340293" status="passed">
+                    <name>logStep[Verifyied Feed:0 Pub Ad Call adid Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:0 Pub Ad Call adid Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589218340609" stop="1589218340609" status="passed">
+                    <name>logStep[Verifyied Feed:1 Pub Ad Call adid Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:1 Pub Ad Call adid Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589218341367" stop="1589218341367" status="passed">
+                    <name>logStep[Verifyied Feed:3 Pub Ad Call adid Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:3 Pub Ad Call adid Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="Default test"/>
+                <label name="testClass" value="twc.Regression.TestCases.regressionTestCases"/>
+                <label name="testMethod" value="C333213_Verify_cust_param_adid"/>
+                <label name="host" value="Aswinikumars-MacBook-Pro.local"/>
+                <label name="thread" value="10705@Aswinikumars-MacBook-Pro.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1589218341997" stop="1589218350010" status="passed">
+            <name>C658712_Verify_cust_param_plat</name>
+            <title>Verify custom parameter plat</title>
+            <steps>
+                <step start="1589218342409" stop="1589218342409" status="passed">
+                    <name>logStep[Verifyied Feed:0 Pub Ad Call plat Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:0 Pub Ad Call plat Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589218342877" stop="1589218342877" status="passed">
+                    <name>logStep[Verifyied Feed:1 Pub Ad Call plat Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:1 Pub Ad Call plat Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589218343399" stop="1589218343399" status="passed">
+                    <name>logStep[Verifyied Feed:2 Pub Ad Call plat Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:2 Pub Ad Call plat Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589218344409" stop="1589218344409" status="passed">
+                    <name>logStep[Verifyied Feed:3 Pub Ad Call plat Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:3 Pub Ad Call plat Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589218345988" stop="1589218345988" status="passed">
+                    <name>logStep[Verifyied Feed:4 Pub Ad Call plat Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:4 Pub Ad Call plat Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589218347401" stop="1589218347401" status="passed">
+                    <name>logStep[Verifyied Feed:5 Pub Ad Call plat Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:5 Pub Ad Call plat Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589218348313" stop="1589218348313" status="passed">
+                    <name>logStep[Verifyied Feed:0 Pub Ad Call plat Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:0 Pub Ad Call plat Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589218348598" stop="1589218348598" status="passed">
+                    <name>logStep[Verifyied Feed:1 Pub Ad Call plat Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:1 Pub Ad Call plat Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589218349307" stop="1589218349307" status="passed">
+                    <name>logStep[Verifyied Feed:3 Pub Ad Call plat Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:3 Pub Ad Call plat Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="Default test"/>
+                <label name="testClass" value="twc.Regression.TestCases.regressionTestCases"/>
+                <label name="testMethod" value="C658712_Verify_cust_param_plat"/>
+                <label name="host" value="Aswinikumars-MacBook-Pro.local"/>
+                <label name="thread" value="10705@Aswinikumars-MacBook-Pro.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1589218341997" stop="1589218350010" status="passed">
+            <name>C658712_Verify_cust_param_plat</name>
+            <title>Verify custom parameter plat</title>
+            <steps>
+                <step start="1589218342409" stop="1589218342409" status="passed">
+                    <name>logStep[Verifyied Feed:0 Pub Ad Call plat Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:0 Pub Ad Call plat Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589218342877" stop="1589218342877" status="passed">
+                    <name>logStep[Verifyied Feed:1 Pub Ad Call plat Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:1 Pub Ad Call plat Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589218343399" stop="1589218343399" status="passed">
+                    <name>logStep[Verifyied Feed:2 Pub Ad Call plat Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:2 Pub Ad Call plat Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589218344409" stop="1589218344409" status="passed">
+                    <name>logStep[Verifyied Feed:3 Pub Ad Call plat Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:3 Pub Ad Call plat Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589218345988" stop="1589218345988" status="passed">
+                    <name>logStep[Verifyied Feed:4 Pub Ad Call plat Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:4 Pub Ad Call plat Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589218347401" stop="1589218347401" status="passed">
+                    <name>logStep[Verifyied Feed:5 Pub Ad Call plat Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:5 Pub Ad Call plat Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589218348313" stop="1589218348313" status="passed">
+                    <name>logStep[Verifyied Feed:0 Pub Ad Call plat Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:0 Pub Ad Call plat Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589218348598" stop="1589218348598" status="passed">
+                    <name>logStep[Verifyied Feed:1 Pub Ad Call plat Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:1 Pub Ad Call plat Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589218349307" stop="1589218349307" status="passed">
+                    <name>logStep[Verifyied Feed:3 Pub Ad Call plat Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:3 Pub Ad Call plat Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="Default test"/>
+                <label name="testClass" value="twc.Regression.TestCases.regressionTestCases"/>
+                <label name="testMethod" value="C658712_Verify_cust_param_plat"/>
+                <label name="host" value="Aswinikumars-MacBook-Pro.local"/>
+                <label name="thread" value="10705@Aswinikumars-MacBook-Pro.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1589218350014" stop="1589218454418" status="broken">
+            <name>C333202_Verify_cust_param_Zip</name>
+            <title>Verify custom parameter zip from UI</title>
+            <failure>
+                <message>NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 63.15 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.51.0', revision: '1af067dbcaedd7d2ab9af5151fc471d363d97193', time: '2016-02-05 11:20:57'
+System info: host: 'Aswinikumars-MacBook-Pro.local', ip: '192.168.1.6', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_181'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.weather.Weather, statBarHeight=98, viewportRect={top=98, left=0, width=1440, height=2614}, deviceName=803KPXV1599674, noRest=true, platform=LINUX, deviceUDID=803KPXV1599674, desired={app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Regression/APKFile/The_Weather_Channel_DEBUG (25).apk, appPackage=com.weather.Weather, appium-version=1.4.13, newCommandTimeout=100000, platformVersion=10.0, platformName=Android, deviceName=Samsung S6, noRest=true}, appium-version=1.4.13, newCommandTimeout=100000, platformVersion=10, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceApiLevel=29, deviceManufacturer=Google, app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Regression/APKFile/The_Weather_Channel_DEBUG (25).apk, deviceScreenSize=1440x2880, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, pixelRatio=3.5, locationContextEnabled=false, deviceScreenDensity=560, deviceModel=Pixel 2 XL}]
+Session ID: 71f3e08a-70d0-4e2e-b50a-4d5313f61971
+*** Element info: {Using=id, value=Id com.weather.Weather:id/video_player_thumbnail_extra}</message>
+                <stack-trace>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 63.15 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.51.0', revision: '1af067dbcaedd7d2ab9af5151fc471d363d97193', time: '2016-02-05 11:20:57'
+System info: host: 'Aswinikumars-MacBook-Pro.local', ip: '192.168.1.6', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_181'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.weather.Weather, statBarHeight=98, viewportRect={top=98, left=0, width=1440, height=2614}, deviceName=803KPXV1599674, noRest=true, platform=LINUX, deviceUDID=803KPXV1599674, desired={app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Regression/APKFile/The_Weather_Channel_DEBUG (25).apk, appPackage=com.weather.Weather, appium-version=1.4.13, newCommandTimeout=100000, platformVersion=10.0, platformName=Android, deviceName=Samsung S6, noRest=true}, appium-version=1.4.13, newCommandTimeout=100000, platformVersion=10, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceApiLevel=29, deviceManufacturer=Google, app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Regression/APKFile/The_Weather_Channel_DEBUG (25).apk, deviceScreenSize=1440x2880, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, pixelRatio=3.5, locationContextEnabled=false, deviceScreenDensity=560, deviceModel=Pixel 2 XL}]
+Session ID: 71f3e08a-70d0-4e2e-b50a-4d5313f61971
+*** Element info: {Using=id, value=Id com.weather.Weather:id/video_player_thumbnail_extra}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at twc.Regression.HandleWithAppium.AppiumFunctions.clickOnVideoElement(AppiumFunctions.java:586)
+	at twc.Regression.HandleWithAppium.AppiumFunctions.entering_Zip(AppiumFunctions.java:787)
+	at twc.Regression.TestCases.regressionTestCases.C333202_Verify_cust_param_Zip(regressionTestCases.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</stack-trace>
+            </failure>
+            <steps>
+                <step start="1589218391103" stop="1589218391103" status="passed">
+                    <name>logStep[clicking video element]</name>
+                    <title>clicking video element</title>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="Default test"/>
+                <label name="testClass" value="twc.Regression.TestCases.regressionTestCases"/>
+                <label name="testMethod" value="C333202_Verify_cust_param_Zip"/>
+                <label name="host" value="Aswinikumars-MacBook-Pro.local"/>
+                <label name="thread" value="10705@Aswinikumars-MacBook-Pro.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1589218350014" stop="1589218454418" status="broken">
+            <name>C333202_Verify_cust_param_Zip</name>
+            <title>Verify custom parameter zip from UI</title>
+            <failure>
+                <message>NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 63.15 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.51.0', revision: '1af067dbcaedd7d2ab9af5151fc471d363d97193', time: '2016-02-05 11:20:57'
+System info: host: 'Aswinikumars-MacBook-Pro.local', ip: '192.168.1.6', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_181'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.weather.Weather, statBarHeight=98, viewportRect={top=98, left=0, width=1440, height=2614}, deviceName=803KPXV1599674, noRest=true, platform=LINUX, deviceUDID=803KPXV1599674, desired={app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Regression/APKFile/The_Weather_Channel_DEBUG (25).apk, appPackage=com.weather.Weather, appium-version=1.4.13, newCommandTimeout=100000, platformVersion=10.0, platformName=Android, deviceName=Samsung S6, noRest=true}, appium-version=1.4.13, newCommandTimeout=100000, platformVersion=10, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceApiLevel=29, deviceManufacturer=Google, app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Regression/APKFile/The_Weather_Channel_DEBUG (25).apk, deviceScreenSize=1440x2880, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, pixelRatio=3.5, locationContextEnabled=false, deviceScreenDensity=560, deviceModel=Pixel 2 XL}]
+Session ID: 71f3e08a-70d0-4e2e-b50a-4d5313f61971
+*** Element info: {Using=id, value=Id com.weather.Weather:id/video_player_thumbnail_extra}</message>
+                <stack-trace>org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 63.15 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.51.0', revision: '1af067dbcaedd7d2ab9af5151fc471d363d97193', time: '2016-02-05 11:20:57'
+System info: host: 'Aswinikumars-MacBook-Pro.local', ip: '192.168.1.6', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_181'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities [{appPackage=com.weather.Weather, statBarHeight=98, viewportRect={top=98, left=0, width=1440, height=2614}, deviceName=803KPXV1599674, noRest=true, platform=LINUX, deviceUDID=803KPXV1599674, desired={app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Regression/APKFile/The_Weather_Channel_DEBUG (25).apk, appPackage=com.weather.Weather, appium-version=1.4.13, newCommandTimeout=100000, platformVersion=10.0, platformName=Android, deviceName=Samsung S6, noRest=true}, appium-version=1.4.13, newCommandTimeout=100000, platformVersion=10, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceApiLevel=29, deviceManufacturer=Google, app=/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Regression/APKFile/The_Weather_Channel_DEBUG (25).apk, deviceScreenSize=1440x2880, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, pixelRatio=3.5, locationContextEnabled=false, deviceScreenDensity=560, deviceModel=Pixel 2 XL}]
+Session ID: 71f3e08a-70d0-4e2e-b50a-4d5313f61971
+*** Element info: {Using=id, value=Id com.weather.Weather:id/video_player_thumbnail_extra}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:62)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
+	at twc.Regression.HandleWithAppium.AppiumFunctions.clickOnVideoElement(AppiumFunctions.java:586)
+	at twc.Regression.HandleWithAppium.AppiumFunctions.entering_Zip(AppiumFunctions.java:787)
+	at twc.Regression.TestCases.regressionTestCases.C333202_Verify_cust_param_Zip(regressionTestCases.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</stack-trace>
+            </failure>
+            <steps>
+                <step start="1589218391103" stop="1589218391103" status="passed">
+                    <name>logStep[clicking video element]</name>
+                    <title>clicking video element</title>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="Default test"/>
+                <label name="testClass" value="twc.Regression.TestCases.regressionTestCases"/>
+                <label name="testMethod" value="C333202_Verify_cust_param_Zip"/>
+                <label name="host" value="Aswinikumars-MacBook-Pro.local"/>
+                <label name="thread" value="10705@Aswinikumars-MacBook-Pro.local.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

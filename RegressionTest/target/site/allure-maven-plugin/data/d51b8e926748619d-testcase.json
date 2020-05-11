@@ -1,0 +1,209 @@
+{
+  "uid" : "d51b8e926748619d",
+  "name" : "C333205_Verify_cust_param_tile",
+  "title" : "Verify custom parameter tile",
+  "time" : {
+    "start" : 1588968371249,
+    "stop" : 1588968374572,
+    "duration" : 3323
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 10
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "5a28fef0eaef3b76",
+    "name" : "Suite : Test",
+    "title" : "Suite : Test"
+  },
+  "steps" : [ {
+    "name" : "logStep[Verifyied Feed:0 Pub Ad Call tile Custm_Parameter Expected value presented]",
+    "title" : "Verifyied Feed:0 Pub Ad Call tile Custm_Parameter Expected value presented",
+    "time" : {
+      "start" : 1588968371400,
+      "stop" : 1588968371400,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifyied Feed:1 Pub Ad Call tile Custm_Parameter Expected value presented]",
+    "title" : "Verifyied Feed:1 Pub Ad Call tile Custm_Parameter Expected value presented",
+    "time" : {
+      "start" : 1588968371499,
+      "stop" : 1588968371499,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifyied Feed:2 Pub Ad Call tile Custm_Parameter Expected value presented]",
+    "title" : "Verifyied Feed:2 Pub Ad Call tile Custm_Parameter Expected value presented",
+    "time" : {
+      "start" : 1588968372182,
+      "stop" : 1588968372182,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifyied Feed:3 Pub Ad Call tile Custm_Parameter Expected value presented]",
+    "title" : "Verifyied Feed:3 Pub Ad Call tile Custm_Parameter Expected value presented",
+    "time" : {
+      "start" : 1588968372750,
+      "stop" : 1588968372750,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifyied Feed:4 Pub Ad Call tile Custm_Parameter Expected value presented]",
+    "title" : "Verifyied Feed:4 Pub Ad Call tile Custm_Parameter Expected value presented",
+    "time" : {
+      "start" : 1588968372902,
+      "stop" : 1588968372902,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifyied Feed:5 Pub Ad Call tile Custm_Parameter Expected value presented]",
+    "title" : "Verifyied Feed:5 Pub Ad Call tile Custm_Parameter Expected value presented",
+    "time" : {
+      "start" : 1588968373047,
+      "stop" : 1588968373047,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifyied Feed:0 Pub Ad Call tile Custm_Parameter Expected value presented]",
+    "title" : "Verifyied Feed:0 Pub Ad Call tile Custm_Parameter Expected value presented",
+    "time" : {
+      "start" : 1588968373716,
+      "stop" : 1588968373716,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifyied Feed:1 Pub Ad Call tile Custm_Parameter Expected value presented]",
+    "title" : "Verifyied Feed:1 Pub Ad Call tile Custm_Parameter Expected value presented",
+    "time" : {
+      "start" : 1588968374333,
+      "stop" : 1588968374333,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifyied Feed:2 Pub Ad Call tile Custm_Parameter Expected value presented]",
+    "title" : "Verifyied Feed:2 Pub Ad Call tile Custm_Parameter Expected value presented",
+    "time" : {
+      "start" : 1588968374450,
+      "stop" : 1588968374450,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifyied Feed:3 Pub Ad Call tile Custm_Parameter Expected value presented]",
+    "title" : "Verifyied Feed:3 Pub Ad Call tile Custm_Parameter Expected value presented",
+    "time" : {
+      "start" : 1588968374533,
+      "stop" : 1588968374533,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "testSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "testGroup",
+    "value" : "Test"
+  }, {
+    "name" : "testClass",
+    "value" : "twc.Regression.TestCases.regressionTestCases"
+  }, {
+    "name" : "suite-name",
+    "value" : "Suite : Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "C333205_Verify_cust_param_tile"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "host",
+    "value" : "Aswinikumars-MacBook-Pro.local"
+  }, {
+    "name" : "suite-title",
+    "value" : "Suite : Test"
+  }, {
+    "name" : "thread",
+    "value" : "14430@Aswinikumars-MacBook-Pro.local.main(1)"
+  } ],
+  "parameters" : [ ]
+}

@@ -1,60 +1,74 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 46, Failures: 1, Errors: 0, Skipped: 45, Time elapsed: 228.738 sec <<< FAILURE!
-Before_Test(twc.Regression.TestCases.regressionTestCases)  Time elapsed: 0 sec  <<< FAILURE!
-org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
-Build info: version: '2.51.0', revision: '1af067dbcaedd7d2ab9af5151fc471d363d97193', time: '2016-02-05 11:20:57'
-System info: host: 'aswinikumarsmbp', ip: '192.168.1.5', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_181'
-Driver info: driver.version: AndroidDriver
-Capabilities [{appPackage=com.weather.Weather, statBarHeight=98, viewportRect={top=98, left=0, width=1440, height=2614}, deviceName=803KPXV1599674, noRest=true, platform=LINUX, deviceUDID=803KPXV1599674, desired={app=/Users/aswinikumar/Downloads/RegressionTest/APKFile/The_Weather_Channel_DEBUG.apk, appPackage=com.weather.Weather, appium-version=1.4.13, newCommandTimeout=100000, platformVersion=10.0, platformName=Android, deviceName=Samsung S6, noRest=true}, appium-version=1.4.13, newCommandTimeout=100000, platformVersion=10, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceApiLevel=29, deviceManufacturer=Google, app=/Users/aswinikumar/Downloads/RegressionTest/APKFile/The_Weather_Channel_DEBUG.apk, deviceScreenSize=1440x2880, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, pixelRatio=3.5, locationContextEnabled=false, deviceScreenDensity=560, deviceModel=Pixel 2 XL}]
-Session ID: 2960bcf2-8ae6-42d8-a4e7-af4cfc3ed409
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:62)
-	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
-	at twc.Regression.HandleWithAppium.AppiumFunctions.clickOnVideoElement(AppiumFunctions.java:591)
-	at twc.Regression.TestCases.regressionTestCases.Before_Test(regressionTestCases.java:486)
-Caused by: org.openqa.selenium.WebDriverException: java.net.SocketException: Connection reset
-Build info: version: '2.51.0', revision: '1af067dbcaedd7d2ab9af5151fc471d363d97193', time: '2016-02-05 11:20:57'
-System info: host: 'aswinikumarsmbp', ip: '192.168.1.5', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '1.8.0_181'
-Driver info: driver.version: AndroidDriver
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:64)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
-	... 38 more
-Caused by: java.net.SocketException: Connection reset
-	at java.net.SocketInputStream.read(SocketInputStream.java:210)
-	at java.net.SocketInputStream.read(SocketInputStream.java:141)
-	at org.apache.http.impl.conn.LoggingInputStream.read(LoggingInputStream.java:87)
-	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:136)
-	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:152)
-	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:270)
-	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
-	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
-	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:260)
-	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:161)
-	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.http.impl.conn.CPoolProxy.invoke(CPoolProxy.java:138)
-	at com.sun.proxy.$Proxy6.receiveResponseHeader(Unknown Source)
-	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:271)
-	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:123)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:254)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:186)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:52)
-	... 39 more
+Tests run: 28, Failures: 9, Errors: 0, Skipped: 0, Time elapsed: 73.496 sec <<< FAILURE!
+C333203_Verify_cust_param_dma(twc.Regression.TestCases.regressionTestCases)  Time elapsed: 0.238 sec  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(String.java:1927)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.get_dsx_call_value(CustomParamFunctions.java:700)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.validate_dsx_results(CustomParamFunctions.java:285)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:242)
+	at twc.Regression.TestCases.regressionTestCases.C333203_Verify_cust_param_dma(regressionTestCases.java:61)
+
+C333212_Verify_cust_param_ct(twc.Regression.TestCases.regressionTestCases)  Time elapsed: 0.241 sec  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(String.java:1927)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.get_dsx_call_value(CustomParamFunctions.java:700)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.validate_dsx_results(CustomParamFunctions.java:285)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:268)
+	at twc.Regression.TestCases.regressionTestCases.C333212_Verify_cust_param_ct(regressionTestCases.java:75)
+
+C333214_Verify_cust_param_hlzip(twc.Regression.TestCases.regressionTestCases)  Time elapsed: 0.25 sec  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(String.java:1927)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.get_wfxtg_call_value(CustomParamFunctions.java:743)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.validate_wfxtg_results(CustomParamFunctions.java:386)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:368)
+	at twc.Regression.TestCases.regressionTestCases.C333214_Verify_cust_param_hlzip(regressionTestCases.java:96)
+
+C333226_Verify_cust_param_st(twc.Regression.TestCases.regressionTestCases)  Time elapsed: 0.224 sec  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(String.java:1927)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.get_dsx_call_value(CustomParamFunctions.java:700)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.validate_dsx_results(CustomParamFunctions.java:285)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:277)
+	at twc.Regression.TestCases.regressionTestCases.C333226_Verify_cust_param_st(regressionTestCases.java:110)
+
+C333228_Verify_cust_param_wfxtg(twc.Regression.TestCases.regressionTestCases)  Time elapsed: 0.244 sec  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(String.java:1927)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.get_wfxtg_call_value(CustomParamFunctions.java:743)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.validate_wfxtg_results(CustomParamFunctions.java:386)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:295)
+	at twc.Regression.TestCases.regressionTestCases.C333228_Verify_cust_param_wfxtg(regressionTestCases.java:194)
+
+C333240_Verify_cust_param_zcs(twc.Regression.TestCases.regressionTestCases)  Time elapsed: 0.249 sec  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(String.java:1927)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.get_wfxtg_call_value(CustomParamFunctions.java:743)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.validate_wfxtg_results(CustomParamFunctions.java:386)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:305)
+	at twc.Regression.TestCases.regressionTestCases.C333240_Verify_cust_param_zcs(regressionTestCases.java:201)
+
+C333241_Verify_cust_param_nzcs(twc.Regression.TestCases.regressionTestCases)  Time elapsed: 0.248 sec  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(String.java:1927)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.get_wfxtg_call_value(CustomParamFunctions.java:743)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.validate_wfxtg_results(CustomParamFunctions.java:386)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:323)
+	at twc.Regression.TestCases.regressionTestCases.C333241_Verify_cust_param_nzcs(regressionTestCases.java:208)
+
+C333242_Verify_cust_param_hzcs(twc.Regression.TestCases.regressionTestCases)  Time elapsed: 0.247 sec  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(String.java:1927)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.get_wfxtg_call_value(CustomParamFunctions.java:743)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.validate_wfxtg_results(CustomParamFunctions.java:386)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:314)
+	at twc.Regression.TestCases.regressionTestCases.C333242_Verify_cust_param_hzcs(regressionTestCases.java:215)
+
+After_Test(twc.Regression.TestCases.regressionTestCases)  Time elapsed: 0.25 sec  <<< FAILURE!
+java.lang.AssertionError: The following asserts failed:
+expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:38)
+	at twc.Regression.TestCases.regressionTestCases.After_Test(regressionTestCases.java:542)
 

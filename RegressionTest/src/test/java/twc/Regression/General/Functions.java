@@ -1297,14 +1297,21 @@ public class Functions extends Drivers{
 	}
 	public static void Kill_launch() throws Exception{
 		try{
-			Thread.sleep(5000);
-			Ad.closeApp();
-			Thread.sleep(5000);
+		
+			Ad.closeApp();		
 			Ad.launchApp();
-			Thread.sleep(5000);
 			After_launch();
 		}catch(Exception e){
 
+			try {
+
+				Ad.closeApp();		
+				Ad.launchApp();
+				After_launch();
+			}
+			catch(Exception e1) {
+				
+			}
 		}
 	}
 

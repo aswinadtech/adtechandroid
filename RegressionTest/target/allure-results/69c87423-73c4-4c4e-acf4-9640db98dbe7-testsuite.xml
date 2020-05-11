@@ -1,0 +1,851 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:test-suite start="1589056503444" stop="1589056518893" version="1.5.4" xmlns:ns2="urn:model.allure.qatools.yandex.ru">
+    <name>Default suite : Default test</name>
+    <title>Default suite : Default test</title>
+    <test-cases>
+        <test-case start="1589056503513" stop="1589056509222" status="passed">
+            <name>C333216_Verify_cust_param_cnd</name>
+            <title>Verify custom parameter cnd</title>
+            <steps>
+                <step start="1589056503869" stop="1589056503869" status="passed">
+                    <name>logStep[Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly Pub Ad Call cnd Custm_Parameter E...]</name>
+                    <title>Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly Pub Ad Call cnd Custm_Parameter Expected ...</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056504274" stop="1589056504274" status="passed">
+                    <name>logStep[cnd should not be empty]</name>
+                    <title>cnd should not be empty</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056504274" stop="1589056504274" status="passed">
+                    <name>logStep[cnd passing nl]</name>
+                    <title>cnd passing nl</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056504360" stop="1589056504360" status="passed">
+                    <name>logStep[Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fmarquee Pub Ad Call cnd Custm_Parameter ...]</name>
+                    <title>Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fmarquee Pub Ad Call cnd Custm_Parameter Expected...</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056504570" stop="1589056504570" status="passed">
+                    <name>logStep[cnd should not be empty]</name>
+                    <title>cnd should not be empty</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056504570" stop="1589056504570" status="passed">
+                    <name>logStep[cnd passing nl]</name>
+                    <title>cnd passing nl</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056505145" stop="1589056505145" status="passed">
+                    <name>logStep[Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fradar Pub Ad Call cnd Custm_Parameter Expected ...]</name>
+                    <title>Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fradar Pub Ad Call cnd Custm_Parameter Expected value pr...</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056505875" stop="1589056505875" status="passed">
+                    <name>logStep[cnd should not be empty]</name>
+                    <title>cnd should not be empty</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056505875" stop="1589056505875" status="passed">
+                    <name>logStep[cnd passing nl]</name>
+                    <title>cnd passing nl</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056505984" stop="1589056505984" status="passed">
+                    <name>logStep[Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Flifestyle Pub Ad Call cnd Custm_Parameter Expec...]</name>
+                    <title>Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Flifestyle Pub Ad Call cnd Custm_Parameter Expected valu...</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056506193" stop="1589056506193" status="passed">
+                    <name>logStep[cnd should not be empty]</name>
+                    <title>cnd should not be empty</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056506193" stop="1589056506193" status="passed">
+                    <name>logStep[cnd passing nl]</name>
+                    <title>cnd passing nl</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056506274" stop="1589056506274" status="passed">
+                    <name>logStep[Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fseason Pub Ad Call cnd Custm_Parameter Expected...]</name>
+                    <title>Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fseason Pub Ad Call cnd Custm_Parameter Expected value p...</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056506495" stop="1589056506495" status="passed">
+                    <name>logStep[cnd should not be empty]</name>
+                    <title>cnd should not be empty</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056506495" stop="1589056506495" status="passed">
+                    <name>logStep[cnd passing nl]</name>
+                    <title>cnd passing nl</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056506579" stop="1589056506579" status="passed">
+                    <name>logStep[Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Faq Pub Ad Call cnd Custm_Parameter Expected val...]</name>
+                    <title>Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Faq Pub Ad Call cnd Custm_Parameter Expected value prese...</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056506795" stop="1589056506795" status="passed">
+                    <name>logStep[cnd should not be empty]</name>
+                    <title>cnd should not be empty</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056506795" stop="1589056506795" status="passed">
+                    <name>logStep[cnd passing nl]</name>
+                    <title>cnd passing nl</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056507735" stop="1589056507735" status="passed">
+                    <name>logStep[Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps Pub Ad Call cnd Custm_Parameter Expecte...]</name>
+                    <title>Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps Pub Ad Call cnd Custm_Parameter Expected value ...</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056508446" stop="1589056508446" status="passed">
+                    <name>logStep[cnd should not be empty]</name>
+                    <title>cnd should not be empty</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056508446" stop="1589056508446" status="passed">
+                    <name>logStep[cnd passing nl]</name>
+                    <title>cnd passing nl</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056508528" stop="1589056508528" status="passed">
+                    <name>logStep[Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Ftoday Pub Ad Call cnd Custm_Parameter Expect...]</name>
+                    <title>Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Ftoday Pub Ad Call cnd Custm_Parameter Expected value...</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056508794" stop="1589056508794" status="passed">
+                    <name>logStep[cnd should not be empty]</name>
+                    <title>cnd should not be empty</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056508795" stop="1589056508795" status="passed">
+                    <name>logStep[cnd passing nl]</name>
+                    <title>cnd passing nl</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056508829" stop="1589056508829" status="passed">
+                    <name>logStep[Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly Pub Ad Call cnd Custm_Parameter Expec...]</name>
+                    <title>Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly Pub Ad Call cnd Custm_Parameter Expected valu...</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056509002" stop="1589056509002" status="passed">
+                    <name>logStep[cnd should not be empty]</name>
+                    <title>cnd should not be empty</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056509003" stop="1589056509003" status="passed">
+                    <name>logStep[cnd passing nl]</name>
+                    <title>cnd passing nl</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056509038" stop="1589056509038" status="passed">
+                    <name>logStep[Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day Pub Ad Call cnd Custm_Parameter Expect...]</name>
+                    <title>Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day Pub Ad Call cnd Custm_Parameter Expected value...</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056509216" stop="1589056509216" status="passed">
+                    <name>logStep[cnd should not be empty]</name>
+                    <title>cnd should not be empty</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056509216" stop="1589056509216" status="passed">
+                    <name>logStep[cnd passing nl]</name>
+                    <title>cnd passing nl</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="Default test"/>
+                <label name="testClass" value="twc.Regression.TestCases.regressionTestCases"/>
+                <label name="testMethod" value="C333216_Verify_cust_param_cnd"/>
+                <label name="host" value="Aswinikumars-MacBook-Pro.local"/>
+                <label name="thread" value="2172@Aswinikumars-MacBook-Pro.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1589056503513" stop="1589056509222" status="passed">
+            <name>C333216_Verify_cust_param_cnd</name>
+            <title>Verify custom parameter cnd</title>
+            <steps>
+                <step start="1589056503869" stop="1589056503869" status="passed">
+                    <name>logStep[Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly Pub Ad Call cnd Custm_Parameter E...]</name>
+                    <title>Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly Pub Ad Call cnd Custm_Parameter Expected ...</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056504274" stop="1589056504274" status="passed">
+                    <name>logStep[cnd should not be empty]</name>
+                    <title>cnd should not be empty</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056504274" stop="1589056504274" status="passed">
+                    <name>logStep[cnd passing nl]</name>
+                    <title>cnd passing nl</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056504360" stop="1589056504360" status="passed">
+                    <name>logStep[Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fmarquee Pub Ad Call cnd Custm_Parameter ...]</name>
+                    <title>Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fmarquee Pub Ad Call cnd Custm_Parameter Expected...</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056504570" stop="1589056504570" status="passed">
+                    <name>logStep[cnd should not be empty]</name>
+                    <title>cnd should not be empty</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056504570" stop="1589056504570" status="passed">
+                    <name>logStep[cnd passing nl]</name>
+                    <title>cnd passing nl</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056505145" stop="1589056505145" status="passed">
+                    <name>logStep[Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fradar Pub Ad Call cnd Custm_Parameter Expected ...]</name>
+                    <title>Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fradar Pub Ad Call cnd Custm_Parameter Expected value pr...</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056505875" stop="1589056505875" status="passed">
+                    <name>logStep[cnd should not be empty]</name>
+                    <title>cnd should not be empty</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056505875" stop="1589056505875" status="passed">
+                    <name>logStep[cnd passing nl]</name>
+                    <title>cnd passing nl</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056505984" stop="1589056505984" status="passed">
+                    <name>logStep[Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Flifestyle Pub Ad Call cnd Custm_Parameter Expec...]</name>
+                    <title>Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Flifestyle Pub Ad Call cnd Custm_Parameter Expected valu...</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056506193" stop="1589056506193" status="passed">
+                    <name>logStep[cnd should not be empty]</name>
+                    <title>cnd should not be empty</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056506193" stop="1589056506193" status="passed">
+                    <name>logStep[cnd passing nl]</name>
+                    <title>cnd passing nl</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056506274" stop="1589056506274" status="passed">
+                    <name>logStep[Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fseason Pub Ad Call cnd Custm_Parameter Expected...]</name>
+                    <title>Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fseason Pub Ad Call cnd Custm_Parameter Expected value p...</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056506495" stop="1589056506495" status="passed">
+                    <name>logStep[cnd should not be empty]</name>
+                    <title>cnd should not be empty</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056506495" stop="1589056506495" status="passed">
+                    <name>logStep[cnd passing nl]</name>
+                    <title>cnd passing nl</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056506579" stop="1589056506579" status="passed">
+                    <name>logStep[Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Faq Pub Ad Call cnd Custm_Parameter Expected val...]</name>
+                    <title>Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Faq Pub Ad Call cnd Custm_Parameter Expected value prese...</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056506795" stop="1589056506795" status="passed">
+                    <name>logStep[cnd should not be empty]</name>
+                    <title>cnd should not be empty</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056506795" stop="1589056506795" status="passed">
+                    <name>logStep[cnd passing nl]</name>
+                    <title>cnd passing nl</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056507735" stop="1589056507735" status="passed">
+                    <name>logStep[Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps Pub Ad Call cnd Custm_Parameter Expecte...]</name>
+                    <title>Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps Pub Ad Call cnd Custm_Parameter Expected value ...</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056508446" stop="1589056508446" status="passed">
+                    <name>logStep[cnd should not be empty]</name>
+                    <title>cnd should not be empty</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056508446" stop="1589056508446" status="passed">
+                    <name>logStep[cnd passing nl]</name>
+                    <title>cnd passing nl</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056508528" stop="1589056508528" status="passed">
+                    <name>logStep[Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Ftoday Pub Ad Call cnd Custm_Parameter Expect...]</name>
+                    <title>Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Ftoday Pub Ad Call cnd Custm_Parameter Expected value...</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056508794" stop="1589056508794" status="passed">
+                    <name>logStep[cnd should not be empty]</name>
+                    <title>cnd should not be empty</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056508795" stop="1589056508795" status="passed">
+                    <name>logStep[cnd passing nl]</name>
+                    <title>cnd passing nl</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056508829" stop="1589056508829" status="passed">
+                    <name>logStep[Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly Pub Ad Call cnd Custm_Parameter Expec...]</name>
+                    <title>Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly Pub Ad Call cnd Custm_Parameter Expected valu...</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056509002" stop="1589056509002" status="passed">
+                    <name>logStep[cnd should not be empty]</name>
+                    <title>cnd should not be empty</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056509003" stop="1589056509003" status="passed">
+                    <name>logStep[cnd passing nl]</name>
+                    <title>cnd passing nl</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056509038" stop="1589056509038" status="passed">
+                    <name>logStep[Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day Pub Ad Call cnd Custm_Parameter Expect...]</name>
+                    <title>Verifyied Feed:iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day Pub Ad Call cnd Custm_Parameter Expected value...</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056509216" stop="1589056509216" status="passed">
+                    <name>logStep[cnd should not be empty]</name>
+                    <title>cnd should not be empty</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056509216" stop="1589056509216" status="passed">
+                    <name>logStep[cnd passing nl]</name>
+                    <title>cnd passing nl</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="Default test"/>
+                <label name="testClass" value="twc.Regression.TestCases.regressionTestCases"/>
+                <label name="testMethod" value="C333216_Verify_cust_param_cnd"/>
+                <label name="host" value="Aswinikumars-MacBook-Pro.local"/>
+                <label name="thread" value="2172@Aswinikumars-MacBook-Pro.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1589056509228" stop="1589056512639" status="passed">
+            <name>C333202_Verify_cust_param_zip</name>
+            <title>Verify custom parameter zip</title>
+            <steps>
+                <step start="1589056509401" stop="1589056509401" status="passed">
+                    <name>logStep[Verifyied Feed:0 Pub Ad Call zip Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:0 Pub Ad Call zip Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056509520" stop="1589056509520" status="passed">
+                    <name>logStep[Verifyied Feed:1 Pub Ad Call zip Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:1 Pub Ad Call zip Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056510235" stop="1589056510235" status="passed">
+                    <name>logStep[Verifyied Feed:2 Pub Ad Call zip Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:2 Pub Ad Call zip Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056510787" stop="1589056510787" status="passed">
+                    <name>logStep[Verifyied Feed:3 Pub Ad Call zip Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:3 Pub Ad Call zip Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056510923" stop="1589056510923" status="passed">
+                    <name>logStep[Verifyied Feed:4 Pub Ad Call zip Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:4 Pub Ad Call zip Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056511061" stop="1589056511061" status="passed">
+                    <name>logStep[Verifyied Feed:5 Pub Ad Call zip Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:5 Pub Ad Call zip Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056511789" stop="1589056511789" status="passed">
+                    <name>logStep[Verifyied Feed:0 Pub Ad Call zip Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:0 Pub Ad Call zip Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056512473" stop="1589056512473" status="passed">
+                    <name>logStep[Verifyied Feed:1 Pub Ad Call zip Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:1 Pub Ad Call zip Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056512562" stop="1589056512562" status="passed">
+                    <name>logStep[Verifyied Feed:2 Pub Ad Call zip Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:2 Pub Ad Call zip Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056512616" stop="1589056512616" status="passed">
+                    <name>logStep[Verifyied Feed:3 Pub Ad Call zip Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:3 Pub Ad Call zip Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="Default test"/>
+                <label name="testClass" value="twc.Regression.TestCases.regressionTestCases"/>
+                <label name="testMethod" value="C333202_Verify_cust_param_zip"/>
+                <label name="host" value="Aswinikumars-MacBook-Pro.local"/>
+                <label name="thread" value="2172@Aswinikumars-MacBook-Pro.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1589056509228" stop="1589056512639" status="passed">
+            <name>C333202_Verify_cust_param_zip</name>
+            <title>Verify custom parameter zip</title>
+            <steps>
+                <step start="1589056509401" stop="1589056509401" status="passed">
+                    <name>logStep[Verifyied Feed:0 Pub Ad Call zip Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:0 Pub Ad Call zip Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056509520" stop="1589056509520" status="passed">
+                    <name>logStep[Verifyied Feed:1 Pub Ad Call zip Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:1 Pub Ad Call zip Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056510235" stop="1589056510235" status="passed">
+                    <name>logStep[Verifyied Feed:2 Pub Ad Call zip Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:2 Pub Ad Call zip Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056510787" stop="1589056510787" status="passed">
+                    <name>logStep[Verifyied Feed:3 Pub Ad Call zip Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:3 Pub Ad Call zip Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056510923" stop="1589056510923" status="passed">
+                    <name>logStep[Verifyied Feed:4 Pub Ad Call zip Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:4 Pub Ad Call zip Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056511061" stop="1589056511061" status="passed">
+                    <name>logStep[Verifyied Feed:5 Pub Ad Call zip Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:5 Pub Ad Call zip Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056511789" stop="1589056511789" status="passed">
+                    <name>logStep[Verifyied Feed:0 Pub Ad Call zip Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:0 Pub Ad Call zip Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056512473" stop="1589056512473" status="passed">
+                    <name>logStep[Verifyied Feed:1 Pub Ad Call zip Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:1 Pub Ad Call zip Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056512562" stop="1589056512562" status="passed">
+                    <name>logStep[Verifyied Feed:2 Pub Ad Call zip Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:2 Pub Ad Call zip Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056512616" stop="1589056512616" status="passed">
+                    <name>logStep[Verifyied Feed:3 Pub Ad Call zip Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:3 Pub Ad Call zip Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="Default test"/>
+                <label name="testClass" value="twc.Regression.TestCases.regressionTestCases"/>
+                <label name="testMethod" value="C333202_Verify_cust_param_zip"/>
+                <label name="host" value="Aswinikumars-MacBook-Pro.local"/>
+                <label name="thread" value="2172@Aswinikumars-MacBook-Pro.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1589056512641" stop="1589056515780" status="passed">
+            <name>C658712_Verify_cust_param_plat</name>
+            <title>Verify custom parameter plat</title>
+            <steps>
+                <step start="1589056512806" stop="1589056512806" status="passed">
+                    <name>logStep[Verifyied Feed:0 Pub Ad Call plat Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:0 Pub Ad Call plat Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056512905" stop="1589056512905" status="passed">
+                    <name>logStep[Verifyied Feed:1 Pub Ad Call plat Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:1 Pub Ad Call plat Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056513456" stop="1589056513456" status="passed">
+                    <name>logStep[Verifyied Feed:2 Pub Ad Call plat Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:2 Pub Ad Call plat Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056514085" stop="1589056514085" status="passed">
+                    <name>logStep[Verifyied Feed:3 Pub Ad Call plat Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:3 Pub Ad Call plat Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056514209" stop="1589056514209" status="passed">
+                    <name>logStep[Verifyied Feed:4 Pub Ad Call plat Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:4 Pub Ad Call plat Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056514333" stop="1589056514333" status="passed">
+                    <name>logStep[Verifyied Feed:5 Pub Ad Call plat Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:5 Pub Ad Call plat Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056514970" stop="1589056514970" status="passed">
+                    <name>logStep[Verifyied Feed:0 Pub Ad Call plat Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:0 Pub Ad Call plat Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056515590" stop="1589056515590" status="passed">
+                    <name>logStep[Verifyied Feed:1 Pub Ad Call plat Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:1 Pub Ad Call plat Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056515688" stop="1589056515688" status="passed">
+                    <name>logStep[Verifyied Feed:2 Pub Ad Call plat Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:2 Pub Ad Call plat Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056515757" stop="1589056515757" status="passed">
+                    <name>logStep[Verifyied Feed:3 Pub Ad Call plat Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:3 Pub Ad Call plat Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="Default test"/>
+                <label name="testClass" value="twc.Regression.TestCases.regressionTestCases"/>
+                <label name="testMethod" value="C658712_Verify_cust_param_plat"/>
+                <label name="host" value="Aswinikumars-MacBook-Pro.local"/>
+                <label name="thread" value="2172@Aswinikumars-MacBook-Pro.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1589056512641" stop="1589056515780" status="passed">
+            <name>C658712_Verify_cust_param_plat</name>
+            <title>Verify custom parameter plat</title>
+            <steps>
+                <step start="1589056512806" stop="1589056512806" status="passed">
+                    <name>logStep[Verifyied Feed:0 Pub Ad Call plat Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:0 Pub Ad Call plat Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056512905" stop="1589056512905" status="passed">
+                    <name>logStep[Verifyied Feed:1 Pub Ad Call plat Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:1 Pub Ad Call plat Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056513456" stop="1589056513456" status="passed">
+                    <name>logStep[Verifyied Feed:2 Pub Ad Call plat Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:2 Pub Ad Call plat Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056514085" stop="1589056514085" status="passed">
+                    <name>logStep[Verifyied Feed:3 Pub Ad Call plat Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:3 Pub Ad Call plat Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056514209" stop="1589056514209" status="passed">
+                    <name>logStep[Verifyied Feed:4 Pub Ad Call plat Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:4 Pub Ad Call plat Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056514333" stop="1589056514333" status="passed">
+                    <name>logStep[Verifyied Feed:5 Pub Ad Call plat Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:5 Pub Ad Call plat Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056514970" stop="1589056514970" status="passed">
+                    <name>logStep[Verifyied Feed:0 Pub Ad Call plat Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:0 Pub Ad Call plat Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056515590" stop="1589056515590" status="passed">
+                    <name>logStep[Verifyied Feed:1 Pub Ad Call plat Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:1 Pub Ad Call plat Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056515688" stop="1589056515688" status="passed">
+                    <name>logStep[Verifyied Feed:2 Pub Ad Call plat Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:2 Pub Ad Call plat Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056515757" stop="1589056515757" status="passed">
+                    <name>logStep[Verifyied Feed:3 Pub Ad Call plat Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:3 Pub Ad Call plat Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="Default test"/>
+                <label name="testClass" value="twc.Regression.TestCases.regressionTestCases"/>
+                <label name="testMethod" value="C658712_Verify_cust_param_plat"/>
+                <label name="host" value="Aswinikumars-MacBook-Pro.local"/>
+                <label name="thread" value="2172@Aswinikumars-MacBook-Pro.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1589056515784" stop="1589056518875" status="passed">
+            <name>C333213_Verify_cust_param_adid</name>
+            <title>Verify custom parameter adid</title>
+            <steps>
+                <step start="1589056515942" stop="1589056515942" status="passed">
+                    <name>logStep[Verifyied Feed:0 Pub Ad Call adid Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:0 Pub Ad Call adid Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056516040" stop="1589056516040" status="passed">
+                    <name>logStep[Verifyied Feed:1 Pub Ad Call adid Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:1 Pub Ad Call adid Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056516590" stop="1589056516590" status="passed">
+                    <name>logStep[Verifyied Feed:2 Pub Ad Call adid Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:2 Pub Ad Call adid Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056517163" stop="1589056517163" status="passed">
+                    <name>logStep[Verifyied Feed:3 Pub Ad Call adid Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:3 Pub Ad Call adid Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056517293" stop="1589056517293" status="passed">
+                    <name>logStep[Verifyied Feed:4 Pub Ad Call adid Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:4 Pub Ad Call adid Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056517413" stop="1589056517413" status="passed">
+                    <name>logStep[Verifyied Feed:5 Pub Ad Call adid Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:5 Pub Ad Call adid Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056518031" stop="1589056518031" status="passed">
+                    <name>logStep[Verifyied Feed:0 Pub Ad Call adid Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:0 Pub Ad Call adid Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056518681" stop="1589056518681" status="passed">
+                    <name>logStep[Verifyied Feed:1 Pub Ad Call adid Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:1 Pub Ad Call adid Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056518787" stop="1589056518787" status="passed">
+                    <name>logStep[Verifyied Feed:2 Pub Ad Call adid Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:2 Pub Ad Call adid Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056518855" stop="1589056518855" status="passed">
+                    <name>logStep[Verifyied Feed:3 Pub Ad Call adid Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:3 Pub Ad Call adid Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="Default test"/>
+                <label name="testClass" value="twc.Regression.TestCases.regressionTestCases"/>
+                <label name="testMethod" value="C333213_Verify_cust_param_adid"/>
+                <label name="host" value="Aswinikumars-MacBook-Pro.local"/>
+                <label name="thread" value="2172@Aswinikumars-MacBook-Pro.local.main(1)"/>
+            </labels>
+        </test-case>
+        <test-case start="1589056515784" stop="1589056518875" status="passed">
+            <name>C333213_Verify_cust_param_adid</name>
+            <title>Verify custom parameter adid</title>
+            <steps>
+                <step start="1589056515942" stop="1589056515942" status="passed">
+                    <name>logStep[Verifyied Feed:0 Pub Ad Call adid Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:0 Pub Ad Call adid Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056516040" stop="1589056516040" status="passed">
+                    <name>logStep[Verifyied Feed:1 Pub Ad Call adid Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:1 Pub Ad Call adid Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056516590" stop="1589056516590" status="passed">
+                    <name>logStep[Verifyied Feed:2 Pub Ad Call adid Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:2 Pub Ad Call adid Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056517163" stop="1589056517163" status="passed">
+                    <name>logStep[Verifyied Feed:3 Pub Ad Call adid Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:3 Pub Ad Call adid Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056517293" stop="1589056517293" status="passed">
+                    <name>logStep[Verifyied Feed:4 Pub Ad Call adid Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:4 Pub Ad Call adid Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056517413" stop="1589056517413" status="passed">
+                    <name>logStep[Verifyied Feed:5 Pub Ad Call adid Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:5 Pub Ad Call adid Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056518031" stop="1589056518031" status="passed">
+                    <name>logStep[Verifyied Feed:0 Pub Ad Call adid Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:0 Pub Ad Call adid Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056518681" stop="1589056518681" status="passed">
+                    <name>logStep[Verifyied Feed:1 Pub Ad Call adid Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:1 Pub Ad Call adid Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056518787" stop="1589056518787" status="passed">
+                    <name>logStep[Verifyied Feed:2 Pub Ad Call adid Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:2 Pub Ad Call adid Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+                <step start="1589056518855" stop="1589056518855" status="passed">
+                    <name>logStep[Verifyied Feed:3 Pub Ad Call adid Custm_Parameter Expected value presented]</name>
+                    <title>Verifyied Feed:3 Pub Ad Call adid Custm_Parameter Expected value presented</title>
+                    <attachments/>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <labels>
+                <label name="testSuite" value="Default suite"/>
+                <label name="testGroup" value="Default test"/>
+                <label name="testClass" value="twc.Regression.TestCases.regressionTestCases"/>
+                <label name="testMethod" value="C333213_Verify_cust_param_adid"/>
+                <label name="host" value="Aswinikumars-MacBook-Pro.local"/>
+                <label name="thread" value="2172@Aswinikumars-MacBook-Pro.local.main(1)"/>
+            </labels>
+        </test-case>
+    </test-cases>
+    <labels>
+        <label name="framework" value="TestNG"/>
+        <label name="language" value="JAVA"/>
+    </labels>
+</ns2:test-suite>

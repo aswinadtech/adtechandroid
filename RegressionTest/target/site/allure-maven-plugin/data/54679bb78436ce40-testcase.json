@@ -1,0 +1,209 @@
+{
+  "uid" : "54679bb78436ce40",
+  "name" : "C333230_Verify_cust_param_fgeo",
+  "title" : "Verify custom parameter fgeo",
+  "time" : {
+    "start" : 1588968352652,
+    "stop" : 1588968355660,
+    "duration" : 3008
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 10
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "5a28fef0eaef3b76",
+    "name" : "Suite : Test",
+    "title" : "Suite : Test"
+  },
+  "steps" : [ {
+    "name" : "logStep[Verifyied Feed:0 Pub Ad Call fgeo Custm_Parameter Expected value presented]",
+    "title" : "Verifyied Feed:0 Pub Ad Call fgeo Custm_Parameter Expected value presented",
+    "time" : {
+      "start" : 1588968352811,
+      "stop" : 1588968352811,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifyied Feed:1 Pub Ad Call fgeo Custm_Parameter Expected value presented]",
+    "title" : "Verifyied Feed:1 Pub Ad Call fgeo Custm_Parameter Expected value presented",
+    "time" : {
+      "start" : 1588968352908,
+      "stop" : 1588968352908,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifyied Feed:2 Pub Ad Call fgeo Custm_Parameter Expected value presented]",
+    "title" : "Verifyied Feed:2 Pub Ad Call fgeo Custm_Parameter Expected value presented",
+    "time" : {
+      "start" : 1588968353460,
+      "stop" : 1588968353460,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifyied Feed:3 Pub Ad Call fgeo Custm_Parameter Expected value presented]",
+    "title" : "Verifyied Feed:3 Pub Ad Call fgeo Custm_Parameter Expected value presented",
+    "time" : {
+      "start" : 1588968354018,
+      "stop" : 1588968354018,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifyied Feed:4 Pub Ad Call fgeo Custm_Parameter Expected value presented]",
+    "title" : "Verifyied Feed:4 Pub Ad Call fgeo Custm_Parameter Expected value presented",
+    "time" : {
+      "start" : 1588968354149,
+      "stop" : 1588968354149,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifyied Feed:5 Pub Ad Call fgeo Custm_Parameter Expected value presented]",
+    "title" : "Verifyied Feed:5 Pub Ad Call fgeo Custm_Parameter Expected value presented",
+    "time" : {
+      "start" : 1588968354285,
+      "stop" : 1588968354285,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifyied Feed:0 Pub Ad Call fgeo Custm_Parameter Expected value presented]",
+    "title" : "Verifyied Feed:0 Pub Ad Call fgeo Custm_Parameter Expected value presented",
+    "time" : {
+      "start" : 1588968354886,
+      "stop" : 1588968354886,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifyied Feed:1 Pub Ad Call fgeo Custm_Parameter Expected value presented]",
+    "title" : "Verifyied Feed:1 Pub Ad Call fgeo Custm_Parameter Expected value presented",
+    "time" : {
+      "start" : 1588968355477,
+      "stop" : 1588968355477,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifyied Feed:2 Pub Ad Call fgeo Custm_Parameter Expected value presented]",
+    "title" : "Verifyied Feed:2 Pub Ad Call fgeo Custm_Parameter Expected value presented",
+    "time" : {
+      "start" : 1588968355573,
+      "stop" : 1588968355573,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifyied Feed:3 Pub Ad Call fgeo Custm_Parameter Expected value presented]",
+    "title" : "Verifyied Feed:3 Pub Ad Call fgeo Custm_Parameter Expected value presented",
+    "time" : {
+      "start" : 1588968355640,
+      "stop" : 1588968355640,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "testSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "testGroup",
+    "value" : "Test"
+  }, {
+    "name" : "testClass",
+    "value" : "twc.Regression.TestCases.regressionTestCases"
+  }, {
+    "name" : "suite-name",
+    "value" : "Suite : Test"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "host",
+    "value" : "Aswinikumars-MacBook-Pro.local"
+  }, {
+    "name" : "testMethod",
+    "value" : "C333230_Verify_cust_param_fgeo"
+  }, {
+    "name" : "suite-title",
+    "value" : "Suite : Test"
+  }, {
+    "name" : "thread",
+    "value" : "14430@Aswinikumars-MacBook-Pro.local.main(1)"
+  } ],
+  "parameters" : [ ]
+}

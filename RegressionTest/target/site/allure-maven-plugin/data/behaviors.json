@@ -2,530 +2,332 @@
   "features" : [ {
     "title" : "Without feature",
     "statistic" : {
-      "total" : 46,
-      "passed" : 0,
+      "total" : 28,
+      "passed" : 19,
       "pending" : 0,
-      "canceled" : 45,
-      "failed" : 0,
-      "broken" : 1
+      "canceled" : 0,
+      "failed" : 1,
+      "broken" : 8
     },
     "stories" : [ {
-      "uid" : "3cd140b8650fded3",
+      "uid" : "46658fb60f34eeac",
       "title" : "Without story",
       "statistic" : {
-        "total" : 46,
-        "passed" : 0,
+        "total" : 28,
+        "passed" : 19,
         "pending" : 0,
-        "canceled" : 45,
-        "failed" : 0,
-        "broken" : 1
+        "canceled" : 0,
+        "failed" : 1,
+        "broken" : 8
       },
       "testCases" : [ {
-        "uid" : "31ec4705e011b3b1",
-        "name" : "Before_Test",
-        "title" : "Before test",
+        "uid" : "55015ab97a7e44c8",
+        "name" : "C333216_Verify_cust_param_cnd",
+        "title" : "Verify custom parameter cnd",
         "time" : {
-          "start" : 1586074415074,
-          "stop" : 1586074415078,
-          "duration" : 4
+          "start" : 1588968317001,
+          "stop" : 1588968322667,
+          "duration" : 5666
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "f6a5205a713560a4",
+        "name" : "C333202_Verify_cust_param_zip",
+        "title" : "Verify custom parameter zip",
+        "time" : {
+          "start" : 1588968322671,
+          "stop" : 1588968325861,
+          "duration" : 3190
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "265e894ccd94dae3",
+        "name" : "C333203_Verify_cust_param_dma",
+        "title" : "Verify custom parameter dma",
+        "time" : {
+          "start" : 1588968325862,
+          "stop" : 1588968326103,
+          "duration" : 241
         },
         "severity" : "NORMAL",
         "status" : "BROKEN"
       }, {
-        "uid" : "b7bfb4be99eb1797",
-        "name" : "C333203_Verify_cust_param_dma",
-        "title" : "Verify custom parameter dma",
+        "uid" : "1258676f5bf45dbb",
+        "name" : "C333218_Verify_cust_param_pos",
+        "title" : "Verify custom parameter pos",
         "time" : {
-          "start" : 1586074415114,
-          "stop" : 1586074415115,
-          "duration" : 1
+          "start" : 1588968326103,
+          "stop" : 1588968329072,
+          "duration" : 2969
         },
         "severity" : "NORMAL",
-        "status" : "CANCELED"
+        "status" : "PASSED"
       }, {
-        "uid" : "2e829ecebd7ae2db",
-        "name" : "C333202_Verify_cust_param_zip",
-        "title" : "Verify custom parameter zip",
+        "uid" : "79cccfc86e438862",
+        "name" : "C333208_Verify_cust_param_tmp",
+        "title" : "Verify custom parameter tmp",
         "time" : {
-          "start" : 1586074415116,
-          "stop" : 1586074415117,
-          "duration" : 1
+          "start" : 1588968329074,
+          "stop" : 1588968333836,
+          "duration" : 4762
         },
         "severity" : "NORMAL",
-        "status" : "CANCELED"
+        "status" : "PASSED"
       }, {
-        "uid" : "689bc6dfd8246e8d",
-        "name" : "C333212_Verify_cust_param_ct",
-        "title" : "Verify custom parameter ct",
-        "time" : {
-          "start" : 1586074415117,
-          "stop" : 1586074415118,
-          "duration" : 1
-        },
-        "severity" : "NORMAL",
-        "status" : "CANCELED"
-      }, {
-        "uid" : "1c16004045c81c8d",
-        "name" : "C333211_Verify_cust_param_locale",
-        "title" : "Verify custom parameter locale",
-        "time" : {
-          "start" : 1586074415118,
-          "stop" : 1586074415119,
-          "duration" : 1
-        },
-        "severity" : "NORMAL",
-        "status" : "CANCELED"
-      }, {
-        "uid" : "b1ae0ffe7e5729bd",
-        "name" : "C333221_Verify_cust_param_wind",
-        "title" : "Verify custom parameter wind",
-        "time" : {
-          "start" : 1586074415119,
-          "stop" : 1586074415120,
-          "duration" : 1
-        },
-        "severity" : "NORMAL",
-        "status" : "CANCELED"
-      }, {
-        "uid" : "8bae014db5528cbb",
-        "name" : "C333214_Verify_cust_param_hlzip",
-        "title" : "Verify custom parameter hlzip",
-        "time" : {
-          "start" : 1586074415120,
-          "stop" : 1586074415121,
-          "duration" : 1
-        },
-        "severity" : "NORMAL",
-        "status" : "CANCELED"
-      }, {
-        "uid" : "9dd3e4b9f6ee5ce4",
-        "name" : "C333207_Verify_cust_param_hmid",
-        "title" : "Verify custom parameter hmid",
-        "time" : {
-          "start" : 1586074415121,
-          "stop" : 1586074415122,
-          "duration" : 1
-        },
-        "severity" : "NORMAL",
-        "status" : "CANCELED"
-      }, {
-        "uid" : "f7371441df3f1b80",
-        "name" : "C333226_Verify_cust_param_st",
-        "title" : "Verify custom parameter st",
-        "time" : {
-          "start" : 1586074415123,
-          "stop" : 1586074415123,
-          "duration" : 0
-        },
-        "severity" : "NORMAL",
-        "status" : "CANCELED"
-      }, {
-        "uid" : "1a11716642ee7e84",
-        "name" : "C333229_Verify_cust_param_faud",
-        "title" : "Verify custom parameter faud",
-        "time" : {
-          "start" : 1586074415124,
-          "stop" : 1586074415124,
-          "duration" : 0
-        },
-        "severity" : "NORMAL",
-        "status" : "CANCELED"
-      }, {
-        "uid" : "9471b59c9dd90c77",
-        "name" : "C333230_Verify_cust_param_fgeo",
-        "title" : "Verify custom parameter fgeo",
-        "time" : {
-          "start" : 1586074415125,
-          "stop" : 1586074415125,
-          "duration" : 0
-        },
-        "severity" : "NORMAL",
-        "status" : "CANCELED"
-      }, {
-        "uid" : "acda661baabbd754",
-        "name" : "C333233_Verify_cust_param_filtmpc",
-        "title" : "Verify custom parameter fltmpc",
-        "time" : {
-          "start" : 1586074415126,
-          "stop" : 1586074415126,
-          "duration" : 0
-        },
-        "severity" : "NORMAL",
-        "status" : "CANCELED"
-      }, {
-        "uid" : "e66a9e0c60bf276f",
-        "name" : "C333215_Verify_cust_param_ftl",
-        "title" : "Verify custom parameter ftl",
-        "time" : {
-          "start" : 1586074415127,
-          "stop" : 1586074415127,
-          "duration" : 0
-        },
-        "severity" : "NORMAL",
-        "status" : "CANCELED"
-      }, {
-        "uid" : "a9dfee41c9f4236d",
-        "name" : "C658711_Verify_cust_param_lang",
-        "title" : "Verify custom parameter lang",
-        "time" : {
-          "start" : 1586074415128,
-          "stop" : 1586074415128,
-          "duration" : 0
-        },
-        "severity" : "NORMAL",
-        "status" : "CANCELED"
-      }, {
-        "uid" : "ef743aa6fb005c32",
+        "uid" : "463763c046a4c764",
         "name" : "C658712_Verify_cust_param_plat",
         "title" : "Verify custom parameter plat",
         "time" : {
-          "start" : 1586074415128,
-          "stop" : 1586074415129,
-          "duration" : 1
+          "start" : 1588968333836,
+          "stop" : 1588968336895,
+          "duration" : 3059
         },
         "severity" : "NORMAL",
-        "status" : "CANCELED"
+        "status" : "PASSED"
       }, {
-        "uid" : "b37ed27fbb71e602",
+        "uid" : "e9a61f0a50ce37fc",
+        "name" : "C333212_Verify_cust_param_ct",
+        "title" : "Verify custom parameter ct",
+        "time" : {
+          "start" : 1588968336896,
+          "stop" : 1588968337137,
+          "duration" : 241
+        },
+        "severity" : "NORMAL",
+        "status" : "BROKEN"
+      }, {
+        "uid" : "2f556cff9a068216",
+        "name" : "C333211_Verify_cust_param_locale",
+        "title" : "Verify custom parameter locale",
+        "time" : {
+          "start" : 1588968337137,
+          "stop" : 1588968340704,
+          "duration" : 3567
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "2f29a0a99cfd9597",
+        "name" : "C333221_Verify_cust_param_wind",
+        "title" : "Verify custom parameter wind",
+        "time" : {
+          "start" : 1588968340705,
+          "stop" : 1588968344883,
+          "duration" : 4178
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "6d413af8ef1eadb9",
+        "name" : "C333214_Verify_cust_param_hlzip",
+        "title" : "Verify custom parameter hlzip",
+        "time" : {
+          "start" : 1588968344884,
+          "stop" : 1588968345134,
+          "duration" : 250
+        },
+        "severity" : "NORMAL",
+        "status" : "BROKEN"
+      }, {
+        "uid" : "198a97deaf3cbfa1",
+        "name" : "C333207_Verify_cust_param_hmid",
+        "title" : "Verify custom parameter hmid",
+        "time" : {
+          "start" : 1588968345134,
+          "stop" : 1588968349311,
+          "duration" : 4177
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "3b14121c0e15bd81",
+        "name" : "C333226_Verify_cust_param_st",
+        "title" : "Verify custom parameter st",
+        "time" : {
+          "start" : 1588968349311,
+          "stop" : 1588968349535,
+          "duration" : 224
+        },
+        "severity" : "NORMAL",
+        "status" : "BROKEN"
+      }, {
+        "uid" : "b25679713ad4f60a",
+        "name" : "C333229_Verify_cust_param_faud",
+        "title" : "Verify custom parameter faud",
+        "time" : {
+          "start" : 1588968349536,
+          "stop" : 1588968352650,
+          "duration" : 3114
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "54679bb78436ce40",
+        "name" : "C333230_Verify_cust_param_fgeo",
+        "title" : "Verify custom parameter fgeo",
+        "time" : {
+          "start" : 1588968352652,
+          "stop" : 1588968355660,
+          "duration" : 3008
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "4bd0901bc44f507a",
+        "name" : "C333233_Verify_cust_param_filtmpc",
+        "title" : "Verify custom parameter fltmpc",
+        "time" : {
+          "start" : 1588968355660,
+          "stop" : 1588968359944,
+          "duration" : 4284
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "cebf79e192a60dab",
+        "name" : "C333215_Verify_cust_param_ftl",
+        "title" : "Verify custom parameter ftl",
+        "time" : {
+          "start" : 1588968359946,
+          "stop" : 1588968363170,
+          "duration" : 3224
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "290a3c8f1f4750f",
+        "name" : "C658711_Verify_cust_param_lang",
+        "title" : "Verify custom parameter lang",
+        "time" : {
+          "start" : 1588968363171,
+          "stop" : 1588968366309,
+          "duration" : 3138
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "dcbc392937c8a368",
+        "name" : "C658712_Verify_cust_param_plat1",
+        "title" : "Verify custom parameter plat",
+        "time" : {
+          "start" : 1588968366310,
+          "stop" : 1588968369618,
+          "duration" : 3308
+        },
+        "severity" : "NORMAL",
+        "status" : "PASSED"
+      }, {
+        "uid" : "7633448508cd3ecd",
         "name" : "C333227_Verify_cust_param_sg",
         "title" : "Verify custom parameter sg",
         "time" : {
-          "start" : 1586074415129,
-          "stop" : 1586074415130,
-          "duration" : 1
+          "start" : 1588968369619,
+          "stop" : 1588968371248,
+          "duration" : 1629
         },
         "severity" : "NORMAL",
-        "status" : "CANCELED"
+        "status" : "PASSED"
       }, {
-        "uid" : "678af973e67f7e4b",
+        "uid" : "d51b8e926748619d",
         "name" : "C333205_Verify_cust_param_tile",
         "title" : "Verify custom parameter tile",
         "time" : {
-          "start" : 1586074415130,
-          "stop" : 1586074415131,
-          "duration" : 1
+          "start" : 1588968371249,
+          "stop" : 1588968374572,
+          "duration" : 3323
         },
         "severity" : "NORMAL",
-        "status" : "CANCELED"
+        "status" : "PASSED"
       }, {
-        "uid" : "d60d398718e7ef66",
+        "uid" : "c119c09dde61c6ae",
         "name" : "C333239_Verify_cust_param_tmpc",
         "title" : "Verify custom parameter tmpc",
         "time" : {
-          "start" : 1586074415132,
-          "stop" : 1586074415132,
-          "duration" : 0
+          "start" : 1588968374574,
+          "stop" : 1588968378702,
+          "duration" : 4128
         },
         "severity" : "NORMAL",
-        "status" : "CANCELED"
+        "status" : "PASSED"
       }, {
-        "uid" : "6961a5771746058",
+        "uid" : "3f4932333b23edc1",
         "name" : "C333217_Verify_cust_param_tmpr",
         "title" : "Verify custom parameter tmpr",
         "time" : {
-          "start" : 1586074415132,
-          "stop" : 1586074415133,
-          "duration" : 1
+          "start" : 1588968378703,
+          "stop" : 1588968383118,
+          "duration" : 4415
         },
         "severity" : "NORMAL",
-        "status" : "CANCELED"
+        "status" : "PASSED"
       }, {
-        "uid" : "b8e24840a1e2c4ff",
+        "uid" : "cddce2cc2fa4b61e",
         "name" : "C333224_Verify_cust_param_uv",
         "title" : "Verify custom parameter uv",
         "time" : {
-          "start" : 1586074415133,
-          "stop" : 1586074415134,
-          "duration" : 1
+          "start" : 1588968383120,
+          "stop" : 1588968387416,
+          "duration" : 4296
         },
         "severity" : "NORMAL",
-        "status" : "CANCELED"
+        "status" : "PASSED"
       }, {
-        "uid" : "438fdc445888025c",
+        "uid" : "d85e57a0d47bea6f",
         "name" : "C333228_Verify_cust_param_wfxtg",
         "title" : "Verify custom parameter wfxtg",
         "time" : {
-          "start" : 1586074415134,
-          "stop" : 1586074415135,
-          "duration" : 1
+          "start" : 1588968387417,
+          "stop" : 1588968387661,
+          "duration" : 244
         },
         "severity" : "NORMAL",
-        "status" : "CANCELED"
+        "status" : "BROKEN"
       }, {
-        "uid" : "a6945fc11ff7d443",
+        "uid" : "e44b80e071c0dac8",
         "name" : "C333240_Verify_cust_param_zcs",
         "title" : "Verify custom parameter zcs",
         "time" : {
-          "start" : 1586074415135,
-          "stop" : 1586074415136,
-          "duration" : 1
+          "start" : 1588968387662,
+          "stop" : 1588968387910,
+          "duration" : 248
         },
         "severity" : "NORMAL",
-        "status" : "CANCELED"
+        "status" : "BROKEN"
       }, {
-        "uid" : "4b7542ff3f449926",
+        "uid" : "d4e5193500972c6",
+        "name" : "C333241_Verify_cust_param_nzcs",
+        "title" : "Verify custom parameter nzcs",
+        "time" : {
+          "start" : 1588968387911,
+          "stop" : 1588968388159,
+          "duration" : 248
+        },
+        "severity" : "NORMAL",
+        "status" : "BROKEN"
+      }, {
+        "uid" : "e81ba2b5a31f7b34",
         "name" : "C333242_Verify_cust_param_hzcs",
         "title" : "Verify custom parameter hzcs",
         "time" : {
-          "start" : 1586074415136,
-          "stop" : 1586074415136,
-          "duration" : 0
+          "start" : 1588968388160,
+          "stop" : 1588968388407,
+          "duration" : 247
         },
         "severity" : "NORMAL",
-        "status" : "CANCELED"
+        "status" : "BROKEN"
       }, {
-        "uid" : "af5ef90bdf3e9673",
-        "name" : "C333209_Verify_cust_param_cc",
-        "title" : "Verify custom parameter cc",
-        "time" : {
-          "start" : 1586074415137,
-          "stop" : 1586074415137,
-          "duration" : 0
-        },
-        "severity" : "NORMAL",
-        "status" : "CANCELED"
-      }, {
-        "uid" : "810e92c5affce6f1",
-        "name" : "C658713_Verify_cust_param_par",
-        "title" : "Verify custom parameter par",
-        "time" : {
-          "start" : 1586074415137,
-          "stop" : 1586074415138,
-          "duration" : 1
-        },
-        "severity" : "NORMAL",
-        "status" : "CANCELED"
-      }, {
-        "uid" : "5f7cdfbe6f22b317",
-        "name" : "C333210_Verify_cust_param_vw",
-        "title" : "Verify custom parameter vw",
-        "time" : {
-          "start" : 1586074415138,
-          "stop" : 1586074415139,
-          "duration" : 1
-        },
-        "severity" : "NORMAL",
-        "status" : "CANCELED"
-      }, {
-        "uid" : "b816e4a4329d5c95",
-        "name" : "C333213_Verify_cust_param_aid",
-        "title" : "Verify custom parameter aid",
-        "time" : {
-          "start" : 1586074415139,
-          "stop" : 1586074415139,
-          "duration" : 0
-        },
-        "severity" : "NORMAL",
-        "status" : "CANCELED"
-      }, {
-        "uid" : "84b911ba039e8c0",
-        "name" : "C333200_Verify_cust_param_ord",
-        "title" : "Verify custom parameter ord",
-        "time" : {
-          "start" : 1586074415140,
-          "stop" : 1586074415140,
-          "duration" : 0
-        },
-        "severity" : "NORMAL",
-        "status" : "CANCELED"
-      }, {
-        "uid" : "bc9c26e84997c041",
-        "name" : "C333235_Verify_cust_param_a",
-        "title" : "Verify custom parameter a",
-        "time" : {
-          "start" : 1586074415141,
-          "stop" : 1586074415141,
-          "duration" : 0
-        },
-        "severity" : "NORMAL",
-        "status" : "CANCELED"
-      }, {
-        "uid" : "b3ce38fce7761204",
-        "name" : "C658714_Verify_cust_param_ch",
-        "title" : "Verify custom parameter ch",
-        "time" : {
-          "start" : 1586074415141,
-          "stop" : 1586074415142,
-          "duration" : 1
-        },
-        "severity" : "NORMAL",
-        "status" : "CANCELED"
-      }, {
-        "uid" : "1830848d85be2001",
-        "name" : "C658715_Verify_cust_param_fam",
-        "title" : "Verify custom parameter fam",
-        "time" : {
-          "start" : 1586074415142,
-          "stop" : 1586074415142,
-          "duration" : 0
-        },
-        "severity" : "NORMAL",
-        "status" : "CANCELED"
-      }, {
-        "uid" : "d02cb1faffad222d",
-        "name" : "C333236_Verify_cust_param_g",
-        "title" : "Verify custom parameter g",
-        "time" : {
-          "start" : 1586074415143,
-          "stop" : 1586074415143,
-          "duration" : 0
-        },
-        "severity" : "NORMAL",
-        "status" : "CANCELED"
-      }, {
-        "uid" : "fc2a5f6f5f6c5a79",
-        "name" : "C333225_Verify_cust_param_layer",
-        "title" : "Verify custom parameter layer",
-        "time" : {
-          "start" : 1586074415143,
-          "stop" : 1586074415144,
-          "duration" : 1
-        },
-        "severity" : "NORMAL",
-        "status" : "CANCELED"
-      }, {
-        "uid" : "3c63b6800ba47df2",
-        "name" : "C333204_Verify_cust_param_rmid",
-        "title" : "Verify custom parameter rmid",
-        "time" : {
-          "start" : 1586074415144,
-          "stop" : 1586074415145,
-          "duration" : 1
-        },
-        "severity" : "NORMAL",
-        "status" : "CANCELED"
-      }, {
-        "uid" : "69bee9028cbbeabf",
-        "name" : "C658716_Verify_cust_param_tf",
-        "title" : "Verify custom parameter tf",
-        "time" : {
-          "start" : 1586074415145,
-          "stop" : 1586074415145,
-          "duration" : 0
-        },
-        "severity" : "NORMAL",
-        "status" : "CANCELED"
-      }, {
-        "uid" : "d48e382f918646a1",
-        "name" : "C333219_Verify_cust_param_ver",
-        "title" : "Verify custom parameter ver",
-        "time" : {
-          "start" : 1586074415146,
-          "stop" : 1586074415146,
-          "duration" : 0
-        },
-        "severity" : "NORMAL",
-        "status" : "CANCELED"
-      }, {
-        "uid" : "c61ed3c588d53c96",
-        "name" : "C333232_Verify_cust_param_fhic",
-        "title" : "Verify custom parameter fhic",
-        "time" : {
-          "start" : 1586074415146,
-          "stop" : 1586074415147,
-          "duration" : 1
-        },
-        "severity" : "NORMAL",
-        "status" : "CANCELED"
-      }, {
-        "uid" : "c26edf0ed611936d",
-        "name" : "C333238_Verify_cust_param_floc",
-        "title" : "Verify custom parameter floc",
-        "time" : {
-          "start" : 1586074415147,
-          "stop" : 1586074415148,
-          "duration" : 1
-        },
-        "severity" : "NORMAL",
-        "status" : "CANCELED"
-      }, {
-        "uid" : "9ccf24afe96b7e7",
-        "name" : "C344257_Verify_Video_Url_Parameter_cmsid",
-        "title" : "Verify custom parameter cmsid",
-        "time" : {
-          "start" : 1586074415148,
-          "stop" : 1586074415148,
-          "duration" : 0
-        },
-        "severity" : "NORMAL",
-        "status" : "CANCELED"
-      }, {
-        "uid" : "8080106f9a3868af",
-        "name" : "C344258_Verify_Video_Url_Parameter_ttid",
-        "title" : "Verify custom parameter ttid",
-        "time" : {
-          "start" : 1586074415149,
-          "stop" : 1586074415149,
-          "duration" : 0
-        },
-        "severity" : "NORMAL",
-        "status" : "CANCELED"
-      }, {
-        "uid" : "619a810222b6fc96",
-        "name" : "C344260_Verify_Video_Url_Parameter_lnid",
-        "title" : "Verify custom parameter lnid",
-        "time" : {
-          "start" : 1586074415150,
-          "stop" : 1586074415150,
-          "duration" : 0
-        },
-        "severity" : "NORMAL",
-        "status" : "CANCELED"
-      }, {
-        "uid" : "3ffb3783d2cf56c1",
-        "name" : "C344259_Verify_Video_Url_Parameter_vid",
-        "title" : "Verify custom parameter vid",
-        "time" : {
-          "start" : 1586074415151,
-          "stop" : 1586074415151,
-          "duration" : 0
-        },
-        "severity" : "NORMAL",
-        "status" : "CANCELED"
-      }, {
-        "uid" : "8294f37f7da177b7",
-        "name" : "C344261_Verify_Video_Url_Parameter_iu",
-        "title" : "Verify custom parameter iu",
-        "time" : {
-          "start" : 1586074415152,
-          "stop" : 1586074415152,
-          "duration" : 0
-        },
-        "severity" : "NORMAL",
-        "status" : "CANCELED"
-      }, {
-        "uid" : "36c50ef384078a33",
-        "name" : "C628160_Verify_Parameter_DyNght",
-        "title" : "Verify custom parameter dynght",
-        "time" : {
-          "start" : 1586074415152,
-          "stop" : 1586074415153,
-          "duration" : 1
-        },
-        "severity" : "NORMAL",
-        "status" : "CANCELED"
-      }, {
-        "uid" : "86597d5d2de1771b",
-        "name" : "C456970_Verify_Parameter_BN",
-        "title" : "Verify custom parameter bn",
-        "time" : {
-          "start" : 1586074415153,
-          "stop" : 1586074415154,
-          "duration" : 1
-        },
-        "severity" : "NORMAL",
-        "status" : "CANCELED"
-      }, {
-        "uid" : "a47b1f556c16876a",
+        "uid" : "6163e30a19b4a306",
         "name" : "After_Test",
         "title" : "After test",
         "time" : {
-          "start" : 1586074415155,
-          "stop" : 1586074415155,
+          "start" : 1588968388410,
+          "stop" : 1588968388410,
           "duration" : 0
         },
         "severity" : "NORMAL",
-        "status" : "CANCELED"
+        "status" : "FAILED"
       } ]
     } ]
   } ]

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="46" failures="1" name="TestSuite" time="228.732" errors="0" skipped="45">
+<testsuite tests="28" failures="9" name="TestSuite" time="73.49" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib"/>
@@ -15,13 +15,13 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/Users/aswinikumar/Downloads/RegressionTest"/>
+    <property name="user.dir" value="/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Regression"/>
     <property name="java.runtime.version" value="1.8.0_181-b13"/>
     <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
-    <property name="basedir" value="/Users/aswinikumar/Downloads/RegressionTest"/>
+    <property name="basedir" value="/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Regression"/>
     <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/endorsed"/>
     <property name="os.arch" value="x86_64"/>
-    <property name="surefire.real.class.path" value="/var/folders/sq/6ytcx3fj2yd8dmgrjt1_jjm80000gn/T/surefirebooter2011289690161406392.jar:/Users/aswinikumar/.m2/repository/org/aspectj/aspectjweaver/1.8.13/aspectjweaver-1.8.13.jar"/>
+    <property name="surefire.real.class.path" value="/var/folders/sq/6ytcx3fj2yd8dmgrjt1_jjm80000gn/T/surefirebooter1428659246778468255.jar:/Users/aswinikumar/.m2/repository/org/aspectj/aspectjweaver/1.8.13/aspectjweaver-1.8.13.jar"/>
     <property name="java.io.tmpdir" value="/var/folders/sq/6ytcx3fj2yd8dmgrjt1_jjm80000gn/T/"/>
     <property name="line.separator" value="
 "/>
@@ -29,7 +29,7 @@
     <property name="os.name" value="Mac OS X"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
     <property name="java.library.path" value="/Users/aswinikumar/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
-    <property name="surefire.test.class.path" value="/Users/aswinikumar/Downloads/RegressionTest/target/test-classes:/Users/aswinikumar/Downloads/RegressionTest/target/classes:/Users/aswinikumar/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar:/Users/aswinikumar/.m2/repository/org/testng/testng/6.9.4/testng-6.9.4.jar:/Users/aswinikumar/.m2/repository/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar:/Users/aswinikumar/.m2/repository/com/beust/jcommander/1.48/jcommander-1.48.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-java/2.51.0/selenium-java-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/2.51.0/selenium-chrome-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/2.51.0/selenium-edge-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-htmlunit-driver/2.51.0/selenium-htmlunit-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/net/sourceforge/htmlunit/htmlunit/2.18/htmlunit-2.18.jar:/Users/aswinikumar/.m2/repository/xalan/xalan/2.7.2/xalan-2.7.2.jar:/Users/aswinikumar/.m2/repository/xalan/serializer/2.7.2/serializer-2.7.2.jar:/Users/aswinikumar/.m2/repository/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar:/Users/aswinikumar/.m2/repository/org/apache/httpcomponents/httpmime/4.5/httpmime-4.5.jar:/Users/aswinikumar/.m2/repository/net/sourceforge/htmlunit/htmlunit-core-js/2.17/htmlunit-core-js-2.17.jar:/Users/aswinikumar/.m2/repository/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0.jar:/Users/aswinikumar/.m2/repository/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar:/Users/aswinikumar/.m2/repository/net/sourceforge/nekohtml/nekohtml/1.9.22/nekohtml-1.9.22.jar:/Users/aswinikumar/.m2/repository/net/sourceforge/cssparser/cssparser/0.9.16/cssparser-0.9.16.jar:/Users/aswinikumar/.m2/repository/org/w3c/css/sac/1.3/sac-1.3.jar:/Users/aswinikumar/.m2/repository/org/eclipse/jetty/websocket/websocket-client/9.2.12.v20150709/websocket-client-9.2.12.v20150709.jar:/Users/aswinikumar/.m2/repository/org/eclipse/jetty/jetty-util/9.2.12.v20150709/jetty-util-9.2.12.v20150709.jar:/Users/aswinikumar/.m2/repository/org/eclipse/jetty/jetty-io/9.2.12.v20150709/jetty-io-9.2.12.v20150709.jar:/Users/aswinikumar/.m2/repository/org/eclipse/jetty/websocket/websocket-common/9.2.12.v20150709/websocket-common-9.2.12.v20150709.jar:/Users/aswinikumar/.m2/repository/org/eclipse/jetty/websocket/websocket-api/9.2.12.v20150709/websocket-api-9.2.12.v20150709.jar:/Users/aswinikumar/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/2.51.0/selenium-ie-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/net/java/dev/jna/jna/4.1.0/jna-4.1.0.jar:/Users/aswinikumar/.m2/repository/net/java/dev/jna/jna-platform/4.1.0/jna-platform-4.1.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/2.51.0/selenium-safari-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-support/2.51.0/selenium-support-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/webbitserver/webbit/0.4.14/webbit-0.4.14.jar:/Users/aswinikumar/.m2/repository/io/netty/netty/3.5.2.Final/netty-3.5.2.Final.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-leg-rc/2.51.0/selenium-leg-rc-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/2.51.0/selenium-firefox-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/2.51.0/selenium-remote-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/cglib/cglib-nodep/2.1_3/cglib-nodep-2.1_3.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-api/2.51.0/selenium-api-2.51.0.jar:/Users/aswinikumar/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/aswinikumar/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/aswinikumar/.m2/repository/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1.jar:/Users/aswinikumar/.m2/repository/org/apache/poi/poi/3.9/poi-3.9.jar:/Users/aswinikumar/.m2/repository/commons-codec/commons-codec/1.5/commons-codec-1.5.jar:/Users/aswinikumar/.m2/repository/io/appium/java-client/3.2.0/java-client-3.2.0.jar:/Users/aswinikumar/.m2/repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar:/Users/aswinikumar/.m2/repository/org/apache/httpcomponents/httpclient/4.3.3/httpclient-4.3.3.jar:/Users/aswinikumar/.m2/repository/org/apache/httpcomponents/httpcore/4.3.2/httpcore-4.3.2.jar:/Users/aswinikumar/.m2/repository/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar:/Users/aswinikumar/.m2/repository/com/google/guava/guava/17.0/guava-17.0.jar:/Users/aswinikumar/.m2/repository/cglib/cglib/3.1/cglib-3.1.jar:/Users/aswinikumar/.m2/repository/org/ow2/asm/asm/4.2/asm-4.2.jar:/Users/aswinikumar/.m2/repository/commons-validator/commons-validator/1.4.1/commons-validator-1.4.1.jar:/Users/aswinikumar/.m2/repository/commons-beanutils/commons-beanutils/1.8.3/commons-beanutils-1.8.3.jar:/Users/aswinikumar/.m2/repository/commons-digester/commons-digester/1.8.1/commons-digester-1.8.1.jar:/Users/aswinikumar/.m2/repository/ru/yandex/qatools/allure/allure-testng-adaptor/1.5.4/allure-testng-adaptor-1.5.4.jar:/Users/aswinikumar/.m2/repository/ru/yandex/qatools/allure/allure-java-aspects/1.5.4/allure-java-aspects-1.5.4.jar:/Users/aswinikumar/.m2/repository/ru/yandex/qatools/allure/allure-java-adaptor-api/1.5.4/allure-java-adaptor-api-1.5.4.jar:/Users/aswinikumar/.m2/repository/ru/yandex/qatools/allure/allure-java-annotations/1.5.4/allure-java-annotations-1.5.4.jar:/Users/aswinikumar/.m2/repository/ru/yandex/qatools/allure/allure-model/1.5.4/allure-model-1.5.4.jar:/Users/aswinikumar/.m2/repository/org/jvnet/jaxb2_commons/jaxb2-basics-runtime/0.9.3/jaxb2-basics-runtime-0.9.3.jar:/Users/aswinikumar/.m2/repository/ru/qatools/commons/properties/2.0.RC5/properties-2.0.RC5.jar:/Users/aswinikumar/.m2/repository/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar:/Users/aswinikumar/.m2/repository/org/apache/tika/tika-core/1.7/tika-core-1.7.jar:/Users/aswinikumar/.m2/repository/org/aspectj/aspectjrt/1.8.3/aspectjrt-1.8.3.jar:/Users/aswinikumar/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:"/>
+    <property name="surefire.test.class.path" value="/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Regression/target/test-classes:/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Regression/target/classes:/Users/aswinikumar/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar:/Users/aswinikumar/.m2/repository/org/testng/testng/6.9.4/testng-6.9.4.jar:/Users/aswinikumar/.m2/repository/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar:/Users/aswinikumar/.m2/repository/com/beust/jcommander/1.48/jcommander-1.48.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-java/2.51.0/selenium-java-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/2.51.0/selenium-chrome-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/2.51.0/selenium-edge-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-htmlunit-driver/2.51.0/selenium-htmlunit-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/net/sourceforge/htmlunit/htmlunit/2.18/htmlunit-2.18.jar:/Users/aswinikumar/.m2/repository/xalan/xalan/2.7.2/xalan-2.7.2.jar:/Users/aswinikumar/.m2/repository/xalan/serializer/2.7.2/serializer-2.7.2.jar:/Users/aswinikumar/.m2/repository/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar:/Users/aswinikumar/.m2/repository/org/apache/httpcomponents/httpmime/4.5/httpmime-4.5.jar:/Users/aswinikumar/.m2/repository/net/sourceforge/htmlunit/htmlunit-core-js/2.17/htmlunit-core-js-2.17.jar:/Users/aswinikumar/.m2/repository/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0.jar:/Users/aswinikumar/.m2/repository/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar:/Users/aswinikumar/.m2/repository/net/sourceforge/nekohtml/nekohtml/1.9.22/nekohtml-1.9.22.jar:/Users/aswinikumar/.m2/repository/net/sourceforge/cssparser/cssparser/0.9.16/cssparser-0.9.16.jar:/Users/aswinikumar/.m2/repository/org/w3c/css/sac/1.3/sac-1.3.jar:/Users/aswinikumar/.m2/repository/org/eclipse/jetty/websocket/websocket-client/9.2.12.v20150709/websocket-client-9.2.12.v20150709.jar:/Users/aswinikumar/.m2/repository/org/eclipse/jetty/jetty-util/9.2.12.v20150709/jetty-util-9.2.12.v20150709.jar:/Users/aswinikumar/.m2/repository/org/eclipse/jetty/jetty-io/9.2.12.v20150709/jetty-io-9.2.12.v20150709.jar:/Users/aswinikumar/.m2/repository/org/eclipse/jetty/websocket/websocket-common/9.2.12.v20150709/websocket-common-9.2.12.v20150709.jar:/Users/aswinikumar/.m2/repository/org/eclipse/jetty/websocket/websocket-api/9.2.12.v20150709/websocket-api-9.2.12.v20150709.jar:/Users/aswinikumar/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/2.51.0/selenium-ie-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/net/java/dev/jna/jna/4.1.0/jna-4.1.0.jar:/Users/aswinikumar/.m2/repository/net/java/dev/jna/jna-platform/4.1.0/jna-platform-4.1.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/2.51.0/selenium-safari-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-support/2.51.0/selenium-support-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/webbitserver/webbit/0.4.14/webbit-0.4.14.jar:/Users/aswinikumar/.m2/repository/io/netty/netty/3.5.2.Final/netty-3.5.2.Final.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-leg-rc/2.51.0/selenium-leg-rc-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/2.51.0/selenium-firefox-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/2.51.0/selenium-remote-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/cglib/cglib-nodep/2.1_3/cglib-nodep-2.1_3.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-api/2.51.0/selenium-api-2.51.0.jar:/Users/aswinikumar/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/aswinikumar/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/aswinikumar/.m2/repository/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1.jar:/Users/aswinikumar/.m2/repository/org/apache/poi/poi/3.9/poi-3.9.jar:/Users/aswinikumar/.m2/repository/commons-codec/commons-codec/1.5/commons-codec-1.5.jar:/Users/aswinikumar/.m2/repository/io/appium/java-client/3.2.0/java-client-3.2.0.jar:/Users/aswinikumar/.m2/repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar:/Users/aswinikumar/.m2/repository/org/apache/httpcomponents/httpclient/4.3.3/httpclient-4.3.3.jar:/Users/aswinikumar/.m2/repository/org/apache/httpcomponents/httpcore/4.3.2/httpcore-4.3.2.jar:/Users/aswinikumar/.m2/repository/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar:/Users/aswinikumar/.m2/repository/com/google/guava/guava/17.0/guava-17.0.jar:/Users/aswinikumar/.m2/repository/cglib/cglib/3.1/cglib-3.1.jar:/Users/aswinikumar/.m2/repository/org/ow2/asm/asm/4.2/asm-4.2.jar:/Users/aswinikumar/.m2/repository/commons-validator/commons-validator/1.4.1/commons-validator-1.4.1.jar:/Users/aswinikumar/.m2/repository/commons-beanutils/commons-beanutils/1.8.3/commons-beanutils-1.8.3.jar:/Users/aswinikumar/.m2/repository/commons-digester/commons-digester/1.8.1/commons-digester-1.8.1.jar:/Users/aswinikumar/.m2/repository/ru/yandex/qatools/allure/allure-testng-adaptor/1.5.4/allure-testng-adaptor-1.5.4.jar:/Users/aswinikumar/.m2/repository/ru/yandex/qatools/allure/allure-java-aspects/1.5.4/allure-java-aspects-1.5.4.jar:/Users/aswinikumar/.m2/repository/ru/yandex/qatools/allure/allure-java-adaptor-api/1.5.4/allure-java-adaptor-api-1.5.4.jar:/Users/aswinikumar/.m2/repository/ru/yandex/qatools/allure/allure-java-annotations/1.5.4/allure-java-annotations-1.5.4.jar:/Users/aswinikumar/.m2/repository/ru/yandex/qatools/allure/allure-model/1.5.4/allure-model-1.5.4.jar:/Users/aswinikumar/.m2/repository/org/jvnet/jaxb2_commons/jaxb2-basics-runtime/0.9.3/jaxb2-basics-runtime-0.9.3.jar:/Users/aswinikumar/.m2/repository/ru/qatools/commons/properties/2.0.RC5/properties-2.0.RC5.jar:/Users/aswinikumar/.m2/repository/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar:/Users/aswinikumar/.m2/repository/org/apache/tika/tika-core/1.7/tika-core-1.7.jar:/Users/aswinikumar/.m2/repository/org/aspectj/aspectjrt/1.8.3/aspectjrt-1.8.3.jar:/Users/aswinikumar/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -41,11 +41,11 @@
     <property name="java.specification.version" value="1.8"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="user.name" value="aswinikumar"/>
-    <property name="java.class.path" value="/Users/aswinikumar/Downloads/RegressionTest/target/test-classes:/Users/aswinikumar/Downloads/RegressionTest/target/classes:/Users/aswinikumar/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar:/Users/aswinikumar/.m2/repository/org/testng/testng/6.9.4/testng-6.9.4.jar:/Users/aswinikumar/.m2/repository/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar:/Users/aswinikumar/.m2/repository/com/beust/jcommander/1.48/jcommander-1.48.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-java/2.51.0/selenium-java-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/2.51.0/selenium-chrome-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/2.51.0/selenium-edge-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-htmlunit-driver/2.51.0/selenium-htmlunit-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/net/sourceforge/htmlunit/htmlunit/2.18/htmlunit-2.18.jar:/Users/aswinikumar/.m2/repository/xalan/xalan/2.7.2/xalan-2.7.2.jar:/Users/aswinikumar/.m2/repository/xalan/serializer/2.7.2/serializer-2.7.2.jar:/Users/aswinikumar/.m2/repository/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar:/Users/aswinikumar/.m2/repository/org/apache/httpcomponents/httpmime/4.5/httpmime-4.5.jar:/Users/aswinikumar/.m2/repository/net/sourceforge/htmlunit/htmlunit-core-js/2.17/htmlunit-core-js-2.17.jar:/Users/aswinikumar/.m2/repository/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0.jar:/Users/aswinikumar/.m2/repository/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar:/Users/aswinikumar/.m2/repository/net/sourceforge/nekohtml/nekohtml/1.9.22/nekohtml-1.9.22.jar:/Users/aswinikumar/.m2/repository/net/sourceforge/cssparser/cssparser/0.9.16/cssparser-0.9.16.jar:/Users/aswinikumar/.m2/repository/org/w3c/css/sac/1.3/sac-1.3.jar:/Users/aswinikumar/.m2/repository/org/eclipse/jetty/websocket/websocket-client/9.2.12.v20150709/websocket-client-9.2.12.v20150709.jar:/Users/aswinikumar/.m2/repository/org/eclipse/jetty/jetty-util/9.2.12.v20150709/jetty-util-9.2.12.v20150709.jar:/Users/aswinikumar/.m2/repository/org/eclipse/jetty/jetty-io/9.2.12.v20150709/jetty-io-9.2.12.v20150709.jar:/Users/aswinikumar/.m2/repository/org/eclipse/jetty/websocket/websocket-common/9.2.12.v20150709/websocket-common-9.2.12.v20150709.jar:/Users/aswinikumar/.m2/repository/org/eclipse/jetty/websocket/websocket-api/9.2.12.v20150709/websocket-api-9.2.12.v20150709.jar:/Users/aswinikumar/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/2.51.0/selenium-ie-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/net/java/dev/jna/jna/4.1.0/jna-4.1.0.jar:/Users/aswinikumar/.m2/repository/net/java/dev/jna/jna-platform/4.1.0/jna-platform-4.1.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/2.51.0/selenium-safari-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-support/2.51.0/selenium-support-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/webbitserver/webbit/0.4.14/webbit-0.4.14.jar:/Users/aswinikumar/.m2/repository/io/netty/netty/3.5.2.Final/netty-3.5.2.Final.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-leg-rc/2.51.0/selenium-leg-rc-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/2.51.0/selenium-firefox-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/2.51.0/selenium-remote-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/cglib/cglib-nodep/2.1_3/cglib-nodep-2.1_3.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-api/2.51.0/selenium-api-2.51.0.jar:/Users/aswinikumar/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/aswinikumar/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/aswinikumar/.m2/repository/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1.jar:/Users/aswinikumar/.m2/repository/org/apache/poi/poi/3.9/poi-3.9.jar:/Users/aswinikumar/.m2/repository/commons-codec/commons-codec/1.5/commons-codec-1.5.jar:/Users/aswinikumar/.m2/repository/io/appium/java-client/3.2.0/java-client-3.2.0.jar:/Users/aswinikumar/.m2/repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar:/Users/aswinikumar/.m2/repository/org/apache/httpcomponents/httpclient/4.3.3/httpclient-4.3.3.jar:/Users/aswinikumar/.m2/repository/org/apache/httpcomponents/httpcore/4.3.2/httpcore-4.3.2.jar:/Users/aswinikumar/.m2/repository/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar:/Users/aswinikumar/.m2/repository/com/google/guava/guava/17.0/guava-17.0.jar:/Users/aswinikumar/.m2/repository/cglib/cglib/3.1/cglib-3.1.jar:/Users/aswinikumar/.m2/repository/org/ow2/asm/asm/4.2/asm-4.2.jar:/Users/aswinikumar/.m2/repository/commons-validator/commons-validator/1.4.1/commons-validator-1.4.1.jar:/Users/aswinikumar/.m2/repository/commons-beanutils/commons-beanutils/1.8.3/commons-beanutils-1.8.3.jar:/Users/aswinikumar/.m2/repository/commons-digester/commons-digester/1.8.1/commons-digester-1.8.1.jar:/Users/aswinikumar/.m2/repository/ru/yandex/qatools/allure/allure-testng-adaptor/1.5.4/allure-testng-adaptor-1.5.4.jar:/Users/aswinikumar/.m2/repository/ru/yandex/qatools/allure/allure-java-aspects/1.5.4/allure-java-aspects-1.5.4.jar:/Users/aswinikumar/.m2/repository/ru/yandex/qatools/allure/allure-java-adaptor-api/1.5.4/allure-java-adaptor-api-1.5.4.jar:/Users/aswinikumar/.m2/repository/ru/yandex/qatools/allure/allure-java-annotations/1.5.4/allure-java-annotations-1.5.4.jar:/Users/aswinikumar/.m2/repository/ru/yandex/qatools/allure/allure-model/1.5.4/allure-model-1.5.4.jar:/Users/aswinikumar/.m2/repository/org/jvnet/jaxb2_commons/jaxb2-basics-runtime/0.9.3/jaxb2-basics-runtime-0.9.3.jar:/Users/aswinikumar/.m2/repository/ru/qatools/commons/properties/2.0.RC5/properties-2.0.RC5.jar:/Users/aswinikumar/.m2/repository/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar:/Users/aswinikumar/.m2/repository/org/apache/tika/tika-core/1.7/tika-core-1.7.jar:/Users/aswinikumar/.m2/repository/org/aspectj/aspectjrt/1.8.3/aspectjrt-1.8.3.jar:/Users/aswinikumar/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:"/>
+    <property name="java.class.path" value="/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Regression/target/test-classes:/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Regression/target/classes:/Users/aswinikumar/.m2/repository/junit/junit/3.8.1/junit-3.8.1.jar:/Users/aswinikumar/.m2/repository/org/testng/testng/6.9.4/testng-6.9.4.jar:/Users/aswinikumar/.m2/repository/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar:/Users/aswinikumar/.m2/repository/com/beust/jcommander/1.48/jcommander-1.48.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-java/2.51.0/selenium-java-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/2.51.0/selenium-chrome-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/2.51.0/selenium-edge-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-htmlunit-driver/2.51.0/selenium-htmlunit-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/net/sourceforge/htmlunit/htmlunit/2.18/htmlunit-2.18.jar:/Users/aswinikumar/.m2/repository/xalan/xalan/2.7.2/xalan-2.7.2.jar:/Users/aswinikumar/.m2/repository/xalan/serializer/2.7.2/serializer-2.7.2.jar:/Users/aswinikumar/.m2/repository/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar:/Users/aswinikumar/.m2/repository/org/apache/httpcomponents/httpmime/4.5/httpmime-4.5.jar:/Users/aswinikumar/.m2/repository/net/sourceforge/htmlunit/htmlunit-core-js/2.17/htmlunit-core-js-2.17.jar:/Users/aswinikumar/.m2/repository/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0.jar:/Users/aswinikumar/.m2/repository/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar:/Users/aswinikumar/.m2/repository/net/sourceforge/nekohtml/nekohtml/1.9.22/nekohtml-1.9.22.jar:/Users/aswinikumar/.m2/repository/net/sourceforge/cssparser/cssparser/0.9.16/cssparser-0.9.16.jar:/Users/aswinikumar/.m2/repository/org/w3c/css/sac/1.3/sac-1.3.jar:/Users/aswinikumar/.m2/repository/org/eclipse/jetty/websocket/websocket-client/9.2.12.v20150709/websocket-client-9.2.12.v20150709.jar:/Users/aswinikumar/.m2/repository/org/eclipse/jetty/jetty-util/9.2.12.v20150709/jetty-util-9.2.12.v20150709.jar:/Users/aswinikumar/.m2/repository/org/eclipse/jetty/jetty-io/9.2.12.v20150709/jetty-io-9.2.12.v20150709.jar:/Users/aswinikumar/.m2/repository/org/eclipse/jetty/websocket/websocket-common/9.2.12.v20150709/websocket-common-9.2.12.v20150709.jar:/Users/aswinikumar/.m2/repository/org/eclipse/jetty/websocket/websocket-api/9.2.12.v20150709/websocket-api-9.2.12.v20150709.jar:/Users/aswinikumar/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/2.51.0/selenium-ie-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/net/java/dev/jna/jna/4.1.0/jna-4.1.0.jar:/Users/aswinikumar/.m2/repository/net/java/dev/jna/jna-platform/4.1.0/jna-platform-4.1.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/2.51.0/selenium-safari-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-support/2.51.0/selenium-support-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/webbitserver/webbit/0.4.14/webbit-0.4.14.jar:/Users/aswinikumar/.m2/repository/io/netty/netty/3.5.2.Final/netty-3.5.2.Final.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-leg-rc/2.51.0/selenium-leg-rc-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/2.51.0/selenium-firefox-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/2.51.0/selenium-remote-driver-2.51.0.jar:/Users/aswinikumar/.m2/repository/cglib/cglib-nodep/2.1_3/cglib-nodep-2.1_3.jar:/Users/aswinikumar/.m2/repository/org/seleniumhq/selenium/selenium-api/2.51.0/selenium-api-2.51.0.jar:/Users/aswinikumar/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/Users/aswinikumar/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/aswinikumar/.m2/repository/com/googlecode/json-simple/json-simple/1.1/json-simple-1.1.jar:/Users/aswinikumar/.m2/repository/org/apache/poi/poi/3.9/poi-3.9.jar:/Users/aswinikumar/.m2/repository/commons-codec/commons-codec/1.5/commons-codec-1.5.jar:/Users/aswinikumar/.m2/repository/io/appium/java-client/3.2.0/java-client-3.2.0.jar:/Users/aswinikumar/.m2/repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar:/Users/aswinikumar/.m2/repository/org/apache/httpcomponents/httpclient/4.3.3/httpclient-4.3.3.jar:/Users/aswinikumar/.m2/repository/org/apache/httpcomponents/httpcore/4.3.2/httpcore-4.3.2.jar:/Users/aswinikumar/.m2/repository/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar:/Users/aswinikumar/.m2/repository/com/google/guava/guava/17.0/guava-17.0.jar:/Users/aswinikumar/.m2/repository/cglib/cglib/3.1/cglib-3.1.jar:/Users/aswinikumar/.m2/repository/org/ow2/asm/asm/4.2/asm-4.2.jar:/Users/aswinikumar/.m2/repository/commons-validator/commons-validator/1.4.1/commons-validator-1.4.1.jar:/Users/aswinikumar/.m2/repository/commons-beanutils/commons-beanutils/1.8.3/commons-beanutils-1.8.3.jar:/Users/aswinikumar/.m2/repository/commons-digester/commons-digester/1.8.1/commons-digester-1.8.1.jar:/Users/aswinikumar/.m2/repository/ru/yandex/qatools/allure/allure-testng-adaptor/1.5.4/allure-testng-adaptor-1.5.4.jar:/Users/aswinikumar/.m2/repository/ru/yandex/qatools/allure/allure-java-aspects/1.5.4/allure-java-aspects-1.5.4.jar:/Users/aswinikumar/.m2/repository/ru/yandex/qatools/allure/allure-java-adaptor-api/1.5.4/allure-java-adaptor-api-1.5.4.jar:/Users/aswinikumar/.m2/repository/ru/yandex/qatools/allure/allure-java-annotations/1.5.4/allure-java-annotations-1.5.4.jar:/Users/aswinikumar/.m2/repository/ru/yandex/qatools/allure/allure-model/1.5.4/allure-model-1.5.4.jar:/Users/aswinikumar/.m2/repository/org/jvnet/jaxb2_commons/jaxb2-basics-runtime/0.9.3/jaxb2-basics-runtime-0.9.3.jar:/Users/aswinikumar/.m2/repository/ru/qatools/commons/properties/2.0.RC5/properties-2.0.RC5.jar:/Users/aswinikumar/.m2/repository/org/slf4j/slf4j-api/1.7.12/slf4j-api-1.7.12.jar:/Users/aswinikumar/.m2/repository/org/apache/tika/tika-core/1.7/tika-core-1.7.jar:/Users/aswinikumar/.m2/repository/org/aspectj/aspectjrt/1.8.3/aspectjrt-1.8.3.jar:/Users/aswinikumar/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:"/>
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre"/>
-    <property name="sun.java.command" value="/var/folders/sq/6ytcx3fj2yd8dmgrjt1_jjm80000gn/T/surefirebooter2011289690161406392.jar /var/folders/sq/6ytcx3fj2yd8dmgrjt1_jjm80000gn/T/surefire3636074070225984528tmp /var/folders/sq/6ytcx3fj2yd8dmgrjt1_jjm80000gn/T/surefire8085085449778066370tmp"/>
+    <property name="sun.java.command" value="/var/folders/sq/6ytcx3fj2yd8dmgrjt1_jjm80000gn/T/surefirebooter1428659246778468255.jar /var/folders/sq/6ytcx3fj2yd8dmgrjt1_jjm80000gn/T/surefire6185102055386712583tmp /var/folders/sq/6ytcx3fj2yd8dmgrjt1_jjm80000gn/T/surefire7050774800696003487tmp"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -63,218 +63,135 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="Before_Test" time="0">
-    <failure message="Error communicating with the remote browser. It may have died.
-Build info: version: &apos;2.51.0&apos;, revision: &apos;1af067dbcaedd7d2ab9af5151fc471d363d97193&apos;, time: &apos;2016-02-05 11:20:57&apos;
-System info: host: &apos;aswinikumarsmbp&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_181&apos;
-Driver info: driver.version: AndroidDriver
-Capabilities [{appPackage=com.weather.Weather, statBarHeight=98, viewportRect={top=98, left=0, width=1440, height=2614}, deviceName=803KPXV1599674, noRest=true, platform=LINUX, deviceUDID=803KPXV1599674, desired={app=/Users/aswinikumar/Downloads/RegressionTest/APKFile/The_Weather_Channel_DEBUG.apk, appPackage=com.weather.Weather, appium-version=1.4.13, newCommandTimeout=100000, platformVersion=10.0, platformName=Android, deviceName=Samsung S6, noRest=true}, appium-version=1.4.13, newCommandTimeout=100000, platformVersion=10, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceApiLevel=29, deviceManufacturer=Google, app=/Users/aswinikumar/Downloads/RegressionTest/APKFile/The_Weather_Channel_DEBUG.apk, deviceScreenSize=1440x2880, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, pixelRatio=3.5, locationContextEnabled=false, deviceScreenDensity=560, deviceModel=Pixel 2 XL}]
-Session ID: 2960bcf2-8ae6-42d8-a4e7-af4cfc3ed409" type="org.openqa.selenium.remote.UnreachableBrowserException">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
-Build info: version: &apos;2.51.0&apos;, revision: &apos;1af067dbcaedd7d2ab9af5151fc471d363d97193&apos;, time: &apos;2016-02-05 11:20:57&apos;
-System info: host: &apos;aswinikumarsmbp&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_181&apos;
-Driver info: driver.version: AndroidDriver
-Capabilities [{appPackage=com.weather.Weather, statBarHeight=98, viewportRect={top=98, left=0, width=1440, height=2614}, deviceName=803KPXV1599674, noRest=true, platform=LINUX, deviceUDID=803KPXV1599674, desired={app=/Users/aswinikumar/Downloads/RegressionTest/APKFile/The_Weather_Channel_DEBUG.apk, appPackage=com.weather.Weather, appium-version=1.4.13, newCommandTimeout=100000, platformVersion=10.0, platformName=Android, deviceName=Samsung S6, noRest=true}, appium-version=1.4.13, newCommandTimeout=100000, platformVersion=10, webStorageEnabled=false, takesScreenshot=true, javascriptEnabled=true, platformName=Android, deviceApiLevel=29, deviceManufacturer=Google, app=/Users/aswinikumar/Downloads/RegressionTest/APKFile/The_Weather_Channel_DEBUG.apk, deviceScreenSize=1440x2880, networkConnectionEnabled=true, warnings={}, databaseEnabled=false, pixelRatio=3.5, locationContextEnabled=false, deviceScreenDensity=560, deviceModel=Pixel 2 XL}]
-Session ID: 2960bcf2-8ae6-42d8-a4e7-af4cfc3ed409
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:62)
-	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementById(AndroidDriver.java:1)
-	at twc.Regression.HandleWithAppium.AppiumFunctions.clickOnVideoElement(AppiumFunctions.java:591)
-	at twc.Regression.TestCases.regressionTestCases.Before_Test(regressionTestCases.java:486)
-Caused by: org.openqa.selenium.WebDriverException: java.net.SocketException: Connection reset
-Build info: version: &apos;2.51.0&apos;, revision: &apos;1af067dbcaedd7d2ab9af5151fc471d363d97193&apos;, time: &apos;2016-02-05 11:20:57&apos;
-System info: host: &apos;aswinikumarsmbp&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.14.6&apos;, java.version: &apos;1.8.0_181&apos;
-Driver info: driver.version: AndroidDriver
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:64)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
-	... 38 more
-Caused by: java.net.SocketException: Connection reset
-	at java.net.SocketInputStream.read(SocketInputStream.java:210)
-	at java.net.SocketInputStream.read(SocketInputStream.java:141)
-	at org.apache.http.impl.conn.LoggingInputStream.read(LoggingInputStream.java:87)
-	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:136)
-	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:152)
-	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:270)
-	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
-	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
-	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:260)
-	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:161)
-	at sun.reflect.GeneratedMethodAccessor9.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.apache.http.impl.conn.CPoolProxy.invoke(CPoolProxy.java:138)
-	at com.sun.proxy.$Proxy6.receiveResponseHeader(Unknown Source)
-	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:271)
-	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:123)
-	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:254)
-	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
-	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
-	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
-	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:186)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:144)
-	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:90)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:52)
-	... 39 more
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333216_Verify_cust_param_cnd" time="6.149"/>
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333202_Verify_cust_param_zip" time="3.192"/>
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333203_Verify_cust_param_dma" time="0.234">
+    <failure message="String index out of range: -1" type="java.lang.StringIndexOutOfBoundsException">java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(String.java:1927)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.get_dsx_call_value(CustomParamFunctions.java:700)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.validate_dsx_results(CustomParamFunctions.java:285)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:242)
+	at twc.Regression.TestCases.regressionTestCases.C333203_Verify_cust_param_dma(regressionTestCases.java:61)
 </failure>
-    <system-out>Uninstall the APP and Installing
-Uninstall completed
-setting contentmode to normal
-Cleared Session
-Specified folder is not exist and creating the same folder now
-app : /Users/aswinikumar/Downloads/RegressionTest/APKFile/The_Weather_Channel_DEBUG.apk
-Location already set
-Capabilities have been launched  with fullreset 
-Unable To Launch The Appium Capabilities
+    <system-out>================= Custom Parameter Dma Verfication Started =========================
+XML File Name is : tetstststststs.chlsx
+Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly
 </system-out>
-    <system-err>SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
-SLF4J: Defaulting to no-operation (NOP) logger implementation
-SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-log4j:WARN No appenders could be found for logger (org.apache.http.client.protocol.RequestAddCookies).
-log4j:WARN Please initialize the log4j system properly.
-log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
-</system-err>
   </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333203_Verify_cust_param_dma" time="0.017">
-    <skipped/>
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333218_Verify_cust_param_pos" time="2.969"/>
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333208_Verify_cust_param_tmp" time="4.763"/>
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C658712_Verify_cust_param_plat" time="3.058"/>
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333212_Verify_cust_param_ct" time="0.241">
+    <failure message="String index out of range: -1" type="java.lang.StringIndexOutOfBoundsException">java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(String.java:1927)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.get_dsx_call_value(CustomParamFunctions.java:700)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.validate_dsx_results(CustomParamFunctions.java:285)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:268)
+	at twc.Regression.TestCases.regressionTestCases.C333212_Verify_cust_param_ct(regressionTestCases.java:75)
+</failure>
+    <system-out>================= Custom Parameter Ct Verfication Started =========================
+XML File Name is : tetstststststs.chlsx
+Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly
+</system-out>
   </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333202_Verify_cust_param_zip" time="0">
-    <skipped/>
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333211_Verify_cust_param_locale" time="3.567"/>
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333221_Verify_cust_param_wind" time="4.179"/>
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333214_Verify_cust_param_hlzip" time="0.25">
+    <failure message="String index out of range: -1" type="java.lang.StringIndexOutOfBoundsException">java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(String.java:1927)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.get_wfxtg_call_value(CustomParamFunctions.java:743)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.validate_wfxtg_results(CustomParamFunctions.java:386)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:368)
+	at twc.Regression.TestCases.regressionTestCases.C333214_Verify_cust_param_hlzip(regressionTestCases.java:96)
+</failure>
+    <system-out>================= Custom Parameter Hlzip Verfication Started =========================
+XML File Name is : tetstststststs.chlsx
+Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly
+</system-out>
   </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333212_Verify_cust_param_ct" time="0">
-    <skipped/>
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333207_Verify_cust_param_hmid" time="4.177"/>
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333226_Verify_cust_param_st" time="0.223">
+    <failure message="String index out of range: -1" type="java.lang.StringIndexOutOfBoundsException">java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(String.java:1927)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.get_dsx_call_value(CustomParamFunctions.java:700)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.validate_dsx_results(CustomParamFunctions.java:285)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:277)
+	at twc.Regression.TestCases.regressionTestCases.C333226_Verify_cust_param_st(regressionTestCases.java:110)
+</failure>
+    <system-out>================= Custom Parameter St Verfication Started =========================
+XML File Name is : tetstststststs.chlsx
+Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly
+</system-out>
   </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333211_Verify_cust_param_locale" time="0.001">
-    <skipped/>
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333229_Verify_cust_param_faud" time="3.115"/>
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333230_Verify_cust_param_fgeo" time="3.009"/>
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333233_Verify_cust_param_filtmpc" time="4.284"/>
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333215_Verify_cust_param_ftl" time="3.225"/>
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C658711_Verify_cust_param_lang" time="3.138"/>
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C658712_Verify_cust_param_plat1" time="3.309"/>
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333227_Verify_cust_param_sg" time="1.63"/>
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333205_Verify_cust_param_tile" time="3.323"/>
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333239_Verify_cust_param_tmpc" time="4.129"/>
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333217_Verify_cust_param_tmpr" time="4.415"/>
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333224_Verify_cust_param_uv" time="4.297"/>
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333228_Verify_cust_param_wfxtg" time="0.244">
+    <failure message="String index out of range: -1" type="java.lang.StringIndexOutOfBoundsException">java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(String.java:1927)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.get_wfxtg_call_value(CustomParamFunctions.java:743)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.validate_wfxtg_results(CustomParamFunctions.java:386)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:295)
+	at twc.Regression.TestCases.regressionTestCases.C333228_Verify_cust_param_wfxtg(regressionTestCases.java:194)
+</failure>
+    <system-out>================= Custom Parameter Wfxtg Verfication Started =========================
+XML File Name is : tetstststststs.chlsx
+Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly
+</system-out>
   </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333221_Verify_cust_param_wind" time="0.001">
-    <skipped/>
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333240_Verify_cust_param_zcs" time="0.249">
+    <failure message="String index out of range: -1" type="java.lang.StringIndexOutOfBoundsException">java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(String.java:1927)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.get_wfxtg_call_value(CustomParamFunctions.java:743)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.validate_wfxtg_results(CustomParamFunctions.java:386)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:305)
+	at twc.Regression.TestCases.regressionTestCases.C333240_Verify_cust_param_zcs(regressionTestCases.java:201)
+</failure>
+    <system-out>================= Custom Parameter Zcs Verfication Started =========================
+XML File Name is : tetstststststs.chlsx
+Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly
+</system-out>
   </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333214_Verify_cust_param_hlzip" time="0.001">
-    <skipped/>
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333241_Verify_cust_param_nzcs" time="0.247">
+    <failure message="String index out of range: -1" type="java.lang.StringIndexOutOfBoundsException">java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(String.java:1927)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.get_wfxtg_call_value(CustomParamFunctions.java:743)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.validate_wfxtg_results(CustomParamFunctions.java:386)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:323)
+	at twc.Regression.TestCases.regressionTestCases.C333241_Verify_cust_param_nzcs(regressionTestCases.java:208)
+</failure>
+    <system-out>================= Custom Parameter Nzcs Verfication Started =========================
+XML File Name is : tetstststststs.chlsx
+Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly
+</system-out>
   </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333207_Verify_cust_param_hmid" time="0.001">
-    <skipped/>
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333242_Verify_cust_param_hzcs" time="0.247">
+    <failure message="String index out of range: -1" type="java.lang.StringIndexOutOfBoundsException">java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(String.java:1927)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.get_wfxtg_call_value(CustomParamFunctions.java:743)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.validate_wfxtg_results(CustomParamFunctions.java:386)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:314)
+	at twc.Regression.TestCases.regressionTestCases.C333242_Verify_cust_param_hzcs(regressionTestCases.java:215)
+</failure>
+    <system-out>================= Custom Parameter Hzcs Verfication Started =========================
+XML File Name is : tetstststststs.chlsx
+Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly
+</system-out>
   </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333226_Verify_cust_param_st" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333229_Verify_cust_param_faud" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333230_Verify_cust_param_fgeo" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333233_Verify_cust_param_filtmpc" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333215_Verify_cust_param_ftl" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C658711_Verify_cust_param_lang" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C658712_Verify_cust_param_plat" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333227_Verify_cust_param_sg" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333205_Verify_cust_param_tile" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333239_Verify_cust_param_tmpc" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333217_Verify_cust_param_tmpr" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333224_Verify_cust_param_uv" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333228_Verify_cust_param_wfxtg" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333240_Verify_cust_param_zcs" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333242_Verify_cust_param_hzcs" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333209_Verify_cust_param_cc" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C658713_Verify_cust_param_par" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333210_Verify_cust_param_vw" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333213_Verify_cust_param_aid" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333200_Verify_cust_param_ord" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333235_Verify_cust_param_a" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C658714_Verify_cust_param_ch" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C658715_Verify_cust_param_fam" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333236_Verify_cust_param_g" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333225_Verify_cust_param_layer" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333204_Verify_cust_param_rmid" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C658716_Verify_cust_param_tf" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333219_Verify_cust_param_ver" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333232_Verify_cust_param_fhic" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333238_Verify_cust_param_floc" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C344257_Verify_Video_Url_Parameter_cmsid" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C344258_Verify_Video_Url_Parameter_ttid" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C344260_Verify_Video_Url_Parameter_lnid" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C344259_Verify_Video_Url_Parameter_vid" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C344261_Verify_Video_Url_Parameter_iu" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C628160_Verify_Parameter_DyNght" time="0.001">
-    <skipped/>
-  </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C456970_Verify_Parameter_BN" time="0">
-    <skipped/>
-  </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="After_Test" time="0.002">
-    <skipped/>
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="After_Test" time="0.249">
+    <failure message="The following asserts failed:
+expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: The following asserts failed:
+expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:38)
+	at twc.Regression.TestCases.regressionTestCases.After_Test(regressionTestCases.java:542)
+</failure>
   </testcase>
 </testsuite>
