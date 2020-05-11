@@ -752,7 +752,8 @@ public static void killADB() throws IOException, Exception{
 	public static void click_hourly_element() throws Exception
 	{ 
 		try {
-		
+		System.out.println("clicking hourly deatils");
+	     	logStep("clicking hourly details element");
 		Ad.findElementByAccessibilityId("Hourly").click();
 		Thread.sleep(2000);	
 	}
