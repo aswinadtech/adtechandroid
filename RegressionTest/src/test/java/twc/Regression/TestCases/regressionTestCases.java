@@ -538,7 +538,7 @@ public class regressionTestCases extends Drivers{
 		//CharlesFunctions.startSessionBrowserData();
 		// AppiumFunctions.LaunchApp();
 	     AppiumFunctions.LaunchAppWithFullReset();
-	     Thread.sleep(30000);
+	     Thread.sleep(10000);
             AppiumFunctions.SwipeUp_Counter(1);	
 			AppiumFunctions.clickOnVideoElement();
 			AppiumFunctions.clickOnBackArrowElement();
@@ -555,9 +555,9 @@ public class regressionTestCases extends Drivers{
 			//AppiumFunctions.click_news_element();
 			//AppiumFunctions.clickOnBackArrowElement();
 			AppiumFunctions.click_hourly_element();
-			AppiumFunctions.click_home_element();
+			//AppiumFunctions.click_home_element();
 			AppiumFunctions.click_daily_element();
-	        Thread.sleep(10000);
+	        Thread.sleep(5000);
 			CharlesFunctions.ExportSession();	
 	        //Functions.verify_Road_Conditions("DDI");
  		 // Functions.CleanLaunch_launch("General");

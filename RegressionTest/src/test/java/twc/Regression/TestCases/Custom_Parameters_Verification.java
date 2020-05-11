@@ -181,7 +181,7 @@ public class Custom_Parameters_Verification extends Drivers{
 									else if(ParamType.equals("cnd") && custParam.equals("cnd")){
 										logStep("Verifyied Feed:"+feedAd+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
 										Param_val = CustomParamFunctions.validate_results("cnd",feed);
-										if(Param_val.equals("Fail") && feed == allads){
+										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 										//if(Param_val.contains("Fail") && feed==allfeeds ) {
 										//if(!Param_val.equals("Pass") && feed == feedcount){
 										//if(Param_val.contains("Fail")) {
