@@ -750,7 +750,12 @@ public static void killADB() throws IOException, Exception{
 		Thread.sleep(3000);		
 	}
 	public static void click_hourly_element() throws Exception
-	{ try {
+	{ 
+		System.out.println("clicking hourly deatils");
+     	logStep("clicking hourly details element");
+		
+		try {
+		
 		Ad.findElementByAccessibilityId("Hourly").click();
 		Thread.sleep(2000);	
 	}
@@ -772,7 +777,12 @@ public static void killADB() throws IOException, Exception{
 	}
 	
 	public static void click_daily_element() throws Exception
-	{try {
+	{
+
+		System.out.println("clicking daily deatils");
+     	logStep("clicking daily details element");
+		try {
+		
 		Ad.findElementByAccessibilityId("Daily").click();
 		Thread.sleep(3000);
 			
