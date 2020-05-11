@@ -752,12 +752,11 @@ public static void killADB() throws IOException, Exception{
 	public static void click_hourly_element() throws Exception
 	{ 
 		System.out.println("clicking hourly deatils");
-     	logStep("clicking hourly details element");
-		
-		try {
-		
-		Ad.findElementByAccessibilityId("Hourly").click();
-		Thread.sleep(2000);	
+     	logStep("clicking hourly details element");		
+		try {		
+		List<WebElement> home=Ad.findElementsById("com.weather.Weather:id/icon");
+		home.get(0).click();
+		Thread.sleep(2000);
 	}
 	catch(Exception e) {
 		

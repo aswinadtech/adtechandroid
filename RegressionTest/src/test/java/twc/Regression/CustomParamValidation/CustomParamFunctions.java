@@ -169,16 +169,12 @@ public class CustomParamFunctions extends Drivers {
 			pubad_val = pubad.get(parameter);
 		}
 		
-		if(!pubad_val.isEmpty()){
+		if(!pubad_val.contains("nl")){
 			System.out.println("PubAd "+parameter+" Data : "+pubad_val);
 			result="Pass";
 			System.out.println("Result "+result);
 		}
-		if(pubad_val.isEmpty() ){
-			System.out.println("PubAd "+parameter+" Data : "+pubad_val);
-			result="Fail";
-			System.out.println("Result "+result);
-		}
+		
 		
 		if(pubad_val.contains("nl") ){
 			System.out.println("PubAd "+parameter+" Data : "+pubad_val);

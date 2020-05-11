@@ -503,7 +503,7 @@ public class Custom_Parameters_Verification extends Drivers{
 									else if(ParamType.equals("adid") && custParam.equals("adid")){
 										logStep("Verifyied Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
 										Param_val = CustomParamFunctions.validate_not_null_results("adid",feed);
-										if(Param_val.contains("Fail") && feed==allads) {
+									if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 									//	if(!Param_val.equals("Pass") && feed == feedcount){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" should not be empty");
