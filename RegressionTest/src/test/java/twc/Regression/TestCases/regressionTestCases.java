@@ -58,7 +58,7 @@ public class regressionTestCases extends Drivers{
 		System.out.println("================= Custom Parameter Plat Verfication End =========================");
 	}
 	
-	@Test(priority=5)
+	/*@Test(priority=5)
 	@Title("Verify custom parameter zip from UI")
 	public void C333202_Verify_cust_param_Zip() throws Exception{
 		System.out.println("================= Custom Parameter Zip Verfication Verfication  from UI call Started =========================");
@@ -69,7 +69,7 @@ public class regressionTestCases extends Drivers{
 		CharlesFunctions.ExportSession();
 		
 		System.out.println("================= Custom Parameter Zip Verfication  from turbo call UI End =========================");
-	}
+	}*/
 	
 	/*@Test(priority=3)
 	@Title("Verify custom parameter pos")
