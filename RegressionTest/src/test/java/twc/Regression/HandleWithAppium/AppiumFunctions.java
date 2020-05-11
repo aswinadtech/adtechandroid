@@ -751,15 +751,30 @@ public static void killADB() throws IOException, Exception{
 	}
 	public static void click_hourly_element() throws Exception
 	{ 
-		System.out.println("clicking hourly deatils");
-     	logStep("clicking hourly details element");		
-		try {		
+		try {
+		
+		Ad.findElementByAccessibilityId("Hourly").click();
+		Thread.sleep(2000);	
+	}
+	catch(Exception e) {
+		try {
 		List<WebElement> home=Ad.findElementsById("com.weather.Weather:id/icon");
 		home.get(0).click();
 		Thread.sleep(2000);
-	}
-	catch(Exception e) {
-		
+		System.out.println("clicking hourly deatils");
+     	logStep("clicking hourly details element");
+		}
+		catch(Exception e2) {
+			System.out.println("clicking hourly deatils");
+	     	logStep("clicking hourly details element");
+			List<WebElement> home=Ad.findElementsById("com.weather.Weather:id/icon");
+			for(WebElement all:home) {
+				if(all.getText().toString().equalsIgnoreCase("Hourly")) {
+					all.click();
+					Thread.sleep(2000);
+				}
+			}
+		}
 	}
 	}
 	public static void click_home_element() throws Exception
