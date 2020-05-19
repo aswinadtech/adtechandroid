@@ -110,9 +110,9 @@ public class smokeTestCases extends Drivers {
 	@Title("Verifying iu value for Home screen")
 	public void Smoke_Test_CaseVerify_Homescreen_ad_iu()
 			throws Exception {
-		System.out.println("================= verifying iu value for health_and_activitiescard_iu started =========================");
+		System.out.println("================= Verifying iu value home screen hourly ad call test case  started =========================");
 		Functions.finding_Homescreen_iu_value();
-     	System.out.println("================= verifying iu value for health_and_activitiescard__iu End =========================");
+     	System.out.println("================= Verifying iu value home screen hourly ad call test case  started End =========================");
 	}
 	@Test(priority=8,enabled = true)
 	@Title("Verifying wfxtg triggere call url")
@@ -217,7 +217,7 @@ public class smokeTestCases extends Drivers {
 		//	Thread.sleep(8000);
 			//AppiumFunctions.click_hourly_element();
 				     
-               Thread.sleep(300000000);
+               Thread.sleep(3000000);
 			CharlesFunctions.ExportSession();
 			Functions.finding_VideoCard_iu_value();	
      	System.out.println("================= Verifying Video ad call testcase End =========================");
