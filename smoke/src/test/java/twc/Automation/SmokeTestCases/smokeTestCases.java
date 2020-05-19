@@ -954,15 +954,15 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 	 // AppFunctions.putTestMode(); 	  
           //AppFunctions.enable_adstestadunit();   
 	//  Thread.sleep(5000); 
-      // AppiumFunctions.Kill_launch();
+       AppiumFunctions.Kill_launch();
 	// AppFunctions.Kill_Launch_App(); 
 	//  AppFunctions.enable_responsive_mode();
           CharlesFunctions.ClearSessions();
-	   AppFunctions.Kill_Launch_App(); 
+	 //  AppFunctions.Kill_Launch_App(); 
 	//  AppFunctions.enter_nextgenIm_ad_location();
 	  CharlesFunctions.startSessionBrowserData();
 	  CharlesFunctions.ExportSession();
-	 Functions.nextgenim_adunit(); 
+	// Functions.nextgenim_adunit(); 
 	 System.out.println("================= Verify  NextGen IM adunit testcase End =========================" ); 
 	 
 	  }
@@ -1010,8 +1010,9 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 	  CharlesFunctions.startSessionBrowserData();
               Functions.Swipe_Conter(3);
 	  CharlesFunctions.ExportSession();
-	//  Functions.Verify_dailycard_iu(); System.out.
-	 println("================= Verify_daily_card_adcall_iu End =========================");
+	//  Functions.Verify_dailycard_iu(); 
+	
+	 System.out.println("================= Verify_daily_card_adcall_iu End =========================");
 	   }
 	 
 	 @Test(priority=155,enabled = true)	  
