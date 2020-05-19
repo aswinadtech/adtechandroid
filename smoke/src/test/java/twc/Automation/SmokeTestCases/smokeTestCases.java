@@ -241,14 +241,14 @@ public class smokeTestCases extends Drivers {
      	System.out.println("================= verifying iu value for Radar&Maps deatail card  End =========================");
 	}
 	
-	/*@Test(priority=15,enabled = true)
+	@Test(priority=15,enabled = true)
 	@Title("Verifying iu value Today details Page ")
 	public void Smoke_Test_CaseVerify_Today_details_page_iu()
 			throws Exception {
 		System.out.println("================= verifying iu value for Today_details_page_iu started =========================");
 		Functions.finding_Today_detail_page_iu_value();
      	System.out.println("================= verifying iu value for Today_details_page_iu End =========================");
-	}*/
+	}
 
 
 	
