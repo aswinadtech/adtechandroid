@@ -930,7 +930,7 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 		// Functions.click_Mapsdetails_element();		
 		// Functions.clickonBackbutton();
           CharlesFunctions.ExportSession_feed();
-		 Functions.finding_Homescreen_iu_value();
+		// Functions.finding_Homescreen_iu_value();
 		 
 		 System.out.println("================= Verifying  home screen hourly back from detailes page scenario End =========================");
 		}
