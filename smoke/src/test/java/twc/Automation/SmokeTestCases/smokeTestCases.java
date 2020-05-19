@@ -160,54 +160,54 @@ public class smokeTestCases extends Drivers {
 		CharlesFunctions.startSessionBrowserData();
 		 AppiumFunctions.clickOnUnderstandbutton();
 		   // AppFunctions.Kill_Launch_App();
-		    AppiumFunctions.Kill_launch();	
-		    AppiumFunctions.clickOnUnderstandbutton();
-                   AppiumFunctions.Swipeforappdeckapk();
+		   // AppiumFunctions.Kill_launch();	
+		  //  AppiumFunctions.clickOnUnderstandbutton();
+                  // AppiumFunctions.Swipeforappdeckapk();
 		    //AppiumFunctions.Kill_launch();
-		    Thread.sleep(10000);
+		  //  Thread.sleep(10000);
               //  AppiumFunctions.SwipeUp_Counter(1);
-                   Thread.sleep(3000);
-		    AppiumFunctions.clickOnVideoElement();
-              Thread.sleep(5000);
-              Thread.sleep(5000);
-			AppiumFunctions.clickOnBackArrowElement();
-Thread.sleep(5000);
-              Thread.sleep(5000);
+                 //  Thread.sleep(3000);
+		   // AppiumFunctions.clickOnVideoElement();
+            //  Thread.sleep(5000);
+             // Thread.sleep(5000);
+			//AppiumFunctions.clickOnBackArrowElement();
+//Thread.sleep(5000);
+             // Thread.sleep(5000);
                    // AppiumFunctions.SwipeUp_Counter(1);
 		    // AppiumFunctions.click_hurricane_element();	
 			//AppiumFunctions.clickOnBackArrowElement();
-                     AppiumFunctions.SwipeUp_Counter(2);
-		    AppiumFunctions.clickOnRadarMaps();
-			AppiumFunctions.clickOnBackArrowElement();
-			AppiumFunctions.SwipeUp_Counter(2);
+                   //  AppiumFunctions.SwipeUp_Counter(2);
+		   // AppiumFunctions.clickOnRadarMaps();
+			//AppiumFunctions.clickOnBackArrowElement();
+			//AppiumFunctions.SwipeUp_Counter(2);
 			
 			//AppiumFunctions.click_Boat_Beach_element();
 			//AppiumFunctions.clickOnBackArrowElement();
-			AppiumFunctions.click_Running_element();
-			AppiumFunctions.clickOnBackArrowElement();
-			 Thread.sleep(8000);
-			AppiumFunctions.click_cold_Flu_element();
-			AppiumFunctions.clickOnBackArrowElement();
-			 Thread.sleep(8000);
-			AppiumFunctions.click_Allergy_element();
-			AppiumFunctions.clickOnBackArrowElement();
-			 Thread.sleep(8000);
-			AppiumFunctions.click_Running_element();
-			AppiumFunctions.clickOnBackArrowElement();
-			 Thread.sleep(8000);
-			 AppiumFunctions.SwipeUp_Counter(1);
+			//AppiumFunctions.click_Running_element();
+		//	AppiumFunctions.clickOnBackArrowElement();
+			// Thread.sleep(8000);
+			//AppiumFunctions.click_cold_Flu_element();
+			//AppiumFunctions.clickOnBackArrowElement();
+		//	 Thread.sleep(8000);
+		//	AppiumFunctions.click_Allergy_element();
+			//AppiumFunctions.clickOnBackArrowElement();
+			// Thread.sleep(8000);
+			//AppiumFunctions.click_Running_element();
+		//	AppiumFunctions.clickOnBackArrowElement();
+			 //Thread.sleep(8000);
+			// AppiumFunctions.SwipeUp_Counter(1);
 				
 		//	AppiumFunctions.click_Todaydetails_element();
 		//	AppiumFunctions.clickOnBackArrowElement_trending();
                         AppiumFunctions.SwipeUp_Counter(1);
 			
 	     
-               Thread.sleep(300000);
+               Thread.sleep(3000000);
 		
 			//AppiumFunctions.SwipeUp_Counter(1);
 			//AppiumFunctions.click_Airpollution_element();
 			//AppiumFunctions.clickOnBackArrowElement();
-                    Thread.sleep(8000);
+                  //  Thread.sleep(8000);
                       //   AppiumFunctions.SwipeUp_Counter(1);
                       // AppiumFunctions.click_SH_element();
 			//AppiumFunctions.clickOnBackArrowElement();
@@ -215,7 +215,7 @@ Thread.sleep(5000);
 		//	AppiumFunctions.SwipeUp_Counter(1);
 			//AppiumFunctions.click_news_element();
 			//AppiumFunctions.clickOnBackArrowElement();
-			Thread.sleep(8000);
+		//	Thread.sleep(8000);
 			//AppiumFunctions.click_hourly_element();
 			CharlesFunctions.ExportSession();
 			Functions.finding_VideoCard_iu_value();	
@@ -924,11 +924,12 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 		 CharlesFunctions.ClearSessions(); 
 		 AppFunctions.Kill_Launch_App();	 
 		 CharlesFunctions.startSessionBrowserData();
-		 Functions.scrollapp_maps();
-		 Functions.click_Mapsdetails_element();		
-		 Functions.clickonBackbutton();
+		// Functions.scrollapp_maps();
+		 Thread.sleep(15000); 
+		// Functions.click_Mapsdetails_element();		
+		// Functions.clickonBackbutton();
 		 CharlesFunctions.ExportSession_feed();
-		 Functions.finding_Homescreen_iu_value();
+		 //Functions.finding_Homescreen_iu_value();
 		 
 		 System.out.println("================= Verifying  home screen hourly back from detailes page scenario End =========================");
 		}
@@ -1009,7 +1010,7 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 	  CharlesFunctions.startSessionBrowserData();
               Functions.Swipe_Conter(3);
 	  CharlesFunctions.ExportSession();
-	  Functions.Verify_dailycard_iu(); System.out.
+	//  Functions.Verify_dailycard_iu(); System.out.
 	 println("================= Verify_daily_card_adcall_iu End =========================");
 	   }
 	 
