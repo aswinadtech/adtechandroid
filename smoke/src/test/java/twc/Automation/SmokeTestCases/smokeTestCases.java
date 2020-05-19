@@ -158,7 +158,7 @@ public class smokeTestCases extends Drivers {
 		System.out.println("================= Verifying Video ad call testcase  started =========================");
 		CharlesFunctions.clearSessionBrowserData();
 		CharlesFunctions.startSessionBrowserData();
-		 AppiumFunctions.clickOnUnderstandbutton();
+		// AppiumFunctions.clickOnUnderstandbutton();
 		   // AppFunctions.Kill_Launch_App();
 		   // AppiumFunctions.Kill_launch();	
 		  //  AppiumFunctions.clickOnUnderstandbutton();
@@ -199,10 +199,9 @@ public class smokeTestCases extends Drivers {
 				
 		//	AppiumFunctions.click_Todaydetails_element();
 		//	AppiumFunctions.clickOnBackArrowElement_trending();
-                        AppiumFunctions.SwipeUp_Counter(1);
+                      //  AppiumFunctions.SwipeUp_Counter(1);
 			
-	     
-               Thread.sleep(3000000);
+
 		
 			//AppiumFunctions.SwipeUp_Counter(1);
 			//AppiumFunctions.click_Airpollution_element();
@@ -217,6 +216,8 @@ public class smokeTestCases extends Drivers {
 			//AppiumFunctions.clickOnBackArrowElement();
 		//	Thread.sleep(8000);
 			//AppiumFunctions.click_hourly_element();
+				     
+               Thread.sleep(300000000);
 			CharlesFunctions.ExportSession();
 			Functions.finding_VideoCard_iu_value();	
      	System.out.println("================= Verifying Video ad call testcase End =========================");
@@ -928,8 +929,8 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 		 Thread.sleep(15000); 
 		// Functions.click_Mapsdetails_element();		
 		// Functions.clickonBackbutton();
-		 CharlesFunctions.ExportSession_feed();
-		 //Functions.finding_Homescreen_iu_value();
+          CharlesFunctions.ExportSession_feed();
+		 Functions.finding_Homescreen_iu_value();
 		 
 		 System.out.println("================= Verifying  home screen hourly back from detailes page scenario End =========================");
 		}
