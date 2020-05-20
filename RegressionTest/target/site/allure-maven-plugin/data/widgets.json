@@ -3,45 +3,80 @@
   "plugins" : {
     "total" : {
       "statistic" : {
-        "total" : 28,
-        "passed" : 19,
+        "total" : 32,
+        "passed" : 23,
         "pending" : 0,
         "canceled" : 0,
-        "failed" : 1,
-        "broken" : 8
+        "failed" : 9,
+        "broken" : 0
       },
       "time" : {
-        "start" : 1588968317001,
-        "stop" : 1588968388410,
-        "duration" : 71409
+        "start" : 1589984840878,
+        "stop" : 1589984943465,
+        "duration" : 102587
       }
     },
     "defects" : {
-      "totalCount" : 2,
+      "totalCount" : 9,
       "items" : [ {
         "count" : 1,
-        "uid" : "643ffb5beae6df31",
-        "message" : "AssertionError: The following asserts failed:\nexpected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false]",
+        "uid" : "e5bea83cc4638ccc",
+        "message" : "AssertionError: aid Value not matched",
         "status" : "FAILED"
       }, {
-        "count" : 8,
-        "uid" : "9d89a0c9f9dab27a",
-        "message" : "StringIndexOutOfBoundsException: String index out of range: -1",
-        "status" : "BROKEN"
+        "count" : 1,
+        "uid" : "f77086ff7f8632f6",
+        "message" : "AssertionError: st Value not matched",
+        "status" : "FAILED"
+      }, {
+        "count" : 1,
+        "uid" : "e8b3d27cb352b96f",
+        "message" : "AssertionError: adid Value not matched",
+        "status" : "FAILED"
+      }, {
+        "count" : 1,
+        "uid" : "206b244eef402290",
+        "message" : "AssertionError: dynght Value not matched",
+        "status" : "FAILED"
+      }, {
+        "count" : 1,
+        "uid" : "4fc1ceb2f345f8ca",
+        "message" : "AssertionError: tmp Value not matched",
+        "status" : "FAILED"
+      }, {
+        "count" : 1,
+        "uid" : "258a1f17a09daba0",
+        "message" : "AssertionError: tmpr Value not matched",
+        "status" : "FAILED"
+      }, {
+        "count" : 1,
+        "uid" : "857a642bb1a331ca",
+        "message" : "AssertionError: cnd Value not matched",
+        "status" : "FAILED"
+      }, {
+        "count" : 1,
+        "uid" : "c32bae888433b038",
+        "message" : "AssertionError: hmid Value not matched",
+        "status" : "FAILED"
+      }, {
+        "count" : 1,
+        "uid" : "815218320a9958de",
+        "message" : "AssertionError: wind Value not matched",
+        "status" : "FAILED"
       } ]
     },
     "xunit" : {
       "totalCount" : 1,
       "items" : [ {
-        "uid" : "5a28fef0eaef3b76",
+        "uid" : "6389a0dd56d7f14d",
         "title" : "Suite : Test",
         "statistic" : {
-          "total" : 28,
-          "passed" : 19,
+          "total" : 32,
+          "passed" : 23,
           "pending" : 0,
           "canceled" : 0,
-          "failed" : 1,
-          "broken" : 8
+          "failed" : 9,
+          "broken" : 0
         }
       } ]
     },
@@ -50,12 +85,12 @@
       "items" : [ {
         "title" : "Without feature",
         "statistic" : {
-          "total" : 28,
-          "passed" : 19,
+          "total" : 32,
+          "passed" : 23,
           "pending" : 0,
           "canceled" : 0,
-          "failed" : 1,
-          "broken" : 8
+          "failed" : 9,
+          "broken" : 0
         }
       } ]
     },

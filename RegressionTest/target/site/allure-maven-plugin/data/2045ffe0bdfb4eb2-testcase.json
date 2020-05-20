@@ -1,0 +1,809 @@
+{
+  "uid" : "2045ffe0bdfb4eb2",
+  "name" : "C333232_Verify_cust_param_fltmpc",
+  "title" : "Verify custom parameter fltmpc",
+  "time" : {
+    "start" : 1589984908918,
+    "stop" : 1589984913216,
+    "duration" : 4298
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 50
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "6389a0dd56d7f14d",
+    "name" : "Suite : Test",
+    "title" : "Suite : Test"
+  },
+  "steps" : [ {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly Pub Ad Call custParamfltmpc]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly Pub Ad Call custParamfltmpc",
+    "time" : {
+      "start" : 1589984909207,
+      "stop" : 1589984909207,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[reading turbo call value]",
+    "title" : "reading turbo call value",
+    "time" : {
+      "start" : 1589984909280,
+      "stop" : 1589984909280,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Turbo call Value ::96]",
+    "title" : "Turbo call Value ::96",
+    "time" : {
+      "start" : 1589984909379,
+      "stop" : 1589984909379,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[double value is::36.0]",
+    "title" : "double value is::36.0",
+    "time" : {
+      "start" : 1589984909380,
+      "stop" : 1589984909380,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1589984909380,
+      "stop" : 1589984909380,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fmarquee Pub Ad Call custParamfltmpc]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fmarquee Pub Ad Call custParamfltmpc",
+    "time" : {
+      "start" : 1589984909467,
+      "stop" : 1589984909467,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[reading turbo call value]",
+    "title" : "reading turbo call value",
+    "time" : {
+      "start" : 1589984909531,
+      "stop" : 1589984909531,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Turbo call Value ::96]",
+    "title" : "Turbo call Value ::96",
+    "time" : {
+      "start" : 1589984909631,
+      "stop" : 1589984909631,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[double value is::36.0]",
+    "title" : "double value is::36.0",
+    "time" : {
+      "start" : 1589984909631,
+      "stop" : 1589984909631,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1589984909631,
+      "stop" : 1589984909631,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fradar Pub Ad Call custParamfltmpc]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fradar Pub Ad Call custParamfltmpc",
+    "time" : {
+      "start" : 1589984910054,
+      "stop" : 1589984910054,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[reading turbo call value]",
+    "title" : "reading turbo call value",
+    "time" : {
+      "start" : 1589984910466,
+      "stop" : 1589984910466,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Turbo call Value ::96]",
+    "title" : "Turbo call Value ::96",
+    "time" : {
+      "start" : 1589984910567,
+      "stop" : 1589984910567,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[double value is::36.0]",
+    "title" : "double value is::36.0",
+    "time" : {
+      "start" : 1589984910568,
+      "stop" : 1589984910568,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1589984910568,
+      "stop" : 1589984910568,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Flifestyle Pub Ad Call custParamfltmpc]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Flifestyle Pub Ad Call custParamfltmpc",
+    "time" : {
+      "start" : 1589984910661,
+      "stop" : 1589984910661,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[reading turbo call value]",
+    "title" : "reading turbo call value",
+    "time" : {
+      "start" : 1589984910748,
+      "stop" : 1589984910748,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Turbo call Value ::96]",
+    "title" : "Turbo call Value ::96",
+    "time" : {
+      "start" : 1589984910857,
+      "stop" : 1589984910857,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[double value is::36.0]",
+    "title" : "double value is::36.0",
+    "time" : {
+      "start" : 1589984910857,
+      "stop" : 1589984910857,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1589984910857,
+      "stop" : 1589984910857,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fseason Pub Ad Call custParamfltmpc]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fseason Pub Ad Call custParamfltmpc",
+    "time" : {
+      "start" : 1589984910946,
+      "stop" : 1589984910946,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[reading turbo call value]",
+    "title" : "reading turbo call value",
+    "time" : {
+      "start" : 1589984911007,
+      "stop" : 1589984911007,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Turbo call Value ::96]",
+    "title" : "Turbo call Value ::96",
+    "time" : {
+      "start" : 1589984911112,
+      "stop" : 1589984911112,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[double value is::36.0]",
+    "title" : "double value is::36.0",
+    "time" : {
+      "start" : 1589984911112,
+      "stop" : 1589984911112,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1589984911112,
+      "stop" : 1589984911112,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Faq Pub Ad Call custParamfltmpc]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Faq Pub Ad Call custParamfltmpc",
+    "time" : {
+      "start" : 1589984911234,
+      "stop" : 1589984911234,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[reading turbo call value]",
+    "title" : "reading turbo call value",
+    "time" : {
+      "start" : 1589984911326,
+      "stop" : 1589984911326,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Turbo call Value ::96]",
+    "title" : "Turbo call Value ::96",
+    "time" : {
+      "start" : 1589984911425,
+      "stop" : 1589984911425,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[double value is::36.0]",
+    "title" : "double value is::36.0",
+    "time" : {
+      "start" : 1589984911425,
+      "stop" : 1589984911425,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1589984911425,
+      "stop" : 1589984911425,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps Pub Ad Call custParamfltmpc]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps Pub Ad Call custParamfltmpc",
+    "time" : {
+      "start" : 1589984911856,
+      "stop" : 1589984911856,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[reading turbo call value]",
+    "title" : "reading turbo call value",
+    "time" : {
+      "start" : 1589984912262,
+      "stop" : 1589984912262,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Turbo call Value ::96]",
+    "title" : "Turbo call Value ::96",
+    "time" : {
+      "start" : 1589984912375,
+      "stop" : 1589984912375,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[double value is::36.0]",
+    "title" : "double value is::36.0",
+    "time" : {
+      "start" : 1589984912376,
+      "stop" : 1589984912376,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1589984912376,
+      "stop" : 1589984912376,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Ftoday Pub Ad Call custParamfltmpc]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Ftoday Pub Ad Call custParamfltmpc",
+    "time" : {
+      "start" : 1589984912480,
+      "stop" : 1589984912480,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[reading turbo call value]",
+    "title" : "reading turbo call value",
+    "time" : {
+      "start" : 1589984912562,
+      "stop" : 1589984912562,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Turbo call Value ::96]",
+    "title" : "Turbo call Value ::96",
+    "time" : {
+      "start" : 1589984912677,
+      "stop" : 1589984912677,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[double value is::36.0]",
+    "title" : "double value is::36.0",
+    "time" : {
+      "start" : 1589984912677,
+      "stop" : 1589984912677,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1589984912678,
+      "stop" : 1589984912678,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly Pub Ad Call custParamfltmpc]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly Pub Ad Call custParamfltmpc",
+    "time" : {
+      "start" : 1589984912769,
+      "stop" : 1589984912769,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[reading turbo call value]",
+    "title" : "reading turbo call value",
+    "time" : {
+      "start" : 1589984912837,
+      "stop" : 1589984912837,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Turbo call Value ::96]",
+    "title" : "Turbo call Value ::96",
+    "time" : {
+      "start" : 1589984912949,
+      "stop" : 1589984912949,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[double value is::36.0]",
+    "title" : "double value is::36.0",
+    "time" : {
+      "start" : 1589984912949,
+      "stop" : 1589984912949,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1589984912949,
+      "stop" : 1589984912949,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day Pub Ad Call custParamfltmpc]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day Pub Ad Call custParamfltmpc",
+    "time" : {
+      "start" : 1589984913033,
+      "stop" : 1589984913033,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[reading turbo call value]",
+    "title" : "reading turbo call value",
+    "time" : {
+      "start" : 1589984913095,
+      "stop" : 1589984913095,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Turbo call Value ::96]",
+    "title" : "Turbo call Value ::96",
+    "time" : {
+      "start" : 1589984913212,
+      "stop" : 1589984913212,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[double value is::36.0]",
+    "title" : "double value is::36.0",
+    "time" : {
+      "start" : 1589984913212,
+      "stop" : 1589984913212,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1589984913213,
+      "stop" : 1589984913213,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "testSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "testGroup",
+    "value" : "Test"
+  }, {
+    "name" : "thread",
+    "value" : "8734@Aswinikumars-MacBook-Pro.local.main(1)"
+  }, {
+    "name" : "testClass",
+    "value" : "twc.Regression.TestCases.regressionTestCases"
+  }, {
+    "name" : "suite-name",
+    "value" : "Suite : Test"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "testMethod",
+    "value" : "C333232_Verify_cust_param_fltmpc"
+  }, {
+    "name" : "host",
+    "value" : "Aswinikumars-MacBook-Pro.local"
+  }, {
+    "name" : "suite-title",
+    "value" : "Suite : Test"
+  } ],
+  "parameters" : [ ]
+}

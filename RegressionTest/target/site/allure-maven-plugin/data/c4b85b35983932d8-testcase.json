@@ -1,0 +1,959 @@
+{
+  "uid" : "c4b85b35983932d8",
+  "name" : "C333224_Verify_cust_param_uv",
+  "title" : "Verify custom parameter uv",
+  "time" : {
+    "start" : 1589984904832,
+    "stop" : 1589984908916,
+    "duration" : 4084
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 60
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "6389a0dd56d7f14d",
+    "name" : "Suite : Test",
+    "title" : "Suite : Test"
+  },
+  "steps" : [ {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly Pub Ad Call custParamuv]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly Pub Ad Call custParamuv",
+    "time" : {
+      "start" : 1589984905112,
+      "stop" : 1589984905112,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[reading turbo call value]",
+    "title" : "reading turbo call value",
+    "time" : {
+      "start" : 1589984905203,
+      "stop" : 1589984905203,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Turbo Value ::0]",
+    "title" : "Turbo Value ::0",
+    "time" : {
+      "start" : 1589984905305,
+      "stop" : 1589984905305,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd Value ::nl]",
+    "title" : "PubAd Value ::nl",
+    "time" : {
+      "start" : 1589984905305,
+      "stop" : 1589984905305,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Values are matched]",
+    "title" : "Values are matched",
+    "time" : {
+      "start" : 1589984905305,
+      "stop" : 1589984905305,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1589984905308,
+      "stop" : 1589984905308,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fmarquee Pub Ad Call custParamuv]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fmarquee Pub Ad Call custParamuv",
+    "time" : {
+      "start" : 1589984905386,
+      "stop" : 1589984905386,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[reading turbo call value]",
+    "title" : "reading turbo call value",
+    "time" : {
+      "start" : 1589984905461,
+      "stop" : 1589984905461,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Turbo Value ::0]",
+    "title" : "Turbo Value ::0",
+    "time" : {
+      "start" : 1589984905555,
+      "stop" : 1589984905555,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd Value ::nl]",
+    "title" : "PubAd Value ::nl",
+    "time" : {
+      "start" : 1589984905555,
+      "stop" : 1589984905555,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Values are matched]",
+    "title" : "Values are matched",
+    "time" : {
+      "start" : 1589984905556,
+      "stop" : 1589984905556,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1589984905558,
+      "stop" : 1589984905558,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fradar Pub Ad Call custParamuv]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fradar Pub Ad Call custParamuv",
+    "time" : {
+      "start" : 1589984905944,
+      "stop" : 1589984905944,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[reading turbo call value]",
+    "title" : "reading turbo call value",
+    "time" : {
+      "start" : 1589984906343,
+      "stop" : 1589984906343,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Turbo Value ::0]",
+    "title" : "Turbo Value ::0",
+    "time" : {
+      "start" : 1589984906443,
+      "stop" : 1589984906443,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd Value ::nl]",
+    "title" : "PubAd Value ::nl",
+    "time" : {
+      "start" : 1589984906443,
+      "stop" : 1589984906443,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Values are matched]",
+    "title" : "Values are matched",
+    "time" : {
+      "start" : 1589984906443,
+      "stop" : 1589984906443,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1589984906446,
+      "stop" : 1589984906446,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Flifestyle Pub Ad Call custParamuv]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Flifestyle Pub Ad Call custParamuv",
+    "time" : {
+      "start" : 1589984906539,
+      "stop" : 1589984906539,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[reading turbo call value]",
+    "title" : "reading turbo call value",
+    "time" : {
+      "start" : 1589984906615,
+      "stop" : 1589984906615,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Turbo Value ::0]",
+    "title" : "Turbo Value ::0",
+    "time" : {
+      "start" : 1589984906710,
+      "stop" : 1589984906710,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd Value ::nl]",
+    "title" : "PubAd Value ::nl",
+    "time" : {
+      "start" : 1589984906710,
+      "stop" : 1589984906710,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Values are matched]",
+    "title" : "Values are matched",
+    "time" : {
+      "start" : 1589984906710,
+      "stop" : 1589984906710,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1589984906713,
+      "stop" : 1589984906713,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fseason Pub Ad Call custParamuv]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fseason Pub Ad Call custParamuv",
+    "time" : {
+      "start" : 1589984906800,
+      "stop" : 1589984906800,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[reading turbo call value]",
+    "title" : "reading turbo call value",
+    "time" : {
+      "start" : 1589984906861,
+      "stop" : 1589984906861,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Turbo Value ::0]",
+    "title" : "Turbo Value ::0",
+    "time" : {
+      "start" : 1589984906957,
+      "stop" : 1589984906957,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd Value ::nl]",
+    "title" : "PubAd Value ::nl",
+    "time" : {
+      "start" : 1589984906957,
+      "stop" : 1589984906957,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Values are matched]",
+    "title" : "Values are matched",
+    "time" : {
+      "start" : 1589984906957,
+      "stop" : 1589984906957,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1589984906960,
+      "stop" : 1589984906960,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Faq Pub Ad Call custParamuv]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Faq Pub Ad Call custParamuv",
+    "time" : {
+      "start" : 1589984907060,
+      "stop" : 1589984907060,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[reading turbo call value]",
+    "title" : "reading turbo call value",
+    "time" : {
+      "start" : 1589984907146,
+      "stop" : 1589984907146,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Turbo Value ::0]",
+    "title" : "Turbo Value ::0",
+    "time" : {
+      "start" : 1589984907249,
+      "stop" : 1589984907249,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd Value ::nl]",
+    "title" : "PubAd Value ::nl",
+    "time" : {
+      "start" : 1589984907249,
+      "stop" : 1589984907249,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Values are matched]",
+    "title" : "Values are matched",
+    "time" : {
+      "start" : 1589984907249,
+      "stop" : 1589984907249,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1589984907252,
+      "stop" : 1589984907252,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps Pub Ad Call custParamuv]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps Pub Ad Call custParamuv",
+    "time" : {
+      "start" : 1589984907636,
+      "stop" : 1589984907636,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[reading turbo call value]",
+    "title" : "reading turbo call value",
+    "time" : {
+      "start" : 1589984907992,
+      "stop" : 1589984907992,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Turbo Value ::0]",
+    "title" : "Turbo Value ::0",
+    "time" : {
+      "start" : 1589984908097,
+      "stop" : 1589984908097,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd Value ::nl]",
+    "title" : "PubAd Value ::nl",
+    "time" : {
+      "start" : 1589984908097,
+      "stop" : 1589984908097,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Values are matched]",
+    "title" : "Values are matched",
+    "time" : {
+      "start" : 1589984908097,
+      "stop" : 1589984908097,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1589984908101,
+      "stop" : 1589984908101,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Ftoday Pub Ad Call custParamuv]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Ftoday Pub Ad Call custParamuv",
+    "time" : {
+      "start" : 1589984908221,
+      "stop" : 1589984908221,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[reading turbo call value]",
+    "title" : "reading turbo call value",
+    "time" : {
+      "start" : 1589984908329,
+      "stop" : 1589984908329,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Turbo Value ::0]",
+    "title" : "Turbo Value ::0",
+    "time" : {
+      "start" : 1589984908433,
+      "stop" : 1589984908433,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd Value ::nl]",
+    "title" : "PubAd Value ::nl",
+    "time" : {
+      "start" : 1589984908433,
+      "stop" : 1589984908433,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Values are matched]",
+    "title" : "Values are matched",
+    "time" : {
+      "start" : 1589984908433,
+      "stop" : 1589984908433,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1589984908436,
+      "stop" : 1589984908436,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly Pub Ad Call custParamuv]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly Pub Ad Call custParamuv",
+    "time" : {
+      "start" : 1589984908517,
+      "stop" : 1589984908517,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[reading turbo call value]",
+    "title" : "reading turbo call value",
+    "time" : {
+      "start" : 1589984908580,
+      "stop" : 1589984908580,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Turbo Value ::0]",
+    "title" : "Turbo Value ::0",
+    "time" : {
+      "start" : 1589984908675,
+      "stop" : 1589984908675,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd Value ::nl]",
+    "title" : "PubAd Value ::nl",
+    "time" : {
+      "start" : 1589984908675,
+      "stop" : 1589984908675,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Values are matched]",
+    "title" : "Values are matched",
+    "time" : {
+      "start" : 1589984908675,
+      "stop" : 1589984908675,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1589984908678,
+      "stop" : 1589984908678,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day Pub Ad Call custParamuv]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day Pub Ad Call custParamuv",
+    "time" : {
+      "start" : 1589984908754,
+      "stop" : 1589984908754,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[reading turbo call value]",
+    "title" : "reading turbo call value",
+    "time" : {
+      "start" : 1589984908806,
+      "stop" : 1589984908806,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Turbo Value ::0]",
+    "title" : "Turbo Value ::0",
+    "time" : {
+      "start" : 1589984908910,
+      "stop" : 1589984908910,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd Value ::nl]",
+    "title" : "PubAd Value ::nl",
+    "time" : {
+      "start" : 1589984908910,
+      "stop" : 1589984908910,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Values are matched]",
+    "title" : "Values are matched",
+    "time" : {
+      "start" : 1589984908910,
+      "stop" : 1589984908910,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1589984908913,
+      "stop" : 1589984908913,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "testSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "testGroup",
+    "value" : "Test"
+  }, {
+    "name" : "thread",
+    "value" : "8734@Aswinikumars-MacBook-Pro.local.main(1)"
+  }, {
+    "name" : "testClass",
+    "value" : "twc.Regression.TestCases.regressionTestCases"
+  }, {
+    "name" : "suite-name",
+    "value" : "Suite : Test"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "host",
+    "value" : "Aswinikumars-MacBook-Pro.local"
+  }, {
+    "name" : "testMethod",
+    "value" : "C333224_Verify_cust_param_uv"
+  }, {
+    "name" : "suite-title",
+    "value" : "Suite : Test"
+  } ],
+  "parameters" : [ ]
+}

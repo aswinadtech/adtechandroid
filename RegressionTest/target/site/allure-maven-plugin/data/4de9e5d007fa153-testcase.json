@@ -1,0 +1,959 @@
+{
+  "uid" : "4de9e5d007fa153",
+  "name" : "C333209_Verify_cust_param_cc",
+  "title" : "Verify custom parameter cc",
+  "time" : {
+    "start" : 1589984925035,
+    "stop" : 1589984928422,
+    "duration" : 3387
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 60
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "6389a0dd56d7f14d",
+    "name" : "Suite : Test",
+    "title" : "Suite : Test"
+  },
+  "steps" : [ {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly Pub Ad Call custParamcc]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly Pub Ad Call custParamcc",
+    "time" : {
+      "start" : 1589984925318,
+      "stop" : 1589984925318,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[reading turbo call value]",
+    "title" : "reading turbo call value",
+    "time" : {
+      "start" : 1589984925378,
+      "stop" : 1589984925378,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Turbo Call cc Data : IN]",
+    "title" : "Turbo Call cc Data : IN",
+    "time" : {
+      "start" : 1589984925421,
+      "stop" : 1589984925421,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd cc Data : IN]",
+    "title" : "PubAd cc Data : IN",
+    "time" : {
+      "start" : 1589984925421,
+      "stop" : 1589984925421,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[cc result  matched with ad request --IN Api response -- IN]",
+    "title" : "cc result  matched with ad request --IN Api response -- IN",
+    "time" : {
+      "start" : 1589984925421,
+      "stop" : 1589984925421,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1589984925421,
+      "stop" : 1589984925421,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fmarquee Pub Ad Call custParamcc]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fmarquee Pub Ad Call custParamcc",
+    "time" : {
+      "start" : 1589984925503,
+      "stop" : 1589984925503,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[reading turbo call value]",
+    "title" : "reading turbo call value",
+    "time" : {
+      "start" : 1589984925575,
+      "stop" : 1589984925575,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Turbo Call cc Data : IN]",
+    "title" : "Turbo Call cc Data : IN",
+    "time" : {
+      "start" : 1589984925611,
+      "stop" : 1589984925611,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd cc Data : IN]",
+    "title" : "PubAd cc Data : IN",
+    "time" : {
+      "start" : 1589984925611,
+      "stop" : 1589984925611,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[cc result  matched with ad request --IN Api response -- IN]",
+    "title" : "cc result  matched with ad request --IN Api response -- IN",
+    "time" : {
+      "start" : 1589984925611,
+      "stop" : 1589984925611,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1589984925611,
+      "stop" : 1589984925611,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fradar Pub Ad Call custParamcc]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fradar Pub Ad Call custParamcc",
+    "time" : {
+      "start" : 1589984926015,
+      "stop" : 1589984926015,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[reading turbo call value]",
+    "title" : "reading turbo call value",
+    "time" : {
+      "start" : 1589984926376,
+      "stop" : 1589984926376,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Turbo Call cc Data : IN]",
+    "title" : "Turbo Call cc Data : IN",
+    "time" : {
+      "start" : 1589984926420,
+      "stop" : 1589984926420,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd cc Data : IN]",
+    "title" : "PubAd cc Data : IN",
+    "time" : {
+      "start" : 1589984926420,
+      "stop" : 1589984926420,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[cc result  matched with ad request --IN Api response -- IN]",
+    "title" : "cc result  matched with ad request --IN Api response -- IN",
+    "time" : {
+      "start" : 1589984926420,
+      "stop" : 1589984926420,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1589984926420,
+      "stop" : 1589984926420,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Flifestyle Pub Ad Call custParamcc]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Flifestyle Pub Ad Call custParamcc",
+    "time" : {
+      "start" : 1589984926510,
+      "stop" : 1589984926510,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[reading turbo call value]",
+    "title" : "reading turbo call value",
+    "time" : {
+      "start" : 1589984926577,
+      "stop" : 1589984926577,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Turbo Call cc Data : IN]",
+    "title" : "Turbo Call cc Data : IN",
+    "time" : {
+      "start" : 1589984926619,
+      "stop" : 1589984926619,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd cc Data : IN]",
+    "title" : "PubAd cc Data : IN",
+    "time" : {
+      "start" : 1589984926619,
+      "stop" : 1589984926619,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[cc result  matched with ad request --IN Api response -- IN]",
+    "title" : "cc result  matched with ad request --IN Api response -- IN",
+    "time" : {
+      "start" : 1589984926619,
+      "stop" : 1589984926619,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1589984926619,
+      "stop" : 1589984926619,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fseason Pub Ad Call custParamcc]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fseason Pub Ad Call custParamcc",
+    "time" : {
+      "start" : 1589984926712,
+      "stop" : 1589984926712,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[reading turbo call value]",
+    "title" : "reading turbo call value",
+    "time" : {
+      "start" : 1589984926777,
+      "stop" : 1589984926777,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Turbo Call cc Data : IN]",
+    "title" : "Turbo Call cc Data : IN",
+    "time" : {
+      "start" : 1589984926814,
+      "stop" : 1589984926814,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd cc Data : IN]",
+    "title" : "PubAd cc Data : IN",
+    "time" : {
+      "start" : 1589984926814,
+      "stop" : 1589984926814,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[cc result  matched with ad request --IN Api response -- IN]",
+    "title" : "cc result  matched with ad request --IN Api response -- IN",
+    "time" : {
+      "start" : 1589984926814,
+      "stop" : 1589984926814,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1589984926814,
+      "stop" : 1589984926814,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Faq Pub Ad Call custParamcc]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Faq Pub Ad Call custParamcc",
+    "time" : {
+      "start" : 1589984926918,
+      "stop" : 1589984926918,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[reading turbo call value]",
+    "title" : "reading turbo call value",
+    "time" : {
+      "start" : 1589984927001,
+      "stop" : 1589984927001,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Turbo Call cc Data : IN]",
+    "title" : "Turbo Call cc Data : IN",
+    "time" : {
+      "start" : 1589984927044,
+      "stop" : 1589984927044,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd cc Data : IN]",
+    "title" : "PubAd cc Data : IN",
+    "time" : {
+      "start" : 1589984927044,
+      "stop" : 1589984927044,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[cc result  matched with ad request --IN Api response -- IN]",
+    "title" : "cc result  matched with ad request --IN Api response -- IN",
+    "time" : {
+      "start" : 1589984927044,
+      "stop" : 1589984927044,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1589984927044,
+      "stop" : 1589984927044,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps Pub Ad Call custParamcc]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps Pub Ad Call custParamcc",
+    "time" : {
+      "start" : 1589984927433,
+      "stop" : 1589984927433,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[reading turbo call value]",
+    "title" : "reading turbo call value",
+    "time" : {
+      "start" : 1589984927793,
+      "stop" : 1589984927793,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Turbo Call cc Data : IN]",
+    "title" : "Turbo Call cc Data : IN",
+    "time" : {
+      "start" : 1589984927836,
+      "stop" : 1589984927836,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd cc Data : IN]",
+    "title" : "PubAd cc Data : IN",
+    "time" : {
+      "start" : 1589984927836,
+      "stop" : 1589984927836,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[cc result  matched with ad request --IN Api response -- IN]",
+    "title" : "cc result  matched with ad request --IN Api response -- IN",
+    "time" : {
+      "start" : 1589984927836,
+      "stop" : 1589984927836,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1589984927836,
+      "stop" : 1589984927836,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Ftoday Pub Ad Call custParamcc]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Ftoday Pub Ad Call custParamcc",
+    "time" : {
+      "start" : 1589984927947,
+      "stop" : 1589984927947,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[reading turbo call value]",
+    "title" : "reading turbo call value",
+    "time" : {
+      "start" : 1589984928032,
+      "stop" : 1589984928032,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Turbo Call cc Data : IN]",
+    "title" : "Turbo Call cc Data : IN",
+    "time" : {
+      "start" : 1589984928069,
+      "stop" : 1589984928069,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd cc Data : IN]",
+    "title" : "PubAd cc Data : IN",
+    "time" : {
+      "start" : 1589984928069,
+      "stop" : 1589984928069,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[cc result  matched with ad request --IN Api response -- IN]",
+    "title" : "cc result  matched with ad request --IN Api response -- IN",
+    "time" : {
+      "start" : 1589984928069,
+      "stop" : 1589984928069,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1589984928069,
+      "stop" : 1589984928069,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly Pub Ad Call custParamcc]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly Pub Ad Call custParamcc",
+    "time" : {
+      "start" : 1589984928150,
+      "stop" : 1589984928150,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[reading turbo call value]",
+    "title" : "reading turbo call value",
+    "time" : {
+      "start" : 1589984928211,
+      "stop" : 1589984928211,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Turbo Call cc Data : IN]",
+    "title" : "Turbo Call cc Data : IN",
+    "time" : {
+      "start" : 1589984928252,
+      "stop" : 1589984928252,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd cc Data : IN]",
+    "title" : "PubAd cc Data : IN",
+    "time" : {
+      "start" : 1589984928252,
+      "stop" : 1589984928252,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[cc result  matched with ad request --IN Api response -- IN]",
+    "title" : "cc result  matched with ad request --IN Api response -- IN",
+    "time" : {
+      "start" : 1589984928252,
+      "stop" : 1589984928252,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1589984928252,
+      "stop" : 1589984928252,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day Pub Ad Call custParamcc]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day Pub Ad Call custParamcc",
+    "time" : {
+      "start" : 1589984928327,
+      "stop" : 1589984928327,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[reading turbo call value]",
+    "title" : "reading turbo call value",
+    "time" : {
+      "start" : 1589984928383,
+      "stop" : 1589984928383,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Turbo Call cc Data : IN]",
+    "title" : "Turbo Call cc Data : IN",
+    "time" : {
+      "start" : 1589984928419,
+      "stop" : 1589984928419,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd cc Data : IN]",
+    "title" : "PubAd cc Data : IN",
+    "time" : {
+      "start" : 1589984928419,
+      "stop" : 1589984928419,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[cc result  matched with ad request --IN Api response -- IN]",
+    "title" : "cc result  matched with ad request --IN Api response -- IN",
+    "time" : {
+      "start" : 1589984928419,
+      "stop" : 1589984928419,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1589984928419,
+      "stop" : 1589984928419,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "testSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "testGroup",
+    "value" : "Test"
+  }, {
+    "name" : "thread",
+    "value" : "8734@Aswinikumars-MacBook-Pro.local.main(1)"
+  }, {
+    "name" : "testClass",
+    "value" : "twc.Regression.TestCases.regressionTestCases"
+  }, {
+    "name" : "testMethod",
+    "value" : "C333209_Verify_cust_param_cc"
+  }, {
+    "name" : "suite-name",
+    "value" : "Suite : Test"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "host",
+    "value" : "Aswinikumars-MacBook-Pro.local"
+  }, {
+    "name" : "suite-title",
+    "value" : "Suite : Test"
+  } ],
+  "parameters" : [ ]
+}

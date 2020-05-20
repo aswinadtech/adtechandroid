@@ -1,0 +1,509 @@
+{
+  "uid" : "c9ac4f2d098b5cd",
+  "name" : "C333200_Verify_cust_param_ord",
+  "title" : "Verify custom parameter ord",
+  "time" : {
+    "start" : 1589984845432,
+    "stop" : 1589984849209,
+    "duration" : 3777
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 30
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "6389a0dd56d7f14d",
+    "name" : "Suite : Test",
+    "title" : "Suite : Test"
+  },
+  "steps" : [ {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly Pub Ad Call custParam  +/custParam+/]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly Pub Ad Call custParam  +/custParam+/",
+    "time" : {
+      "start" : 1589984845827,
+      "stop" : 1589984845827,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd ord Data : 3303088921]",
+    "title" : "PubAd ord Data : 3303088921",
+    "time" : {
+      "start" : 1589984845921,
+      "stop" : 1589984845921,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1589984845921,
+      "stop" : 1589984845921,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fmarquee Pub Ad Call custParam  +/custParam+/]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fmarquee Pub Ad Call custParam  +/custParam+/",
+    "time" : {
+      "start" : 1589984846030,
+      "stop" : 1589984846030,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd ord Data : 9535602095]",
+    "title" : "PubAd ord Data : 9535602095",
+    "time" : {
+      "start" : 1589984846134,
+      "stop" : 1589984846134,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1589984846134,
+      "stop" : 1589984846134,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fradar Pub Ad Call custParam  +/custParam+/]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fradar Pub Ad Call custParam  +/custParam+/",
+    "time" : {
+      "start" : 1589984846888,
+      "stop" : 1589984846888,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd ord Data : 2364298461]",
+    "title" : "PubAd ord Data : 2364298461",
+    "time" : {
+      "start" : 1589984847321,
+      "stop" : 1589984847321,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1589984847321,
+      "stop" : 1589984847321,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Flifestyle Pub Ad Call custParam  +/custParam+/]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Flifestyle Pub Ad Call custParam  +/custParam+/",
+    "time" : {
+      "start" : 1589984847407,
+      "stop" : 1589984847407,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd ord Data : 1118932051]",
+    "title" : "PubAd ord Data : 1118932051",
+    "time" : {
+      "start" : 1589984847474,
+      "stop" : 1589984847474,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1589984847474,
+      "stop" : 1589984847474,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fseason Pub Ad Call custParam  +/custParam+/]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fseason Pub Ad Call custParam  +/custParam+/",
+    "time" : {
+      "start" : 1589984847558,
+      "stop" : 1589984847558,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd ord Data : 2436541059]",
+    "title" : "PubAd ord Data : 2436541059",
+    "time" : {
+      "start" : 1589984847626,
+      "stop" : 1589984847626,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1589984847626,
+      "stop" : 1589984847626,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Faq Pub Ad Call custParam  +/custParam+/]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Faq Pub Ad Call custParam  +/custParam+/",
+    "time" : {
+      "start" : 1589984847739,
+      "stop" : 1589984847739,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd ord Data : 7437298071]",
+    "title" : "PubAd ord Data : 7437298071",
+    "time" : {
+      "start" : 1589984847825,
+      "stop" : 1589984847825,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1589984847826,
+      "stop" : 1589984847826,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps Pub Ad Call custParam  +/custParam+/]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps Pub Ad Call custParam  +/custParam+/",
+    "time" : {
+      "start" : 1589984848283,
+      "stop" : 1589984848283,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd ord Data : 2711468130]",
+    "title" : "PubAd ord Data : 2711468130",
+    "time" : {
+      "start" : 1589984848774,
+      "stop" : 1589984848774,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1589984848774,
+      "stop" : 1589984848774,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Ftoday Pub Ad Call custParam  +/custParam+/]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Ftoday Pub Ad Call custParam  +/custParam+/",
+    "time" : {
+      "start" : 1589984848874,
+      "stop" : 1589984848874,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd ord Data : 3691680644]",
+    "title" : "PubAd ord Data : 3691680644",
+    "time" : {
+      "start" : 1589984848966,
+      "stop" : 1589984848966,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1589984848966,
+      "stop" : 1589984848966,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly Pub Ad Call custParam  +/custParam+/]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly Pub Ad Call custParam  +/custParam+/",
+    "time" : {
+      "start" : 1589984849039,
+      "stop" : 1589984849039,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd ord Data : 5673904895]",
+    "title" : "PubAd ord Data : 5673904895",
+    "time" : {
+      "start" : 1589984849103,
+      "stop" : 1589984849103,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1589984849104,
+      "stop" : 1589984849104,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day Pub Ad Call custParam  +/custParam+/]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day Pub Ad Call custParam  +/custParam+/",
+    "time" : {
+      "start" : 1589984849164,
+      "stop" : 1589984849164,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd ord Data : 5059889220]",
+    "title" : "PubAd ord Data : 5059889220",
+    "time" : {
+      "start" : 1589984849204,
+      "stop" : 1589984849204,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1589984849204,
+      "stop" : 1589984849204,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "testSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "testGroup",
+    "value" : "Test"
+  }, {
+    "name" : "thread",
+    "value" : "8734@Aswinikumars-MacBook-Pro.local.main(1)"
+  }, {
+    "name" : "testClass",
+    "value" : "twc.Regression.TestCases.regressionTestCases"
+  }, {
+    "name" : "suite-name",
+    "value" : "Suite : Test"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "host",
+    "value" : "Aswinikumars-MacBook-Pro.local"
+  }, {
+    "name" : "suite-title",
+    "value" : "Suite : Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "C333200_Verify_cust_param_ord"
+  } ],
+  "parameters" : [ ]
+}

@@ -161,38 +161,39 @@ public class Custom_Parameters_Verification extends Drivers{
 									//							System.out.println("Param Value is :;"+ParamValue);
 
 									if(ParamType.equals("tmp") && custParam.equals("tmp")){
-										logStep("Verifyied Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_results("tmp",feed);
-										if(!Param_val.equals("Pass") && feed == feedcount){
+										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("tmp Value not matched");
 										}
 									}
 									else if(ParamType.equals("tmpr") && custParam.equals("tmpr")){
-										logStep("Verifyied Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_results("tmpr",feed);
-										if(!Param_val.equals("Pass") && feed == feedcount){
+										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("tmpr Value not matched");
 										}
 									}
+								
 									else if(ParamType.equals("cnd") && custParam.equals("cnd")){
-										logStep("Verifyied Feed:"+feedAd+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_results("cnd",feed);
 										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 										//if(Param_val.contains("Fail") && feed==allfeeds ) {
 										//if(!Param_val.equals("Pass") && feed == feedcount){
 										//if(Param_val.contains("Fail")) {
-										    logStep(custParam+" should not be empty");
-										    logStep(custParam+" can be nl");
+										//    logStep(custParam+" should not be empty");
+										   // logStep(custParam+" can be nl");
 										//	validate_CustomParameter.sf.assertTrue(false);
 									     	Assert.fail("cnd Value not matched");
 										}
 									}
 									/*else if(ParamType.equals("cnd") && custParam.equals("cnd")){
-										logStep("Verifyied Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
+										logStep("Verified Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
 										Param_val = CustomParamFunctions.validate_not_null_results("cnd",feed);
 										if(!Param_val.equals("Pass") && feed == feedcount){
 											logStep(custParam+" should not be null");
@@ -202,69 +203,69 @@ public class Custom_Parameters_Verification extends Drivers{
 									}*/
 									
 									else if(ParamType.equals("hmid") && custParam.equals("hmid")){
-										logStep("Verifyied Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_results("hmid",feed);
-										if(!Param_val.equals("Pass") && feed == feedcount){
+										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("hmid Value not matched");
 										}
 									}
 									else if(ParamType.equals("wind") && custParam.equals("wind")){
-										logStep("Verifyied Feed:"+feedAd+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_results("wind",feed);
-										if(!Param_val.equals("Pass") && feed == feedcount){
-											logStep(custParam+" should not be null");
-											logStep(custParam+" can be nl");
+										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
+											//logStep(custParam+" should not be null");
+											//logStep(custParam+" can be nl");
 											Assert.fail("wind Value not matched");
 										}
 									}
 									else if(ParamType.equals("uv") && custParam.equals("uv")){
-										logStep("Verifyied Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_results("uv",feed);
-										if(!Param_val.equals("Pass") && feed == feedcount){
+										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("uv Value not matched");
 										}
 									}
 									else if(ParamType.equals("fltmpc") && custParam.equals("fltmpc")){
-										logStep("Verifyied Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_results("fltmpc",feed);
-										if(!Param_val.equals("Pass") && feed == feedcount){
+										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("fltmpc Value not matched");
 										}
 									}
 									else if(ParamType.equals("tmpc") && custParam.equals("tmpc")){
-										logStep("Verifyied Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_results("tmpc",feed);
-										if(!Param_val.equals("Pass") && feed == feedcount){
+										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("tmpc Value not matched");
 										}
 									}
 									else if(ParamType.equals("dma") && custParam.equals("dma")){
-										logStep("Verifyied Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_dsx_results("dma",feed);
-										if(!Param_val.equals("Pass") && feed == feedcount){
-											logStep(custParam+" should not be null");
-											logStep(custParam+" can be nl");
+										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
+											//logStep(custParam+" should not be null");
+											//logStep(custParam+" can be nl");
 											Assert.fail("dma Value not matched");
 										}
 									}
 									else if(ParamType.equals("zip") && custParam.equalsIgnoreCase("zip")){
-										logStep("Verifyied Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_dsx_results("zip",feed);
-										if(!Param_val.equals("Pass") && feed == feedcount){
+										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 											Assert.fail("zip Value not matched");
 										}
 									}
 									
 									/*else if(ParamType.equals("zip") && custParam.equals("zip")){
-										logStep("Verifyied Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
+										logStep("Verified Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
 										Param_val = CustomParamFunctions.validate_not_null_results("zip",feed);
 										if(!Param_val.equals("Pass") && feed == feedcount){
 											logStep(custParam+" should not be null");
@@ -273,80 +274,81 @@ public class Custom_Parameters_Verification extends Drivers{
 										}
 									}*/
 									else if(ParamType.equals("ct") && custParam.equals("ct")){
-										logStep("Verifyied Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_dsx_results("ct",feed);
-										if(!Param_val.equals("Pass") && feed == feedcount){
+										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("ct Value not matched");
 										}
 									}
 									else if(ParamType.equals("st") && custParam.equals("st")){
-										logStep("Verifyied Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
-										Param_val = CustomParamFunctions.validate_dsx_results("st",feed);
-										if(!Param_val.equals("Pass") && feed == feedcount){
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
+										//Param_val = CustomParamFunctions.validate_dsx_results("st",feed);
+										Param_val = CustomParamFunctions.validate_not_null_results("st",feed);
+										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("st Value not matched");
 										}
 									}
 									else if(ParamType.equals("cc") && custParam.equals("cc")){
-										logStep("Verifyied Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_dsx_results("cc",feed);
-										if(!Param_val.equals("Pass") && feed == feedcount){
+										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("cc Value not matched");
 										}
 									}
 									else if(ParamType.equals("wfxtg") && custParam.equals("wfxtg")){
-										logStep("Verifyied Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_wfxtg_results("wfxtg",feed);
-										System.out.println("Param_val "+Param_val);
-										if(!Param_val.equals("Pass") && feed == feedcount){
+									//	System.out.println("Param_val "+Param_val);
+										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("wfxtg Value not matched");
 										}
 									}
 									else if(ParamType.equals("zcs") && custParam.equals("zcs")){
-										logStep("Verifyied Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_wfxtg_results("zcs",feed);
-										if(!Param_val.equals("Pass") && feed == feedcount){
+										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("zcs Value not matched");
 										}
 									}
 									else if(ParamType.equals("hzcs") && custParam.equals("hzcs")){
-										logStep("Verifyied Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_wfxtg_results("hzcs",feed);
-										if(!Param_val.equals("Pass") && feed == feedcount){
+										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("hzcs Value not matched");
 										}
 									}
 									else if(ParamType.equals("nzcs") && custParam.equals("nzcs")){
-										logStep("Verifyied Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_wfxtg_results("nzcs",feed);
-										if(!Param_val.equals("Pass") && feed == feedcount){
+										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("nzcs Value not matched");
 										}
 									}
 									else if(ParamType.equals("fgeo") && custParam.equals("fgeo")){
-										logStep("Verifyied Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_not_null_results("fgeo",feed);
-										if(!Param_val.equals("Pass") && feed == feedcount){
+										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("fgeo Value not matched");
 										}
 									}
 									else if(ParamType.equals("faud") && custParam.equals("faud")){
-										logStep("Verifyied Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_not_null_results("faud",feed);
 										if(!Param_val.equals("Pass") && feed == feedcount){
 											logStep(custParam+" should not be null");
@@ -355,45 +357,45 @@ public class Custom_Parameters_Verification extends Drivers{
 										}
 									}
 									else if(ParamType.equals("sg") && custParam.equals("sg")){
-										logStep("Verifyied Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_lotame_results("sg",feed);
-										if(!Param_val.equals("Pass") && feed == feedcount){
+										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("sg Value not matched");
 										}
 									}
 									else if(ParamType.equals("locale") && custParam.equals("locale")){
-										logStep("Verifyied Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_dsxcms_results("locale",feed);
-										if(!Param_val.equals("Pass") && feed == feedcount){
+										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("locale Value not matched");
 										}
 									}
 									else if(ParamType.equals("hlzip") && custParam.equals("hlzip")){
-										logStep("Verifyied Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_wfxtg_results("hlzip",feed);
-										if(!Param_val.equals("Pass") && feed == feedcount){
+										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("hlzip Value not matched");
 										}
 									}
 									else if(ParamType.equals("lang") && custParam.equals("lang")){
-										logStep("Verifyied Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_hard_code_results("lang",feed);
-										if(!Param_val.equals("Pass") && feed == feedcount){
+										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("lang Value not matched");
 										}
 									}
 									else if(ParamType.equals("plat") && custParam.equals("plat")){
-										logStep("Verifyied Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_hard_code_results("plat",feed);
-										if(Param_val.equals("Fail") && feed == allads){
+										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 										//if(!Param_val.equals("Pass") && feed == feedcount){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" should not be empty");
@@ -406,27 +408,27 @@ public class Custom_Parameters_Verification extends Drivers{
 			
 									
 									/*else if(ParamType.equals("zip") && custParam.equals("plat")){
-										logStep("Verifyied Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
+										logStep("Verified Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
 										Param_val = CustomParamFunctions.validate_not_null_results("plat",feed);
-										if(!Param_val.equals("Pass") && feed == feedcount){
+											if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("adid Value not matched");
 										}
 									}*/
 									else if(ParamType.equals("ftl") && custParam.equals("ftl")){
-										logStep("Verifyied Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_hard_code_results("ftl",feed);
-										if(!Param_val.equals("Pass") && feed == feedcount){
+										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("ftl Value not matched");
 										}
 									}
 									else if(ParamType.equals("pos") && custParam.equals("pos")){
-										logStep("Verifyied Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_hard_code_results("pos",feed);
-										if(!Param_val.equals("Pass") && feed == feedcount){
+										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("pos Value not matched");
@@ -434,10 +436,10 @@ public class Custom_Parameters_Verification extends Drivers{
 									}
 									
 									else if(ParamType.equalsIgnoreCase("zip") && custParam.equalsIgnoreCase("Zip")){
-										logStep("Verifyied Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_hard_code_zip_results("zip",feed);
 									//	Param_val = CustomParamFunctions.validate_not_null_results("zip",feed);
-										if(Param_val.contains("Fail") && feed==allads) {
+										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 										//if(!Param_val.equals("Pass") && feed == feedcount){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" should not be empty");
@@ -445,36 +447,36 @@ public class Custom_Parameters_Verification extends Drivers{
 										}
 									}
 									else if(ParamType.equals("tile") && custParam.equals("tile")){
-										logStep("Verifyied Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_hard_code_results("tile",feed);
-										if(!Param_val.equals("Pass") && feed == feedcount){
+										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("tile Value not matched");
 										}
 									}
 									else if(ParamType.equals("par") && custParam.equals("par")){
-										logStep("Verifyied Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_hard_code_results("par",feed);
-										if(!Param_val.equals("Pass") && feed == feedcount){
+										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("par Value not matched");
 										}
 									}
 									else if(ParamType.equals("vw") && custParam.equals("vw")){
-										logStep("Verifyied Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_not_null_results("vw",feed);
-										if(!Param_val.equals("Pass") && feed == feedcount){
+										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("vw Value not matched");
 										}
 									}
 									else if(ParamType.equals("aid") && custParam.equals("aid")){
-										logStep("Verifyied Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_not_null_results("aid",feed);
-										if(!Param_val.equals("Pass") && feed == feedcount){
+										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("aid Value not matched");
@@ -482,18 +484,18 @@ public class Custom_Parameters_Verification extends Drivers{
 									}
 									
 								/*	else if(ParamType.equals("wfxtg") && custParam.equals("wfxtg")){
-										logStep("Verifyied Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
+										logStep("Verified Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
 										Param_val = CustomParamFunctions.validate_not_null_results("wfxtg",feed);
-										if(!Param_val.equals("Pass") && feed == feedcount){
+											if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("aid Value not matched");
 										}
 									}*/
 									/*else if(ParamType.equals("zip") && custParam.equals("zip")){
-										logStep("Verifyied Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
+										logStep("Verified Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
 										Param_val = CustomParamFunctions.validate_not_null_results("zip",feed);
-										if(!Param_val.equals("Pass") && feed == feedcount){
+										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("adid Value not matched");
@@ -501,9 +503,9 @@ public class Custom_Parameters_Verification extends Drivers{
 									}*/
 									
 									else if(ParamType.equals("adid") && custParam.equals("adid")){
-										logStep("Verifyied Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                  "  +/custParam+/");
 										Param_val = CustomParamFunctions.validate_not_null_results("adid",feed);
-									if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
+										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 									//	if(!Param_val.equals("Pass") && feed == feedcount){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" should not be empty");
@@ -511,108 +513,108 @@ public class Custom_Parameters_Verification extends Drivers{
 										}
 									}
 									else if(ParamType.equals("ord") && custParam.equals("ord")){
-										logStep("Verifyied Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                  "  +/custParam+/");
 										Param_val = CustomParamFunctions.validate_not_null_results("ord",feed);
-										if(!Param_val.equals("Pass") && feed == feedcount){
+										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("ord Value not matched");
 										}
 									}
 									else if(ParamType.equals("a") && custParam.equals("a")){
-										logStep("Verifyied Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                  "  +/custParam+/");
 										Param_val = CustomParamFunctions.validate_not_null_results("a",feed);
-										if(!Param_val.equals("Pass") && feed == feedcount){
+										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("a Value not matched");
 										}
 									}
 									else if(ParamType.equals("ch") && custParam.equals("ch")){
-										logStep("Verifyied Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_not_null_results("ch",feed);
-										if(!Param_val.equals("Pass") && feed == feedcount){
+										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("ch Value not matched");
 										}
 									}
 									else if(ParamType.equals("fam") && custParam.equals("fam")){
-										logStep("Verifyied Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_not_null_results("fam",feed);
-										if(!Param_val.equals("Pass") && feed == feedcount){
+										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("fam Value not matched");
 										}
 									}
 									else if(ParamType.equals("g") && custParam.equals("g")){
-										logStep("Verifyied Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_not_null_results("g",feed);
-										if(!Param_val.equals("Pass") && feed == feedcount){
+										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("g Value not matched");
 										}
 									}
 									else if(ParamType.equals("layer") && custParam.equals("layer")){
-										logStep("Verifyied Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_not_null_results("layer",feed);
-										if(!Param_val.equals("Pass") && feed == feedcount){
+										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("layer Value not matched");
 										}
 									}
 									else if(ParamType.equals("rmid") && custParam.equals("rmid")){
-										logStep("Verifyied Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_not_null_results("rmid",feed);
-										if(!Param_val.equals("Pass") && feed == feedcount){
+										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("rmid Value not matched");
 										}
 									}
 									else if(ParamType.equals("tf") && custParam.equals("tf")){
-										logStep("Verifyied Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_not_null_results("tf",feed);
-										if(!Param_val.equals("Pass") && feed == feedcount){
+										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("tf Value not matched");
 										}
 									}
 									else if(ParamType.equals("ver") && custParam.equals("ver")){
-										logStep("Verifyied Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_not_null_results("ver",feed);
-										if(!Param_val.equals("Pass") && feed == feedcount){
+										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("ver Value not matched");
 										}
 									}
 									else if(ParamType.equals("dynght") && custParam.equals("dynght")){
-										logStep("Verifyied Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_not_null_results("dynght",feed);
-										if(!Param_val.equals("Pass") && feed == feedcount){
+										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("dynght Value not matched");
 										}
 									}
 									else if(ParamType.equals("bn") && custParam.equals("bn")){
-										logStep("Verifyied Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
+										logStep("Verified Feed:"+feedAd+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
 										Param_val = CustomParamFunctions.validate_not_null_results("bn",feed);
-										if(!Param_val.equals("Pass") && feed == feedcount){
+										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("bn Value not matched");
 										}
 									}
 									else if(ParamType.equals("fhic") && custParam.equals("fhic")){
-										logStep("Verifyied Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_results("fhic",feed);
-										if(!Param_val.equals("Pass") && feed == feedcount){
+										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("fhic Value not matched");
@@ -620,27 +622,27 @@ public class Custom_Parameters_Verification extends Drivers{
 
 									}
 									else if(ParamType.equals("floc") && custParam.equals("floc")){
-										logStep("Verifyied Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_results("floc",feed);
-										if(!Param_val.equals("Pass") && feed == feedcount){
+										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("floc Value not matched");
 										}
 									}
 									else if(ParamType.equals("sev") && custParam.equals("sev")){
-										logStep("Verifyied Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +               custParam );
 										Param_val = CustomParamFunctions.validate_results("sev",feed);
-										if(!Param_val.equals("Pass") && feed == feedcount){
+										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("sev Value not matched");
 										}
 									}
 									else if(ParamType.equals("plln") && custParam.equals("plln")){
-										logStep("Verifyied Feed:"+feed+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                custParam);
 										Param_val = CustomParamFunctions.validate_results("plln",feed);
-										if(!Param_val.equals("Pass") && feed == feedcount){
+										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("plln Value not matched");
@@ -687,9 +689,9 @@ public class Custom_Parameters_Verification extends Drivers{
 		pubad_val =pubads_call_results.get(custParam);
 		logStep("navigate to video module");
 		logStep("Tap On Video");
-		logStep("Verify video preRoll pub Ad call is being made in cahrles");
+		logStep("Verify video preRoll pub Ad call is being made in charles");
 		if(!pubad_val.isEmpty()){
-			logStep("Verifyied Video PubAd "+custParam+" Data : "+pubad_val+" Value Presented As Expected");
+			logStep("Verified Video PubAd "+custParam+" Data : "+pubad_val+" Value Presented As Expected");
 			System.out.println("Video PubAd "+custParam+" Data : "+pubad_val);
 			result="Pass";
 			System.out.println("Result "+result);
@@ -706,7 +708,7 @@ public class Custom_Parameters_Verification extends Drivers{
 		logStep("navigate to road conditions module");
 		logStep("Tap On Road Conditions");
 		if(!pubad_val.isEmpty()){
-			logStep("Verifyied Road Conditions PubAd "+custParam+" Data : "+pubad_val+" Value Presented As Expected");
+			logStep("Verified Road Conditions PubAd "+custParam+" Data : "+pubad_val+" Value Presented As Expected");
 			System.out.println("Road Conditions PubAd "+custParam+" Data : "+pubad_val);
 			result="Pass";
 			System.out.println("Result "+result);

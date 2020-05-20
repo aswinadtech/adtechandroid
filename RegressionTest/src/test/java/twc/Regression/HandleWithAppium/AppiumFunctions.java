@@ -587,16 +587,16 @@ public static void killADB() throws IOException, Exception{
 		logStep("clicking video element");
 		try {
 		Ad.findElementById("com.weather.Weather:id/ok_button").click();	
-		Thread.sleep(2000);
+		Thread.sleep(10000);
 		}
 		catch(Exception e) {
 			try {
 			Ad.findElementById("Id com.weather.Weather:id/video_player_thumbnail_extra").click();	
-			Thread.sleep(2000);
+			Thread.sleep(10000);
 			}
 			catch(Exception e1) {
 				Ad.findElementById("com.weather.Weather:id/ok_button").click();	
-				Thread.sleep(2000);
+				Thread.sleep(10000);
 			}
 		}
 		
@@ -751,9 +751,10 @@ public static void killADB() throws IOException, Exception{
 	}
 	public static void click_hourly_element() throws Exception
 	{ 
-		try {
 		System.out.println("clicking hourly deatils");
-	     	logStep("clicking hourly details element");
+     	logStep("clicking hourly details element");
+		try {
+		
 		Ad.findElementByAccessibilityId("Hourly").click();
 		Thread.sleep(2000);	
 	}
@@ -821,9 +822,12 @@ public static void killADB() throws IOException, Exception{
 	public static void entering_Zip() throws Exception {
 		
 		Ad.findElementByAccessibilityId("Search").click();
+		Thread.sleep(2000);
 		 CharlesFunctions.ClearSessions();
 		Ad.findElementById("com.weather.Weather:id/search_text").sendKeys("10014");
+		Thread.sleep(2000);
 		Ad.findElementById("com.weather.Weather:id/search_item_container").click();		
+		Thread.sleep(2000);
 		 CharlesFunctions.startSessionBrowserData();
           AppiumFunctions.SwipeUp_Counter(1);	
 			AppiumFunctions.clickOnVideoElement();

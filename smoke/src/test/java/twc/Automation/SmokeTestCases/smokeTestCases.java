@@ -568,7 +568,7 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 		System.out.println(
 				"=================Verifying homescreen hourly ad calls when user selecting Optoutmode scenario in privacy card started =========================");
 		
-		Functions.finding_Homescreen_iu_value();
+		//Functions.finding_Homescreen_iu_value();
 		System.out.println("================= Verifying homescreen hourly ad calls when user selecting Optoutmode scenario in privacy card End =========================");
 				
 	}
@@ -1021,7 +1021,7 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 	  Smoke_Test_verifying_DailyIFcardResponse() throws Exception { 
 		  
 		  System.out.println("================= Verify  Daily IF card response testcase started =========================" );
-	 Functions.dailyIFCard_adcall_response(); 
+	// Functions.dailyIFCard_adcall_response(); 
 	 System.out.println("================= Verify  Daily IF card response testcase End =========================");
 	  
 	  }

@@ -548,7 +548,7 @@ public static void ExportSession() throws Exception{
 	Thread.sleep(3000);
 	System.out.println("Exporting The Session Data Into XML File");
 	driver.findElement(By.linkText(charlesdata[7][0])).click();
-	Thread.sleep(100000);
+	Thread.sleep(10000);
 	System.out.println("Exported Session");
 }
 

@@ -27,6 +27,7 @@ public class validate_CustomParameter extends Drivers {
 		int rownum = ws.getLastRowNum()+1;
 		
 		if(sheetname.equals("tmp") || sheetname.equals("tmpr") || sheetname.equals("cnd")){
+			
 			validateVal =  general_validate(sheetname,expectedVal,actualVal,rownum);
 		}
 		else if(sheetname.equals("hmid") ){
@@ -73,14 +74,23 @@ public class validate_CustomParameter extends Drivers {
 					//System.out.println("Expected Value :: "+expectedVal);
 					//System.out.println("Actual Value :: "+actualVal);
 					System.out.println("turbo call Value :: "+expectedVal);
-					System.out.println("pubad call Value :: "+actualVal);
+					System.out.println("pubAd call Value :: "+actualVal);
+					logStep("Turbo call value ::" +expectedVal);
+					logStep("PubAd call value ::" +actualVal);
+					System.out.println("Values are matched");
+					logStep("Values are matched");
 					wrResult.writeResult(sheetname,expectedVal,i,3);
 					validateVal = "Pass";
 					break;
 				}
 				if(actualVal.contains("nl")) {
+					
 					System.out.println("turbo call Value :: "+expectedVal);
-					System.out.println("pubad call Value :: "+actualVal);
+					System.out.println("pubAd call Value :: "+actualVal);
+					logStep("Turbo call value ::" +expectedVal);
+					logStep("PubAd call value ::" +actualVal);
+					System.out.println("Values are not matched");
+					logStep("Values are not matched");
 					wrResult.writeResult(sheetname,expectedVal,i,3);
 					validateVal = "Fail";
 					break;
@@ -230,27 +240,100 @@ public class validate_CustomParameter extends Drivers {
         
         if(expected_val <= first_val){
 			
-			System.out.println("Expected Value ::"+expectedVal);
-			System.out.println("Actual Value ::"+ actualVal);
-			wrResult.writeResult(sheetname,expectedVal,1,4);
-			validateVal = "Pass";
+			
+			
+			if(actualVal.contains("nl") || !data[1][3].contains(actualVal)) {
+				System.out.println("Turbo Value ::"+expectedVal);
+				System.out.println("PubAd Value ::"+ actualVal);
+				logStep("Turbo Value ::"+ expectedVal);			
+				logStep("PubAd Value ::"+ actualVal);
+				wrResult.writeResult(sheetname,expectedVal,1,4);
+				validateVal = "Fail";
+				System.out.println("Values are not matched");
+				logStep("Values are not matched");
+			}
+			if(data[1][3].contains(actualVal))
+			{
+				System.out.println("Turbo Value ::"+expectedVal);
+				System.out.println("PubAd Value ::"+ actualVal);
+				logStep("Turbo Value ::"+ expectedVal);			
+				logStep("PubAd Value ::"+ actualVal);
+				System.out.println("values are  matched");
+				wrResult.writeResult(sheetname,expectedVal,1,4);
+				validateVal = "Pass";
+				logStep("Values are matched");
+			}
+			
 		}
         else if(expected_val >= second_val){
+						
+			if(actualVal.contains("nl") || !data[2][3].contains(actualVal)) {
+				System.out.println("Turbo Value ::"+expectedVal);
+				System.out.println("PubAd Value ::"+ actualVal);
+				logStep("Turbo Value ::"+ expectedVal);			
+				logStep("PubAd Value ::"+ actualVal);
+				wrResult.writeResult(sheetname,expectedVal,2,4);
+				validateVal = "Fail";
+				System.out.println("values are not matched");
+				logStep("Values are not matched");
+				
+			}
+			if(data[1][3].contains(actualVal))
+			{
+				System.out.println("Turbo Value ::"+expectedVal);
+				System.out.println("PubAd Value ::"+ actualVal);
+				logStep("Turbo Value ::"+ expectedVal);			
+				logStep("PubAd Value ::"+ actualVal);
+				System.out.println("values are  matched");
+				wrResult.writeResult(sheetname,expectedVal,2,4);
+				validateVal = "Pass";
+				logStep("Values are  matched");
+			}
 			
-			System.out.println("Expected Value ::"+expectedVal);
-			System.out.println("Actual Value ::"+ actualVal);
-			wrResult.writeResult(sheetname,expectedVal,2,4);
-			validateVal = "Pass";
+			
+			//wrResult.writeResult(sheetname,expectedVal,2,4);
+		//	validateVal = "Pass";
 		}
         else if(expectedVal == ""){
-			
-			System.out.println("Expected Value ::"+expectedVal);
-			System.out.println("Actual Value ::"+ actualVal);
-			wrResult.writeResult(sheetname,expectedVal,3,4);
-			validateVal = "Pass";
+        
+        	if(actualVal.contains("nl") || !data[3][3].contains(actualVal)) {
+        		System.out.println("Turbo Value ::"+expectedVal);
+				System.out.println("PubAd Value ::"+ actualVal);
+				logStep("Turbo Value ::"+ expectedVal);			
+				logStep("PubAd Value ::"+ actualVal);
+				wrResult.writeResult(sheetname,expectedVal,3,4);
+				validateVal = "Fail";
+				System.out.println("values are not matched");
+				logStep("Values are not matched");
+			}
+			if(data[1][3].contains(actualVal))
+			{
+				System.out.println("Turbo Value ::"+expectedVal);
+				System.out.println("PubAd Value ::"+ actualVal);
+				logStep("Turbo Value ::"+ expectedVal);			
+				logStep("PubAd Value ::"+ actualVal);
+				System.out.println("values are  matched");
+				wrResult.writeResult(sheetname,expectedVal,3,4);
+				validateVal = "Pass";
+				logStep("Values are not matched");
+			}
+        	
+        	
+        	
+        	
+        	//System.out.println("Expected Value ::"+expectedVal);
+		//	System.out.println("Actual Value ::"+ actualVal);
+		//	wrResult.writeResult(sheetname,expectedVal,3,4);
+			//validateVal = "Pass";
 		}
         else
 		{
+        	System.out.println("Turbo call Value ::"+expectedVal);
+			System.out.println("PubAd call Value ::"+ actualVal);
+			logStep("Turbo Value ::"+ expectedVal);			
+			logStep("PubAd Value ::"+ actualVal);
+			System.out.println("Values are not matched");
+			logStep("Values are not matched");
 			wrResult.writeResult(sheetname,"No data",3,4);
 			validateVal = "Fail";
 			
@@ -272,37 +355,89 @@ public class validate_CustomParameter extends Drivers {
         int second_val = Integer.parseInt(data[2][2]);
         int third_val = Integer.parseInt(data[3][2]);
         
-        int expected_val = Integer.parseInt(expectedVal);
-        
+        int expected_val = Integer.parseInt(expectedVal);        
         if(expected_val < first_val){
-			System.out.println("Expected Value ::"+expectedVal);
-			System.out.println("Actual Value ::"+ actualVal);
-			wrResult.writeResult(sheetname,expectedVal,1,4);
-			validateVal = "Pass";
+			
+	     if(data[1][3].contains(actualVal)) {
+	    	 System.out.println("Turbo call Value ::"+expectedVal);
+				System.out.println("PubAd call Value ::"+ actualVal);
+				logStep("Turbo Value ::"+ expectedVal);			
+				logStep("PubAd Value ::"+ actualVal);
+	    	 System.out.println("Values are matched");
+	    	 logStep("Values are matched");
+		wrResult.writeResult(sheetname,expectedVal,1,4);
+		validateVal = "Pass";
+	}
+			
 		}
         else if(expected_val >= first_val && expected_val < second_val){
 			
-			System.out.println("Expected Value ::"+expectedVal);
-			System.out.println("Actual Value ::"+ actualVal);
+			
+			if(actualVal.contains("nl")) {
+				System.out.println("Turbo call Value ::"+expectedVal);
+				System.out.println("PubAd Value ::"+ actualVal);
+				logStep("Turbo Value ::"+ expectedVal);			
+				logStep("PubAd Value ::"+ actualVal);
+				System.out.println("Values are not matched");
+				logStep("Values are not matched");
+				validateVal = "Fail";
+			}
+			
+			if(data[2][3].contains(actualVal)) {
+			System.out.println("Turbo call Value ::"+expectedVal);
+			System.out.println("PubAd Value ::"+ actualVal);
+			logStep("Turbo Value ::"+ expectedVal);			
+			logStep("PubAd Value ::"+ actualVal);
 			wrResult.writeResult(sheetname,expectedVal,2,4);
-			validateVal = "Pass";
+			System.out.println("Values are matched");
+			logStep("Values are matched");
+			validateVal = "Passed";
+			}
 		}
         else if(expected_val >= third_val){
 			
-			System.out.println("Expected Value ::"+expectedVal);
-			System.out.println("Actual Value ::"+ actualVal);
-			wrResult.writeResult(sheetname,expectedVal,3,4);
-			validateVal = "Pass";
+			
+			if(actualVal.contains("nl")) {
+				System.out.println("Turbo call Value ::"+expectedVal);
+				System.out.println("PudAd Value ::"+ actualVal);
+				logStep("Turbo Value ::"+ expectedVal);			
+				logStep("PubAd Value ::"+ actualVal);
+				System.out.println("Values are not matched");
+				logStep("Values are not matched");
+				validateVal = "Fail";
+			}
+			
+			if(data[3][3].contains(actualVal)) {
+				System.out.println("Turbo call Value ::"+expectedVal);
+				System.out.println("PubAd Value ::"+ actualVal);
+				logStep("Turbo Value ::"+ expectedVal);			
+				logStep("PubAd Value ::"+ actualVal);
+				System.out.println("Values are matched");
+				logStep("Values are matched");
+				wrResult.writeResult(sheetname,expectedVal,3,4);
+				validateVal = "Pass";
+			}
+			
 		}
         else if(expectedVal == ""){
 			
-			System.out.println("Expected Value ::"+expectedVal);
-			System.out.println("Actual Value ::"+ actualVal);
+			System.out.println("Turbo call Value ::"+expectedVal);
+			System.out.println("PubAd Value ::"+ actualVal);
+			logStep("Turbo Value ::"+ expectedVal);			
+			logStep("PubAd Value ::"+ actualVal);
+			System.out.println("Values are matched");
+			logStep("Values are matched");
 			wrResult.writeResult(sheetname,expectedVal,4,4);
 			validateVal = "Pass";
 		}
         else
 		{
+        	System.out.println("Turbo call Value ::"+expectedVal);
+			System.out.println("PubAd call Value ::"+ actualVal);
+			logStep("Turbo Value ::"+ expectedVal);			
+			logStep("PubAd Value ::"+ actualVal);
+			System.out.println("Values are not matched");
+			logStep("Values are not matched");
 			wrResult.writeResult(sheetname,"No data",4,4);
 			validateVal = "Fail";
 			
@@ -328,20 +463,52 @@ public class validate_CustomParameter extends Drivers {
         
         if(expected_val < first_val || expectedVal == ""){
 			
-			System.out.println("Expected Value ::"+expectedVal);
-			System.out.println("Actual Value ::"+ actualVal);
-			wrResult.writeResult(sheetname,expectedVal,1,4);
-			validateVal = "Pass";
+			
+		
+			if(data[1][3].contains(actualVal)) {
+				System.out.println("Turbo call Value ::"+expectedVal);
+				System.out.println("PubAd Value ::"+ actualVal);
+				logStep("Turbo Value ::"+ expectedVal);			
+				logStep("PubAd Value ::"+ actualVal);
+				System.out.println("Values are matched");
+				logStep("Values are matched");
+				wrResult.writeResult(sheetname,expectedVal,1,4);
+				validateVal = "Pass";
+			}
+			
 		}
         else if(expected_val >= second_val){
+        	
+        	if(actualVal.contains("nl")) {
+        		System.out.println("Turbo call Value ::"+expectedVal);
+				System.out.println("PubAd Value ::"+ actualVal);
+				logStep("Turbo Value ::"+ expectedVal);			
+				logStep("PubAd Value ::"+ actualVal);
+				System.out.println("Values are not matched");
+				logStep("Values are not matched");
+    			wrResult.writeResult(sheetname,expectedVal,2,4);
+    			validateVal = "Fail";
+        	}
+			if(data[1][3].contains(actualVal)) {
+				System.out.println("Turbo call Value ::"+expectedVal);
+				System.out.println("PubAd Value ::"+ actualVal);
+				logStep("Turbo Value ::"+ expectedVal);			
+				logStep("PubAd Value ::"+ actualVal);
+				System.out.println("Values are matched");
+				logStep("Values are matched");
 			
-			System.out.println("Expected Value ::"+expectedVal);
-			System.out.println("Actual Value ::"+ actualVal);
 			wrResult.writeResult(sheetname,expectedVal,2,4);
 			validateVal = "Pass";
+			}
 		}
         else
 		{
+        	System.out.println("Turbo call Value ::"+expectedVal);
+			System.out.println("PubAd Value ::"+ actualVal);
+        	logStep("Turbo Value ::"+ expectedVal);			
+			logStep("PubAd Value ::"+ actualVal);
+			System.out.println("Values are not matched");
+			logStep("Values are not matched");
 			wrResult.writeResult(sheetname,"No data",1,4);
 			validateVal = "Fail";
 			
@@ -363,12 +530,17 @@ public class validate_CustomParameter extends Drivers {
         int second_val = Integer.parseInt(data[2][2]);
         int thrid_val = Integer.parseInt(data[3][2]);
         
+        System.out.println("Turbo call Value ::" + expectedVal);
+       logStep("Turbo call Value ::" + expectedVal);
+        
         int convert_val = Integer.parseInt(expectedVal);
         //--- Strat Calculation Part ---//
         convert_val = convert_val-32;
+       // System.out.println("Converting Turbo call date into double");
 		double  convert_val_double = (double) ((convert_val)*(0.5555555556));
 		convert_val_double = Math.round(convert_val_double);
 		System.out.println("double value is::"+convert_val_double);
+		logStep("double value is::"+convert_val_double);
 		convert_val=(int) convert_val_double;
 		String convert_val_string = Integer.toString(convert_val);
 		//--- End Calculation Part ---//
@@ -376,30 +548,114 @@ public class validate_CustomParameter extends Drivers {
         int expected_val = Integer.parseInt(convert_val_string);
         
         if(expected_val < first_val){
-			
+        	if(!actualVal.contains("nl")) {
+        		System.out.println("Expected Value ::"+convert_val_string);
+    			System.out.println("Actual Value ::"+ actualVal);
+    			
+            	logStep("Expected Value ::"+ convert_val_string);			
+    			logStep("PubAd Value ::"+ actualVal);
+    			if(convert_val_string.equalsIgnoreCase(actualVal)) {
+    				System.out.println("Values are  matched");
+        			logStep("Values are  matched");
+        			validateVal = "Pass";
+        		//	System.out.println("Result "+validateVal);
+        			//logStep("Result "+validateVal);
+        			
+    			}
+    			else {
+    				System.out.println("Values are  not  matched");
+        			logStep("Values are  not matched");
+        			validateVal = "Fail";
+    			}
+    			
+        	}
+        	/*if(data[1][3].contains(actualVal)) {
 			System.out.println("Expected Value ::"+convert_val_string);
 			System.out.println("Actual Value ::"+ actualVal);
+			logStep("Expected Value ::"+ convert_val_string);			
+			logStep("PubAd Value ::"+ actualVal);
+			System.out.println("Values are matched");
+			logStep("Values are matched");
 			wrResult.writeResult(sheetname,convert_val_string,1,4);
 			validateVal = "Pass";
-		}
+		}*/
+        }
         else if(expected_val <= second_val && expected_val >= first_val ){
 			
-			System.out.println("Expected Value ::"+convert_val_string);
-			System.out.println("Actual Value ::"+ actualVal);
-			wrResult.writeResult(sheetname,convert_val_string,2,4);
-			validateVal = "Pass";
-		}
-        else if(expected_val >= thrid_val){
+        	if(!actualVal.contains("nl")) {
+        		System.out.println("Expected Value ::"+convert_val_string);
+    			System.out.println("Actual Value ::"+ actualVal);
+    			logStep("Expected Value ::"+ convert_val_string);			
+    			logStep("PubAd Value ::"+ actualVal);
+    			if(convert_val_string.equalsIgnoreCase(actualVal)) {
+    				System.out.println("Values are  matched");
+        			logStep("Values are  matched");
+        			validateVal = "Pass";
+        		//	System.out.println("Result "+validateVal);
+        		//	logStep("Result "+validateVal);
+    			}
+    			else {
+    				System.out.println("Values are  not  matched");
+        			logStep("Values are  not matched");
+        			validateVal = "Fail";
+    			}
+    			}
+    			
+        	}
+        /*	if(data[2][3].contains(actualVal)) {
+        		System.out.println("Expected Value ::"+convert_val_string);
+    			System.out.println("Actual Value ::"+ actualVal);
+    			logStep("Expected Value ::"+ convert_val_string);			
+    			logStep("PubAd Value ::"+ actualVal);
+    			System.out.println("Values are matched");
+    			logStep("Values are matched");
+    			wrResult.writeResult(sheetname,convert_val_string,2,4);
+    			validateVal = "Pass";
+        	}*/
 			
+		
+        else if(expected_val >= thrid_val){
+        	if(!actualVal.contains("nl")) {
+        		System.out.println("Expected Value ::"+convert_val_string);
+    			System.out.println("Actual Value ::"+ actualVal);
+    			logStep("Expected Value ::"+ convert_val_string);			
+    			logStep("PubAd Value ::"+ actualVal);
+    			if(convert_val_string.equalsIgnoreCase(actualVal)) {
+    				System.out.println("Values are  matched");
+        			logStep("Values are  matched");
+        			validateVal = "Pass";
+        		//	System.out.println("Result "+validateVal);
+        			//logStep("Result "+validateVal);
+    			}
+    			else {
+    				System.out.println("Values are  not  matched");
+        			logStep("Values are  not matched");
+        			validateVal = "Fail";
+    			}
+        	}
+        /*	if(data[3][3].contains(actualVal)) {
 			System.out.println("Expected Value ::"+convert_val_string);
 			System.out.println("Actual Value ::"+ actualVal);
+			logStep("Expected Value ::"+ convert_val_string);			
+			logStep("PubAd Value ::"+ actualVal);
+			System.out.println("Values are matched");
+			logStep("Values are matched");
 			wrResult.writeResult(sheetname,convert_val_string,3,4);
 			validateVal = "Pass";
+        	}*/
 		}
         else
 		{
+        	System.out.println("Expected Value ::"+convert_val_string);
+			System.out.println("Actual Value ::"+ actualVal);
+			logStep("Expected Value ::"+ convert_val_string);			
+			logStep("PubAd Value ::"+ actualVal);
+			System.out.println("Values are not matched");
+			logStep("Values are not matched");
 			wrResult.writeResult(sheetname,"No data",3,4);
 			validateVal = "Fail";
+			//System.out.println("Result "+validateVal);
+		//	logStep("Result "+validateVal);
 			
 		}
         return validateVal;

@@ -1,74 +1,58 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 28, Failures: 9, Errors: 0, Skipped: 0, Time elapsed: 73.496 sec <<< FAILURE!
-C333203_Verify_cust_param_dma(twc.Regression.TestCases.regressionTestCases)  Time elapsed: 0.238 sec  <<< FAILURE!
-java.lang.StringIndexOutOfBoundsException: String index out of range: -1
-	at java.lang.String.substring(String.java:1927)
-	at twc.Regression.CustomParamValidation.CustomParamFunctions.get_dsx_call_value(CustomParamFunctions.java:700)
-	at twc.Regression.CustomParamValidation.CustomParamFunctions.validate_dsx_results(CustomParamFunctions.java:285)
-	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:242)
-	at twc.Regression.TestCases.regressionTestCases.C333203_Verify_cust_param_dma(regressionTestCases.java:61)
+Tests run: 32, Failures: 9, Errors: 0, Skipped: 0, Time elapsed: 537.692 sec <<< FAILURE!
+C333213_Verify_cust_param_aid(twc.Regression.TestCases.regressionTestCases)  Time elapsed: 4.768 sec  <<< FAILURE!
+java.lang.AssertionError: aid Value not matched
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:482)
+	at twc.Regression.TestCases.regressionTestCases.C333213_Verify_cust_param_aid(regressionTestCases.java:159)
 
-C333212_Verify_cust_param_ct(twc.Regression.TestCases.regressionTestCases)  Time elapsed: 0.241 sec  <<< FAILURE!
-java.lang.StringIndexOutOfBoundsException: String index out of range: -1
-	at java.lang.String.substring(String.java:1927)
-	at twc.Regression.CustomParamValidation.CustomParamFunctions.get_dsx_call_value(CustomParamFunctions.java:700)
-	at twc.Regression.CustomParamValidation.CustomParamFunctions.validate_dsx_results(CustomParamFunctions.java:285)
-	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:268)
-	at twc.Regression.TestCases.regressionTestCases.C333212_Verify_cust_param_ct(regressionTestCases.java:75)
+C333226_Verify_cust_param_st(twc.Regression.TestCases.regressionTestCases)  Time elapsed: 3.136 sec  <<< FAILURE!
+java.lang.AssertionError: st Value not matched
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:292)
+	at twc.Regression.TestCases.regressionTestCases.C333226_Verify_cust_param_st(regressionTestCases.java:233)
 
-C333214_Verify_cust_param_hlzip(twc.Regression.TestCases.regressionTestCases)  Time elapsed: 0.25 sec  <<< FAILURE!
-java.lang.StringIndexOutOfBoundsException: String index out of range: -1
-	at java.lang.String.substring(String.java:1927)
-	at twc.Regression.CustomParamValidation.CustomParamFunctions.get_wfxtg_call_value(CustomParamFunctions.java:743)
-	at twc.Regression.CustomParamValidation.CustomParamFunctions.validate_wfxtg_results(CustomParamFunctions.java:386)
-	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:368)
-	at twc.Regression.TestCases.regressionTestCases.C333214_Verify_cust_param_hlzip(regressionTestCases.java:96)
+C333213_Verify_cust_param_adid(twc.Regression.TestCases.regressionTestCases)  Time elapsed: 3.626 sec  <<< FAILURE!
+java.lang.AssertionError: adid Value not matched
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:512)
+	at twc.Regression.TestCases.regressionTestCases.C333213_Verify_cust_param_adid(regressionTestCases.java:242)
 
-C333226_Verify_cust_param_st(twc.Regression.TestCases.regressionTestCases)  Time elapsed: 0.224 sec  <<< FAILURE!
-java.lang.StringIndexOutOfBoundsException: String index out of range: -1
-	at java.lang.String.substring(String.java:1927)
-	at twc.Regression.CustomParamValidation.CustomParamFunctions.get_dsx_call_value(CustomParamFunctions.java:700)
-	at twc.Regression.CustomParamValidation.CustomParamFunctions.validate_dsx_results(CustomParamFunctions.java:285)
-	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:277)
-	at twc.Regression.TestCases.regressionTestCases.C333226_Verify_cust_param_st(regressionTestCases.java:110)
+C628160_Verify_Parameter_DyNght(twc.Regression.TestCases.regressionTestCases)  Time elapsed: 3.057 sec  <<< FAILURE!
+java.lang.AssertionError: dynght Value not matched
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:602)
+	at twc.Regression.TestCases.regressionTestCases.C628160_Verify_Parameter_DyNght(regressionTestCases.java:486)
 
-C333228_Verify_cust_param_wfxtg(twc.Regression.TestCases.regressionTestCases)  Time elapsed: 0.244 sec  <<< FAILURE!
-java.lang.StringIndexOutOfBoundsException: String index out of range: -1
-	at java.lang.String.substring(String.java:1927)
-	at twc.Regression.CustomParamValidation.CustomParamFunctions.get_wfxtg_call_value(CustomParamFunctions.java:743)
-	at twc.Regression.CustomParamValidation.CustomParamFunctions.validate_wfxtg_results(CustomParamFunctions.java:386)
-	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:295)
-	at twc.Regression.TestCases.regressionTestCases.C333228_Verify_cust_param_wfxtg(regressionTestCases.java:194)
+C333208_Verify_cust_param_tmp(twc.Regression.TestCases.regressionTestCases)  Time elapsed: 4.744 sec  <<< FAILURE!
+java.lang.AssertionError: tmp Value not matched
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:169)
+	at twc.Regression.TestCases.regressionTestCases.C333208_Verify_cust_param_tmp(regressionTestCases.java:344)
 
-C333240_Verify_cust_param_zcs(twc.Regression.TestCases.regressionTestCases)  Time elapsed: 0.249 sec  <<< FAILURE!
-java.lang.StringIndexOutOfBoundsException: String index out of range: -1
-	at java.lang.String.substring(String.java:1927)
-	at twc.Regression.CustomParamValidation.CustomParamFunctions.get_wfxtg_call_value(CustomParamFunctions.java:743)
-	at twc.Regression.CustomParamValidation.CustomParamFunctions.validate_wfxtg_results(CustomParamFunctions.java:386)
-	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:305)
-	at twc.Regression.TestCases.regressionTestCases.C333240_Verify_cust_param_zcs(regressionTestCases.java:201)
+C333217_Verify_cust_param_tmpr(twc.Regression.TestCases.regressionTestCases)  Time elapsed: 4.336 sec  <<< FAILURE!
+java.lang.AssertionError: tmpr Value not matched
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:178)
+	at twc.Regression.TestCases.regressionTestCases.C333217_Verify_cust_param_tmpr(regressionTestCases.java:351)
 
-C333241_Verify_cust_param_nzcs(twc.Regression.TestCases.regressionTestCases)  Time elapsed: 0.248 sec  <<< FAILURE!
-java.lang.StringIndexOutOfBoundsException: String index out of range: -1
-	at java.lang.String.substring(String.java:1927)
-	at twc.Regression.CustomParamValidation.CustomParamFunctions.get_wfxtg_call_value(CustomParamFunctions.java:743)
-	at twc.Regression.CustomParamValidation.CustomParamFunctions.validate_wfxtg_results(CustomParamFunctions.java:386)
-	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:323)
-	at twc.Regression.TestCases.regressionTestCases.C333241_Verify_cust_param_nzcs(regressionTestCases.java:208)
+C333216_Verify_cust_param_cnd(twc.Regression.TestCases.regressionTestCases)  Time elapsed: 4.499 sec  <<< FAILURE!
+java.lang.AssertionError: cnd Value not matched
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:192)
+	at twc.Regression.TestCases.regressionTestCases.C333216_Verify_cust_param_cnd(regressionTestCases.java:359)
 
-C333242_Verify_cust_param_hzcs(twc.Regression.TestCases.regressionTestCases)  Time elapsed: 0.247 sec  <<< FAILURE!
-java.lang.StringIndexOutOfBoundsException: String index out of range: -1
-	at java.lang.String.substring(String.java:1927)
-	at twc.Regression.CustomParamValidation.CustomParamFunctions.get_wfxtg_call_value(CustomParamFunctions.java:743)
-	at twc.Regression.CustomParamValidation.CustomParamFunctions.validate_wfxtg_results(CustomParamFunctions.java:386)
-	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:314)
-	at twc.Regression.TestCases.regressionTestCases.C333242_Verify_cust_param_hzcs(regressionTestCases.java:215)
+C333207_Verify_cust_param_hmid(twc.Regression.TestCases.regressionTestCases)  Time elapsed: 4.119 sec  <<< FAILURE!
+java.lang.AssertionError: hmid Value not matched
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:211)
+	at twc.Regression.TestCases.regressionTestCases.C333207_Verify_cust_param_hmid(regressionTestCases.java:368)
 
-After_Test(twc.Regression.TestCases.regressionTestCases)  Time elapsed: 0.25 sec  <<< FAILURE!
-java.lang.AssertionError: The following asserts failed:
-expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false], expected [true] but found [false]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:38)
-	at twc.Regression.TestCases.regressionTestCases.After_Test(regressionTestCases.java:542)
+C333221_Verify_cust_param_wind(twc.Regression.TestCases.regressionTestCases)  Time elapsed: 4.124 sec  <<< FAILURE!
+java.lang.AssertionError: wind Value not matched
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:220)
+	at twc.Regression.TestCases.regressionTestCases.C333221_Verify_cust_param_wind(regressionTestCases.java:376)
 

@@ -36,7 +36,7 @@ import org.testng.Assert;
 //import com.weather.excel.Write_result;
 
 import twc.Regression.General.DeviceStatus;
-
+import twc.Regression.HandleWithAppium.AppiumFunctions;
 import twc.Regression.Driver.Drivers;
 import twc.Regression.ReadDataFromFile.read_excel_data;
 import twc.Regression.ReadDataFromFile.read_xml_data_into_buffer;
@@ -1317,40 +1317,12 @@ public class Functions extends Drivers{
 
 	public static void After_launch(){
 		try{
-			if((Ad.findElementByName("Allow")).isDisplayed()){
-				Thread.sleep(3000);
-				Ad.findElementByName("Allow").click();
-			}
+			
+        	AppiumFunctions.clickONNext();
+        	AppiumFunctions.ClickonIUnderstand();
+        	AppiumFunctions.clickOnAllow();
 		}catch(Exception e){
-			System.out.println("Location already set");
-		}
-		try{
-			if((Ad.findElementByName("OK")).isDisplayed()){
-				Ad.findElementByName("OK").click();
-			}else if((Ad.findElementByName("Continue")).isDisplayed()){
-				Ad.findElementByName("Continue").click();
-			}else if((Ad.findElementByName("Allow")).isDisplayed()){
-				Ad.findElementByName("Allow").click();
-			}
-		}catch(Exception e){
-
-		}
-
-		try{
-			Thread.sleep(3000);
-
-			if(Ad.findElementByName("Please Search For A Location").isDisplayed()){
-				System.out.println("Address not found, Entering Manually");
-				Ad.findElementByName("Search").click();
-				Ad.findElementByXPath("//android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.LinearLayout[1]/android.widget.FrameLayout[1]/android.widget.RelativeLayout[1]/android.view.ViewGroup[1]/android.support.v7.widget.LinearLayoutCompat[1]").sendKeys("30339");
-				Thread.sleep(8000);
-				Ad.tap(1, 380, 265, 1000);
-				Thread.sleep(5000);
-
-			}
-
-		}catch(Exception e){
-
+			
 		}
 
 	}
