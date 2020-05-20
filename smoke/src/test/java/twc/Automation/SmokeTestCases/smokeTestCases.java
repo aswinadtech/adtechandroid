@@ -748,7 +748,7 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 		System.out.println(
 				"=================Verifying Fatcual api call when user selecting Optinmode scenario in privacy card started =========================");
 		
-		Functions.validating_Fatualcall_privacy_Optinmode_scenarion();
+	//	Functions.validating_Fatualcall_privacy_Optinmode_scenarion();
 		System.out.println("================= Verifying Fatcual api call when user selecting Oppinmode scenario in privacy card End =========================");
 				
 	}
