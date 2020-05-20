@@ -618,7 +618,7 @@ public class regressionTestCases extends Drivers{
 			AppiumFunctions.clickOnBackArrowElement();
 			Thread.sleep(3000);
 		AppiumFunctions.SwipeUp_Counter(2);
-					Thread.sleep(6000)
+					Thread.sleep(6000);
 		//	AppiumFunctions.clickOnRadarMaps();
 			//AppiumFunctions.clickOnBackArrowElement();	
               AppiumFunctions.SwipeUp_Counter(4);					
