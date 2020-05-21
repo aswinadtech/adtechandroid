@@ -477,14 +477,14 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 
 		System.out.println(
 				"=================Verifying video Feed ad call when user selecting Optoutmode scenario in privacy card started =========================");
-		 AppFunctions.Kill_Launch_App();
+		// AppFunctions.Kill_Launch_App();
 		 
 		CharlesFunctions.startSessionBrowserData();	
 		/*Functions.click_video();
 		Functions.scrollapp_maps();
 		AppiumFunctions.clickOnRadarMaps();	*/	
 		
-			Thread.sleep(10000);
+			Thread.sleep(20000);
 		CharlesFunctions.ExportSession();
 		Functions.Verify_video_ad_call_Optoutmode_();
 		System.out.println("================= Verifying video ad call when user selecting Optoutmode scenario in privacy card End =========================");
