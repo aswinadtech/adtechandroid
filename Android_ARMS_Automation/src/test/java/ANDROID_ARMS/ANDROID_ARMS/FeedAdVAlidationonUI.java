@@ -51,9 +51,9 @@ extends Drivers
 			System.out.println("====== Validating Extended Deatail MapsPage TestCase Started =======");
 			AppFunctions.SwipeUp_Counter(1);
                         Thread.sleep(5000);
-			AppFunctions.click_Mapsdetails_element();				
+		//	AppFunctions.click_Mapsdetails_element();				
 			logStep("Checking the  Extended Deatail MapsPage ad is presnted or not");
-			AppiumFunctions.Check_submodules_Maps_ad();
+			//AppiumFunctions.Check_submodules_Maps_ad();
 			//AppFunctions.clickOnBackArrowElement();
 			System.out.println("====== Validating Extended Deatail MapsPage Ad TestCase End =======");    
 		}
