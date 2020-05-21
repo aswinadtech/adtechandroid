@@ -60,9 +60,9 @@ public class smokeTestCases extends Drivers {
 			throws Exception {
 		System.out.println("================= Verify amazon aax home screentoday preload adcall Started =========================");
 		//AppFunctions.Pull_To_Refresh("Pulltorefresh");
-		CharlesFunctions.startSessionBrowserData();
-		CharlesFunctions.ExportSession();
-		Functions. get_aaxcal_homescreen_today();		
+		//CharlesFunctions.startSessionBrowserData();
+		//CharlesFunctions.ExportSession();
+		//Functions. get_aaxcal_homescreen_today();		
      	System.out.println("================= Verify amazon aax home screentoday preload adcall End =========================");
 	}
 	@Test(priority=2,enabled = true)
@@ -70,7 +70,7 @@ public class smokeTestCases extends Drivers {
 	public void Smoke_Test_amazon_aax_rader_card_preload_adcall()
 			throws Exception {
 		System.out.println("================= Verify amazon aax radar card preload adcall Started =========================");		
-		Functions.get_aaxcal_radar();
+		//Functions.get_aaxcal_radar();
      	System.out.println("================= Verify amazon aax radar card preload adcall End =========================");
 	}
 	@Test(priority=3,enabled = true)
@@ -78,7 +78,7 @@ public class smokeTestCases extends Drivers {
 	public void Smoke_Test_amazon_aax_AQ_card_preload_adcall()
 			throws Exception {
 		System.out.println("================= Verify amazon aax AQ card preload adcall Started =========================");		
-		Functions.get_aaxcal_AirQuality();
+		//Functions.get_aaxcal_AirQuality();
      	System.out.println("================= Verify amazon aax AQ card preload adcall End =========================");
 	}
 	@Test(priority=4,enabled = true)
@@ -86,7 +86,7 @@ public class smokeTestCases extends Drivers {
 	public void Smoke_Test_amazon_aax_Hourly_preload_adcall()
 			throws Exception {
 		System.out.println("================= Verify amazon aax Hourly card preload adcall Started =========================");		
-		Functions.get_aaxcal_Hourly();
+		//Functions.get_aaxcal_Hourly();
      	System.out.println("================= Verify amazon aax Hourly card preload adcall End =========================");
 	}
 	@Test(priority=5,enabled = true)
@@ -94,7 +94,7 @@ public class smokeTestCases extends Drivers {
 	public void Smoke_Test_amazon_aax_Daily_preload_adcall()
 			throws Exception {
 		System.out.println("================= Verify amazon aax Daily card preload adcall Started =========================");		
-		Functions.get_aaxcal_Daily();
+		//Functions.get_aaxcal_Daily();
      	System.out.println("================= Verify amazon aax Daily card preload adcall End =========================");
 	}
 	
@@ -103,7 +103,7 @@ public class smokeTestCases extends Drivers {
 	public void Smoke_Test_amazon_aax_mapsdetails_preload_adcall()
 			throws Exception {
 		System.out.println("================= Verify amazon aax Maps card preload adcall Started =========================");		
-		Functions.get_aaxcal_map_details();
+		//Functions.get_aaxcal_map_details();
      	System.out.println("================= Verify amazon aax Maps card preload adcall End =========================");
 	}
 	@Test(priority=7,enabled = true)
@@ -111,7 +111,7 @@ public class smokeTestCases extends Drivers {
 	public void Smoke_Test_CaseVerify_Homescreen_ad_iu()
 			throws Exception {
 		System.out.println("================= Verifying iu value home screen hourly ad call test case  started =========================");
-		Functions.finding_Homescreen_iu_value();
+		//Functions.finding_Homescreen_iu_value();
      	System.out.println("================= Verifying iu value home screen hourly ad call test case  started End =========================");
 	}
 	@Test(priority=8,enabled = true)
@@ -119,7 +119,7 @@ public class smokeTestCases extends Drivers {
 	public void Smoke_Test_CaseVerify_WeatherFXAPI_url()
 			throws Exception {
 		System.out.println("================= Verifying WeatherFX API url started =========================");
-		Functions.validating_WeatherFXAPI();
+		//Functions.validating_WeatherFXAPI();
      	System.out.println("================= Verifying WeatherFX API url End =========================");
 	}
 	@Test(priority=9,enabled = true)
@@ -127,7 +127,7 @@ public class smokeTestCases extends Drivers {
 	public void Smoke_Test_CaseVerify_turbo_url()
 			throws Exception {
 		System.out.println("================= Verifying Turbo call  API url started =========================");
-		Functions.validating_turbocallAPI();
+		//Functions.validating_turbocallAPI();
      	System.out.println("================= Verifying Turbo call API url End =========================");
 	}
 	
@@ -136,7 +136,7 @@ public class smokeTestCases extends Drivers {
 	public void Smoke_Test_CaseVerify_adcrwdcntrlnet_url()
 			throws Exception {
 		System.out.println("================= Verifying Lotame ad.crwdcntrl.net url started =========================");
-		Functions.validating_adcrw();
+		//Functions.validating_adcrw();
      	System.out.println("================= Verifying Lotame ad.crwdcntrl.net url End =========================");
 	}
 
@@ -145,7 +145,7 @@ public class smokeTestCases extends Drivers {
 	public void Smoke_Test_CaseVerify_Homescreen_marque_ad_iu()
 			throws Exception {
 		System.out.println("================= verifying iu value for home screen marquee test case started =========================");
-		Functions.finding_Homescreen_marquee_iu_value();
+		//Functions.finding_Homescreen_marquee_iu_value();
      	System.out.println("================= verifying iu value for home screen marquee test case End =========================");
 	}
 
@@ -218,8 +218,8 @@ public class smokeTestCases extends Drivers {
 			//AppiumFunctions.click_hourly_element();
 				     
                Thread.sleep(300000);
-			CharlesFunctions.ExportSession();
-			Functions.finding_VideoCard_iu_value();	
+		//	CharlesFunctions.ExportSession();
+			//Functions.finding_VideoCard_iu_value();	
      	System.out.println("================= Verifying Video ad call testcase End =========================");
 	}
 	
@@ -228,7 +228,7 @@ public class smokeTestCases extends Drivers {
 	public void Smoke_Test_CaseVerify_Radar_Maps_feedcard_adcall()
 			throws Exception {
 		System.out.println("================= verifying iu value for Radar&Maps feed card started =========================");
-		Functions.finding_Radar_Map_feedcard_iu_value();
+	//	Functions.finding_Radar_Map_feedcard_iu_value();
      	System.out.println("================= verifying iu value for Radar&Maps feed card  End =========================");
 	}
 		
@@ -237,7 +237,7 @@ public class smokeTestCases extends Drivers {
 	public void Smoke_Test_CaseVerify_Radar_Maps_deatailscard_adcall()
 			throws Exception {
 		System.out.println("================= verifying iu value for Radar&Maps deatail card started =========================");
-		Functions.finding_Radar_Map_card_iu_value();
+	//	Functions.finding_Radar_Map_card_iu_value();
      	System.out.println("================= verifying iu value for Radar&Maps deatail card  End =========================");
 	}
 	
@@ -246,7 +246,7 @@ public class smokeTestCases extends Drivers {
 	public void Smoke_Test_CaseVerify_Today_details_page_iu()
 			throws Exception {
 		System.out.println("================= verifying iu value for Today_details_page_iu started =========================");
-		Functions.finding_Today_detail_page_iu_value();
+		//Functions.finding_Today_detail_page_iu_value();
      	System.out.println("================= verifying iu value for Today_details_page_iu End =========================");
 	}
 
@@ -265,14 +265,14 @@ public class smokeTestCases extends Drivers {
 	public void Smoke_Test_CaseVerify_Health_Activities_feed_adcall()
 			throws Exception {
 		System.out.println("================= verifying iu value Health&Activities feed card started =========================");
-		Functions.finding_H_C_adcalL_iu();
+		//Functions.finding_H_C_adcalL_iu();
      	System.out.println("================= verifying iu value Health&Activities feed card End =========================");
 	}
 	@Test(priority=18,enabled = true)
 	public void Smoke_Test_Verify_health_and_activities_Running_spotlight_adcall_iu()
 			throws Exception {
 		System.out.println("================= Verify_health_and_activities_Running_spotlight_adcall_iu Started =========================");
-		Functions. health_and_activities_Running_spotlight_adcall_iu();
+		//Functions. health_and_activities_Running_spotlight_adcall_iu();
      	System.out.println("================= Verify_health_and_activities_Running_spotlight_adcall_iu End =========================");
 	}
 	@Test(priority=19,enabled = true)
@@ -280,7 +280,7 @@ public class smokeTestCases extends Drivers {
 	public void Smoke_Test_Verify_health_and_activities_Bot_beach_detailpage_adcall_iu()
 			throws Exception {
 		System.out.println("================= Verify_health_and_activities_Bot&beach_Spotlight_adcall_iu Started =========================");
-		Functions.health_and_activities_Boat_beach_detailpage_adcall_iu();
+		//Functions.health_and_activities_Boat_beach_detailpage_adcall_iu();
      	System.out.println("================= Verify_health_and_activities_Bot&beach_Spotlight_adcall_iu End =========================");
 	}
 	@Test(priority=20,enabled = true)
@@ -288,7 +288,7 @@ public class smokeTestCases extends Drivers {
 	public void Smoke_Test_Verify_health_and_activities_Allergy_detailpage_adcall_iu()
 			throws Exception {
 		System.out.println("================= Verify_health_and_activities_Allergy_Spotlight_adcall_iu Started =========================");
-		Functions.health_and_activities_Allergy_detailpage_adcall_iu();
+		//Functions.health_and_activities_Allergy_detailpage_adcall_iu();
      	System.out.println("================= Verify_health_and_activities_Allergy_Spotlight_adcall_iu End =========================");
 	}
 	@Test(priority=21,enabled = true)
@@ -296,7 +296,7 @@ public class smokeTestCases extends Drivers {
 	public void Smoke_Test_Verify_health_and_activities_cold_flu_Spotlight_adcall_iu()
 			throws Exception {
 		System.out.println("================= Verify_health_and_activities_cold_flu_Spotlight_adcall_iu Started =========================");
-		Functions.health_and_activities_Cold_Flu_detailpage_adcall_iu();
+		//Functions.health_and_activities_Cold_Flu_detailpage_adcall_iu();
      	System.out.println("================= Verify_health_and_activities_cold_flu_Spotlight_adcall_iu End =========================");
 	}
 
@@ -306,7 +306,7 @@ public class smokeTestCases extends Drivers {
 	   public void Smoke_Test_Verify_SeasonalHub_detailpage_adcall_iu() throws Exception {
 		
 		 System.out.println("================= Verify_SH_detailpage_adcall_iu Started =========================");
-		  Functions.Verify_SH_detailpage_adcall_iu(); 
+		//  Functions.Verify_SH_detailpage_adcall_iu(); 
 		  System.out.println("================= Verify_SH_detailpage_adcall_iu End =========================");
 		 
 		  } 
@@ -316,7 +316,7 @@ public class smokeTestCases extends Drivers {
 	   public void Smoke_Test_Verify_WatsonFlu_adcall() throws Exception {
 		
 		 System.out.println("================= Verify_WatsonFlu adcall Started =========================");
-		  Functions.finding_watsonFlu_card_iu_value(); 
+		//  Functions.finding_watsonFlu_card_iu_value(); 
 		  System.out.println("================= Verify_WatsonFlu adcall End =========================");
 		 
 		  }
@@ -343,7 +343,7 @@ public class smokeTestCases extends Drivers {
 	public void Smoke_Test_Verify_amazon_aax_Running_Bigbanner_ad()
 			throws Exception {
 		System.out.println("================= verifying amazon aax slot for Running BigBanner adcall started =========================");
-		Functions.get_aaxcal_Running_Bigbanner();
+		//Functions.get_aaxcal_Running_Bigbanner();
      	System.out.println("================= verifying amazon aax slot for Running BigBanner adcall  End =========================");
 	}
 	/*@Test(priority=25,enabled = true)			
@@ -359,7 +359,7 @@ public class smokeTestCases extends Drivers {
 	public void Smoke_Test_CaseVerify_seasonalhub_feed_adcall()
 			throws Exception {
 		System.out.println("================= verifying iu value SeasonalHub feed card started =========================");
-		Functions.finding_Seasonalhub_adcalL_iu();
+		//Functions.finding_Seasonalhub_adcalL_iu();
      	System.out.println("================= verifying iu value SeasonalHub feed card End =========================");
 	}
 	/*@Test(priority=27,enabled = true)
@@ -407,7 +407,7 @@ public void Smoke_Test_Verify_News_hurricane_detail_adcall_iu()
 	public void Smoke_Test_Verify_daily_card_adcall_iu()
 			throws Exception {
 		System.out.println("================= Verifyig daily adcall_iu Started =========================");
-		Functions. Verify_dailycard_iu();
+		//Functions. Verify_dailycard_iu();
      	System.out.println("================= Verify_daily_card_adcall_iu End =========================");
 	}
 
@@ -416,7 +416,7 @@ public void Smoke_Test_Verify_News_hurricane_detail_adcall_iu()
 public void Smoke_Test_CaseVerify_AQ_aax_amazon_adcalll()
 		throws Exception {
 	System.out.println("================= Verifying amazon AQ aax call  started =========================");
-	Functions.get_aaxcal_AQ();
+	//Functions.get_aaxcal_AQ();
  	System.out.println("================= Verifying amazon AQ aax call End =========================");
 }
 	
@@ -425,7 +425,7 @@ public void Smoke_Test_CaseVerify_AQ_aax_amazon_adcalll()
 public void Smoke_Test_CaseVerify_news_aax_amazon_adcalll()
 		throws Exception {
 	System.out.println("================= Verifying amazon news aax call  started =========================");
-	Functions.get_aaxcal_news();
+	//Functions.get_aaxcal_news();
  	System.out.println("================= Verifying amazon news aax call End =========================");
 }
 
@@ -435,7 +435,7 @@ public void Smoke_Test_CaseVerify_news_aax_amazon_adcalll()
 public void Smoke_Test_Verify_hourly_detailpage_adcall_iu()
 		throws Exception {
 	System.out.println("================= Verify_hourly_detailpage_adcall_iu Started =========================");
-	Functions.Verify_hourly_detailpage_adcall_iu();
+	//Functions.Verify_hourly_detailpage_adcall_iu();
  	System.out.println("================= Verify_hourly_detailpage_adcall_iu End =========================");	
  	}
 /*@Test(priority=34,enabled = true)
