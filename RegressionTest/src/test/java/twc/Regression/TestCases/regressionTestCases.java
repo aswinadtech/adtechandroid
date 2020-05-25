@@ -612,7 +612,7 @@ public class regressionTestCases extends Drivers{
 		// AppiumFunctions.LaunchApp();
 	   AppiumFunctions.LaunchAppWithFullReset();
 	    //Thread.sleep(30000);
-	    CustomParamFunctions.get_fhic_floc_value();
+	   // CustomParamFunctions.get_fhic_floc_value();
       //   AppiumFunctions.SwipeUp_Counter(1);	
 		// AppiumFunctions.clickOnVideoElement();
 		//	AppiumFunctions.clickOnBackArrowElement();
