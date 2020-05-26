@@ -311,6 +311,16 @@ public class Custom_Parameters_Verification extends Drivers{
 											Assert.fail("wfxtg Value not matched");
 										}
 									}
+									else if(ParamType.equals("cfxtg") && custParam.equals("cfxtg")){
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
+										Param_val = CustomParamFunctions.validate_wfxtg_results("cfxtg",feed);
+									//	System.out.println("Param_val "+Param_val);
+										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
+											logStep(custParam+" should not be null");
+											logStep(custParam+" can be nl");
+											Assert.fail("cfxtg Value not matched");
+										}
+									}
 									else if(ParamType.equals("zcs") && custParam.equals("zcs")){
 										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_wfxtg_results("zcs",feed);
@@ -503,7 +513,7 @@ public class Custom_Parameters_Verification extends Drivers{
 									}*/
 									
 									else if(ParamType.equals("adid") && custParam.equals("adid")){
-										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                  "  +/custParam+/");
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                  custParam);
 										Param_val = CustomParamFunctions.validate_not_null_results("adid",feed);
 										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 									//	if(!Param_val.equals("Pass") && feed == feedcount){
@@ -513,7 +523,7 @@ public class Custom_Parameters_Verification extends Drivers{
 										}
 									}
 									else if(ParamType.equals("ord") && custParam.equals("ord")){
-										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                  "  +/custParam+/");
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                  custParam);
 										Param_val = CustomParamFunctions.validate_not_null_results("ord",feed);
 										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
@@ -522,7 +532,7 @@ public class Custom_Parameters_Verification extends Drivers{
 										}
 									}
 									else if(ParamType.equals("a") && custParam.equals("a")){
-										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                  "  +/custParam+/");
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                   custParam);
 										Param_val = CustomParamFunctions.validate_not_null_results("a",feed);
 										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
@@ -595,7 +605,8 @@ public class Custom_Parameters_Verification extends Drivers{
 									}
 									else if(ParamType.equals("dynght") && custParam.equals("dynght")){
 										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
-										Param_val = CustomParamFunctions.validate_not_null_results("dynght",feed);
+									Param_val = CustomParamFunctions.validate_not_null_results("dynght",feed);
+										//Param_val = CustomParamFunctions.validate_results("dynght",feed);
 										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
@@ -687,6 +698,28 @@ public class Custom_Parameters_Verification extends Drivers{
 		String pubad_val =null;
 		Map<String, String> pubads_call_results = Functions.read_Video_Pub_Ad_Call_Data("VideoPubAds");
 		pubad_val =pubads_call_results.get(custParam);
+		logStep("navigate to video module");
+		logStep("Tap On Video");
+		logStep("Verify video preRoll pub Ad call is being made in charles");
+		if(!pubad_val.isEmpty()){
+			logStep("Verified Video PubAd "+custParam+" Data : "+pubad_val+" Value Presented As Expected");
+			System.out.println("Video PubAd "+custParam+" Data : "+pubad_val);
+			result="Pass";
+			System.out.println("Result "+result);
+		}
+		return result;
+	}
+	
+	
+	public static String verify_video_request(String custParam) throws Exception{
+		String required_info=null;
+		String required_info1=null;
+		String result = null;
+		String pubad_val =null;
+		Map<String, String> pubads_call_results = Functions.read_Video_Pub_Ad_Call_request("VideoPubAds_request");
+		
+		pubad_val =pubads_call_results.get(custParam);
+	
 		logStep("navigate to video module");
 		logStep("Tap On Video");
 		logStep("Verify video preRoll pub Ad call is being made in charles");

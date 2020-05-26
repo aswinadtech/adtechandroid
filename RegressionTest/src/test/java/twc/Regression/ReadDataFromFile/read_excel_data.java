@@ -70,7 +70,7 @@ public static String[][] exceldataread(String Type) throws Exception {
 			HSSFCell cell = row.getCell(j);
 			String value = cell.toString();//Cell_To_String.celltostring(cell);
 			data[i][j] = value;
-			//System.out.println("Values are :" + value + " : data[" + i + "][" + j + "]");
+		//	System.out.println("Values are :" + value + " : data[" + i + "][" + j + "]");
 		    }
 		}
 	return data;
@@ -87,7 +87,7 @@ public static String[][] exceldataread(String Type) throws Exception {
 			int ResultColumn_n2=8+Getresult1;
 
 			write_excel_data cleardata=new write_excel_data();
-			for(int testcase=1;testcase<=50;testcase++)
+			for(int testcase=1;testcase<=55;testcase++)
 			{
 				cleardata.enterResult("SMOKE", "n", "n", testcase, ResultColumn_n1, ResultColumn_n2);
 

@@ -4,79 +4,84 @@
     "total" : {
       "statistic" : {
         "total" : 32,
-        "passed" : 23,
+        "passed" : 19,
         "pending" : 0,
         "canceled" : 0,
-        "failed" : 9,
-        "broken" : 0
+        "failed" : 10,
+        "broken" : 3
       },
       "time" : {
-        "start" : 1589984840878,
-        "stop" : 1589984943465,
-        "duration" : 102587
+        "start" : 1590513990071,
+        "stop" : 1590514133993,
+        "duration" : 143922
       }
     },
     "defects" : {
-      "totalCount" : 9,
+      "totalCount" : 12,
       "items" : [ {
         "count" : 1,
-        "uid" : "e5bea83cc4638ccc",
-        "message" : "AssertionError: aid Value not matched",
-        "status" : "FAILED"
-      }, {
-        "count" : 1,
-        "uid" : "f77086ff7f8632f6",
-        "message" : "AssertionError: st Value not matched",
-        "status" : "FAILED"
-      }, {
-        "count" : 1,
-        "uid" : "e8b3d27cb352b96f",
-        "message" : "AssertionError: adid Value not matched",
-        "status" : "FAILED"
-      }, {
-        "count" : 1,
-        "uid" : "206b244eef402290",
-        "message" : "AssertionError: dynght Value not matched",
-        "status" : "FAILED"
-      }, {
-        "count" : 1,
-        "uid" : "4fc1ceb2f345f8ca",
-        "message" : "AssertionError: tmp Value not matched",
-        "status" : "FAILED"
-      }, {
-        "count" : 1,
-        "uid" : "258a1f17a09daba0",
-        "message" : "AssertionError: tmpr Value not matched",
-        "status" : "FAILED"
-      }, {
-        "count" : 1,
-        "uid" : "857a642bb1a331ca",
+        "uid" : "a146397adbeb7474",
         "message" : "AssertionError: cnd Value not matched",
         "status" : "FAILED"
       }, {
         "count" : 1,
-        "uid" : "c32bae888433b038",
-        "message" : "AssertionError: hmid Value not matched",
+        "uid" : "afc2bc10ad5ff609",
+        "message" : "AssertionError: adid Value not matched",
         "status" : "FAILED"
       }, {
         "count" : 1,
-        "uid" : "815218320a9958de",
-        "message" : "AssertionError: wind Value not matched",
+        "uid" : "775d2112e7ad2f48",
+        "message" : "AssertionError: aid Value not matched",
+        "status" : "FAILED"
+      }, {
+        "count" : 1,
+        "uid" : "87f86bf6c57e3142",
+        "message" : "AssertionError: rmid Value not matched",
+        "status" : "FAILED"
+      }, {
+        "count" : 1,
+        "uid" : "879096c094608497",
+        "message" : "AssertionError: fhic Value not matched",
+        "status" : "FAILED"
+      }, {
+        "count" : 1,
+        "uid" : "535bd23558015dc0",
+        "message" : "AssertionError: floc Value not matched",
+        "status" : "FAILED"
+      }, {
+        "count" : 1,
+        "uid" : "1288f91399939a5d",
+        "message" : "AssertionError: tmp Value not matched",
+        "status" : "FAILED"
+      }, {
+        "count" : 1,
+        "uid" : "f513c1b64b0262d7",
+        "message" : "AssertionError: tmpr Value not matched",
+        "status" : "FAILED"
+      }, {
+        "count" : 1,
+        "uid" : "df38b3c913b88",
+        "message" : "AssertionError: tmpc Value not matched",
+        "status" : "FAILED"
+      }, {
+        "count" : 1,
+        "uid" : "bed5d91f6cb93a0b",
+        "message" : "AssertionError: hlzip Value not matched",
         "status" : "FAILED"
       } ]
     },
     "xunit" : {
       "totalCount" : 1,
       "items" : [ {
-        "uid" : "6389a0dd56d7f14d",
+        "uid" : "138976ceb7006b19",
         "title" : "Suite : Test",
         "statistic" : {
           "total" : 32,
-          "passed" : 23,
+          "passed" : 19,
           "pending" : 0,
           "canceled" : 0,
-          "failed" : 9,
-          "broken" : 0
+          "failed" : 10,
+          "broken" : 3
         }
       } ]
     },
@@ -86,11 +91,11 @@
         "title" : "Without feature",
         "statistic" : {
           "total" : 32,
-          "passed" : 23,
+          "passed" : 19,
           "pending" : 0,
           "canceled" : 0,
-          "failed" : 9,
-          "broken" : 0
+          "failed" : 10,
+          "broken" : 3
         }
       } ]
     },

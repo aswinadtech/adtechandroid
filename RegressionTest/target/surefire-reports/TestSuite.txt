@@ -1,58 +1,87 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 32, Failures: 9, Errors: 0, Skipped: 0, Time elapsed: 537.692 sec <<< FAILURE!
-C333213_Verify_cust_param_aid(twc.Regression.TestCases.regressionTestCases)  Time elapsed: 4.768 sec  <<< FAILURE!
-java.lang.AssertionError: aid Value not matched
-	at org.testng.Assert.fail(Assert.java:94)
-	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:482)
-	at twc.Regression.TestCases.regressionTestCases.C333213_Verify_cust_param_aid(regressionTestCases.java:159)
-
-C333226_Verify_cust_param_st(twc.Regression.TestCases.regressionTestCases)  Time elapsed: 3.136 sec  <<< FAILURE!
-java.lang.AssertionError: st Value not matched
-	at org.testng.Assert.fail(Assert.java:94)
-	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:292)
-	at twc.Regression.TestCases.regressionTestCases.C333226_Verify_cust_param_st(regressionTestCases.java:233)
-
-C333213_Verify_cust_param_adid(twc.Regression.TestCases.regressionTestCases)  Time elapsed: 3.626 sec  <<< FAILURE!
-java.lang.AssertionError: adid Value not matched
-	at org.testng.Assert.fail(Assert.java:94)
-	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:512)
-	at twc.Regression.TestCases.regressionTestCases.C333213_Verify_cust_param_adid(regressionTestCases.java:242)
-
-C628160_Verify_Parameter_DyNght(twc.Regression.TestCases.regressionTestCases)  Time elapsed: 3.057 sec  <<< FAILURE!
-java.lang.AssertionError: dynght Value not matched
-	at org.testng.Assert.fail(Assert.java:94)
-	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:602)
-	at twc.Regression.TestCases.regressionTestCases.C628160_Verify_Parameter_DyNght(regressionTestCases.java:486)
-
-C333208_Verify_cust_param_tmp(twc.Regression.TestCases.regressionTestCases)  Time elapsed: 4.744 sec  <<< FAILURE!
-java.lang.AssertionError: tmp Value not matched
-	at org.testng.Assert.fail(Assert.java:94)
-	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:169)
-	at twc.Regression.TestCases.regressionTestCases.C333208_Verify_cust_param_tmp(regressionTestCases.java:344)
-
-C333217_Verify_cust_param_tmpr(twc.Regression.TestCases.regressionTestCases)  Time elapsed: 4.336 sec  <<< FAILURE!
-java.lang.AssertionError: tmpr Value not matched
-	at org.testng.Assert.fail(Assert.java:94)
-	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:178)
-	at twc.Regression.TestCases.regressionTestCases.C333217_Verify_cust_param_tmpr(regressionTestCases.java:351)
-
-C333216_Verify_cust_param_cnd(twc.Regression.TestCases.regressionTestCases)  Time elapsed: 4.499 sec  <<< FAILURE!
+Tests run: 32, Failures: 13, Errors: 0, Skipped: 0, Time elapsed: 146.298 sec <<< FAILURE!
+C333216_Verify_cust_param_cnd(twc.Regression.TestCases.regressionTestCases)  Time elapsed: 10.336 sec  <<< FAILURE!
 java.lang.AssertionError: cnd Value not matched
 	at org.testng.Assert.fail(Assert.java:94)
 	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:192)
-	at twc.Regression.TestCases.regressionTestCases.C333216_Verify_cust_param_cnd(regressionTestCases.java:359)
+	at twc.Regression.TestCases.regressionTestCases.C333216_Verify_cust_param_cnd(regressionTestCases.java:176)
 
-C333207_Verify_cust_param_hmid(twc.Regression.TestCases.regressionTestCases)  Time elapsed: 4.119 sec  <<< FAILURE!
-java.lang.AssertionError: hmid Value not matched
+C333213_Verify_cust_param_adid(twc.Regression.TestCases.regressionTestCases)  Time elapsed: 5.108 sec  <<< FAILURE!
+java.lang.AssertionError: adid Value not matched
 	at org.testng.Assert.fail(Assert.java:94)
-	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:211)
-	at twc.Regression.TestCases.regressionTestCases.C333207_Verify_cust_param_hmid(regressionTestCases.java:368)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:522)
+	at twc.Regression.TestCases.regressionTestCases.C333213_Verify_cust_param_adid(regressionTestCases.java:87)
 
-C333221_Verify_cust_param_wind(twc.Regression.TestCases.regressionTestCases)  Time elapsed: 4.124 sec  <<< FAILURE!
-java.lang.AssertionError: wind Value not matched
+C333213_Verify_cust_param_aid(twc.Regression.TestCases.regressionTestCases)  Time elapsed: 4.72 sec  <<< FAILURE!
+java.lang.AssertionError: aid Value not matched
 	at org.testng.Assert.fail(Assert.java:94)
-	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:220)
-	at twc.Regression.TestCases.regressionTestCases.C333221_Verify_cust_param_wind(regressionTestCases.java:376)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:492)
+	at twc.Regression.TestCases.regressionTestCases.C333213_Verify_cust_param_aid(regressionTestCases.java:96)
+
+C333204_Verify_cust_param_rmid(twc.Regression.TestCases.regressionTestCases)  Time elapsed: 4.914 sec  <<< FAILURE!
+java.lang.AssertionError: rmid Value not matched
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:585)
+	at twc.Regression.TestCases.regressionTestCases.C333204_Verify_cust_param_rmid(regressionTestCases.java:123)
+
+C628160_Verify_Parameter_DyNght(twc.Regression.TestCases.regressionTestCases)  Time elapsed: 1.004 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at twc.Regression.CustomParamValidation.validate_CustomParameter.validate_Custom_Parameter(validate_CustomParameter.java:27)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.validate_results(CustomParamFunctions.java:73)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:609)
+	at twc.Regression.TestCases.regressionTestCases.C628160_Verify_Parameter_DyNght(regressionTestCases.java:203)
+
+C333232_Verify_cust_param_fhic(twc.Regression.TestCases.regressionTestCases)  Time elapsed: 7.811 sec  <<< FAILURE!
+java.lang.AssertionError: fhic Value not matched
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:631)
+	at twc.Regression.TestCases.regressionTestCases.C333232_Verify_cust_param_fhic(regressionTestCases.java:220)
+
+C333238_Verify_cust_param_floc(twc.Regression.TestCases.regressionTestCases)  Time elapsed: 8.146 sec  <<< FAILURE!
+java.lang.AssertionError: floc Value not matched
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:641)
+	at twc.Regression.TestCases.regressionTestCases.C333238_Verify_cust_param_floc(regressionTestCases.java:227)
+
+C333208_Verify_cust_param_tmp(twc.Regression.TestCases.regressionTestCases)  Time elapsed: 8.232 sec  <<< FAILURE!
+java.lang.AssertionError: tmp Value not matched
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:169)
+	at twc.Regression.TestCases.regressionTestCases.C333208_Verify_cust_param_tmp(regressionTestCases.java:235)
+
+C333217_Verify_cust_param_tmpr(twc.Regression.TestCases.regressionTestCases)  Time elapsed: 9.292 sec  <<< FAILURE!
+java.lang.AssertionError: tmpr Value not matched
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:178)
+	at twc.Regression.TestCases.regressionTestCases.C333217_Verify_cust_param_tmpr(regressionTestCases.java:242)
+
+C333239_Verify_cust_param_tmpc(twc.Regression.TestCases.regressionTestCases)  Time elapsed: 8.779 sec  <<< FAILURE!
+java.lang.AssertionError: tmpc Value not matched
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:247)
+	at twc.Regression.TestCases.regressionTestCases.C333239_Verify_cust_param_tmpc(regressionTestCases.java:251)
+
+C333214_Verify_cust_param_hlzip(twc.Regression.TestCases.regressionTestCases)  Time elapsed: 5.753 sec  <<< FAILURE!
+java.lang.AssertionError: hlzip Value not matched
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:393)
+	at twc.Regression.TestCases.regressionTestCases.C333214_Verify_cust_param_hlzip(regressionTestCases.java:286)
+
+C333211_Verify_cust_param_locale(twc.Regression.TestCases.regressionTestCases)  Time elapsed: 0.681 sec  <<< FAILURE!
+Unexpected token RIGHT SQUARE(]) at position 11065.
+	at org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.get_dsxcms_call_value(CustomParamFunctions.java:945)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.validate_dsxcms_results(CustomParamFunctions.java:296)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:380)
+	at twc.Regression.TestCases.regressionTestCases.C333211_Verify_cust_param_locale(regressionTestCases.java:350)
+
+C333223_Verify_cust_param_sev(twc.Regression.TestCases.regressionTestCases)  Time elapsed: 0.613 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.validate_results(CustomParamFunctions.java:46)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:646)
+	at twc.Regression.TestCases.regressionTestCases.C333223_Verify_cust_param_sev(regressionTestCases.java:360)
 

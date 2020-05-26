@@ -1,0 +1,119 @@
+{
+  "uid" : "b397a52069a22355",
+  "name" : "C344258_Verify_Video_Url_Parameter_ttid",
+  "title" : "Verify custom parameter ttid",
+  "time" : {
+    "start" : 1590514001010,
+    "stop" : 1590514001931,
+    "duration" : 921
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 4
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "138976ceb7006b19",
+    "name" : "Suite : Test",
+    "title" : "Suite : Test"
+  },
+  "steps" : [ {
+    "name" : "logStep[navigate to video module]",
+    "title" : "navigate to video module",
+    "time" : {
+      "start" : 1590514001930,
+      "stop" : 1590514001930,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Tap On Video]",
+    "title" : "Tap On Video",
+    "time" : {
+      "start" : 1590514001930,
+      "stop" : 1590514001930,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verify video preRoll pub Ad call is being made in charles]",
+    "title" : "Verify video preRoll pub Ad call is being made in charles",
+    "time" : {
+      "start" : 1590514001930,
+      "stop" : 1590514001930,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verified Video PubAd ttid Data : 6d8be0a4-aa3e-4e40-826f-05e3e51e6168 Value Presented As Expected]",
+    "title" : "Verified Video PubAd ttid Data : 6d8be0a4-aa3e-4e40-826f-05e3e51e6168 Value Presented As Expected",
+    "time" : {
+      "start" : 1590514001930,
+      "stop" : 1590514001930,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "testSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "testMethod",
+    "value" : "C344258_Verify_Video_Url_Parameter_ttid"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "testGroup",
+    "value" : "Test"
+  }, {
+    "name" : "testClass",
+    "value" : "twc.Regression.TestCases.regressionTestCases"
+  }, {
+    "name" : "suite-name",
+    "value" : "Suite : Test"
+  }, {
+    "name" : "thread",
+    "value" : "3756@Aswinikumars-MacBook-Pro.local.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "host",
+    "value" : "Aswinikumars-MacBook-Pro.local"
+  }, {
+    "name" : "suite-title",
+    "value" : "Suite : Test"
+  } ],
+  "parameters" : [ ]
+}

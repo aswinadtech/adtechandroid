@@ -563,6 +563,8 @@ public class validate_CustomParameter extends Drivers {
         			
     			}
     			else {
+    				System.out.println("Actual Value ::"+ actualVal);
+    				logStep("Actual Value ::"+ actualVal);
     				System.out.println("Values are  not  matched");
         			logStep("Values are  not matched");
         			validateVal = "Fail";
@@ -594,12 +596,17 @@ public class validate_CustomParameter extends Drivers {
         		//	System.out.println("Result "+validateVal);
         		//	logStep("Result "+validateVal);
     			}
+        	}
     			else {
+    				System.out.println("Expected Value ::"+convert_val_string);
+        			System.out.println("Actual Value ::"+ actualVal);
+        			logStep("Expected Value ::"+ convert_val_string);			
+        			logStep("PubAd Value ::"+ actualVal);
     				System.out.println("Values are  not  matched");
         			logStep("Values are  not matched");
         			validateVal = "Fail";
     			}
-    			}
+    			
     			
         	}
         /*	if(data[2][3].contains(actualVal)) {
@@ -627,11 +634,16 @@ public class validate_CustomParameter extends Drivers {
         		//	System.out.println("Result "+validateVal);
         			//logStep("Result "+validateVal);
     			}
+        	}
     			else {
+    				System.out.println("Expected Value ::"+convert_val_string);
+        			System.out.println("Actual Value ::"+ actualVal);
+        			logStep("Expected Value ::"+ convert_val_string);			
+        			logStep("PubAd Value ::"+ actualVal);
     				System.out.println("Values are  not  matched");
         			logStep("Values are  not matched");
         			validateVal = "Fail";
-    			}
+    			
         	}
         /*	if(data[3][3].contains(actualVal)) {
 			System.out.println("Expected Value ::"+convert_val_string);

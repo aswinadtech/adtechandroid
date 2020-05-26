@@ -609,11 +609,12 @@ public static void killADB() throws IOException, Exception{
 		System.out.println("clicking maps element");
 		logStep("clicking maps element");
 		try {
-		Ad.findElementById("com.weather.Weather:id/details_button").click();
+		Ad.findElementById("com.weather.Weather:id/frameTime").click();
 		Thread.sleep(2000);		
 		}
 		catch(Exception e) {
-			Ad.findElementById("com.weather.Weather:id/radar_map_image").click();
+			Ad.tap(1, 272,1157, 2000);
+			//Ad.findElementById("com.weather.Weather:id/radar_map_image").click();
 			Thread.sleep(2000);
 		}
 	}	
@@ -849,4 +850,39 @@ public static void killADB() throws IOException, Exception{
 			AppiumFunctions.click_daily_element();
 	        Thread.sleep(10000);
 	}
+	
+	public static void closeInterstailads() throws Exception {
+		
+		  System.out.println("close the interstial ad on screen");
+			try {
+				if(Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[1]/android.view.View/android.view.View/android.view.View/android.view.View[3]").isDisplayed())
+				{
+					Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[1]/android.view.View/android.view.View/android.view.View/android.view.View[3]").click();
+				}}
+				catch(Exception e1) {
+					try {
+						if(Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[1]/android.view.View/android.view.View/android.view.View/android.view.View[8]/android.view.View").isDisplayed())
+						{
+							Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[1]/android.view.View/android.view.View/android.view.View/android.view.View[8]/android.view.View").click();
+						}}
+					catch(Exception e2) {
+						try {
+							if(Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[1]/android.view.View/android.view.View/android.view.View/android.view.View[8]/android.view.View/android.view.View").isDisplayed())
+							{
+								Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[1]/android.view.View/android.view.View/android.view.View/android.view.View[8]/android.view.View/android.view.View").click();
+							}}
+						catch(Exception e3) {
+							try {
+								if(Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View[5]/android.view.View").isDisplayed())
+								{
+									Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View[5]/android.view.View").click();
+								}}
+							catch(Exception e5) {
+								System.out.println("Intersitial ad was not dispalyed on the screen");
+							}
+						}
+					
+					}
+					}
+}
 }

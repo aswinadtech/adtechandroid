@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="32" failures="9" name="TestSuite" time="537.684" errors="0" skipped="0">
+<testsuite tests="32" failures="13" name="TestSuite" time="146.292" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib"/>
@@ -21,7 +21,7 @@
     <property name="basedir" value="/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Regression"/>
     <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre/lib/endorsed"/>
     <property name="os.arch" value="x86_64"/>
-    <property name="surefire.real.class.path" value="/var/folders/sq/6ytcx3fj2yd8dmgrjt1_jjm80000gn/T/surefirebooter137074144659712658.jar:/Users/aswinikumar/.m2/repository/org/aspectj/aspectjweaver/1.8.13/aspectjweaver-1.8.13.jar"/>
+    <property name="surefire.real.class.path" value="/var/folders/sq/6ytcx3fj2yd8dmgrjt1_jjm80000gn/T/surefirebooter7520207850014712857.jar:/Users/aswinikumar/.m2/repository/org/aspectj/aspectjweaver/1.8.13/aspectjweaver-1.8.13.jar"/>
     <property name="java.io.tmpdir" value="/var/folders/sq/6ytcx3fj2yd8dmgrjt1_jjm80000gn/T/"/>
     <property name="line.separator" value="
 "/>
@@ -45,7 +45,7 @@
     <property name="java.vm.specification.version" value="1.8"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home/jre"/>
-    <property name="sun.java.command" value="/var/folders/sq/6ytcx3fj2yd8dmgrjt1_jjm80000gn/T/surefirebooter137074144659712658.jar /var/folders/sq/6ytcx3fj2yd8dmgrjt1_jjm80000gn/T/surefire7216523204080382700tmp /var/folders/sq/6ytcx3fj2yd8dmgrjt1_jjm80000gn/T/surefire3330286585197896454tmp"/>
+    <property name="sun.java.command" value="/var/folders/sq/6ytcx3fj2yd8dmgrjt1_jjm80000gn/T/surefirebooter7520207850014712857.jar /var/folders/sq/6ytcx3fj2yd8dmgrjt1_jjm80000gn/T/surefire2373974113214556070tmp /var/folders/sq/6ytcx3fj2yd8dmgrjt1_jjm80000gn/T/surefire1599005264772431906tmp"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="user.language" value="en"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -63,139 +63,95 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333213_Verify_cust_param_aid" time="4.759">
-    <failure message="aid Value not matched" type="java.lang.AssertionError">java.lang.AssertionError: aid Value not matched
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333216_Verify_cust_param_cnd" time="10.328">
+    <failure message="cnd Value not matched" type="java.lang.AssertionError">java.lang.AssertionError: cnd Value not matched
 	at org.testng.Assert.fail(Assert.java:94)
-	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:482)
-	at twc.Regression.TestCases.regressionTestCases.C333213_Verify_cust_param_aid(regressionTestCases.java:159)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:192)
+	at twc.Regression.TestCases.regressionTestCases.C333216_Verify_cust_param_cnd(regressionTestCases.java:176)
 </failure>
-    <system-out>No Data Found in XML File
-Deleted all the files in the specified folder
-Cleared Session
-Deleted all the files in the specified folder
-/Users/aswinikumar/Documents/adsandroid-automation-master/Android_Regression/CapturedSessionFile
-app : /Users/aswinikumar/Documents/adsandroid-automation-master/Android_Regression/APKFile/The_Weather_Channel_ReleaseDEBUG (3).apk
-Capabilities have been launched  with fullreset 
-No active alerts
-Alert found
-clicking video element
-clicking maps element
-clicking today element
-clicking hourly deatils
-clicking hourly deatils
-clicking daily deatils
-Exporting The Session Data Into XML File
-Exported Session
-================= Custom Parameter Aid Verfication Started =========================
-XML File Name is : charles202005201957.chlsx
+    <system-out>XML File Name is : 10.13 latest.chlsx
+================= Custom Parameter Cnd Verfication Started =========================
+XML File Name is : 10.13 latest.chlsx
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly
-PubAd aid Data : nl
+turbo call Value :: 26
+pubAd call Value :: nl
+Values are not matched
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fmarquee
-PubAd aid Data : nl
+turbo call Value :: 26
+pubAd call Value :: nl
+Values are not matched
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fradar
-PubAd aid Data : nl
+turbo call Value :: 26
+pubAd call Value :: nl
+Values are not matched
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Flifestyle
-PubAd aid Data : nl
+turbo call Value :: 26
+pubAd call Value :: nl
+Values are not matched
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fseason
-PubAd aid Data : nl
+turbo call Value :: 26
+pubAd call Value :: nl
+Values are not matched
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Faq
-PubAd aid Data : nl
+turbo call Value :: 26
+pubAd call Value :: nl
+Values are not matched
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps
-PubAd aid Data : nl
+turbo call Value :: 26
+pubAd call Value :: nl
+Values are not matched
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Ftoday
-PubAd aid Data : nl
+turbo call Value :: 26
+pubAd call Value :: nl
+Values are not matched
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly
-PubAd aid Data : nl
+turbo call Value :: 26
+pubAd call Value :: nl
+Values are not matched
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day
-PubAd aid Data : nl
+turbo call Value :: 26
+pubAd call Value :: nl
+Values are not matched
 Result Fail
 </system-out>
     <system-err>SLF4J: Failed to load class &quot;org.slf4j.impl.StaticLoggerBinder&quot;.
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-log4j:WARN No appenders could be found for logger (org.apache.http.client.protocol.RequestAddCookies).
-log4j:WARN Please initialize the log4j system properly.
-log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
 </system-err>
   </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333200_Verify_cust_param_ord" time="3.777"/>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C658716_Verify_cust_param_tf" time="1.902"/>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333219_Verify_cust_param_ver" time="3.073"/>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333226_Verify_cust_param_st" time="3.136">
-    <failure message="st Value not matched" type="java.lang.AssertionError">java.lang.AssertionError: st Value not matched
-	at org.testng.Assert.fail(Assert.java:94)
-	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:292)
-	at twc.Regression.TestCases.regressionTestCases.C333226_Verify_cust_param_st(regressionTestCases.java:233)
-</failure>
-    <system-out>================= Custom Parameter St Verfication Started =========================
-XML File Name is : charles202005201957.chlsx
-Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly
-PubAd st Data : nl
-Result Fail
-Values are not matched
-Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fmarquee
-PubAd st Data : nl
-Result Fail
-Values are not matched
-Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fradar
-PubAd st Data : nl
-Result Fail
-Values are not matched
-Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Flifestyle
-PubAd st Data : nl
-Result Fail
-Values are not matched
-Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fseason
-PubAd st Data : nl
-Result Fail
-Values are not matched
-Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Faq
-PubAd st Data : nl
-Result Fail
-Values are not matched
-Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps
-PubAd st Data : nl
-Result Fail
-Values are not matched
-Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Ftoday
-PubAd st Data : nl
-Result Fail
-Values are not matched
-Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly
-PubAd st Data : nl
-Result Fail
-Values are not matched
-Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day
-PubAd st Data : nl
-Result Fail
-</system-out>
-  </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333213_Verify_cust_param_adid" time="3.626">
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C344257_Verify_Video_Url_Parameter_cmsid" time="0.848"/>
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C344258_Verify_Video_Url_Parameter_ttid" time="0.921"/>
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C344260_Verify_Video_Url_Parameter_lnid" time="0.835"/>
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C344259_Verify_Video_Url_Parameter_vid" time="0.809"/>
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C344261_Verify_Video_Url_Parameter_iu" time="0.845"/>
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C344261_Verify_DescriptionURL_Video" time="0.625"/>
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C344261_Verify_ContentURL_Video" time="0.662"/>
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333213_Verify_cust_param_adid" time="5.107">
     <failure message="adid Value not matched" type="java.lang.AssertionError">java.lang.AssertionError: adid Value not matched
 	at org.testng.Assert.fail(Assert.java:94)
-	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:512)
-	at twc.Regression.TestCases.regressionTestCases.C333213_Verify_cust_param_adid(regressionTestCases.java:242)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:522)
+	at twc.Regression.TestCases.regressionTestCases.C333213_Verify_cust_param_adid(regressionTestCases.java:87)
 </failure>
     <system-out>================= Custom Parameter adid Verfication Started =========================
-XML File Name is : charles202005201957.chlsx
+XML File Name is : 10.13 latest.chlsx
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly
 PubAd adid Data : nl
 Result Fail
@@ -237,418 +193,626 @@ PubAd adid Data : nl
 Result Fail
 </system-out>
   </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333228_Verify_cust_param_wfxtg" time="3.7"/>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C658712_Verify_cust_param_plat1" time="3.072"/>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C658711_Verify_cust_param_lang" time="3.365"/>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333218_Verify_cust_param_pos" time="3.291"/>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333205_Verify_cust_param_tile" time="3.01"/>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C344257_Verify_Video_Url_Parameter_cmsid" time="0.489"/>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C344258_Verify_Video_Url_Parameter_ttid" time="0.515"/>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C344260_Verify_Video_Url_Parameter_lnid" time="0.516"/>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C344259_Verify_Video_Url_Parameter_vid" time="0.516"/>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C344261_Verify_Video_Url_Parameter_iu" time="0.518"/>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C628160_Verify_Parameter_DyNght" time="3.057">
-    <failure message="dynght Value not matched" type="java.lang.AssertionError">java.lang.AssertionError: dynght Value not matched
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333213_Verify_cust_param_aid" time="4.72">
+    <failure message="aid Value not matched" type="java.lang.AssertionError">java.lang.AssertionError: aid Value not matched
 	at org.testng.Assert.fail(Assert.java:94)
-	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:602)
-	at twc.Regression.TestCases.regressionTestCases.C628160_Verify_Parameter_DyNght(regressionTestCases.java:486)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:492)
+	at twc.Regression.TestCases.regressionTestCases.C333213_Verify_cust_param_aid(regressionTestCases.java:96)
+</failure>
+    <system-out>================= Custom Parameter Aid Verfication Started =========================
+XML File Name is : 10.13 latest.chlsx
+Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly
+PubAd aid Data : nl
+Result Fail
+Values are not matched
+Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fmarquee
+PubAd aid Data : nl
+Result Fail
+Values are not matched
+Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fradar
+PubAd aid Data : nl
+Result Fail
+Values are not matched
+Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Flifestyle
+PubAd aid Data : nl
+Result Fail
+Values are not matched
+Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fseason
+PubAd aid Data : nl
+Result Fail
+Values are not matched
+Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Faq
+PubAd aid Data : nl
+Result Fail
+Values are not matched
+Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps
+PubAd aid Data : nl
+Result Fail
+Values are not matched
+Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Ftoday
+PubAd aid Data : nl
+Result Fail
+Values are not matched
+Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly
+PubAd aid Data : nl
+Result Fail
+Values are not matched
+Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day
+PubAd aid Data : nl
+Result Fail
+</system-out>
+  </testcase>
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333219_Verify_cust_param_st" time="4.932"/>
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333200_Verify_cust_param_ord" time="5.042"/>
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333204_Verify_cust_param_rmid" time="4.914">
+    <failure message="rmid Value not matched" type="java.lang.AssertionError">java.lang.AssertionError: rmid Value not matched
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:585)
+	at twc.Regression.TestCases.regressionTestCases.C333204_Verify_cust_param_rmid(regressionTestCases.java:123)
+</failure>
+    <system-out>================= Custom Parameter Rmid Verfication Started =========================
+XML File Name is : 10.13 latest.chlsx
+Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly
+PubAd rmid Data : nl
+Result Fail
+Values are not matched
+Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fmarquee
+PubAd rmid Data : nl
+Result Fail
+Values are not matched
+Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fradar
+PubAd rmid Data : nl
+Result Fail
+Values are not matched
+Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Flifestyle
+PubAd rmid Data : nl
+Result Fail
+Values are not matched
+Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fseason
+PubAd rmid Data : nl
+Result Fail
+Values are not matched
+Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Faq
+PubAd rmid Data : nl
+Result Fail
+Values are not matched
+Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps
+PubAd rmid Data : nl
+Result Fail
+Values are not matched
+Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Ftoday
+PubAd rmid Data : nl
+Result Fail
+Values are not matched
+Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly
+PubAd rmid Data : nl
+Result Fail
+Values are not matched
+Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day
+PubAd rmid Data : nl
+Result Fail
+</system-out>
+  </testcase>
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333219_Verify_cust_param_ver" time="4.949"/>
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C658711_Verify_cust_param_lang" time="4.774"/>
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C658712_Verify_cust_param_plat" time="4.848"/>
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333218_Verify_cust_param_pos" time="4.758"/>
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333205_Verify_cust_param_tile" time="5.026"/>
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333212_Verify_cust_param_ct" time="5.494"/>
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333203_Verify_cust_param_dma" time="5.53"/>
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C628160_Verify_Parameter_DyNght" time="1.003">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Regression.CustomParamValidation.validate_CustomParameter.validate_Custom_Parameter(validate_CustomParameter.java:27)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.validate_results(CustomParamFunctions.java:73)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:609)
+	at twc.Regression.TestCases.regressionTestCases.C628160_Verify_Parameter_DyNght(regressionTestCases.java:203)
 </failure>
     <system-out>================= Custom Parameter DayNight Verfication Started =========================
-XML File Name is : charles202005201957.chlsx
+XML File Name is : 10.13 latest.chlsx
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly
-PubAd dynght Data : nl
+</system-out>
+  </testcase>
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333209_Verify_cust_param_cc" time="5.69"/>
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333232_Verify_cust_param_fhic" time="7.81">
+    <failure message="fhic Value not matched" type="java.lang.AssertionError">java.lang.AssertionError: fhic Value not matched
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:631)
+	at twc.Regression.TestCases.regressionTestCases.C333232_Verify_cust_param_fhic(regressionTestCases.java:220)
+</failure>
+    <system-out>================= Custom Parameter Fhic Verfication Started =========================
+XML File Name is : 10.13 latest.chlsx
+Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly
+Turbo call Value ::83
+double value is::28.0
+Expected Value ::28
+Actual Value ::nl
+Values are  not  matched
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fmarquee
-PubAd dynght Data : nl
+Turbo call Value ::83
+double value is::28.0
+Expected Value ::28
+Actual Value ::nl
+Values are  not  matched
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fradar
-PubAd dynght Data : nl
+Turbo call Value ::83
+double value is::28.0
+Expected Value ::28
+Actual Value ::nl
+Values are  not  matched
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Flifestyle
-PubAd dynght Data : nl
+Turbo call Value ::83
+double value is::28.0
+Expected Value ::28
+Actual Value ::nl
+Values are  not  matched
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fseason
-PubAd dynght Data : nl
+Turbo call Value ::83
+double value is::28.0
+Expected Value ::28
+Actual Value ::nl
+Values are  not  matched
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Faq
-PubAd dynght Data : nl
+Turbo call Value ::83
+double value is::28.0
+Expected Value ::28
+Actual Value ::nl
+Values are  not  matched
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps
-PubAd dynght Data : nl
+Turbo call Value ::83
+double value is::28.0
+Expected Value ::28
+Actual Value ::nl
+Values are  not  matched
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Ftoday
-PubAd dynght Data : nl
+Turbo call Value ::83
+double value is::28.0
+Expected Value ::28
+Actual Value ::nl
+Values are  not  matched
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly
-PubAd dynght Data : nl
+Turbo call Value ::83
+double value is::28.0
+Expected Value ::28
+Actual Value ::nl
+Values are  not  matched
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day
-PubAd dynght Data : nl
+Turbo call Value ::83
+double value is::28.0
+Expected Value ::28
+Actual Value ::nl
+Values are  not  matched
 Result Fail
 </system-out>
   </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333208_Verify_cust_param_tmp" time="4.744">
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333238_Verify_cust_param_floc" time="8.146">
+    <failure message="floc Value not matched" type="java.lang.AssertionError">java.lang.AssertionError: floc Value not matched
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:641)
+	at twc.Regression.TestCases.regressionTestCases.C333238_Verify_cust_param_floc(regressionTestCases.java:227)
+</failure>
+    <system-out>================= Custom Parameter Floc Verfication Started =========================
+XML File Name is : 10.13 latest.chlsx
+Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly
+Turbo call Value ::68
+double value is::20.0
+Expected Value ::20
+Actual Value ::nl
+Values are  not  matched
+Result Fail
+Values are not matched
+Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fmarquee
+Turbo call Value ::68
+double value is::20.0
+Expected Value ::20
+Actual Value ::nl
+Values are  not  matched
+Result Fail
+Values are not matched
+Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fradar
+Turbo call Value ::68
+double value is::20.0
+Expected Value ::20
+Actual Value ::nl
+Values are  not  matched
+Result Fail
+Values are not matched
+Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Flifestyle
+Turbo call Value ::68
+double value is::20.0
+Expected Value ::20
+Actual Value ::nl
+Values are  not  matched
+Result Fail
+Values are not matched
+Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fseason
+Turbo call Value ::68
+double value is::20.0
+Expected Value ::20
+Actual Value ::nl
+Values are  not  matched
+Result Fail
+Values are not matched
+Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Faq
+Turbo call Value ::68
+double value is::20.0
+Expected Value ::20
+Actual Value ::nl
+Values are  not  matched
+Result Fail
+Values are not matched
+Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps
+Turbo call Value ::68
+double value is::20.0
+Expected Value ::20
+Actual Value ::nl
+Values are  not  matched
+Result Fail
+Values are not matched
+Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Ftoday
+Turbo call Value ::68
+double value is::20.0
+Expected Value ::20
+Actual Value ::nl
+Values are  not  matched
+Result Fail
+Values are not matched
+Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly
+Turbo call Value ::68
+double value is::20.0
+Expected Value ::20
+Actual Value ::nl
+Values are  not  matched
+Result Fail
+Values are not matched
+Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day
+Turbo call Value ::68
+double value is::20.0
+Expected Value ::20
+Actual Value ::nl
+Values are  not  matched
+Result Fail
+</system-out>
+  </testcase>
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333208_Verify_cust_param_tmp" time="8.231">
     <failure message="tmp Value not matched" type="java.lang.AssertionError">java.lang.AssertionError: tmp Value not matched
 	at org.testng.Assert.fail(Assert.java:94)
 	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:169)
-	at twc.Regression.TestCases.regressionTestCases.C333208_Verify_cust_param_tmp(regressionTestCases.java:344)
+	at twc.Regression.TestCases.regressionTestCases.C333208_Verify_cust_param_tmp(regressionTestCases.java:235)
 </failure>
     <system-out>================= Custom Parameter Tmp Verfication Started =========================
-XML File Name is : charles202005201957.chlsx
+XML File Name is : 10.13 latest.chlsx
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly
-turbo call Value :: 96
+turbo call Value :: 69
 pubAd call Value :: nl
 Values are not matched
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fmarquee
-turbo call Value :: 96
+turbo call Value :: 69
 pubAd call Value :: nl
 Values are not matched
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fradar
-turbo call Value :: 96
+turbo call Value :: 69
 pubAd call Value :: nl
 Values are not matched
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Flifestyle
-turbo call Value :: 96
+turbo call Value :: 69
 pubAd call Value :: nl
 Values are not matched
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fseason
-turbo call Value :: 96
+turbo call Value :: 69
 pubAd call Value :: nl
 Values are not matched
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Faq
-turbo call Value :: 96
+turbo call Value :: 69
 pubAd call Value :: nl
 Values are not matched
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps
-turbo call Value :: 96
+turbo call Value :: 69
 pubAd call Value :: nl
 Values are not matched
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Ftoday
-turbo call Value :: 96
+turbo call Value :: 69
 pubAd call Value :: nl
 Values are not matched
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly
-turbo call Value :: 96
+turbo call Value :: 69
 pubAd call Value :: nl
 Values are not matched
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day
-turbo call Value :: 96
+turbo call Value :: 69
 pubAd call Value :: nl
 Values are not matched
 Result Fail
 </system-out>
   </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333217_Verify_cust_param_tmpr" time="4.335">
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333217_Verify_cust_param_tmpr" time="9.292">
     <failure message="tmpr Value not matched" type="java.lang.AssertionError">java.lang.AssertionError: tmpr Value not matched
 	at org.testng.Assert.fail(Assert.java:94)
 	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:178)
-	at twc.Regression.TestCases.regressionTestCases.C333217_Verify_cust_param_tmpr(regressionTestCases.java:351)
+	at twc.Regression.TestCases.regressionTestCases.C333217_Verify_cust_param_tmpr(regressionTestCases.java:242)
 </failure>
     <system-out>================= Custom Parameter Tmpr Verfication Started =========================
-XML File Name is : charles202005201957.chlsx
+XML File Name is : 10.13 latest.chlsx
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly
-turbo call Value :: 96
+turbo call Value :: 69
 pubAd call Value :: nl
 Values are not matched
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fmarquee
-turbo call Value :: 96
+turbo call Value :: 69
 pubAd call Value :: nl
 Values are not matched
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fradar
-turbo call Value :: 96
+turbo call Value :: 69
 pubAd call Value :: nl
 Values are not matched
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Flifestyle
-turbo call Value :: 96
+turbo call Value :: 69
 pubAd call Value :: nl
 Values are not matched
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fseason
-turbo call Value :: 96
+turbo call Value :: 69
 pubAd call Value :: nl
 Values are not matched
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Faq
-turbo call Value :: 96
+turbo call Value :: 69
 pubAd call Value :: nl
 Values are not matched
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps
-turbo call Value :: 96
+turbo call Value :: 69
 pubAd call Value :: nl
 Values are not matched
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Ftoday
-turbo call Value :: 96
+turbo call Value :: 69
 pubAd call Value :: nl
 Values are not matched
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly
-turbo call Value :: 96
+turbo call Value :: 69
 pubAd call Value :: nl
 Values are not matched
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day
-turbo call Value :: 96
+turbo call Value :: 69
 pubAd call Value :: nl
 Values are not matched
 Result Fail
 </system-out>
   </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333216_Verify_cust_param_cnd" time="4.499">
-    <failure message="cnd Value not matched" type="java.lang.AssertionError">java.lang.AssertionError: cnd Value not matched
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333239_Verify_cust_param_tmpc" time="8.779">
+    <failure message="tmpc Value not matched" type="java.lang.AssertionError">java.lang.AssertionError: tmpc Value not matched
 	at org.testng.Assert.fail(Assert.java:94)
-	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:192)
-	at twc.Regression.TestCases.regressionTestCases.C333216_Verify_cust_param_cnd(regressionTestCases.java:359)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:247)
+	at twc.Regression.TestCases.regressionTestCases.C333239_Verify_cust_param_tmpc(regressionTestCases.java:251)
 </failure>
-    <system-out>================= Custom Parameter Cnd Verfication Started =========================
-XML File Name is : charles202005201957.chlsx
+    <system-out>================= Custom Parameter Tmpc Verfication Started =========================
+XML File Name is : 10.13 latest.chlsx
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly
-turbo call Value :: 27
-pubAd call Value :: nl
-Values are not matched
+Turbo call Value ::69
+double value is::21.0
+Expected Value ::21
+Actual Value ::nl
+Values are  not  matched
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fmarquee
-turbo call Value :: 27
-pubAd call Value :: nl
-Values are not matched
+Turbo call Value ::69
+double value is::21.0
+Expected Value ::21
+Actual Value ::nl
+Values are  not  matched
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fradar
-turbo call Value :: 27
-pubAd call Value :: nl
-Values are not matched
+Turbo call Value ::69
+double value is::21.0
+Expected Value ::21
+Actual Value ::nl
+Values are  not  matched
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Flifestyle
-turbo call Value :: 27
-pubAd call Value :: nl
-Values are not matched
+Turbo call Value ::69
+double value is::21.0
+Expected Value ::21
+Actual Value ::nl
+Values are  not  matched
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fseason
-turbo call Value :: 27
-pubAd call Value :: nl
-Values are not matched
+Turbo call Value ::69
+double value is::21.0
+Expected Value ::21
+Actual Value ::nl
+Values are  not  matched
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Faq
-turbo call Value :: 27
-pubAd call Value :: nl
-Values are not matched
+Turbo call Value ::69
+double value is::21.0
+Expected Value ::21
+Actual Value ::nl
+Values are  not  matched
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps
-turbo call Value :: 27
-pubAd call Value :: nl
-Values are not matched
+Turbo call Value ::69
+double value is::21.0
+Expected Value ::21
+Actual Value ::nl
+Values are  not  matched
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Ftoday
-turbo call Value :: 27
-pubAd call Value :: nl
-Values are not matched
+Turbo call Value ::69
+double value is::21.0
+Expected Value ::21
+Actual Value ::nl
+Values are  not  matched
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly
-turbo call Value :: 27
-pubAd call Value :: nl
-Values are not matched
+Turbo call Value ::69
+double value is::21.0
+Expected Value ::21
+Actual Value ::nl
+Values are  not  matched
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day
-turbo call Value :: 27
-pubAd call Value :: nl
-Values are not matched
+Turbo call Value ::69
+double value is::21.0
+Expected Value ::21
+Actual Value ::nl
+Values are  not  matched
 Result Fail
 </system-out>
   </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333207_Verify_cust_param_hmid" time="4.119">
-    <failure message="hmid Value not matched" type="java.lang.AssertionError">java.lang.AssertionError: hmid Value not matched
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333202_Verify_cust_param_zip" time="6.509"/>
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333228_Verify_cust_param_wfxtg" time="5.671"/>
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333214_Verify_cust_param_hlzip" time="5.753">
+    <failure message="hlzip Value not matched" type="java.lang.AssertionError">java.lang.AssertionError: hlzip Value not matched
 	at org.testng.Assert.fail(Assert.java:94)
-	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:211)
-	at twc.Regression.TestCases.regressionTestCases.C333207_Verify_cust_param_hmid(regressionTestCases.java:368)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:393)
+	at twc.Regression.TestCases.regressionTestCases.C333214_Verify_cust_param_hlzip(regressionTestCases.java:286)
 </failure>
-    <system-out>================= Custom Parameter Hmid Verfication Started =========================
-XML File Name is : charles202005201957.chlsx
+    <system-out>================= Custom Parameter Hlzip Verfication Started =========================
+XML File Name is : 10.13 latest.chlsx
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly
-Turbo Value ::24
-PubAd Value ::nl
-Values are not matched
+reading wfxg api call
+PubAd hlzip Data : nl
+WFXTG Call hlzip Data : 30303
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fmarquee
-Turbo Value ::24
-PubAd Value ::nl
-Values are not matched
+reading wfxg api call
+PubAd hlzip Data : nl
+WFXTG Call hlzip Data : 30303
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fradar
-Turbo Value ::24
-PubAd Value ::nl
-Values are not matched
+reading wfxg api call
+PubAd hlzip Data : nl
+WFXTG Call hlzip Data : 30303
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Flifestyle
-Turbo Value ::24
-PubAd Value ::nl
-Values are not matched
+reading wfxg api call
+PubAd hlzip Data : nl
+WFXTG Call hlzip Data : 30303
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fseason
-Turbo Value ::24
-PubAd Value ::nl
-Values are not matched
+reading wfxg api call
+PubAd hlzip Data : nl
+WFXTG Call hlzip Data : 30303
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Faq
-Turbo Value ::24
-PubAd Value ::nl
-Values are not matched
+reading wfxg api call
+PubAd hlzip Data : nl
+WFXTG Call hlzip Data : 30303
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps
-Turbo Value ::24
-PubAd Value ::nl
-Values are not matched
+reading wfxg api call
+PubAd hlzip Data : nl
+WFXTG Call hlzip Data : 30303
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Ftoday
-Turbo Value ::24
-PubAd Value ::nl
-Values are not matched
+reading wfxg api call
+PubAd hlzip Data : nl
+WFXTG Call hlzip Data : 30303
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly
-Turbo Value ::24
-PubAd Value ::nl
-Values are not matched
+reading wfxg api call
+PubAd hlzip Data : nl
+WFXTG Call hlzip Data : 30303
 Result Fail
 Values are not matched
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day
-Turbo Value ::24
-PubAd Value ::nl
-Values are not matched
+reading wfxg api call
+PubAd hlzip Data : nl
+WFXTG Call hlzip Data : 30303
 Result Fail
 </system-out>
   </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333221_Verify_cust_param_wind" time="4.124">
-    <failure message="wind Value not matched" type="java.lang.AssertionError">java.lang.AssertionError: wind Value not matched
-	at org.testng.Assert.fail(Assert.java:94)
-	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:220)
-	at twc.Regression.TestCases.regressionTestCases.C333221_Verify_cust_param_wind(regressionTestCases.java:376)
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333211_Verify_cust_param_locale" time="0.681">
+    <failure type="Unexpected">Unexpected token RIGHT SQUARE(]) at position 11065.
+	at org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.get_dsxcms_call_value(CustomParamFunctions.java:945)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.validate_dsxcms_results(CustomParamFunctions.java:296)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:380)
+	at twc.Regression.TestCases.regressionTestCases.C333211_Verify_cust_param_locale(regressionTestCases.java:350)
 </failure>
-    <system-out>================= Custom Parameter Wind Verfication Started =========================
-XML File Name is : charles202005201957.chlsx
+    <system-out>================= Custom Parameter Locale Verfication Started =========================
+XML File Name is : 10.13 latest.chlsx
 Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly
-Turbo call Value ::6
-PubAd Value ::nl
-Values are not matched
-Result Fail
-Values are not matched
-Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fmarquee
-Turbo call Value ::6
-PubAd Value ::nl
-Values are not matched
-Result Fail
-Values are not matched
-Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fradar
-Turbo call Value ::6
-PubAd Value ::nl
-Values are not matched
-Result Fail
-Values are not matched
-Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Flifestyle
-Turbo call Value ::6
-PubAd Value ::nl
-Values are not matched
-Result Fail
-Values are not matched
-Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fseason
-Turbo call Value ::6
-PubAd Value ::nl
-Values are not matched
-Result Fail
-Values are not matched
-Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Faq
-Turbo call Value ::6
-PubAd Value ::nl
-Values are not matched
-Result Fail
-Values are not matched
-Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps
-Turbo call Value ::6
-PubAd Value ::nl
-Values are not matched
-Result Fail
-Values are not matched
-Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Ftoday
-Turbo call Value ::6
-PubAd Value ::nl
-Values are not matched
-Result Fail
-Values are not matched
-Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly
-Turbo call Value ::6
-PubAd Value ::nl
-Values are not matched
-Result Fail
-Values are not matched
-Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day
-Turbo call Value ::6
-PubAd Value ::nl
-Values are not matched
-Result Fail
 </system-out>
   </testcase>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333224_Verify_cust_param_uv" time="4.084"/>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333232_Verify_cust_param_fltmpc" time="4.299"/>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333239_Verify_cust_param_tmpc" time="4.406"/>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333202_Verify_cust_param_zip" time="3.876"/>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333203_Verify_cust_param_dma" time="3.534"/>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333209_Verify_cust_param_cc" time="3.388"/>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333212_Verify_cust_param_ct" time="3.462"/>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333232_Verify_cust_param_fhic" time="3.914"/>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333238_Verify_cust_param_floc" time="4.397"/>
-  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333223_Verify_cust_param_sev" time="3.267"/>
+  <testcase classname="twc.Regression.TestCases.regressionTestCases" name="C333223_Verify_cust_param_sev" time="0.613">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.validate_results(CustomParamFunctions.java:46)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:646)
+	at twc.Regression.TestCases.regressionTestCases.C333223_Verify_cust_param_sev(regressionTestCases.java:360)
+</failure>
+    <system-out>================= Custom Parameter Sev Verfication Started =========================
+XML File Name is : 10.13 latest.chlsx
+Ad name : iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly
+</system-out>
+  </testcase>
 </testsuite>

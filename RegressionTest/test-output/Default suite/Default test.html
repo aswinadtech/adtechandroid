@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>33/15/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>18/21/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed May 20 19:05:34 IST 2020</td>
+<td>Started on:</td><td>Tue May 26 18:55:59 IST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>705 seconds (705239 ms)</td>
+<tr><td>Total time:</td><td>106 seconds (106547 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,11 +75,13 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='twc.Regression.TestCases.regressionTestCases.C333204_Verify_cust_param_rmid()'><b>C333204_Verify_cust_param_rmid</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
-<td><div><pre>java.lang.AssertionError: rmid Value not matched
-	at org.testng.Assert.fail(Assert.java:94)
-	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:575)
-	at twc.Regression.TestCases.regressionTestCases.C333204_Verify_cust_param_rmid(regressionTestCases.java:210)
+<td title='twc.Regression.TestCases.regressionTestCases.C333202_Verify_cust_param_zip()'><b>C333202_Verify_cust_param_zip</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
+<td><div><pre>java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(String.java:1960)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.get_dsx_call_value1(CustomParamFunctions.java:828)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.validate_dsx_results(CustomParamFunctions.java:329)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:261)
+	at twc.Regression.TestCases.regressionTestCases.C333202_Verify_cust_param_zip(regressionTestCases.java:259)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -104,11 +106,141 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace404825976", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace404825976'><pre>java.lang.AssertionError: rmid Value not matched
+</pre></div><a href='#' onClick='toggleBox("stack-trace1169606246", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1169606246'><pre>java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(String.java:1960)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.get_dsx_call_value1(CustomParamFunctions.java:828)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.validate_dsx_results(CustomParamFunctions.java:329)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:261)
+	at twc.Regression.TestCases.regressionTestCases.C333202_Verify_cust_param_zip(regressionTestCases.java:259)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>twc.Regression.TestCases.regressionTestCases@17d76ebb</td></tr>
+<tr>
+<td title='twc.Regression.TestCases.regressionTestCases.C333203_Verify_cust_param_dma()'><b>C333203_Verify_cust_param_dma</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
+<td><div><pre>java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(String.java:1960)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.get_dsx_call_value1(CustomParamFunctions.java:828)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.validate_dsx_results(CustomParamFunctions.java:329)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:252)
+	at twc.Regression.TestCases.regressionTestCases.C333203_Verify_cust_param_dma(regressionTestCases.java:194)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1655630081", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1655630081'><pre>java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(String.java:1960)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.get_dsx_call_value1(CustomParamFunctions.java:828)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.validate_dsx_results(CustomParamFunctions.java:329)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:252)
+	at twc.Regression.TestCases.regressionTestCases.C333203_Verify_cust_param_dma(regressionTestCases.java:194)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>twc.Regression.TestCases.regressionTestCases@17d76ebb</td></tr>
+<tr>
+<td title='twc.Regression.TestCases.regressionTestCases.C333204_Verify_cust_param_rmid()'><b>C333204_Verify_cust_param_rmid</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
+<td><div><pre>java.lang.AssertionError: rmid Value not matched
 	at org.testng.Assert.fail(Assert.java:94)
-	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:575)
-	at twc.Regression.TestCases.regressionTestCases.C333204_Verify_cust_param_rmid(regressionTestCases.java:210)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:585)
+	at twc.Regression.TestCases.regressionTestCases.C333204_Verify_cust_param_rmid(regressionTestCases.java:123)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1483270801", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1483270801'><pre>java.lang.AssertionError: rmid Value not matched
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:585)
+	at twc.Regression.TestCases.regressionTestCases.C333204_Verify_cust_param_rmid(regressionTestCases.java:123)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -135,13 +267,13 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>3</td>
-<td>twc.Regression.TestCases.regressionTestCases@7ff09659</td></tr>
+<td>twc.Regression.TestCases.regressionTestCases@17d76ebb</td></tr>
 <tr>
-<td title='twc.Regression.TestCases.regressionTestCases.C333210_Verify_cust_param_vw()'><b>C333210_Verify_cust_param_vw</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
-<td><div><pre>java.lang.AssertionError: vw Value not matched
+<td title='twc.Regression.TestCases.regressionTestCases.C333208_Verify_cust_param_tmp()'><b>C333208_Verify_cust_param_tmp</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
+<td><div><pre>java.lang.AssertionError: tmp Value not matched
 	at org.testng.Assert.fail(Assert.java:94)
-	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:473)
-	at twc.Regression.TestCases.regressionTestCases.C333210_Verify_cust_param_vw(regressionTestCases.java:151)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:169)
+	at twc.Regression.TestCases.regressionTestCases.C333208_Verify_cust_param_tmp(regressionTestCases.java:235)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -166,11 +298,399 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1955183780", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1955183780'><pre>java.lang.AssertionError: vw Value not matched
+</pre></div><a href='#' onClick='toggleBox("stack-trace1284634047", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1284634047'><pre>java.lang.AssertionError: tmp Value not matched
 	at org.testng.Assert.fail(Assert.java:94)
-	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:473)
-	at twc.Regression.TestCases.regressionTestCases.C333210_Verify_cust_param_vw(regressionTestCases.java:151)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:169)
+	at twc.Regression.TestCases.regressionTestCases.C333208_Verify_cust_param_tmp(regressionTestCases.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>6</td>
+<td>twc.Regression.TestCases.regressionTestCases@17d76ebb</td></tr>
+<tr>
+<td title='twc.Regression.TestCases.regressionTestCases.C333209_Verify_cust_param_cc()'><b>C333209_Verify_cust_param_cc</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
+<td><div><pre>java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(String.java:1960)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.get_dsx_call_value1(CustomParamFunctions.java:828)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.validate_dsx_results(CustomParamFunctions.java:329)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:297)
+	at twc.Regression.TestCases.regressionTestCases.C333209_Verify_cust_param_cc(regressionTestCases.java:211)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace689218344", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace689218344'><pre>java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(String.java:1960)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.get_dsx_call_value1(CustomParamFunctions.java:828)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.validate_dsx_results(CustomParamFunctions.java:329)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:297)
+	at twc.Regression.TestCases.regressionTestCases.C333209_Verify_cust_param_cc(regressionTestCases.java:211)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>twc.Regression.TestCases.regressionTestCases@17d76ebb</td></tr>
+<tr>
+<td title='twc.Regression.TestCases.regressionTestCases.C333211_Verify_cust_param_locale()'><b>C333211_Verify_cust_param_locale</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
+<td><div><pre>Unexpected token RIGHT SQUARE(]) at position 11065.
+	at org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.get_dsxcms_call_value(CustomParamFunctions.java:945)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.validate_dsxcms_results(CustomParamFunctions.java:296)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:380)
+	at twc.Regression.TestCases.regressionTestCases.C333211_Verify_cust_param_locale(regressionTestCases.java:350)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace713961699", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace713961699'><pre>Unexpected token RIGHT SQUARE(]) at position 11065.
+	at org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at org.json.simple.parser.JSONParser.parse(Unknown Source)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.get_dsxcms_call_value(CustomParamFunctions.java:945)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.validate_dsxcms_results(CustomParamFunctions.java:296)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:380)
+	at twc.Regression.TestCases.regressionTestCases.C333211_Verify_cust_param_locale(regressionTestCases.java:350)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>twc.Regression.TestCases.regressionTestCases@17d76ebb</td></tr>
+<tr>
+<td title='twc.Regression.TestCases.regressionTestCases.C333212_Verify_cust_param_ct()'><b>C333212_Verify_cust_param_ct</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
+<td><div><pre>java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(String.java:1960)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.get_dsx_call_value1(CustomParamFunctions.java:828)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.validate_dsx_results(CustomParamFunctions.java:329)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:278)
+	at twc.Regression.TestCases.regressionTestCases.C333212_Verify_cust_param_ct(regressionTestCases.java:186)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace832578794", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace832578794'><pre>java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(String.java:1960)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.get_dsx_call_value1(CustomParamFunctions.java:828)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.validate_dsx_results(CustomParamFunctions.java:329)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:278)
+	at twc.Regression.TestCases.regressionTestCases.C333212_Verify_cust_param_ct(regressionTestCases.java:186)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>twc.Regression.TestCases.regressionTestCases@17d76ebb</td></tr>
+<tr>
+<td title='twc.Regression.TestCases.regressionTestCases.C333213_Verify_cust_param_adid()'><b>C333213_Verify_cust_param_adid</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
+<td><div><pre>java.lang.AssertionError: adid Value not matched
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:522)
+	at twc.Regression.TestCases.regressionTestCases.C333213_Verify_cust_param_adid(regressionTestCases.java:87)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1911222122", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1911222122'><pre>java.lang.AssertionError: adid Value not matched
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:522)
+	at twc.Regression.TestCases.regressionTestCases.C333213_Verify_cust_param_adid(regressionTestCases.java:87)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>3</td>
+<td>twc.Regression.TestCases.regressionTestCases@17d76ebb</td></tr>
+<tr>
+<td title='twc.Regression.TestCases.regressionTestCases.C333213_Verify_cust_param_aid()'><b>C333213_Verify_cust_param_aid</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
+<td><div><pre>java.lang.AssertionError: aid Value not matched
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:492)
+	at twc.Regression.TestCases.regressionTestCases.C333213_Verify_cust_param_aid(regressionTestCases.java:96)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1974317504", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1974317504'><pre>java.lang.AssertionError: aid Value not matched
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:492)
+	at twc.Regression.TestCases.regressionTestCases.C333213_Verify_cust_param_aid(regressionTestCases.java:96)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>3</td>
+<td>twc.Regression.TestCases.regressionTestCases@17d76ebb</td></tr>
+<tr>
+<td title='twc.Regression.TestCases.regressionTestCases.C333214_Verify_cust_param_hlzip()'><b>C333214_Verify_cust_param_hlzip</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
+<td><div><pre>java.lang.AssertionError: hlzip Value not matched
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:393)
+	at twc.Regression.TestCases.regressionTestCases.C333214_Verify_cust_param_hlzip(regressionTestCases.java:286)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace169710187", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace169710187'><pre>java.lang.AssertionError: hlzip Value not matched
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:393)
+	at twc.Regression.TestCases.regressionTestCases.C333214_Verify_cust_param_hlzip(regressionTestCases.java:286)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -197,17 +717,13 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>4</td>
-<td>twc.Regression.TestCases.regressionTestCases@7ff09659</td></tr>
+<td>twc.Regression.TestCases.regressionTestCases@17d76ebb</td></tr>
 <tr>
-<td title='twc.Regression.TestCases.regressionTestCases.C333211_Verify_cust_param_locale()'><b>C333211_Verify_cust_param_locale</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
-<td><div><pre>Unexpected token RIGHT SQUARE(]) at position 11065.
-	at org.json.simple.parser.JSONParser.parse(Unknown Source)
-	at org.json.simple.parser.JSONParser.parse(Unknown Source)
-	at org.json.simple.parser.JSONParser.parse(Unknown Source)
-	at twc.Regression.CustomParamValidation.CustomParamFunctions.get_dsxcms_call_value(CustomParamFunctions.java:942)
-	at twc.Regression.CustomParamValidation.CustomParamFunctions.validate_dsxcms_results(CustomParamFunctions.java:296)
-	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:370)
-	at twc.Regression.TestCases.regressionTestCases.C333211_Verify_cust_param_locale(regressionTestCases.java:465)
+<td title='twc.Regression.TestCases.regressionTestCases.C333216_Verify_cust_param_cnd()'><b>C333216_Verify_cust_param_cnd</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
+<td><div><pre>java.lang.AssertionError: cnd Value not matched
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:192)
+	at twc.Regression.TestCases.regressionTestCases.C333216_Verify_cust_param_cnd(regressionTestCases.java:176)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -232,15 +748,11 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1040336487", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1040336487'><pre>Unexpected token RIGHT SQUARE(]) at position 11065.
-	at org.json.simple.parser.JSONParser.parse(Unknown Source)
-	at org.json.simple.parser.JSONParser.parse(Unknown Source)
-	at org.json.simple.parser.JSONParser.parse(Unknown Source)
-	at twc.Regression.CustomParamValidation.CustomParamFunctions.get_dsxcms_call_value(CustomParamFunctions.java:942)
-	at twc.Regression.CustomParamValidation.CustomParamFunctions.validate_dsxcms_results(CustomParamFunctions.java:296)
-	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:370)
-	at twc.Regression.TestCases.regressionTestCases.C333211_Verify_cust_param_locale(regressionTestCases.java:465)
+</pre></div><a href='#' onClick='toggleBox("stack-trace382329720", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace382329720'><pre>java.lang.AssertionError: cnd Value not matched
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:192)
+	at twc.Regression.TestCases.regressionTestCases.C333216_Verify_cust_param_cnd(regressionTestCases.java:176)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -266,13 +778,76 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>twc.Regression.TestCases.regressionTestCases@7ff09659</td></tr>
+<td>8</td>
+<td>twc.Regression.TestCases.regressionTestCases@17d76ebb</td></tr>
 <tr>
-<td title='twc.Regression.TestCases.regressionTestCases.C333214_Verify_cust_param_hlzip()'><b>C333214_Verify_cust_param_hlzip</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
+<td title='twc.Regression.TestCases.regressionTestCases.C333217_Verify_cust_param_tmpr()'><b>C333217_Verify_cust_param_tmpr</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
+<td><div><pre>java.lang.AssertionError: tmpr Value not matched
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:178)
+	at twc.Regression.TestCases.regressionTestCases.C333217_Verify_cust_param_tmpr(regressionTestCases.java:242)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1338136300", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1338136300'><pre>java.lang.AssertionError: tmpr Value not matched
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:178)
+	at twc.Regression.TestCases.regressionTestCases.C333217_Verify_cust_param_tmpr(regressionTestCases.java:242)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>5</td>
+<td>twc.Regression.TestCases.regressionTestCases@17d76ebb</td></tr>
+<tr>
+<td title='twc.Regression.TestCases.regressionTestCases.C333223_Verify_cust_param_sev()'><b>C333223_Verify_cust_param_sev</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
 <td><div><pre>java.lang.NullPointerException
-	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:380)
-	at twc.Regression.TestCases.regressionTestCases.C333214_Verify_cust_param_hlzip(regressionTestCases.java:71)
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.validate_results(CustomParamFunctions.java:46)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:645)
+	at twc.Regression.TestCases.regressionTestCases.C333223_Verify_cust_param_sev(regressionTestCases.java:360)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -297,10 +872,11 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace686691212", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace686691212'><pre>java.lang.NullPointerException
-	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:380)
-	at twc.Regression.TestCases.regressionTestCases.C333214_Verify_cust_param_hlzip(regressionTestCases.java:71)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1289035342", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1289035342'><pre>java.lang.NullPointerException
+	at twc.Regression.CustomParamValidation.CustomParamFunctions.validate_results(CustomParamFunctions.java:46)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:645)
+	at twc.Regression.TestCases.regressionTestCases.C333223_Verify_cust_param_sev(regressionTestCases.java:360)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -327,199 +903,13 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>twc.Regression.TestCases.regressionTestCases@7ff09659</td></tr>
-<tr>
-<td title='twc.Regression.TestCases.regressionTestCases.C333215_Verify_cust_param_ftl()'><b>C333215_Verify_cust_param_ftl</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
-<td><div><pre>java.lang.AssertionError: ftl Value not matched
-	at org.testng.Assert.fail(Assert.java:94)
-	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:425)
-	at twc.Regression.TestCases.regressionTestCases.C333215_Verify_cust_param_ftl(regressionTestCases.java:268)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:771)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
-	at org.testng.TestNG.run(TestNG.java:1032)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1103590745", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1103590745'><pre>java.lang.AssertionError: ftl Value not matched
-	at org.testng.Assert.fail(Assert.java:94)
-	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:425)
-	at twc.Regression.TestCases.regressionTestCases.C333215_Verify_cust_param_ftl(regressionTestCases.java:268)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:771)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
-	at org.testng.TestNG.run(TestNG.java:1032)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>3</td>
-<td>twc.Regression.TestCases.regressionTestCases@7ff09659</td></tr>
-<tr>
-<td title='twc.Regression.TestCases.regressionTestCases.C333225_Verify_cust_param_layer()'><b>C333225_Verify_cust_param_layer</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
-<td><div><pre>java.lang.AssertionError: layer Value not matched
-	at org.testng.Assert.fail(Assert.java:94)
-	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:566)
-	at twc.Regression.TestCases.regressionTestCases.C333225_Verify_cust_param_layer(regressionTestCases.java:203)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:771)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
-	at org.testng.TestNG.run(TestNG.java:1032)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1529429193", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1529429193'><pre>java.lang.AssertionError: layer Value not matched
-	at org.testng.Assert.fail(Assert.java:94)
-	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:566)
-	at twc.Regression.TestCases.regressionTestCases.C333225_Verify_cust_param_layer(regressionTestCases.java:203)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:771)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
-	at org.testng.TestNG.run(TestNG.java:1032)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>3</td>
-<td>twc.Regression.TestCases.regressionTestCases@7ff09659</td></tr>
-<tr>
-<td title='twc.Regression.TestCases.regressionTestCases.C333226_Verify_cust_param_st()'><b>C333226_Verify_cust_param_st</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
-<td><div><pre>java.lang.AssertionError: st Value not matched
-	at org.testng.Assert.fail(Assert.java:94)
-	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:292)
-	at twc.Regression.TestCases.regressionTestCases.C333226_Verify_cust_param_st(regressionTestCases.java:233)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:771)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
-	at org.testng.TestNG.run(TestNG.java:1032)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1549156", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1549156'><pre>java.lang.AssertionError: st Value not matched
-	at org.testng.Assert.fail(Assert.java:94)
-	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:292)
-	at twc.Regression.TestCases.regressionTestCases.C333226_Verify_cust_param_st(regressionTestCases.java:233)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:771)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
-	at org.testng.TestNG.run(TestNG.java:1032)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>3</td>
-<td>twc.Regression.TestCases.regressionTestCases@7ff09659</td></tr>
+<td>twc.Regression.TestCases.regressionTestCases@17d76ebb</td></tr>
 <tr>
 <td title='twc.Regression.TestCases.regressionTestCases.C333230_Verify_cust_param_fgeo()'><b>C333230_Verify_cust_param_fgeo</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
 <td><div><pre>java.lang.AssertionError: fgeo Value not matched
 	at org.testng.Assert.fail(Assert.java:94)
-	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:347)
-	at twc.Regression.TestCases.regressionTestCases.C333230_Verify_cust_param_fgeo(regressionTestCases.java:87)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:357)
+	at twc.Regression.TestCases.regressionTestCases.C333230_Verify_cust_param_fgeo(regressionTestCases.java:327)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -544,11 +934,11 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace771523387", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace771523387'><pre>java.lang.AssertionError: fgeo Value not matched
+</pre></div><a href='#' onClick='toggleBox("stack-trace461376017", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace461376017'><pre>java.lang.AssertionError: fgeo Value not matched
 	at org.testng.Assert.fail(Assert.java:94)
-	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:347)
-	at twc.Regression.TestCases.regressionTestCases.C333230_Verify_cust_param_fgeo(regressionTestCases.java:87)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:357)
+	at twc.Regression.TestCases.regressionTestCases.C333230_Verify_cust_param_fgeo(regressionTestCases.java:327)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -575,13 +965,13 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>3</td>
-<td>twc.Regression.TestCases.regressionTestCases@7ff09659</td></tr>
+<td>twc.Regression.TestCases.regressionTestCases@17d76ebb</td></tr>
 <tr>
-<td title='twc.Regression.TestCases.regressionTestCases.C333235_Verify_cust_param_a()'><b>C333235_Verify_cust_param_a</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
-<td><div><pre>java.lang.AssertionError: a Value not matched
+<td title='twc.Regression.TestCases.regressionTestCases.C333232_Verify_cust_param_fhic()'><b>C333232_Verify_cust_param_fhic</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
+<td><div><pre>java.lang.AssertionError: fhic Value not matched
 	at org.testng.Assert.fail(Assert.java:94)
-	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:530)
-	at twc.Regression.TestCases.regressionTestCases.C333235_Verify_cust_param_a(regressionTestCases.java:175)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:630)
+	at twc.Regression.TestCases.regressionTestCases.C333232_Verify_cust_param_fhic(regressionTestCases.java:220)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -606,11 +996,11 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2005204864", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2005204864'><pre>java.lang.AssertionError: a Value not matched
+</pre></div><a href='#' onClick='toggleBox("stack-trace640225682", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace640225682'><pre>java.lang.AssertionError: fhic Value not matched
 	at org.testng.Assert.fail(Assert.java:94)
-	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:530)
-	at twc.Regression.TestCases.regressionTestCases.C333235_Verify_cust_param_a(regressionTestCases.java:175)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:630)
+	at twc.Regression.TestCases.regressionTestCases.C333232_Verify_cust_param_fhic(regressionTestCases.java:220)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -636,14 +1026,14 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>3</td>
-<td>twc.Regression.TestCases.regressionTestCases@7ff09659</td></tr>
+<td>5</td>
+<td>twc.Regression.TestCases.regressionTestCases@17d76ebb</td></tr>
 <tr>
-<td title='twc.Regression.TestCases.regressionTestCases.C333236_Verify_cust_param_g()'><b>C333236_Verify_cust_param_g</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
-<td><div><pre>java.lang.AssertionError: g Value not matched
+<td title='twc.Regression.TestCases.regressionTestCases.C333238_Verify_cust_param_floc()'><b>C333238_Verify_cust_param_floc</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
+<td><div><pre>java.lang.AssertionError: floc Value not matched
 	at org.testng.Assert.fail(Assert.java:94)
-	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:557)
-	at twc.Regression.TestCases.regressionTestCases.C333236_Verify_cust_param_g(regressionTestCases.java:196)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:640)
+	at twc.Regression.TestCases.regressionTestCases.C333238_Verify_cust_param_floc(regressionTestCases.java:227)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -668,11 +1058,11 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace525669343", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace525669343'><pre>java.lang.AssertionError: g Value not matched
+</pre></div><a href='#' onClick='toggleBox("stack-trace726925617", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace726925617'><pre>java.lang.AssertionError: floc Value not matched
 	at org.testng.Assert.fail(Assert.java:94)
-	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:557)
-	at twc.Regression.TestCases.regressionTestCases.C333236_Verify_cust_param_g(regressionTestCases.java:196)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:640)
+	at twc.Regression.TestCases.regressionTestCases.C333238_Verify_cust_param_floc(regressionTestCases.java:227)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -698,14 +1088,76 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>3</td>
-<td>twc.Regression.TestCases.regressionTestCases@7ff09659</td></tr>
+<td>5</td>
+<td>twc.Regression.TestCases.regressionTestCases@17d76ebb</td></tr>
+<tr>
+<td title='twc.Regression.TestCases.regressionTestCases.C333239_Verify_cust_param_tmpc()'><b>C333239_Verify_cust_param_tmpc</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
+<td><div><pre>java.lang.AssertionError: tmpc Value not matched
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:247)
+	at twc.Regression.TestCases.regressionTestCases.C333239_Verify_cust_param_tmpc(regressionTestCases.java:251)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2025644484", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2025644484'><pre>java.lang.AssertionError: tmpc Value not matched
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:247)
+	at twc.Regression.TestCases.regressionTestCases.C333239_Verify_cust_param_tmpc(regressionTestCases.java:251)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
+	at org.testng.TestNG.run(TestNG.java:1032)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>5</td>
+<td>twc.Regression.TestCases.regressionTestCases@17d76ebb</td></tr>
 <tr>
 <td title='twc.Regression.TestCases.regressionTestCases.C333240_Verify_cust_param_zcs()'><b>C333240_Verify_cust_param_zcs</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
-<td><div><pre>java.lang.NullPointerException
-	at twc.Regression.CustomParamValidation.CustomParamFunctions.validate_wfxtg_results(CustomParamFunctions.java:458)
-	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:316)
-	at twc.Regression.TestCases.regressionTestCases.C333240_Verify_cust_param_zcs(regressionTestCases.java:49)
+<td><div><pre>java.lang.AssertionError: zcs Value not matched
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:330)
+	at twc.Regression.TestCases.regressionTestCases.C333240_Verify_cust_param_zcs(regressionTestCases.java:295)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -730,11 +1182,11 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1066465146", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1066465146'><pre>java.lang.NullPointerException
-	at twc.Regression.CustomParamValidation.CustomParamFunctions.validate_wfxtg_results(CustomParamFunctions.java:458)
-	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:316)
-	at twc.Regression.TestCases.regressionTestCases.C333240_Verify_cust_param_zcs(regressionTestCases.java:49)
+</pre></div><a href='#' onClick='toggleBox("stack-trace237492603", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace237492603'><pre>java.lang.AssertionError: zcs Value not matched
+	at org.testng.Assert.fail(Assert.java:94)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:330)
+	at twc.Regression.TestCases.regressionTestCases.C333240_Verify_cust_param_zcs(regressionTestCases.java:295)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -760,14 +1212,14 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>twc.Regression.TestCases.regressionTestCases@7ff09659</td></tr>
+<td>3</td>
+<td>twc.Regression.TestCases.regressionTestCases@17d76ebb</td></tr>
 <tr>
 <td title='twc.Regression.TestCases.regressionTestCases.C333241_Verify_cust_param_nzcs()'><b>C333241_Verify_cust_param_nzcs</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
 <td><div><pre>java.lang.NullPointerException
 	at twc.Regression.CustomParamValidation.CustomParamFunctions.validate_wfxtg_results(CustomParamFunctions.java:458)
-	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:334)
-	at twc.Regression.TestCases.regressionTestCases.C333241_Verify_cust_param_nzcs(regressionTestCases.java:56)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:344)
+	at twc.Regression.TestCases.regressionTestCases.C333241_Verify_cust_param_nzcs(regressionTestCases.java:302)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -792,11 +1244,11 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1246980942", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1246980942'><pre>java.lang.NullPointerException
+</pre></div><a href='#' onClick='toggleBox("stack-trace1312043621", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1312043621'><pre>java.lang.NullPointerException
 	at twc.Regression.CustomParamValidation.CustomParamFunctions.validate_wfxtg_results(CustomParamFunctions.java:458)
-	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:334)
-	at twc.Regression.TestCases.regressionTestCases.C333241_Verify_cust_param_nzcs(regressionTestCases.java:56)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:344)
+	at twc.Regression.TestCases.regressionTestCases.C333241_Verify_cust_param_nzcs(regressionTestCases.java:302)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -823,12 +1275,12 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>twc.Regression.TestCases.regressionTestCases@7ff09659</td></tr>
+<td>twc.Regression.TestCases.regressionTestCases@17d76ebb</td></tr>
 <tr>
 <td title='twc.Regression.TestCases.regressionTestCases.C333242_Verify_cust_param_hzcs()'><b>C333242_Verify_cust_param_hzcs</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
 <td><div><pre>java.lang.NullPointerException
-	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:326)
-	at twc.Regression.TestCases.regressionTestCases.C333242_Verify_cust_param_hzcs(regressionTestCases.java:63)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:336)
+	at twc.Regression.TestCases.regressionTestCases.C333242_Verify_cust_param_hzcs(regressionTestCases.java:309)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -853,10 +1305,10 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1211026325", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1211026325'><pre>java.lang.NullPointerException
-	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:326)
-	at twc.Regression.TestCases.regressionTestCases.C333242_Verify_cust_param_hzcs(regressionTestCases.java:63)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1943867171", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1943867171'><pre>java.lang.NullPointerException
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:336)
+	at twc.Regression.TestCases.regressionTestCases.C333242_Verify_cust_param_hzcs(regressionTestCases.java:309)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -883,13 +1335,13 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>twc.Regression.TestCases.regressionTestCases@7ff09659</td></tr>
+<td>twc.Regression.TestCases.regressionTestCases@17d76ebb</td></tr>
 <tr>
-<td title='twc.Regression.TestCases.regressionTestCases.C658714_Verify_cust_param_ch()'><b>C658714_Verify_cust_param_ch</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
-<td><div><pre>java.lang.AssertionError: ch Value not matched
+<td title='twc.Regression.TestCases.regressionTestCases.C628160_Verify_Parameter_DyNght()'><b>C628160_Verify_Parameter_DyNght</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
+<td><div><pre>java.lang.AssertionError: dynght Value not matched
 	at org.testng.Assert.fail(Assert.java:94)
-	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:539)
-	at twc.Regression.TestCases.regressionTestCases.C658714_Verify_cust_param_ch(regressionTestCases.java:182)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:612)
+	at twc.Regression.TestCases.regressionTestCases.C628160_Verify_Parameter_DyNght(regressionTestCases.java:203)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -914,11 +1366,11 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace805800150", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace805800150'><pre>java.lang.AssertionError: ch Value not matched
+</pre></div><a href='#' onClick='toggleBox("stack-trace699679818", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace699679818'><pre>java.lang.AssertionError: dynght Value not matched
 	at org.testng.Assert.fail(Assert.java:94)
-	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:539)
-	at twc.Regression.TestCases.regressionTestCases.C658714_Verify_cust_param_ch(regressionTestCases.java:182)
+	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:612)
+	at twc.Regression.TestCases.regressionTestCases.C628160_Verify_Parameter_DyNght(regressionTestCases.java:203)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -945,69 +1397,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>3</td>
-<td>twc.Regression.TestCases.regressionTestCases@7ff09659</td></tr>
-<tr>
-<td title='twc.Regression.TestCases.regressionTestCases.C658715_Verify_cust_param_fam()'><b>C658715_Verify_cust_param_fam</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
-<td><div><pre>java.lang.AssertionError: fam Value not matched
-	at org.testng.Assert.fail(Assert.java:94)
-	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:548)
-	at twc.Regression.TestCases.regressionTestCases.C658715_Verify_cust_param_fam(regressionTestCases.java:189)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:771)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
-	at org.testng.TestNG.run(TestNG.java:1032)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace555864301", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace555864301'><pre>java.lang.AssertionError: fam Value not matched
-	at org.testng.Assert.fail(Assert.java:94)
-	at twc.Regression.TestCases.Custom_Parameters_Verification.parameters_Verification(Custom_Parameters_Verification.java:548)
-	at twc.Regression.TestCases.regressionTestCases.C658715_Verify_cust_param_fam(regressionTestCases.java:189)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.lang.reflect.Method.invoke(Method.java:498)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
-	at org.testng.TestRunner.privateRun(TestRunner.java:771)
-	at org.testng.TestRunner.run(TestRunner.java:621)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1199)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1124)
-	at org.testng.TestNG.run(TestNG.java:1032)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>3</td>
-<td>twc.Regression.TestCases.regressionTestCases@7ff09659</td></tr>
+<td>twc.Regression.TestCases.regressionTestCases@17d76ebb</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -1020,167 +1410,92 @@ function toggleAllBoxes() {
 <td title='twc.Regression.TestCases.regressionTestCases.C333200_Verify_cust_param_ord()'><b>C333200_Verify_cust_param_ord</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
 <td></td>
 <td>3</td>
-<td>twc.Regression.TestCases.regressionTestCases@7ff09659</td></tr>
-<tr>
-<td title='twc.Regression.TestCases.regressionTestCases.C333202_Verify_cust_param_zip()'><b>C333202_Verify_cust_param_zip</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
-<td></td>
-<td>4</td>
-<td>twc.Regression.TestCases.regressionTestCases@7ff09659</td></tr>
-<tr>
-<td title='twc.Regression.TestCases.regressionTestCases.C333203_Verify_cust_param_dma()'><b>C333203_Verify_cust_param_dma</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
-<td></td>
-<td>4</td>
-<td>twc.Regression.TestCases.regressionTestCases@7ff09659</td></tr>
+<td>twc.Regression.TestCases.regressionTestCases@17d76ebb</td></tr>
 <tr>
 <td title='twc.Regression.TestCases.regressionTestCases.C333205_Verify_cust_param_tile()'><b>C333205_Verify_cust_param_tile</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
 <td></td>
 <td>3</td>
-<td>twc.Regression.TestCases.regressionTestCases@7ff09659</td></tr>
-<tr>
-<td title='twc.Regression.TestCases.regressionTestCases.C333207_Verify_cust_param_hmid()'><b>C333207_Verify_cust_param_hmid</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
-<td></td>
-<td>4</td>
-<td>twc.Regression.TestCases.regressionTestCases@7ff09659</td></tr>
-<tr>
-<td title='twc.Regression.TestCases.regressionTestCases.C333208_Verify_cust_param_tmp()'><b>C333208_Verify_cust_param_tmp</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
-<td></td>
-<td>5</td>
-<td>twc.Regression.TestCases.regressionTestCases@7ff09659</td></tr>
-<tr>
-<td title='twc.Regression.TestCases.regressionTestCases.C333209_Verify_cust_param_cc()'><b>C333209_Verify_cust_param_cc</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
-<td></td>
-<td>4</td>
-<td>twc.Regression.TestCases.regressionTestCases@7ff09659</td></tr>
-<tr>
-<td title='twc.Regression.TestCases.regressionTestCases.C333212_Verify_cust_param_ct()'><b>C333212_Verify_cust_param_ct</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
-<td></td>
-<td>3</td>
-<td>twc.Regression.TestCases.regressionTestCases@7ff09659</td></tr>
-<tr>
-<td title='twc.Regression.TestCases.regressionTestCases.C333213_Verify_cust_param_adid()'><b>C333213_Verify_cust_param_adid</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
-<td></td>
-<td>3</td>
-<td>twc.Regression.TestCases.regressionTestCases@7ff09659</td></tr>
-<tr>
-<td title='twc.Regression.TestCases.regressionTestCases.C333213_Verify_cust_param_aid()'><b>C333213_Verify_cust_param_aid</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
-<td></td>
-<td>3</td>
-<td>twc.Regression.TestCases.regressionTestCases@7ff09659</td></tr>
-<tr>
-<td title='twc.Regression.TestCases.regressionTestCases.C333216_Verify_cust_param_cnd()'><b>C333216_Verify_cust_param_cnd</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
-<td></td>
-<td>5</td>
-<td>twc.Regression.TestCases.regressionTestCases@7ff09659</td></tr>
-<tr>
-<td title='twc.Regression.TestCases.regressionTestCases.C333217_Verify_cust_param_tmpr()'><b>C333217_Verify_cust_param_tmpr</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
-<td></td>
-<td>5</td>
-<td>twc.Regression.TestCases.regressionTestCases@7ff09659</td></tr>
+<td>twc.Regression.TestCases.regressionTestCases@17d76ebb</td></tr>
 <tr>
 <td title='twc.Regression.TestCases.regressionTestCases.C333218_Verify_cust_param_pos()'><b>C333218_Verify_cust_param_pos</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
 <td></td>
 <td>3</td>
-<td>twc.Regression.TestCases.regressionTestCases@7ff09659</td></tr>
+<td>twc.Regression.TestCases.regressionTestCases@17d76ebb</td></tr>
+<tr>
+<td title='twc.Regression.TestCases.regressionTestCases.C333219_Verify_cust_param_st()'><b>C333219_Verify_cust_param_st</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
+<td></td>
+<td>3</td>
+<td>twc.Regression.TestCases.regressionTestCases@17d76ebb</td></tr>
 <tr>
 <td title='twc.Regression.TestCases.regressionTestCases.C333219_Verify_cust_param_ver()'><b>C333219_Verify_cust_param_ver</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
 <td></td>
 <td>3</td>
-<td>twc.Regression.TestCases.regressionTestCases@7ff09659</td></tr>
+<td>twc.Regression.TestCases.regressionTestCases@17d76ebb</td></tr>
 <tr>
-<td title='twc.Regression.TestCases.regressionTestCases.C333221_Verify_cust_param_wind()'><b>C333221_Verify_cust_param_wind</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
+<td title='twc.Regression.TestCases.regressionTestCases.C333227_Verify_cust_param_sg()'><b>C333227_Verify_cust_param_sg</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
 <td></td>
-<td>4</td>
-<td>twc.Regression.TestCases.regressionTestCases@7ff09659</td></tr>
+<td>1</td>
+<td>twc.Regression.TestCases.regressionTestCases@17d76ebb</td></tr>
 <tr>
-<td title='twc.Regression.TestCases.regressionTestCases.C333223_Verify_cust_param_sev()'><b>C333223_Verify_cust_param_sev</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
+<td title='twc.Regression.TestCases.regressionTestCases.C333228_Verify_cust_param_cfxtg()'><b>C333228_Verify_cust_param_cfxtg</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
 <td></td>
-<td>3</td>
-<td>twc.Regression.TestCases.regressionTestCases@7ff09659</td></tr>
-<tr>
-<td title='twc.Regression.TestCases.regressionTestCases.C333224_Verify_cust_param_uv()'><b>C333224_Verify_cust_param_uv</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
-<td></td>
-<td>4</td>
-<td>twc.Regression.TestCases.regressionTestCases@7ff09659</td></tr>
+<td>1</td>
+<td>twc.Regression.TestCases.regressionTestCases@17d76ebb</td></tr>
 <tr>
 <td title='twc.Regression.TestCases.regressionTestCases.C333228_Verify_cust_param_wfxtg()'><b>C333228_Verify_cust_param_wfxtg</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
 <td></td>
-<td>3</td>
-<td>twc.Regression.TestCases.regressionTestCases@7ff09659</td></tr>
+<td>4</td>
+<td>twc.Regression.TestCases.regressionTestCases@17d76ebb</td></tr>
 <tr>
 <td title='twc.Regression.TestCases.regressionTestCases.C333229_Verify_cust_param_faud()'><b>C333229_Verify_cust_param_faud</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
 <td></td>
 <td>3</td>
-<td>twc.Regression.TestCases.regressionTestCases@7ff09659</td></tr>
-<tr>
-<td title='twc.Regression.TestCases.regressionTestCases.C333232_Verify_cust_param_fhic()'><b>C333232_Verify_cust_param_fhic</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
-<td></td>
-<td>5</td>
-<td>twc.Regression.TestCases.regressionTestCases@7ff09659</td></tr>
-<tr>
-<td title='twc.Regression.TestCases.regressionTestCases.C333232_Verify_cust_param_fltmpc()'><b>C333232_Verify_cust_param_fltmpc</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
-<td></td>
-<td>4</td>
-<td>twc.Regression.TestCases.regressionTestCases@7ff09659</td></tr>
-<tr>
-<td title='twc.Regression.TestCases.regressionTestCases.C333238_Verify_cust_param_floc()'><b>C333238_Verify_cust_param_floc</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
-<td></td>
-<td>4</td>
-<td>twc.Regression.TestCases.regressionTestCases@7ff09659</td></tr>
-<tr>
-<td title='twc.Regression.TestCases.regressionTestCases.C333239_Verify_cust_param_tmpc()'><b>C333239_Verify_cust_param_tmpc</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
-<td></td>
-<td>4</td>
-<td>twc.Regression.TestCases.regressionTestCases@7ff09659</td></tr>
+<td>twc.Regression.TestCases.regressionTestCases@17d76ebb</td></tr>
 <tr>
 <td title='twc.Regression.TestCases.regressionTestCases.C344257_Verify_Video_Url_Parameter_cmsid()'><b>C344257_Verify_Video_Url_Parameter_cmsid</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
 <td></td>
 <td>0</td>
-<td>twc.Regression.TestCases.regressionTestCases@7ff09659</td></tr>
+<td>twc.Regression.TestCases.regressionTestCases@17d76ebb</td></tr>
 <tr>
 <td title='twc.Regression.TestCases.regressionTestCases.C344258_Verify_Video_Url_Parameter_ttid()'><b>C344258_Verify_Video_Url_Parameter_ttid</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
 <td></td>
 <td>0</td>
-<td>twc.Regression.TestCases.regressionTestCases@7ff09659</td></tr>
+<td>twc.Regression.TestCases.regressionTestCases@17d76ebb</td></tr>
 <tr>
 <td title='twc.Regression.TestCases.regressionTestCases.C344259_Verify_Video_Url_Parameter_vid()'><b>C344259_Verify_Video_Url_Parameter_vid</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
 <td></td>
 <td>0</td>
-<td>twc.Regression.TestCases.regressionTestCases@7ff09659</td></tr>
+<td>twc.Regression.TestCases.regressionTestCases@17d76ebb</td></tr>
 <tr>
 <td title='twc.Regression.TestCases.regressionTestCases.C344260_Verify_Video_Url_Parameter_lnid()'><b>C344260_Verify_Video_Url_Parameter_lnid</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
 <td></td>
 <td>0</td>
-<td>twc.Regression.TestCases.regressionTestCases@7ff09659</td></tr>
+<td>twc.Regression.TestCases.regressionTestCases@17d76ebb</td></tr>
+<tr>
+<td title='twc.Regression.TestCases.regressionTestCases.C344261_Verify_ContentURL_Video()'><b>C344261_Verify_ContentURL_Video</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
+<td></td>
+<td>0</td>
+<td>twc.Regression.TestCases.regressionTestCases@17d76ebb</td></tr>
+<tr>
+<td title='twc.Regression.TestCases.regressionTestCases.C344261_Verify_DescriptionURL_Video()'><b>C344261_Verify_DescriptionURL_Video</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
+<td></td>
+<td>0</td>
+<td>twc.Regression.TestCases.regressionTestCases@17d76ebb</td></tr>
 <tr>
 <td title='twc.Regression.TestCases.regressionTestCases.C344261_Verify_Video_Url_Parameter_iu()'><b>C344261_Verify_Video_Url_Parameter_iu</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
 <td></td>
 <td>0</td>
-<td>twc.Regression.TestCases.regressionTestCases@7ff09659</td></tr>
-<tr>
-<td title='twc.Regression.TestCases.regressionTestCases.C628160_Verify_Parameter_DyNght()'><b>C628160_Verify_Parameter_DyNght</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
-<td></td>
-<td>3</td>
-<td>twc.Regression.TestCases.regressionTestCases@7ff09659</td></tr>
+<td>twc.Regression.TestCases.regressionTestCases@17d76ebb</td></tr>
 <tr>
 <td title='twc.Regression.TestCases.regressionTestCases.C658711_Verify_cust_param_lang()'><b>C658711_Verify_cust_param_lang</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
 <td></td>
 <td>3</td>
-<td>twc.Regression.TestCases.regressionTestCases@7ff09659</td></tr>
+<td>twc.Regression.TestCases.regressionTestCases@17d76ebb</td></tr>
 <tr>
-<td title='twc.Regression.TestCases.regressionTestCases.C658712_Verify_cust_param_plat1()'><b>C658712_Verify_cust_param_plat1</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
+<td title='twc.Regression.TestCases.regressionTestCases.C658712_Verify_cust_param_plat()'><b>C658712_Verify_cust_param_plat</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
 <td></td>
 <td>3</td>
-<td>twc.Regression.TestCases.regressionTestCases@7ff09659</td></tr>
-<tr>
-<td title='twc.Regression.TestCases.regressionTestCases.C658713_Verify_cust_param_par()'><b>C658713_Verify_cust_param_par</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
-<td></td>
-<td>3</td>
-<td>twc.Regression.TestCases.regressionTestCases@7ff09659</td></tr>
-<tr>
-<td title='twc.Regression.TestCases.regressionTestCases.C658716_Verify_cust_param_tf()'><b>C658716_Verify_cust_param_tf</b><br>Test class: twc.Regression.TestCases.regressionTestCases</td>
-<td></td>
-<td>2</td>
-<td>twc.Regression.TestCases.regressionTestCases@7ff09659</td></tr>
+<td>twc.Regression.TestCases.regressionTestCases@17d76ebb</td></tr>
 </table><p>
 </body>
 </html>

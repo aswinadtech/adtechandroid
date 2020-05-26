@@ -6,16 +6,20 @@
       <class name="twc.Regression.TestCases.regressionTestCases">
         <methods>
           <include name="C333213_Verify_cust_param_adid"/>
-          <include name="C333226_Verify_cust_param_st"/>
-          <include name="C333221_Verify_cust_param_wind"/>
+          <include name="C333214_Verify_cust_param_hlzip"/>
+          <include name="C333232_Verify_cust_param_fhic"/>
           <include name="C333216_Verify_cust_param_cnd"/>
           <include name="Before_Test"/>
-          <include name="C333207_Verify_cust_param_hmid"/>
           <include name="C333208_Verify_cust_param_tmp"/>
           <include name="C333213_Verify_cust_param_aid"/>
           <include name="C333217_Verify_cust_param_tmpr"/>
           <include name="After_Test"/>
+          <include name="C333238_Verify_cust_param_floc"/>
           <include name="C628160_Verify_Parameter_DyNght"/>
+          <include name="C333211_Verify_cust_param_locale"/>
+          <include name="C333223_Verify_cust_param_sev"/>
+          <include name="C333204_Verify_cust_param_rmid"/>
+          <include name="C333239_Verify_cust_param_tmpc"/>
         </methods>
       </class> <!-- twc.Regression.TestCases.regressionTestCases -->
     </classes>

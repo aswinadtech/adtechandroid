@@ -806,6 +806,55 @@ public class Functions extends Drivers{
 
 		return expected_results;
 	}
+	
+	public static Map<String , String> read_Video_Pub_Ad_Call_request(String excel_sheet_name) throws Exception{
+
+		DeviceStatus device_status = new DeviceStatus();
+		int Cap = device_status.Device_Status();
+
+		Map<String , String> expected_results = new HashMap<String, String>();
+
+		String[][] exceldata = read_excel_data.exceldataread(excel_sheet_name);
+
+		String validateValues = exceldata[16][Cap];
+		String[] validate_Values = validateValues.split(",");
+
+		//		read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+		//		String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
+
+		try {
+
+			if(sb.toString().contains(exceldata[17][Cap])){
+				String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf(exceldata[17][Cap]));
+				String required_info = Read_API_Call_Data.toString().substring(Read_API_Call_Data.toString().indexOf(exceldata[7][Cap]));
+
+				required_info= required_info.toString().replaceAll(exceldata[8][Cap], "/");
+			required_info= required_info.toString().replaceAll(exceldata[9][Cap], ":");
+		//		required_info= required_info.toString().replaceAll(exceldata[10][Cap], ",");
+				required_info = required_info.substring(required_info.indexOf(exceldata[14][Cap]),required_info.indexOf(exceldata[15][Cap]));
+				String pubad_cust_params_data = required_info.toString();
+				String[] pubadvalue = pubad_cust_params_data.split(exceldata[13][Cap]);
+
+				for(String pubadkey:pubadvalue){
+
+					String[] key = pubadkey.split("=");
+					for(int i=0;i<validate_Values.length;i++){	
+
+						if(key[0].equals(validate_Values[i])){
+							expected_results.put(validate_Values[i], key[1].toString());
+						}
+					}
+				}
+				expected_results.put("iu",exceldata[17][Cap]);
+			}
+		} catch (Exception e) {
+			System.out.println("Video Pub Ad Call Not Generated. Ex : "+exceldata[17][Cap]);
+			Assert.fail("Video Pub Ad Call Not Generated. Ex : "+exceldata[17][Cap]);
+		}
+
+		return expected_results;
+	}
+
 
 	public static void verify_Road_Conditions(String excel_sheet_name) throws Exception{
 

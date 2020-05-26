@@ -551,8 +551,8 @@ public class CustomParamFunctions extends Drivers {
 		//		String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
 
 		if(sb.toString().contains(exceldata[1][Cap])){
-			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf(exceldata[3][Cap]));
-			
+			//String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf(exceldata[3][Cap]));
+			String Read_API_Call_Data = sb.toString().substring(sb.toString().indexOf("v3-wx-observations-current", 3));
 			//System.out.println(Read_API_Call_Data);
 			String required_info = Read_API_Call_Data.toString().substring(Read_API_Call_Data.toString().
 					indexOf(exceldata[3][Cap]));
@@ -817,7 +817,10 @@ public class CustomParamFunctions extends Drivers {
 		//		String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
 
 		if(sb.toString().contains(exceldata[1][Cap])){
-			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf(exceldata[3][Cap]));
+		//	String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf(exceldata[3][Cap]));
+		  String Read_API_Call_Data = sb.toString().substring(sb.toString().indexOf("v3-wx-forecast-daily-15day-cognitiveHealth"));
+		//	String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf(exceldata[3][Cap]));
+			
 			String required_info = Read_API_Call_Data.toString().substring(Read_API_Call_Data.toString().indexOf(exceldata[3][Cap]));
 			String expected_data;
 			String expectedValues2=null;

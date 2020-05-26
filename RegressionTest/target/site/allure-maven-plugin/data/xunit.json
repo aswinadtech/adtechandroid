@@ -1,379 +1,379 @@
 {
   "time" : {
-    "start" : 1589984840878,
-    "stop" : 1589984943465,
-    "duration" : 102587
+    "start" : 1590513990071,
+    "stop" : 1590514133993,
+    "duration" : 143922
   },
   "testSuites" : [ {
-    "uid" : "6389a0dd56d7f14d",
+    "uid" : "138976ceb7006b19",
     "name" : "Suite : Test",
     "title" : "Suite : Test",
     "time" : {
-      "start" : 1589984840878,
-      "stop" : 1589984943465,
-      "duration" : 102587
+      "start" : 1590513990071,
+      "stop" : 1590514133993,
+      "duration" : 143922
     },
     "statistic" : {
       "total" : 32,
-      "passed" : 23,
+      "passed" : 19,
       "pending" : 0,
       "canceled" : 0,
-      "failed" : 9,
-      "broken" : 0
+      "failed" : 10,
+      "broken" : 3
     },
     "description" : null,
     "testCases" : [ {
-      "uid" : "1b3df5aac665245d",
-      "name" : "C333213_Verify_cust_param_aid",
-      "title" : "Verify custom parameter aid",
-      "time" : {
-        "start" : 1589984840878,
-        "stop" : 1589984845431,
-        "duration" : 4553
-      },
-      "severity" : "NORMAL",
-      "status" : "FAILED"
-    }, {
-      "uid" : "c9ac4f2d098b5cd",
-      "name" : "C333200_Verify_cust_param_ord",
-      "title" : "Verify custom parameter ord",
-      "time" : {
-        "start" : 1589984845432,
-        "stop" : 1589984849209,
-        "duration" : 3777
-      },
-      "severity" : "NORMAL",
-      "status" : "PASSED"
-    }, {
-      "uid" : "f0c5611174fe046f",
-      "name" : "C658716_Verify_cust_param_tf",
-      "title" : "Verify custom parameter tf",
-      "time" : {
-        "start" : 1589984849213,
-        "stop" : 1589984851113,
-        "duration" : 1900
-      },
-      "severity" : "NORMAL",
-      "status" : "PASSED"
-    }, {
-      "uid" : "c78999173ec0f002",
-      "name" : "C333219_Verify_cust_param_ver",
-      "title" : "Verify custom parameter ver",
-      "time" : {
-        "start" : 1589984851114,
-        "stop" : 1589984854187,
-        "duration" : 3073
-      },
-      "severity" : "NORMAL",
-      "status" : "PASSED"
-    }, {
-      "uid" : "b2dc8ddc9ae99d72",
-      "name" : "C333226_Verify_cust_param_st",
-      "title" : "Verify custom parameter st",
-      "time" : {
-        "start" : 1589984854188,
-        "stop" : 1589984857325,
-        "duration" : 3137
-      },
-      "severity" : "NORMAL",
-      "status" : "FAILED"
-    }, {
-      "uid" : "9e791064ef7f0f05",
-      "name" : "C333213_Verify_cust_param_adid",
-      "title" : "Verify custom parameter adid",
-      "time" : {
-        "start" : 1589984857327,
-        "stop" : 1589984860952,
-        "duration" : 3625
-      },
-      "severity" : "NORMAL",
-      "status" : "FAILED"
-    }, {
-      "uid" : "5724dd0fdc8d71d8",
-      "name" : "C333228_Verify_cust_param_wfxtg",
-      "title" : "Verify custom parameter wfxtg",
-      "time" : {
-        "start" : 1589984860952,
-        "stop" : 1589984864652,
-        "duration" : 3700
-      },
-      "severity" : "NORMAL",
-      "status" : "PASSED"
-    }, {
-      "uid" : "ae04ad4d30eb6cce",
-      "name" : "C658712_Verify_cust_param_plat1",
-      "title" : "Verify custom parameter plat",
-      "time" : {
-        "start" : 1589984864654,
-        "stop" : 1589984867725,
-        "duration" : 3071
-      },
-      "severity" : "NORMAL",
-      "status" : "PASSED"
-    }, {
-      "uid" : "4b2769e1143eef01",
-      "name" : "C658711_Verify_cust_param_lang",
-      "title" : "Verify custom parameter lang",
-      "time" : {
-        "start" : 1589984867726,
-        "stop" : 1589984871091,
-        "duration" : 3365
-      },
-      "severity" : "NORMAL",
-      "status" : "PASSED"
-    }, {
-      "uid" : "7f31f67cb5bc9a5",
-      "name" : "C333218_Verify_cust_param_pos",
-      "title" : "Verify custom parameter pos",
-      "time" : {
-        "start" : 1589984871093,
-        "stop" : 1589984874382,
-        "duration" : 3289
-      },
-      "severity" : "NORMAL",
-      "status" : "PASSED"
-    }, {
-      "uid" : "c803f98ad210ca64",
-      "name" : "C333205_Verify_cust_param_tile",
-      "title" : "Verify custom parameter tile",
-      "time" : {
-        "start" : 1589984874383,
-        "stop" : 1589984877393,
-        "duration" : 3010
-      },
-      "severity" : "NORMAL",
-      "status" : "PASSED"
-    }, {
-      "uid" : "1d00c1826e5d6188",
-      "name" : "C344257_Verify_Video_Url_Parameter_cmsid",
-      "title" : "Verify custom parameter cmsid",
-      "time" : {
-        "start" : 1589984877395,
-        "stop" : 1589984877883,
-        "duration" : 488
-      },
-      "severity" : "NORMAL",
-      "status" : "PASSED"
-    }, {
-      "uid" : "d54de07e412f2034",
-      "name" : "C344258_Verify_Video_Url_Parameter_ttid",
-      "title" : "Verify custom parameter ttid",
-      "time" : {
-        "start" : 1589984877884,
-        "stop" : 1589984878399,
-        "duration" : 515
-      },
-      "severity" : "NORMAL",
-      "status" : "PASSED"
-    }, {
-      "uid" : "324718b9878b6354",
-      "name" : "C344260_Verify_Video_Url_Parameter_lnid",
-      "title" : "Verify custom parameter lnid",
-      "time" : {
-        "start" : 1589984878399,
-        "stop" : 1589984878915,
-        "duration" : 516
-      },
-      "severity" : "NORMAL",
-      "status" : "PASSED"
-    }, {
-      "uid" : "a66fa3e0f879f003",
-      "name" : "C344259_Verify_Video_Url_Parameter_vid",
-      "title" : "Verify custom parameter vid",
-      "time" : {
-        "start" : 1589984878916,
-        "stop" : 1589984879432,
-        "duration" : 516
-      },
-      "severity" : "NORMAL",
-      "status" : "PASSED"
-    }, {
-      "uid" : "dcbd931af0e07d43",
-      "name" : "C344261_Verify_Video_Url_Parameter_iu",
-      "title" : "Verify custom parameter iu",
-      "time" : {
-        "start" : 1589984879432,
-        "stop" : 1589984879950,
-        "duration" : 518
-      },
-      "severity" : "NORMAL",
-      "status" : "PASSED"
-    }, {
-      "uid" : "49dac1b86b26c1f3",
-      "name" : "C628160_Verify_Parameter_DyNght",
-      "title" : "Verify custom parameter dynght",
-      "time" : {
-        "start" : 1589984879950,
-        "stop" : 1589984883008,
-        "duration" : 3058
-      },
-      "severity" : "NORMAL",
-      "status" : "FAILED"
-    }, {
-      "uid" : "ae64cbe538941614",
-      "name" : "C333208_Verify_cust_param_tmp",
-      "title" : "Verify custom parameter tmp",
-      "time" : {
-        "start" : 1589984883009,
-        "stop" : 1589984887753,
-        "duration" : 4744
-      },
-      "severity" : "NORMAL",
-      "status" : "FAILED"
-    }, {
-      "uid" : "b1688d80df9c7b60",
-      "name" : "C333217_Verify_cust_param_tmpr",
-      "title" : "Verify custom parameter tmpr",
-      "time" : {
-        "start" : 1589984887753,
-        "stop" : 1589984892089,
-        "duration" : 4336
-      },
-      "severity" : "NORMAL",
-      "status" : "FAILED"
-    }, {
-      "uid" : "1356538d1b849df7",
+      "uid" : "5711531ae38f128b",
       "name" : "C333216_Verify_cust_param_cnd",
       "title" : "Verify custom parameter cnd",
       "time" : {
-        "start" : 1589984892091,
-        "stop" : 1589984896588,
-        "duration" : 4497
+        "start" : 1590513990071,
+        "stop" : 1590514000159,
+        "duration" : 10088
       },
       "severity" : "NORMAL",
       "status" : "FAILED"
     }, {
-      "uid" : "1953f3c3d997052f",
-      "name" : "C333207_Verify_cust_param_hmid",
-      "title" : "Verify custom parameter hmid",
+      "uid" : "e7af4fad0c367c6e",
+      "name" : "C344257_Verify_Video_Url_Parameter_cmsid",
+      "title" : "Verify custom parameter cmsid",
       "time" : {
-        "start" : 1589984896588,
-        "stop" : 1589984900708,
-        "duration" : 4120
+        "start" : 1590514000161,
+        "stop" : 1590514001008,
+        "duration" : 847
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "b397a52069a22355",
+      "name" : "C344258_Verify_Video_Url_Parameter_ttid",
+      "title" : "Verify custom parameter ttid",
+      "time" : {
+        "start" : 1590514001010,
+        "stop" : 1590514001931,
+        "duration" : 921
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "e7a52d60e4b9960f",
+      "name" : "C344260_Verify_Video_Url_Parameter_lnid",
+      "title" : "Verify custom parameter lnid",
+      "time" : {
+        "start" : 1590514001931,
+        "stop" : 1590514002766,
+        "duration" : 835
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "869450d59df6b29",
+      "name" : "C344259_Verify_Video_Url_Parameter_vid",
+      "title" : "Verify custom parameter vid",
+      "time" : {
+        "start" : 1590514002766,
+        "stop" : 1590514003575,
+        "duration" : 809
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "4c205006bf8e3c24",
+      "name" : "C344261_Verify_Video_Url_Parameter_iu",
+      "title" : "Verify custom parameter iu",
+      "time" : {
+        "start" : 1590514003576,
+        "stop" : 1590514004420,
+        "duration" : 844
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "5520679daf52ea5f",
+      "name" : "C344261_Verify_DescriptionURL_Video",
+      "title" : "Verify Description_url for video call",
+      "time" : {
+        "start" : 1590514004420,
+        "stop" : 1590514005045,
+        "duration" : 625
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "6ee2a40ec25282d0",
+      "name" : "C344261_Verify_ContentURL_Video",
+      "title" : "Verify Content_url for video call",
+      "time" : {
+        "start" : 1590514005045,
+        "stop" : 1590514005707,
+        "duration" : 662
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "8ebb7160a320aabb",
+      "name" : "C333213_Verify_cust_param_adid",
+      "title" : "Verify custom parameter adid",
+      "time" : {
+        "start" : 1590514005709,
+        "stop" : 1590514010816,
+        "duration" : 5107
       },
       "severity" : "NORMAL",
       "status" : "FAILED"
     }, {
-      "uid" : "223afe646210ada9",
-      "name" : "C333221_Verify_cust_param_wind",
-      "title" : "Verify custom parameter wind",
+      "uid" : "fe72eca1c01d67e7",
+      "name" : "C333213_Verify_cust_param_aid",
+      "title" : "Verify custom parameter aid",
       "time" : {
-        "start" : 1589984900709,
-        "stop" : 1589984904832,
-        "duration" : 4123
+        "start" : 1590514010818,
+        "stop" : 1590514015536,
+        "duration" : 4718
       },
       "severity" : "NORMAL",
       "status" : "FAILED"
     }, {
-      "uid" : "c4b85b35983932d8",
-      "name" : "C333224_Verify_cust_param_uv",
-      "title" : "Verify custom parameter uv",
+      "uid" : "2c2b44de949f87fb",
+      "name" : "C333219_Verify_cust_param_st",
+      "title" : "Verify custom parameter st",
       "time" : {
-        "start" : 1589984904832,
-        "stop" : 1589984908916,
-        "duration" : 4084
+        "start" : 1590514015537,
+        "stop" : 1590514020469,
+        "duration" : 4932
       },
       "severity" : "NORMAL",
       "status" : "PASSED"
     }, {
-      "uid" : "2045ffe0bdfb4eb2",
-      "name" : "C333232_Verify_cust_param_fltmpc",
-      "title" : "Verify custom parameter fltmpc",
+      "uid" : "7fcf8dcb1e3b8156",
+      "name" : "C333200_Verify_cust_param_ord",
+      "title" : "Verify custom parameter ord",
       "time" : {
-        "start" : 1589984908918,
-        "stop" : 1589984913216,
-        "duration" : 4298
+        "start" : 1590514020471,
+        "stop" : 1590514025512,
+        "duration" : 5041
       },
       "severity" : "NORMAL",
       "status" : "PASSED"
     }, {
-      "uid" : "2675e7d1dc19565c",
-      "name" : "C333239_Verify_cust_param_tmpc",
-      "title" : "Verify custom parameter tmpc",
+      "uid" : "d818310d7deae044",
+      "name" : "C333204_Verify_cust_param_rmid",
+      "title" : "Verify custom parameter rmid",
       "time" : {
-        "start" : 1589984913217,
-        "stop" : 1589984917623,
-        "duration" : 4406
+        "start" : 1590514025514,
+        "stop" : 1590514030426,
+        "duration" : 4912
+      },
+      "severity" : "NORMAL",
+      "status" : "FAILED"
+    }, {
+      "uid" : "7c89ea6811bda5ce",
+      "name" : "C333219_Verify_cust_param_ver",
+      "title" : "Verify custom parameter ver",
+      "time" : {
+        "start" : 1590514030427,
+        "stop" : 1590514035375,
+        "duration" : 4948
       },
       "severity" : "NORMAL",
       "status" : "PASSED"
     }, {
-      "uid" : "8503560e4d3a4663",
-      "name" : "C333202_Verify_cust_param_zip",
-      "title" : "Verify custom parameter zip from  turbo api",
+      "uid" : "40dc5c2d907eae8",
+      "name" : "C658711_Verify_cust_param_lang",
+      "title" : "Verify custom parameter lang",
       "time" : {
-        "start" : 1589984917625,
-        "stop" : 1589984921499,
-        "duration" : 3874
+        "start" : 1590514035376,
+        "stop" : 1590514040149,
+        "duration" : 4773
       },
       "severity" : "NORMAL",
       "status" : "PASSED"
     }, {
-      "uid" : "ebb789aeac5c813a",
-      "name" : "C333203_Verify_cust_param_dma",
-      "title" : "Verify custom parameter dma",
+      "uid" : "cd495d1a1056456d",
+      "name" : "C658712_Verify_cust_param_plat",
+      "title" : "Verify custom parameter plat",
       "time" : {
-        "start" : 1589984921499,
-        "stop" : 1589984925033,
-        "duration" : 3534
+        "start" : 1590514040150,
+        "stop" : 1590514044997,
+        "duration" : 4847
       },
       "severity" : "NORMAL",
       "status" : "PASSED"
     }, {
-      "uid" : "4de9e5d007fa153",
-      "name" : "C333209_Verify_cust_param_cc",
-      "title" : "Verify custom parameter cc",
+      "uid" : "22eba96d6b39203f",
+      "name" : "C333218_Verify_cust_param_pos",
+      "title" : "Verify custom parameter pos",
       "time" : {
-        "start" : 1589984925035,
-        "stop" : 1589984928422,
-        "duration" : 3387
+        "start" : 1590514044999,
+        "stop" : 1590514049756,
+        "duration" : 4757
       },
       "severity" : "NORMAL",
       "status" : "PASSED"
     }, {
-      "uid" : "ee8b44746ba4bdbf",
+      "uid" : "65626d5994483ee9",
+      "name" : "C333205_Verify_cust_param_tile",
+      "title" : "Verify custom parameter tile",
+      "time" : {
+        "start" : 1590514049757,
+        "stop" : 1590514054783,
+        "duration" : 5026
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "a3eb2d0662bacc3a",
       "name" : "C333212_Verify_cust_param_ct",
       "title" : "Verify custom parameter ct",
       "time" : {
-        "start" : 1589984928423,
-        "stop" : 1589984931885,
-        "duration" : 3462
+        "start" : 1590514054785,
+        "stop" : 1590514060278,
+        "duration" : 5493
       },
       "severity" : "NORMAL",
       "status" : "PASSED"
     }, {
-      "uid" : "f394c0bb1c639722",
+      "uid" : "c61baedf332488dc",
+      "name" : "C333203_Verify_cust_param_dma",
+      "title" : "Verify custom parameter dma",
+      "time" : {
+        "start" : 1590514060280,
+        "stop" : 1590514065809,
+        "duration" : 5529
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "120979a62a7e7480",
+      "name" : "C628160_Verify_Parameter_DyNght",
+      "title" : "Verify custom parameter dynght",
+      "time" : {
+        "start" : 1590514065810,
+        "stop" : 1590514066813,
+        "duration" : 1003
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "90e50d7c90898612",
+      "name" : "C333209_Verify_cust_param_cc",
+      "title" : "Verify custom parameter cc",
+      "time" : {
+        "start" : 1590514066813,
+        "stop" : 1590514072503,
+        "duration" : 5690
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "a60711b77b971a3",
       "name" : "C333232_Verify_cust_param_fhic",
       "title" : "Verify custom parameter fhic",
       "time" : {
-        "start" : 1589984931887,
-        "stop" : 1589984935799,
-        "duration" : 3912
+        "start" : 1590514072504,
+        "stop" : 1590514080314,
+        "duration" : 7810
       },
       "severity" : "NORMAL",
-      "status" : "PASSED"
+      "status" : "FAILED"
     }, {
-      "uid" : "db584790507b5a7a",
+      "uid" : "1897b018e760742d",
       "name" : "C333238_Verify_cust_param_floc",
       "title" : "Verify custom parameter floc",
       "time" : {
-        "start" : 1589984935800,
-        "stop" : 1589984940197,
-        "duration" : 4397
+        "start" : 1590514080315,
+        "stop" : 1590514088460,
+        "duration" : 8145
+      },
+      "severity" : "NORMAL",
+      "status" : "FAILED"
+    }, {
+      "uid" : "3cb028fbe0f92fa7",
+      "name" : "C333208_Verify_cust_param_tmp",
+      "title" : "Verify custom parameter tmp",
+      "time" : {
+        "start" : 1590514088462,
+        "stop" : 1590514096692,
+        "duration" : 8230
+      },
+      "severity" : "NORMAL",
+      "status" : "FAILED"
+    }, {
+      "uid" : "949daf88da63e075",
+      "name" : "C333217_Verify_cust_param_tmpr",
+      "title" : "Verify custom parameter tmpr",
+      "time" : {
+        "start" : 1590514096693,
+        "stop" : 1590514105985,
+        "duration" : 9292
+      },
+      "severity" : "NORMAL",
+      "status" : "FAILED"
+    }, {
+      "uid" : "d1c073dc7000e66",
+      "name" : "C333239_Verify_cust_param_tmpc",
+      "title" : "Verify custom parameter tmpc",
+      "time" : {
+        "start" : 1590514105986,
+        "stop" : 1590514114764,
+        "duration" : 8778
+      },
+      "severity" : "NORMAL",
+      "status" : "FAILED"
+    }, {
+      "uid" : "dbba196f46afa876",
+      "name" : "C333202_Verify_cust_param_zip",
+      "title" : "Verify custom parameter zip from  turbo api",
+      "time" : {
+        "start" : 1590514114766,
+        "stop" : 1590514121273,
+        "duration" : 6507
       },
       "severity" : "NORMAL",
       "status" : "PASSED"
     }, {
-      "uid" : "c641402f41c96c5a",
-      "name" : "C333223_Verify_cust_param_sev",
-      "title" : "Verify custom parameter sev",
+      "uid" : "e26056dce409bd5d",
+      "name" : "C333228_Verify_cust_param_wfxtg",
+      "title" : "Verify custom parameter wfxtg",
       "time" : {
-        "start" : 1589984940199,
-        "stop" : 1589984943465,
-        "duration" : 3266
+        "start" : 1590514121275,
+        "stop" : 1590514126945,
+        "duration" : 5670
       },
       "severity" : "NORMAL",
       "status" : "PASSED"
+    }, {
+      "uid" : "e47cc8d664e9d17e",
+      "name" : "C333214_Verify_cust_param_hlzip",
+      "title" : "Verify custom parameter hlzip",
+      "time" : {
+        "start" : 1590514126946,
+        "stop" : 1590514132699,
+        "duration" : 5753
+      },
+      "severity" : "NORMAL",
+      "status" : "FAILED"
+    }, {
+      "uid" : "a59a4792c383ca60",
+      "name" : "C333211_Verify_cust_param_locale",
+      "title" : "Verify custom parameter locale",
+      "time" : {
+        "start" : 1590514132700,
+        "stop" : 1590514133380,
+        "duration" : 680
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "4481db1ee8f79308",
+      "name" : "C333223_Verify_cust_param_sev",
+      "title" : "Verify custom parameter sev",
+      "time" : {
+        "start" : 1590514133381,
+        "stop" : 1590514133993,
+        "duration" : 612
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
     } ]
   } ]
 }
