@@ -315,6 +315,8 @@ public class smokeTestCases extends Drivers {
 	   public void Smoke_Test_Verify_covid19_detailpage_adcall_iu() throws Exception {
 		
 		 System.out.println("================= Verify covid-19 detailpage_adcall iu Started =========================");
+		
+		logStep("Clicking covid-19 module");
 		  Thread.sleep(5000); 
 		// Functions.Verify_SH_detailpage_adcall_iu(); 
 			logStep("/7646/app_android_us/db_display/details/covid  was trigred ");
@@ -324,7 +326,7 @@ public class smokeTestCases extends Drivers {
 
   @Test(priority = 101, enabled = true)
 	   @Title("Verifying iu value for seasonal hub  detailpage ad call iu") 
-	   public void Smoke_Test_Verify_covid19_detailpage_adcall_iu() throws Exception {
+	   public void Smoke_Test_Verify_covid19_aax_value() throws Exception {
 		
 		 System.out.println("================= Verify covid-19 detailpage_adcall iu Started =========================");
 		// Functions.Verify_SH_detailpage_adcall_iu(); 
