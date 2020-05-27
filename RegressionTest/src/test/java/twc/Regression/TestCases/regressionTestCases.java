@@ -30,35 +30,35 @@ public class regressionTestCases extends Drivers{
 	@Title("Verify custom parameter cmsid")
 	public void C344257_Verify_Video_Url_Parameter_cmsid() throws Exception{
 		System.out.println("================= Custom Parameter Cmsid Verfication Started =========================");
-		Custom_Parameters_Verification.verify_video_custom_parameters("cmsid");
+		//Custom_Parameters_Verification.verify_video_custom_parameters("cmsid");
 		System.out.println("================= Custom Parameter Cmsid Verfication End =========================");
 	}
 	@Test(priority=2)
 	@Title("Verify custom parameter ttid")
 	public void C344258_Verify_Video_Url_Parameter_ttid() throws Exception{
 		System.out.println("================= Custom Parameter Ttid Verfication Started =========================");
-		Custom_Parameters_Verification.verify_video_custom_parameters("ttid");
+		//Custom_Parameters_Verification.verify_video_custom_parameters("ttid");
 		System.out.println("================= Custom Parameter Ttid Verfication End =========================");
 	}
 	@Test(priority=3)
 	@Title("Verify custom parameter lnid")
 	public void C344260_Verify_Video_Url_Parameter_lnid() throws Exception{
 		System.out.println("================= Custom Parameter Lnid Verfication Started =========================");
-		Custom_Parameters_Verification.verify_video_custom_parameters("lnid");
+		//Custom_Parameters_Verification.verify_video_custom_parameters("lnid");
 		System.out.println("================= Custom Parameter Lnid Verfication End =========================");
 	}
 	@Test(priority=4)
 	@Title("Verify custom parameter vid")
 	public void C344259_Verify_Video_Url_Parameter_vid() throws Exception{
 		System.out.println("================= Custom Parameter Vid Verfication Started =========================");
-		Custom_Parameters_Verification.verify_video_custom_parameters("vid");
+		//Custom_Parameters_Verification.verify_video_custom_parameters("vid");
 		System.out.println("================= Custom Parameter Vid Verfication End =========================");
 	}
 	@Test(priority=5)
 	@Title("Verify custom parameter iu")
 	public void C344261_Verify_Video_Url_Parameter_iu() throws Exception{
 		System.out.println("================= Custom Parameter IU Verfication Started =========================");
-		Custom_Parameters_Verification.verify_video_custom_parameters("iu");
+		//Custom_Parameters_Verification.verify_video_custom_parameters("iu");
 		System.out.println("================= Custom Parameter IU Verfication End =========================");
 	}
 	
@@ -66,7 +66,7 @@ public class regressionTestCases extends Drivers{
 	@Title("Verify Description_url for video call")
 	public void C344261_Verify_DescriptionURL_Video() throws Exception{
 		System.out.println("================= Verify description URL for video call Started =========================");
-		Custom_Parameters_Verification.verify_video_request("description_url");
+		//Custom_Parameters_Verification.verify_video_request("description_url");
 		System.out.println("================= Verify description URL for video call  End =========================");
 	}
 	
@@ -74,7 +74,7 @@ public class regressionTestCases extends Drivers{
 	@Title("Verify Content_url for video call")
 	public void C344261_Verify_ContentURL_Video() throws Exception{
 		System.out.println("================= Verify Content URL for video call Started =========================");
-		Custom_Parameters_Verification.verify_video_request("content_url");
+		//Custom_Parameters_Verification.verify_video_request("content_url");
 		System.out.println("================= Verify Content URL for video call  End =========================");
 	}
 	
@@ -84,7 +84,7 @@ public class regressionTestCases extends Drivers{
 	@Title("Verify custom parameter adid")
 	public void C333213_Verify_cust_param_adid() throws Exception{
 		System.out.println("================= Custom Parameter adid Verfication Started =========================");
-		Custom_Parameters_Verification.parameters_Verification("adid");
+		//Custom_Parameters_Verification.parameters_Verification("adid");
 		System.out.println("================= Custom Parameter adid Verfication End =========================");
 	}
 	
@@ -93,7 +93,7 @@ public class regressionTestCases extends Drivers{
 		@Title("Verify custom parameter aid")
 		public void C333213_Verify_cust_param_aid() throws Exception{
 			System.out.println("================= Custom Parameter Aid Verfication Started =========================");
-			Custom_Parameters_Verification.parameters_Verification("aid");
+			//Custom_Parameters_Verification.parameters_Verification("aid");
 			System.out.println("================= Custom Parameter Aid Verfication End =========================");
 		}
 		
@@ -103,7 +103,7 @@ public class regressionTestCases extends Drivers{
 		@Title("Verify custom parameter st")
 		public void C333219_Verify_cust_param_st() throws Exception{
 			System.out.println("================= Custom Parameter St Verfication Started =========================");
-			Custom_Parameters_Verification.parameters_Verification("st");
+			//Custom_Parameters_Verification.parameters_Verification("st");
 			System.out.println("================= Custom Parameter St Verfication End =========================");
 		}
 		
@@ -111,7 +111,7 @@ public class regressionTestCases extends Drivers{
 		@Title("Verify custom parameter ord")
 		public void C333200_Verify_cust_param_ord() throws Exception{
 			System.out.println("================= Custom Parameter ORD Verfication Started =========================");
-			Custom_Parameters_Verification.parameters_Verification("ord");
+			//Custom_Parameters_Verification.parameters_Verification("ord");
 			System.out.println("================= Custom Parameter ORD Verfication End =========================");
 		}
 		
@@ -120,7 +120,7 @@ public class regressionTestCases extends Drivers{
 		@Title("Verify custom parameter rmid")
 		public void C333204_Verify_cust_param_rmid() throws Exception{
 			System.out.println("================= Custom Parameter Rmid Verfication Started =========================");
-			Custom_Parameters_Verification.parameters_Verification("rmid");
+			//Custom_Parameters_Verification.parameters_Verification("rmid");
 			System.out.println("================= Custom Parameter Rmid Verfication End =========================");
 		}
 		
@@ -128,7 +128,7 @@ public class regressionTestCases extends Drivers{
 		@Title("Verify custom parameter ver")
 		public void C333219_Verify_cust_param_ver() throws Exception{
 			System.out.println("================= Custom Parameter Ver Verfication Started =========================");
-			Custom_Parameters_Verification.parameters_Verification("ver");
+			//Custom_Parameters_Verification.parameters_Verification("ver");
 			System.out.println("================= Custom Parameter Ver Verfication End =========================");
 		}
 		
@@ -139,7 +139,7 @@ public class regressionTestCases extends Drivers{
 		@Title("Verify custom parameter lang")
 		public void C658711_Verify_cust_param_lang() throws Exception{
 			System.out.println("================= Custom Parameter Lang Verfication Started =========================");
-			Custom_Parameters_Verification.parameters_Verification("lang");
+			//Custom_Parameters_Verification.parameters_Verification("lang");
 			System.out.println("================= Custom Parameter Lang Verfication End =========================");
 		}
 		
@@ -147,7 +147,7 @@ public class regressionTestCases extends Drivers{
 		@Title("Verify custom parameter plat")
 		public void C658712_Verify_cust_param_plat() throws Exception{
 			System.out.println("================= Custom Parameter Plat Verfication Started =========================");
-			Custom_Parameters_Verification.parameters_Verification("plat");
+			//Custom_Parameters_Verification.parameters_Verification("plat");
 			System.out.println("================= Custom Parameter Plat Verfication End =========================");
 		}
 		
@@ -156,7 +156,7 @@ public class regressionTestCases extends Drivers{
 		@Title("Verify custom parameter pos")
 		public void C333218_Verify_cust_param_pos() throws Exception{
 			System.out.println("================= Custom Parameter Pos Verfication Started =========================");
-			Custom_Parameters_Verification.parameters_Verification("pos");
+			//Custom_Parameters_Verification.parameters_Verification("pos");
 			System.out.println("================= Custom Parameter Pos Verfication End =========================");
 		}
 		
@@ -164,7 +164,7 @@ public class regressionTestCases extends Drivers{
 		@Title("Verify custom parameter tile")
 		public void C333205_Verify_cust_param_tile() throws Exception{
 			System.out.println("================= Custom Parameter Tile Verfication Started =========================");
-			Custom_Parameters_Verification.parameters_Verification("tile");
+			//Custom_Parameters_Verification.parameters_Verification("tile");
 			System.out.println("================= Custom Parameter Tile Verfication End =========================");
 		}
 		
@@ -173,7 +173,7 @@ public class regressionTestCases extends Drivers{
 		  @Title("Verify custom parameter cnd")
 		  public void C333216_Verify_cust_param_cnd() throws Exception{
 			System.out.println("================= Custom Parameter Cnd Verfication Started =========================");
-			Custom_Parameters_Verification.parameters_Verification("cnd");
+			//Custom_Parameters_Verification.parameters_Verification("cnd");
 			
 			System.out.println("================= Custom Parameter Cnd Verfication End =========================");
 		}
@@ -183,7 +183,7 @@ public class regressionTestCases extends Drivers{
 		@Title("Verify custom parameter ct")
 		public void C333212_Verify_cust_param_ct() throws Exception{
 			System.out.println("================= Custom Parameter Ct Verfication Started =========================");
-			Custom_Parameters_Verification.parameters_Verification("ct");
+			//Custom_Parameters_Verification.parameters_Verification("ct");
 			System.out.println("================= Custom Parameter Ct Verfication End =========================");
 		}
 		
@@ -191,7 +191,7 @@ public class regressionTestCases extends Drivers{
 		@Title("Verify custom parameter dma")
 		public void C333203_Verify_cust_param_dma() throws Exception{
 			System.out.println("================= Custom Parameter Dma Verfication Started =========================");
-			Custom_Parameters_Verification.parameters_Verification("dma");
+			//Custom_Parameters_Verification.parameters_Verification("dma");
 			System.out.println("================= Custom Parameter Dma Verfication End =========================");
 		}
 		
@@ -200,7 +200,7 @@ public class regressionTestCases extends Drivers{
 		@Title("Verify custom parameter dynght")
 		public void C628160_Verify_Parameter_DyNght() throws Exception{
 			System.out.println("================= Custom Parameter DayNight Verfication Started =========================");
-			Custom_Parameters_Verification.parameters_Verification("dynght");
+			//Custom_Parameters_Verification.parameters_Verification("dynght");
 			System.out.println("================= Custom Parameter DayNight Verfication End =========================");	
 	}
 		
@@ -208,7 +208,7 @@ public class regressionTestCases extends Drivers{
 		@Title("Verify custom parameter cc")
 		public void C333209_Verify_cust_param_cc() throws Exception{
 			System.out.println("================= Custom Parameter Cc Verfication Started =========================");
-			Custom_Parameters_Verification.parameters_Verification("cc");
+			//Custom_Parameters_Verification.parameters_Verification("cc");
 			System.out.println("================= Custom Parameter Cc Verfication End =========================");
 		}
 
@@ -217,14 +217,14 @@ public class regressionTestCases extends Drivers{
 		@Title("Verify custom parameter fhic")
 		public void C333232_Verify_cust_param_fhic() throws Exception{
 			System.out.println("================= Custom Parameter Fhic Verfication Started =========================");
-			Custom_Parameters_Verification.parameters_Verification("fhic");
+			//Custom_Parameters_Verification.parameters_Verification("fhic");
 			System.out.println("================= Custom Parameter Fhic Verfication End =========================");
 		}
 		@Test(priority=66)
 		@Title("Verify custom parameter floc")
 		public void C333238_Verify_cust_param_floc() throws Exception{
 			System.out.println("================= Custom Parameter Floc Verfication Started =========================");
-			Custom_Parameters_Verification.parameters_Verification("floc");
+			//Custom_Parameters_Verification.parameters_Verification("floc");
 			System.out.println("================= Custom Parameter Floc Verfication End =========================");
 		}
 				
@@ -232,14 +232,14 @@ public class regressionTestCases extends Drivers{
 		@Title("Verify custom parameter tmp")
 		public void C333208_Verify_cust_param_tmp() throws Exception{
 			System.out.println("================= Custom Parameter Tmp Verfication Started =========================");
-			Custom_Parameters_Verification.parameters_Verification("tmp");
+			//Custom_Parameters_Verification.parameters_Verification("tmp");
 			System.out.println("================= Custom Parameter Tmp Verfication End =========================");
 		}
 		@Test(priority=68)
 		@Title("Verify custom parameter tmpr")
 		public void C333217_Verify_cust_param_tmpr() throws Exception{
 			System.out.println("================= Custom Parameter Tmpr Verfication Started =========================");
-			Custom_Parameters_Verification.parameters_Verification("tmpr");
+			//Custom_Parameters_Verification.parameters_Verification("tmpr");
 			System.out.println("================= Custom Parameter Tmpr Verfication End =========================");
 		}
 		
@@ -248,7 +248,7 @@ public class regressionTestCases extends Drivers{
 		@Title("Verify custom parameter tmpc")
 		public void C333239_Verify_cust_param_tmpc() throws Exception{
 			System.out.println("================= Custom Parameter Tmpc Verfication Started =========================");
-			Custom_Parameters_Verification.parameters_Verification("tmpc");
+			//Custom_Parameters_Verification.parameters_Verification("tmpc");
 			System.out.println("================= Custom Parameter Tmpc Verfication End =========================");
 		}
 	    		
@@ -256,7 +256,7 @@ public class regressionTestCases extends Drivers{
 	    @Title("Verify custom parameter zip from  turbo api")
 		public void C333202_Verify_cust_param_zip() throws Exception{
 			System.out.println("================= Custom Parameter Zip Verfication  from turbo call Started =========================");
-			Custom_Parameters_Verification.parameters_Verification("zip");
+			//Custom_Parameters_Verification.parameters_Verification("zip");
 			
 			System.out.println("================= Custom Parameter Zip Verfication  from turbo call End =========================");
 		}
@@ -267,7 +267,7 @@ public class regressionTestCases extends Drivers{
 		@Title("Verify custom parameter wfxtg")
 		public void C333228_Verify_cust_param_wfxtg() throws Exception{
 			System.out.println("================= Custom Parameter Wfxtg Verfication Started =========================");
-			Custom_Parameters_Verification.parameters_Verification("wfxtg");
+			//Custom_Parameters_Verification.parameters_Verification("wfxtg");
 			System.out.println("================= Custom Parameter Wfxtg Verfication End =========================");
 		}
 	
@@ -283,7 +283,7 @@ public class regressionTestCases extends Drivers{
 	 	@Title("Verify custom parameter hlzip")
 	 	public void C333214_Verify_cust_param_hlzip() throws Exception{
 	 		System.out.println("================= Custom Parameter Hlzip Verfication Started =========================");
-	 		Custom_Parameters_Verification.parameters_Verification("hlzip");
+	 		//Custom_Parameters_Verification.parameters_Verification("hlzip");
 	 		System.out.println("================= Custom Parameter Hlzip Verfication End =========================");
 	 	}
 	 	
@@ -347,7 +347,7 @@ public class regressionTestCases extends Drivers{
 			@Title("Verify custom parameter locale")
 			public void C333211_Verify_cust_param_locale() throws Exception{
 				System.out.println("================= Custom Parameter Locale Verfication Started =========================");
-				Custom_Parameters_Verification.parameters_Verification("locale");
+				//Custom_Parameters_Verification.parameters_Verification("locale");
 				System.out.println("================= Custom Parameter Locale Verfication End =========================");
 			}
 		 
@@ -357,7 +357,7 @@ public class regressionTestCases extends Drivers{
 		@Title("Verify custom parameter sev")
 		public void C333223_Verify_cust_param_sev() throws Exception{
 			System.out.println("================= Custom Parameter Sev Verfication Started =========================");
-			Custom_Parameters_Verification.parameters_Verification("sev");
+			//Custom_Parameters_Verification.parameters_Verification("sev");
 			System.out.println("================= Custom Parameter Sev Verfication End =========================");
 		}
 	    	
@@ -756,30 +756,30 @@ CharlesFunctions.startSessionBrowserData();
 		//CharlesFunctions.startSessionBrowserData();
 		// AppiumFunctions.LaunchApp();
 	   AppiumFunctions.LaunchAppWithFullReset();
-	    Thread.sleep(30000);
-	 CustomParamFunctions.get_fhic_floc_value();
-     AppiumFunctions.SwipeUp_Counter(1);	
-	AppiumFunctions.clickOnVideoElement();
-	 AppiumFunctions.clickOnBackArrowElement();
+	 //   Thread.sleep(30000);
+	// CustomParamFunctions.get_fhic_floc_value();
+    // AppiumFunctions.SwipeUp_Counter(1);	
+	//AppiumFunctions.clickOnVideoElement();
+	// AppiumFunctions.clickOnBackArrowElement();
 	// AppiumFunctions.closeInterstailads();
-  Thread.sleep(3000);
-	AppiumFunctions.SwipeUp_Counter(2);
-	AppiumFunctions.clickOnRadarMaps();
-	AppiumFunctions.clickOnBackArrowElement();	
-        AppiumFunctions.SwipeUp_Counter(4);					
-		AppiumFunctions.click_Todaydetails_element();
-	AppiumFunctions.clickOnBackArrowElement_today();
-             AppiumFunctions.SwipeUp_Counter(5);
+ // Thread.sleep(3000);
+	//AppiumFunctions.SwipeUp_Counter(2);
+	//AppiumFunctions.clickOnRadarMaps();
+	//AppiumFunctions.clickOnBackArrowElement();	
+       // AppiumFunctions.SwipeUp_Counter(4);					
+		//AppiumFunctions.click_Todaydetails_element();
+	//AppiumFunctions.clickOnBackArrowElement_today();
+            // AppiumFunctions.SwipeUp_Counter(5);
 			//AppiumFunctions.click_Airpollution_element();
 			//AppiumFunctions.clickOnBackArrowElement();
 			//AppiumFunctions.SwipeUp_Counter(1);
 			//AppiumFunctions.click_news_element();
 			//AppiumFunctions.clickOnBackArrowElement();
-			AppiumFunctions.click_hourly_element();
+			//AppiumFunctions.click_hourly_element();
 	//	  AppiumFunctions.click_home_element();
-		   AppiumFunctions.click_daily_element();
+		   //AppiumFunctions.click_daily_element();
 	 
-			CharlesFunctions.ExportSession();	
+			//CharlesFunctions.ExportSession();	
 	        //Functions.verify_Road_Conditions("DDI");
  		 // Functions.CleanLaunch_launch("General");
 	      //CharlesFunctions.StopExportSessionXMLFile();
