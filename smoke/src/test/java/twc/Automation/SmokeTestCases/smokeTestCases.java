@@ -116,7 +116,7 @@ public class smokeTestCases extends Drivers {
      	System.out.println("================= Verifying iu value home screen hourly ad call test case  started End =========================");
 	}
 	@Test(priority=8,enabled = true)
-	@Title("Verifying wfxtg triggere call url")
+	@Title("Verifying wfxtg trigger call url")
 	public void Smoke_Test_CaseVerify_WeatherFXAPI_url()
 			throws Exception {
 		System.out.println("================= Verifying WeatherFX API url started =========================");
