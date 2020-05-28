@@ -1,0 +1,659 @@
+{
+  "uid" : "efbaf5de475f1155",
+  "name" : "C333228_Verify_cust_param_wfxtg",
+  "title" : "Verify custom parameter wfxtg",
+  "time" : {
+    "start" : 1590652270862,
+    "stop" : 1590652280044,
+    "duration" : 9182
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 40
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "45bee7d70015169c",
+    "name" : "Suite : Test",
+    "title" : "Suite : Test"
+  },
+  "steps" : [ {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly Pub Ad Call custParamwfxtg]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly Pub Ad Call custParamwfxtg",
+    "time" : {
+      "start" : 1590652271155,
+      "stop" : 1590652271155,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd wfxtg Data : 3,9,19,26,29,30,31,36,38,47,49,53,57,61,62,167,169,175,176,179,182,186,187,189,190,194,211,21...]",
+    "title" : "PubAd wfxtg Data : 3,9,19,26,29,30,31,36,38,47,49,53,57,61,62,167,169,175,176,179,182,186,187,189,190,194,211,212,215,21...",
+    "time" : {
+      "start" : 1590652271242,
+      "stop" : 1590652271242,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[WFXTG Call wfxtg Data : 3,9,19,26,29,30,31,36,38,47,49,53,57,61,62,167,169,175,176,179,182,186,187,189,190,194,2...]",
+    "title" : "WFXTG Call wfxtg Data : 3,9,19,26,29,30,31,36,38,47,49,53,57,61,62,167,169,175,176,179,182,186,187,189,190,194,211,212,2...",
+    "time" : {
+      "start" : 1590652271242,
+      "stop" : 1590652271242,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1590652271242,
+      "stop" : 1590652271242,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fmarquee Pub Ad Call custParamwfxtg]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fmarquee Pub Ad Call custParamwfxtg",
+    "time" : {
+      "start" : 1590652271317,
+      "stop" : 1590652271317,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd wfxtg Data : 3,9,19,26,29,30,31,36,38,47,49,53,57,61,62,167,169,175,176,179,182,186,187,189,190,194,211,21...]",
+    "title" : "PubAd wfxtg Data : 3,9,19,26,29,30,31,36,38,47,49,53,57,61,62,167,169,175,176,179,182,186,187,189,190,194,211,212,215,21...",
+    "time" : {
+      "start" : 1590652271404,
+      "stop" : 1590652271404,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[WFXTG Call wfxtg Data : 3,9,19,26,29,30,31,36,38,47,49,53,57,61,62,167,169,175,176,179,182,186,187,189,190,194,2...]",
+    "title" : "WFXTG Call wfxtg Data : 3,9,19,26,29,30,31,36,38,47,49,53,57,61,62,167,169,175,176,179,182,186,187,189,190,194,211,212,2...",
+    "time" : {
+      "start" : 1590652271404,
+      "stop" : 1590652271404,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1590652271404,
+      "stop" : 1590652271404,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fradar Pub Ad Call custParamwfxtg]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fradar Pub Ad Call custParamwfxtg",
+    "time" : {
+      "start" : 1590652271848,
+      "stop" : 1590652271848,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd wfxtg Data : 3,9,19,26,29,30,31,36,38,47,49,53,57,61,62,167,169,175,176,179,182,186,187,189,190,194,211,21...]",
+    "title" : "PubAd wfxtg Data : 3,9,19,26,29,30,31,36,38,47,49,53,57,61,62,167,169,175,176,179,182,186,187,189,190,194,211,212,215,21...",
+    "time" : {
+      "start" : 1590652272287,
+      "stop" : 1590652272287,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[WFXTG Call wfxtg Data : 3,9,19,26,29,30,31,36,38,47,49,53,57,61,62,167,169,175,176,179,182,186,187,189,190,194,2...]",
+    "title" : "WFXTG Call wfxtg Data : 3,9,19,26,29,30,31,36,38,47,49,53,57,61,62,167,169,175,176,179,182,186,187,189,190,194,211,212,2...",
+    "time" : {
+      "start" : 1590652272287,
+      "stop" : 1590652272287,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1590652272287,
+      "stop" : 1590652272287,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Flifestyle Pub Ad Call custParamwfxtg]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Flifestyle Pub Ad Call custParamwfxtg",
+    "time" : {
+      "start" : 1590652273035,
+      "stop" : 1590652273035,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd wfxtg Data : 3,9,19,26,29,30,31,36,38,47,49,53,57,61,62,167,169,175,176,179,182,186,187,189,190,194,211,21...]",
+    "title" : "PubAd wfxtg Data : 3,9,19,26,29,30,31,36,38,47,49,53,57,61,62,167,169,175,176,179,182,186,187,189,190,194,211,212,215,21...",
+    "time" : {
+      "start" : 1590652273848,
+      "stop" : 1590652273848,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[WFXTG Call wfxtg Data : 3,9,19,26,29,30,31,36,38,47,49,53,57,61,62,167,169,175,176,179,182,186,187,189,190,194,2...]",
+    "title" : "WFXTG Call wfxtg Data : 3,9,19,26,29,30,31,36,38,47,49,53,57,61,62,167,169,175,176,179,182,186,187,189,190,194,211,212,2...",
+    "time" : {
+      "start" : 1590652273848,
+      "stop" : 1590652273848,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1590652273848,
+      "stop" : 1590652273848,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fseason Pub Ad Call custParamwfxtg]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fseason Pub Ad Call custParamwfxtg",
+    "time" : {
+      "start" : 1590652274788,
+      "stop" : 1590652274788,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd wfxtg Data : 3,9,19,26,29,30,31,36,38,47,49,53,57,61,62,167,169,175,176,179,182,186,187,189,190,194,211,21...]",
+    "title" : "PubAd wfxtg Data : 3,9,19,26,29,30,31,36,38,47,49,53,57,61,62,167,169,175,176,179,182,186,187,189,190,194,211,212,215,21...",
+    "time" : {
+      "start" : 1590652275696,
+      "stop" : 1590652275696,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[WFXTG Call wfxtg Data : 3,9,19,26,29,30,31,36,38,47,49,53,57,61,62,167,169,175,176,179,182,186,187,189,190,194,2...]",
+    "title" : "WFXTG Call wfxtg Data : 3,9,19,26,29,30,31,36,38,47,49,53,57,61,62,167,169,175,176,179,182,186,187,189,190,194,211,212,2...",
+    "time" : {
+      "start" : 1590652275696,
+      "stop" : 1590652275696,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1590652275696,
+      "stop" : 1590652275696,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Faq Pub Ad Call custParamwfxtg]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Faq Pub Ad Call custParamwfxtg",
+    "time" : {
+      "start" : 1590652275810,
+      "stop" : 1590652275810,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd wfxtg Data : 3,9,19,26,29,30,31,36,38,47,49,53,57,61,62,167,169,175,176,179,182,186,187,189,190,194,211,21...]",
+    "title" : "PubAd wfxtg Data : 3,9,19,26,29,30,31,36,38,47,49,53,57,61,62,167,169,175,176,179,182,186,187,189,190,194,211,212,215,21...",
+    "time" : {
+      "start" : 1590652275918,
+      "stop" : 1590652275918,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[WFXTG Call wfxtg Data : 3,9,19,26,29,30,31,36,38,47,49,53,57,61,62,167,169,175,176,179,182,186,187,189,190,194,2...]",
+    "title" : "WFXTG Call wfxtg Data : 3,9,19,26,29,30,31,36,38,47,49,53,57,61,62,167,169,175,176,179,182,186,187,189,190,194,211,212,2...",
+    "time" : {
+      "start" : 1590652275919,
+      "stop" : 1590652275919,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1590652275919,
+      "stop" : 1590652275919,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps Pub Ad Call custParamwfxtg]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps Pub Ad Call custParamwfxtg",
+    "time" : {
+      "start" : 1590652276401,
+      "stop" : 1590652276401,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd wfxtg Data : 3,9,19,26,29,30,31,36,38,47,49,53,57,61,62,167,169,175,176,179,182,186,187,189,190,194,211,21...]",
+    "title" : "PubAd wfxtg Data : 3,9,19,26,29,30,31,36,38,47,49,53,57,61,62,167,169,175,176,179,182,186,187,189,190,194,211,212,215,21...",
+    "time" : {
+      "start" : 1590652276866,
+      "stop" : 1590652276866,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[WFXTG Call wfxtg Data : 3,9,19,26,29,30,31,36,38,47,49,53,57,61,62,167,169,175,176,179,182,186,187,189,190,194,2...]",
+    "title" : "WFXTG Call wfxtg Data : 3,9,19,26,29,30,31,36,38,47,49,53,57,61,62,167,169,175,176,179,182,186,187,189,190,194,211,212,2...",
+    "time" : {
+      "start" : 1590652276866,
+      "stop" : 1590652276866,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1590652276867,
+      "stop" : 1590652276867,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Ftoday Pub Ad Call custParamwfxtg]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Ftoday Pub Ad Call custParamwfxtg",
+    "time" : {
+      "start" : 1590652276964,
+      "stop" : 1590652276964,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd wfxtg Data : 3,9,19,26,29,30,31,36,38,47,49,53,57,61,62,167,169,175,176,179,182,186,187,189,190,194,211,21...]",
+    "title" : "PubAd wfxtg Data : 3,9,19,26,29,30,31,36,38,47,49,53,57,61,62,167,169,175,176,179,182,186,187,189,190,194,211,212,215,21...",
+    "time" : {
+      "start" : 1590652277073,
+      "stop" : 1590652277073,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[WFXTG Call wfxtg Data : 3,9,19,26,29,30,31,36,38,47,49,53,57,61,62,167,169,175,176,179,182,186,187,189,190,194,2...]",
+    "title" : "WFXTG Call wfxtg Data : 3,9,19,26,29,30,31,36,38,47,49,53,57,61,62,167,169,175,176,179,182,186,187,189,190,194,211,212,2...",
+    "time" : {
+      "start" : 1590652277073,
+      "stop" : 1590652277073,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1590652277073,
+      "stop" : 1590652277073,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly Pub Ad Call custParamwfxtg]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly Pub Ad Call custParamwfxtg",
+    "time" : {
+      "start" : 1590652277817,
+      "stop" : 1590652277817,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd wfxtg Data : 3,9,19,26,29,30,31,36,38,47,49,53,57,61,62,167,169,175,176,179,182,186,187,189,190,194,211,21...]",
+    "title" : "PubAd wfxtg Data : 3,9,19,26,29,30,31,36,38,47,49,53,57,61,62,167,169,175,176,179,182,186,187,189,190,194,211,212,215,21...",
+    "time" : {
+      "start" : 1590652278561,
+      "stop" : 1590652278561,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[WFXTG Call wfxtg Data : 3,9,19,26,29,30,31,36,38,47,49,53,57,61,62,167,169,175,176,179,182,186,187,189,190,194,2...]",
+    "title" : "WFXTG Call wfxtg Data : 3,9,19,26,29,30,31,36,38,47,49,53,57,61,62,167,169,175,176,179,182,186,187,189,190,194,211,212,2...",
+    "time" : {
+      "start" : 1590652278561,
+      "stop" : 1590652278561,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1590652278561,
+      "stop" : 1590652278561,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day Pub Ad Call custParamwfxtg]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day Pub Ad Call custParamwfxtg",
+    "time" : {
+      "start" : 1590652279313,
+      "stop" : 1590652279313,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd wfxtg Data : 3,9,19,26,29,30,31,36,38,47,49,53,57,61,62,167,169,175,176,179,182,186,187,189,190,194,211,21...]",
+    "title" : "PubAd wfxtg Data : 3,9,19,26,29,30,31,36,38,47,49,53,57,61,62,167,169,175,176,179,182,186,187,189,190,194,211,212,215,21...",
+    "time" : {
+      "start" : 1590652280040,
+      "stop" : 1590652280040,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[WFXTG Call wfxtg Data : 3,9,19,26,29,30,31,36,38,47,49,53,57,61,62,167,169,175,176,179,182,186,187,189,190,194,2...]",
+    "title" : "WFXTG Call wfxtg Data : 3,9,19,26,29,30,31,36,38,47,49,53,57,61,62,167,169,175,176,179,182,186,187,189,190,194,211,212,2...",
+    "time" : {
+      "start" : 1590652280040,
+      "stop" : 1590652280040,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1590652280040,
+      "stop" : 1590652280040,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "testSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "testGroup",
+    "value" : "Test"
+  }, {
+    "name" : "thread",
+    "value" : "3964@Aswinikumars-MacBook-Pro.local.main(1)"
+  }, {
+    "name" : "testClass",
+    "value" : "twc.Regression.TestCases.regressionTestCases"
+  }, {
+    "name" : "suite-name",
+    "value" : "Suite : Test"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "host",
+    "value" : "Aswinikumars-MacBook-Pro.local"
+  }, {
+    "name" : "suite-title",
+    "value" : "Suite : Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "C333228_Verify_cust_param_wfxtg"
+  } ],
+  "parameters" : [ ]
+}

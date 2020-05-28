@@ -560,6 +560,7 @@ public static void killADB() throws IOException, Exception{
 				//capabilities.setCapability("appActivity","com.weather.android.daybreak.MainActivity");
 				//capabilities.setCapability("automationName","UiAutomator2");
 				System.out.println("app : "+capabilitydata[10][Cap]);
+				logStep("app : "+capabilitydata[10][Cap]);
 				capabilities.setCapability(capabilitydata[13][0],capabilitydata[13][Cap]);
 				//capabilities.setCapability(capabilitydata[14][0],capabilitydata[14][Cap]);
 				

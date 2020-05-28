@@ -1,0 +1,119 @@
+{
+  "uid" : "40ffa998cb3a176e",
+  "name" : "C344261_Verify_DescriptionURL_Video",
+  "title" : "Verify Description_url for video call",
+  "time" : {
+    "start" : 1590652050022,
+    "stop" : 1590652050389,
+    "duration" : 367
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 4
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "45bee7d70015169c",
+    "name" : "Suite : Test",
+    "title" : "Suite : Test"
+  },
+  "steps" : [ {
+    "name" : "logStep[navigate to video module]",
+    "title" : "navigate to video module",
+    "time" : {
+      "start" : 1590652050388,
+      "stop" : 1590652050388,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Tap On Video]",
+    "title" : "Tap On Video",
+    "time" : {
+      "start" : 1590652050389,
+      "stop" : 1590652050389,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verify video preRoll pub Ad call is being made in charles]",
+    "title" : "Verify video preRoll pub Ad call is being made in charles",
+    "time" : {
+      "start" : 1590652050389,
+      "stop" : 1590652050389,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verified Video PubAd description_url Data : http://www.weather.com/science/nature/video/boy-keeps-cool-as-huge-b...]",
+    "title" : "Verified Video PubAd description_url Data : http://www.weather.com/science/nature/video/boy-keeps-cool-as-huge-bear-stal...",
+    "time" : {
+      "start" : 1590652050389,
+      "stop" : 1590652050389,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "testSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "testGroup",
+    "value" : "Test"
+  }, {
+    "name" : "thread",
+    "value" : "3964@Aswinikumars-MacBook-Pro.local.main(1)"
+  }, {
+    "name" : "testClass",
+    "value" : "twc.Regression.TestCases.regressionTestCases"
+  }, {
+    "name" : "suite-name",
+    "value" : "Suite : Test"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "host",
+    "value" : "Aswinikumars-MacBook-Pro.local"
+  }, {
+    "name" : "suite-title",
+    "value" : "Suite : Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "C344261_Verify_DescriptionURL_Video"
+  } ],
+  "parameters" : [ ]
+}

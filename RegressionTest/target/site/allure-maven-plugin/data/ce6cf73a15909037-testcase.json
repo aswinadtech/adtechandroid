@@ -1,0 +1,809 @@
+{
+  "uid" : "ce6cf73a15909037",
+  "name" : "C658712_Verify_cust_param_plat",
+  "title" : "Verify custom parameter plat",
+  "time" : {
+    "start" : 1590652114335,
+    "stop" : 1590652122383,
+    "duration" : 8048
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 50
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "45bee7d70015169c",
+    "name" : "Suite : Test",
+    "title" : "Suite : Test"
+  },
+  "steps" : [ {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly Pub Ad Call custParamplat]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly Pub Ad Call custParamplat",
+    "time" : {
+      "start" : 1590652114633,
+      "stop" : 1590652114633,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Expected plat value : wx_droid_phone]",
+    "title" : "Expected plat value : wx_droid_phone",
+    "time" : {
+      "start" : 1590652114696,
+      "stop" : 1590652114696,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd plat value : wx_droid_phone]",
+    "title" : "PubAd plat value : wx_droid_phone",
+    "time" : {
+      "start" : 1590652114696,
+      "stop" : 1590652114696,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[plat value is matched with : wx_droid_phone====wx_droid_phone]",
+    "title" : "plat value is matched with : wx_droid_phone====wx_droid_phone",
+    "time" : {
+      "start" : 1590652114697,
+      "stop" : 1590652114697,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1590652114697,
+      "stop" : 1590652114697,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fmarquee Pub Ad Call custParamplat]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fmarquee Pub Ad Call custParamplat",
+    "time" : {
+      "start" : 1590652114765,
+      "stop" : 1590652114765,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Expected plat value : wx_droid_phone]",
+    "title" : "Expected plat value : wx_droid_phone",
+    "time" : {
+      "start" : 1590652114851,
+      "stop" : 1590652114851,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd plat value : wx_droid_phone]",
+    "title" : "PubAd plat value : wx_droid_phone",
+    "time" : {
+      "start" : 1590652114851,
+      "stop" : 1590652114851,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[plat value is matched with : wx_droid_phone====wx_droid_phone]",
+    "title" : "plat value is matched with : wx_droid_phone====wx_droid_phone",
+    "time" : {
+      "start" : 1590652114851,
+      "stop" : 1590652114851,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1590652114851,
+      "stop" : 1590652114851,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fradar Pub Ad Call custParamplat]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fradar Pub Ad Call custParamplat",
+    "time" : {
+      "start" : 1590652115239,
+      "stop" : 1590652115239,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Expected plat value : wx_droid_phone]",
+    "title" : "Expected plat value : wx_droid_phone",
+    "time" : {
+      "start" : 1590652115633,
+      "stop" : 1590652115633,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd plat value : wx_droid_phone]",
+    "title" : "PubAd plat value : wx_droid_phone",
+    "time" : {
+      "start" : 1590652115633,
+      "stop" : 1590652115633,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[plat value is matched with : wx_droid_phone====wx_droid_phone]",
+    "title" : "plat value is matched with : wx_droid_phone====wx_droid_phone",
+    "time" : {
+      "start" : 1590652115633,
+      "stop" : 1590652115633,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1590652115633,
+      "stop" : 1590652115633,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Flifestyle Pub Ad Call custParamplat]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Flifestyle Pub Ad Call custParamplat",
+    "time" : {
+      "start" : 1590652116387,
+      "stop" : 1590652116387,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Expected plat value : wx_droid_phone]",
+    "title" : "Expected plat value : wx_droid_phone",
+    "time" : {
+      "start" : 1590652117083,
+      "stop" : 1590652117083,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd plat value : wx_droid_phone]",
+    "title" : "PubAd plat value : wx_droid_phone",
+    "time" : {
+      "start" : 1590652117083,
+      "stop" : 1590652117083,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[plat value is matched with : wx_droid_phone====wx_droid_phone]",
+    "title" : "plat value is matched with : wx_droid_phone====wx_droid_phone",
+    "time" : {
+      "start" : 1590652117083,
+      "stop" : 1590652117083,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1590652117083,
+      "stop" : 1590652117083,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fseason Pub Ad Call custParamplat]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fseason Pub Ad Call custParamplat",
+    "time" : {
+      "start" : 1590652117862,
+      "stop" : 1590652117862,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Expected plat value : wx_droid_phone]",
+    "title" : "Expected plat value : wx_droid_phone",
+    "time" : {
+      "start" : 1590652118584,
+      "stop" : 1590652118584,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd plat value : wx_droid_phone]",
+    "title" : "PubAd plat value : wx_droid_phone",
+    "time" : {
+      "start" : 1590652118584,
+      "stop" : 1590652118584,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[plat value is matched with : wx_droid_phone====wx_droid_phone]",
+    "title" : "plat value is matched with : wx_droid_phone====wx_droid_phone",
+    "time" : {
+      "start" : 1590652118585,
+      "stop" : 1590652118585,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1590652118585,
+      "stop" : 1590652118585,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Faq Pub Ad Call custParamplat]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Faq Pub Ad Call custParamplat",
+    "time" : {
+      "start" : 1590652118680,
+      "stop" : 1590652118680,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Expected plat value : wx_droid_phone]",
+    "title" : "Expected plat value : wx_droid_phone",
+    "time" : {
+      "start" : 1590652118742,
+      "stop" : 1590652118742,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd plat value : wx_droid_phone]",
+    "title" : "PubAd plat value : wx_droid_phone",
+    "time" : {
+      "start" : 1590652118742,
+      "stop" : 1590652118742,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[plat value is matched with : wx_droid_phone====wx_droid_phone]",
+    "title" : "plat value is matched with : wx_droid_phone====wx_droid_phone",
+    "time" : {
+      "start" : 1590652118742,
+      "stop" : 1590652118742,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1590652118743,
+      "stop" : 1590652118743,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps Pub Ad Call custParamplat]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps Pub Ad Call custParamplat",
+    "time" : {
+      "start" : 1590652119161,
+      "stop" : 1590652119161,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Expected plat value : wx_droid_phone]",
+    "title" : "Expected plat value : wx_droid_phone",
+    "time" : {
+      "start" : 1590652119529,
+      "stop" : 1590652119529,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd plat value : wx_droid_phone]",
+    "title" : "PubAd plat value : wx_droid_phone",
+    "time" : {
+      "start" : 1590652119529,
+      "stop" : 1590652119529,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[plat value is matched with : wx_droid_phone====wx_droid_phone]",
+    "title" : "plat value is matched with : wx_droid_phone====wx_droid_phone",
+    "time" : {
+      "start" : 1590652119529,
+      "stop" : 1590652119529,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1590652119529,
+      "stop" : 1590652119529,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Ftoday Pub Ad Call custParamplat]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Ftoday Pub Ad Call custParamplat",
+    "time" : {
+      "start" : 1590652119628,
+      "stop" : 1590652119628,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Expected plat value : wx_droid_phone]",
+    "title" : "Expected plat value : wx_droid_phone",
+    "time" : {
+      "start" : 1590652119700,
+      "stop" : 1590652119700,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd plat value : wx_droid_phone]",
+    "title" : "PubAd plat value : wx_droid_phone",
+    "time" : {
+      "start" : 1590652119700,
+      "stop" : 1590652119700,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[plat value is matched with : wx_droid_phone====wx_droid_phone]",
+    "title" : "plat value is matched with : wx_droid_phone====wx_droid_phone",
+    "time" : {
+      "start" : 1590652119700,
+      "stop" : 1590652119700,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1590652119700,
+      "stop" : 1590652119700,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly Pub Ad Call custParamplat]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly Pub Ad Call custParamplat",
+    "time" : {
+      "start" : 1590652120365,
+      "stop" : 1590652120365,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Expected plat value : wx_droid_phone]",
+    "title" : "Expected plat value : wx_droid_phone",
+    "time" : {
+      "start" : 1590652121029,
+      "stop" : 1590652121029,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd plat value : wx_droid_phone]",
+    "title" : "PubAd plat value : wx_droid_phone",
+    "time" : {
+      "start" : 1590652121029,
+      "stop" : 1590652121029,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[plat value is matched with : wx_droid_phone====wx_droid_phone]",
+    "title" : "plat value is matched with : wx_droid_phone====wx_droid_phone",
+    "time" : {
+      "start" : 1590652121029,
+      "stop" : 1590652121029,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1590652121029,
+      "stop" : 1590652121029,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day Pub Ad Call custParamplat]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day Pub Ad Call custParamplat",
+    "time" : {
+      "start" : 1590652121727,
+      "stop" : 1590652121727,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Expected plat value : wx_droid_phone]",
+    "title" : "Expected plat value : wx_droid_phone",
+    "time" : {
+      "start" : 1590652122379,
+      "stop" : 1590652122379,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd plat value : wx_droid_phone]",
+    "title" : "PubAd plat value : wx_droid_phone",
+    "time" : {
+      "start" : 1590652122379,
+      "stop" : 1590652122379,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[plat value is matched with : wx_droid_phone====wx_droid_phone]",
+    "title" : "plat value is matched with : wx_droid_phone====wx_droid_phone",
+    "time" : {
+      "start" : 1590652122379,
+      "stop" : 1590652122379,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1590652122379,
+      "stop" : 1590652122379,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "testSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "testMethod",
+    "value" : "C658712_Verify_cust_param_plat"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "testGroup",
+    "value" : "Test"
+  }, {
+    "name" : "thread",
+    "value" : "3964@Aswinikumars-MacBook-Pro.local.main(1)"
+  }, {
+    "name" : "testClass",
+    "value" : "twc.Regression.TestCases.regressionTestCases"
+  }, {
+    "name" : "suite-name",
+    "value" : "Suite : Test"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "host",
+    "value" : "Aswinikumars-MacBook-Pro.local"
+  }, {
+    "name" : "suite-title",
+    "value" : "Suite : Test"
+  } ],
+  "parameters" : [ ]
+}

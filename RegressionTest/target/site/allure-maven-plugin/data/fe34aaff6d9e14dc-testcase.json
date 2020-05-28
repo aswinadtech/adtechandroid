@@ -1,0 +1,809 @@
+{
+  "uid" : "fe34aaff6d9e14dc",
+  "name" : "C333218_Verify_cust_param_pos",
+  "title" : "Verify custom parameter pos",
+  "time" : {
+    "start" : 1590652122385,
+    "stop" : 1590652130955,
+    "duration" : 8570
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 50
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "45bee7d70015169c",
+    "name" : "Suite : Test",
+    "title" : "Suite : Test"
+  },
+  "steps" : [ {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly Pub Ad Call custParampos]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly Pub Ad Call custParampos",
+    "time" : {
+      "start" : 1590652122675,
+      "stop" : 1590652122675,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Expected pos value : p1,p2,p3,p4,p5,p6,top300]",
+    "title" : "Expected pos value : p1,p2,p3,p4,p5,p6,top300",
+    "time" : {
+      "start" : 1590652122739,
+      "stop" : 1590652122739,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd pos value : top300]",
+    "title" : "PubAd pos value : top300",
+    "time" : {
+      "start" : 1590652122739,
+      "stop" : 1590652122739,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[pos value is matched with : p1,p2,p3,p4,p5,p6,top300====top300]",
+    "title" : "pos value is matched with : p1,p2,p3,p4,p5,p6,top300====top300",
+    "time" : {
+      "start" : 1590652122739,
+      "stop" : 1590652122739,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1590652122739,
+      "stop" : 1590652122739,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fmarquee Pub Ad Call custParampos]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fmarquee Pub Ad Call custParampos",
+    "time" : {
+      "start" : 1590652122832,
+      "stop" : 1590652122832,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Expected pos value : p1,p2,p3,p4,p5,p6,top300]",
+    "title" : "Expected pos value : p1,p2,p3,p4,p5,p6,top300",
+    "time" : {
+      "start" : 1590652122892,
+      "stop" : 1590652122892,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd pos value : top300]",
+    "title" : "PubAd pos value : top300",
+    "time" : {
+      "start" : 1590652122892,
+      "stop" : 1590652122892,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[pos value is matched with : p1,p2,p3,p4,p5,p6,top300====top300]",
+    "title" : "pos value is matched with : p1,p2,p3,p4,p5,p6,top300====top300",
+    "time" : {
+      "start" : 1590652122892,
+      "stop" : 1590652122892,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1590652122892,
+      "stop" : 1590652122892,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fradar Pub Ad Call custParampos]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fradar Pub Ad Call custParampos",
+    "time" : {
+      "start" : 1590652123277,
+      "stop" : 1590652123277,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Expected pos value : p1,p2,p3,p4,p5,p6,top300]",
+    "title" : "Expected pos value : p1,p2,p3,p4,p5,p6,top300",
+    "time" : {
+      "start" : 1590652123664,
+      "stop" : 1590652123664,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd pos value : p2]",
+    "title" : "PubAd pos value : p2",
+    "time" : {
+      "start" : 1590652123664,
+      "stop" : 1590652123664,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[pos value is matched with : p1,p2,p3,p4,p5,p6,top300====p2]",
+    "title" : "pos value is matched with : p1,p2,p3,p4,p5,p6,top300====p2",
+    "time" : {
+      "start" : 1590652123664,
+      "stop" : 1590652123664,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1590652123664,
+      "stop" : 1590652123664,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Flifestyle Pub Ad Call custParampos]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Flifestyle Pub Ad Call custParampos",
+    "time" : {
+      "start" : 1590652124382,
+      "stop" : 1590652124382,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Expected pos value : p1,p2,p3,p4,p5,p6,top300]",
+    "title" : "Expected pos value : p1,p2,p3,p4,p5,p6,top300",
+    "time" : {
+      "start" : 1590652125066,
+      "stop" : 1590652125066,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd pos value : p5]",
+    "title" : "PubAd pos value : p5",
+    "time" : {
+      "start" : 1590652125066,
+      "stop" : 1590652125066,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[pos value is matched with : p1,p2,p3,p4,p5,p6,top300====p5]",
+    "title" : "pos value is matched with : p1,p2,p3,p4,p5,p6,top300====p5",
+    "time" : {
+      "start" : 1590652125066,
+      "stop" : 1590652125066,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1590652125066,
+      "stop" : 1590652125066,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fseason Pub Ad Call custParampos]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fseason Pub Ad Call custParampos",
+    "time" : {
+      "start" : 1590652125955,
+      "stop" : 1590652125955,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Expected pos value : p1,p2,p3,p4,p5,p6,top300]",
+    "title" : "Expected pos value : p1,p2,p3,p4,p5,p6,top300",
+    "time" : {
+      "start" : 1590652126815,
+      "stop" : 1590652126815,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd pos value : p6]",
+    "title" : "PubAd pos value : p6",
+    "time" : {
+      "start" : 1590652126815,
+      "stop" : 1590652126815,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[pos value is matched with : p1,p2,p3,p4,p5,p6,top300====p6]",
+    "title" : "pos value is matched with : p1,p2,p3,p4,p5,p6,top300====p6",
+    "time" : {
+      "start" : 1590652126815,
+      "stop" : 1590652126815,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1590652126815,
+      "stop" : 1590652126815,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Faq Pub Ad Call custParampos]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Faq Pub Ad Call custParampos",
+    "time" : {
+      "start" : 1590652126920,
+      "stop" : 1590652126920,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Expected pos value : p1,p2,p3,p4,p5,p6,top300]",
+    "title" : "Expected pos value : p1,p2,p3,p4,p5,p6,top300",
+    "time" : {
+      "start" : 1590652126995,
+      "stop" : 1590652126995,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd pos value : p3]",
+    "title" : "PubAd pos value : p3",
+    "time" : {
+      "start" : 1590652126995,
+      "stop" : 1590652126995,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[pos value is matched with : p1,p2,p3,p4,p5,p6,top300====p3]",
+    "title" : "pos value is matched with : p1,p2,p3,p4,p5,p6,top300====p3",
+    "time" : {
+      "start" : 1590652126995,
+      "stop" : 1590652126995,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1590652126996,
+      "stop" : 1590652126996,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps Pub Ad Call custParampos]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps Pub Ad Call custParampos",
+    "time" : {
+      "start" : 1590652127479,
+      "stop" : 1590652127479,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Expected pos value : p1,p2,p3,p4,p5,p6,top300]",
+    "title" : "Expected pos value : p1,p2,p3,p4,p5,p6,top300",
+    "time" : {
+      "start" : 1590652127920,
+      "stop" : 1590652127920,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd pos value : top300]",
+    "title" : "PubAd pos value : top300",
+    "time" : {
+      "start" : 1590652127920,
+      "stop" : 1590652127920,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[pos value is matched with : p1,p2,p3,p4,p5,p6,top300====top300]",
+    "title" : "pos value is matched with : p1,p2,p3,p4,p5,p6,top300====top300",
+    "time" : {
+      "start" : 1590652127920,
+      "stop" : 1590652127920,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1590652127920,
+      "stop" : 1590652127920,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Ftoday Pub Ad Call custParampos]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Ftoday Pub Ad Call custParampos",
+    "time" : {
+      "start" : 1590652128023,
+      "stop" : 1590652128023,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Expected pos value : p1,p2,p3,p4,p5,p6,top300]",
+    "title" : "Expected pos value : p1,p2,p3,p4,p5,p6,top300",
+    "time" : {
+      "start" : 1590652128093,
+      "stop" : 1590652128093,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd pos value : top300]",
+    "title" : "PubAd pos value : top300",
+    "time" : {
+      "start" : 1590652128093,
+      "stop" : 1590652128093,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[pos value is matched with : p1,p2,p3,p4,p5,p6,top300====top300]",
+    "title" : "pos value is matched with : p1,p2,p3,p4,p5,p6,top300====top300",
+    "time" : {
+      "start" : 1590652128093,
+      "stop" : 1590652128093,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1590652128093,
+      "stop" : 1590652128093,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly Pub Ad Call custParampos]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly Pub Ad Call custParampos",
+    "time" : {
+      "start" : 1590652128835,
+      "stop" : 1590652128835,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Expected pos value : p1,p2,p3,p4,p5,p6,top300]",
+    "title" : "Expected pos value : p1,p2,p3,p4,p5,p6,top300",
+    "time" : {
+      "start" : 1590652129511,
+      "stop" : 1590652129511,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd pos value : top300]",
+    "title" : "PubAd pos value : top300",
+    "time" : {
+      "start" : 1590652129511,
+      "stop" : 1590652129511,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[pos value is matched with : p1,p2,p3,p4,p5,p6,top300====top300]",
+    "title" : "pos value is matched with : p1,p2,p3,p4,p5,p6,top300====top300",
+    "time" : {
+      "start" : 1590652129511,
+      "stop" : 1590652129511,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1590652129511,
+      "stop" : 1590652129511,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day Pub Ad Call custParampos]",
+    "title" : "Verifing :iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day Pub Ad Call custParampos",
+    "time" : {
+      "start" : 1590652130288,
+      "stop" : 1590652130288,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Expected pos value : p1,p2,p3,p4,p5,p6,top300]",
+    "title" : "Expected pos value : p1,p2,p3,p4,p5,p6,top300",
+    "time" : {
+      "start" : 1590652130951,
+      "stop" : 1590652130951,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[PubAd pos value : top300]",
+    "title" : "PubAd pos value : top300",
+    "time" : {
+      "start" : 1590652130951,
+      "stop" : 1590652130951,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[pos value is matched with : p1,p2,p3,p4,p5,p6,top300====top300]",
+    "title" : "pos value is matched with : p1,p2,p3,p4,p5,p6,top300====top300",
+    "time" : {
+      "start" : 1590652130952,
+      "stop" : 1590652130952,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[Result Pass]",
+    "title" : "Result Pass",
+    "time" : {
+      "start" : 1590652130952,
+      "stop" : 1590652130952,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "testSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "testGroup",
+    "value" : "Test"
+  }, {
+    "name" : "thread",
+    "value" : "3964@Aswinikumars-MacBook-Pro.local.main(1)"
+  }, {
+    "name" : "testClass",
+    "value" : "twc.Regression.TestCases.regressionTestCases"
+  }, {
+    "name" : "suite-name",
+    "value" : "Suite : Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "C333218_Verify_cust_param_pos"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "host",
+    "value" : "Aswinikumars-MacBook-Pro.local"
+  }, {
+    "name" : "suite-title",
+    "value" : "Suite : Test"
+  } ],
+  "parameters" : [ ]
+}

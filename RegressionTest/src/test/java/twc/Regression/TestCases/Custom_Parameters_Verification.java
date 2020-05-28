@@ -577,7 +577,7 @@ public class Custom_Parameters_Verification extends Drivers{
 										}
 									}
 									else if(ParamType.equals("rmid") && custParam.equals("rmid")){
-										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam      "           +custParam);
 										Param_val = CustomParamFunctions.validate_not_null_results("rmid",feed);
 										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");

@@ -3,85 +3,45 @@
   "plugins" : {
     "total" : {
       "statistic" : {
-        "total" : 32,
-        "passed" : 19,
+        "total" : 34,
+        "passed" : 32,
         "pending" : 0,
         "canceled" : 0,
-        "failed" : 10,
-        "broken" : 3
+        "failed" : 2,
+        "broken" : 0
       },
       "time" : {
-        "start" : 1590513990071,
-        "stop" : 1590514133993,
-        "duration" : 143922
+        "start" : 1590652034830,
+        "stop" : 1590652288982,
+        "duration" : 254152
       }
     },
     "defects" : {
-      "totalCount" : 12,
+      "totalCount" : 2,
       "items" : [ {
         "count" : 1,
-        "uid" : "a146397adbeb7474",
-        "message" : "AssertionError: cnd Value not matched",
-        "status" : "FAILED"
-      }, {
-        "count" : 1,
-        "uid" : "afc2bc10ad5ff609",
-        "message" : "AssertionError: adid Value not matched",
-        "status" : "FAILED"
-      }, {
-        "count" : 1,
-        "uid" : "775d2112e7ad2f48",
-        "message" : "AssertionError: aid Value not matched",
-        "status" : "FAILED"
-      }, {
-        "count" : 1,
-        "uid" : "87f86bf6c57e3142",
+        "uid" : "357fdd6dc6299217",
         "message" : "AssertionError: rmid Value not matched",
         "status" : "FAILED"
       }, {
         "count" : 1,
-        "uid" : "879096c094608497",
+        "uid" : "f57c0922f5efac51",
         "message" : "AssertionError: fhic Value not matched",
-        "status" : "FAILED"
-      }, {
-        "count" : 1,
-        "uid" : "535bd23558015dc0",
-        "message" : "AssertionError: floc Value not matched",
-        "status" : "FAILED"
-      }, {
-        "count" : 1,
-        "uid" : "1288f91399939a5d",
-        "message" : "AssertionError: tmp Value not matched",
-        "status" : "FAILED"
-      }, {
-        "count" : 1,
-        "uid" : "f513c1b64b0262d7",
-        "message" : "AssertionError: tmpr Value not matched",
-        "status" : "FAILED"
-      }, {
-        "count" : 1,
-        "uid" : "df38b3c913b88",
-        "message" : "AssertionError: tmpc Value not matched",
-        "status" : "FAILED"
-      }, {
-        "count" : 1,
-        "uid" : "bed5d91f6cb93a0b",
-        "message" : "AssertionError: hlzip Value not matched",
         "status" : "FAILED"
       } ]
     },
     "xunit" : {
       "totalCount" : 1,
       "items" : [ {
-        "uid" : "138976ceb7006b19",
+        "uid" : "45bee7d70015169c",
         "title" : "Suite : Test",
         "statistic" : {
-          "total" : 32,
-          "passed" : 19,
+          "total" : 34,
+          "passed" : 32,
           "pending" : 0,
           "canceled" : 0,
-          "failed" : 10,
-          "broken" : 3
+          "failed" : 2,
+          "broken" : 0
         }
       } ]
     },
@@ -90,12 +50,12 @@
       "items" : [ {
         "title" : "Without feature",
         "statistic" : {
-          "total" : 32,
-          "passed" : 19,
+          "total" : 34,
+          "passed" : 32,
           "pending" : 0,
           "canceled" : 0,
-          "failed" : 10,
-          "broken" : 3
+          "failed" : 2,
+          "broken" : 0
         }
       } ]
     },

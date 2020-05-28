@@ -596,6 +596,11 @@ public class validate_CustomParameter extends Drivers {
         		//	System.out.println("Result "+validateVal);
         		//	logStep("Result "+validateVal);
     			}
+    			else {
+    				System.out.println("Values are  matched");
+        			logStep("Values are  not matched");
+        			validateVal = "Fail";
+    			}
         	}
     			else {
     				System.out.println("Expected Value ::"+convert_val_string);
@@ -633,6 +638,11 @@ public class validate_CustomParameter extends Drivers {
         			validateVal = "Pass";
         		//	System.out.println("Result "+validateVal);
         			//logStep("Result "+validateVal);
+    			}
+    			else {
+    				System.out.println("Values are  matched");
+        			logStep("Values are  not matched");
+        			validateVal = "Fail";
     			}
         	}
     			else {

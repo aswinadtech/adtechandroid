@@ -939,10 +939,11 @@ public class CustomParamFunctions extends Drivers {
 				 expected_data = required_info.toString().substring(required_info.indexOf(exceldata[4][Cap])+15,required_info.indexOf("]]></body>"));
 			}
 			expectedValues = expected_data.toString();
-
+			String expectedValues4 = expectedValues.replace(expectedValues, expectedValues+ "}" );
+		//	expected_data = expectedValues.toString().substring(beginIndex, endIndex);
 
 			JSONParser parser = new JSONParser();
-			Object obj = parser.parse(expectedValues);
+			Object obj = parser.parse(expectedValues4);
 			JSONObject jsonObject = (JSONObject) obj;
 
 			//		JSONArray articles = (JSONArray) jsonObject.get("articles");

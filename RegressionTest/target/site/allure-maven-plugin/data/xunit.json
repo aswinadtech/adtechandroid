@@ -1,379 +1,401 @@
 {
   "time" : {
-    "start" : 1590513990071,
-    "stop" : 1590514133993,
-    "duration" : 143922
+    "start" : 1590652034830,
+    "stop" : 1590652288982,
+    "duration" : 254152
   },
   "testSuites" : [ {
-    "uid" : "138976ceb7006b19",
+    "uid" : "45bee7d70015169c",
     "name" : "Suite : Test",
     "title" : "Suite : Test",
     "time" : {
-      "start" : 1590513990071,
-      "stop" : 1590514133993,
-      "duration" : 143922
+      "start" : 1590652034830,
+      "stop" : 1590652288982,
+      "duration" : 254152
     },
     "statistic" : {
-      "total" : 32,
-      "passed" : 19,
+      "total" : 34,
+      "passed" : 32,
       "pending" : 0,
       "canceled" : 0,
-      "failed" : 10,
-      "broken" : 3
+      "failed" : 2,
+      "broken" : 0
     },
     "description" : null,
     "testCases" : [ {
-      "uid" : "5711531ae38f128b",
+      "uid" : "2185535217b2b87b",
       "name" : "C333216_Verify_cust_param_cnd",
       "title" : "Verify custom parameter cnd",
       "time" : {
-        "start" : 1590513990071,
-        "stop" : 1590514000159,
-        "duration" : 10088
+        "start" : 1590652034830,
+        "stop" : 1590652047615,
+        "duration" : 12785
       },
       "severity" : "NORMAL",
-      "status" : "FAILED"
+      "status" : "PASSED"
     }, {
-      "uid" : "e7af4fad0c367c6e",
+      "uid" : "ab0d561017e67f6f",
       "name" : "C344257_Verify_Video_Url_Parameter_cmsid",
       "title" : "Verify custom parameter cmsid",
       "time" : {
-        "start" : 1590514000161,
-        "stop" : 1590514001008,
-        "duration" : 847
+        "start" : 1590652047620,
+        "stop" : 1590652048067,
+        "duration" : 447
       },
       "severity" : "NORMAL",
       "status" : "PASSED"
     }, {
-      "uid" : "b397a52069a22355",
+      "uid" : "d5be504b8e5d332d",
       "name" : "C344258_Verify_Video_Url_Parameter_ttid",
       "title" : "Verify custom parameter ttid",
       "time" : {
-        "start" : 1590514001010,
-        "stop" : 1590514001931,
-        "duration" : 921
+        "start" : 1590652048068,
+        "stop" : 1590652048517,
+        "duration" : 449
       },
       "severity" : "NORMAL",
       "status" : "PASSED"
     }, {
-      "uid" : "e7a52d60e4b9960f",
+      "uid" : "4feaae635738d181",
       "name" : "C344260_Verify_Video_Url_Parameter_lnid",
       "title" : "Verify custom parameter lnid",
       "time" : {
-        "start" : 1590514001931,
-        "stop" : 1590514002766,
-        "duration" : 835
+        "start" : 1590652048517,
+        "stop" : 1590652049023,
+        "duration" : 506
       },
       "severity" : "NORMAL",
       "status" : "PASSED"
     }, {
-      "uid" : "869450d59df6b29",
+      "uid" : "88bb3e1a40c8b3f3",
       "name" : "C344259_Verify_Video_Url_Parameter_vid",
       "title" : "Verify custom parameter vid",
       "time" : {
-        "start" : 1590514002766,
-        "stop" : 1590514003575,
-        "duration" : 809
+        "start" : 1590652049023,
+        "stop" : 1590652049520,
+        "duration" : 497
       },
       "severity" : "NORMAL",
       "status" : "PASSED"
     }, {
-      "uid" : "4c205006bf8e3c24",
+      "uid" : "f7411d61ce5e5e41",
       "name" : "C344261_Verify_Video_Url_Parameter_iu",
       "title" : "Verify custom parameter iu",
       "time" : {
-        "start" : 1590514003576,
-        "stop" : 1590514004420,
-        "duration" : 844
+        "start" : 1590652049521,
+        "stop" : 1590652050021,
+        "duration" : 500
       },
       "severity" : "NORMAL",
       "status" : "PASSED"
     }, {
-      "uid" : "5520679daf52ea5f",
+      "uid" : "40ffa998cb3a176e",
       "name" : "C344261_Verify_DescriptionURL_Video",
       "title" : "Verify Description_url for video call",
       "time" : {
-        "start" : 1590514004420,
-        "stop" : 1590514005045,
-        "duration" : 625
+        "start" : 1590652050022,
+        "stop" : 1590652050389,
+        "duration" : 367
       },
       "severity" : "NORMAL",
       "status" : "PASSED"
     }, {
-      "uid" : "6ee2a40ec25282d0",
+      "uid" : "3579faa362df09b",
       "name" : "C344261_Verify_ContentURL_Video",
       "title" : "Verify Content_url for video call",
       "time" : {
-        "start" : 1590514005045,
-        "stop" : 1590514005707,
-        "duration" : 662
+        "start" : 1590652050390,
+        "stop" : 1590652050740,
+        "duration" : 350
       },
       "severity" : "NORMAL",
       "status" : "PASSED"
     }, {
-      "uid" : "8ebb7160a320aabb",
+      "uid" : "e4e25cfa4bfd5634",
+      "name" : "C658716_Verify_cust_param_tf",
+      "title" : "Verify custom parameter tf",
+      "time" : {
+        "start" : 1590652050741,
+        "stop" : 1590652056348,
+        "duration" : 5607
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "5d6c61c4d8a7647b",
       "name" : "C333213_Verify_cust_param_adid",
       "title" : "Verify custom parameter adid",
       "time" : {
-        "start" : 1590514005709,
-        "stop" : 1590514010816,
-        "duration" : 5107
+        "start" : 1590652056350,
+        "stop" : 1590652064558,
+        "duration" : 8208
       },
       "severity" : "NORMAL",
-      "status" : "FAILED"
+      "status" : "PASSED"
     }, {
-      "uid" : "fe72eca1c01d67e7",
+      "uid" : "dbe241d673ee4489",
       "name" : "C333213_Verify_cust_param_aid",
       "title" : "Verify custom parameter aid",
       "time" : {
-        "start" : 1590514010818,
-        "stop" : 1590514015536,
-        "duration" : 4718
+        "start" : 1590652064561,
+        "stop" : 1590652073272,
+        "duration" : 8711
       },
       "severity" : "NORMAL",
-      "status" : "FAILED"
+      "status" : "PASSED"
     }, {
-      "uid" : "2c2b44de949f87fb",
+      "uid" : "633267702d0d0bdc",
       "name" : "C333219_Verify_cust_param_st",
       "title" : "Verify custom parameter st",
       "time" : {
-        "start" : 1590514015537,
-        "stop" : 1590514020469,
-        "duration" : 4932
+        "start" : 1590652073274,
+        "stop" : 1590652081345,
+        "duration" : 8071
       },
       "severity" : "NORMAL",
       "status" : "PASSED"
     }, {
-      "uid" : "7fcf8dcb1e3b8156",
+      "uid" : "773617aad730100f",
       "name" : "C333200_Verify_cust_param_ord",
       "title" : "Verify custom parameter ord",
       "time" : {
-        "start" : 1590514020471,
-        "stop" : 1590514025512,
-        "duration" : 5041
+        "start" : 1590652081347,
+        "stop" : 1590652089530,
+        "duration" : 8183
       },
       "severity" : "NORMAL",
       "status" : "PASSED"
     }, {
-      "uid" : "d818310d7deae044",
+      "uid" : "b6cfbd44ab182905",
       "name" : "C333204_Verify_cust_param_rmid",
       "title" : "Verify custom parameter rmid",
       "time" : {
-        "start" : 1590514025514,
-        "stop" : 1590514030426,
-        "duration" : 4912
+        "start" : 1590652089531,
+        "stop" : 1590652097858,
+        "duration" : 8327
       },
       "severity" : "NORMAL",
       "status" : "FAILED"
     }, {
-      "uid" : "7c89ea6811bda5ce",
+      "uid" : "6ae36493d26cb33f",
       "name" : "C333219_Verify_cust_param_ver",
       "title" : "Verify custom parameter ver",
       "time" : {
-        "start" : 1590514030427,
-        "stop" : 1590514035375,
-        "duration" : 4948
+        "start" : 1590652097859,
+        "stop" : 1590652106349,
+        "duration" : 8490
       },
       "severity" : "NORMAL",
       "status" : "PASSED"
     }, {
-      "uid" : "40dc5c2d907eae8",
+      "uid" : "502c8cf7fdcd1cf3",
       "name" : "C658711_Verify_cust_param_lang",
       "title" : "Verify custom parameter lang",
       "time" : {
-        "start" : 1590514035376,
-        "stop" : 1590514040149,
-        "duration" : 4773
+        "start" : 1590652106351,
+        "stop" : 1590652114334,
+        "duration" : 7983
       },
       "severity" : "NORMAL",
       "status" : "PASSED"
     }, {
-      "uid" : "cd495d1a1056456d",
+      "uid" : "ce6cf73a15909037",
       "name" : "C658712_Verify_cust_param_plat",
       "title" : "Verify custom parameter plat",
       "time" : {
-        "start" : 1590514040150,
-        "stop" : 1590514044997,
-        "duration" : 4847
+        "start" : 1590652114335,
+        "stop" : 1590652122383,
+        "duration" : 8048
       },
       "severity" : "NORMAL",
       "status" : "PASSED"
     }, {
-      "uid" : "22eba96d6b39203f",
+      "uid" : "fe34aaff6d9e14dc",
       "name" : "C333218_Verify_cust_param_pos",
       "title" : "Verify custom parameter pos",
       "time" : {
-        "start" : 1590514044999,
-        "stop" : 1590514049756,
-        "duration" : 4757
+        "start" : 1590652122385,
+        "stop" : 1590652130955,
+        "duration" : 8570
       },
       "severity" : "NORMAL",
       "status" : "PASSED"
     }, {
-      "uid" : "65626d5994483ee9",
+      "uid" : "78d3959380c8de2",
       "name" : "C333205_Verify_cust_param_tile",
       "title" : "Verify custom parameter tile",
       "time" : {
-        "start" : 1590514049757,
-        "stop" : 1590514054783,
-        "duration" : 5026
+        "start" : 1590652130957,
+        "stop" : 1590652138997,
+        "duration" : 8040
       },
       "severity" : "NORMAL",
       "status" : "PASSED"
     }, {
-      "uid" : "a3eb2d0662bacc3a",
+      "uid" : "e236c61731e0e21f",
       "name" : "C333212_Verify_cust_param_ct",
       "title" : "Verify custom parameter ct",
       "time" : {
-        "start" : 1590514054785,
-        "stop" : 1590514060278,
-        "duration" : 5493
+        "start" : 1590652138999,
+        "stop" : 1590652147564,
+        "duration" : 8565
       },
       "severity" : "NORMAL",
       "status" : "PASSED"
     }, {
-      "uid" : "c61baedf332488dc",
+      "uid" : "b05217f1c5e5e5cf",
       "name" : "C333203_Verify_cust_param_dma",
       "title" : "Verify custom parameter dma",
       "time" : {
-        "start" : 1590514060280,
-        "stop" : 1590514065809,
-        "duration" : 5529
+        "start" : 1590652147565,
+        "stop" : 1590652156876,
+        "duration" : 9311
       },
       "severity" : "NORMAL",
       "status" : "PASSED"
     }, {
-      "uid" : "120979a62a7e7480",
+      "uid" : "9c3428090b87f1c",
       "name" : "C628160_Verify_Parameter_DyNght",
       "title" : "Verify custom parameter dynght",
       "time" : {
-        "start" : 1590514065810,
-        "stop" : 1590514066813,
-        "duration" : 1003
+        "start" : 1590652156878,
+        "stop" : 1590652164984,
+        "duration" : 8106
       },
       "severity" : "NORMAL",
-      "status" : "BROKEN"
+      "status" : "PASSED"
     }, {
-      "uid" : "90e50d7c90898612",
+      "uid" : "5ce1b7d6c59fa0b9",
       "name" : "C333209_Verify_cust_param_cc",
       "title" : "Verify custom parameter cc",
       "time" : {
-        "start" : 1590514066813,
-        "stop" : 1590514072503,
-        "duration" : 5690
+        "start" : 1590652164985,
+        "stop" : 1590652173849,
+        "duration" : 8864
       },
       "severity" : "NORMAL",
       "status" : "PASSED"
     }, {
-      "uid" : "a60711b77b971a3",
+      "uid" : "7f9c7c1542d980e9",
       "name" : "C333232_Verify_cust_param_fhic",
       "title" : "Verify custom parameter fhic",
       "time" : {
-        "start" : 1590514072504,
-        "stop" : 1590514080314,
-        "duration" : 7810
+        "start" : 1590652173851,
+        "stop" : 1590652185200,
+        "duration" : 11349
       },
       "severity" : "NORMAL",
       "status" : "FAILED"
     }, {
-      "uid" : "1897b018e760742d",
+      "uid" : "f86b41488cb016a4",
       "name" : "C333238_Verify_cust_param_floc",
       "title" : "Verify custom parameter floc",
       "time" : {
-        "start" : 1590514080315,
-        "stop" : 1590514088460,
-        "duration" : 8145
+        "start" : 1590652185201,
+        "stop" : 1590652195999,
+        "duration" : 10798
       },
       "severity" : "NORMAL",
-      "status" : "FAILED"
+      "status" : "PASSED"
     }, {
-      "uid" : "3cb028fbe0f92fa7",
+      "uid" : "af67e8399a0e93cb",
       "name" : "C333208_Verify_cust_param_tmp",
       "title" : "Verify custom parameter tmp",
       "time" : {
-        "start" : 1590514088462,
-        "stop" : 1590514096692,
-        "duration" : 8230
+        "start" : 1590652196000,
+        "stop" : 1590652207291,
+        "duration" : 11291
       },
       "severity" : "NORMAL",
-      "status" : "FAILED"
+      "status" : "PASSED"
     }, {
-      "uid" : "949daf88da63e075",
+      "uid" : "924d84031d80d148",
       "name" : "C333217_Verify_cust_param_tmpr",
       "title" : "Verify custom parameter tmpr",
       "time" : {
-        "start" : 1590514096693,
-        "stop" : 1590514105985,
-        "duration" : 9292
+        "start" : 1590652207293,
+        "stop" : 1590652218155,
+        "duration" : 10862
       },
       "severity" : "NORMAL",
-      "status" : "FAILED"
+      "status" : "PASSED"
     }, {
-      "uid" : "d1c073dc7000e66",
+      "uid" : "8bc1432f29604092",
       "name" : "C333239_Verify_cust_param_tmpc",
       "title" : "Verify custom parameter tmpc",
       "time" : {
-        "start" : 1590514105986,
-        "stop" : 1590514114764,
-        "duration" : 8778
+        "start" : 1590652218156,
+        "stop" : 1590652228571,
+        "duration" : 10415
       },
       "severity" : "NORMAL",
-      "status" : "FAILED"
+      "status" : "PASSED"
     }, {
-      "uid" : "dbba196f46afa876",
+      "uid" : "b94f1ffbd3cdccd0",
       "name" : "C333202_Verify_cust_param_zip",
       "title" : "Verify custom parameter zip from  turbo api",
       "time" : {
-        "start" : 1590514114766,
-        "stop" : 1590514121273,
-        "duration" : 6507
+        "start" : 1590652228573,
+        "stop" : 1590652237212,
+        "duration" : 8639
       },
       "severity" : "NORMAL",
       "status" : "PASSED"
     }, {
-      "uid" : "e26056dce409bd5d",
+      "uid" : "3f015f0f50bd5d15",
+      "name" : "C333221_Verify_cust_param_wind",
+      "title" : "Verify custom parameter wind",
+      "time" : {
+        "start" : 1590652237213,
+        "stop" : 1590652247519,
+        "duration" : 10306
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "57be925b2a43c911",
+      "name" : "C333224_Verify_cust_param_uv",
+      "title" : "Verify custom parameter uv",
+      "time" : {
+        "start" : 1590652247521,
+        "stop" : 1590652258356,
+        "duration" : 10835
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "dd13c04888596ef6",
+      "name" : "C333232_Verify_cust_param_fltmpc",
+      "title" : "Verify custom parameter fltmpc",
+      "time" : {
+        "start" : 1590652259280,
+        "stop" : 1590652270861,
+        "duration" : 11581
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "efbaf5de475f1155",
       "name" : "C333228_Verify_cust_param_wfxtg",
       "title" : "Verify custom parameter wfxtg",
       "time" : {
-        "start" : 1590514121275,
-        "stop" : 1590514126945,
-        "duration" : 5670
+        "start" : 1590652270862,
+        "stop" : 1590652280044,
+        "duration" : 9182
       },
       "severity" : "NORMAL",
       "status" : "PASSED"
     }, {
-      "uid" : "e47cc8d664e9d17e",
-      "name" : "C333214_Verify_cust_param_hlzip",
-      "title" : "Verify custom parameter hlzip",
-      "time" : {
-        "start" : 1590514126946,
-        "stop" : 1590514132699,
-        "duration" : 5753
-      },
-      "severity" : "NORMAL",
-      "status" : "FAILED"
-    }, {
-      "uid" : "a59a4792c383ca60",
+      "uid" : "68f82445b0cc4722",
       "name" : "C333211_Verify_cust_param_locale",
       "title" : "Verify custom parameter locale",
       "time" : {
-        "start" : 1590514132700,
-        "stop" : 1590514133380,
-        "duration" : 680
+        "start" : 1590652280045,
+        "stop" : 1590652288982,
+        "duration" : 8937
       },
       "severity" : "NORMAL",
-      "status" : "BROKEN"
-    }, {
-      "uid" : "4481db1ee8f79308",
-      "name" : "C333223_Verify_cust_param_sev",
-      "title" : "Verify custom parameter sev",
-      "time" : {
-        "start" : 1590514133381,
-        "stop" : 1590514133993,
-        "duration" : 612
-      },
-      "severity" : "NORMAL",
-      "status" : "BROKEN"
+      "status" : "PASSED"
     } ]
   } ]
 }
