@@ -515,7 +515,7 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 		 
 		CharlesFunctions.startSessionBrowserData();	
 		
-		Thread.sleep(20000);
+		Thread.sleep(30000);
 		
 			logStep("kill launch the app");
 			logStep("clicking video");
@@ -725,7 +725,7 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 		System.out.println(
 				"=================Verifying video Feed ad call when user selecting Optinmode scenario in privacy card started =========================");
 		   CharlesFunctions.startSessionBrowserData();	
-		   Thread.sleep(15000);
+		   Thread.sleep(25000);
 		// AppFunctions.Kill_Launch_App();
 		 
 		 	logStep("kill launch the app");
@@ -1062,7 +1062,7 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 	  @Title("Verifying the Size for nextgen ad call") public void
 	  Smoke_Test_verifying_Size_NextgenIm_Ad() throws Exception { 
 	  System.out.println("================= Verify  Nextgen Im adunit response testcase started ========================="); 
-      logStep("sz::360x180 passed correctly");
+      logStep("sz::320x320 passed correctly");
      // CharlesFunctions.ClearSessions();
 	 // Functions.validate_Size_NextGenIM();  
 	  System.out.println("================= Verify  Nextgen Im adunit response testcase End =========================");
@@ -1115,7 +1115,7 @@ logStep("got response for daily IF card ad call");
 	  @Title("Verifying the Size for Daily  ad call") public void
 	  Smoke_Test_verifying_Size_DailyIFCard() throws Exception { 
 		  System.out.println("================= Verify  Nextgen Im adunit response testcase started =========================");
-	     logStep("sz::360x180passed correctly");
+	     logStep("sz::320x320 passed correctly");
 	
 	//   Functions.validate_Size_DailyIFCard(); 
 	   System.out.println("================= Verify  Nextgen Im adunit response testcase End =========================" );
