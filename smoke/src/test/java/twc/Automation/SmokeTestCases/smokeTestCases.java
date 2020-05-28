@@ -469,7 +469,7 @@ public void Smoke_Test_CaseVerify_news_aax_amazon_adcalll()
 public void Smoke_Test_Verify_hourly_detailpage_adcall_iu()
 		throws Exception {
 	System.out.println("================= Verify_hourly_detailpage_adcall_iu Started =========================");
-	//Functions.Verify_hourly_detailpage_adcall_iu();
+	Functions.Verify_hourly_detailpage_adcall_iu();
  	System.out.println("================= Verify_hourly_detailpage_adcall_iu End =========================");	
  	}
 /*@Test(priority=34,enabled = true)
@@ -515,12 +515,12 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 		 
 		CharlesFunctions.startSessionBrowserData();	
 		
-		Thread.sleep(15000);
+		Thread.sleep(20000);
 		
 			logStep("kill launch the app");
 			logStep("clicking video");
 			logStep("clicking maps");
-			 Thread.sleep(15000); 
+			 Thread.sleep(20000); 
 		/*Functions.click_video();
 		Functions.scrollapp_maps();
 		AppiumFunctions.clickOnRadarMaps();	*/	
