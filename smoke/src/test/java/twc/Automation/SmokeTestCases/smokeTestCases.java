@@ -643,7 +643,7 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 
 			
 		 System.out.println("================= Verifying SOD CUST_PARAM value for Feed ad call  when user selecting Optoutmode scenario in privacy card started =========================");				
-	     // Functions.validate_SOD_Cust_param_feed_Optoutmode();
+	     Functions.validate_SOD_Cust_param_feed_Optoutmode();
 		  System.out.println("================= Verifying SOD CUST_PARAM value for Feed ad call  when user selecting Optoutmode scenario in privacy card End =========================");
 		}
 	
@@ -729,7 +729,7 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 		// AppFunctions.Kill_Launch_App();
 		 
 		 	logStep("kill launch the app");
-		 	 Thread.sleep(15000); 
+		 	 Thread.sleep(25000); 
 	 
 		//Functions.click_video();
 	//	Functions.scrollapp_maps();
