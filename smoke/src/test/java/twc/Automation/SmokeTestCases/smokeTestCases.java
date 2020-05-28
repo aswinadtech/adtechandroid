@@ -310,7 +310,7 @@ public class smokeTestCases extends Drivers {
 	
 	
 
-          @Test(priority = 100, enabled = true)
+         /* @Test(priority = 100, enabled = true)
 	   @Title("Verifying iu value covid 19  detailpage") 
 	   public void Smoke_Test_Verify_covid19_detailpage_adcall_iu() throws Exception {
 		
@@ -322,7 +322,7 @@ public class smokeTestCases extends Drivers {
 			logStep("/7646/app_android_us/db_display/details/covid  was trigred ");
 		  System.out.println("================= Verify covid-19 detailpage_adcall iu End =========================");
 		 
-		  } 
+		  } */
 
   @Test(priority = 101, enabled = true)
 	   @Title("Verifying iu value for seasonal hub  detailpage ad call iu") 
