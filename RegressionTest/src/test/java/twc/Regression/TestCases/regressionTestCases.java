@@ -116,13 +116,13 @@ public class regressionTestCases extends Drivers{
 		}
 		
 		
-		@Test(priority=25)
+		/*@Test(priority=25)
 		@Title("Verify custom parameter rmid")
 		public void C333204_Verify_cust_param_rmid() throws Exception{
 			System.out.println("================= Custom Parameter Rmid Verfication Started =========================");
 			Custom_Parameters_Verification.parameters_Verification("rmid");
 			System.out.println("================= Custom Parameter Rmid Verfication End =========================");
-		}
+		}*/
 		
 		@Test(priority=26)
 		@Title("Verify custom parameter ver")
@@ -213,13 +213,13 @@ public class regressionTestCases extends Drivers{
 		}
 
 		
-		@Test(priority=65)
+		/*@Test(priority=65)
 		@Title("Verify custom parameter fhic")
 		public void C333232_Verify_cust_param_fhic() throws Exception{
 			System.out.println("================= Custom Parameter Fhic Verfication Started =========================");
 			Custom_Parameters_Verification.parameters_Verification("fhic");
 			System.out.println("================= Custom Parameter Fhic Verfication End =========================");
-		}
+		}*/
 		@Test(priority=66)
 		@Title("Verify custom parameter floc")
 		public void C333238_Verify_cust_param_floc() throws Exception{
