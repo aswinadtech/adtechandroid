@@ -235,9 +235,8 @@ public class smokeTestCases extends Drivers {
 	@Title("Verifying hourly details iu value when we click see details button")
 	public void Smoke_Test_hourlydetailsadcall_clickonseedeatilsbutton()
 			throws Exception {
-		System.out.println("================= "Verifying hourly details iu value when we click see details button test case started =========================");
-	//Functions.finding_Radar_Map_feedcard_iu_value();
 	
+	//System.out.println("================= "Verifying hourly details iu value when we click see details button test case started =========================");
 		logStep("/7646/app_android_us/db_display/details/hourly ad call was trigred");
      	System.out.println("================= Verifying hourly details iu value when we click see details button test case  End =========================");
 	}
