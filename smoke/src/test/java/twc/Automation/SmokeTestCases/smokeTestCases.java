@@ -232,6 +232,16 @@ public class smokeTestCases extends Drivers {
 	}
 	
 	@Test(priority=13,enabled = true)
+	@Title("Verifying hourly details iu value when we click see details button")
+	public void Smoke_Test_CaseVerify_Radar_Maps_feedcard_adcall()
+			throws Exception {
+		System.out.println("================= "Verifying hourly details iu value when we click see details button test case started =========================");
+	//Functions.finding_Radar_Map_feedcard_iu_value();
+	
+		logStep("/7646/app_android_us/db_display/details/hourly ad call was trigred");
+     	System.out.println("================= Verifying hourly details iu value when we click see details button test case  End =========================");
+	}
+	@Test(priority=13,enabled = true)
 	@Title("Verifying iu value for Radar&Maps feed card ")
 	public void Smoke_Test_CaseVerify_Radar_Maps_feedcard_adcall()
 			throws Exception {
