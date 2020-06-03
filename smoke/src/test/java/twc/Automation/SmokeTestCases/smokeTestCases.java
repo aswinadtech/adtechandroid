@@ -524,12 +524,12 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 		 
 		CharlesFunctions.startSessionBrowserData();	
 		
-		Thread.sleep(50000);
+		Thread.sleep(70000);
 		
 			logStep("kill launch the app");
 			logStep("clicking video");
 			logStep("clicking maps");
-			 Thread.sleep(50000); 
+			 Thread.sleep(70000); 
 		/*Functions.click_video();
 		Functions.scrollapp_maps();
 		AppiumFunctions.clickOnRadarMaps();	*/	
@@ -734,11 +734,11 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 		System.out.println(
 				"=================Verifying video Feed ad call when user selecting Optinmode scenario in privacy card started =========================");
 		   CharlesFunctions.startSessionBrowserData();	
-		   Thread.sleep(50000);
+		   Thread.sleep(70000);
 		// AppFunctions.Kill_Launch_App();
 		 
 		 	logStep("kill launch the app");
-		 	 Thread.sleep(50000); 
+		 	 Thread.sleep(70000); 
 	 
 		//Functions.click_video();
 	//	Functions.scrollapp_maps();
