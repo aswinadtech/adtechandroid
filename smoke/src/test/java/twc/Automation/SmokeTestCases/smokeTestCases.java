@@ -498,7 +498,7 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 	      System.out.println("=================Verifying Privacy Card is present on the screen testcase started =========================");
 	//	AppiumFunctions.Kill_launch();
 		//Thread.sleep(70000);
-              Functions.Verify_Privacy_Card_onScreen();
+              //Functions.Verify_Privacy_Card_onScreen();
 		
 		System.out.println("================= Verifying Privacy Card is present on the screen testcase End =========================");
 	}
