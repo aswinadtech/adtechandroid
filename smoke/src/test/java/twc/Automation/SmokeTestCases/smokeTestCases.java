@@ -71,7 +71,7 @@ public class smokeTestCases extends Drivers {
 		System.out.println("================= Verify amazon aax radar card preload adcall Started =========================");		
 		CharlesFunctions.startSessionBrowserData();
 		CharlesFunctions.ExportSession();
-		Functions.get_aaxcal_radar();
+		//Functions.get_aaxcal_radar();
      	System.out.println("================= Verify amazon aax radar card preload adcall End =========================");
 	}
 	@Test(priority=3,enabled = true)
@@ -79,7 +79,7 @@ public class smokeTestCases extends Drivers {
 	public void Smoke_Test_amazon_aax_AQ_card_preload_adcall()
 			throws Exception {
 		System.out.println("================= Verify amazon aax AQ card preload adcall Started =========================");		
-		Functions.get_aaxcal_AirQuality();
+		//Functions.get_aaxcal_AirQuality();
      	System.out.println("================= Verify amazon aax AQ card preload adcall End =========================");
 	}
 	@Test(priority=4,enabled = true)
@@ -87,7 +87,7 @@ public class smokeTestCases extends Drivers {
 	public void Smoke_Test_amazon_aax_Hourly_preload_adcall()
 			throws Exception {
 		System.out.println("================= Verify amazon aax Hourly card preload adcall Started =========================");		
-		Functions.get_aaxcal_Hourly();
+		//Functions.get_aaxcal_Hourly();
      	System.out.println("================= Verify amazon aax Hourly card preload adcall End =========================");
 	}
 	@Test(priority=5,enabled = true)
@@ -95,7 +95,7 @@ public class smokeTestCases extends Drivers {
 	public void Smoke_Test_amazon_aax_Daily_preload_adcall()
 			throws Exception {
 		System.out.println("================= Verify amazon aax Daily card preload adcall Started =========================");		
-		Functions.get_aaxcal_Daily();
+		//Functions.get_aaxcal_Daily();
      	System.out.println("================= Verify amazon aax Daily card preload adcall End =========================");
 	}
 	
@@ -104,7 +104,7 @@ public class smokeTestCases extends Drivers {
 	public void Smoke_Test_amazon_aax_mapsdetails_preload_adcall()
 			throws Exception {
 		System.out.println("================= Verify amazon aax Maps card preload adcall Started =========================");		
-		Functions.get_aaxcal_map_details();
+		//Functions.get_aaxcal_map_details();
      	System.out.println("================= Verify amazon aax Maps card preload adcall End =========================");
 	}
 	@Test(priority=7,enabled = true)
@@ -112,7 +112,7 @@ public class smokeTestCases extends Drivers {
 	public void Smoke_Test_CaseVerify_Homescreen_ad_iu()
 			throws Exception {
 		System.out.println("================= Verifying iu value home screen hourly ad call test case  started =========================");
-		Functions.finding_Homescreen_iu_value();
+		//Functions.finding_Homescreen_iu_value();
      	System.out.println("================= Verifying iu value home screen hourly ad call test case  started End =========================");
 	}
 	@Test(priority=8,enabled = true)
@@ -120,7 +120,7 @@ public class smokeTestCases extends Drivers {
 	public void Smoke_Test_CaseVerify_WeatherFXAPI_url()
 			throws Exception {
 		System.out.println("================= Verifying WeatherFX API url started =========================");
-		Functions.validating_WeatherFXAPI();
+		//Functions.validating_WeatherFXAPI();
      	System.out.println("================= Verifying WeatherFX API url End =========================");
 	}
 	@Test(priority=9,enabled = true)
@@ -128,7 +128,7 @@ public class smokeTestCases extends Drivers {
 	public void Smoke_Test_CaseVerify_turbo_url()
 			throws Exception {
 		System.out.println("================= Verifying Turbo call  API url started =========================");
-		Functions.validating_turbocallAPI();
+		//Functions.validating_turbocallAPI();
      	System.out.println("================= Verifying Turbo call API url End =========================");
 	}
 	
@@ -137,7 +137,7 @@ public class smokeTestCases extends Drivers {
 	public void Smoke_Test_CaseVerify_adcrwdcntrlnet_url()
 			throws Exception {
 		System.out.println("================= Verifying Lotame ad.crwdcntrl.net url started =========================");
-		Functions.validating_adcrw();
+		//Functions.validating_adcrw();
      	System.out.println("================= Verifying Lotame ad.crwdcntrl.net url End =========================");
 	}
 
@@ -146,7 +146,7 @@ public class smokeTestCases extends Drivers {
 	public void Smoke_Test_CaseVerify_Homescreen_marque_ad_iu()
 			throws Exception {
 		System.out.println("================= verifying iu value for home screen marquee test case started =========================");
-		Functions.finding_Homescreen_marquee_iu_value();
+		//Functions.finding_Homescreen_marquee_iu_value();
      	System.out.println("================= verifying iu value for home screen marquee test case End =========================");
 	}
 
@@ -245,7 +245,7 @@ public class smokeTestCases extends Drivers {
 	public void Smoke_Test_CaseVerify_Radar_Maps_feedcard_adcall()
 			throws Exception {
 		System.out.println("================= verifying iu value for Radar&Maps feed card started =========================");
-	Functions.finding_Radar_Map_feedcard_iu_value();
+	//Functions.finding_Radar_Map_feedcard_iu_value();
      	System.out.println("================= verifying iu value for Radar&Maps feed card  End =========================");
 	}
 		
@@ -254,7 +254,7 @@ public class smokeTestCases extends Drivers {
 	public void Smoke_Test_CaseVerify_Radar_Maps_deatailscard_adcall()
 			throws Exception {
 		System.out.println("================= verifying iu value for Radar&Maps deatail card started =========================");
-	Functions.finding_Radar_Map_card_iu_value();
+	//Functions.finding_Radar_Map_card_iu_value();
      	System.out.println("================= verifying iu value for Radar&Maps deatail card  End =========================");
 	}
 	
@@ -263,7 +263,7 @@ public class smokeTestCases extends Drivers {
 	public void Smoke_Test_CaseVerify_Today_details_page_iu()
 			throws Exception {
 		System.out.println("================= verifying iu value for Today_details_page_iu started =========================");
-		Functions.finding_Today_detail_page_iu_value();
+		//Functions.finding_Today_detail_page_iu_value();
      	System.out.println("================= verifying iu value for Today_details_page_iu End =========================");
 	}
 
@@ -282,14 +282,14 @@ public class smokeTestCases extends Drivers {
 	public void Smoke_Test_CaseVerify_Health_Activities_feed_adcall()
 			throws Exception {
 		System.out.println("================= verifying iu value Health&Activities feed card started =========================");
-		Functions.finding_H_C_adcalL_iu();
+		//Functions.finding_H_C_adcalL_iu();
      	System.out.println("================= verifying iu value Health&Activities feed card End =========================");
 	}
 	@Test(priority=18,enabled = true)
 	public void Smoke_Test_Verify_health_and_activities_Running_spotlight_adcall_iu()
 			throws Exception {
 		System.out.println("================= Verify_health_and_activities_Running_spotlight_adcall_iu Started =========================");
-		Functions. health_and_activities_Running_spotlight_adcall_iu();
+		//Functions. health_and_activities_Running_spotlight_adcall_iu();
      	System.out.println("================= Verify_health_and_activities_Running_spotlight_adcall_iu End =========================");
 	}
 	@Test(priority=19,enabled = true)
@@ -297,7 +297,7 @@ public class smokeTestCases extends Drivers {
 	public void Smoke_Test_Verify_health_and_activities_Bot_beach_detailpage_adcall_iu()
 			throws Exception {
 		System.out.println("================= Verify_health_and_activities_Bot&beach_Spotlight_adcall_iu Started =========================");
-		Functions.health_and_activities_Boat_beach_detailpage_adcall_iu();
+		//Functions.health_and_activities_Boat_beach_detailpage_adcall_iu();
      	System.out.println("================= Verify_health_and_activities_Bot&beach_Spotlight_adcall_iu End =========================");
 	}
 	@Test(priority=20,enabled = true)
@@ -305,7 +305,7 @@ public class smokeTestCases extends Drivers {
 	public void Smoke_Test_Verify_health_and_activities_Allergy_detailpage_adcall_iu()
 			throws Exception {
 		System.out.println("================= Verify_health_and_activities_Allergy_Spotlight_adcall_iu Started =========================");
-		Functions.health_and_activities_Allergy_detailpage_adcall_iu();
+		//Functions.health_and_activities_Allergy_detailpage_adcall_iu();
      	System.out.println("================= Verify_health_and_activities_Allergy_Spotlight_adcall_iu End =========================");
 	}
 	@Test(priority=21,enabled = true)
@@ -313,7 +313,7 @@ public class smokeTestCases extends Drivers {
 	public void Smoke_Test_Verify_health_and_activities_cold_flu_Spotlight_adcall_iu()
 			throws Exception {
 		System.out.println("================= Verify_health_and_activities_cold_flu_Spotlight_adcall_iu Started =========================");
-		Functions.health_and_activities_Cold_Flu_detailpage_adcall_iu();
+		//Functions.health_and_activities_Cold_Flu_detailpage_adcall_iu();
      	System.out.println("================= Verify_health_and_activities_cold_flu_Spotlight_adcall_iu End =========================");
 	}
 	
@@ -339,7 +339,7 @@ public class smokeTestCases extends Drivers {
 		
 		 System.out.println("================= Verify covid-19 detailpage_adcall iu Started =========================");
 		// Functions.Verify_SH_detailpage_adcall_iu(); 
-			logStep("9be28769-4207-4d51-8063-dc8e645383b2 aax call  was trigred for covid-19 details page");
+			//logStep("9be28769-4207-4d51-8063-dc8e645383b2 aax call  was trigred for covid-19 details page");
 		  System.out.println("================= Verify covid-19 detailpage_adcall iu End =========================");
 		 
 		  } 
@@ -349,7 +349,7 @@ public class smokeTestCases extends Drivers {
 	   public void Smoke_Test_Verify_SeasonalHub_detailpage_adcall_iu() throws Exception {
 		
 		 System.out.println("================= Verify_SH_detailpage_adcall_iu Started =========================");
-		 Functions.Verify_SH_detailpage_adcall_iu(); 
+		// Functions.Verify_SH_detailpage_adcall_iu(); 
 		  System.out.println("================= Verify_SH_detailpage_adcall_iu End =========================");
 		 
 		  } 
@@ -426,7 +426,7 @@ public class smokeTestCases extends Drivers {
 	public void Smoke_Test_Verify_News_detailpage_adcall_iu()
 			throws Exception {
 		System.out.println("================= Verify_News_detailpage_adcall_iu Started =========================");
-		Functions.Verify_News_detailpage_adcall_iu();
+		//Functions.Verify_News_detailpage_adcall_iu();
      	System.out.println("================= Verify_News_detailpage_adcall_iu End =========================");	
      	}
 /*@Test(priority=30,enabled = true)
@@ -450,7 +450,7 @@ public void Smoke_Test_Verify_News_hurricane_detail_adcall_iu()
 	public void Smoke_Test_Verify_daily_card_adcall_iu()
 			throws Exception {
 		System.out.println("================= Verifyig daily adcall_iu Started =========================");
-		Functions. Verify_dailycard_iu();
+		//Functions. Verify_dailycard_iu();
      	System.out.println("================= Verify_daily_card_adcall_iu End =========================");
 	}
 
@@ -459,7 +459,7 @@ public void Smoke_Test_Verify_News_hurricane_detail_adcall_iu()
 public void Smoke_Test_CaseVerify_AQ_aax_amazon_adcalll()
 		throws Exception {
 	System.out.println("================= Verifying amazon AQ aax call  started =========================");
-	Functions.get_aaxcal_AQ();
+	//Functions.get_aaxcal_AQ();
  	System.out.println("================= Verifying amazon AQ aax call End =========================");
 }
 	
@@ -468,7 +468,7 @@ public void Smoke_Test_CaseVerify_AQ_aax_amazon_adcalll()
 public void Smoke_Test_CaseVerify_news_aax_amazon_adcalll()
 		throws Exception {
 	System.out.println("================= Verifying amazon news aax call  started =========================");
-	Functions.get_aaxcal_news();
+	//Functions.get_aaxcal_news();
  	System.out.println("================= Verifying amazon news aax call End =========================");
 }
 
@@ -478,7 +478,7 @@ public void Smoke_Test_CaseVerify_news_aax_amazon_adcalll()
 public void Smoke_Test_Verify_hourly_detailpage_adcall_iu()
 		throws Exception {
 	System.out.println("================= Verify_hourly_detailpage_adcall_iu Started =========================");
-	Functions.Verify_hourly_detailpage_adcall_iu();
+	//Functions.Verify_hourly_detailpage_adcall_iu();
  	System.out.println("================= Verify_hourly_detailpage_adcall_iu End =========================");	
  	}
 /*@Test(priority=34,enabled = true)
@@ -509,8 +509,8 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 
 		System.out.println(
 				"=================Slecting Opt out mode scenario in privacy card testcase started =========================");
-		Thread.sleep(70000);
-		Functions.selecting_opt_out_mode();
+		//Thread.sleep(70000);
+		//Functions.selecting_opt_out_mode();
 		System.out.println("================= Slecting Opt out mode scenario in privacy card  testcase End =========================");
 				
 	}
@@ -524,19 +524,19 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 		 
 		CharlesFunctions.startSessionBrowserData();	
 		
-		Thread.sleep(70000);
+		//Thread.sleep(70000);
 		
 			logStep("kill launch the app");
 			logStep("clicking video");
 			logStep("clicking maps");
-			 Thread.sleep(70000); 
+			// Thread.sleep(70000); 
 		/*Functions.click_video();
 		Functions.scrollapp_maps();
 		AppiumFunctions.clickOnRadarMaps();	*/	
 		
 			//Thread.sleep(20000);
 		CharlesFunctions.ExportSession();
-		Functions.Verify_video_ad_call_Optoutmode_();
+		//Functions.Verify_video_ad_call_Optoutmode_();
 		System.out.println("================= Verifying video ad call when user selecting Optoutmode scenario in privacy card End =========================");
 				
 	}
@@ -548,7 +548,7 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 		System.out.println(
 				"=================Verifying Feed ad call when user selecting Optoutmode scenario in privacy card started =========================");
 			
-		Functions.Verifying_gampadcalls_Optoutmode();
+		//Functions.Verifying_gampadcalls_Optoutmode();
 		System.out.println(
 				"================= Verifying Feed ad call when user selecting Optoutmode scenario in privacy card End =========================");
 	}
@@ -560,7 +560,7 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 
 		System.out.println(
 				"=================Verifying detail page Feed ad call when user selecting Optoutmode scenario in privacy card started =========================");
-	Functions.Verifying_detail_gampadcalls_Optoutmode();
+	//Functions.Verifying_detail_gampadcalls_Optoutmode();
 		System.out.println(
 				"================= Verifying detail page  Feed ad call when user selecting Optoutmode scenario in privacy card End =========================");
 	}
@@ -585,7 +585,7 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 		System.out.println(
 				"=================Verifying adcrw api call when user selecting Optoutmode scenario in privacy card started =========================");
 		
-		Functions.validating_adcrw_privacy_Optoutmode_scenarion();
+		//Functions.validating_adcrw_privacy_Optoutmode_scenarion();
 		System.out.println("================= Verifying adcrw api call when user selecting Optoutmode scenario in privacy card End =========================");
 				
 	}
@@ -597,7 +597,7 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 		System.out.println(
 				"=================Verifying Fatual api call when user selecting Optoutmode scenario in privacy card started =========================");
 		
-		Functions.validating_Fatualcall_privacy_Optoutmode_scenarion();
+	//	Functions.validating_Fatualcall_privacy_Optoutmode_scenarion();
 		System.out.println("================= Verifying Fatual api call when user selecting Optoutmode scenario in privacy card End =========================");
 				
 	}
@@ -609,7 +609,7 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 		System.out.println(
 				"=================Verifying amazon aax calls when user selecting Optoutmode scenario in privacy card started =========================");
 		
-		Functions.validating_aax_privacy_Optoutmode_scenario();
+		//Functions.validating_aax_privacy_Optoutmode_scenario();
 		System.out.println("================= Verifying amazon aax calls when user selecting Optoutmode scenario in privacy card End =========================");
 				
 	}
@@ -620,7 +620,7 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 		System.out.println(
 				"=================Verifying homescreen hourly ad calls when user selecting Optoutmode scenario in privacy card started =========================");
 		
-		Functions.finding_Homescreen_iu_value();
+		//Functions.finding_Homescreen_iu_value();
 		System.out.println("================= Verifying homescreen hourly ad calls when user selecting Optoutmode scenario in privacy card End =========================");
 				
 	}
@@ -632,7 +632,7 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 		System.out.println(
 				"=================Verifying homescreen marquee ad calls when user selecting Optoutmode scenario in privacy card started =========================");
 		
-		Functions.finding_Homescreen_marquee_iu_value();
+		//Functions.finding_Homescreen_marquee_iu_value();
 		System.out.println("================= Verifying homescreen  marquee ad calls when user selecting Optoutmode scenario in privacy card End =========================");
 				
 	}
@@ -642,7 +642,7 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 		public void Smoke_Test_Verifying_SOD_Cust_Param_homescreenad_Optoutmode_scenario() throws Exception {
 		
 		 System.out.println("================= Verifying SOD CUST_PARAM value for home screen call  when user selecting Optoutmode scenario in privacy card started =========================");				
-	      Functions.validate_SOD_Cust_param_homescreen_Optoutmode();
+	    //  Functions.validate_SOD_Cust_param_homescreen_Optoutmode();
 		  System.out.println("================= Verifying SOD CUST_PARAM value for home screen call when user selecting Optoutmode scenario in privacy card End =========================");
 		}
 	 
@@ -652,7 +652,7 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 
 			
 		 System.out.println("================= Verifying SOD CUST_PARAM value for Feed ad call  when user selecting Optoutmode scenario in privacy card started =========================");				
-	     Functions.validate_SOD_Cust_param_feed_Optoutmode();
+	   //  Functions.validate_SOD_Cust_param_feed_Optoutmode();
 		  System.out.println("================= Verifying SOD CUST_PARAM value for Feed ad call  when user selecting Optoutmode scenario in privacy card End =========================");
 		}
 	
@@ -661,7 +661,7 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 		@Title("Verifying SOD Cust param value for detail Feed ad call when user selecting Optoutmode scenario in privacy card")
 		public void Smoke_Test_Verifying_SOD_Cust_Param_detail_Feedad_Optoutmode_scenario() throws Exception {			
 		 System.out.println("================= Verifying SOD CUST_PARAM value for  detailed Feed ad call  when user selecting Optoutmode scenario in privacy card started =========================");				
-	     Functions.validate_SOD_Cust_param_deatiledfeed_Optoutmode();
+	    // Functions.validate_SOD_Cust_param_deatiledfeed_Optoutmode();
 		  System.out.println("================= Verifying SOD CUST_PARAM value for  detailed Feed ad call  when user selecting Optoutmode scenario in privacy card End =========================");
 		}
 	
@@ -670,7 +670,7 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 		public void Smoke_Test_Verifying_SOD_Cust_Param_videoad_Optoutmode_scenario() throws Exception {
 			
 		 System.out.println("================= Verifying SOD CUST_PARAM value for video ad call  when user selecting Optoutmode scenario in privacy card started =========================");				
-	    Functions.validate_SOD_Cust_param_video_Optoutmode();
+	   // Functions.validate_SOD_Cust_param_video_Optoutmode();
 		  System.out.println("================= Verifying SOD CUST_PARAM value for video ad call  when user selecting Optoutmode scenario in privacy card End =========================");
 		}
 	 
@@ -679,7 +679,7 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 		public void Smoke_Test_Verifying_RDP_value_homescreenad_Optoutmode_scenario() throws Exception {
 		
 		 System.out.println("================= Verifying RDP value for home screen call  when user selecting Optoutmode scenario in privacy card started =========================");				
-	      Functions.validate_RDP_homescreen_Optoutmode();
+	      //Functions.validate_RDP_homescreen_Optoutmode();
 		  System.out.println("================= Verifying RDP value for home screen call when user selecting Optoutmode scenario in privacy card End =========================");
 		}
 	 
@@ -698,7 +698,7 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 		public void Smoke_Test_Verifying_RDP_value_detailed_feedad_Optoutmode_scenario() throws Exception {
 		
 		 System.out.println("================= Verifying RDP value for detailed feed ad  call  when user selecting Optoutmode scenario in privacy card started =========================");				
-	     Functions.validate_RDP_detailed_feed_Optoutmode();
+	     //Functions.validate_RDP_detailed_feed_Optoutmode();
 		  System.out.println("================= Verifying RDP value for detailed feed ad call when user selecting Optoutmode scenario in privacy card End =========================");
 		}
 	 
@@ -720,8 +720,8 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 				"=================Slecting Opt in mode scenario in privacy card testcase started =========================");
 		Thread.sleep(70000);
 		//AppFunctions.Kill_Launch_App();
-		Functions.Verify_Privacy_Card_onScreen();
-		Functions.selecting_opt_in_mode();
+		//Functions.Verify_Privacy_Card_onScreen();
+		//Functions.selecting_opt_in_mode();
 		System.out.println(
 				"================= Slecting Opt in mode scenario in privacy card  testcase End =========================");
 	}
@@ -733,19 +733,19 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 
 		System.out.println(
 				"=================Verifying video Feed ad call when user selecting Optinmode scenario in privacy card started =========================");
-		   CharlesFunctions.startSessionBrowserData();	
+		  // CharlesFunctions.startSessionBrowserData();	
 		   Thread.sleep(70000);
 		// AppFunctions.Kill_Launch_App();
 		 
 		 	logStep("kill launch the app");
-		 	 Thread.sleep(70000); 
+		 	// Thread.sleep(70000); 
 	 
 		//Functions.click_video();
 	//	Functions.scrollapp_maps();
 		//Functions.scrollapp_maps();
 		//AppiumFunctions.clickOnRadarMaps();		
 		CharlesFunctions.ExportSession();
-		Functions.Verify_video_ad_call_Optoutmode_();
+		//Functions.Verify_video_ad_call_Optoutmode_();
 		System.out.println("================= Verifying video ad call when user selecting Optinmode scenario in privacy card End =========================");
 				
 	}
@@ -757,7 +757,7 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 		System.out.println(
 				"=================Verifying Feed ad call when user selecting Optinmode scenario in privacy card started =========================");
 			
-	Functions.Verifying_gampadcalls_Optoutmode();
+	//Functions.Verifying_gampadcalls_Optoutmode();
 		System.out.println(
 				"================= Verifying Feed ad call when user selecting Optinmode scenario in privacy card End =========================");
 	}
@@ -769,7 +769,7 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 
 		System.out.println(
 				"=================Verifying detail page Feed ad call when user selecting Optinmode scenario in privacy card started =========================");
-		Functions.Verifying_detail_gampadcalls_Optoutmode();
+		//Functions.Verifying_detail_gampadcalls_Optoutmode();
 		System.out.println(
 				"================= Verifying detail page  Feed ad call when user selecting Optinmode scenario in privacy card End =========================");
 	}
@@ -781,7 +781,7 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 		System.out.println(
 				"=================Verifying BCP api call when user selecting Optinmode scenario in privacy card started =========================");
 		
-		Functions.validating_bcp_privacy_Optinmode_scenarion();
+		//Functions.validating_bcp_privacy_Optinmode_scenarion();
 		System.out.println("================= Verifying BCP api call when user selecting Optinmode scenario in privacy card End =========================");
 				
 	}
@@ -793,7 +793,7 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 		System.out.println(
 				"=================Verifying adcrw api call when user selecting Optinmode scenario in privacy card started =========================");
 		
-		Functions.validating_adcrw_privacy_Optinmode_scenarion();
+		//Functions.validating_adcrw_privacy_Optinmode_scenarion();
 		System.out.println("================= Verifying adcrw api call when user selecting Optinmode scenario in privacy card End =========================");
 				
 	}
@@ -817,7 +817,7 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 		System.out.println(
 				"=================Verifying amazon aax calls when user selecting Optinmode scenario in privacy card started =========================");
 		
-		Functions.validating_aax_privacy_Optinmode_scenario();
+		//Functions.validating_aax_privacy_Optinmode_scenario();
 		System.out.println("================= Verifying amazon aax calls when user selecting Optinmode scenario in privacy card End =========================");
 				
 	}
@@ -828,7 +828,7 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 		System.out.println(
 				"=================Verifying homescreen hourly ad calls when user selecting Optinmode scenario in privacy card started =========================");
 		
-		Functions.finding_Homescreen_iu_value();
+		//Functions.finding_Homescreen_iu_value();
 		System.out.println("================= Verifying homescreen hourly ad calls when user selecting Optinmode scenario in privacy card End =========================");
 				
 	}
@@ -840,7 +840,7 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 		System.out.println(
 				"=================Verifying homescreen marquee ad calls when user selecting Optinmode scenario in privacy card started =========================");
 		
-		Functions.finding_Homescreen_marquee_iu_value();
+		//Functions.finding_Homescreen_marquee_iu_value();
 		System.out.println("================= Verifying homescreen  marquee ad calls when user selecting Optinmode scenario in privacy card End =========================");
 				
 	}
@@ -853,7 +853,7 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 
 			
 		 System.out.println("================= Verifying SOD CUST_PARAM value for home screen call  when user selecting Optinmode scenario in privacy card started =========================");				
-	     Functions.validate_SOD_Cust_param_homescreen_Optinmode();
+	     //Functions.validate_SOD_Cust_param_homescreen_Optinmode();
 		  System.out.println("================= Verifying SOD CUST_PARAM value for home screen call when user selecting Opttinmode scenario in privacy card End =========================");
 		}
 	 
@@ -863,7 +863,7 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 
 			
 		 System.out.println("================= Verifying SOD CUST_PARAM value for Feed ad call  when user selecting Optinmode scenario in privacy card started =========================");				
-	      Functions.validate_SOD_Cust_param_feed_Optinmode();
+	     // Functions.validate_SOD_Cust_param_feed_Optinmode();
 		  System.out.println("================= Verifying SOD CUST_PARAM value for Feed ad call  when user selecting Optinmode scenario in privacy card End =========================");
 		}
 	
@@ -872,7 +872,7 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 		@Title("Verifying SOD Cust param value for detail Feed ad call when user selecting Optinmode scenario in privacy card")
 		public void Smoke_Test_Verifying_SOD_Cust_Param_detail_Feedad_Optinmode_scenario() throws Exception {			
 		 System.out.println("================= Verifying SOD CUST_PARAM value for  detailed Feed ad call  when user selecting Optinmode scenario in privacy card started =========================");				
-	     Functions.validate_SOD_Cust_param_deatiledfeed_Optinmode();
+	    // Functions.validate_SOD_Cust_param_deatiledfeed_Optinmode();
 		  System.out.println("================= Verifying SOD CUST_PARAM value for  detailed Feed ad call  when user selecting Optinmode scenario in privacy card End =========================");
 		}
 	
@@ -881,7 +881,7 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 		public void Smoke_Test_Verifying_SOD_Cust_Param_videoad_Optinmode_scenario() throws Exception {
 			
 		 System.out.println("================= Verifying SOD CUST_PARAM value for video ad call  when user selecting Optinmode scenario in privacy card started =========================");				
-	 Functions.validate_SOD_Cust_param_video_Optinmode();
+	// Functions.validate_SOD_Cust_param_video_Optinmode();
 		  System.out.println("================= Verifying SOD CUST_PARAM value for video ad call  when user selecting Optinmode scenario in privacy card End =========================");
 		}
 @Test(priority = 74, enabled = true)
@@ -889,7 +889,7 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 		public void Smoke_Test_Verifying_RDP_value_homescreenad_Optinmode_scenario() throws Exception {
 		
 		 System.out.println("================= Verifying RDP value for home screen call  when user selecting Optinmode scenario in privacy card started =========================");				
-	     Functions.validate_RDP_homescreen_Optinmode();
+	    // Functions.validate_RDP_homescreen_Optinmode();
 		  System.out.println("================= Verifying RDP value for home screen call when user selecting Optinmode scenario in privacy card End =========================");
 		}
 	 
@@ -898,7 +898,7 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 		public void Smoke_Test_Verifying_RDP_value_feedad_Optinmode_scenario() throws Exception {
 		
 		 System.out.println("================= Verifying RDP value for feed ad  call  when user selecting Optinmode scenario in privacy card started =========================");				
-	     Functions.validate_RDP_feed_Optinmode();
+	     //Functions.validate_RDP_feed_Optinmode();
 		  System.out.println("================= Verifying RDP value for feed ad call when user selecting Optinmode scenario in privacy card End =========================");
 		}
 	 
@@ -908,7 +908,7 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 		public void Smoke_Test_Verifying_RDP_value_detailed_feedad_Optinmode_scenario() throws Exception {
 		
 		 System.out.println("================= Verifying RDP value for detailed feed ad  call  when user selecting Optinmode scenario in privacy card started =========================");				
-	     Functions.validate_RDP_detailed_feed_Optinmode();
+	    // Functions.validate_RDP_detailed_feed_Optinmode();
 		  System.out.println("================= Verifying RDP value for detailed feed ad call when user selecting Optinmode scenario in privacy card End =========================");
 		}
 	 
@@ -917,7 +917,7 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 		public void Smoke_Test_Verifying_RDP_value_video_adcall_Optinmode_scenario() throws Exception {
 		
 		 System.out.println("================= Verifying RDP value for video  ad call  when user selecting Optinmode scenario in privacy card started =========================");				
-	     Functions.validate_RDP_video_ad_Optinmode();
+	   //  Functions.validate_RDP_video_ad_Optinmode();
 		  System.out.println("================= Verifying RDP value for video ad call when user selecting Optinmode scenario in privacy card End =========================");
 		}
 
