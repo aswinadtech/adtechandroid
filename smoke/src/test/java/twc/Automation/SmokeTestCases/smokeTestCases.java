@@ -1145,7 +1145,7 @@ logStep("got response for daily IF card ad call");
 		//		AppiumFunctions.AppiumServerStop();
 		//		AppiumFunctions.AppiumServerStart();
 		CharlesFunctions.ClearSessions();
-		AppiumFunctions.LaunchAppWithFullReset();
+		//AppiumFunctions.LaunchAppWithFullReset();
               //  AppiumFunctions.Swipeforappdeckapk();
 	//	AppiumFunctions.Kill_launch();
 		/*AppiumFunctions.ClickonIUnderstand();
