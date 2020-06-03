@@ -497,7 +497,7 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 		
 	      System.out.println("=================Verifying Privacy Card is present on the screen testcase started =========================");
 	//	AppiumFunctions.Kill_launch();
-		Thread.sleep(10000);
+		Thread.sleep(70000);
               Functions.Verify_Privacy_Card_onScreen();
 		
 		System.out.println("================= Verifying Privacy Card is present on the screen testcase End =========================");
@@ -509,7 +509,7 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 
 		System.out.println(
 				"=================Slecting Opt out mode scenario in privacy card testcase started =========================");
-		
+		Thread.sleep(70000);
 		Functions.selecting_opt_out_mode();
 		System.out.println("================= Slecting Opt out mode scenario in privacy card  testcase End =========================");
 				
@@ -707,7 +707,7 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 		public void Smoke_Test_Verifying_RDP_value_video_adcall_Optoutmode_scenario() throws Exception {
 		
 		 System.out.println("================= Verifying RDP value for video  ad call  when user selecting Optoutmode scenario in privacy card started =========================");				
-	     Functions.validate_RDP_video_ad_Optoutmode();
+	  //   Functions.validate_RDP_video_ad_Optoutmode();
 		  System.out.println("================= Verifying RDP value for video ad call when user selecting Optoutmode scenario in privacy card End =========================");
 		}
 	
@@ -718,7 +718,7 @@ public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 
 		System.out.println(
 				"=================Slecting Opt in mode scenario in privacy card testcase started =========================");
-		Thread.sleep(10000);
+		Thread.sleep(70000);
 		//AppFunctions.Kill_Launch_App();
 		Functions.Verify_Privacy_Card_onScreen();
 		Functions.selecting_opt_in_mode();
