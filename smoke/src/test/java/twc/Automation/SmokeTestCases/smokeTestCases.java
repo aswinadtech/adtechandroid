@@ -225,7 +225,7 @@ public class smokeTestCases extends Drivers {
 	    	logStep("clicked hourly details");
 	    		logStep("clicked daily details");
 	    	
-               Thread.sleep(300000);
+             //  Thread.sleep(300000);
 			CharlesFunctions.ExportSession();
 			//Functions.finding_VideoCard_iu_value();	
      	System.out.println("================= Verifying Video ad call testcase End =========================");
