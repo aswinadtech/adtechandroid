@@ -271,13 +271,13 @@ public class regressionTestCases extends Drivers{
 			System.out.println("================= Custom Parameter Wfxtg Verfication End =========================");
 		}
 	
-	 /*    @Test(priority=81)
+	     @Test(priority=81)
 			@Title("Verify custom parameter cfxtg")
 			public void C333228_Verify_cust_param_cfxtg() throws Exception{
 				System.out.println("================= Custom Parameter cfxtg Verfication Started =========================");
 				Custom_Parameters_Verification.parameters_Verification("cxtg");
 				System.out.println("================= Custom Parameter cfxtg Verfication End =========================");
-			}*/
+			}
 	     
 	    @Test(priority=82)
 	 	@Title("Verify custom parameter hlzip")
@@ -353,13 +353,13 @@ public class regressionTestCases extends Drivers{
 		 
 		//UI
 		
-		/*@Test(priority=130)
+		@Test(priority=130)
 		@Title("Verify custom parameter sev")
 		public void C333223_Verify_cust_param_sev() throws Exception{
 			System.out.println("================= Custom Parameter Sev Verfication Started =========================");
-			Custom_Parameters_Verification.parameters_Verification("sev");
+			//Custom_Parameters_Verification.parameters_Verification("sev");
 			System.out.println("================= Custom Parameter Sev Verfication End =========================");
-		}*/
+		}
 	    	
 	     	
 	
