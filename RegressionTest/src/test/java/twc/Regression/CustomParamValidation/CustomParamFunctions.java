@@ -94,7 +94,7 @@ public class CustomParamFunctions extends Drivers {
 		String tile = "1";
 		String par = "nl";
 		String zip="17015";
-
+		String hlzip="534350";
 		if(parameter.equals("lang")){
 			hardcode=lang;
 		}
@@ -116,7 +116,9 @@ public class CustomParamFunctions extends Drivers {
 		else if(parameter.equals("zip")){
 			hardcode=zip;
 		}
-
+		else if(parameter.equals("hlzip")){
+			hardcode=zip;
+		}
 
 		Map<String, String> pubad = get_pub_ad_custom_value(feed);
 
@@ -162,6 +164,7 @@ public class CustomParamFunctions extends Drivers {
 			}
 		}
 		return result;
+	
 	}
 
 	public static String validate_not_null_results(String parameter,int feed) throws Exception{
