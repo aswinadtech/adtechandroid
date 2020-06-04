@@ -387,7 +387,7 @@ public class Custom_Parameters_Verification extends Drivers{
 									else if(ParamType.equals("hlzip") && custParam.equals("hlzip")){
 										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										//Param_val = CustomParamFunctions.validate_wfxtg_results("hlzip",feed);
-														Param_val = CustomParamFunctions.validate_hard_code_results("hlzip",feed);
+										Param_val = CustomParamFunctions.validate_hard_code_results("hlzip",feed);
 										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
