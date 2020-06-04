@@ -283,7 +283,7 @@ public class regressionTestCases extends Drivers{
 	 	@Title("Verify custom parameter hlzip")
 	 	public void C333214_Verify_cust_param_hlzip() throws Exception{
 	 		System.out.println("================= Custom Parameter Hlzip Verfication Started =========================");
-	 		Custom_Parameters_Verification.parameters_Verification("hlzip");
+	 		//Custom_Parameters_Verification.parameters_Verification("hlzip");
 	 		System.out.println("================= Custom Parameter Hlzip Verfication End =========================");
 	 	}
 	 	
