@@ -279,13 +279,13 @@ public class regressionTestCases extends Drivers{
 				System.out.println("================= Custom Parameter cfxtg Verfication End =========================");
 			}*/
 	     
-	  /*   @Test(priority=82)
+	    @Test(priority=82)
 	 	@Title("Verify custom parameter hlzip")
 	 	public void C333214_Verify_cust_param_hlzip() throws Exception{
 	 		System.out.println("================= Custom Parameter Hlzip Verfication Started =========================");
 	 		Custom_Parameters_Verification.parameters_Verification("hlzip");
 	 		System.out.println("================= Custom Parameter Hlzip Verfication End =========================");
-	 	}*/
+	 	}
 	 	
 	 	
 	    /* 	@Test(priority=83)
@@ -578,13 +578,13 @@ public class regressionTestCases extends Drivers{
 	
 
 	
-	/*@Test(priority=73)
+	@Test(priority=73)
 	@Title("Verify custom parameter hmid")
 	public void C333207_Verify_cust_param_hmid() throws Exception{
 		System.out.println("================= Custom Parameter Hmid Verfication Started =========================");
 		Custom_Parameters_Verification.parameters_Verification("hmid");
 		System.out.println("================= Custom Parameters Hmid Verfication End =========================");
-	}*/
+	}
 	
 	@Test(priority=74)
 	@Title("Verify custom parameter wind")
@@ -594,13 +594,13 @@ public class regressionTestCases extends Drivers{
 		System.out.println("================= Custom Parameter Wind Verfication End =========================");
 	}
 	
-	@Test(priority=75)
+	/*@Test(priority=75)
 	@Title("Verify custom parameter uv")
 	public void C333224_Verify_cust_param_uv() throws Exception{
 		System.out.println("================= Custom Parameter Uv Verfication Started =========================");
 		Custom_Parameters_Verification.parameters_Verification("uv");
 		System.out.println("================= Custom Parameter Uv Verfication End =========================");
-	}
+	}*/
 	
 	@Test(priority=76)
 	@Title("Verify custom parameter fltmpc")
