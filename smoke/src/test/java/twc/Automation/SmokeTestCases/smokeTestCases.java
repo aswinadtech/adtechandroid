@@ -131,7 +131,7 @@ public class smokeTestCases extends Drivers {
 			throws Exception {
 		System.out.println("================= Verify amazon aax radar card preroll adcall Started =========================");		
 		logStep(" Verifying preload amazon aax for radar card");
-		Functions.get_aaxcal_radar();
+		//Functions.get_aaxcal_radar();
      	System.out.println("================= Verify amazon aax radar card preroll adcall End =========================");
 	}
 	
@@ -188,7 +188,7 @@ public class smokeTestCases extends Drivers {
 	 @Title("Verifying Video ad call") public void
 	  Smoke_Test_Case_Verify_Video_adCalll() throws Exception { 
 	  System.out.println("================= Verifying Video ad call testcase  started =========================" );
-	  CharlesFunctions.clearSessionBrowserData();
+	 // CharlesFunctions.clearSessionBrowserData();
 	  CharlesFunctions.startSessionBrowserData();
 	  
 	  // Thread.sleep(50000);
@@ -198,7 +198,7 @@ public class smokeTestCases extends Drivers {
 	 //  Thread.sleep(50000);
 	   	  // Thread.sleep(50000);
 	   //Thread.sleep(50000);
-	   	   Thread.sleep(50000);
+	   	  // Thread.sleep(50000);
 	   /*AppiumFunctions.clickOnUnderstandbutton(); 
 	   // AppFunctions.Kill_Launch_App();
 	  AppiumFunctions.Kill_launch(); 
@@ -251,7 +251,7 @@ public class smokeTestCases extends Drivers {
 	   AppiumFunctions.clickOnBackArrowElement(); 
 	 Thread.sleep(5000);
 	   AppiumFunctions.click_hourly_element(); */
-	 CharlesFunctions.ExportSession();
+	CharlesFunctions.ExportSession();
 	  Functions.finding_VideoCard_iu_value();
 	   System.out.println("================= Verifying Video ad call testcase End =========================" );
 	  }
@@ -333,7 +333,7 @@ public class smokeTestCases extends Drivers {
 			 @Title("Verifying iu value for Health&Activities  feed card") 
 			  public void  Smoke_Test_CaseVerify_Health_Activities_feed_adcall() throws Exception {
 			 System.out.println("================= verifying iu value Health&Activities feed card started =========================");
-			 Functions.finding_H_C_adcalL_iu(); 
+			// Functions.finding_H_C_adcalL_iu(); 
 			 System.out.println("================= verifying iu value Health&Activities feed card End =========================");
 			  }
 			 @Test(priority=18,enabled = true) 
@@ -432,7 +432,7 @@ public class smokeTestCases extends Drivers {
 					public void Smoke_Test_Verify_hourly_detailpage_adcall_iu()
 							throws Exception {
 						System.out.println("================= Verifying hourly_detailpage_adcall_iu Started =========================");
-						Functions.Verify_hourly_detailpage_adcall_iu();
+						//Functions.Verify_hourly_detailpage_adcall_iu();
 					 	System.out.println("================= Verifying hourly_detailpage_adcall_iu End =========================");	
 					 	}
 
@@ -628,7 +628,7 @@ public void Smoke_Test_CaseVerify_news_aax_amazon_adcalll()
 	//	Functions.scrollapp_maps();
 	//	AppiumFunctions.clickOnRadarMaps();		
 		//CharlesFunctions.ExportSession();
-	Functions.Verify_video_ad_call_Optoutmode();
+	//Functions.Verify_video_ad_call_Optoutmode();
 		System.out.println("================= Verifying video ad call when user selecting Optoutmode scenario in privacy card End =========================");
 				
 	}
@@ -1022,7 +1022,7 @@ public void Smoke_Test_CaseVerify_news_aax_amazon_adcalll()
 	 	 // AppFunctions.Kill_Launch_App();
 		// AppFunctions.Pull_To_Refresh("Pulltorefresh");
 		// CharlesFunctions.ExportSession_feed();
-		 Functions.finding_Homescreen_iu_value();
+		// Functions.finding_Homescreen_iu_value();
 		 
 		 System.out.println("================= Verifying  home screen hourly call pull to refrersh scenario started End =========================");
 		}
