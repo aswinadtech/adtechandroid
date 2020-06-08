@@ -53,7 +53,7 @@ import twc.Automation.General.Functions;
 public class smokeTestCases extends Drivers {
 	protected String email;
 
-	/*@Test(priority=1,enabled = true)
+	@Test(priority=1,enabled = true)
 	@Title("Verifying wfxtg trigger api call url")
 	public void Smoke_Test_CaseVerify_WeatherFXAPI_url()
 			throws Exception {
@@ -64,14 +64,14 @@ public class smokeTestCases extends Drivers {
      	System.out.println("================= Verifying WeatherFX API url End =========================");
 	}
 	
-	@Test(priority=2,enabled = true)
+	/*(@Test(priority=2,enabled = true)
 	@Title("Verifying Location/Factual  api call url")
 	public void Smoke_Test_CaseVerify_Factualapi_url()
 			throws Exception {
 		System.out.println("================= Verifying WeatherFX API url started =========================");
 		Functions.validating_Fatual();
      	System.out.println("================= Verifying WeatherFX API url End =========================");
-	}
+	}*/
 
 	@Test(priority=3,enabled = true)
 	@Title("Verifying turbo call api url")
@@ -180,7 +180,7 @@ public class smokeTestCases extends Drivers {
 		logStep(" Verifying preload amazon aax for  video details");
 		Functions.get_aaxcal_video_details();
      	System.out.println("================= Verify amazon aax video preload adcall End =========================");
-	}*/
+	}
 
 		
 	
@@ -188,9 +188,11 @@ public class smokeTestCases extends Drivers {
 	 @Title("Verifying Video ad call") public void
 	  Smoke_Test_Case_Verify_Video_adCalll() throws Exception { 
 	  System.out.println("================= Verifying Video ad call testcase  started =========================" );
-	/*   CharlesFunctions.clearSessionBrowserData();
+	  CharlesFunctions.clearSessionBrowserData();
 	  CharlesFunctions.startSessionBrowserData();
-	   AppiumFunctions.clickOnUnderstandbutton(); 
+	  
+	   Thread.sleep(50000);
+	   /*AppiumFunctions.clickOnUnderstandbutton(); 
 	   // AppFunctions.Kill_Launch_App();
 	  AppiumFunctions.Kill_launch(); 
 	  AppiumFunctions.clickOnUnderstandbutton();
@@ -241,8 +243,8 @@ public class smokeTestCases extends Drivers {
 	 AppiumFunctions.click_news_element();
 	   AppiumFunctions.clickOnBackArrowElement(); 
 	 Thread.sleep(5000);
-	   AppiumFunctions.click_hourly_element(); 
-	 CharlesFunctions.ExportSession();*/
+	   AppiumFunctions.click_hourly_element(); */
+	 CharlesFunctions.ExportSession();
 	  Functions.finding_VideoCard_iu_value();
 	   System.out.println("================= Verifying Video ad call testcase End =========================" );
 	  }
@@ -587,7 +589,7 @@ public void Smoke_Test_CaseVerify_news_aax_amazon_adcalll()
 	      System.out.println("=================Verifying Privacy Card is present on the screen testcase started =========================");
 		//AppiumFunctions.Kill_launch();
 		AppFunctions.Kill_Launch_App();
-		Thread.sleep(5000);
+		Thread.sleep(50000);
           Functions.Verify_Privacy_Card_onScreen();
 		
 		System.out.println("================= Verifying Privacy Card is present on the screen testcase End =========================");
@@ -599,6 +601,7 @@ public void Smoke_Test_CaseVerify_news_aax_amazon_adcalll()
 
 		System.out.println(
 				"=================Slecting Opt out mode scenario in privacy card testcase started =========================");
+			Thread.sleep(30000);
 		Functions.selecting_opt_out_mode();
 		System.out.println("================= Slecting Opt out mode scenario in privacy card  testcase End =========================");
 				
@@ -610,13 +613,13 @@ public void Smoke_Test_CaseVerify_news_aax_amazon_adcalll()
 	
 	System.out.println("=================Verifying video Feed ad call when user selecting Optoutmode scenario in privacy card started =========================");
 	logStep("Verifying video call when user selecting Optoutmode scenario in privacy card");
-		AppFunctions.Kill_Launch_App();
-		 Thread.sleep(8000);
-		 AppFunctions.Kill_Launch_App();
+		//AppFunctions.Kill_Launch_App();
+		 Thread.sleep(80000);
+	//	 AppFunctions.Kill_Launch_App();
 		CharlesFunctions.startSessionBrowserData();	
-		Functions.click_video();
-		Functions.scrollapp_maps();
-		AppiumFunctions.clickOnRadarMaps();		
+		//Functions.click_video();
+	//	Functions.scrollapp_maps();
+	//	AppiumFunctions.clickOnRadarMaps();		
 		CharlesFunctions.ExportSession();
 		Functions.Verify_video_ad_call_Optoutmode();
 		System.out.println("================= Verifying video ad call when user selecting Optoutmode scenario in privacy card End =========================");
@@ -797,8 +800,10 @@ public void Smoke_Test_CaseVerify_news_aax_amazon_adcalll()
 
 		System.out.println(
 				"=================Slecting Opt in mode scenario in privacy card testcase started =========================");
-		AppFunctions.Kill_Launch_App();
+		//AppFunctions.Kill_Launch_App();
+		  Thread.sleep(50000);
 		Functions.Verify_Privacy_Card_onScreen();
+		  Thread.sleep(50000);
 		Functions.selecting_opt_in_mode();
 		System.out.println(
 				"================= Slecting Opt in mode scenario in privacy card  testcase End =========================");
@@ -811,13 +816,13 @@ public void Smoke_Test_CaseVerify_news_aax_amazon_adcalll()
 
 		System.out.println(
 				"=================Verifying video Feed ad call when user selecting Optinmode scenario in privacy card started =========================");
-		 AppFunctions.Kill_Launch_App();
-		 
+		 //AppFunctions.Kill_Launch_App();
+		  Thread.sleep(80000);
 		CharlesFunctions.startSessionBrowserData();	
-		Functions.click_video();
-		Functions.scrollapp_maps();
+		//Functions.click_video();
+	//	Functions.scrollapp_maps();
 		//Functions.scrollapp_maps();
-		AppiumFunctions.clickOnRadarMaps();		
+		//AppiumFunctions.clickOnRadarMaps();		
 		CharlesFunctions.ExportSession();
 		Functions.Verify_video_ad_call_Optoutmode();
 		System.out.println("================= Verifying video ad call when user selecting Optinmode scenario in privacy card End =========================");
@@ -879,7 +884,7 @@ public void Smoke_Test_CaseVerify_news_aax_amazon_adcalll()
 		System.out.println(
 				"=================Verifying Fatcual api call when user selecting Optinmode scenario in privacy card started =========================");
 		
-		Functions.validating_Fatualcall_privacy_Optinmode_scenarion();
+		//Functions.validating_Fatualcall_privacy_Optinmode_scenarion();
 		System.out.println("================= Verifying Fatcual api call when user selecting Oppinmode scenario in privacy card End =========================");
 				
 	}
@@ -1006,10 +1011,10 @@ public void Smoke_Test_CaseVerify_news_aax_amazon_adcalll()
 		 System.out.println("================= Verifying  home screen hourly call pull to refrersh scenario started =========================");						
 		 CharlesFunctions.ClearSessions(); 
 		 CharlesFunctions.startSessionBrowserData();
-		 AppFunctions.Kill_Launch_App();
-	 	  AppFunctions.Kill_Launch_App();
-		 AppFunctions.Pull_To_Refresh("Pulltorefresh");
-		 CharlesFunctions.ExportSession_feed();
+		// AppFunctions.Kill_Launch_App();
+	 	 // AppFunctions.Kill_Launch_App();
+		// AppFunctions.Pull_To_Refresh("Pulltorefresh");
+		// CharlesFunctions.ExportSession_feed();
 		 Functions.finding_Homescreen_iu_value();
 		 
 		 System.out.println("================= Verifying  home screen hourly call pull to refrersh scenario started End =========================");
@@ -1020,7 +1025,7 @@ public void Smoke_Test_CaseVerify_news_aax_amazon_adcalll()
 		public void Smoke_Test_Verifying_homescreenmarquee__pulltoreresh_scenario() throws Exception {
 		
 		 System.out.println("================= Verifying  home screen marquee call pull to refrersh scenario started =========================");				
-		 Functions.finding_Homescreen_marquee_iu_value();
+		// Functions.finding_Homescreen_marquee_iu_value();
 		 System.out.println("================= Verifying  home screen marquee call pull to refrersh scenario started End =========================");
 		
 	   }
@@ -1033,7 +1038,7 @@ public void Smoke_Test_CaseVerify_news_aax_amazon_adcalll()
 		// CharlesFunctions.startSessionBrowserData();
 		// AppFunctions.Kill_Launch_App();	
 		// CharlesFunctions.ExportSession_feed();
-		 Functions.finding_Homescreen_iu_value();
+		// Functions.finding_Homescreen_iu_value();
 		 
 		 System.out.println("================= Verifying  home screen hourly call kill and launch  scenario  End =========================");
 		}
@@ -1043,7 +1048,7 @@ public void Smoke_Test_CaseVerify_news_aax_amazon_adcalll()
 		public void Smoke_Test_Verifying_homescreenmarquee__killlaunch_scenario() throws Exception {
 		
 		 System.out.println("================= Verifying  home screen marquee call kill and launch  scenario started =========================");				
-		 Functions.finding_Homescreen_marquee_iu_value();
+		 //Functions.finding_Homescreen_marquee_iu_value();
 		 System.out.println("================= Verifying  home screen marquee call kill and launch scenario  End =========================");
 		
 	   }
@@ -1054,12 +1059,12 @@ public void Smoke_Test_CaseVerify_news_aax_amazon_adcalll()
 		
 		 System.out.println("================= Verifying  home screen hourly call back from detailes page scenario  started =========================");						
 		 CharlesFunctions.ClearSessions(); 
-		 AppFunctions.Kill_Launch_App();	 
+		// AppFunctions.Kill_Launch_App();	 
 		 CharlesFunctions.startSessionBrowserData();
-		 Functions.scrollapp_maps();
-		 Functions.click_Mapsdetails_element();		
-		 Functions.clickonBackbutton();
-		 CharlesFunctions.ExportSession_feed();
+		// Functions.scrollapp_maps();
+		// Functions.click_Mapsdetails_element();		
+		// Functions.clickonBackbutton();
+		 //CharlesFunctions.ExportSession_feed();
 		 Functions.finding_Homescreen_iu_value();
 		 
 		 System.out.println("================= Verifying  home screen hourly back from detailes page scenario End =========================");
@@ -1070,7 +1075,7 @@ public void Smoke_Test_CaseVerify_news_aax_amazon_adcalll()
 		public void Smoke_Test_Verifying_homescreenmarquee_backfromdetailedpage__scenario() throws Exception {
 		
 		 System.out.println("================= Verifying  home screen marquee call  back from detailes page scenario  started =========================");				
-		 Functions.finding_Homescreen_marquee_iu_value();
+		 //Functions.finding_Homescreen_marquee_iu_value();
 		 System.out.println("================= Verifying  home screen marquee call  back from detailes page scenario  End =========================");
 		
 	   }
@@ -1088,12 +1093,12 @@ public void Smoke_Test_CaseVerify_news_aax_amazon_adcalll()
       // AppiumFunctions.Kill_launch();
 	// AppFunctions.Kill_Launch_App(); 
 	//  AppFunctions.enable_responsive_mode();
-          CharlesFunctions.ClearSessions();
-	   AppFunctions.Kill_Launch_App(); 
+         // CharlesFunctions.ClearSessions();
+	  // AppFunctions.Kill_Launch_App(); 
 	//  AppFunctions.enter_nextgenIm_ad_location();
 	  CharlesFunctions.startSessionBrowserData();
-	  CharlesFunctions.ExportSession();
-	 Functions.nextgenim_adunit(); 
+	 // CharlesFunctions.ExportSession();
+	// Functions.nextgenim_adunit(); 
 	 System.out.println("================= Verify  NextGen IM adunit testcase End =========================" ); 
 	 
 	  }
@@ -1102,7 +1107,7 @@ public void Smoke_Test_CaseVerify_news_aax_amazon_adcalll()
 	  @Title("Verifying  NextGen IM ad card call response") public void
 	  Smoke_Test_verifying_NextGenIM_response() throws Exception { 
 	   System.out.println("================= Verify  NextGen IM ad response testcase started =========================");
-	   Functions.nextgenim_adcall_response(); 
+	  // Functions.nextgenim_adcall_response(); 
 	   System.out.println("================= Verify   NextGen IM ad  response testcase End ========================="); 
 	 
 	  }
@@ -1113,7 +1118,7 @@ public void Smoke_Test_CaseVerify_news_aax_amazon_adcalll()
 	  @Title("Verifying the FG and BG URL'S for nextgen ad call") public void
 	 Smoke_Test_verifying_FG_BG_urls_NextgenIm_Ad() throws Exception {
 	  System.out.println("================= Verify  Nextgen Im adunit response testcase started =========================");
-	  Functions.validate_FG_BG_adcalls_NextGenIM(); 
+	  //Functions.validate_FG_BG_adcalls_NextGenIM(); 
 	  System.out.println("================= Verify  Nextgen Im adunit response testcase End ========================="); 
 	
 	 }
@@ -1125,7 +1130,7 @@ public void Smoke_Test_CaseVerify_news_aax_amazon_adcalll()
 	  Smoke_Test_verifying_Size_NextgenIm_Ad() throws Exception { 
 	  System.out.println("================= Verify  Nextgen Im adunit response testcase started ========================="); 
      // CharlesFunctions.ClearSessions();
-	  Functions.validate_Size_NextGenIM();  
+	  //Functions.validate_Size_NextGenIM();  
 	  System.out.println("================= Verify  Nextgen Im adunit response testcase End =========================");
 	  }
 
@@ -1137,11 +1142,11 @@ public void Smoke_Test_CaseVerify_news_aax_amazon_adcalll()
 	   //AppFunctions.enter_nextgenIm_ad_location();
 	
 	  CharlesFunctions.ClearSessions();
-           AppFunctions.Kill_Launch_App(); 
-	  CharlesFunctions.startSessionBrowserData();
-              Functions.Swipe_Conter(3);
-	  CharlesFunctions.ExportSession();
-	  Functions.Verify_dailycard_iu(); System.out.
+          // AppFunctions.Kill_Launch_App(); 
+	//  CharlesFunctions.startSessionBrowserData();
+              //Functions.Swipe_Conter(3);
+	 // CharlesFunctions.ExportSession();
+	 /// Functions.Verify_dailycard_iu(); System.out.
 	 println("================= Verify_daily_card_adcall_iu End =========================");
 	   }
 	 
@@ -1150,7 +1155,7 @@ public void Smoke_Test_CaseVerify_news_aax_amazon_adcalll()
 	  Smoke_Test_verifying_DailyIFcardResponse() throws Exception { 
 		  
 		  System.out.println("================= Verify  Daily IF card response testcase started =========================" );
-	 Functions.dailyIFCard_adcall_response(); 
+	// Functions.dailyIFCard_adcall_response(); 
 	 System.out.println("================= Verify  Daily IF card response testcase End =========================");
 	  
 	  }
@@ -1159,7 +1164,7 @@ public void Smoke_Test_CaseVerify_news_aax_amazon_adcalll()
 	  @Title("Verifying the response for Daily IF card") public void
 	 Smoke_Test_verifying_FG_BG_urls_DailyIF_Card() throws Exception { 
 		  System.out.println("================= Verify  Nextgen Im adunit response testcase started =========================");
-	 Functions.validate_FG_BG_adcalls_DailyIFcards(); 
+	// Functions.validate_FG_BG_adcalls_DailyIFcards(); 
 	 System.out.println("================= Verify  Nextgen Im adunit response testcase End ========================="); 
 	}
 	  
@@ -1175,18 +1180,19 @@ public void Smoke_Test_CaseVerify_news_aax_amazon_adcalll()
 
 		@BeforeTest
 	public void Before_Test() throws Exception {
-		System.out.println("================= Before Test Started =========================");
-//	CharlesFunctions.charlesOpen();
+		System.out.println("================= Before Test Started =========================");	
+		CharlesFunctions.charlesOpen();
 		//AppiumFunctions.UnInstallApp();
-		//CharlesFunctions.openCharlesBrowser();
+		CharlesFunctions.openCharlesBrowser();
 	//	MapLocalFunctions.alertModeChanges("withoutalert");
-		//CharlesFunctions.ClearSessions();
+		CharlesFunctions.ClearSessions();
+		  CharlesFunctions.startSessionBrowserData();
 		//AppiumFunctions.killADB();
 		//AppiumFunctions.UnInstallApp();
 		//		AppiumFunctions.AppiumServerStop();
 		//		AppiumFunctions.AppiumServerStart();
 	//	CharlesFunctions.ClearSessions();
-	//	AppiumFunctions.LaunchAppWithFullReset();
+		AppiumFunctions.LaunchAppWithFullReset();
 		
               //  AppiumFunctions.Swipeforappdeckapk();
 	//	AppiumFunctions.Kill_launch();
@@ -1223,9 +1229,9 @@ public void Smoke_Test_CaseVerify_news_aax_amazon_adcalll()
 		AppiumFunctions.click_news_element();	*/	
 		//AppiumFunctions.clickOnBackArrowElement();
 	
+		 Thread.sleep(40000);
 		
-		
-	///	CharlesFunctions.ExportSession();	
+    CharlesFunctions.ExportSession();	
 			
 		
 		
