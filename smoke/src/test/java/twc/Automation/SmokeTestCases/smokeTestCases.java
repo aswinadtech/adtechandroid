@@ -192,6 +192,12 @@ public class smokeTestCases extends Drivers {
 	  CharlesFunctions.startSessionBrowserData();
 	  
 	   Thread.sleep(50000);
+	   
+	   Thread.sleep(50000);
+	   
+	   Thread.sleep(50000);
+	   
+	   Thread.sleep(50000);
 	   /*AppiumFunctions.clickOnUnderstandbutton(); 
 	   // AppFunctions.Kill_Launch_App();
 	  AppiumFunctions.Kill_launch(); 
