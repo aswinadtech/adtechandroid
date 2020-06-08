@@ -256,7 +256,7 @@ public class regressionTestCases extends Drivers{
 	    @Title("Verify custom parameter zip from  turbo api")
 		public void C333202_Verify_cust_param_zip() throws Exception{
 			System.out.println("================= Custom Parameter Zip Verfication  from turbo call Started =========================");
-			Custom_Parameters_Verification.parameters_Verification("zip");
+			//Custom_Parameters_Verification.parameters_Verification("zip");
 			
 			System.out.println("================= Custom Parameter Zip Verfication  from turbo call End =========================");
 		}
