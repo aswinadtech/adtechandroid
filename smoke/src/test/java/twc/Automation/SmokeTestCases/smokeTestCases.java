@@ -196,8 +196,9 @@ public class smokeTestCases extends Drivers {
 	   Thread.sleep(50000);
 	   
 	   Thread.sleep(50000);
-	   
+	   	   Thread.sleep(50000);
 	   Thread.sleep(50000);
+	   	   Thread.sleep(50000);
 	   /*AppiumFunctions.clickOnUnderstandbutton(); 
 	   // AppFunctions.Kill_Launch_App();
 	  AppiumFunctions.Kill_launch(); 
@@ -685,7 +686,7 @@ public void Smoke_Test_CaseVerify_news_aax_amazon_adcalll()
 		System.out.println(
 				"=================Verifying Fatual api call when user selecting Optoutmode scenario in privacy card started =========================");
 		
-		Functions.validating_Fatualcall_privacy_Optoutmode_scenarion();
+	//	Functions.validating_Fatualcall_privacy_Optoutmode_scenarion();
 		System.out.println("================= Verifying Fatual api call when user selecting Optoutmode scenario in privacy card End =========================");
 				
 	}
