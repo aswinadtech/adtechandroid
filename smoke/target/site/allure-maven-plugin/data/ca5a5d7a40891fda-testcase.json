@@ -1,0 +1,74 @@
+{
+  "uid" : "ca5a5d7a40891fda",
+  "name" : "Smoke_Test_CaseVerify_AQ_aax_amazon_adcalll",
+  "title" : "Verifying AQ aax call",
+  "time" : {
+    "start" : 1591549367250,
+    "stop" : 1591549367742,
+    "duration" : 492
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 1
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "925210e003f48e67",
+    "name" : "Suite : Test",
+    "title" : "Suite : Test"
+  },
+  "steps" : [ {
+    "name" : "logStep[Verifying amazon \"slot\": \"9384272f-b27f-4686-935f-02e6c5763abd\"  for air quality card]",
+    "title" : "Verifying amazon \"slot\": \"9384272f-b27f-4686-935f-02e6c5763abd\"  for air quality card",
+    "time" : {
+      "start" : 1591549367652,
+      "stop" : 1591549367652,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "testSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "testMethod",
+    "value" : "Smoke_Test_CaseVerify_AQ_aax_amazon_adcalll"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "testGroup",
+    "value" : "Test"
+  }, {
+    "name" : "suite-name",
+    "value" : "Suite : Test"
+  }, {
+    "name" : "thread",
+    "value" : "3229@Aswinikumars-MacBook-Pro.local.main(1)"
+  }, {
+    "name" : "testClass",
+    "value" : "twc.Automation.SmokeTestCases.smokeTestCases"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "host",
+    "value" : "Aswinikumars-MacBook-Pro.local"
+  }, {
+    "name" : "suite-title",
+    "value" : "Suite : Test"
+  } ],
+  "parameters" : [ ]
+}

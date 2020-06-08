@@ -1,0 +1,89 @@
+{
+  "uid" : "9a21841eb1a02e8c",
+  "name" : "Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll",
+  "title" : "Verifying hurricane aax call",
+  "time" : {
+    "start" : 1591549370629,
+    "stop" : 1591549371013,
+    "duration" : 384
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 2
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "925210e003f48e67",
+    "name" : "Suite : Test",
+    "title" : "Suite : Test"
+  },
+  "steps" : [ {
+    "name" : "logStep[Verifying amazon \"slot\": \"5e7f510687cc453388a9c8442f95dc65\"  for hurricane details]",
+    "title" : "Verifying amazon \"slot\": \"5e7f510687cc453388a9c8442f95dc65\"  for hurricane details",
+    "time" : {
+      "start" : 1591549371012,
+      "stop" : 1591549371012,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[5e7f510687cc453388a9c8442f95dc65 is trigred for aax  call db_display/details/hurricane]",
+    "title" : "5e7f510687cc453388a9c8442f95dc65 is trigred for aax  call db_display/details/hurricane",
+    "time" : {
+      "start" : 1591549371013,
+      "stop" : 1591549371013,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "testSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "testGroup",
+    "value" : "Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll"
+  }, {
+    "name" : "suite-name",
+    "value" : "Suite : Test"
+  }, {
+    "name" : "thread",
+    "value" : "3229@Aswinikumars-MacBook-Pro.local.main(1)"
+  }, {
+    "name" : "testClass",
+    "value" : "twc.Automation.SmokeTestCases.smokeTestCases"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "host",
+    "value" : "Aswinikumars-MacBook-Pro.local"
+  }, {
+    "name" : "suite-title",
+    "value" : "Suite : Test"
+  } ],
+  "parameters" : [ ]
+}

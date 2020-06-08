@@ -1,0 +1,89 @@
+{
+  "uid" : "7451cd9018357f52",
+  "name" : "Smoke_Test_Verify_amazon_aax_Boat_Beach_Bigbanner_ad",
+  "title" : "Verifying amazon axx slot for Boat&Beach Bigbanner ad",
+  "time" : {
+    "start" : 1591549363233,
+    "stop" : 1591549363724,
+    "duration" : 491
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 2
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "925210e003f48e67",
+    "name" : "Suite : Test",
+    "title" : "Suite : Test"
+  },
+  "steps" : [ {
+    "name" : "logStep[Verifying amazon \"slot\": \"58b652be-94ba-494d-8ac8-ac5e9ec00433\"   for Boat&beach content page]",
+    "title" : "Verifying amazon \"slot\": \"58b652be-94ba-494d-8ac8-ac5e9ec00433\"   for Boat&beach content page",
+    "time" : {
+      "start" : 1591549363627,
+      "stop" : 1591549363627,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[58b652be-94ba-494d-8ac8-ac5e9ec00433 is trigred for aax  call display/content/boat_beach]",
+    "title" : "58b652be-94ba-494d-8ac8-ac5e9ec00433 is trigred for aax  call display/content/boat_beach",
+    "time" : {
+      "start" : 1591549363679,
+      "stop" : 1591549363679,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "testSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "testGroup",
+    "value" : "Test"
+  }, {
+    "name" : "suite-name",
+    "value" : "Suite : Test"
+  }, {
+    "name" : "thread",
+    "value" : "3229@Aswinikumars-MacBook-Pro.local.main(1)"
+  }, {
+    "name" : "testClass",
+    "value" : "twc.Automation.SmokeTestCases.smokeTestCases"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "host",
+    "value" : "Aswinikumars-MacBook-Pro.local"
+  }, {
+    "name" : "suite-title",
+    "value" : "Suite : Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "Smoke_Test_Verify_amazon_aax_Boat_Beach_Bigbanner_ad"
+  } ],
+  "parameters" : [ ]
+}

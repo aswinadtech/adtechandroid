@@ -1,0 +1,89 @@
+{
+  "uid" : "690e15fcc211b009",
+  "name" : "Smoke_Test_CaseVerify_Radar_Maps_feedcard_adcall",
+  "title" : "Verifying iu value for Radar feed card ",
+  "time" : {
+    "start" : 1591549353514,
+    "stop" : 1591549354097,
+    "duration" : 583
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 2
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "925210e003f48e67",
+    "name" : "Suite : Test",
+    "title" : "Suite : Test"
+  },
+  "steps" : [ {
+    "name" : "logStep[Verifying  iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fradar  ad call]",
+    "title" : "Verifying  iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fradar  ad call",
+    "time" : {
+      "start" : 1591549354037,
+      "stop" : 1591549354037,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[/7646/app_android_us/db_display/card/radar call was trigred]",
+    "title" : "/7646/app_android_us/db_display/card/radar call was trigred",
+    "time" : {
+      "start" : 1591549354068,
+      "stop" : 1591549354068,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "testSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "testGroup",
+    "value" : "Test"
+  }, {
+    "name" : "suite-name",
+    "value" : "Suite : Test"
+  }, {
+    "name" : "thread",
+    "value" : "3229@Aswinikumars-MacBook-Pro.local.main(1)"
+  }, {
+    "name" : "testClass",
+    "value" : "twc.Automation.SmokeTestCases.smokeTestCases"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "host",
+    "value" : "Aswinikumars-MacBook-Pro.local"
+  }, {
+    "name" : "suite-title",
+    "value" : "Suite : Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "Smoke_Test_CaseVerify_Radar_Maps_feedcard_adcall"
+  } ],
+  "parameters" : [ ]
+}

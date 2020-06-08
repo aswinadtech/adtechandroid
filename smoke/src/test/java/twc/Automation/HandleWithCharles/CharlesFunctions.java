@@ -67,6 +67,7 @@ public class CharlesFunctions extends Drivers{
 		Runtime.getRuntime().exec(quitCharles);
 		Thread.sleep(5000);
 		System.out.println("Charles was quit successfully");
+		logStep("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly trigred");
 	}
 
 	public static void openCharlesBrowser() throws IOException, Exception{
@@ -161,6 +162,7 @@ public class CharlesFunctions extends Drivers{
 			//System.out.println("Specified folder is exist and deleting the same folder");
 			FileUtils.cleanDirectory(index);
 			System.out.println("Deleted all the files in the specified folder");
+			logStep("Deleted all the files in the specified folder");
 			//System.out.println(dir.usage().trim());
 			System.out.println(index);
 		}
@@ -249,9 +251,11 @@ public class CharlesFunctions extends Drivers{
 
 		Thread.sleep(3000);
 		System.out.println("Exporting The Session Data Into XML File");
+		logStep("Exporting The Session Data Into XML File");
 		driver.findElement(By.linkText(charlesdata[7][0])).click();
-		Thread.sleep(15000);
+		Thread.sleep(30000);
 		System.out.println("Exported Session");
+		logStep("Exported Session");
 	}
 
 	public static void StopExportSessionXMLFile() throws Exception{

@@ -1,0 +1,907 @@
+{
+  "time" : {
+    "start" : 1591549351174,
+    "stop" : 1591549389880,
+    "duration" : 38706
+  },
+  "testSuites" : [ {
+    "uid" : "925210e003f48e67",
+    "name" : "Suite : Test",
+    "title" : "Suite : Test",
+    "time" : {
+      "start" : 1591549351174,
+      "stop" : 1591549389880,
+      "duration" : 38706
+    },
+    "statistic" : {
+      "total" : 80,
+      "passed" : 56,
+      "pending" : 0,
+      "canceled" : 0,
+      "failed" : 10,
+      "broken" : 14
+    },
+    "description" : null,
+    "testCases" : [ {
+      "uid" : "c2e0a6aca88c6848",
+      "name" : "Smoke_Test_Case_Verify_Video_adCalll",
+      "title" : "Verifying Video ad call",
+      "time" : {
+        "start" : 1591549351174,
+        "stop" : 1591549352777,
+        "duration" : 1603
+      },
+      "severity" : "NORMAL",
+      "status" : "FAILED"
+    }, {
+      "uid" : "6b1db9c1bcab686b",
+      "name" : "Smoke_Test_Case_Verify_hurricanevideo_adCalll",
+      "title" : "Verifying Video ad call in hurricane module",
+      "time" : {
+        "start" : 1591549352778,
+        "stop" : 1591549353511,
+        "duration" : 733
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "690e15fcc211b009",
+      "name" : "Smoke_Test_CaseVerify_Radar_Maps_feedcard_adcall",
+      "title" : "Verifying iu value for Radar feed card ",
+      "time" : {
+        "start" : 1591549353514,
+        "stop" : 1591549354097,
+        "duration" : 583
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "d92ae47d2f5c91e5",
+      "name" : "Smoke_Test_CaseVerify_Radar_Maps_deatailscard_adcall",
+      "title" : "Verifying iu value for maps details card",
+      "time" : {
+        "start" : 1591549354098,
+        "stop" : 1591549354755,
+        "duration" : 657
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "6b08d41041fdfa6a",
+      "name" : "Smoke_Test_CaseVerify_hurricane_Maps_deatailscard_adcall",
+      "title" : "Verifying iu value for hurricane details maps page",
+      "time" : {
+        "start" : 1591549354756,
+        "stop" : 1591549355336,
+        "duration" : 580
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "baa2d0654da65aff",
+      "name" : "Smoke_Test_CaseVerify_hurricane_articles_deatailspage_adcall",
+      "title" : "Verifying iu value for hurricane  articles page",
+      "time" : {
+        "start" : 1591549355337,
+        "stop" : 1591549355996,
+        "duration" : 659
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "f33cbe5f5a097f76",
+      "name" : "Smoke_Test_CaseVerify_Today_details_page_iu",
+      "title" : "Verifying iu value Today details Page ",
+      "time" : {
+        "start" : 1591549355997,
+        "stop" : 1591549356605,
+        "duration" : 608
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "66a1bdd87877d900",
+      "name" : "Smoke_Test_CaseVerify_coivd_details_page_iu",
+      "title" : "Verifying iu value covid19 details Page ",
+      "time" : {
+        "start" : 1591549356606,
+        "stop" : 1591549357118,
+        "duration" : 512
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "ff4d77e9a2eb91fc",
+      "name" : "Smoke_Test_amazon_aax_covid19_deatailcard",
+      "title" : "Verifying amazon aax for covid19 details card",
+      "time" : {
+        "start" : 1591549357119,
+        "stop" : 1591549357731,
+        "duration" : 612
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "5fccdedc91fbc1ed",
+      "name" : "Smoke_Test_amazon_aax_today_deatailcard",
+      "title" : "Verifying amazon aax for today details card",
+      "time" : {
+        "start" : 1591549357732,
+        "stop" : 1591549358247,
+        "duration" : 515
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "a99dd900b6f7c73a",
+      "name" : "Smoke_Test_CaseVerify_Health_Activities_feed_adcall",
+      "title" : "Verifying iu value for Health&Activities  feed card",
+      "time" : {
+        "start" : 1591549358248,
+        "stop" : 1591549358823,
+        "duration" : 575
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "3440c16fd7f7909c",
+      "name" : "Smoke_Test_Verify_health_and_activities_Running_spotlight_adcall_iu",
+      "title" : "Verifying  iu value for Running content page",
+      "time" : {
+        "start" : 1591549358824,
+        "stop" : 1591549359411,
+        "duration" : 587
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "517ff0e57273e625",
+      "name" : "Smoke_Test_Verify_health_and_activities_Bot_beach_detailpage_adcall_iu",
+      "title" : "Verifying iu value for Boat&Beach content page",
+      "time" : {
+        "start" : 1591549359411,
+        "stop" : 1591549359914,
+        "duration" : 503
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "e8133f2186b78689",
+      "name" : "Smoke_Test_Verify_health_and_activities_Allergy_detailpage_adcall_iu",
+      "title" : "Verifying iu value for Allergy content page",
+      "time" : {
+        "start" : 1591549359914,
+        "stop" : 1591549360420,
+        "duration" : 506
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "9966582837f75b52",
+      "name" : "Smoke_Test_Verify_health_and_activities_cold_flu_Spotlight_adcall_iu",
+      "title" : "Verifying iu value for Cold&Flu content page",
+      "time" : {
+        "start" : 1591549360421,
+        "stop" : 1591549360934,
+        "duration" : 513
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "12c8d97e7a2b9f8e",
+      "name" : "Smoke_Test_Verify_SeasonalHub_detailpage_adcall_iu",
+      "title" : "Verifying iu value for outdoor conditions  detailed  page  iu",
+      "time" : {
+        "start" : 1591549360935,
+        "stop" : 1591549361473,
+        "duration" : 538
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "454196878966cd54",
+      "name" : "Smoke_Test_Verify_SeasonalHub_feedcard_adcall_iu",
+      "title" : "Verifying iu value for outdoor conditions  feed card iu",
+      "time" : {
+        "start" : 1591549361475,
+        "stop" : 1591549362151,
+        "duration" : 676
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "47f684881974b364",
+      "name" : "Smoke_Test_Verify_amazon_aax_Allergy_Bigbanner_ad",
+      "title" : "Verifying amazon axx slot for Allergy Bigbanner ad",
+      "time" : {
+        "start" : 1591549362152,
+        "stop" : 1591549362714,
+        "duration" : 562
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "3153511cd25e76c5",
+      "name" : "Smoke_Test_Verify_amazon_aax_Running_Bigbanner_ad",
+      "title" : "Verifying amazon axx slot for Running Bigbanner ad",
+      "time" : {
+        "start" : 1591549362715,
+        "stop" : 1591549363232,
+        "duration" : 517
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "7451cd9018357f52",
+      "name" : "Smoke_Test_Verify_amazon_aax_Boat_Beach_Bigbanner_ad",
+      "title" : "Verifying amazon axx slot for Boat&Beach Bigbanner ad",
+      "time" : {
+        "start" : 1591549363233,
+        "stop" : 1591549363724,
+        "duration" : 491
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "eebd75171f367ca8",
+      "name" : "Smoke_Test_Verify_Air_Quality_detailpage_adcall_iu",
+      "title" : "Verifying iu value for  Air Quality content page",
+      "time" : {
+        "start" : 1591549363724,
+        "stop" : 1591549364239,
+        "duration" : 515
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "628b00497494698d",
+      "name" : "Smoke_Verify_est_Air_Quality_feedcard_adcall_iu",
+      "title" : "Verifying iu value for  Air Quality feed card",
+      "time" : {
+        "start" : 1591549364240,
+        "stop" : 1591549364754,
+        "duration" : 514
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "832394e03bbbe838",
+      "name" : "Smoke_Test_Verify_amazon_aax_AirQuality_adcall",
+      "title" : "Verifying amazon axx slotId for  air quality feed card",
+      "time" : {
+        "start" : 1591549364755,
+        "stop" : 1591549365322,
+        "duration" : 567
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "48007b92b4d8c177",
+      "name" : "Smoke_Test_Verify_News_detailpage_adcall_iu",
+      "title" : "Verifying iu value for news detailpage ad call iu",
+      "time" : {
+        "start" : 1591549365323,
+        "stop" : 1591549365749,
+        "duration" : 426
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "ca9a91e09a44960c",
+      "name" : "Smoke_Test_Verify_amazon_aax_News_adcall",
+      "title" : "Verifying amazon axx slot for new article",
+      "time" : {
+        "start" : 1591549365749,
+        "stop" : 1591549366316,
+        "duration" : 567
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "613b3fe80901df4e",
+      "name" : "Smoke_Test_Verify_News_hurricane_detail_adcall_iu",
+      "title" : "Verifying iu value for Hurricane detailpage ad call iu",
+      "time" : {
+        "start" : 1591549366316,
+        "stop" : 1591549366804,
+        "duration" : 488
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "2daa08dcd95c6f5c",
+      "name" : "Smoke_Test_Verify_daily_card_adcall_iu",
+      "title" : "Verifying iu value for daily feed card",
+      "time" : {
+        "start" : 1591549366805,
+        "stop" : 1591549367250,
+        "duration" : 445
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "ca5a5d7a40891fda",
+      "name" : "Smoke_Test_CaseVerify_AQ_aax_amazon_adcalll",
+      "title" : "Verifying AQ aax call",
+      "time" : {
+        "start" : 1591549367250,
+        "stop" : 1591549367742,
+        "duration" : 492
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "1e3567d8753df3e4",
+      "name" : "Smoke_Test_CaseVerify_news_aax_amazon_adcalll",
+      "title" : "Verifying news aax call",
+      "time" : {
+        "start" : 1591549367743,
+        "stop" : 1591549368351,
+        "duration" : 608
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "53e3383a9a3191b2",
+      "name" : "Smoke_Test_Verify_hourly1_bigad_detailpage_adcall_iu",
+      "title" : "Verifying iu value for hourly1 bigad  detailpage",
+      "time" : {
+        "start" : 1591549368351,
+        "stop" : 1591549368915,
+        "duration" : 564
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "3e3d14baa53b2a51",
+      "name" : "Smoke_Test_Verify_hourly2_bigad_detailpage_adcall_iu",
+      "title" : "Verifying iu value for hourly2 bigad  detailpage",
+      "time" : {
+        "start" : 1591549368916,
+        "stop" : 1591549369500,
+        "duration" : 584
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "547c693629fdab0c",
+      "name" : "Smoke_Test_Verify_hourly3_bigad_detailpage_adcall_iu",
+      "title" : "Verifying iu value for hourly3 bigad  detailpage",
+      "time" : {
+        "start" : 1591549369501,
+        "stop" : 1591549370071,
+        "duration" : 570
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "d3360228bfe13149",
+      "name" : "Smoke_Test_Verify_hourly_detailpage_adcall_iu",
+      "title" : "Verifying iu value for hourly detailpage",
+      "time" : {
+        "start" : 1591549370072,
+        "stop" : 1591549370628,
+        "duration" : 556
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "9a21841eb1a02e8c",
+      "name" : "Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll",
+      "title" : "Verifying hurricane aax call",
+      "time" : {
+        "start" : 1591549370629,
+        "stop" : 1591549371013,
+        "duration" : 384
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "3b1ce7c6fdc69c9",
+      "name" : "Smoke_Test_Verify_PrivacyCard_onScreen",
+      "title" : "Verifying Privacy Card is present on the screen",
+      "time" : {
+        "start" : 1591549371014,
+        "stop" : 1591549371044,
+        "duration" : 30
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "ecf1646d0b3e75f9",
+      "name" : "Smoke_Test_Selecting_Opt_out_mode_scenario",
+      "title" : "Selecting the  Opt out mode in the privacy card",
+      "time" : {
+        "start" : 1591549371045,
+        "stop" : 1591549371046,
+        "duration" : 1
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "9922213dd223e038",
+      "name" : "Smoke_Test__Smoke_Test_Verifying_videoadcall_Optoutmode_scenario",
+      "title" : "Verifying video call when user selecting Optoutmode scenario in privacy card",
+      "time" : {
+        "start" : 1591549371046,
+        "stop" : 1591549371047,
+        "duration" : 1
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "c94cdda23e2cd103",
+      "name" : "Smoke_Test_Verifying_Feedadcall_Optoutmode_scenario",
+      "title" : "Verifying Feed ad call when user selecting Optoutmode scenario in privacy card",
+      "time" : {
+        "start" : 1591549371047,
+        "stop" : 1591549371539,
+        "duration" : 492
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "db0a12cedaf51167",
+      "name" : "Smoke_Test_Verifying_detailpageadcall_Optoutmode_scenario",
+      "title" : "Verifying details page detail page ad call when user selecting Optoutmode scenario in privacy card",
+      "time" : {
+        "start" : 1591549371539,
+        "stop" : 1591549372115,
+        "duration" : 576
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "1754791127f09cfe",
+      "name" : "Smoke_Test__Verifying_Bcp_apicall_Optoutmode_scenario",
+      "title" : "Verifying BCP api call when user selecting Optoutmode scenario in privacy card",
+      "time" : {
+        "start" : 1591549372117,
+        "stop" : 1591549372602,
+        "duration" : 485
+      },
+      "severity" : "NORMAL",
+      "status" : "FAILED"
+    }, {
+      "uid" : "b10cb571740b3953",
+      "name" : "Smoke_Test__Verifying_adcrw_apicall_Optoutmode_scenario",
+      "title" : "Verifying Adcrw api call when user selecting Optoutmode scenario in privacy card",
+      "time" : {
+        "start" : 1591549372603,
+        "stop" : 1591549373055,
+        "duration" : 452
+      },
+      "severity" : "NORMAL",
+      "status" : "FAILED"
+    }, {
+      "uid" : "d8c8b0cc7c7d1f20",
+      "name" : "Smoke_Test__Verifying_locaion_apicall_Optoutmode_scenario",
+      "title" : "Verifying Fatual api call when user selecting Optoutmode scenario in privacy card",
+      "time" : {
+        "start" : 1591549373056,
+        "stop" : 1591549373594,
+        "duration" : 538
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "6922356fa0777d9c",
+      "name" : "Smoke_Test__Verifying_amaozn_aax_calls_Optoutmode_scenario",
+      "title" : "Verifying amazon aax calls when user selecting Optoutmode scenario in privacy card",
+      "time" : {
+        "start" : 1591549373594,
+        "stop" : 1591549373985,
+        "duration" : 391
+      },
+      "severity" : "NORMAL",
+      "status" : "FAILED"
+    }, {
+      "uid" : "a0040bfde942923a",
+      "name" : "Smoke_Test__Verifying_homescreenhourly_calls_Optoutmode_scenario",
+      "title" : "Verifying home screnn hourly ad call  when user selecting Optoutmode scenario in privacy card",
+      "time" : {
+        "start" : 1591549373986,
+        "stop" : 1591549374445,
+        "duration" : 459
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "b6acc744723e8884",
+      "name" : "Smoke_Test__Verifying_marqueehomescreecall_Optoutmode_scenario",
+      "title" : "Verifying homescreen marquee ad call  when user selecting Optoutmode scenario in privacy card",
+      "time" : {
+        "start" : 1591549374446,
+        "stop" : 1591549375002,
+        "duration" : 556
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "11c55d5da8b1c80d",
+      "name" : "Smoke_Test_Verifying_SOD_Cust_Param_homescreenad_Optoutmode_scenario",
+      "title" : "Verifying SOD Cust param value for home screen call when user selecting Optoutmode scenario in privacy card",
+      "time" : {
+        "start" : 1591549375003,
+        "stop" : 1591549375469,
+        "duration" : 466
+      },
+      "severity" : "NORMAL",
+      "status" : "FAILED"
+    }, {
+      "uid" : "5c097d444b07c5d0",
+      "name" : "Smoke_Test_Verifying_SOD_Cust_Param_Feedad_Optoutmode_scenario",
+      "title" : "Verifying SOD Cust param value for  Feed ad call when user selecting Optoutmode scenario in privacy card",
+      "time" : {
+        "start" : 1591549375470,
+        "stop" : 1591549375934,
+        "duration" : 464
+      },
+      "severity" : "NORMAL",
+      "status" : "FAILED"
+    }, {
+      "uid" : "2d60e22bb83e6993",
+      "name" : "Smoke_Test_Verifying_SOD_Cust_Param_detail_Feedad_Optoutmode_scenario",
+      "title" : "Verifying SOD Cust param value for detail Feed ad call when user selecting Optoutmode scenario in privacy card",
+      "time" : {
+        "start" : 1591549375934,
+        "stop" : 1591549376483,
+        "duration" : 549
+      },
+      "severity" : "NORMAL",
+      "status" : "FAILED"
+    }, {
+      "uid" : "f2c5149349356b6f",
+      "name" : "Smoke_Test_Verifying_SOD_Cust_Param_videoad_Optoutmode_scenario",
+      "title" : "Verifying SOD Cust param value for video call when user selecting Optoutmode scenario in privacy card",
+      "time" : {
+        "start" : 1591549376483,
+        "stop" : 1591549377040,
+        "duration" : 557
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "ed6277bd8816daf6",
+      "name" : "Smoke_Test_Verifying_RDP_value_homescreenad_Optoutmode_scenario",
+      "title" : "Verifying RDP  value for home screen call when user selecting Optoutmode scenario in privacy card",
+      "time" : {
+        "start" : 1591549377041,
+        "stop" : 1591549377470,
+        "duration" : 429
+      },
+      "severity" : "NORMAL",
+      "status" : "FAILED"
+    }, {
+      "uid" : "56e2623dc15946c1",
+      "name" : "Smoke_Test_Verifying_RDP_value_feedad_Optoutmode_scenario",
+      "title" : "Verifying RDP  value for feed ad call when user selecting Optoutmode scenario in privacy card",
+      "time" : {
+        "start" : 1591549377471,
+        "stop" : 1591549377953,
+        "duration" : 482
+      },
+      "severity" : "NORMAL",
+      "status" : "FAILED"
+    }, {
+      "uid" : "40a05eb997f93df5",
+      "name" : "Smoke_Test_Verifying_RDP_value_detailed_feedad_Optoutmode_scenario",
+      "title" : "Verifying RDP  value for detailed feed ad call when user selecting Optoutmode scenario in privacy card",
+      "time" : {
+        "start" : 1591549377954,
+        "stop" : 1591549378451,
+        "duration" : 497
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "4093f3c20471e5cf",
+      "name" : "Smoke_Test_Verifying_RDP_value_video_adcall_Optoutmode_scenario",
+      "title" : "Verifying RDP  value forvideo  ad call when user selecting Optoutmode scenario in privacy card",
+      "time" : {
+        "start" : 1591549378451,
+        "stop" : 1591549378933,
+        "duration" : 482
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "5133f0f1a14d41ad",
+      "name" : "Smoke_Test_Selecting_Opt_in_mode_scenario",
+      "title" : "Selecting the  Opt in mode in the privacy card",
+      "time" : {
+        "start" : 1591549378933,
+        "stop" : 1591549378934,
+        "duration" : 1
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "988cffbaf22503ec",
+      "name" : "Smoke_Test__Smoke_Test_Verifying_videoadcall_Optinmode_scenario",
+      "title" : "Verifying video call when user selecting Optinmode scenario in privacy card",
+      "time" : {
+        "start" : 1591549378934,
+        "stop" : 1591549378935,
+        "duration" : 1
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "1ee2ccde8bffc2ad",
+      "name" : "Smoke_Test_Verifying_Feedadcall_Optinmode_scenario",
+      "title" : "Verifying Feed ad call when user selecting Optintmode scenario in privacy card",
+      "time" : {
+        "start" : 1591549378935,
+        "stop" : 1591549379362,
+        "duration" : 427
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "ecd89990fd587446",
+      "name" : "Smoke_Test_Verifying_detailpageadcall_Optinmode_scenario",
+      "title" : "Verifying details page detail page ad call when user selecting Optinmode scenario in privacy card",
+      "time" : {
+        "start" : 1591549379363,
+        "stop" : 1591549379865,
+        "duration" : 502
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "2ce7422b595a9921",
+      "name" : "Smoke_Test__Verifying_Bcp_apicall_Optinmode_scenario",
+      "title" : "Verifying BCP api call when user selecting Optinmode scenario in privacy card",
+      "time" : {
+        "start" : 1591549379865,
+        "stop" : 1591549380452,
+        "duration" : 587
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "bfbdf98c17acaa62",
+      "name" : "Smoke_Test__Verifying_adcrw_apicall_Optinmode_scenario",
+      "title" : "Verifying Adcrw api call when user selecting Optinmode scenario in privacy card",
+      "time" : {
+        "start" : 1591549380453,
+        "stop" : 1591549380944,
+        "duration" : 491
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "d0c88adbdf7d4423",
+      "name" : "Smoke_Test__Verifying_locaion_apicall_Optinmode_scenario",
+      "title" : "Verifying Fatual api call when user selecting Optinmode scenario in privacy card",
+      "time" : {
+        "start" : 1591549380944,
+        "stop" : 1591549381527,
+        "duration" : 583
+      },
+      "severity" : "NORMAL",
+      "status" : "FAILED"
+    }, {
+      "uid" : "396059e88e802515",
+      "name" : "Smoke_Test__Verifying_amaozn_aax_calls_Optinmode_scenario",
+      "title" : "Verifying amazon aax calls when user selecting Optinmode scenario in privacy card",
+      "time" : {
+        "start" : 1591549381527,
+        "stop" : 1591549381986,
+        "duration" : 459
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "eef5f044496e5c0a",
+      "name" : "Smoke_Test__Verifying_homescreenhourly_calls_Optinmode_scenario",
+      "title" : "Verifying home screnn hourly ad call  when user selecting Optinmode scenario in privacy card",
+      "time" : {
+        "start" : 1591549381987,
+        "stop" : 1591549382432,
+        "duration" : 445
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "a670d2406f03046d",
+      "name" : "Smoke_Test__Verifying_marqueehomescreecall_Optinmode_scenario",
+      "title" : "Verifying homescreen marquee ad call  when user selecting Optinmode scenario in privacy card",
+      "time" : {
+        "start" : 1591549382433,
+        "stop" : 1591549382886,
+        "duration" : 453
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "b59d4f46d3f0dd44",
+      "name" : "Smoke_Test_Verifying_SOD_Cust_Param_homescreenad_Optinmode_scenario",
+      "title" : "Verifying SOD Cust param value for home screen call when user selecting Optinmode scenario in privacy card",
+      "time" : {
+        "start" : 1591549382887,
+        "stop" : 1591549383305,
+        "duration" : 418
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "326dcae5deb5080c",
+      "name" : "Smoke_Test_Verifying_SOD_Cust_Param_Feedad_Optinmode_scenario",
+      "title" : "Verifying SOD Cust param value for  Feed ad call when user selecting Optinmode scenario in privacy card",
+      "time" : {
+        "start" : 1591549383305,
+        "stop" : 1591549383792,
+        "duration" : 487
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "882b334f4ecb198b",
+      "name" : "Smoke_Test_Verifying_SOD_Cust_Param_detail_Feedad_Optinmode_scenario",
+      "title" : "Verifying SOD Cust param value for detail Feed ad call when user selecting Optinmode scenario in privacy card",
+      "time" : {
+        "start" : 1591549383792,
+        "stop" : 1591549384407,
+        "duration" : 615
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "e6b6f273590bc1e6",
+      "name" : "Smoke_Test_Verifying_SOD_Cust_Param_videoad_Optinmode_scenario",
+      "title" : "Verifying SOD Cust param value for video call when user selecting Optinmode scenario in privacy card",
+      "time" : {
+        "start" : 1591549384408,
+        "stop" : 1591549384887,
+        "duration" : 479
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "47319760893cefc5",
+      "name" : "Smoke_Test_Verifying_RDP_value_homescreenad_Optinmode_scenario",
+      "title" : "Verifying RDP  value for home screen call when user selecting Optinmode scenario in privacy card",
+      "time" : {
+        "start" : 1591549384888,
+        "stop" : 1591549385296,
+        "duration" : 408
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "1f7f2f4fda8de094",
+      "name" : "Smoke_Test_Verifying_RDP_value_feedad_Optinmode_scenario",
+      "title" : "Verifying RDP  value for feed ad call when user selecting Optinmode scenario in privacy card",
+      "time" : {
+        "start" : 1591549385297,
+        "stop" : 1591549385783,
+        "duration" : 486
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "34fa1962f6df1394",
+      "name" : "Smoke_Test_Verifying_RDP_value_detailed_feedad_Optinmode_scenario",
+      "title" : "Verifying RDP  value for detailed feed ad call when user selecting Optinmode scenario in privacy card",
+      "time" : {
+        "start" : 1591549385783,
+        "stop" : 1591549386336,
+        "duration" : 553
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "184c3249cbc940e4",
+      "name" : "Smoke_Test_Verifying_RDP_value_video_adcall_Optinmode_scenario",
+      "title" : "Verifying RDP  value forvideo  ad call when user selecting Optinmode scenario in privacy card",
+      "time" : {
+        "start" : 1591549386336,
+        "stop" : 1591549386805,
+        "duration" : 469
+      },
+      "severity" : "NORMAL",
+      "status" : "PASSED"
+    }, {
+      "uid" : "420bc4ab5d3ac24a",
+      "name" : "Smoke_Test_Verifying_homescreenhourly__backfromdetailedpage_scenario",
+      "title" : "Verifying  home screen hourly call back from detailes page  scenario",
+      "time" : {
+        "start" : 1591549386806,
+        "stop" : 1591549387831,
+        "duration" : 1025
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "33e0c808613723a1",
+      "name" : "Smoke_Test_Verifying_homescreenmarquee_backfromdetailedpage__scenario",
+      "title" : "Verifying  home screen marquee callbackfromdetailedpage scenario",
+      "time" : {
+        "start" : 1591549387831,
+        "stop" : 1591549387837,
+        "duration" : 6
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "b93bf1d4738fbac2",
+      "name" : "Smoke_Test_NextGen_IM_adunit",
+      "title" : "Verifying NextGen IM ad call unit",
+      "time" : {
+        "start" : 1591549387837,
+        "stop" : 1591549388843,
+        "duration" : 1006
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "5111ab2277775bca",
+      "name" : "Smoke_Test_verifying_NextGenIM_response",
+      "title" : "Verifying  NextGen IM ad card call response",
+      "time" : {
+        "start" : 1591549388845,
+        "stop" : 1591549388851,
+        "duration" : 6
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "a3073d1db23ce372",
+      "name" : "Smoke_Test_verifying_FG_BG_urls_NextgenIm_Ad",
+      "title" : "Verifying the FG and BG URL'S for nextgen ad call",
+      "time" : {
+        "start" : 1591549388851,
+        "stop" : 1591549388856,
+        "duration" : 5
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "4736bafabbbc01b",
+      "name" : "Smoke_Test_verifying_Size_NextgenIm_Ad",
+      "title" : "Verifying the Size for nextgen ad call",
+      "time" : {
+        "start" : 1591549388856,
+        "stop" : 1591549388861,
+        "duration" : 5
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "c0e8f5a2cbd76b9e",
+      "name" : "Smoke_Test_Verify_dailyIF_card_adcall_iu",
+      "title" : "Verifying iu value for daily card ad call iu",
+      "time" : {
+        "start" : 1591549388861,
+        "stop" : 1591549389868,
+        "duration" : 1007
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "66ce34c987e06b38",
+      "name" : "Smoke_Test_verifying_DailyIFcardResponse",
+      "title" : "Verifying daily IF ad card call response",
+      "time" : {
+        "start" : 1591549389868,
+        "stop" : 1591549389874,
+        "duration" : 6
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    }, {
+      "uid" : "d0fecd83f2fe8228",
+      "name" : "Smoke_Test_verifying_FG_BG_urls_DailyIF_Card",
+      "title" : "Verifying the response for Daily IF card",
+      "time" : {
+        "start" : 1591549389875,
+        "stop" : 1591549389880,
+        "duration" : 5
+      },
+      "severity" : "NORMAL",
+      "status" : "BROKEN"
+    } ]
+  } ]
+}

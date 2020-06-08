@@ -1,0 +1,89 @@
+{
+  "uid" : "517ff0e57273e625",
+  "name" : "Smoke_Test_Verify_health_and_activities_Bot_beach_detailpage_adcall_iu",
+  "title" : "Verifying iu value for Boat&Beach content page",
+  "time" : {
+    "start" : 1591549359411,
+    "stop" : 1591549359914,
+    "duration" : 503
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 2
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "925210e003f48e67",
+    "name" : "Suite : Test",
+    "title" : "Suite : Test"
+  },
+  "steps" : [ {
+    "name" : "logStep[Verifying iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fboat_beach ad call]",
+    "title" : "Verifying iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Fboat_beach ad call",
+    "time" : {
+      "start" : 1591549359814,
+      "stop" : 1591549359814,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[/7646/app_android_us/db_display/content/boat_beach call was trigred]",
+    "title" : "/7646/app_android_us/db_display/content/boat_beach call was trigred",
+    "time" : {
+      "start" : 1591549359875,
+      "stop" : 1591549359875,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "testSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "testMethod",
+    "value" : "Smoke_Test_Verify_health_and_activities_Bot_beach_detailpage_adcall_iu"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "testGroup",
+    "value" : "Test"
+  }, {
+    "name" : "suite-name",
+    "value" : "Suite : Test"
+  }, {
+    "name" : "thread",
+    "value" : "3229@Aswinikumars-MacBook-Pro.local.main(1)"
+  }, {
+    "name" : "testClass",
+    "value" : "twc.Automation.SmokeTestCases.smokeTestCases"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "host",
+    "value" : "Aswinikumars-MacBook-Pro.local"
+  }, {
+    "name" : "suite-title",
+    "value" : "Suite : Test"
+  } ],
+  "parameters" : [ ]
+}

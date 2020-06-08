@@ -1,0 +1,89 @@
+{
+  "uid" : "3440c16fd7f7909c",
+  "name" : "Smoke_Test_Verify_health_and_activities_Running_spotlight_adcall_iu",
+  "title" : "Verifying  iu value for Running content page",
+  "time" : {
+    "start" : 1591549358824,
+    "stop" : 1591549359411,
+    "duration" : 587
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 2
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "925210e003f48e67",
+    "name" : "Suite : Test",
+    "title" : "Suite : Test"
+  },
+  "steps" : [ {
+    "name" : "logStep[Verifying  iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Frunning ad call]",
+    "title" : "Verifying  iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcontent%2Frunning ad call",
+    "time" : {
+      "start" : 1591549359310,
+      "stop" : 1591549359310,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[/7646/app_android_us/db_display/content/running call was trigred]",
+    "title" : "/7646/app_android_us/db_display/content/running call was trigred",
+    "time" : {
+      "start" : 1591549359372,
+      "stop" : 1591549359372,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "testSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "testGroup",
+    "value" : "Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "Smoke_Test_Verify_health_and_activities_Running_spotlight_adcall_iu"
+  }, {
+    "name" : "suite-name",
+    "value" : "Suite : Test"
+  }, {
+    "name" : "thread",
+    "value" : "3229@Aswinikumars-MacBook-Pro.local.main(1)"
+  }, {
+    "name" : "testClass",
+    "value" : "twc.Automation.SmokeTestCases.smokeTestCases"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "host",
+    "value" : "Aswinikumars-MacBook-Pro.local"
+  }, {
+    "name" : "suite-title",
+    "value" : "Suite : Test"
+  } ],
+  "parameters" : [ ]
+}

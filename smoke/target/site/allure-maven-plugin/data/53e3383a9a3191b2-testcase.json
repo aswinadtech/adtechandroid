@@ -1,0 +1,89 @@
+{
+  "uid" : "53e3383a9a3191b2",
+  "name" : "Smoke_Test_Verify_hourly1_bigad_detailpage_adcall_iu",
+  "title" : "Verifying iu value for hourly1 bigad  detailpage",
+  "time" : {
+    "start" : 1591549368351,
+    "stop" : 1591549368915,
+    "duration" : 564
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 2
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "925210e003f48e67",
+    "name" : "Suite : Test",
+    "title" : "Suite : Test"
+  },
+  "steps" : [ {
+    "name" : "logStep[Verifying iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly1 ad call]",
+    "title" : "Verifying iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly1 ad call",
+    "time" : {
+      "start" : 1591549368777,
+      "stop" : 1591549368777,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[/7646/app_android_us/db_display/details/hourly1 call was trigred]",
+    "title" : "/7646/app_android_us/db_display/details/hourly1 call was trigred",
+    "time" : {
+      "start" : 1591549368867,
+      "stop" : 1591549368867,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "testSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "testGroup",
+    "value" : "Test"
+  }, {
+    "name" : "suite-name",
+    "value" : "Suite : Test"
+  }, {
+    "name" : "thread",
+    "value" : "3229@Aswinikumars-MacBook-Pro.local.main(1)"
+  }, {
+    "name" : "testClass",
+    "value" : "twc.Automation.SmokeTestCases.smokeTestCases"
+  }, {
+    "name" : "testMethod",
+    "value" : "Smoke_Test_Verify_hourly1_bigad_detailpage_adcall_iu"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "host",
+    "value" : "Aswinikumars-MacBook-Pro.local"
+  }, {
+    "name" : "suite-title",
+    "value" : "Suite : Test"
+  } ],
+  "parameters" : [ ]
+}

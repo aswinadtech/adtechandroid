@@ -1,0 +1,89 @@
+{
+  "uid" : "a0040bfde942923a",
+  "name" : "Smoke_Test__Verifying_homescreenhourly_calls_Optoutmode_scenario",
+  "title" : "Verifying home screnn hourly ad call  when user selecting Optoutmode scenario in privacy card",
+  "time" : {
+    "start" : 1591549373986,
+    "stop" : 1591549374445,
+    "duration" : 459
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 2
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "925210e003f48e67",
+    "name" : "Suite : Test",
+    "title" : "Suite : Test"
+  },
+  "steps" : [ {
+    "name" : "logStep[Checking for  iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly ad call]",
+    "title" : "Checking for  iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly ad call",
+    "time" : {
+      "start" : 1591549374388,
+      "stop" : 1591549374388,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[7646/app_android_us/db_display/home_screen/hourly call was trigred]",
+    "title" : "7646/app_android_us/db_display/home_screen/hourly call was trigred",
+    "time" : {
+      "start" : 1591549374418,
+      "stop" : 1591549374418,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "testSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "testGroup",
+    "value" : "Test"
+  }, {
+    "name" : "suite-name",
+    "value" : "Suite : Test"
+  }, {
+    "name" : "thread",
+    "value" : "3229@Aswinikumars-MacBook-Pro.local.main(1)"
+  }, {
+    "name" : "testClass",
+    "value" : "twc.Automation.SmokeTestCases.smokeTestCases"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "host",
+    "value" : "Aswinikumars-MacBook-Pro.local"
+  }, {
+    "name" : "suite-title",
+    "value" : "Suite : Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "Smoke_Test__Verifying_homescreenhourly_calls_Optoutmode_scenario"
+  } ],
+  "parameters" : [ ]
+}

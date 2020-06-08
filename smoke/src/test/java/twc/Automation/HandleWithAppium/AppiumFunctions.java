@@ -341,16 +341,16 @@ public class AppiumFunctions extends Drivers{
 			capabilities.setCapability(capabilitydata[14][0],capabilitydata[14][Cap]);
 			Thread.sleep(20000); 
 			Ad = new AndroidDriver(new URL(capabilitydata[15][Cap]), capabilities);
-			Thread.sleep(20000); 
+			Thread.sleep(10000); 
 			}
 			/* ---End Android Device Capabilities --- */
 			Ad.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-			Thread.sleep(20000);
+		//	Thread.sleep(20000);
 			After_launch();
 			
 			
 			System.out.println("Capabilities have been launched  with fullreset with - "+Reset);
-			Thread.sleep(5000);
+		//	Thread.sleep(5000);
 		} 
 			catch (Exception e) {
 			System.out.println("Unable To Launch The Appium Capabilities");
@@ -381,7 +381,7 @@ public class AppiumFunctions extends Drivers{
     				capabilities.setCapability(capabilitydata[9][0], capabilitydata[9][Cap]);
     				capabilities.setCapability(capabilitydata[10][0],capabilitydata[10][Cap]);
     				capabilities.setCapability(capabilitydata[12][0],capabilitydata[12][Cap]);
-    				//capabilities.setCapability("appActivity","com.weather.Weather.splash.SplashScreenActivity");
+    			//	capabilities.setCapability("appActivity","com.weather.Weather.splash.SplashScreenActivity");
     				//capabilities.setCapability("appActivity","com.weather.android.daybreak.MainActivity");
     				//capabilities.setCapability("automationName","UiAutomator2");
     				System.out.println("app : "+capabilitydata[10][Cap]);
@@ -484,7 +484,7 @@ public static void click_cold_Flu_element() throws Exception
 	
 }
 catch(Exception e) {
-	Ad.findElementById("com.weather.Weather:id/index_3_description").click();
+	Ad.findElementById("com.weather.Weather:id/index_1_description").click();
 	Thread.sleep(3000);
 
 
@@ -493,12 +493,12 @@ catch(Exception e) {
 public static void click_Running_element() throws Exception
 {
 	try {
-	Ad.findElementByName("Tough run conditions now.").click();
+		Ad.findElementById("com.weather.Weather:id/index_3_description").click();
+		Thread.sleep(2000);
 	Thread.sleep(2000);
 	}
 	catch(Exception e) {
-	Ad.findElementById("com.weather.Weather:id/index_1_description").click();
-	Thread.sleep(2000);
+	
 	}
 }
 
@@ -521,7 +521,7 @@ public static void click_Boat_Beach_element() throws Exception
 	
 	}
 	catch(Exception e) {
-	Ad.findElementById("com.weather.Weather:id/index_1_description").click();
+	Ad.findElementById("com.weather.Weather:id/index_2_description").click();
 	Thread.sleep(2000);
 	}
 }
@@ -533,7 +533,7 @@ public static void click_Allergy_element() throws Exception
 	
 	}
 	catch(Exception e) {
-	Ad.findElementById("com.weather.Weather:id/index_2_description").click();
+	Ad.findElementById("com.weather.Weather:id/index_3_description").click();
 	Thread.sleep(2000);
 	
 	}		

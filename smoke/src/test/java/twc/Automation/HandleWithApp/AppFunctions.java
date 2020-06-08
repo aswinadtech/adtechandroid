@@ -870,6 +870,7 @@ public class AppFunctions extends Drivers{
 	}
 	public static void Pull_To_Refresh(String excel_sheet_name) throws Exception{
 		logStep("On CC Screen Do A Pull To Refresh");
+		
 		DeviceStatus device_status = new DeviceStatus();
 		int Cap = device_status.Device_Status();
 
@@ -896,6 +897,8 @@ public class AppFunctions extends Drivers{
 		action.longPress(temp).moveTo(hilo).release().perform();
 		Thread.sleep(3000);
 		System.out.println("Pull the screen to REFRESH is done");
+		logStep("Pull the screen to REFRESH is done");
+		
 	}
 
 	public static void Kill_Launch_App(){

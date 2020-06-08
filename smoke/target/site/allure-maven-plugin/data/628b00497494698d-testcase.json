@@ -1,0 +1,89 @@
+{
+  "uid" : "628b00497494698d",
+  "name" : "Smoke_Verify_est_Air_Quality_feedcard_adcall_iu",
+  "title" : "Verifying iu value for  Air Quality feed card",
+  "time" : {
+    "start" : 1591549364240,
+    "stop" : 1591549364754,
+    "duration" : 514
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 2
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "925210e003f48e67",
+    "name" : "Suite : Test",
+    "title" : "Suite : Test"
+  },
+  "steps" : [ {
+    "name" : "logStep[Verifying iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Faq ad call]",
+    "title" : "Verifying iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Faq ad call",
+    "time" : {
+      "start" : 1591549364640,
+      "stop" : 1591549364640,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[/7646/app_android_us/db_display/card/aq call was trigred]",
+    "title" : "/7646/app_android_us/db_display/card/aq call was trigred",
+    "time" : {
+      "start" : 1591549364699,
+      "stop" : 1591549364699,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "testSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "testGroup",
+    "value" : "Test"
+  }, {
+    "name" : "testMethod",
+    "value" : "Smoke_Verify_est_Air_Quality_feedcard_adcall_iu"
+  }, {
+    "name" : "suite-name",
+    "value" : "Suite : Test"
+  }, {
+    "name" : "thread",
+    "value" : "3229@Aswinikumars-MacBook-Pro.local.main(1)"
+  }, {
+    "name" : "testClass",
+    "value" : "twc.Automation.SmokeTestCases.smokeTestCases"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "host",
+    "value" : "Aswinikumars-MacBook-Pro.local"
+  }, {
+    "name" : "suite-title",
+    "value" : "Suite : Test"
+  } ],
+  "parameters" : [ ]
+}

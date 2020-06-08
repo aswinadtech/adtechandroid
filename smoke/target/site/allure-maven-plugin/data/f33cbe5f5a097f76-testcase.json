@@ -1,0 +1,89 @@
+{
+  "uid" : "f33cbe5f5a097f76",
+  "name" : "Smoke_Test_CaseVerify_Today_details_page_iu",
+  "title" : "Verifying iu value Today details Page ",
+  "time" : {
+    "start" : 1591549355997,
+    "stop" : 1591549356605,
+    "duration" : 608
+  },
+  "summary" : {
+    "attachments" : 0,
+    "steps" : 2
+  },
+  "failure" : null,
+  "description" : null,
+  "severity" : "NORMAL",
+  "status" : "PASSED",
+  "suite" : {
+    "uid" : "925210e003f48e67",
+    "name" : "Suite : Test",
+    "title" : "Suite : Test"
+  },
+  "steps" : [ {
+    "name" : "logStep[Verifying iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Ftoday  ad call]",
+    "title" : "Verifying iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Ftoday  ad call",
+    "time" : {
+      "start" : 1591549356515,
+      "stop" : 1591549356515,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  }, {
+    "name" : "logStep[/7646/app_android_us/db_display/details/today call was trigred]",
+    "title" : "/7646/app_android_us/db_display/details/today call was trigred",
+    "time" : {
+      "start" : 1591549356571,
+      "stop" : 1591549356571,
+      "duration" : 0
+    },
+    "summary" : {
+      "attachments" : 0,
+      "steps" : 0
+    },
+    "status" : "PASSED",
+    "attachments" : [ ],
+    "steps" : [ ]
+  } ],
+  "attachments" : [ ],
+  "issues" : [ ],
+  "testIds" : [ ],
+  "labels" : [ {
+    "name" : "testSuite",
+    "value" : "Suite"
+  }, {
+    "name" : "testMethod",
+    "value" : "Smoke_Test_CaseVerify_Today_details_page_iu"
+  }, {
+    "name" : "language",
+    "value" : "JAVA"
+  }, {
+    "name" : "testGroup",
+    "value" : "Test"
+  }, {
+    "name" : "suite-name",
+    "value" : "Suite : Test"
+  }, {
+    "name" : "thread",
+    "value" : "3229@Aswinikumars-MacBook-Pro.local.main(1)"
+  }, {
+    "name" : "testClass",
+    "value" : "twc.Automation.SmokeTestCases.smokeTestCases"
+  }, {
+    "name" : "framework",
+    "value" : "TestNG"
+  }, {
+    "name" : "host",
+    "value" : "Aswinikumars-MacBook-Pro.local"
+  }, {
+    "name" : "suite-title",
+    "value" : "Suite : Test"
+  } ],
+  "parameters" : [ ]
+}

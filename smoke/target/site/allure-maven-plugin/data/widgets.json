@@ -1,0 +1,104 @@
+{
+  "hash" : "e7105c43ada45c9f6e0006854ef1a1d95249231d",
+  "plugins" : {
+    "total" : {
+      "statistic" : {
+        "total" : 80,
+        "passed" : 56,
+        "pending" : 0,
+        "canceled" : 0,
+        "failed" : 10,
+        "broken" : 14
+      },
+      "time" : {
+        "start" : 1591549351174,
+        "stop" : 1591549389880,
+        "duration" : 38706
+      }
+    },
+    "defects" : {
+      "totalCount" : 11,
+      "items" : [ {
+        "count" : 1,
+        "uid" : "33500c48f1cc877b",
+        "message" : "AssertionError: 7646/app_android_us/video call was not trigred",
+        "status" : "FAILED"
+      }, {
+        "count" : 1,
+        "uid" : "44772839b5c8a797",
+        "message" : "AssertionError: https://bcp.crwdcntrl.net/ url was trigred",
+        "status" : "FAILED"
+      }, {
+        "count" : 1,
+        "uid" : "3d3bafe7c46d7b8f",
+        "message" : "AssertionError: https://ad.crwdcntrl.net/ url was trigred",
+        "status" : "FAILED"
+      }, {
+        "count" : 1,
+        "uid" : "bb0fbe376369954e",
+        "message" : "AssertionError: amazon aax is  trigreed for privacy Optoutmode scenario",
+        "status" : "FAILED"
+      }, {
+        "count" : 1,
+        "uid" : "fd3eaf6ea8581f25",
+        "message" : "AssertionError: SOD cust param value for home screen call is not matchged withsod=yes",
+        "status" : "FAILED"
+      }, {
+        "count" : 1,
+        "uid" : "e19aac1196e56c06",
+        "message" : "AssertionError: SOD cust param value for Feed call is not matchged withsod=yes",
+        "status" : "FAILED"
+      }, {
+        "count" : 1,
+        "uid" : "147b3c3a90295262",
+        "message" : "AssertionError: SOD cust param value for deatiled Feed ad call is not matchged withsod=yes",
+        "status" : "FAILED"
+      }, {
+        "count" : 1,
+        "uid" : "baf29c65bbadddcb",
+        "message" : "AssertionError: RDP for home screen call  is not matchged with1",
+        "status" : "FAILED"
+      }, {
+        "count" : 1,
+        "uid" : "441415c69a7544ed",
+        "message" : "AssertionError: RDP for feed ad call call  is not matchged with1",
+        "status" : "FAILED"
+      }, {
+        "count" : 1,
+        "uid" : "77884619d7f07a56",
+        "message" : "AssertionError: https://location.wfxtriggers.com url was not trigred",
+        "status" : "FAILED"
+      } ]
+    },
+    "xunit" : {
+      "totalCount" : 1,
+      "items" : [ {
+        "uid" : "925210e003f48e67",
+        "title" : "Suite : Test",
+        "statistic" : {
+          "total" : 80,
+          "passed" : 56,
+          "pending" : 0,
+          "canceled" : 0,
+          "failed" : 10,
+          "broken" : 14
+        }
+      } ]
+    },
+    "behaviors" : {
+      "totalCount" : 1,
+      "items" : [ {
+        "title" : "Without feature",
+        "statistic" : {
+          "total" : 80,
+          "passed" : 56,
+          "pending" : 0,
+          "canceled" : 0,
+          "failed" : 10,
+          "broken" : 14
+        }
+      } ]
+    },
+    "environment" : [ ]
+  }
+}
