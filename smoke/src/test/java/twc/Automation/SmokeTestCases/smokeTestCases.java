@@ -1138,7 +1138,7 @@ public void Smoke_Test_CaseVerify_news_aax_amazon_adcalll()
            @Test(priority=154,enabled = true)
 	   @Title("Verifying iu value for daily card ad call iu") public void
 	  Smoke_Test_Verify_dailyIF_card_adcall_iu() throws Exception { System.out.
-	  System.out.println("================= Verifyig daily adcall_iu Started =========================");
+	 // System.out.println("================= Verifyig daily adcall_iu Started =========================");
 	   //AppFunctions.enter_nextgenIm_ad_location();
 	
 	  CharlesFunctions.ClearSessions();
@@ -1147,7 +1147,7 @@ public void Smoke_Test_CaseVerify_news_aax_amazon_adcalll()
               //Functions.Swipe_Conter(3);
 	 // CharlesFunctions.ExportSession();
 	 /// Functions.Verify_dailycard_iu(); System.out.
-	 println("================= Verify_daily_card_adcall_iu End =========================");
+	// println("================= Verify_daily_card_adcall_iu End =========================");
 	   }
 	 
 	 @Test(priority=155,enabled = true)	  
