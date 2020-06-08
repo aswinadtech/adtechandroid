@@ -1185,7 +1185,7 @@ public void Smoke_Test_CaseVerify_news_aax_amazon_adcalll()
 		//		AppiumFunctions.AppiumServerStop();
 		//		AppiumFunctions.AppiumServerStart();
 	//	CharlesFunctions.ClearSessions();
-		AppiumFunctions.LaunchAppWithFullReset();
+	//	AppiumFunctions.LaunchAppWithFullReset();
 		
               //  AppiumFunctions.Swipeforappdeckapk();
 	//	AppiumFunctions.Kill_launch();
