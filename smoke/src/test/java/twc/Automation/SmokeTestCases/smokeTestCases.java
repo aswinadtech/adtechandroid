@@ -595,9 +595,9 @@ public void Smoke_Test_CaseVerify_news_aax_amazon_adcalll()
 		
 	      System.out.println("=================Verifying Privacy Card is present on the screen testcase started =========================");
 		//AppiumFunctions.Kill_launch();
-		AppFunctions.Kill_Launch_App();
+	//	AppFunctions.Kill_Launch_App();
 		Thread.sleep(50000);
-          Functions.Verify_Privacy_Card_onScreen();
+          //Functions.Verify_Privacy_Card_onScreen();
 		
 		System.out.println("================= Verifying Privacy Card is present on the screen testcase End =========================");
 	}
@@ -628,7 +628,7 @@ public void Smoke_Test_CaseVerify_news_aax_amazon_adcalll()
 	//	Functions.scrollapp_maps();
 	//	AppiumFunctions.clickOnRadarMaps();		
 		//CharlesFunctions.ExportSession();
-	//Functions.Verify_video_ad_call_Optoutmode();
+	Functions.Verify_video_ad_call_Optoutmode();
 		System.out.println("================= Verifying video ad call when user selecting Optoutmode scenario in privacy card End =========================");
 				
 	}
