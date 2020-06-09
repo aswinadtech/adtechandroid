@@ -62,7 +62,7 @@ public class regressionTestCases extends Drivers{
 		System.out.println("================= Custom Parameter IU Verfication End =========================");
 	}
 	
-	@Test(priority=6)
+	/*@Test(priority=6)
 	@Title("Verify Description_url for video call")
 	public void C344261_Verify_DescriptionURL_Video() throws Exception{
 		System.out.println("================= Verify description URL for video call Started =========================");
@@ -76,7 +76,7 @@ public class regressionTestCases extends Drivers{
 		System.out.println("================= Verify Content URL for video call Started =========================");
 		Custom_Parameters_Verification.verify_video_request("content_url");
 		System.out.println("================= Verify Content URL for video call  End =========================");
-	}
+	}*/
 	
 	//Not null
 	
