@@ -213,13 +213,13 @@ public class regressionTestCases extends Drivers{
 		}
 
 		
-		/*@Test(priority=65)
+		@Test(priority=65)
 		@Title("Verify custom parameter fhic")
 		public void C333232_Verify_cust_param_fhic() throws Exception{
 			System.out.println("================= Custom Parameter Fhic Verfication Started =========================");
 			Custom_Parameters_Verification.parameters_Verification("fhic");
 			System.out.println("================= Custom Parameter Fhic Verfication End =========================");
-		}*/
+		}
 		@Test(priority=66)
 		@Title("Verify custom parameter floc")
 		public void C333238_Verify_cust_param_floc() throws Exception{
@@ -256,7 +256,7 @@ public class regressionTestCases extends Drivers{
 	    @Title("Verify custom parameter zip from  turbo api")
 		public void C333202_Verify_cust_param_zip() throws Exception{
 			System.out.println("================= Custom Parameter Zip Verfication  from turbo call Started =========================");
-			//Custom_Parameters_Verification.parameters_Verification("zip");
+			Custom_Parameters_Verification.parameters_Verification("zip");
 			
 			System.out.println("================= Custom Parameter Zip Verfication  from turbo call End =========================");
 		}
@@ -353,13 +353,13 @@ public class regressionTestCases extends Drivers{
 		 
 		//UI
 		
-		@Test(priority=130)
+		/*@Test(priority=130)
 		@Title("Verify custom parameter sev")
 		public void C333223_Verify_cust_param_sev() throws Exception{
 			System.out.println("================= Custom Parameter Sev Verfication Started =========================");
 			//Custom_Parameters_Verification.parameters_Verification("sev");
 			System.out.println("================= Custom Parameter Sev Verfication End =========================");
-		}
+		}*/
 	    	
 	     	
 	
