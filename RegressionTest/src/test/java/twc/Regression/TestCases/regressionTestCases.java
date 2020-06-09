@@ -103,7 +103,7 @@ public class regressionTestCases extends Drivers{
 		@Title("Verify custom parameter st")
 		public void C333219_Verify_cust_param_st() throws Exception{
 			System.out.println("================= Custom Parameter St Verfication Started =========================");
-			//Custom_Parameters_Verification.parameters_Verification("st");
+			Custom_Parameters_Verification.parameters_Verification("st");
 			System.out.println("================= Custom Parameter St Verfication End =========================");
 		}
 		
