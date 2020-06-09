@@ -271,7 +271,7 @@ public class regressionTestCases extends Drivers{
 			System.out.println("================= Custom Parameter Wfxtg Verfication End =========================");
 		}
 	
-	     @Test(priority=81)
+	  /*   @Test(priority=81)
 			@Title("Verify custom parameter cfxtg")
 			public void C333228_Verify_cust_param_cfxtg() throws Exception{
 				System.out.println("================= Custom Parameter cfxtg Verfication Started =========================");
@@ -285,7 +285,7 @@ public class regressionTestCases extends Drivers{
 	 		System.out.println("================= Custom Parameter Hlzip Verfication Started =========================");
 	 		//Custom_Parameters_Verification.parameters_Verification("hlzip");
 	 		System.out.println("================= Custom Parameter Hlzip Verfication End =========================");
-	 	}
+	 	}*/
 	 	
 	 	
 	    /* 	@Test(priority=83)
