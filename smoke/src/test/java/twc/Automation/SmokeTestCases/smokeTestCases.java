@@ -252,7 +252,7 @@ public class smokeTestCases extends Drivers {
 	 Thread.sleep(5000);
 	   AppiumFunctions.click_hourly_element(); */
 	CharlesFunctions.ExportSession();
-	  Functions.finding_VideoCard_iu_value();
+	//  Functions.finding_VideoCard_iu_value();
 	   System.out.println("================= Verifying Video ad call testcase End =========================" );
 	  }
 	 
