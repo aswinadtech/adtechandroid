@@ -141,7 +141,7 @@ public class smokeTestCases extends Drivers {
 			throws Exception {
 		System.out.println("================= Verify amazon aax Maps card preroll adcall Started =========================");		
 		logStep(" Verifying preload amazon aax for  map details");
-		//Functions.get_aaxcal_map_details();
+		Functions.get_aaxcal_map_details();
      	System.out.println("================= Verify amazon aax Maps card preroll adcall End =========================");
 	}
 	@Test(priority=10,enabled = true)
@@ -150,7 +150,7 @@ public class smokeTestCases extends Drivers {
 			throws Exception {
 		System.out.println("================= Verify amazon aax  Air Quality card preroll adcall Started =========================");		
 		logStep(" Verifying preload amazon aax for air quality card");
-	//	Functions.get_aaxcal_AirQuality();
+		Functions.get_aaxcal_AirQuality();
      	System.out.println("================= Verify amazon aax  Air Quality card preroll adcall End =========================");
 	}
 	@Test(priority=11,enabled = true)
@@ -159,7 +159,7 @@ public class smokeTestCases extends Drivers {
 			throws Exception {
 		System.out.println("================= Verify amazon aax Hourly details preroll adcall Started =========================");		
 		logStep(" Verifying preload amazon aax for  hourly details");
-		//Functions.get_aaxcal_Hourly();
+	Functions.get_aaxcal_Hourly();
      	System.out.println("================= Verify amazon aax Hourly details preroll adcall End =========================");
 	}
 	@Test(priority=12,enabled = true)
@@ -168,7 +168,7 @@ public class smokeTestCases extends Drivers {
 			throws Exception {
 		System.out.println("================= Verify amazon aax Daily details preroll adcall Started =========================");		
 		logStep(" Verifying preload amazon aax for  daily details");
-	//	Functions.get_aaxcal_Daily();
+		Functions.get_aaxcal_Daily();
      	System.out.println("================= Verify amazon aax Daily details preroll adcall End =========================");
 	}
 	
@@ -178,7 +178,7 @@ public class smokeTestCases extends Drivers {
 			throws Exception {
 		System.out.println("================= Verify amazon aax video preload adcall Started =========================");		
 		logStep(" Verifying preload amazon aax for  video details");
-		//Functions.get_aaxcal_video_details();
+		Functions.get_aaxcal_video_details();
      	System.out.println("================= Verify amazon aax video preload adcall End =========================");
 	}
 
@@ -190,7 +190,7 @@ public class smokeTestCases extends Drivers {
 	  System.out.println("================= Verifying Video ad call testcase  started =========================" );
 	  CharlesFunctions.ClearSessions();
 	  CharlesFunctions.clearSessionBrowserData();
-	//  CharlesFunctions.startSessionBrowserData();
+//  CharlesFunctions.startSessionBrowserData();
 	  
 	   Thread.sleep(50000);
 	   
@@ -672,7 +672,7 @@ public void Smoke_Test_CaseVerify_news_aax_amazon_adcalll()
 				
 	}
 	
-	@Test(priority = 86, enabled = true)
+	/*@Test(priority = 86, enabled = true)
 	@Title("Verifying adcrw api call when user selecting Optoutmode scenario in privacy card")
 	public void Smoke_Test__Verifying_adcrw_apicall_Optoutmode_scenario() throws Exception {
 
@@ -693,7 +693,7 @@ public void Smoke_Test_CaseVerify_news_aax_amazon_adcalll()
     	Functions.validating_Fatualcall_privacy_Optoutmode_scenarion();
 		System.out.println("================= Verifying Fatual api call when user selecting Optoutmode scenario in privacy card End =========================");
 				
-	}
+	}*/
 
 @Test(priority =88, enabled = true)
 	@Title("Verifying amazon aax calls when user selecting Optoutmode scenario in privacy card")
