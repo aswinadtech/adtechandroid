@@ -62,7 +62,7 @@ public class regressionTestCases extends Drivers{
 		System.out.println("================= Custom Parameter IU Verfication End =========================");
 	}
 	
-	/*@Test(priority=6)
+	@Test(priority=6)
 	@Title("Verify Description_url for video call")
 	public void C344261_Verify_DescriptionURL_Video() throws Exception{
 		System.out.println("================= Verify description URL for video call Started =========================");
@@ -76,7 +76,7 @@ public class regressionTestCases extends Drivers{
 		System.out.println("================= Verify Content URL for video call Started =========================");
 		Custom_Parameters_Verification.verify_video_request("content_url");
 		System.out.println("================= Verify Content URL for video call  End =========================");
-	}*/
+	}
 	
 	//Not null
 	
@@ -213,7 +213,7 @@ public class regressionTestCases extends Drivers{
 		}
 
 		
-		@Test(priority=65)
+		/*@Test(priority=65)
 		@Title("Verify custom parameter fhic")
 		public void C333232_Verify_cust_param_fhic() throws Exception{
 			System.out.println("================= Custom Parameter Fhic Verfication Started =========================");
@@ -226,7 +226,7 @@ public class regressionTestCases extends Drivers{
 			System.out.println("================= Custom Parameter Floc Verfication Started =========================");
 			Custom_Parameters_Verification.parameters_Verification("floc");
 			System.out.println("================= Custom Parameter Floc Verfication End =========================");
-		}
+		}*/
 				
 		@Test(priority=67)
 		@Title("Verify custom parameter tmp")
