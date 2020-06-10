@@ -15,6 +15,7 @@ import junit.framework.ComparisonFailure;
 
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.remote.RemoteWebElement;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -3304,7 +3305,7 @@ public static void get_aaxcal_map_feedcard() throws Exception {
 	//System.out.println("Slot Name is  : "+slotID);
 	if(sb.contains("1f61604c-bb3a-4e2e-a5e3-d9793ec078ed")) {
 	System.out.println("1f61604c-bb3a-4e2e-a5e3-d9793ec078ed is trigred for aax  call db_display/contents/allergy ");
-	}
+	} 
 	if(!sb.contains("1f61604c-bb3a-4e2e-a5e3-d9793ec078ed")) {
 		System.out.println("slotID 1f61604c-bb3a-4e2e-a5e3-d9793ec078ed is not trigred for aax call db_display/contents/allergy");
 		Assert.fail("slotID 1f61604c-bb3a-4e2e-a5e3-d9793ec078ed is not trigred for aax call db_display/details/contents/allergy");
@@ -3402,7 +3403,7 @@ public static  void selecting_opt_out_mode() throws Exception{
 	    Ad.findElementById("com.weather.Weather:id/privacy_card_personal_info_container").click();
 	    Thread.sleep(8000);
 		Swipe_Conter(3);
-		 Thread.sleep(3000);
+		 Thread.sleep(30000);
 		 TouchAction ta=new TouchAction(Ad);
 		 ta.tap(480, 1369).perform();
 		//Selecting  Opt out  mode option in privacy card
@@ -3504,11 +3505,15 @@ public static Map<String, String> validating_bcp_privacy_Optoutmode_scenarion() 
 	int Cap = device_status.Device_Status();
 	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
 	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();	
-	if(sb.contains("https://bcp.crwdcntrl.net/")) {
-	Assert.fail("https://bcp.crwdcntrl.net/ url was trigred");
+	logStep("Verifying for  https://bcp.crwdcntrl.net api url");
+	if(sb.contains("bcp.crwdcntrl.net")) {
+	logStep("https://bcp.crwdcntrl.net/ url was trigred");
 	System.out.println("https://bcp.crwdcntrl.net/ url was trigred");
+	Assert.fail("https://bcp.crwdcntrl.net/ url was trigred");
+	
 }
 if(!sb.contains("bcp.crwdcntrl.net")) {
+	logStep("https://bcp.crwdcntrl.net/ url was not trigred");
 System.out.println("https://bcp.crwdcntrl.net/ url was not trigred");
 
 }
@@ -3524,12 +3529,15 @@ public static Map<String, String> validating_adcrw_privacy_Optoutmode_scenarion(
 	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
 	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();	
 	//https://ad.crwdcntrl.net
+	logStep("Verifying  https://ad.crwdcntrl.net api url");
 	if(sb.contains("ad.crwdcntrl.net")) {
 		System.out.println("https://ad.crwdcntrl.net/ url was trigred");
+		logStep("https://ad.crwdcntrl.net/ url was trigred");
 		Assert.fail("https://ad.crwdcntrl.net/ url was trigred");
 	
 }
 if(!sb.contains("ad.crwdcntrl.net")) {
+	logStep("https://ad.crwdcntrl.net/ url was  not trigred");
 	System.out.println("https://ad.crwdcntrl.net/ url was  not trigred");
 }
 return wfxtriggers_values;
@@ -3544,12 +3552,15 @@ public static Map<String, String> validating_Fatualcall_privacy_Optoutmode_scena
 	int Cap = device_status.Device_Status();
 	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
 	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();	
+logStep("Verifying https://location.wfxtriggers.com api url");
 	if(sb.contains("location.wfxtriggers.com")) {
+		logStep("https://location.wfxtriggers.com url was  trigred");
 		System.out.println("https://location.wfxtriggers.com url was  trigred");
 		Assert.fail("https://location.wfxtriggers.com url was  trigred");
 		}
 
 if(!sb.contains("location.wfxtriggers.com")) {
+	logStep("https://location.wfxtriggers.com url was not trigred");
 System.out.println("https://location.wfxtriggers.com url was not trigred");
 
 }
@@ -3583,13 +3594,17 @@ public static Map<String, String> validating_bcp_privacy_Optinmode_scenarion() t
 	int Cap = device_status.Device_Status();
 	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
 	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();	
+	logStep("Verifying for https://bcp.crwdcntrl.net url ");
 	if(sb.contains("bcp.crwdcntrl.net")) {
 		System.out.println("https://bcp.crwdcntrl.net/ url was trigred");
+		logStep("https://bcp.crwdcntrl.net/ url was trigred");
 
 }
 if(!sb.contains("bcp.crwdcntrl.net")) {
-	Assert.fail("https://bcp.crwdcntrl.net/ url was not trigred");
 	System.out.println("https://bcp.crwdcntrl.net/ url was not trigred");
+	logStep("https://bcp.crwdcntrl.net/ url was not trigred");
+	Assert.fail("https://bcp.crwdcntrl.net/ url was not trigred");
+
 
 }
 return wfxtriggers_values;
@@ -3604,12 +3619,14 @@ public static Map<String, String> validating_adcrw_privacy_Optinmode_scenarion()
 	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
 	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();	
 	//https://ad.crwdcntrl.net
+	logStep("Verifying for https://ad.crwdcntrl.net  url ");
 	if(sb.contains("ad.crwdcntrl.net")) {
-		System.out.println("https://ad.crwdcntrl.net/ url was trigred");
-	
+		System.out.println("https://ad.crwdcntrl.net url was trigred");
+		logStep("https://ad.crwdcntrl.net/ url was trigred");
 }
 if(!sb.contains("ad.crwdcntrl.net")) {
 	System.out.println("https://ad.crwdcntrl.net/ url was not trigred");
+	logStep("https://ad.crwdcntrl.net/ url was not trigred");
 	Assert.fail("https://ad.crwdcntrl.net/ url was not trigred");
 	
 }
@@ -3623,12 +3640,15 @@ public static Map<String, String> validating_Fatualcall_privacy_Optinmode_scenar
 	int Cap = device_status.Device_Status();
 	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
 	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();	
+	logStep("Verifying forlocation.wfxtriggers.com url ");
 	if(sb.contains("location.wfxtriggers.com")) {
 		System.out.println("https://location.wfxtriggers.com url was trigred");
+		logStep("https://location.wfxtriggers.com url was trigred");
 		}
 
 if(!sb.contains("location.wfxtriggers.com")) {
 	System.out.println("https://location.wfxtriggers.com url was not trigred");
+	logStep("https://location.wfxtriggers.com url was not trigred");
 	Assert.fail("https://location.wfxtriggers.com url was not trigred");
 
 
@@ -3659,16 +3679,18 @@ public static  void selecting_opt_in_mode() throws Exception{
 	
 	//Clicking privacy arrow button
 	System.out.println("Clicking privacy arrow button");
+	logStep("Clicking privacy arrow button");
     Ad.findElementById("com.weather.Weather:id/privacy_card_personal_information_view").click();
     Thread.sleep(8000);
 	Swipe_Conter(3);
-	 Thread.sleep(3000);
+	 Thread.sleep(30000);
 	 TouchAction ta=new TouchAction(Ad);
 	 ta.tap(347, 1070).perform();
 	 Ad.findElementById("com.weather.Weather:id/popup_positive_button").click();
 	    Thread.sleep(8000);
 	//Selecting  Opt out  mode option in privacy card
 	System.out.println("Selecting  Opt in  mode option in privacy card");
+	logStep("Selecting  Opt in  mode option in privacy card");
    //Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.view.View[4]/android.widget.ListView/android.view.View[2]").click();
 	 CharlesFunctions.ClearSessions();
 	 Thread.sleep(3000);		
@@ -3869,14 +3891,16 @@ public static void validating_aax_privacy_Optoutmode_scenario() throws Exception
 
 	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
 	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
-	
+	logStep("Verifying for amazon aax calls");
 	//System.out.println("Slot Name is  : "+slotID);
 	if(sb.contains("752a96eb-3198-4991-b572-17ec04883b6c")) {
 	System.out.println("amazon aax is trigreed for privacy Optoutmode scenario");
-	Assert.fail("amazon aax is  trigreed for privacy Optoutmode scenario");
+	logStep("amazon slotid 752a96eb-3198-4991-b572-17ec04883b6c is trigred");
+	Assert.fail("amazon slotid 752a96eb-3198-4991-b572-17ec04883b6c is trigred");
 	}
 	if(!sb.contains("752a96eb-3198-4991-b572-17ec04883b6c")) {
-		System.out.println("amazon aax is not trigreed for privacy Optoutmode scenario");
+		logStep("amazon aax calls are  not trigreed for privacy Optoutmode scenario");
+		System.out.println("amazon aax calls are  not trigreed for privacy Optoutmode scenario");
 		
 		}
 	
@@ -3888,14 +3912,16 @@ public static void validating_aax_privacy_Optinmode_scenario() throws Exception{
 
 		read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
 		String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
-		
+		logStep("Verifying for amazon aax calls");
 		//System.out.println("Slot Name is  : "+slotID);
-		if(sb.contains("752a96eb-3198-4991-b572-17ec04883b6c")) {
-		System.out.println("amazon aax is trigreed for privacy Optinmode scenario");
+		if(sb.contains("869c843c-7cf8-47ae-b6ed-088057e4bc8a")) {
+		System.out.println("amazon aax are  trigreed for privacy Optinmode scenario");
+		logStep("amazon aax are  trigreed for privacy Optinmode scenario");
 		
 		}
-		if(!sb.contains("752a96eb-3198-4991-b572-17ec04883b6c")) {
+		if(!sb.contains("869c843c-7cf8-47ae-b6ed-088057e4bc8a")) {
 			System.out.println("amazon aax is not trigreed for privacy Optinmode scenario");
+			logStep("amazon aax is not trigreed for privacy Optinmode scenario");
 			Assert.fail("amazon aax is not   trigreed for privacy Optinmode scenario");
 			
 			}
@@ -3912,6 +3938,7 @@ public static void validate_SOD_Cust_param_homescreen_Optoutmode() throws Except
 	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
 	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
 	String[][] exceldata=read_excel_data.exceldataread("NextGenIM");
+	logStep("Verifying  SOD custum param for  iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly ad call");
 		if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly")){
 			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly"));
 			String required_info = Read_API_Call_Data.toString().substring(Read_API_Call_Data.toString().indexOf("cust_params="));
@@ -3923,9 +3950,11 @@ public static void validate_SOD_Cust_param_homescreen_Optoutmode() throws Except
 			
 			if(SOD.contains("no")) {
 				System.out.println("SOD cust param value for home screen call is " +SOD);
+				logStep("SOD cust param value for home screen call is " +SOD);
 			}
 			else {
 				System.out.println("SOD cust param value for home screen call is not matchged with"     +SOD);
+				logStep("SOD cust param value for home screen call is not matchged with"     +SOD);
 				Assert.fail("SOD cust param value for home screen call is not matchged with"     +SOD);
 			}
 			//System.out.println(expectedValues);
@@ -3941,6 +3970,7 @@ public static void validate_SOD_Cust_param_feed_Optoutmode() throws Exception {
 	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
 	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
 	String[][] exceldata=read_excel_data.exceldataread("NextGenIM");
+	logStep("Verifying  SOD custum param for  iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fradar ad call");
 		if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fradar")){
 			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fradar"));
 			String required_info = Read_API_Call_Data.toString().substring(Read_API_Call_Data.toString().indexOf("cust_params="));
@@ -3952,9 +3982,11 @@ public static void validate_SOD_Cust_param_feed_Optoutmode() throws Exception {
 			
 			if(SOD.contains("no")) {
 				System.out.println("SOD cust param value for Feed call is " +SOD);
+				logStep("SOD cust param value for Feed call is " +SOD);
 			}
 			else {
 				System.out.println("SOD cust param value for Feed call is not matchged with"     + SOD);
+				logStep("SOD cust param value for Feed call is not matchged with"     + SOD);
 				Assert.fail("SOD cust param value for Feed call is not matchged with"     + SOD);
 			}
 			//System.out.println(expectedValues);
@@ -3969,6 +4001,7 @@ public static void validate_SOD_Cust_param_deatiledfeed_Optoutmode() throws Exce
 	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
 	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
 	String[][] exceldata=read_excel_data.exceldataread("NextGenIM");
+	logStep("Verifying  SOD custum param for iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps ad call");
 		if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps")){
 			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps"));
 			String required_info = Read_API_Call_Data.toString().substring(Read_API_Call_Data.toString().indexOf("cust_params="));
@@ -3980,9 +4013,11 @@ public static void validate_SOD_Cust_param_deatiledfeed_Optoutmode() throws Exce
 			
 			if(SOD.contains("no")) {
 				System.out.println("SOD cust param value for Feed ad call is " +SOD);
+				logStep("SOD cust param value for Feed ad call is " +SOD);
 			}
 			else {
 				System.out.println("SOD cust param value for deatiled Feed ad call is not matchged with"     + SOD);
+				logStep("SOD cust param value for deatiled Feed ad call is not matchged with"     + SOD);
 				Assert.fail("SOD cust param value for deatiled Feed ad call is not matchged with"     + SOD);
 			}
 			//System.out.println(expectedValues);
@@ -3997,6 +4032,7 @@ public static void validate_SOD_Cust_param_video_Optoutmode() throws Exception {
 	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
 	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
 	String[][] exceldata=read_excel_data.exceldataread("NextGenIM");
+	logStep("Verifying  SOD custum param for iu=%2F7646%2Fapp_android_us%2Fvideo ad call");
 		if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fvideo")){
 			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf("iu=%2F7646%2Fapp_android_us%2Fvideo"));
 			String required_info = Read_API_Call_Data.toString().substring(Read_API_Call_Data.toString().indexOf("cust_params="));
@@ -4008,9 +4044,11 @@ public static void validate_SOD_Cust_param_video_Optoutmode() throws Exception {
 			
 			if(SOD.contains("no")) {
 				System.out.println("SOD cust param value for video ad call is " +SOD);
+				logStep("SOD cust param value for video ad call is " +SOD);
 			}
 			else {
 				System.out.println("SOD cust param value for video ad call is not matchged with"     + SOD);
+				logStep("SOD cust param value for video ad call is not matchged with"     + SOD);
 				Assert.fail("SOD cust param value for video ad call is not matchged with"     + SOD);
 			}
 			//System.out.println(expectedValues);
@@ -4049,6 +4087,7 @@ public static void validate_SOD_Cust_param_homescreen_Optinmode() throws Excepti
 	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
 	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
 	String[][] exceldata=read_excel_data.exceldataread("NextGenIM");
+	logStep("Verifying the  SOD custum parameter in iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly ad call");
 		if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly")){
 			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly"));
 			String required_info = Read_API_Call_Data.toString().substring(Read_API_Call_Data.toString().indexOf("cust_params="));
@@ -4060,9 +4099,11 @@ public static void validate_SOD_Cust_param_homescreen_Optinmode() throws Excepti
 			
 			if(SOD.contains("yes")) {
 				System.out.println("SOD cust param value for home screen call is " +SOD);
+				logStep("SOD cust param value for home screen call is " +SOD);
 			}
 			else {
 				System.out.println("SOD cust param value for home screen call is not matchged with"     +SOD);
+				logStep("SOD cust param value for home screen call is not matchged with"     +SOD);
 				Assert.fail("SOD cust param value for home screen call is not matchged with"     +SOD);
 			}
 			//System.out.println(expectedValues);
@@ -4078,6 +4119,7 @@ public static void validate_SOD_Cust_param_feed_Optinmode() throws Exception {
 	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
 	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
 	String[][] exceldata=read_excel_data.exceldataread("NextGenIM");
+	logStep("Verifying the  SOD custum parameter in iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fradarad call");
 		if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fradar")){
 			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fradar"));
 			String required_info = Read_API_Call_Data.toString().substring(Read_API_Call_Data.toString().indexOf("cust_params="));
@@ -4089,9 +4131,11 @@ public static void validate_SOD_Cust_param_feed_Optinmode() throws Exception {
 			
 			if(SOD.contains("yes")) {
 				System.out.println("SOD cust param value for Feed call is " +SOD);
+				logStep("SOD cust param value for Feed call is " +SOD);
 			}
 			else {
 				System.out.println("SOD cust param value for Feed call is not matchged with"     + SOD);
+				logStep("SOD cust param value for Feed call is not matchged with"     + SOD);
 				Assert.fail("SOD cust param value for Feed call is not matchged with"     + SOD);
 			}
 			//System.out.println(expectedValues);
@@ -4106,6 +4150,7 @@ public static void validate_SOD_Cust_param_deatiledfeed_Optinmode() throws Excep
 	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
 	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
 	String[][] exceldata=read_excel_data.exceldataread("NextGenIM");
+	logStep("Verifying the  SOD custum parameter in iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps call");
 		if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps")){
 			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps"));
 			String required_info = Read_API_Call_Data.toString().substring(Read_API_Call_Data.toString().indexOf("cust_params="));
@@ -4117,9 +4162,11 @@ public static void validate_SOD_Cust_param_deatiledfeed_Optinmode() throws Excep
 			
 			if(SOD.contains("yes")) {
 				System.out.println("SOD cust param value for Feed ad call is " +SOD);
+				logStep("SOD cust param value for Feed ad call is " +SOD);
 			}
 			else {
 				System.out.println("SOD cust param value for deatiled Feed ad call is not matchged with"     + SOD);
+				logStep("SOD cust param value for deatiled Feed ad call is not matchged with"     + SOD);
 				Assert.fail("SOD cust param value for deatiled Feed ad call is not matchged with"     + SOD);
 			}
 			//System.out.println(expectedValues);
@@ -4134,6 +4181,7 @@ public static void validate_SOD_Cust_param_video_Optinmode() throws Exception {
 	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
 	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
 	String[][] exceldata=read_excel_data.exceldataread("NextGenIM");
+	logStep("Verifying the  SOD custum parameter in iu=%2F7646%2Fapp_android_us%2Fvideo call");
 		if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fvideo")){
 			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf("iu=%2F7646%2Fapp_android_us%2Fvideo"));
 			String required_info = Read_API_Call_Data.toString().substring(Read_API_Call_Data.toString().indexOf("cust_params="));
@@ -4145,9 +4193,11 @@ public static void validate_SOD_Cust_param_video_Optinmode() throws Exception {
 			
 			if(SOD.contains("yes")) {
 				System.out.println("SOD cust param value for video ad call is " +SOD);
+				logStep("SOD cust param value for video ad call is " +SOD);
 			}
 			else {
 				System.out.println("SOD cust param value for video ad call is not matchged with"     + SOD);
+				logStep("SOD cust param value for video ad call is not matchged with"     + SOD);
 				Assert.fail("SOD cust param value for video ad call is not matchged with"     + SOD);
 			}
 			//System.out.println(expectedValues);
@@ -4164,14 +4214,17 @@ public static void validate_RDP_homescreen_Optoutmode() throws Exception {
 	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
 	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
 	//String[][] exceldata=read_excel_data.exceldataread("NextGenIM");
+	logStep("Verifying RDP keyword in iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly  ad call url");
 		if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly")){
 			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly"));
 		
 		if	(Read_API_Call_Data.contains("rdp=1")){
 			System.out.println("RDP value for home screen call is " +"1");	
+			logStep("RDP value for home screen call is " +"1");
 			}
 		else {
 				System.out.println("RDP  value for home screen call is not matchged with"     +"1");
+				logStep("RDP  value for home screen call is not matchged with"     +"1");
 				Assert.fail("RDP for home screen call  is not matchged with"     +"1");
 			}
 			
@@ -4185,14 +4238,17 @@ public static void validate_RDP_feed_Optoutmode() throws Exception {
 	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
 	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
 	//String[][] exceldata=read_excel_data.exceldataread("NextGenIM");
+	logStep("Verifying RDP keyword in iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fradar  ad call url");
 		if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fradar")){
 			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fradar"));
 		
 		if	(Read_API_Call_Data.contains("rdp=1")){
 			System.out.println("RDP value for feed ad call is " +"1");	
+			logStep("RDP value for feed ad call is " +"1");
 			}
 		else {
 				System.out.println("RDP  value for feed ad call is not matchged with"     +"1");
+				logStep("RDP  value for feed ad call is not matchged with"     +"1");
 				Assert.fail("RDP for feed ad call call  is not matchged with"     +"1");
 			}
 			
@@ -4206,14 +4262,17 @@ public static void validate_RDP_detailed_feed_Optoutmode() throws Exception {
 	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
 	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
 	//String[][] exceldata=read_excel_data.exceldataread("NextGenIM");
+	logStep("Verifying RDP keyword in iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps  ad call url");
 		if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps")){
 			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps"));
 		
 		if(Read_API_Call_Data.contains("rdp")){
 			System.out.println("RDP value for detailed feed ad call is " +"1");	
+			logStep("RDP value for detailed feed ad call is " +"1");
 			}
 		else {
 				System.out.println("RDP  value for detailed feed ad call is not matchged with"     +"1");
+				logStep("RDP  value for detailed feed ad call is not matchged with"     +"1");
 				Assert.fail("RDP for detailed feed ad call  is not matched with"     +"1");
 			}
 			
@@ -4227,14 +4286,17 @@ public static void validate_RDP_video_ad_Optoutmode() throws Exception {
 	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
 	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
 	//String[][] exceldata=read_excel_data.exceldataread("NextGenIM");
+	logStep("Verifying RDP keyword in iu=%2F7646%2Fapp_android_us%2Fvideo  ad call url");
 		if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fvideo")){
 			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf("iu=%2F7646%2Fapp_android_us%2Fvideo"));
 		
 		if	(Read_API_Call_Data.contains("rdp=1")){
 			System.out.println("RDP value for video ad call is " +"1");	
+			logStep("RDP value for video ad call is " +"1");
 			}
 		else {
 				System.out.println("RDP  value for video ad call is not matchged with"     +"1");
+				logStep("RDP  value for video ad call is not matchged with"     +"1");
 				Assert.fail("RDP for video ad call  is not matchged with"     +"1");
 			}
 			
@@ -4255,15 +4317,18 @@ public static void validate_RDP_homescreen_Optinmode() throws Exception {
 	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
 	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
 	//String[][] exceldata=read_excel_data.exceldataread("NextGenIM");
+	logStep("Verifying RDP keyword in iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly  ad call url");
 		if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly")){
 			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly"));
 		
 		if	(Read_API_Call_Data.contains("rdp=1")){
 			System.out.println("RDP key word preseted in home screen hourly call");	
+			logStep("RDP key word preseted in home screen hourly call");
 			Assert.fail("RDP key word preseted in home screen hourly call");
 			}
 		else {
 			System.out.println("RDP key word is not preseted in home screen hourly call");
+          logStep("RDP key word is not preseted in home screen hourly call");
 			}
 			
 		}
@@ -4277,15 +4342,18 @@ public static void validate_RDP_feed_Optinmode() throws Exception {
 	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
 	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
 	//String[][] exceldata=read_excel_data.exceldataread("NextGenIM");
+	logStep("Verifying RDP keyword in iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fradar  ad call url");
 		if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fradar")){
 			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fradar"));
 		
 		if	(Read_API_Call_Data.contains("rdp=1")){
 			System.out.println("RDP key word preseted in feed ad call");	
+			logStep("RDP key word preseted in feed ad call");
 			Assert.fail("RDP key word preseted in feed ad call");
 			}
 		else {
 				System.out.println("RDP key word is not preseted in feed ad call");
+				logStep("RDP key word is not preseted in feed ad call");
 			
 			}
 			
@@ -4299,15 +4367,18 @@ public static void validate_RDP_detailed_feed_Optinmode() throws Exception {
 	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
 	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
 	//String[][] exceldata=read_excel_data.exceldataread("NextGenIM");
+	logStep("Verifying RDP keyword in iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps  ad call url");
 		if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps")){
 			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps"));
 		
 		if	(Read_API_Call_Data.contains("rdp=1")){
 			System.out.println("RDP key word preseted in detailed feed ad call");	
+			logStep("RDP key word preseted in detailed feed ad call");
 			Assert.fail("RDP key word preseted in detailed feed ad call");
 			}
 		else {
 			System.out.println("RDP key word is not preseted in detailed feed ad call");
+			logStep("RDP key word is not preseted in detailed feed ad call");
 			}
 			
 		}
@@ -4321,15 +4392,18 @@ public static void validate_RDP_video_ad_Optinmode() throws Exception {
 	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
 	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
 	//String[][] exceldata=read_excel_data.exceldataread("NextGenIM");
+	logStep("Verifying RDP keyword in iu=%2F7646%2Fapp_android_us%2Fvideo  ad call url");
 		if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fvideo")){
 			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf("iu=%2F7646%2Fapp_android_us%2Fvideo"));
 		
 		if	(Read_API_Call_Data.contains("rdp=1")){
 			System.out.println("RDP key word preseted in video  ad call");	
+			logStep("RDP key word preseted in video  ad call");
 			Assert.fail("RDP key word preseted in vidoe ad call");
 			}
 		else {
 			System.out.println("RDP key word preseted in not presented video  ad call");	
+			logStep("RDP key word preseted in not presented video  ad call");
 			}
 			
 		}
@@ -4342,7 +4416,7 @@ public static void ExportSession_feed() throws Exception{
 		Thread.sleep(3000);
 		System.out.println("Exporting The Session Data Into XML File");
 		driver.findElement(By.linkText(charlesdata[7][0])).click();
-		Thread.sleep(20000);
+		Thread.sleep(50000);
 		System.out.println("Exported Session");
 	}
 
@@ -4444,5 +4518,210 @@ public static void validate_Size_DailyIFCard() throws Exception {
 			
 		}
 		}
+public static void  finding_newDailyBidadcall_day1() throws Exception{
+read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
+if(sb.contains("%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day%2Fm_rect1")) {
+System.out.println("/7646/app_android_us/db_display/details/10day/m_rect1 was trigred");
+}
+if(!sb.contains("%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day%2Fm_rect1")) {
+System.out.println("/7646/app_android_us/db_display/details/10day/m_rect1 was not trigred");
+Assert.fail("/7646/app_android_us/db_display/details/10day/m_rect1 was not trigred");
+}
+}
+
+public static void  finding_newDailyBidadcall_day2() throws Exception{
+read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
+if(sb.contains("%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day%2Fm_rect2")) {
+System.out.println("/7646/app_android_us/db_display/details/10day/m_rect2 was trigred");
+}
+if(!sb.contains("%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day%2Fm_rect2")) {
+System.out.println("/7646/app_android_us/db_display/details/10day/m_rect2 was not trigred");
+Assert.fail("/7646/app_android_us/db_display/details/10day/m_rect2 was not trigred");
+}
+}
+public static void  finding_newDailyBidadcall_day3() throws Exception{
+read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
+if(sb.contains("%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day%2Fm_rect3")) {
+System.out.println("/7646/app_android_us/db_display/details/10day/m_rect3 was trigred");
+}
+if(!sb.contains("%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day%2Fm_rect3")) {
+System.out.println("/7646/app_android_us/db_display/details/10day/m_rect3 was not trigred");
+Assert.fail("/7646/app_android_us/db_display/details/10day/m_rect3 was not trigred");
+}
+}
+public static void  finding_newDailyBidadcall_day4() throws Exception{
+read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
+if(sb.contains("%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day%2Fm_rect4")) {
+System.out.println("/7646/app_android_us/db_display/details/10day/m_rect4 was trigred");
+}
+if(!sb.contains("%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day%2Fm_rect4")) {
+System.out.println("/7646/app_android_us/db_display/details/10day/m_rect4 was not trigred");
+Assert.fail("/7646/app_android_us/db_display/details/10day/m_rect4 was not trigred");
+}
+}
+
+public static void  finding_newDailyBidadcall_day5() throws Exception{
+read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
+if(sb.contains("%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day%2Fm_rect5")) {
+System.out.println("/7646/app_android_us/db_display/details/10day/m_rect5 was trigred");
+}
+if(!sb.contains("%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day%2Fm_rect5")) {
+System.out.println("/7646/app_android_us/db_display/details/10day/m_rect5 was not trigred");
+Assert.fail("/7646/app_android_us/db_display/details/10day/m_rect5 was not trigred");
+}
+}
+
+public static void  finding_newDailyBidadcall_day6() throws Exception{
+read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
+if(sb.contains("%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day%2Fm_rect6")) {
+System.out.println("/7646/app_android_us/db_display/details/10day/m_rect6 was trigred");
+}
+if(!sb.contains("%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day%2Fm_rect6")) {
+System.out.println("/7646/app_android_us/db_display/details/10day/m_rect6 was not trigred");
+Assert.fail("/7646/app_android_us/db_display/details/10day/m_rect6 was not trigred");
+}
+}
+
+public static void  finding_newDailyBidadcall_day7() throws Exception{
+read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
+if(sb.contains("%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day%2Fm_rect7")) {
+System.out.println("/7646/app_android_us/db_display/details/10day/m_rect7 was trigred");
+Drivers.logStep("/7646/app_android_us/db_display/details/10day/m_rect7 was trigred");
+}
+if(!sb.contains("%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day%2Fm_rect7")) {
+System.out.println("/7646/app_android_us/db_display/details/10day/m_rect7 was not trigred");
+Assert.fail("/7646/app_android_us/db_display/details/10day/m_rect7 was not trigred");
+
+}
+}
+
+public static void  finding_newDailyBidadcall_day8() throws Exception{
+read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
+if(sb.contains("%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day%2Fm_rect8")) {
+System.out.println("/7646/app_android_us/db_display/details/10day/m_rect8 was trigred");
+}
+if(!sb.contains("%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day%2Fm_rect8")) {
+System.out.println("/7646/app_android_us/db_display/details/10day/m_rect8 was not trigred");
+Assert.fail("/7646/app_android_us/db_display/details/10day/m_rect8 was not trigred");
+}
+}
+
+public static void  finding_newDailyBidadcall_day9() throws Exception{
+read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
+if(sb.contains("%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day%2Fm_rect9")) {
+System.out.println("/7646/app_android_us/db_display/details/10day/m_rect9 was trigred");
+}
+if(!sb.contains("%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day%2Fm_rect9")) {
+System.out.println("/7646/app_android_us/db_display/details/10day/m_rect9 was not trigred");
+Assert.fail("/7646/app_android_us/db_display/details/10day/m_rect9 was not trigred");
+}
+}
+
+public static void  finding_newDailyBidadcall_day10() throws Exception{
+read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
+if(sb.contains("%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day%2Fm_rect10")) {
+System.out.println("/7646/app_android_us/db_display/details/10day/m_rect10 was trigred");
+}
+if(!sb.contains("%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day%2Fm_rect10")) {
+System.out.println("/7646/app_android_us/db_display/details/10day/m_rect10 was not trigred");
+Assert.fail("/7646/app_android_us/db_display/details/10day/m_rect10 was not trigred");
+}
+}
+
+public static void  finding_newDailyBidadcall_day11() throws Exception{
+read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
+if(sb.contains("%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day%2Fm_rect11")) {
+System.out.println("/7646/app_android_us/db_display/details/10day/m_rect11 was trigred");
+}
+if(!sb.contains("%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day%2Fm_rect11")) {
+System.out.println("/7646/app_android_us/db_display/details/10day/m_rect11 was not trigred");
+Assert.fail("/7646/app_android_us/db_display/details/10day/m_rect11 was not trigred");
+}
+}
+
+public static void  finding_newDailyBidadcall_day12() throws Exception{
+read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
+if(sb.contains("%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day%2Fm_rect12")) {
+System.out.println("/7646/app_android_us/db_display/details/10day/m_rect12 was trigred");
+}
+if(!sb.contains("%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day%2Fm_rect12")) {
+System.out.println("/7646/app_android_us/db_display/details/10day/m_rect12 was not trigred");
+Assert.fail("/7646/app_android_us/db_display/details/10day/m_rect12 was not trigred");
+}
+}
+
+public static void  finding_newDailyBidadcall_day13() throws Exception{
+read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
+if(sb.contains("%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day%2Fm_rect13")) {
+System.out.println("/7646/app_android_us/db_display/details/10day/m_rect13 was trigred");
+}
+if(!sb.contains("%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day%2Fm_rect13")) {
+System.out.println("/7646/app_android_us/db_display/details/10day/m_rect13 was not trigred");
+Assert.fail("/7646/app_android_us/db_display/details/10day/m_rect13 was not trigred");
+}
+}
+public static void clickeachday()  throws Exception{
+	
+	List<WebElement> days=Ad.findElementsById("com.weather.Weather:id/daily_forecast_adapter_date");
+	System.out.println(days.size());
+	for(WebElement all:days) {
+		all.click();
+	
+	//((RemoteWebElement) days).click();
+	Thread.sleep(3000);	
+	//com.weather.Weather:id/daily_forecast_adapter_column
+	}
+	for(int i=0;i<5;i++) {
+		List<WebElement> day=Ad.findElementsById("com.weather.Weather:id/daily_forecast_adapter_date");
+		day.get(i).click();
+		Thread.sleep(3000);
+		
+	}
+	for(int i=1;i<10;i++) {
+		List<WebElement> day=Ad.findElementsById("com.weather.Weather:id/daily_forecast_adapter_date");
+		day.get(4).click();
+		Thread.sleep(3000);
+		
+	}
+	List<WebElement> day=Ad.findElementsById("com.weather.Weather:id/daily_forecast_adapter_date");
+	day.get(5).click();
+	Thread.sleep(3000);	
+}
+public static void clickdailydetails()  throws Exception{
+	try {
+	System.out.println("clicking on daily");
+	logStep("clicking on daily");
+	Ad.findElementByAccessibilityId("Daily").click();
+	Thread.sleep(3000);
+	}
+	catch(Exception e) {
+		System.out.println("daily element not found");
+		logStep("daily element not found");
+	}
+}
+public static void clickongotit()  throws Exception{
+	try {
+	System.out.println("clicking on Okay,got it!");
+	logStep("clicking on Okay,got it!");
+	Ad.findElementById("com.weather.Weather:id/btn_planning_got_it").click();
+	Thread.sleep(3000);
+	}
+	catch(Exception e) {
+	
+	}
+}
 
 }
