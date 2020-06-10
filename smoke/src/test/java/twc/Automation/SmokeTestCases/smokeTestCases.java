@@ -262,7 +262,7 @@ public class smokeTestCases extends Drivers {
 	 public void Smoke_Test_Verify_News_hurricane_detail_adcall_iu()
 	 		throws Exception {
 	 	System.out.println("================= Verify_hurricane_detailpage_adcall_iu Started =========================");
-	 Functions.Verify_Hurricane_detailpage_adcall_iu();
+	 //Functions.Verify_Hurricane_detailpage_adcall_iu();
 	  	System.out.println("================= Verify_hurricane_detailpage_adcall_iu End =========================");
 	 }
 	 
@@ -271,7 +271,7 @@ public class smokeTestCases extends Drivers {
 	 public void  Smoke_Test_CaseVerify_hurricane_Maps_deatailscard_adcall() throws Exception {
 	  System.out.println("================= Verifying iu value for hurricane deatails maps page started =========================" );
 	  logStep("Verifying iu value for hurricane details maps page");
-	 Functions.finding_hurricane_Map_detaiedpage_iu_value();
+	// Functions.finding_hurricane_Map_detaiedpage_iu_value();
 	 System.out.println("================= Verifying iu value for hurricane deatails maps page  End =========================" );
 	 }
 	 
@@ -281,7 +281,7 @@ public class smokeTestCases extends Drivers {
 	 public void  Smoke_Test_CaseVerify_hurricane_articles_deatailspage_adcall() throws Exception {
 	  System.out.println("================= Verifying iu value for hurricane articles deatails  page started =========================" );
 	  logStep("Verifying iu value for hurricane  articles page");
-	 Functions. finding_hurricane_art_detailedpage_iu_value();
+	 //Functions. finding_hurricane_art_detailedpage_iu_value();
 	 System.out.println("================= Verifying iu value for hurricane articles deatails  page  End =========================" );
 	 }
 	 
@@ -611,7 +611,7 @@ public void Smoke_Test_CaseVerify_news_aax_amazon_adcalll()
 
 	System.out.println("=================Slecting Opt out mode scenario in privacy card testcase started =========================");
 		//	Thread.sleep(50000);
-		Functions.selecting_opt_out_mode();
+		//Functions.selecting_opt_out_mode();
 		System.out.println("================= Slecting Opt out mode scenario in privacy card  testcase End =========================");
 				
 	}
@@ -633,7 +633,7 @@ public void Smoke_Test_CaseVerify_news_aax_amazon_adcalll()
 	//	Functions.scrollapp_maps();
 	//	AppiumFunctions.clickOnRadarMaps();		
 		//CharlesFunctions.ExportSession();
-	 Functions.Verify_video_ad_call_Optoutmode();
+	// Functions.Verify_video_ad_call_Optoutmode();
 		System.out.println("================= Verifying video ad call when user selecting Optoutmode scenario in privacy card End =========================");
 				
 	}
@@ -1187,7 +1187,7 @@ logStep("Verifying adcrw api call when user selecting Optinmode scenario in priv
 		//		AppiumFunctions.AppiumServerStop();
 		//		AppiumFunctions.AppiumServerStart();
 	//	CharlesFunctions.ClearSessions();
-		AppiumFunctions.LaunchAppWithFullReset();
+		//AppiumFunctions.LaunchAppWithFullReset();
 		
               //  AppiumFunctions.Swipeforappdeckapk();
 	//	AppiumFunctions.Kill_launch();
@@ -1224,8 +1224,8 @@ logStep("Verifying adcrw api call when user selecting Optinmode scenario in priv
 		AppiumFunctions.click_news_element();	*/	
 		//AppiumFunctions.clickOnBackArrowElement();
 	
-		 Thread.sleep(40000);
-		 Thread.sleep(40000);
+		// Thread.sleep(40000);
+		 //Thread.sleep(40000);
    // CharlesFunctions.ExportSession();	
 			
 		
