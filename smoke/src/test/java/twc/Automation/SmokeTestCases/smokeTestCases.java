@@ -168,7 +168,7 @@ public class smokeTestCases extends Drivers {
 			throws Exception {
 		System.out.println("================= Verify amazon aax Daily details preroll adcall Started =========================");		
 		logStep(" Verifying preload amazon aax for  daily details");
-	Functions.get_aaxcal_Daily();
+	//Functions.get_aaxcal_Daily();
      	System.out.println("================= Verify amazon aax Daily details preroll adcall End =========================");
 	}
 	
@@ -497,7 +497,7 @@ public class smokeTestCases extends Drivers {
 	   @Title("Verifying amazon aax for covid19 details card") public void
 	 Smoke_Test_amazon_aax_covid19_deatailcard() throws Exception { 
 		System.out. println("================= Verify amazon aax for today detail adcard Started =========================");
-	Functions.get_aaxcal_covid19();
+	//Functions.get_aaxcal_covid19();
 	 System.out.println("================= Verify amazon aax for today detail adcard End=========================");
 	  }
 	 
