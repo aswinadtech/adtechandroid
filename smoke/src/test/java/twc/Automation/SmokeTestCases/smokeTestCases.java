@@ -783,7 +783,7 @@ public void Smoke_Test_CaseVerify_news_aax_amazon_adcalll()
 		public void Smoke_Test_Verifying_RDP_value_feedad_Optoutmode_scenario() throws Exception {
 		logStep("Verifying RDP  value for feed ad call when user selecting Optoutmode scenario in privacy card");
 		 System.out.println("================= Verifying RDP value for feed ad  call  when user selecting Optoutmode scenario in privacy card started =========================");				
-	  //   Functions.validate_RDP_feed_Optoutmode();
+	     Functions.validate_RDP_feed_Optoutmode();
 		  System.out.println("================= Verifying RDP value for feed ad call when user selecting Optoutmode scenario in privacy card End =========================");
 		}
 	 
@@ -889,7 +889,7 @@ logStep("Verifying adcrw api call when user selecting Optinmode scenario in priv
 				
 	}
 	
-	@Test(priority = 105, enabled = true)
+	/*@Test(priority = 105, enabled = true)
 	@Title("Verifying Fatual api call when user selecting Optinmode scenario in privacy card")
 	public void Smoke_Test__Verifying_locaion_apicall_Optinmode_scenario() throws Exception {
 
@@ -898,7 +898,7 @@ logStep("Verifying adcrw api call when user selecting Optinmode scenario in priv
 		Functions.validating_Fatualcall_privacy_Optinmode_scenarion();
 		System.out.println("================= Verifying Fatcual api call when user selecting Oppinmode scenario in privacy card End =========================");
 				
-	}
+	}*/
 
 	@Test(priority =106, enabled = true)
 	@Title("Verifying amazon aax calls when user selecting Optinmode scenario in privacy card")
