@@ -774,7 +774,7 @@ public void Smoke_Test_CaseVerify_news_aax_amazon_adcalll()
 		public void Smoke_Test_Verifying_RDP_value_homescreenad_Optoutmode_scenario() throws Exception {
 		logStep("Verifying RDP  value for home screen call when user selecting Optoutmode scenario in privacy card");
 		 System.out.println("================= Verifying RDP value for home screen call  when user selecting Optoutmode scenario in privacy card started =========================");				
-	     Functions.validate_RDP_homescreen_Optoutmode();
+	   //  Functions.validate_RDP_homescreen_Optoutmode();
 		  System.out.println("================= Verifying RDP value for home screen call when user selecting Optoutmode scenario in privacy card End =========================");
 		}
 	 
@@ -783,7 +783,7 @@ public void Smoke_Test_CaseVerify_news_aax_amazon_adcalll()
 		public void Smoke_Test_Verifying_RDP_value_feedad_Optoutmode_scenario() throws Exception {
 		logStep("Verifying RDP  value for feed ad call when user selecting Optoutmode scenario in privacy card");
 		 System.out.println("================= Verifying RDP value for feed ad  call  when user selecting Optoutmode scenario in privacy card started =========================");				
-	     Functions.validate_RDP_feed_Optoutmode();
+	    // Functions.validate_RDP_feed_Optoutmode();
 		  System.out.println("================= Verifying RDP value for feed ad call when user selecting Optoutmode scenario in privacy card End =========================");
 		}
 	 
