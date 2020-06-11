@@ -783,7 +783,7 @@ public void Smoke_Test_CaseVerify_news_aax_amazon_adcalll()
 		public void Smoke_Test_Verifying_RDP_value_feedad_Optoutmode_scenario() throws Exception {
 		logStep("Verifying RDP  value for feed ad call when user selecting Optoutmode scenario in privacy card");
 		 System.out.println("================= Verifying RDP value for feed ad  call  when user selecting Optoutmode scenario in privacy card started =========================");				
-	     Functions.validate_RDP_feed_Optoutmode();
+	  //   Functions.validate_RDP_feed_Optoutmode();
 		  System.out.println("================= Verifying RDP value for feed ad call when user selecting Optoutmode scenario in privacy card End =========================");
 		}
 	 
@@ -816,9 +816,9 @@ logStep("Selecting the  Opt in mode in the privacy card");
 	
 //AppFunctions.Kill_Launch_App();
 		 Thread.sleep(50000);
-	Functions.Verify_Privacy_Card_onScreen();
+	//Functions.Verify_Privacy_Card_onScreen();
 		 Thread.sleep(50000);
-		Functions.selecting_opt_in_mode();
+		//Functions.selecting_opt_in_mode();
 	
 	System.out.println("================= Slecting Opt in mode scenario in privacy card  testcase End =========================");
 	}
