@@ -162,7 +162,7 @@ public class smokeTestCases extends Drivers {
 		Functions.get_aaxcal_Hourly();
      	System.out.println("================= Verify amazon aax Hourly details preroll adcall End =========================");
 	}
-	/*@Test(priority=12,enabled = true)
+	@Test(priority=12,enabled = true)
 	@Title("Verifying amazon aax  for daily details preroll ad call")
 	public void Smoke_Test_amazon_aax_Daily_preroll_adcall()
 			throws Exception {
@@ -170,7 +170,7 @@ public class smokeTestCases extends Drivers {
 		logStep(" Verifying preload amazon aax for  daily details");
 	Functions.get_aaxcal_Daily();
      	System.out.println("================= Verify amazon aax Daily details preroll adcall End =========================");
-	}*/
+	}
 	
     @Test(priority=13,enabled = true)
 	@Title("Verifying amazon aax video preroll ad call")
@@ -257,7 +257,7 @@ public class smokeTestCases extends Drivers {
 	   System.out.println("================= Verifying Video ad call testcase End =========================" );
 	  }
 	 
-	 @Test(priority=22,enabled = true)
+	/* @Test(priority=22,enabled = true)
 	 @Title("Verifying iu value for Hurricane detailpage ad call iu")
 	 public void Smoke_Test_Verify_News_hurricane_detail_adcall_iu()
 	 		throws Exception {
@@ -283,7 +283,7 @@ public class smokeTestCases extends Drivers {
 	  logStep("Verifying iu value for hurricane  articles page");
 	 Functions. finding_hurricane_art_detailedpage_iu_value();
 	 System.out.println("================= Verifying iu value for hurricane articles deatails  page  End =========================" );
-	 }
+	 }*/
 	 
 	 
 	 /*@Test(priority=14,enabled = true)
@@ -294,14 +294,14 @@ public class smokeTestCases extends Drivers {
 	 Functions. finding_hurricane_art_detailedpage_iu_value() ;
 	 System.out.println("================= verifying iu value for Radar&Maps deatail card  End =========================" );
 	 }*/
-	 @Test(priority=25,enabled = true)
+	/* @Test(priority=25,enabled = true)
 	 @Title("Verifying Video ad call in hurricane module") public void
 	  Smoke_Test_Case_Verify_hurricanevideo_adCalll() throws Exception { 
 	  logStep("Verifying Video ad call in hurricane module");
 	  System.out.println("================= Verifying Video ad call testcase  started =========================" );
 	   Functions.Verify_News_detailpage_adcall_iu();
 	  System.out.println("================= Verifying Video ad call testcase  End =========================" );
-	 }
+	 }*/
 	 
 	 
 	 
@@ -472,13 +472,13 @@ public class smokeTestCases extends Drivers {
 	     	System.out.println("================= verifying amazon aax slot for news article  End =========================");
 		}
 	 @Test(priority=46,enabled = true)
-	 @Title("Verifying hurricane aax call")
+	/* @Title("Verifying hurricane aax call")
 	 public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 	 		throws Exception {
 	 	System.out.println("================= Verifying amazon hurricane details aax call  started =========================");
 	 	Functions.get_aaxcal_hurricanedetails();
 	  	System.out.println("================= Verifying amazon hurricane details aax call End =========================");
-	 }
+	 }*/
 	 
 	 
 	 
