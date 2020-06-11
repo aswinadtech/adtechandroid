@@ -471,8 +471,8 @@ public class smokeTestCases extends Drivers {
 		Functions.get_aaxcal_news();	
 	     	System.out.println("================= verifying amazon aax slot for news article  End =========================");
 		}
-	 @Test(priority=46,enabled = true)
-	/* @Title("Verifying hurricane aax call")
+	/* @Test(priority=46,enabled = true)
+	@Title("Verifying hurricane aax call")
 	 public void Smoke_Test_CaseVerify_hurricane_detal_aax_adcalll()
 	 		throws Exception {
 	 	System.out.println("================= Verifying amazon hurricane details aax call  started =========================");
