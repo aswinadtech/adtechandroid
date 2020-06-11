@@ -923,7 +923,23 @@ public class Custom_Parameters_Verification extends Drivers{
 
 
 	}
+public static String verify_daily_custom_parameters(String custParam) throws Exception{
 
+		String result = null;
+		String pubad_val =null;
+		Map<String, String> pubads_call_results = Functions.read_Video_Pub_Ad_Call_Data("Dailydetails");
+		pubad_val =pubads_call_results.get(custParam);
+		logStep("navigate to daily details");
+		logStep("Tap On daily");
+		logStep("Verify daily details pub Ad call is being made in charles");
+		if(!pubad_val.isEmpty()){
+			logStep("Verified Video PubAd "+custParam+" Data : "+pubad_val+" Value Presented As Expected");
+			System.out.println("Video PubAd "+custParam+" Data : "+pubad_val);
+			result="Pass";
+			System.out.println("Result "+result);
+		}
+		return result;
+		}	
 
 
 
