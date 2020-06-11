@@ -213,14 +213,14 @@ public class regressionTestCases extends Drivers{
 		}
 
 		
-		/*@Test(priority=65)
+		@Test(priority=65)
 		@Title("Verify custom parameter fhic")
 		public void C333232_Verify_cust_param_fhic() throws Exception{
 			System.out.println("================= Custom Parameter Fhic Verfication Started =========================");
 			Custom_Parameters_Verification.parameters_Verification("fhic");
 			System.out.println("================= Custom Parameter Fhic Verfication End =========================");
 		}
-		@Test(priority=66)
+		/*@Test(priority=66)
 		@Title("Verify custom parameter floc")
 		public void C333238_Verify_cust_param_floc() throws Exception{
 			System.out.println("================= Custom Parameter Floc Verfication Started =========================");
@@ -578,13 +578,13 @@ public class regressionTestCases extends Drivers{
 	
 
 	
-	@Test(priority=73)
+	/*@Test(priority=73)
 	@Title("Verify custom parameter hmid")
 	public void C333207_Verify_cust_param_hmid() throws Exception{
 		System.out.println("================= Custom Parameter Hmid Verfication Started =========================");
 		Custom_Parameters_Verification.parameters_Verification("hmid");
 		System.out.println("================= Custom Parameters Hmid Verfication End =========================");
-	}
+	}*/
 	
 	@Test(priority=74)
 	@Title("Verify custom parameter wind")
@@ -608,6 +608,23 @@ public class regressionTestCases extends Drivers{
 		System.out.println("================= Custom Parameter fltmpc Verfication Started =========================");
 		Custom_Parameters_Verification.parameters_Verification("fltmpc");
 		System.out.println("================= Custom Parameter fltmpc Verfication End =========================");
+	}
+	
+	
+		@Test(priority=100)
+	@Title("Verify custom parameter dt")
+	public void C333213_Verify_cust_param_dt() throws Exception{
+		System.out.println("================= Custom Parameter dt Verfication Started =========================");
+		Custom_Parameters_Verification.verify_daily_custom_parameters("dt");
+		System.out.println("================= Custom Parameter dt Verfication End =========================");
+	}
+		
+		@Test(priority=101)
+	@Title("Verify custom parameter mnth")
+	public void C333213_Verify_cust_param_mnth() throws Exception{
+		System.out.println("================= Custom Parameter mnth Verfication Started =========================");
+		Custom_Parameters_Verification.verify_daily_custom_parameters("mnth");
+		System.out.println("================= Custom Parameter mnth Verfication End =========================");
 	}
 
 	
