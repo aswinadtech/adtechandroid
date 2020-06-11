@@ -141,7 +141,7 @@ public class smokeTestCases extends Drivers {
 			throws Exception {
 		System.out.println("================= Verify amazon aax Maps card preroll adcall Started =========================");		
 		logStep(" Verifying preload amazon aax for  map details");
-		//Functions.get_aaxcal_map_details();
+		Functions.get_aaxcal_map_details();
      	System.out.println("================= Verify amazon aax Maps card preroll adcall End =========================");
 	}
 	@Test(priority=10,enabled = true)
@@ -150,7 +150,7 @@ public class smokeTestCases extends Drivers {
 			throws Exception {
 		System.out.println("================= Verify amazon aax  Air Quality card preroll adcall Started =========================");		
 		logStep(" Verifying preload amazon aax for air quality card");
-	//	Functions.get_aaxcal_AirQuality();
+		Functions.get_aaxcal_AirQuality();
      	System.out.println("================= Verify amazon aax  Air Quality card preroll adcall End =========================");
 	}
 	@Test(priority=11,enabled = true)
@@ -159,18 +159,18 @@ public class smokeTestCases extends Drivers {
 			throws Exception {
 		System.out.println("================= Verify amazon aax Hourly details preroll adcall Started =========================");		
 		logStep(" Verifying preload amazon aax for  hourly details");
-		//Functions.get_aaxcal_Hourly();
+		Functions.get_aaxcal_Hourly();
      	System.out.println("================= Verify amazon aax Hourly details preroll adcall End =========================");
 	}
-	@Test(priority=12,enabled = true)
+	/*@Test(priority=12,enabled = true)
 	@Title("Verifying amazon aax  for daily details preroll ad call")
 	public void Smoke_Test_amazon_aax_Daily_preroll_adcall()
 			throws Exception {
 		System.out.println("================= Verify amazon aax Daily details preroll adcall Started =========================");		
 		logStep(" Verifying preload amazon aax for  daily details");
-	//	Functions.get_aaxcal_Daily();
+	Functions.get_aaxcal_Daily();
      	System.out.println("================= Verify amazon aax Daily details preroll adcall End =========================");
-	}
+	}*/
 	
     @Test(priority=13,enabled = true)
 	@Title("Verifying amazon aax video preroll ad call")
@@ -178,7 +178,7 @@ public class smokeTestCases extends Drivers {
 			throws Exception {
 		System.out.println("================= Verify amazon aax video preload adcall Started =========================");		
 		logStep(" Verifying preload amazon aax for  video details");
-		//Functions.get_aaxcal_video_details();
+		Functions.get_aaxcal_video_details();
      	System.out.println("================= Verify amazon aax video preload adcall End =========================");
 	}
 
