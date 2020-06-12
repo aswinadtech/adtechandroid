@@ -490,7 +490,7 @@ public class smokeTestCases extends Drivers {
 	   @Title("Verifying amazon aax for today details card") public void
 	 Smoke_Test_amazon_aax_today_deatailcard() throws Exception { 
 		System.out. println("================= Verify amazon aax for today detail adcard Started =========================");
-	   Functions.get_aaxcal_today_details(); 
+	  // Functions.get_aaxcal_today_details(); 
 	 System.out.println("================= Verify amazon aax for today detail adcard End=========================");
 	  }
       @Test(priority=48,enabled = true)
