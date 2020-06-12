@@ -115,6 +115,9 @@ public class smokeTestCases extends Drivers {
 	@Title("Verifying amazon aax for home screen hourly preroll ad call")
 	public void Smoke_Test_amazon_aax_home_screen_today_preroll_adcall__iu()
 			throws Exception {
+		Thread.sleep(3600000)
+			Thread.sleep(3600000)
+			Thread.sleep(3600000)
 		System.out.println("================= Verify amazon aax home screenhourly preroll adcall Started =========================");
 		//AppFunctions.Pull_To_Refresh("Pulltorefresh");
 		//CharlesFunctions.startSessionBrowserData();
@@ -193,7 +196,11 @@ public class smokeTestCases extends Drivers {
 	//  CharlesFunctions.startSessionBrowserData();
 	  
 	  // Thread.sleep(50000);
-	   
+	   Thread.sleep(3600000000)
+		   Thread.sleep(360000000)
+		   Thread.sleep(360000000)
+		   Thread.sleep(360000000)
+		   Thread.sleep(360000000)
 	  // Thread.sleep(50000);
 	   
 	   // Thread.sleep(50000);
