@@ -686,8 +686,9 @@ public class Custom_Parameters_Verification extends Drivers{
 					}//For Loop For Testcase	
 				}//main if close
 				else{
+					logStep(feedAd +" is not generated");
 					System.out.println("Feed values have not been generated");
-					//Assert.fail("Feed values have not been generated");
+					Assert.fail(feedAd +" is not generated");
 				}
 			}	
 		}
