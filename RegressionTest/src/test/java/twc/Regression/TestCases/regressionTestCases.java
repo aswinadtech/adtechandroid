@@ -55,7 +55,7 @@ public class regressionTestCases extends Drivers{
 		System.out.println("================= Custom Parameter Vid Verfication End =========================");
 	}
 	@Test(priority=5)
-	@Title("Verify custom parameter iu")
+	@Title("Verify video ad call custom parameter iu")
 	public void C344261_Verify_Video_Url_Parameter_iu() throws Exception{
 		System.out.println("================= Custom Parameter IU Verfication Started =========================");
 		Custom_Parameters_Verification.verify_video_custom_parameters("iu");
