@@ -1,18 +1,23 @@
 package twc.Automation.HandleWithAppium;
 
+import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 
-import java.awt.List;
+
 import java.io.IOException;
 import java.net.URL;
+import java.util.LinkedHashSet;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.exec.CommandLine;
 import org.apache.commons.exec.DefaultExecuteResultHandler;
 import org.apache.commons.exec.DefaultExecutor;
 import org.apache.commons.exec.ExecuteException;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.remote.DesiredCapabilities;
+import org.testng.Assert;
 
 import twc.Automation.Driver.Drivers;
 import twc.Automation.ReadDataFromFile.read_excel_data;
@@ -21,6 +26,14 @@ import twc.Automation.General.DeviceStatus;
 public class AppiumFunctions extends Drivers{
 	static int startY;
 	static int endY;
+	static LinkedHashSet<String> lhs;
+    static boolean integratedAd = false;
+	static boolean isIntegratedCheckDone = false;
+	static boolean isHourlyCardCheckDone = false;
+	static boolean ccCardSwiped = false;
+	static int adCard = 1;
+	static MobileElement globalcurrentCard = null;
+	static MobileElement globalprevCard = null;
 	public static void Swipe_Up() throws Exception{
 		Thread.sleep(2000);
 		Dimension dimensions = Ad.manage().window().getSize();
@@ -187,32 +200,63 @@ public class AppiumFunctions extends Drivers{
 	
 	//Kill and relaunch the app
 	public static void Kill_launch() throws Exception{
+		System.out.println("doing kill and launch the app");
+		
 		try{
 			Thread.sleep(5000);
-			Ad.closeApp();
+			Ad.closeApp();	
 			Thread.sleep(5000);
-			Ad.launchApp();
-		
-		    if(Ad.findElementById("com.weather.Weather:id/ok_button").isDisplayed());
-		    {
-		    	try {
-		    	Ad.findElementById("com.weather.Weather:id/ok_button").click();
-		    	Thread.sleep(3000);
-		    	}
-		    	catch(Exception e)
-		    	{
-		    		Ad.findElementByName("GOT IT").click();
-		    		Thread.sleep(3000);
-		    	}
-		    }
-		  
-		    	
-		  
-		 
-			Thread.sleep(5000);
-			After_launch();
+			Ad.launchApp();  
+			
+			try{
+				if((Ad.findElementById("com.weather.Weather:id/next_button_text").isDisplayed())){
+					Ad.findElementById("com.weather.Weather:id/next_button_text").click();
+					Thread.sleep(3000);
+				}
+			}catch(Exception e){
+				System.out.println("Location already set");
+			}
+			
 		}
 		catch(Exception e){
+			try {
+				Thread.sleep(5000);
+				Ad.closeApp();
+			
+				Thread.sleep(5000);
+				Ad.launchApp();
+				try{
+					if((Ad.findElementById("com.weather.Weather:id/next_button_text").isDisplayed())){
+						Ad.findElementById("com.weather.Weather:id/next_button_text").click();
+						Thread.sleep(3000);
+					}
+				}catch(Exception e6){
+					System.out.println("Location already set");
+				}
+			}
+			catch(Exception e1) {
+				try {
+					Thread.sleep(5000);
+					Ad.closeApp();
+				
+					Thread.sleep(5000);
+					Ad.launchApp();
+					try{
+						if((Ad.findElementById("com.weather.Weather:id/next_button_text").isDisplayed())){
+							Ad.findElementById("com.weather.Weather:id/next_button_text").click();
+							Thread.sleep(3000);
+						}
+					}catch(Exception e7){
+						System.out.println("Location already set");
+					}
+				}
+				
+				catch(Exception e5) {
+					
+				}
+			}
+			
+			
 
 		}
 	}
@@ -339,7 +383,7 @@ public class AppiumFunctions extends Drivers{
 			capabilities.setCapability(capabilitydata[12][0],capabilitydata[12][Cap]);
 			capabilities.setCapability(capabilitydata[13][0],capabilitydata[13][Cap]);
 			capabilities.setCapability(capabilitydata[14][0],capabilitydata[14][Cap]);
-			Thread.sleep(20000); 
+			Thread.sleep(10000); 
 			Ad = new AndroidDriver(new URL(capabilitydata[15][Cap]), capabilities);
 			Thread.sleep(10000); 
 			}
@@ -367,7 +411,7 @@ public class AppiumFunctions extends Drivers{
     		DeviceStatus device_status = new DeviceStatus();
     		int Cap = device_status.Device_Status();
     		
-    		//try {
+    		try {
     			
     			String[][] capabilitydata = read_excel_data.exceldataread("Capabilities");
     			DesiredCapabilities capabilities = new DesiredCapabilities();
@@ -388,15 +432,15 @@ public class AppiumFunctions extends Drivers{
     				capabilities.setCapability(capabilitydata[13][0],capabilitydata[13][Cap]);
     				//capabilities.setCapability(capabilitydata[14][0],capabilitydata[14][Cap]);
     				
-    				Thread.sleep(50000);
+    				Thread.sleep(1000);
     				
     				Ad = new AndroidDriver(new URL(capabilitydata[15][Cap]), capabilities);
-    				Thread.sleep(30000);
+    				Thread.sleep(3000);
     			}
     			/* ---End Android Device Capabilities --- */
-    			Ad.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+    			Ad.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     			//####added ths to handle allow button
-    			Thread.sleep(20000);
+    			Thread.sleep(2000);
     			
     			try{
     				if((Ad.findElementById("com.android.packageinstaller:id/permission_allow_button").isDisplayed())){
@@ -406,20 +450,20 @@ public class AppiumFunctions extends Drivers{
     				System.out.println("Location already set");
     			}
     			
-    			clickONNext();
+    			/*clickONNext();
     		    ClickonIUnderstand();
-        		clickOnAllow();
+        		clickOnAllow();*/
         		 			//######
     			try{
-    				 WelcomeAppLaunchCooredinates();
+    				// WelcomeAppLaunchCooredinates();
     			}catch(Exception e){
 
     				}
     			System.out.println("Capabilities have been launched  with fullreset ");
-    			Thread.sleep(5000);
-    		//} catch (Exception e) {
+    			Thread.sleep(1000);
+    		} catch (Exception e) {
     			System.out.println("Unable To Launch The Appium Capabilities");
-    		//}
+    		}
     	}
      	public static void WelcomeAppLaunchCooredinates()
      	{
@@ -589,11 +633,11 @@ public static void clickOnBackArrowElement() throws Exception
 {
 	try {
      Ad.findElementById("com.weather.Weather:id/fake_toolbar_back_button").click();
-     Thread.sleep(3000);
+     Thread.sleep(5000);
 	}
 	catch(Exception e) {
 		Ad.findElementByAccessibilityId("Navigate up").click();
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 	}
 }
 
@@ -604,11 +648,11 @@ public static void clickOnBackArrowElement_trending() throws Exception
 		
 	//	Navigate up
      Ad.findElementById("com.weather.Weather:id/trending_up_navigation_icon").click();
-     Thread.sleep(3000);
+     Thread.sleep(5000);
 	}
 	catch(Exception e) {
 		Ad.findElementByAccessibilityId("Navigate up").click();
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 	}
 }
 public static void clickONNext() throws Exception{
@@ -672,6 +716,8 @@ public static void click_snapShot_button() throws Exception
 	Thread.sleep(38000);
 	}		
 }
+
+
 public static void Swipeforappdeckapk(){
 	Dimension dimensions = Ad.manage().window().getSize();//throwing exception
 	Double startY1 = dimensions.getHeight() * 0.6;  
@@ -680,4 +726,633 @@ public static void Swipeforappdeckapk(){
 	endY = endY1.intValue();
 	Ad.swipe(0, 1800, 0, endY,2000);
 }
+public static void clickOnVideoElementt() throws Exception{
+	System.out.println("clicking video element");
+	logStep("clicking video element");
+	try {
+	Ad.findElementById("com.weather.Weather:id/ok_button").click();	
+	Thread.sleep(10000);
+	}
+	catch(Exception e) {
+		try {
+		Ad.findElementById("Id com.weather.Weather:id/video_player_thumbnail_extra").click();	
+		Thread.sleep(10000);
+		}
+		catch(Exception e1) {
+			Ad.findElementById("com.weather.Weather:id/video_backdrop").click();
+		}
+		
+	}
 }
+	
+public static void clickOnBackArrowElement_today() throws Exception
+{
+	try {
+		Ad.findElementByAccessibilityId("Navigate up").click();
+		Thread.sleep(2000);
+     
+	}
+	catch(Exception e) {
+		Ad.findElementById("com.weather.Weather:id/trending_up_navigation_icon").click();
+	     Thread.sleep(2000);
+	}
+}
+public static void getFeedCardsListAndNavigateToThem(boolean includeDetailsPages) throws Exception {
+	lhs = new LinkedHashSet<String>();
+	String[][] data = read_excel_data.exceldataread("General");
+	System.out.println("Copy right text is: " + data[1][1]);
+	resetIntegratedAdParameters();
+	String cardName = "HomeScreen";
+	int u = 1;
+	MobileElement allCards = null;
+	List<MobileElement> Cards = null;
+
+	for (int i = 0; i <= 50; i++) {
+
+		// allCards =
+		// Ad.findElementByXPath("//androidx.recyclerview.widget.RecyclerView[@resource-id='com.weather.Weather:id/home_screen_list_view']");
+		// Cards = allCards.findElementsByClassName("android.widget.FrameLayout");
+		// Cards =
+		// Ad.findElementsByXPath("//androidx.recyclerview.widget.RecyclerView[@resource-id='com.weather.Weather:id/home_screen_list_view']/android.widget.FrameLayout");
+		Cards = Ad.findElementsByXPath(
+				"//androidx.recyclerview.widget.RecyclerView[@resource-id='com.weather.Weather:id/home_screen_list_view']/*");
+
+		if (i == 0) {
+			try {
+
+				cardName = Cards.get(1).findElementByXPath(
+						"//android.view.ViewGroup[@resource-id='com.weather.Weather:id/base_card_view_root_layout']/android.widget.TextView[@resource-id='com.weather.Weather:id/header_title']")
+					.getAttribute("text");
+				//
+				
+				try {
+					Cards.get(1).findElementByXPath("//android.widget.LinearLayout[@resource-id='com.weather.Weather:id/hourly_forecast_container']");
+					cardName = "Hourly Forecast";
+					//
+				}catch(Exception e) {
+					try {
+						Cards.get(1).findElementByXPath("//android.widget.ImageView[@resource-id='com.weather.Weather:id/radar_map_image']");
+						cardName = "Radar & Maps";
+					}catch(Exception e1){
+						
+					}
+					
+				}
+				globalcurrentCard = Cards.get(1);
+				// globalprevCard = Cards.get(0);
+			} catch (Exception e) {
+				try {
+					cardName = Cards.get(1).findElementByXPath(
+							"//android.widget.FrameLayout[@resource-id='com.weather.Weather:id/ad_card_container']/android.view.ViewGroup/android.widget.TextView[@resource-id='com.weather.Weather:id/ad_card_title']")
+							.getAttribute("text");
+					globalcurrentCard = Cards.get(1);
+					// globalprevCard = Cards.get(0);
+					if (cardName.contains("Advertisement")) {
+						cardName = cardName + adCard;
+						adCard++;
+					}
+				} catch (Exception e1) {
+					try {
+						MobileElement covid19 = Cards.get(1).findElementByXPath(
+								"//android.view.ViewGroup[@resource-id='com.weather.Weather:id/base_card_view_root_layout']//android.widget.TextView[@text='See the latest in the new information hub, including county-level tracking for the US. Stay safe.']");
+						cardName = "COVID19";
+						globalcurrentCard = Cards.get(1);
+						// globalprevCard = Cards.get(0);
+					} catch (Exception e2) {
+						try {
+							cardName = Cards.get(1).findElementByXPath(
+									"//android.view.ViewGroup[@resource-id='com.weather.Weather:id/base_card_view_root_layout']//android.widget.Button[@text='See the Forecast']")
+									.getAttribute("text");
+							globalcurrentCard = Cards.get(1);
+							// globalprevCard = Cards.get(0);
+							if (cardName.equalsIgnoreCase("See the Forecast")) {
+								cardName = "WatsonHolidays";
+							}
+						} catch (Exception e3) {
+							globalcurrentCard = Cards.get(1);
+							// globalprevCard = Cards.get(0);
+							cardName = "UnKnownCard" + u;
+							u++;
+						}
+
+					}
+
+				}
+
+			}
+		} else {
+			try {
+
+				cardName = Cards.get(0).findElementByXPath(
+						"//android.view.ViewGroup[@resource-id='com.weather.Weather:id/base_card_view_root_layout']/android.widget.TextView[@resource-id='com.weather.Weather:id/header_title']")
+						.getAttribute("text");
+				try {
+					Cards.get(0).findElementByXPath("//android.widget.LinearLayout[@resource-id='com.weather.Weather:id/hourly_forecast_container']");
+					cardName = "Hourly Forecast";
+				}catch(Exception e) {
+					try {
+						Cards.get(0).findElementByXPath("//android.widget.ImageView[@resource-id='com.weather.Weather:id/radar_map_image']");
+						cardName = "Radar & Maps";
+					}catch(Exception e1){
+						
+					}
+				}
+				globalcurrentCard = Cards.get(0);
+			} catch (Exception e) {
+				try {
+					cardName = Cards.get(0).findElementByXPath(
+							"//android.widget.FrameLayout[@resource-id='com.weather.Weather:id/ad_card_container']/android.view.ViewGroup/android.widget.TextView[@resource-id='com.weather.Weather:id/ad_card_title']")
+							.getAttribute("text");
+					globalcurrentCard = Cards.get(0);
+					if (cardName.contains("Advertisement")) {
+						cardName = cardName + adCard;
+						adCard++;
+					}
+				} catch (Exception e1) {
+					try {
+						MobileElement covid19 = Cards.get(0).findElementByXPath(
+								"//android.view.ViewGroup[@resource-id='com.weather.Weather:id/base_card_view_root_layout']//android.widget.TextView[@text='See the latest in the new information hub, including county-level tracking for the US. Stay safe.']");
+						cardName = "COVID19";
+						globalcurrentCard = Cards.get(0);
+					} catch (Exception e2) {
+						try {
+							cardName = Cards.get(0).findElementByXPath(
+									"//android.view.ViewGroup[@resource-id='com.weather.Weather:id/base_card_view_root_layout']//android.widget.Button[@text='See the Forecast']")
+									.getAttribute("text");
+							globalcurrentCard = Cards.get(0);
+							if (cardName.equalsIgnoreCase("See the Forecast")) {
+								cardName = "WatsonHolidays";
+							}
+						} catch (Exception e3) {
+							try {
+
+								cardName = Cards.get(1).findElementByXPath(
+										"//android.view.ViewGroup[@resource-id='com.weather.Weather:id/base_card_view_root_layout']/android.widget.TextView[@resource-id='com.weather.Weather:id/header_title']")
+										.getAttribute("text");
+								try {
+									Cards.get(1).findElementByXPath("//android.widget.LinearLayout[@resource-id='com.weather.Weather:id/hourly_forecast_container']");
+									cardName = "Hourly Forecast";
+								}catch(Exception b) {
+									try {
+										Cards.get(1).findElementByXPath("//android.widget.ImageView[@resource-id='com.weather.Weather:id/radar_map_image']");
+										cardName = "Radar & Maps";
+									}catch(Exception b1){
+										
+									}
+								}
+								globalcurrentCard = Cards.get(1);
+								globalprevCard = Cards.get(0);
+							} catch (Exception e4) {
+								try {
+									cardName = Cards.get(1).findElementByXPath(
+											"//android.widget.FrameLayout[@resource-id='com.weather.Weather:id/ad_card_container']/android.view.ViewGroup/android.widget.TextView[@resource-id='com.weather.Weather:id/ad_card_title']")
+											.getAttribute("text");
+									globalcurrentCard = Cards.get(1);
+									globalprevCard = Cards.get(0);
+									if (cardName.contains("Advertisement")) {
+										cardName = cardName + adCard;
+										adCard++;
+									}
+								} catch (Exception e5) {
+									try {
+										MobileElement covid19 = Cards.get(1).findElementByXPath(
+												"//android.view.ViewGroup[@resource-id='com.weather.Weather:id/base_card_view_root_layout']//android.widget.TextView[@text='See the latest in the new information hub, including county-level tracking for the US. Stay safe.']");
+										cardName = "COVID19";
+										globalcurrentCard = Cards.get(1);
+										globalprevCard = Cards.get(0);
+									} catch (Exception e6) {
+										try {
+											cardName = Cards.get(1).findElementByXPath(
+													"//android.view.ViewGroup[@resource-id='com.weather.Weather:id/base_card_view_root_layout']//android.widget.Button[@text='See the Forecast']")
+													.getAttribute("text");
+											globalcurrentCard = Cards.get(1);
+											globalprevCard = Cards.get(0);
+											if (cardName.equalsIgnoreCase("See the Forecast")) {
+												cardName = "WatsonHolidays";
+											}
+										} catch (Exception e7) {
+											globalcurrentCard = Cards.get(1);
+											globalprevCard = Cards.get(0);
+											cardName = "UnKnownCard" + u;
+											u++;
+										}
+									}
+
+								}
+
+							}
+						}
+
+					}
+
+				}
+
+			}
+		}
+		
+		lhs.add(cardName);
+		System.out.println("Cards List is: " + lhs);
+		
+		getPreviousFeedCardSizeandSwipewithNoMargin();
+		
+		
+		if (cardName.contains("Health & Activities")) {
+			cardName = "lifestyle1";
+		} else if (cardName.contains("Air Quality")) {
+			cardName = "aq1";
+		} else if (cardName.contains("Radar & Maps")) {
+			cardName = "radar&maps";
+		} else if (cardName.contains("Outdoor Conditions")) {
+			cardName = "seasonalhub1";
+		} else if (cardName.contains("Daily Forecast")) {
+			cardName = "daily1";
+		} else if (cardName.contains("Typhoon Central")) {
+			cardName = "hurricane-central";
+		} else if (cardName.contains("Today's Details")) {
+			cardName = "today";
+		} else if (cardName.contains("Top Stories")) {
+			cardName = "video";
+		} else if (cardName.contains("More News")) {
+			cardName = "news";
+		} else if (cardName.contains("Hourly Forecast")) {
+			cardName = "Hourly";
+		}
+		if(includeDetailsPages) {
+			try {
+				if (cardName.equalsIgnoreCase("lifestyle")) {
+					List<MobileElement> ls;
+					ls = Ad.findElementsByXPath(
+							"//android.widget.LinearLayout[@resource-id='com.weather.Weather:id/list_view']/android.widget.RelativeLayout");
+
+					int lssize = ls.size();
+					for (int l = 1; l <= lssize; l++) {
+						String subIndex = Ad.findElementByXPath(
+								"(//android.widget.LinearLayout[@resource-id='com.weather.Weather:id/list_view']/android.widget.RelativeLayout)["
+										+ l + "]//android.widget.TextView[1]")
+								.getAttribute("text");
+
+						Ad.findElementByXPath(
+								"(//android.widget.LinearLayout[@resource-id='com.weather.Weather:id/list_view']/android.widget.RelativeLayout)["
+										+ l + "]")
+								.click();
+						System.out.println("Current subindex : " + subIndex);
+						Thread.sleep(2000);
+
+						// ScreenShot(cardName+" "+l,"Passed");
+						// attachScreen();
+						AppiumFunctions.clickOnBackArrowElement();
+					}
+				} else if (cardName.equalsIgnoreCase("seasonalhub")) {
+					List<MobileElement> sh;
+					sh = Ad.findElementsByXPath(
+							"//android.widget.FrameLayout[@resource-id='com.weather.Weather:id/card_content_view']/android.widget.LinearLayout/android.widget.RelativeLayout");
+					int shsize = sh.size();
+					for (int m = 1; m <= shsize; m++) {
+						String subIndex = Ad.findElementByXPath(
+								"(//android.widget.FrameLayout[@resource-id='com.weather.Weather:id/card_content_view']/android.widget.LinearLayout/android.widget.RelativeLayout)["
+										+ m + "]//android.widget.TextView[1]")
+								.getAttribute("text");
+						// String
+						// subIndex=Ad.findElementByXPath("(((//XCUIElementTypeTable[@name=\"lifestyle_combo_container\"])[1]/XCUIElementTypeCell)["+l+"]/XCUIElementTypeStaticText)[2]").getAttribute("label");
+
+						Ad.findElementByXPath(
+								"(//android.widget.FrameLayout[@resource-id='com.weather.Weather:id/card_content_view']/android.widget.LinearLayout/android.widget.RelativeLayout)["
+										+ m + "]")
+								.click();
+						// Ad.findElementByXPath("((//XCUIElementTypeTable[@name=\"lifestyle_combo_container\"])[1]/XCUIElementTypeCell)["+l+"]").click();
+						System.out.println("Current subindex : " + subIndex);
+						Thread.sleep(2000);
+						Thread.sleep(2000);
+
+						// ScreenShot(cardName+" "+m,"Passed");
+						// attachScreen();
+						AppiumFunctions.clickOnBackArrowElement();
+					}
+				} /*else if (cardName.equalsIgnoreCase("daily")) {
+					MobileElement dailyDetails = (MobileElement) Ad.findElementByXPath(
+							"//androidx.recyclerview.widget.RecyclerView[@resource-id='com.weather.Weather:id/daily_forecast_list']/android.widget.LinearLayout[1]");
+					// android.widget.LinearLayout[@resource-id='com.weather.Weather:id/daily_forecast_container']//android.widget.LinearLayout[1]
+					// androidx.recyclerview.widget.RecyclerView[@resource-id='com.weather.Weather:id/daily_forecast_list']/android.widget.LinearLayout[1]
+
+					// android.widget.LinearLayout[@id='com.weather.Weather:resource-id/daily_forecast_container']//android.widget.LinearLayout[1]
+
+					dailyDetails.click();
+					System.out.println("Navigated to Daily Details Page");
+					Thread.sleep(2000);
+					// ScreenShot(cardName,"Passed");
+					// attachScreen();
+					AppiumFunctions.clickOnBackArrowElement();
+				} */else if (cardName.equalsIgnoreCase("hurricane-central")) {
+					MobileElement hcDetails;
+					// MobileElement hcDetails =
+					// Ad.findElementByAccessibilityId("hurricane-central-card_detailedButton");
+					try {
+						hcDetails = (MobileElement) Ad
+								.findElement(By.id("com.weather.Weather:id/hurricane_central_view_more_button"));
+					} catch (Exception e) {
+						hcDetails = (MobileElement) Ad
+								.findElement(By.id("com.weather.Weather:id/hurricane_card_container"));
+					}
+
+					hcDetails.click();
+					System.out.println("Navigated to Hurricane Central Details Page");
+					Thread.sleep(2000);
+
+					AppiumFunctions.clickOnBackArrowElement();
+
+				} else if (cardName.equalsIgnoreCase("radar&maps")) {
+
+					AppiumFunctions.clickOnRadarMaps();
+					System.out.println("Navigated to Radars & Maps Details Page");
+					AppiumFunctions.clickOnBackArrowElement();
+
+				} else if (cardName.equalsIgnoreCase("today")) {
+
+					AppiumFunctions.click_Todaydetails_element();
+					System.out.println("Navigated to Today Details Page");
+					//AppiumFunctions.clickOnBackArrowElement();
+					clickOnBackArrowElement_today();
+
+				} else if (cardName.equalsIgnoreCase("video")) {
+
+					clickOnVideoElementt();
+				//	AppiumFunctions.clickOnVideoElement();
+					System.out.println("Navigated to Video Details Page");
+					AppiumFunctions.clickOnBackArrowElement();
+
+				} else if (cardName.equalsIgnoreCase("aq")) {
+
+					AppiumFunctions.click_Airpollution_element();
+					System.out.println("Navigated to AQ Details Page");
+					AppiumFunctions.clickOnBackArrowElement();
+
+				} else if (cardName.equalsIgnoreCase("news")) {
+
+					AppiumFunctions.click_news_element();
+					System.out.println("Navigated to News Details Page");
+					AppiumFunctions.clickOnBackArrowElement();
+
+				}
+
+			} catch (Exception e) {
+
+			}
+		}
+		
+		if (i > 10) {
+			try {
+				String copyRight = Ad.findElementByXPath(
+						"//androidx.recyclerview.widget.RecyclerView[@resource-id='com.weather.Weather:id/home_screen_list_view']/android.widget.LinearLayout/android.widget.TextView")
+						.getAttribute("text");
+
+				if (copyRight.equalsIgnoreCase(data[1][1])) {
+
+					// attachScreen();
+					System.out.println("User done scrolling");
+					logStep("User done scrolling till last page");
+					break;
+				}
+			} catch (Exception e) {
+				System.out.println("last page not found, Need to scrol till the end");
+			}
+		}
+
+		/*
+		 * if(i==0) { identifyFeedCardAndSwipe();
+		 * 
+		 * }else {
+		 */
+		try {
+			// scroll_Down();
+			// Swipe_For_HalfHalfCard();
+			getFeedCardSizeandSwipewithNoMargin();
+			// swipe_Up();
+			// scroll_Down();
+		} catch (Exception e) {
+
+			String[] strcleariProxy = { "/bin/bash", "-c", "killall iproxy xcodebuild XCTRunner" };
+			Process proc = Runtime.getRuntime().exec(strcleariProxy);
+			int rc = proc.waitFor();
+			Assert.fail("Scrolling filed, need to execute test Case again	");
+		}
+//}
+
+	}
+	/*
+	 * Iterator<String> itr=lhs.iterator(); while(itr.hasNext()){
+	 * System.out.println(itr.next()); }
+	 */
+	try {
+		Ad.findElementByAccessibilityId("Hourly").click();
+	} catch (Exception e) {
+		System.out.println("Hourly Tab is not displayed");
+	}
+	Thread.sleep(10000);
+	try {
+		Ad.findElementById("com.weather.Weather:id/bottom_nav_home_icon").click();
+	} catch (Exception e) {
+		System.out.println("Home Tab is not displayed");
+	}
+
+	System.out.println("Cards List is: " + lhs);
+}
+
+public static void getFeedCardSizeandSwipewithNoMargin() {
+	MobileElement currentCard = null;
+	// boolean ccCardSwiped = false;
+	try {
+		/*if (!ccCardSwiped) {
+			currentCard = (MobileElement) Ad.findElement(By.xpath(
+					"//android.view.ViewGroup[@resource-id='com.weather.Weather:id/current_conditions_card_root']"));
+			ccCardSwiped = true;
+		} else {
+			//currentCard = (MobileElement) Ad.findElement(By.xpath("//android.view.ViewGroup[@resource-id='com.weather.Weather:id/base_card_view_root_layout']"));
+			currentCard = globalcurrentCard;
+		}*/
+		if (!ccCardSwiped) {
+		currentCard = (MobileElement) Ad.findElement(By.xpath(
+				"//android.view.ViewGroup[@resource-id='com.weather.Weather:id/current_conditions_card_root']"));
+		ccCardSwiped = true;
+		} else {
+			currentCard = globalcurrentCard;
+		}
+
+	} catch (Exception e) {
+		//currentCard = (MobileElement) Ad.findElement(By.xpath("//android.widget.FrameLayout[@resource-id='com.weather.Weather:id/ad_card_container']"));
+		currentCard = globalcurrentCard;
+		//adCard++;
+	}
+	Dimension d0 = null;
+	int globalprevCardHeight = 0;
+	
+	try {
+		d0 = globalprevCard.getSize();
+		System.out.println("Previous Card Height is : " + d0.getHeight());
+		System.out.println("Previous Card Width is: " + d0.getWidth());
+		globalprevCardHeight =  d0.getHeight();
+	}catch(Exception e) {
+		globalprevCardHeight = 0;
+	}
+	
+	Dimension d = currentCard.getSize();
+	System.out.println("Height is : " + d.getHeight());
+	System.out.println("Width is: " + d.getWidth());
+
+	/*if (d.getHeight() < 50) {
+		try {
+			if (!ccCardSwiped) {
+			currentCard = (MobileElement) Ad.findElement(By.xpath(
+					"//android.view.ViewGroup[@resource-id='com.weather.Weather:id/current_conditions_card_root']"));
+			ccCardSwiped = true;
+		} else {
+			//currentCard = (MobileElement) Ad.findElement(By.xpath("//android.view.ViewGroup[@resource-id='com.weather.Weather:id/base_card_view_root_layout']"));
+			currentCard = globalcurrentCard;
+		}
+		currentCard = (MobileElement) Ad.findElement(By.xpath(
+				"//android.view.ViewGroup[@resource-id='com.weather.Weather:id/current_conditions_card_root']"));
+
+		} catch (Exception e) {
+			//currentCard = (MobileElement) Ad.findElement(By.xpath("(//android.view.ViewGroup[@resource-id='com.weather.Weather:id/base_card_view_root_layout'])[2]"));
+			currentCard = globalcurrentCard;
+		}
+		Dimension d1 = currentCard.getSize();
+		System.out.println("Height is : " + d1.getHeight());
+		System.out.println("Width is: " + d1.getWidth());
+
+		// Dimension dimensions = Ad.manage().window().getSize();//throwing exception
+		int startx1 = d1.width / 2;
+		Double startY11 = d1.getHeight() * 0.00;
+		startY = startY11.intValue();
+		Double endY11 = (double) ((d1.getHeight()+globalprevCardHeight) * 0.95); // dimensions.getHeight() 0.2; == 512.0
+		endY = endY11.intValue();
+
+		if (endY < 200) {
+			Ad.swipe(0, endY + 610, 0, startY + 600, 2000);
+		} else {
+			Ad.swipe(0, endY, 0, startY, 2000);
+		}
+	}*/ //else {
+		// Dimension dimensions = Ad.manage().window().getSize();//throwing exception
+		int startx = d.width / 2;
+		Double startY1 = d.getHeight() * 0.00;
+		startY = startY1.intValue();
+		Double endY1 = (double) ((d.getHeight()+globalprevCardHeight) * 0.90); // dimensions.getHeight() 0.2; == 512.0
+		endY = endY1.intValue();
+
+		if (endY < 200) {
+			Ad.swipe(0, endY + 610, 0, startY + 600, 2000);
+		} else {
+			Ad.swipe(0, endY, 0, startY, 2000);
+		}
+	//}
+
+}
+
+public static void getPreviousFeedCardSizeandSwipewithNoMargin() {
+	MobileElement currentCard = null;
+	
+	Dimension d0 = null;
+	int globalprevCardHeight = 0;
+	
+	try {
+		d0 = globalprevCard.getSize();
+		System.out.println("Previous Card Height is : " + d0.getHeight());
+		System.out.println("Previous Card Width is: " + d0.getWidth());
+		globalprevCardHeight =  d0.getHeight();
+	}catch(Exception e) {
+		globalprevCardHeight = 0;
+	}
+	
+	if(globalprevCardHeight>0) {
+		int startx = d0.width / 2;
+		Double startY1 = d0.getHeight() * 0.00;
+		startY = startY1.intValue();
+		Double endY1 = (double) (globalprevCardHeight * 0.90); // dimensions.getHeight() 0.2; == 512.0
+		endY = endY1.intValue();
+
+		if (endY < 200) {
+			Ad.swipe(0, endY + 610, 0, startY + 600, 2000);
+		} else {
+			Ad.swipe(0, endY, 0, startY, 2000);
+		}
+	}
+	
+}
+
+public static void navigateToAllCardsByCardSize() throws Exception {
+	lhs = new LinkedHashSet<String>();
+	String[][] data = read_excel_data.exceldataread("General");
+	System.out.println("Copy right text is: " + data[1][1]);
+	resetIntegratedAdParameters();
+
+	for (int i = 0; i <= 50; i++) {
+//System.out.println(i);
+		if (i > 10) {
+			try {
+				String copyRight = Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout/android.widget.TextView").getAttribute("text");
+						
+			//	/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout/android.widget.TextView
+
+		//	System.out.println(copyRight);
+				if (copyRight.equalsIgnoreCase(data[1][1])) {
+
+					// attachScreen();
+					System.out.println("User done scrolling");
+					logStep("User done scrolling till last page");
+					break;
+				}
+			} catch (Exception e) {
+				System.out.println("last page not found, Need to scrol till the end");
+			}
+		}
+
+		try {
+			//getFeedCardSizeandSwipewithMargin();
+			// scroll_Down();
+			Swipe_For_HalfCard();
+			// swipe_Up();
+			// scroll_Down();
+		} catch (Exception e) {
+
+			String[] strcleariProxy = { "/bin/bash", "-c", "killall iproxy xcodebuild XCTRunner" };
+			Process proc = Runtime.getRuntime().exec(strcleariProxy);
+			int rc = proc.waitFor();
+			Assert.fail("Scrolling filed, need to execute test Case again	");
+		}
+
+	}
+	/*
+	 * Iterator<String> itr=lhs.iterator(); while(itr.hasNext()){
+	 * System.out.println(itr.next()); }
+	 */
+
+	try {
+		Ad.findElementById("com.weather.Weather:id/bottom_nav_home_icon").click();
+	} catch (Exception e) {
+		System.out.println("Home Tab is not displayed");
+	}
+
+}
+
+public static void resetIntegratedAdParameters() {
+	integratedAd = false;
+	isIntegratedCheckDone = false;
+	isHourlyCardCheckDone = false;
+}
+
+public static void Swipe_For_HalfCard() {
+	Dimension dimensions = Ad.manage().window().getSize();// throwing exception
+	int startx = dimensions.width / 2;
+	Double startY1 = dimensions.getHeight() * 0.44;
+	startY = startY1.intValue();
+	Double endY1 = (double) (dimensions.getHeight() / 70); // dimensions.getHeight() 0.2; == 512.0
+	endY = endY1.intValue();
+	Ad.swipe(startx, startY, startx, endY, 2000);
+
+}
+
+}
+                          
+                 
+
+                     
