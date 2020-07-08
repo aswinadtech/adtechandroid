@@ -253,7 +253,7 @@ public class CharlesFunctions extends Drivers{
 		System.out.println("Exporting The Session Data Into XML File");
 		logStep("Exporting The Session Data Into XML File");
 		driver.findElement(By.linkText(charlesdata[7][0])).click();
-		Thread.sleep(30000);
+		Thread.sleep(15000);
 		System.out.println("Exported Session");
 		logStep("Exported Session");
 	}
