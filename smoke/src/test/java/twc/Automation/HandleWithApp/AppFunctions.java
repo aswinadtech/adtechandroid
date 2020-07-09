@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
+import io.appium.java_client.MobileBy.ByAccessibilityId;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
 
@@ -901,10 +902,27 @@ public class AppFunctions extends Drivers{
 		
 	}
 
-	public static void Kill_Launch_App(){
-
+	public static void Kill_Launch_App() throws Exception{
+try {
 		Ad.closeApp();
 		Ad.launchApp();
+		Thread.sleep(15000);
+		}
+catch(Exception e) {
+	Ad.closeApp();
+	Ad.launchApp();
+	Thread.sleep(15000);
+	try {
+		Ad.closeApp();
+		Ad.launchApp();
+		Thread.sleep(15000);
+	}
+	catch(Exception e1) {
+		Ad.closeApp();
+		Ad.launchApp();
+		Thread.sleep(15000);
+	}
+}
 	}
 
 	public static void Swipe(){
@@ -2132,6 +2150,305 @@ public static void verify_adpresent_onvideo_page(String excel_sheet_name) throws
 	ele.get(3).click();
 	Thread.sleep(2000);
 	}
+	
+	
+	public static void clickOnviewMore() {
+	Functions.verifyElement(ByAccessibilityId("View More"));
+		try {
+		System.out.println("Clicking on View More");
+		logStep("Clicking on View More");
+		new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementByAccessibilityId("View More")));
+		Ad.findElementByAccessibilityId("View More").click();
+		//Thread.sleep(5000);
+		}
+		catch(Exception e) {
+			
+		}
+	}
+	
+	private static By ByAccessibilityId(String string) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public static void clickOnAboutthisapp() throws Exception {
+	//	Functions.verifyElement(ByAccessibilityId("About this App"));
+		try {
+		System.out.println("Clicking on About this App");
+		logStep("Clicking on About this App");
+		new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementByAccessibilityId("About this App")));
+		Ad.findElementByAccessibilityId("About this App").click();
+		//About this App
+	//	Thread.sleep(5000);
+		}
+		catch(Exception e) {	
+			new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("com.weather.Weather:id/item_about")));
+			Ad.findElementById("com.weather.Weather:id/item_about").click();
+		Thread.sleep(5000);
+		}
+	}
+	
+	
+
+	public static void clickOnVersionnumber() throws Exception {
+try {
+		//Thread.sleep(15000);
+		Functions.verifyElement(By.id("com.weather.Weather:id/test_mode_settings"));
+			//Thread.sleep(15000);
+			System.out.println("Clicking on test mode settings");
+			logStep("Clicking on test mode settings");
+			//Thread.sleep(15000);
+			new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("com.weather.Weather:id/test_mode_settings")));
+			Ad.findElementById("com.weather.Weather:id/test_mode_settings").click();
+			//Thread.sleep(5000);		
+}
+catch(Exception e) {
+	System.out.println("Clicking on BuildNumber till test mode settings option is displaying");
+	logStep("Clicking on BuildNumber till test mode settings option is displaying");	
+	for(int i=1;i<10;i++) {
+		 //Thread.sleep(7000);
+		 new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("com.weather.Weather:id/about_version")));
+		Ad.findElementById("com.weather.Weather:id/about_version").click();
+		 //Thread.sleep(6000);
+	}
+}
+	}
+	
+	public static void clickOntestmodesettings() throws Exception {
+		try {
+			Functions.verifyElement(By.id("com.weather.Weather:id/test_mode_settings"));
+			if(Ad.findElementById("com.weather.Weather:id/test_mode_settings").isDisplayed())
+				//Thread.sleep(5000);
+				System.out.println("Clicking on test mode settings");
+				logStep("Clicking on test mode settings");
+			//Thread.sleep(5000);
+				new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("com.weather.Weather:id/test_mode_settings")));
+				Ad.findElementById("com.weather.Weather:id/test_mode_settings").click();
+			}
+	
+		catch(Exception e) {
+			
+		}
+	}
+	
+	
+	public static void clickOnAirlock() throws Exception {
+		
+ 	//clicking on Airlock
+		try {
+			Functions.verifyElement(By.id("android:id/title"));
+System.out.println("Clicking on Airlock");
+logStep("Clicking on Airlock");
+//Thread.sleep(15000);
+		 List<WebElement> all=Ad.findElementsById("android:id/title");
+		// Thread.sleep(15000);
+		 for(WebElement Airlock:all) {
+			if( Airlock.getAttribute("text").equalsIgnoreCase("Airlock")) {
+				new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Airlock));
+				Airlock.click();
+			//	 Thread.sleep(15000);
+				 break;
+			 }
+		 }
+		}
+		catch(Exception e) {
+			Functions.verifyElement(By.className("android.widget.LinearLayout"));
+			 List<WebElement> all=Ad.findElementsByClassName("android.widget.LinearLayout");
+			 for(WebElement Airlock:all) {
+				if( Airlock.getAttribute("text").contains("Airlock")) {
+					new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Airlock));
+					 Airlock.click();
+					// Thread.sleep(5000);
+					 break;
+		}
+			 }
+	}
+	}
+	
+	public static void clickOnUserGroups() throws Exception {
+		System.out.println("Clicking on User Groups");
+		logStep("Clicking on User Groups");
+		 //Thread.sleep(15000);
+			Functions.verifyElement(By.id("android:id/title"));
+		List<WebElement> all=Ad.findElementsById("android:id/title");
+		 for(WebElement Airlock:all) {
+			if( Airlock.getAttribute("text").equalsIgnoreCase("User Groups")) {
+				new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Airlock));
+				 Airlock.click();
+			//	 Thread.sleep(5000);
+				 break;
+			 }
+		 }
+	}
+	
+	public static void clickOnBranch() throws Exception {
+		System.out.println("Clicking on Branch");
+		logStep("Clicking on Branch");
+		Functions.verifyElement(By.id("android:id/title"));
+		List<WebElement> all=Ad.findElementsById("android:id/title");
+		 for(WebElement Airlock:all) {
+			if( Airlock.getAttribute("text").equalsIgnoreCase("Branch")) {
+				new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Airlock));
+				 Airlock.click();
+				// Thread.sleep(5000);
+				 break;
+			 }
+		 }
+	}
+	
+	public static void enterRequiredUserGroup(String usergroup) throws Exception {
+	
+		System.out.println("entering "+ usergroup);
+		logStep("entering "+ usergroup);
+	//	 Thread.sleep(15000);
+			Functions.verifyElement(By.id("com.weather.Weather:id/search_bar"));
+		Ad.findElementById("com.weather.Weather:id/search_bar").sendKeys(usergroup);
+      Thread.sleep(15000);
+      try {
+    		 //Thread.sleep(15000);
+    			Functions.verifyElement(By.id("android:id/text1"));
+      List<WebElement> all=Ad.findElementsById("android:id/text1");
+ 	// Thread.sleep(5000);
+		 for(WebElement req:all) {
+			if( req.getAttribute("text").equalsIgnoreCase(usergroup)) {
+				new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(req));
+			//	 Thread.sleep(15000);
+				 req.click();
+				Thread.sleep(15000);
+				 break;
+			 }
+		 }
+      }
+      catch(Exception e){
+    	  Functions.verifyElement(By.className("android.widget.CheckedTextView"));
+    	  List<WebElement> all=Ad.findElementsByClassName("android.widget.CheckedTextView");
+    	//  Thread.sleep(15000);
+ 		 for(WebElement req:all) {
+ 			if( req.getAttribute("text").equalsIgnoreCase(usergroup)) {
+ 				new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(req));
+ 				 req.click();
+ 				 
+ 				// Thread.sleep(15000);
+ 				 break;
+      }
+ 		 }
+      }
+	}
+	
+	
+	
+	
+public static void selectingRequiredUserGroup(String usergroup) throws Exception{
+		
+		//cliking View more Button		
+     	clickOnviewMore();
+     	//cliking on aboutthisapp
+     	clickOnAboutthisapp();
+     	 clickOnVersionnumber();
+     	clickOntestmodesettings() ;
+     	clickOnAirlock();
+     	clickOnUserGroups();
+     	enterRequiredUserGroup(usergroup);
+	}
+
+
+public static void enablingBranch(String branchName) throws Exception{
+	
+	//cliking View more Button		
+ 	clickOnviewMore();
+ 	//cliking on aboutthisapp
+ 	clickOnAboutthisapp();
+ 	 clickOnVersionnumber();
+ 	clickOntestmodesettings() ;
+ 	clickOnAirlock();
+ 	clickOnBranch();
+ 	seletingRequiredBranch(branchName);
+}
+
+public static void swipeforbranch() {
+
+	
+	TouchAction ta=new TouchAction(Ad);
+	  Ad.swipe(769, 1764, 613, 694,3000);	
+	
+}
+public static void seletingRequiredBranch(String branchName) throws Exception {
+
+	Thread.sleep(15000);
+	for(int i=0;i<50;i++) {
+		swipeforbranch();
+	List<WebElement> branch=Ad.findElementsById("android:id/text1");
+	//System.out.println(branch.size());
+	for( WebElement daily:branch) {
+		//System.out.println(daily.getText().toString());
+		if(daily.getText().toString().equalsIgnoreCase(branchName))			
+		{
+			 System.out.println(branchName +" is displayed on the screen");
+				logStep(branchName +" is displayed on the screen");
+				
+			daily.click();
+			daily.click();
+			Thread.sleep(5000);
+			System.out.println(daily.getText() + "  enabled");
+			i=51;
+			break;		
+	}
+		
+	//
+	}
+	
+	}
+
+
+}
+	
+	
+
+
+
+
+public static void enable_adstestadunit() throws Exception {
+		//click the user groups 
+		 List<WebElement> abouthisapp=Ad.findElementsById("android:id/title");
+		 Thread.sleep(4000);
+			abouthisapp.get(0).click();	
+			Thread.sleep(4000);
+			//enetr the adstest ad unit in search box
+			try{
+			Ad.findElementById("com.weather.Weather:id/search_bar").sendKeys("Adstest");
+			Thread.sleep(2000);
+			}
+			catch(Exception e) {
+				Ad.findElementByClassName("android.widget.EditText").sendKeys("Adstest");
+				
+				Thread.sleep(5000);
+			}
+			try {
+			//click the ads test adunit only
+			List<WebElement> adstestadunitonly=Ad.findElementsById("android:id/text1");
+			Thread.sleep(15000);
+			adstestadunitonly.get(0).click();
+			Thread.sleep(5000);
+			}
+			catch(Exception e) {
+				//click the ads test adunit only
+				List<WebElement> adstestadunitonly=Ad.findElementsByClassName("android.widget.CheckedTextView");
+				Thread.sleep(15000);
+				adstestadunitonly.get(0).click();
+				Thread.sleep(15000);
+			}
+			try {
+			Ad.findElementById("com.weather.Weather:id/search_bar").sendKeys("Adstest");
+			Thread.sleep(2000);
+			}
+			catch(Exception e) {
+				Ad.findElementByClassName("android.widget.EditText").sendKeys("Adstest");
+				
+				Thread.sleep(5000);
+			}
+		
+	}
+
 }
 		
 
