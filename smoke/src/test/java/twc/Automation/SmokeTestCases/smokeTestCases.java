@@ -727,12 +727,12 @@ public class smokeTestCases extends Drivers {
     			CharlesFunctions.startSessionBrowserData();
     			
     			AppiumFunctions.LaunchAppWithFullReset();
-    		//	AppFunctions.selectingRequiredUserGroup("multi cards");
-    		//	Ad.runAppInBackground(30);
-    		//	AppFunctions.Kill_Launch_App();
-    		////	AppFunctions.enablingBranch("adsTestAutomation");
-    		//	Ad.runAppInBackground(30);
-    		//	AppFunctions.Kill_Launch_App();
+         	AppFunctions.selectingRequiredUserGroup("multi cards");
+    			Ad.runAppInBackground(30);
+    			AppFunctions.Kill_Launch_App();
+    			AppFunctions.enablingBranch("adsTestAutoamtion2");
+    			Ad.runAppInBackground(30);
+    			AppFunctions.Kill_Launch_App();
     			AppFunctions.Kill_Launch_App();
     			// AppiumFunctions.getFeedCardsListAndNavigateToThem(false);//not going details
     			// AppiumFunctions.getFeedCardsListAndNavigateToThem(true);//going details
