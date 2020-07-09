@@ -730,7 +730,7 @@ public class smokeTestCases extends Drivers {
          	AppFunctions.selectingRequiredUserGroup("multi cards");
     			Ad.runAppInBackground(30);
     			AppFunctions.Kill_Launch_App();
-    			AppFunctions.enablingBranch("adsTestAutoamtion2");
+    			AppFunctions.enablingBranch("adsTestAutomation2");
     			Ad.runAppInBackground(30);
     			AppFunctions.Kill_Launch_App();
     			AppFunctions.Kill_Launch_App();
