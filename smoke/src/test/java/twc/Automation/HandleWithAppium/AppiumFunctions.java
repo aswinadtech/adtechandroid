@@ -885,6 +885,7 @@ if(ModuleName.toString().contains("Health & Activities")) {
 	  Thread.sleep(5000);
 	  AllergyCount=1;
 }
+}
 if(ModuleName.toString().contains("Today's Details") ) {
 	if(TodayDeatilsCount==0) {
 	AppiumFunctions.click_Todaydetails_element();
@@ -912,7 +913,8 @@ if(ModuleName.toString().contains("Outdoor Conditions")) {
 		
 		}
 }
-		}
+		
+
 		catch(Exception e) {
 			try {
 				Swipe_feed();
