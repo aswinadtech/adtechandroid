@@ -2358,9 +2358,10 @@ public static void gettingApkVersion() throws Exception{
      	apkVersion=Ad.findElementById("com.weather.Weather:id/about_version").getText();
      	System.out.println("Android apk build number"+apkVersion);
      	
-     	//back button cod
-     	apkVersion= apkVersion.split("Version")[1].trim();
+    
+     //	apkVersion= apkVersion.split("Version")[1].trim();
      
+     	System.out.println(apkVersion);
     	AppiumFunctions.clickOnBackArrowElement();
      	FileOutputStream fos=new FileOutputStream(new File(System.getProperty("user.dir") + "/JenkinsEmailConfig.Properties"));
      	properties.setProperty("AppVersion",apkVersion);
