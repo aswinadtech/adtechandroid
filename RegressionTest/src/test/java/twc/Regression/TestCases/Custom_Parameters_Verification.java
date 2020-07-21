@@ -2,8 +2,14 @@ package twc.Regression.TestCases;
 
 import io.appium.java_client.MobileElement;
 
+import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.TimeZone;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -112,14 +118,16 @@ public class Custom_Parameters_Verification extends Drivers{
 			if(adlogic==1) {
 				feedcount=Functions.homescreenfeedad.length;
 				Functions.adType= "HomeScreen";
-			}else if(adlogic==2) {
+			}
+		else if(adlogic==2) {
 				feedcount=Functions.Deatailpagead.length;
 				Functions.adType= "DetailsPages";
 			}
 			for(int feed=0;feed<=feedcount-2;feed++){
 				if(adlogic==1) {
 					feedAd=exceldata[5][Cap]+Functions.homescreenfeedad[feed];
-				}else if(adlogic==2) {
+				}
+				else if(adlogic==2) {
 					feedAd=exceldata[10][Cap]+Functions.Deatailpagead[feed];
 				}
 				
@@ -283,7 +291,7 @@ public class Custom_Parameters_Verification extends Drivers{
 										}
 									}
 									else if(ParamType.equals("st") && custParam.equals("st")){
-										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam              "+            custParam);
 										//Param_val = CustomParamFunctions.validate_dsx_results("st",feed);
 										Param_val = CustomParamFunctions.validate_not_null_results("st",feed);
 										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
@@ -386,7 +394,7 @@ public class Custom_Parameters_Verification extends Drivers{
 									}
 									else if(ParamType.equals("hlzip") && custParam.equals("hlzip")){
 										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
-										//Param_val = CustomParamFunctions.validate_wfxtg_results("hlzip",feed);
+									//	Param_val = CustomParamFunctions.validate_wfxtg_results("hlzip",feed);
 										Param_val = CustomParamFunctions.validate_hard_code_results("hlzip",feed);
 										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
@@ -580,7 +588,7 @@ public class Custom_Parameters_Verification extends Drivers{
 									else if(ParamType.equals("rmid") && custParam.equals("rmid")){
 										logStep("Verifing :"+feedAd+" Pub Ad Call custParam      "           +custParam);
 										Param_val = CustomParamFunctions.validate_not_null_results("rmid",feed);
-										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
+										if(Param_val.equals("Fail") && feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("rmid Value not matched");
@@ -689,9 +697,12 @@ public class Custom_Parameters_Verification extends Drivers{
 					logStep(feedAd +" is not generated");
 					System.out.println("Feed values have not been generated");
 					Assert.fail(feedAd +" is not generated");
+					
 				}
 			}	
 		}
+		
+		
 	}
 
 	public static String verify_video_custom_parameters(String custParam) throws Exception{
@@ -712,6 +723,72 @@ public class Custom_Parameters_Verification extends Drivers{
 		return result;
 	}
 	
+	public static String verify_daily_custom_parameters(String custParam) throws Exception{
+
+		String result = null;
+		String pubad_val =null;
+		Map<String, String> pubads_call_results = Functions.read_Video_Pub_Ad_Call_Data("Dailydetails");
+		pubad_val =pubads_call_results.get(custParam);
+		logStep("navigate to daily details");
+		logStep("Tap On daily");
+		logStep("Verify daily details pub Ad call is being made in charles");
+		if(!pubad_val.isEmpty()){
+			logStep("Verified Video PubAd "+custParam+" Data : "+pubad_val+" Value Presented As Expected");
+			System.out.println("Video PubAd "+custParam+" Data : "+pubad_val);
+			result="Pass";
+			System.out.println("Result "+result);
+		}
+		return result;
+		}
+	/*	DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");  
+		   LocalDateTime now = LocalDateTime.now();  
+		   System.out.println(dtf.format(now));  */
+		/*Date date = new Date();
+
+	    SimpleDateFormat simpleDateFormat1 = new SimpleDateFormat("EEEE");
+
+	    System.out.println("DAY "+simpleDateFormat1.format(date).toLowerCase());
+
+	    SimpleDateFormat simpleDateFormat2 = new SimpleDateFormat("MMMM");
+	    System.out.println("MONTH "+simpleDateFormat2.format(date).toLowerCase());
+
+	    SimpleDateFormat  simpleDateFormat3 = new SimpleDateFormat("YYYY");
+	    System.out.println("YEAR "+simpleDateFormat3.format(date).toLowerCase());
+		String result = null;
+		String pubad_val =null;
+		Map<String, String> pubads_call_results = Functions.read_Video_Pub_Ad_Call_Data("Dailydetails");
+		pubad_val =pubads_call_results.get(custParam);
+		logStep("navigate to daily details");
+		logStep("Tap On daily");
+		logStep("Verify daily details pub Ad call is being made in charles");
+		if(custParam.equalsIgnoreCase("mnth")) {
+			if(!pubad_val.isEmpty()){
+				System.out.println("");
+				if(pubad_val.contains(simpleDateFormat2.format(date).toLowerCase())) {
+					logStep("Verified daily details PubAd "+custParam+" Data : "+pubad_val+" Value Presented As Expected");
+					logStep(pubad_val+ "is matchec with" +simpleDateFormat2.format(date).toLowerCase());
+					System.out.println(pubad_val+ "is matchec with" +simpleDateFormat2.format(date).toLowerCase());
+					result="Pass";
+					System.out.println("Result "+result);
+			}
+		}
+		}
+		if(custParam.equalsIgnoreCase("dt")) {
+			if(!pubad_val.isEmpty()){
+				System.out.println("");
+				if(pubad_val.contains(simpleDateFormat1.format(date).toLowerCase())) {
+					logStep("Verified daily details PubAd "+custParam+" Data : "+pubad_val+" Value Presented As Expected");
+					logStep(pubad_val+ "is matchec with" +simpleDateFormat1.format(date).toLowerCase());
+					System.out.println(pubad_val+ "is matchec with" +simpleDateFormat1.format(date).toLowerCase());
+					result="Pass";
+					System.out.println("Result "+result);
+			}
+			}
+		
+
+	}
+		return result;*/
+	//}
 	
 	public static String verify_video_request(String custParam) throws Exception{
 		String required_info=null;
@@ -924,23 +1001,7 @@ public class Custom_Parameters_Verification extends Drivers{
 
 
 	}
-public static String verify_daily_custom_parameters(String custParam) throws Exception{
 
-		String result = null;
-		String pubad_val =null;
-		Map<String, String> pubads_call_results = Functions.read_Video_Pub_Ad_Call_Data("Dailydetails");
-		pubad_val =pubads_call_results.get(custParam);
-		logStep("navigate to daily details");
-		logStep("Tap On daily");
-		logStep("Verify daily details pub Ad call is being made in charles");
-		if(!pubad_val.isEmpty()){
-			logStep("Verified daily details PubAd "+custParam+" Data : "+pubad_val+" Value Presented As Expected");
-			System.out.println("daily details PubAd "+custParam+" Data : "+pubad_val);
-			result="Pass";
-			System.out.println("Result "+result);
-		}
-		return result;
-		}	
 
 
 
