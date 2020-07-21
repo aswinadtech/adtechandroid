@@ -536,6 +536,10 @@ public class smokeTestCases extends Drivers {
 		System.out.println("================= Verify amazon aax Hourly1 big ad details  test case  End =========================");
 
 	}
+	
+	
+	
+	
 	//aax's
 
 	@Test(priority = 54, enabled = true)
@@ -579,6 +583,91 @@ public class smokeTestCases extends Drivers {
 		Functions.get_aaxcal_Hourly3();
 		System.out.println("================= Verify amazon aax Hourly3 big ad call test case End =========================");
 	}
+	  
+		 @Test(priority = 70, enabled = true)
+	  
+		  @Title("Verifying  feed_1 ad call pull to refrersh scenario") 
+		  public  void Smoke_Test_Verifying_feed1_pulltoreresh_scenario() throws  Exception {	 
+		  logStep("Verifying feed_1 ad call pull to refrersh scenario");
+		  System.out.
+		  println("================= Verifying  feed_1 ad  call pull to refrersh scenario started =========================" ); 
+		 AppFunctions.Kill_Launch_App();
+		  CharlesFunctions.ClearSessions();
+		  CharlesFunctions.startSessionBrowserData();
+		  AppFunctions.Pull_To_Refresh("Pulltorefresh");
+		  AppFunctions.Pull_To_Refresh("Pulltorefresh");
+		  CharlesFunctions.ExportSession(); 
+		  Functions.verifying_feedcalls(1);
+		  System.out. println("================= Verifying  feed_1 ad  call pull to refrersh scenario started End =========================" ); 
+		  }
+		  
+		  @Test(priority = 71, enabled = true)
+		  
+		  @Title("Verifying  home screen marquee call pull to refrersh scenario") public
+		  void Smoke_Test_Verifying_homescreenmarquee__pulltoreresh_scenario() throws
+		  Exception {
+		  logStep("Verifying  home screen marquee call pull to refrersh scenario");
+		  System.out. println("================= Verifying  home screen marquee call pull to refrersh scenario started =========================");
+		  Functions.finding_Homescreen_marquee_iu_value(); 
+		  System.out.println("================= Verifying  home screen marquee call pull to refrersh scenario  End =========================" );  
+		  }
+		
+		  @Test(priority = 72, enabled = true)	  
+		  @Title("Verifying feed_1 ad  app backgroud launch call scenario") 
+		  public  void Smoke_Test_Verifying_feed1Adcall__backgroundLaunch_scenario() throws  Exception {	 
+		  logStep("Verifying feed_1 ad call backgroud launch scenario");
+		  System.out.
+		  println("================= Verifying  feed_1 ad  call backgroud launch scenario started =========================" ); 
+		  AppFunctions.Kill_Launch_App();
+		  CharlesFunctions.ClearSessions();
+		  CharlesFunctions.startSessionBrowserData();
+		  AppFunctions.Pull_To_Refresh("Pulltorefresh");
+		  AppFunctions.Pull_To_Refresh("Pulltorefresh");
+		  CharlesFunctions.ExportSession(); 
+		  Functions.verifying_feedcalls(1);
+		  System.out. println("================= Verifying  feed_1 ad  call backgroud launch scenario End =========================" ); 
+		  }
+		  
+		  @Test(priority = 73, enabled = true)	  
+		  @Title("Verifying  home screen marquee call backgroud launch scenario") public
+		  void Smoke_Test_Verifying_homescreenmarquee__backgroundLaunch_scenario() throws
+		  Exception {
+		  logStep("Verifying  home screen marquee call backgroud launch scenario");
+		  System.out. println("================= Verifying  home screen marquee call backgroud launch scenario started =========================");
+		  Functions.finding_Homescreen_marquee_iu_value(); 
+		  System.out.println("================= Verifying  home screen marquee call backgroud launch scenario  End =========================" );  
+		  }
+		  
+		  
+		  
+		  @Test(priority = 74, enabled = true)	  
+		  @Title("Verifying feed_1 ad call when user enter new location") 
+		  public  void Smoke_Test_Verifying_feed1Adcall_enter_newLocation_scenario() throws  Exception {	 
+		  logStep("erifying feed_1 ad call when user enter new location");
+		  System.out.
+		  println("================= Verifying  feed_1 ad  call when user enter new location scenario started =========================" ); 
+		  AppFunctions.enter_requiredLocation("10005");
+		  CharlesFunctions.ClearSessions();
+		  CharlesFunctions.startSessionBrowserData();
+		  AppFunctions.Pull_To_Refresh("Pulltorefresh");
+		  AppFunctions.Pull_To_Refresh("Pulltorefresh");
+		  CharlesFunctions.ExportSession(); 
+		  Functions.verifying_feedcalls(1);
+		  System.out. println("=================Verifying  feed_1 ad  call when user enter new location scenario  End =========================" ); 
+		  }
+		  
+		  @Test(priority = 118, enabled = true)	  
+		  @Title("Verifying  home screen marquee call when user enter new location") public
+		  void Smoke_Test_Verifying_homescreenmarquee__enter_newLocation_scenario() throws
+		  Exception {
+		  logStep("Verifying  home screen marquee call backgroud launch scenario");
+		  System.out. println("================= Verifying  home screen marquee call when user enter new location scenario started =========================");
+		  Functions.finding_Homescreen_marquee_iu_value(); 
+		  System.out.println("================= Verifying  home screen marquee call when user enter new location scenario   End =========================" );  
+		  }
+		
+	
+	
 	
 /*	@Test(priority = 60, enabled = true)
 
@@ -1687,13 +1776,14 @@ public class smokeTestCases extends Drivers {
 		 // CharlesFunctions.startSessionBrowserData();
 		  //CharlesFunctions.app_download_from_firebaselink();
 		AppiumFunctions.LaunchAppWithFullReset();
+		Thread.sleep(20000);
 		//AppiumFunctions.Kill_launch();
-		Thread.sleep(5000);
+	//	Thread.sleep(5000);
 		AppFunctions.gettingApkVersion() ;
-		Thread.sleep(5000);
-		AppFunctions.enablingBranch("adsTestAutomation2");
-		AppiumFunctions.Kill_launch();
-		AppiumFunctions.Kill_launch();
+		//Thread.sleep(5000);
+	//	AppFunctions.enablingBranch("adsTestAutomation2");
+		//AppiumFunctions.Kill_launch();
+		//AppiumFunctions.Kill_launch();
 		//AppFunctions.enter_requiredLocation("10005");
 		Thread.sleep(10000);
 		//AppiumFunctions.SwipeUp_Counter_feedcards(30);
