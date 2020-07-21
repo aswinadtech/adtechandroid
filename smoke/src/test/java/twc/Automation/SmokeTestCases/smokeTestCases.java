@@ -185,7 +185,7 @@ public class smokeTestCases extends Drivers {
 
 	// going to details also
 
-	@Test(priority = 20, enabled = true)
+/*	@Test(priority = 20, enabled = true)
 	@Title("Verifying feed_2 ad call")
 	public void Smoke_Test_verifying_feed_2adcall() throws Exception {
 		System.out.println("================= Verifying feed_2 ad call tescase Started =========================");
@@ -461,8 +461,7 @@ public class smokeTestCases extends Drivers {
 		System.out.println("================= Verifying outdoor detailpage adcall iu End =========================");
 	}
 //need to add aax
-	
-	//**************************************************************************************************************************//
+
 	@Test(priority = 48, enabled = true)
 	@Title("Verifying iu value for hourly detailpage")
 	public void Smoke_Test_Verify_hourly_detailpage_adcall_iu() throws Exception {
@@ -553,7 +552,7 @@ public class smokeTestCases extends Drivers {
 				"================= Verify amazon aax Hourly3 details big  ad call test case  Started =========================");
 		Functions.get_aaxcal_Hourly3();
 		System.out.println("================= Verify amazon aax Hourly3 big ad call test case End =========================");
-	}
+	}*/
 	
 	/*@Test(priority = 60, enabled = true)
 
