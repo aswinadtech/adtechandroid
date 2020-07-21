@@ -546,6 +546,8 @@ public static void clickOnRadarMaps() throws Exception{
 }	
 public static void click_Todaydetails_element() throws Exception
 {
+	
+	
 	try {
 		new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("com.weather.Weather:id/details_button")));
 	Ad.findElementById("com.weather.Weather:id/details_button").click();
@@ -561,8 +563,8 @@ public static void click_Todaydetails_element() throws Exception
 			logStep("today details element clicked");
 		}
 		catch(Exception e1) {
-			new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("com.weather.Weather:id/today_card_container")));
-		Ad.findElementById("com.weather.Weather:id/today_card_container").click();
+			new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("com.weather.Weather:id/details_button")));
+		Ad.findElementById("com.weather.Weather:id/details_button").click();
 		System.out.println("today details  element clicked");
 		logStep("today details element clicked");
 		}
@@ -871,7 +873,7 @@ if(ModuleName.toString().contains("Health & Activities")) {
 	 RunningCount=1;
 	}
 	
-	/*if(CofFluCount==0) {
+	if(CofFluCount==0) {
 	 AppiumFunctions.click_cold_Flu_element();
 	  AppiumFunctions.clickOnBackArrowElement();
 	  Thread.sleep(5000);
@@ -882,7 +884,7 @@ if(ModuleName.toString().contains("Health & Activities")) {
 	  AppiumFunctions.clickOnBackArrowElement();
 	  Thread.sleep(5000);
 	  AllergyCount=1;
-}*/
+}
 if(ModuleName.toString().contains("Today's Details") ) {
 	if(TodayDeatilsCount==0) {
 	AppiumFunctions.click_Todaydetails_element();
@@ -891,7 +893,7 @@ if(ModuleName.toString().contains("Today's Details") ) {
 	}
 }
 
-/*if(ModuleName.toString().contains("Air Quality")) {
+if(ModuleName.toString().contains("Air Quality")) {
 	if(AirQualityCount==0) {
  AppiumFunctions.click_Airpollution_element();
 AppiumFunctions.clickOnBackArrowElement();
@@ -906,7 +908,7 @@ if(ModuleName.toString().contains("Outdoor Conditions")) {
  Thread.sleep(5000);
  outdoorcount=1;
  
-	}*/
+	}
 		
 		}
 }
