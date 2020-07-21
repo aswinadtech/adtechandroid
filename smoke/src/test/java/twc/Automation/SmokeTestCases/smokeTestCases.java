@@ -592,9 +592,10 @@ public class smokeTestCases extends Drivers {
 		  logStep("Verifying feed_1 ad call pull to refrersh scenario");
 		  System.out.
 		  println("================= Verifying  feed_1 ad  call pull to refrersh scenario started =========================" ); 
-		 AppFunctions.Kill_Launch_App();
 		  CharlesFunctions.ClearSessions();
 		  CharlesFunctions.startSessionBrowserData();
+		  AppFunctions.Kill_Launch_App();
+		  AppFunctions.Kill_Launch_App();
 		  AppFunctions.Pull_To_Refresh("Pulltorefresh");
 		  AppFunctions.Pull_To_Refresh("Pulltorefresh");
 		  CharlesFunctions.ExportSession(); 
@@ -624,7 +625,7 @@ public class smokeTestCases extends Drivers {
 		  
 		  }
 	
-		  @Test(priority = 72, enabled = true)	  
+		/*  @Test(priority = 72, enabled = true)	  
 		  @Title("Verifying feed_1 ad  app backgroud launch call scenario") 
 		  public  void Smoke_Test_Verifying_feed1Adcall__backgroundLaunch_scenario() throws  Exception {	 
 		  logStep("Verifying feed_1 ad call backgroud launch scenario");
@@ -646,7 +647,7 @@ public class smokeTestCases extends Drivers {
 		  System.out. println("================= Verifying  home screen marquee call backgroud launch scenario started =========================");
 		  Functions.finding_Homescreen_marquee_iu_value(); 
 		  System.out.println("================= Verifying  home screen marquee call backgroud launch scenario  End =========================" );  
-		  }
+		  }*/
 		  
 		  
 		  
@@ -1779,9 +1780,9 @@ public class smokeTestCases extends Drivers {
 		 //AppiumFunctions.AppiumServerStop(); 
 		// AppiumFunctions.AppiumServerStart();
 		 
-		// CharlesFunctions.ClearSessions();
+		 CharlesFunctions.ClearSessions();
 
-		 // CharlesFunctions.startSessionBrowserData();
+		 CharlesFunctions.startSessionBrowserData();
 		  //CharlesFunctions.app_download_from_firebaselink();
 		AppiumFunctions.LaunchAppWithFullReset();
 		Thread.sleep(20000);
