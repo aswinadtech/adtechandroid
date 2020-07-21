@@ -80,7 +80,7 @@ public class smokeTestCases extends Drivers {
 	}
 
 	@Test(priority = 4, enabled = true)
-	@Title("Verifying Lotame api call url")
+	@Title("Verifying Lotame adcrw api call url")
 	public void Smoke_Test_CaseVerify_adcrwdcntrlnet_url() throws Exception {
 		System.out.println("================= Verifying Lotame ad.crwdcntrl.net url started =========================");
 		Functions.validating_adcrw();
@@ -106,7 +106,7 @@ public class smokeTestCases extends Drivers {
 		System.out.println("================= Verifying feed_1 ad call tescase End =========================");
 	}
 
-	@Test(priority = 7, enabled = true)
+	@Test(priority = 7, enabled = false)
 	@Title("Verifying amazon Slot Id for feed1 prerol ad call")
 	public void Smoke_Test_amazon_aaxSlot_feed1_preroladcall() throws Exception {
 		System.out.println(
@@ -121,7 +121,7 @@ public class smokeTestCases extends Drivers {
 
 	}
 
-	@Test(priority = 8, enabled = true)
+	@Test(priority = 8, enabled = false)
 	@Title("Verifying amazon Slot Id for feed2 prerol ad call")
 	public void Smoke_Test_amazon_aaxSlot_feed2_preroladcall() throws Exception {
 		System.out.println(
@@ -134,7 +134,7 @@ public class smokeTestCases extends Drivers {
 
 	}
 
-	@Test(priority = 9, enabled = true)
+	@Test(priority = 9, enabled = false)
 	@Title("Verifying amazon Slot Id for feed3 prerol ad call")
 	public void Smoke_Test_amazon_aaxSlot_feed3_preroladcall() throws Exception {
 		System.out.println(
@@ -146,7 +146,7 @@ public class smokeTestCases extends Drivers {
 
 	}
 
-	@Test(priority = 10, enabled = true)
+	@Test(priority = 10, enabled = false)
 	@Title("Verifying amazon Slot Id for hourly details preroll ad call")
 	public void Smoke_Test_amazon_aax_Hourly_preroll_adcall() throws Exception {
 		System.out.println(
@@ -159,7 +159,7 @@ public class smokeTestCases extends Drivers {
 
 	}
 
-	@Test(priority = 11, enabled = true)
+	@Test(priority = 11, enabled = false)
 	@Title("Verifying amazon Slot Id for maps details preroll ad cal")
 	public void Smoke_Test_amazon_aax_mapsdetails_preload_adcall() throws Exception {
 		System.out.println(
@@ -200,7 +200,7 @@ public class smokeTestCases extends Drivers {
 		System.out.println("================= Verifying feed_2 ad call tescase End =========================");
 	}
 
-	@Test(priority = 21, enabled = true)
+	@Test(priority = 21, enabled = false)
 	@Title("Verifying amazon  Slot Id for feed2 ad call")
 	public void Smoke_Test_amazon_aaxSlot_feed2_adcall() throws Exception {
 		System.out.println(
@@ -219,7 +219,7 @@ public class smokeTestCases extends Drivers {
 		System.out.println("================= Verifying feed_3 ad call tescase End =========================");
 	}
 
-	@Test(priority = 23, enabled = true)
+	@Test(priority = 23, enabled = false)
 	@Title("Verifying amazon  Slot Id for feed3 ad call")
 	public void Smoke_Test_amazon_aaxSlot_feed3_adcall() throws Exception {
 		System.out.println(
@@ -238,7 +238,7 @@ public class smokeTestCases extends Drivers {
 		System.out.println("================= Verifying feed_4 ad call tescase End =========================");
 	}
 
-	@Test(priority = 25, enabled = true)
+	@Test(priority = 25, enabled = false)
 	@Title("Verifying amazon  Slot Id for feed4 ad call")
 	public void Smoke_Test_amazon_aaxSlot_feed4_adcall() throws Exception {
 		System.out.println(
@@ -257,7 +257,7 @@ public class smokeTestCases extends Drivers {
 		System.out.println("================= Verifying feed_5 ad call tescase End =========================");
 	}
 
-	@Test(priority = 27, enabled = true)
+	@Test(priority = 27, enabled = false)
 	@Title("Verifying amazon  Slot Id for feed5 ad call")
 	public void Smoke_Test_amazon_aaxSlot_feed5_adcall() throws Exception {
 		System.out.println(
@@ -276,7 +276,7 @@ public class smokeTestCases extends Drivers {
 		System.out.println("================= Verifying feed_6 ad call tescase End =========================");
 	}
 
-	@Test(priority = 29, enabled = true)
+	@Test(priority = 29, enabled = false)
 	@Title("Verifying amazon  Slot Id for feed6 ad call")
 	public void Smoke_Test_amazon_aaxSlot_feed6_adcall() throws Exception {
 		System.out.println(
@@ -298,7 +298,7 @@ public class smokeTestCases extends Drivers {
 				"================= verifying iu value for Radar&Maps deatail card  End =========================");
 	}
 
-	@Test(priority = 31, enabled = true)
+	@Test(priority = 31, enabled = false)
 	@Title("Verifying amazon Slot Id for maps details preroll ad cal")
 	public void Smoke_Test_amazon_aax_mapsdetails_adcall() throws Exception {
 		System.out.println("================= Verify amazon aax maps detais adcall Started =========================");
@@ -316,7 +316,7 @@ public class smokeTestCases extends Drivers {
 		System.out.println("================= Verifying Video ad call testcase End==============================");
 	}
 
-	@Test(priority = 33, enabled = true)
+	@Test(priority = 33, enabled = false)
 	@Title("Verifying amazon Slot Id  video ad call")
 	public void Smoke_Test_amazon_aax_video_adcall() throws Exception {
 		System.out.println("================= Verify amazon aax video adcall Started =========================");
@@ -395,7 +395,7 @@ public class smokeTestCases extends Drivers {
 				"================= Verify_health_and_activities_Running_contenPage_adcall_iu End =========================");
 	}
 
-	@Test(priority = 41, enabled = true)
+	@Test(priority = 41, enabled = false)
 	@Title("Verifying amazon slot Id for Running Bigbanner ad")
 	public void Smoke_Test_Verify_amazon_SlotId_Running_Bigbanner_ad() throws Exception {
 		System.out.println(
@@ -415,7 +415,7 @@ public class smokeTestCases extends Drivers {
 				"================= Verify_health_and_activities_Bot&beach_contenPage_adcall_iu End =========================");
 	}
 
-	@Test(priority = 42, enabled = true)
+	@Test(priority = 42, enabled = false)
 	@Title("Verifying amazon slot Id  for Boat&Beach Bigbanner ad")
 	public void Smoke_Test_Verify_amazon_SlotId_Boat_Beach_Bigbanner_ad() throws Exception {
 		System.out.println(
@@ -435,7 +435,7 @@ public class smokeTestCases extends Drivers {
 				"================= Verify_health_and_activities_Allergy_contenPage_adcall_iu End =========================");
 	}
 
-	@Test(priority = 44, enabled = true)
+	@Test(priority = 44, enabled = false)
 	@Title("Verifying amazon slot Id for Allergy Bigbanner ad")
 	public void Smoke_Test_Verify_amazon_SlotId_Allergy_Bigbanner_ad() throws Exception {
 		System.out.println(
@@ -455,7 +455,7 @@ public class smokeTestCases extends Drivers {
 				"================= Verify_health_and_activities_coldFlu_contenPage_adcall_iu End =========================");
 	}
 
-	@Test(priority = 46, enabled = true)
+	@Test(priority = 46, enabled = false)
 	@Title("Verifying amazon slot Id for Cold&Flu Bigbanner ad")
 	public void Smoke_Test_Verify_amazon_SlotId_coldFlu_Bigbanner_ad() throws Exception {
 		System.out.println(
@@ -475,7 +475,7 @@ public class smokeTestCases extends Drivers {
 	}
 	
 	
-	@Test(priority = 49, enabled = true)
+	@Test(priority = 49, enabled = false)
 	@Title("Verifying amazon slot Id for Outdoor details page")
 	public void Smoke_Test_Verify_amazon_SlotId_outdoor_details() throws Exception {
 		System.out.println(
@@ -495,6 +495,7 @@ public class smokeTestCases extends Drivers {
 		CharlesFunctions.ClearSessions();
 		CharlesFunctions.startSessionBrowserData();
 	   AppFunctions.click_hourly_element();
+	   Thread.sleep(5000);
 		AppFunctions.Swipe();
 		AppFunctions.Swipe();
 		AppFunctions.Swipe();
@@ -507,7 +508,7 @@ public class smokeTestCases extends Drivers {
 		System.out.println("================= Verifying hourly_detailpage_adcall_iu  test case  End =========================");
 	}
 
-	@Test(priority = 51, enabled = true)
+	@Test(priority = 51, enabled = false)
 	@Title("Verifying amazon Slot Id for hourly details ad call")
 	public void Smoke_Test_amazon_aax_Hourly_details_adcall() throws Exception {
 		System.out.println(
@@ -527,7 +528,7 @@ public class smokeTestCases extends Drivers {
 				"================= Verifying hourly1 big ad detailpage_adcall_iu test case  End =========================");
 	}
 	
-	@Test(priority =53, enabled = true)
+	@Test(priority =53, enabled = false)
 	@Title("Verifying amazon Slot Id for hourly1 big ad detailspage")
 	public void Smoke_Test_amazon_aax_Hourly1_bigaddetails_adcall() throws Exception {
 		System.out.println(
@@ -552,7 +553,7 @@ public class smokeTestCases extends Drivers {
 				"================= Verifying hourly2 bigad detailpage_adcall_iu test case End =========================");
 	}
 	
-	@Test(priority = 55, enabled = true)
+	@Test(priority = 55, enabled = false)
 	@Title("Verifying amazon Slot Id for hourly2 big ad detailspage")
 	public void Smoke_Test_amazon_aax_Hourly2_bigaddetails_adcall() throws Exception {
 		System.out.println(
@@ -575,7 +576,7 @@ public class smokeTestCases extends Drivers {
 				"================= Verifying hourly3 bigad detailpage_adcall_iu test case  End =========================");
 	}
 
-	@Test(priority = 57, enabled = true)
+	@Test(priority = 57, enabled = false)
 	@Title("Verifying amazon Slot Id for hourly3 big ad detailspagel")
 	public void Smoke_Test_amazon_aax_Hourly3_bigaddetails_adcall() throws Exception {
 		System.out.println(
@@ -584,7 +585,7 @@ public class smokeTestCases extends Drivers {
 		System.out.println("================= Verify amazon aax Hourly3 big ad call test case End =========================");
 	}
 	  
-		 @Test(priority = 70, enabled = true)
+		 @Test(priority = 68, enabled = true)
 	  
 		  @Title("Verifying  feed_1 ad call pull to refrersh scenario") 
 		  public  void Smoke_Test_Verifying_feed1_pulltoreresh_scenario() throws  Exception {	 
@@ -601,7 +602,7 @@ public class smokeTestCases extends Drivers {
 		  System.out. println("================= Verifying  feed_1 ad  call pull to refrersh scenario started End =========================" ); 
 		  }
 		  
-		  @Test(priority = 71, enabled = true)
+		  @Test(priority = 69, enabled = true)
 		  
 		  @Title("Verifying  home screen marquee call pull to refrersh scenario") public
 		  void Smoke_Test_Verifying_homescreenmarquee__pulltoreresh_scenario() throws
@@ -612,17 +613,26 @@ public class smokeTestCases extends Drivers {
 		  System.out.println("================= Verifying  home screen marquee call pull to refrersh scenario  End =========================" );  
 		  }
 		
+		  
+		  @Test(priority = 70, enabled = true)	  
+		  @Title("Verifying bcp.crwdcntrl call" )
+		  public void Smoke_Test__Verifying_Bcp_apicall_Opti_mode_scenario() throws  Exception { 
+		  logStep("Verifying bcp.crwdcntrl call" ); 
+		  System.out.println("=================Verifying  bcp.crwdcntrl call testcase started =========================");	  
+		  Functions.validating_bcp_privacy_Optinmode_scenarion();
+		  System.out.println("================= Verifying  bcp.crwdcntrl call testcase End =========================" );
+		  
+		  }
+	
 		  @Test(priority = 72, enabled = true)	  
 		  @Title("Verifying feed_1 ad  app backgroud launch call scenario") 
 		  public  void Smoke_Test_Verifying_feed1Adcall__backgroundLaunch_scenario() throws  Exception {	 
 		  logStep("Verifying feed_1 ad call backgroud launch scenario");
 		  System.out.
 		  println("================= Verifying  feed_1 ad  call backgroud launch scenario started =========================" ); 
-		  AppFunctions.Kill_Launch_App();
 		  CharlesFunctions.ClearSessions();
 		  CharlesFunctions.startSessionBrowserData();
-		  AppFunctions.Pull_To_Refresh("Pulltorefresh");
-		  AppFunctions.Pull_To_Refresh("Pulltorefresh");
+		 Ad.runAppInBackground(25);
 		  CharlesFunctions.ExportSession(); 
 		  Functions.verifying_feedcalls(1);
 		  System.out. println("================= Verifying  feed_1 ad  call backgroud launch scenario End =========================" ); 
@@ -646,11 +656,9 @@ public class smokeTestCases extends Drivers {
 		  logStep("erifying feed_1 ad call when user enter new location");
 		  System.out.
 		  println("================= Verifying  feed_1 ad  call when user enter new location scenario started =========================" ); 
-		  AppFunctions.enter_requiredLocation("10005");
 		  CharlesFunctions.ClearSessions();
 		  CharlesFunctions.startSessionBrowserData();
-		  AppFunctions.Pull_To_Refresh("Pulltorefresh");
-		  AppFunctions.Pull_To_Refresh("Pulltorefresh");
+		  AppFunctions.enter_requiredLocation("30124");
 		  CharlesFunctions.ExportSession(); 
 		  Functions.verifying_feedcalls(1);
 		  System.out. println("=================Verifying  feed_1 ad  call when user enter new location scenario  End =========================" ); 
