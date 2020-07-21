@@ -3176,41 +3176,41 @@ public static void get_aaxcal_Daily() throws Exception {
 public static void get_aaxcal_map_details() throws Exception {
 	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
 	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
-	System.out.println("Verifying amazon \"slot\": \"5db1161b-b504-4640-9496-dfe6284f84ab\"  for db_display/details/map");
-	logStep("Verifying amazon \"slot\": \"5db1161b-b504-4640-9496-dfe6284f84ab\"  for db_display/details/map");
+	System.out.println("Verifying amazon \"slotId\": \"5db1161b-b504-4640-9496-dfe6284f84ab\"  for db_display/details/map");
+	logStep("Verifying amazon \"slot Id\": \"5db1161b-b504-4640-9496-dfe6284f84ab\"  for db_display/details/map");
 	//System.out.println("Slot Name is  : "+slotID);
 	if(sb.contains("5db1161b-b504-4640-9496-dfe6284f84ab")) {
 	System.out.println("5db1161b-b504-4640-9496-dfe6284f84ab is trigred for aax  call db_display/details/map");
 	logStep("5db1161b-b504-4640-9496-dfe6284f84ab is trigred for aax  call db_display/details/map");
 	}
 	if(!sb.contains("5db1161b-b504-4640-9496-dfe6284f84ab")) {
-		System.out.println("slotID 5db1161b-b504-4640-9496-dfe6284f84ab is not trigred for aax call db_display/details/maps");
-		logStep("slotID 5db1161b-b504-4640-9496-dfe6284f84ab is not trigred for aax call db_display/details/maps");
-		Assert.fail("slotID 5db1161b-b504-4640-9496-dfe6284f84ab is not trigred for aax call db_display/details/maps");
+		System.out.println("slotId 5db1161b-b504-4640-9496-dfe6284f84ab is not trigred for aax call db_display/details/maps");
+		logStep("slotId 5db1161b-b504-4640-9496-dfe6284f84ab is not trigred for aax call db_display/details/maps");
+		Assert.fail("slotId 5db1161b-b504-4640-9496-dfe6284f84ab is not trigred for aax call db_display/details/maps");
 		}
 }
 
 public static void get_aaxcal_video_details() throws Exception {
 	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
 	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
-	System.out.println("Verifying amazon \"slot\": \"f71b7e17-6e34-4f6c-98f6-bbbe9f55586c\"  for video ad call");
-	logStep("Verifying amazon \"slot\": \"f71b7e17-6e34-4f6c-98f6-bbbe9f55586c\"   for video ad call");
+	System.out.println("Verifying amazon \"slotId\": \"f71b7e17-6e34-4f6c-98f6-bbbe9f55586c\"  for video ad call");
+	logStep("Verifying amazon \"slotId\": \"f71b7e17-6e34-4f6c-98f6-bbbe9f55586c\"   for video ad call");
 	//System.out.println("Slot Name is  : "+slotID);
 	if(sb.contains("f71b7e17-6e34-4f6c-98f6-bbbe9f55586c")) {
 	System.out.println("f71b7e17-6e34-4f6c-98f6-bbbe9f55586c is trigred for aax  call  app_android_us/video ");
 	logStep("f71b7e17-6e34-4f6c-98f6-bbbe9f55586c is trigred for aax  call app_android_us/video");
 	}
 	if(!sb.contains("f71b7e17-6e34-4f6c-98f6-bbbe9f55586c")) {
-		System.out.println("slotID f71b7e17-6e34-4f6c-98f6-bbbe9f55586c is not trigred for aax call app_android_us/video");
-		logStep("slotID f71b7e17-6e34-4f6c-98f6-bbbe9f55586c is not trigred for aax call app_android_us/video");
-		Assert.fail("slotID f71b7e17-6e34-4f6c-98f6-bbbe9f55586c is not trigred for aax call app_android_us/video");
+		System.out.println("slotId f71b7e17-6e34-4f6c-98f6-bbbe9f55586c is not trigred for aax call app_android_us/video");
+		logStep("slotId f71b7e17-6e34-4f6c-98f6-bbbe9f55586c is not trigred for aax call app_android_us/video");
+		Assert.fail("slotId f71b7e17-6e34-4f6c-98f6-bbbe9f55586c is not trigred for aax call app_android_us/video");
 		}
 }
 public static void get_aaxcal_today_details() throws Exception {
 	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
 	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
-	System.out.println("Verifying amazon \"slot\": \"c9896928-c007-4580-b135-a32d716e2c2f\"  for today details ad call");
-	logStep("Verifying amazon \"slot\": \"c9896928-c007-4580-b135-a32d716e2c2f\"   for today details ad call");
+	System.out.println("Verifying amazon \"slotId\": \"c9896928-c007-4580-b135-a32d716e2c2f\"  for today details ad call");
+	logStep("Verifying amazon \"slotId\": \"c9896928-c007-4580-b135-a32d716e2c2f\"   for today details ad call");
 	//System.out.println("Slot Name is  : "+slotID);
 	if(sb.contains("c9896928-c007-4580-b135-a32d716e2c2f")) {
 	System.out.println("c9896928-c007-4580-b135-a32d716e2c2f is trigred for aax  call db_display/details/today");
@@ -3218,9 +3218,9 @@ public static void get_aaxcal_today_details() throws Exception {
 	
 	}
 	if(!sb.contains("c9896928-c007-4580-b135-a32d716e2c2f")) {
-		System.out.println("slotID c9896928-c007-4580-b135-a32d716e2c2f is not trigred for aax call db_display/details/today");
-		logStep("slotID c9896928-c007-4580-b135-a32d716e2c2f is not trigred for aax call db_display/details/today");
-		Assert.fail("slotID c9896928-c007-4580-b135-a32d716e2c2f is not trigred for aax call db_display/details/today");
+		System.out.println("slotId c9896928-c007-4580-b135-a32d716e2c2f is not trigred for aax call db_display/details/today");
+		logStep("slotId c9896928-c007-4580-b135-a32d716e2c2f is not trigred for aax call db_display/details/today");
+		Assert.fail("slotId c9896928-c007-4580-b135-a32d716e2c2f is not trigred for aax call db_display/details/today");
 		}
 }
 
@@ -3264,36 +3264,54 @@ public static void get_aaxcal_Boat_Beach_spotlight() throws Exception {
 		}
 }
 
+
+public static void get_aaxcal_SH_details() throws Exception {
+	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
+	System.out.println("Verifying amazon \"slotId\": \"6767bf53-0d81-4bf5-a121-e60099e4064c\"  for  call display/content/");
+	logStep("Verifying amazon \"slotId\": \"6767bf53-0d81-4bf5-a121-e60099e4064c\"  for call display/content/flu");
+	//System.out.println("Slot Name is  : "+slotID);
+	if(sb.contains("6767bf53-0d81-4bf5-a121-e60099e4064c")) {
+	System.out.println("6767bf53-0d81-4bf5-a121-e60099e4064c is trigred for aax  call display/content/flu");
+	logStep("6767bf53-0d81-4bf5-a121-e60099e4064c is trigred for aax  call display/content/flu");
+	}
+	if(!sb.contains("6767bf53-0d81-4bf5-a121-e60099e4064c")) {
+		System.out.println("slotId 6767bf53-0d81-4bf5-a121-e60099e4064c  is not trigred for aax call display/content/flu");
+		logStep("slotId 6767bf53-0d81-4bf5-a121-e60099e4064c  is not trigred for aax call display/content/flu");
+		Assert.fail("slotId 6767bf53-0d81-4bf5-a121-e60099e4064c is not trigred for aax call display/content/flu");
+		}
+}
+
 public static void get_aaxcal_Cold_Flu_Bigbanner() throws Exception {
 	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
 	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
-	System.out.println("Verifying amazon \"slot\": \"4ee58e70-1c8f-41c8-b7cc-ae8089f0c20b\"  for  Cold&Flu content page");
-	logStep("Verifying amazon \"slot\": \"4ee58e70-1c8f-41c8-b7cc-ae8089f0c20b\"   for Cold&Flu content page");
+	System.out.println("Verifying amazon \"slotId\": \"B560f8ed-c10f-486a-a313-eb84832664cc\"  for  call display/content/flu");
+	logStep("Verifying amazon \"slotId\": \"B560f8ed-c10f-486a-a313-eb84832664cc\"  for call display/content/flu");
 	//System.out.println("Slot Name is  : "+slotID);
-	if(sb.contains("4ee58e70-1c8f-41c8-b7cc-ae8089f0c20b")) {
-	System.out.println("4ee58e70-1c8f-41c8-b7cc-ae8089f0c20b is trigred for aax  call display/content/flu");
-	logStep("4ee58e70-1c8f-41c8-b7cc-ae8089f0c20b is trigred for aax  call display/content/flu");
+	if(sb.contains("B560f8ed-c10f-486a-a313-eb84832664cc")) {
+	System.out.println("B560f8ed-c10f-486a-a313-eb84832664cc is trigred for aax  call display/content/flu");
+	logStep("B560f8ed-c10f-486a-a313-eb84832664cc is trigred for aax  call display/content/flu");
 	}
-	if(!sb.contains("4ee58e70-1c8f-41c8-b7cc-ae8089f0c20b")) {
-		System.out.println("slotID 4ee58e70-1c8f-41c8-b7cc-ae8089f0c20b is not trigred for aax call display/content/flu");
-		logStep("slotID 4ee58e70-1c8f-41c8-b7cc-ae8089f0c20b is not trigred for aax call display/content/flu");
-		Assert.fail("slotID 4ee58e70-1c8f-41c8-b7cc-ae8089f0c20b is not trigred for aax call display/content/flu");
+	if(!sb.contains("B560f8ed-c10f-486a-a313-eb84832664cc")) {
+		System.out.println("slotId B560f8ed-c10f-486a-a313-eb84832664cc  is not trigred for aax call display/content/flu");
+		logStep("slotId B560f8ed-c10f-486a-a313-eb84832664cc  is not trigred for aax call display/content/flu");
+		Assert.fail("slotId B560f8ed-c10f-486a-a313-eb84832664cc is not trigred for aax call display/content/flu");
 		}
 }
 public static void get_aaxcal_Boat_Beach_Bigbanner() throws Exception {
 	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
 	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
-	System.out.println("Verifying amazon \"slot\": \"58b652be-94ba-494d-8ac8-ac5e9ec00433\"  for  Boat&beach content page");
-	logStep("Verifying amazon \"slot\": \"58b652be-94ba-494d-8ac8-ac5e9ec00433\"   for Boat&beach content page");
+	System.out.println("Verifying amazon \"slotId\": \"58b652be-94ba-494d-8ac8-ac5e9ec00433\"  for  Boat&beach content page");
+	logStep("Verifying amazon \"slotId\": \"58b652be-94ba-494d-8ac8-ac5e9ec00433\"   for Boat&beach content page");
 	//System.out.println("Slot Name is  : "+slotID);
 	if(sb.contains("58b652be-94ba-494d-8ac8-ac5e9ec00433")) {
 	System.out.println("58b652be-94ba-494d-8ac8-ac5e9ec00433 is trigred for aax  call display/content/boat_beach");
 	logStep("58b652be-94ba-494d-8ac8-ac5e9ec00433 is trigred for aax  call display/content/boat_beach");
 	}
 	if(!sb.contains("58b652be-94ba-494d-8ac8-ac5e9ec00433")) {
-		System.out.println("slotID 58b652be-94ba-494d-8ac8-ac5e9ec00433 is not trigred for aax call display/content/boat_beach");
-		logStep("slotID 58b652be-94ba-494d-8ac8-ac5e9ec00433 is not trigred for aax call display/content/boat_beach");
-		Assert.fail("slotID 58b652be-94ba-494d-8ac8-ac5e9ec00433 is not trigred for aax call display/content/boat_beach");
+		System.out.println("slotId 58b652be-94ba-494d-8ac8-ac5e9ec00433 is not trigred for aax call display/content/boat_beach");
+		logStep("slotId 58b652be-94ba-494d-8ac8-ac5e9ec00433 is not trigred for aax call display/content/boat_beach");
+		Assert.fail("slotId 58b652be-94ba-494d-8ac8-ac5e9ec00433 is not trigred for aax call display/content/boat_beach");
 		}
 }
 public static void get_aaxcal_AQ() throws Exception {
@@ -3344,37 +3362,57 @@ public static void get_aaxcal_hurricanedetails() throws Exception {
 		Assert.fail("slotID 5e7f510687cc453388a9c8442f95dc65 is not trigred for aax call db_display/details/hurricane");
 		}
 }
+
+
+public static void get_aaxcal_aq() throws Exception {
+	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
+	System.out.println("Verifying amazon \"slotId\": \"9aec4232-00c6-476b-8bbf-e66ecbd57edb\"  for  db_display/content/aq");
+	logStep("Verifying amazon \"slotId\": \"9aec4232-00c6-476b-8bbf-e66ecbd57edb\"   for db_display/content/aq");
+	//System.out.println("Slot Name is  : "+slotID);
+	if(sb.contains("9aec4232-00c6-476b-8bbf-e66ecbd57edb")) {
+	System.out.println("9aec4232-00c6-476b-8bbf-e66ecbd57edb is trigred for aax  call db_display/content/aq");
+	logStep("9aec4232-00c6-476b-8bbf-e66ecbd57edb is trigred for aax  call db_display/content/aq");
+	}
+	if(!sb.contains("9aec4232-00c6-476b-8bbf-e66ecbd57edb")) {
+		System.out.println("slotId 9aec4232-00c6-476b-8bbf-e66ecbd57edb is not trigred for aax call db_display/content/aq");
+		logStep(" slotId 9aec4232-00c6-476b-8bbf-e66ecbd57edb is  not trigred for aax  call db_display/content/aq");
+		Assert.fail("slotId 9aec4232-00c6-476b-8bbf-e66ecbd57edb is not trigred for aax call db_display/content/aq");
+		}
+}
+
+
 public static void get_aaxcal_Running_Bigbanner() throws Exception {
 	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
 	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
-	System.out.println("Verifying amazon \"slot\": \"27a25b19-0b5c-44c6-9051-bb859a7e0f66\"  for  Running content page");
-	logStep("Verifying amazon \"slot\": \"27a25b19-0b5c-44c6-9051-bb859a7e0f66\"   for Running content page");
+	System.out.println("Verifying amazon \"slotId\": \"27a25b19-0b5c-44c6-9051-bb859a7e0f66\"  for  db_display/content/running");
+	logStep("Verifying amazon \"slotId\": \"27a25b19-0b5c-44c6-9051-bb859a7e0f66\"   for db_display/content/running");
 	//System.out.println("Slot Name is  : "+slotID);
 	if(sb.contains("27a25b19-0b5c-44c6-9051-bb859a7e0f66")) {
 	System.out.println("27a25b19-0b5c-44c6-9051-bb859a7e0f66 is trigred for aax  call db_display/content/running");
 	logStep("27a25b19-0b5c-44c6-9051-bb859a7e0f66 is trigred for aax  call db_display/content/running");
 	}
 	if(!sb.contains("27a25b19-0b5c-44c6-9051-bb859a7e0f66")) {
-		System.out.println("slotID 27a25b19-0b5c-44c6-9051-bb859a7e0f66 is not trigred for aax call db_display/content/running");
-		logStep("27a25b19-0b5c-44c6-9051-bb859a7e0f66 is  not trigred for aax  call db_display/content/running");
-		Assert.fail("slotID 27a25b19-0b5c-44c6-9051-bb859a7e0f66 is not trigred for aax call db_display/content/running");
+		System.out.println("slotId 27a25b19-0b5c-44c6-9051-bb859a7e0f66 is not trigred for aax call db_display/content/running");
+		logStep("slotId 27a25b19-0b5c-44c6-9051-bb859a7e0f66 is  not trigred for aax  call db_display/content/running");
+		Assert.fail("slotId 27a25b19-0b5c-44c6-9051-bb859a7e0f66 is not trigred for aax call db_display/content/running");
 		}
 }
 
 public static void get_aaxcal_Allergy_Bigbanner() throws Exception {
 	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
 	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
-	System.out.println("Verifying amazon \"slot\": \"5db1161b-b504-4640-9496-dfe6284f84ab\"  for  Allergy content page");
-	logStep("Verifying amazon \"slot\": \"5db1161b-b504-4640-9496-dfe6284f84ab\"  for Allergy content page");
+	System.out.println("Verifying amazon \"slotId\": \"1f61604c-bb3a-4e2e-a5e3-d9793ec078ed\"  for  db_display/contents/Allergy");
+	logStep("Verifying amazon \"slotId\": \"1f61604c-bb3a-4e2e-a5e3-d9793ec078ed\"  for db_display/contents/Allergy");
 	//System.out.println("Slot Name is  : "+slotID);
-	if(sb.contains("5db1161b-b504-4640-9496-dfe6284f84ab")) {
-	System.out.println("5db1161b-b504-4640-9496-dfe6284f84ab is trigred for aax  call db_display/contents/Allergy");	
-	logStep("5db1161b-b504-4640-9496-dfe6284f84ab is trigred for aax  call db_display/contents/Allergy");
+	if(sb.contains("1f61604c-bb3a-4e2e-a5e3-d9793ec078ed")) {
+	System.out.println("1f61604c-bb3a-4e2e-a5e3-d9793ec078ed is trigred for aax  call db_display/contents/Allergy");	
+	logStep("1f61604c-bb3a-4e2e-a5e3-d9793ec078ed is trigred for aax  call db_display/contents/Allergy");
 	}
-	if(!sb.contains("5db1161b-b504-4640-9496-dfe6284f84ab")) {
-		System.out.println("slotID 5db1161b-b504-4640-9496-dfe6284f84ab is not trigred for aax call db_display/contents/Allergy");
-		logStep("5db1161b-b504-4640-9496-dfe6284f84ab is not trigred for aax  call db_display/contents/Allergy");
-		Assert.fail("slotID 5db1161b-b504-4640-9496-dfe6284f84ab is not trigred for aax call db_display/contents/Allergy");
+	if(!sb.contains("1f61604c-bb3a-4e2e-a5e3-d9793ec078ed")) {
+		System.out.println("slotId 1f61604c-bb3a-4e2e-a5e3-d9793ec078ed is not trigred for aax call db_display/contents/Allergy");
+		logStep("slotId 1f61604c-bb3a-4e2e-a5e3-d9793ec078ed is not trigred for aax  call db_display/contents/Allergy");
+		Assert.fail("slotId 1f61604c-bb3a-4e2e-a5e3-d9793ec078ed is not trigred for aax call db_display/contents/Allergy");
 		}
 }
 
@@ -5027,7 +5065,7 @@ public static void verifyingdailydetailiu() throws Exception {
 	System.out.println("iu value should not be null");
 	
 	
-		if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day/")){
+		if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day")){
 			try {
 			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day"));
 	//		String required_info = Read_API_Call_Data.toString().substring(Read_API_Call_Data.toString().indexOf("&amp"));
