@@ -292,13 +292,13 @@ public class regressionTestCases extends Drivers {
 	 * ); }
 	 */
 
-	@Test(priority = 82)
+	/*@Test(priority = 82)
 	@Title("Verify custom parameter hlzip")
 	public void C333214_Verify_cust_param_hlzip() throws Exception {
 		System.out.println("================= Custom Parameter Hlzip Verfication Started =========================");
 		Custom_Parameters_Verification.parameters_Verification("hlzip");
 		System.out.println("================= Custom Parameter Hlzip Verfication End =========================");
-	}
+	}*/
 
 	/*
 	 * @Test(priority=83)
@@ -741,6 +741,7 @@ AppiumFunctions.LaunchAppWithFullReset();
 Thread.sleep(15000);
 AppiumFunctions.gettingApkVersion();
 Thread.sleep(5000);
+CustomParamFunctions.get_fhic_floc_value();    
 AppiumFunctions.SwipeUp_Counter(15);	
 AppiumFunctions.click_hourly_element();
 Thread.sleep(5000);
