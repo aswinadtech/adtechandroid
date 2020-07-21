@@ -106,7 +106,7 @@ public class smokeTestCases extends Drivers {
 		System.out.println("================= Verifying feed_1 ad call tescase End =========================");
 	}
 
-	@Test(priority = 7, enabled = false)
+	@Test(priority = 7, enabled = true)
 	@Title("Verifying amazon Slot Id for feed1 prerol ad call")
 	public void Smoke_Test_amazon_aaxSlot_feed1_preroladcall() throws Exception {
 		System.out.println(
@@ -121,7 +121,7 @@ public class smokeTestCases extends Drivers {
 
 	}
 
-	@Test(priority = 8, enabled = false)
+	@Test(priority = 8, enabled = true)
 	@Title("Verifying amazon Slot Id for feed2 prerol ad call")
 	public void Smoke_Test_amazon_aaxSlot_feed2_preroladcall() throws Exception {
 		System.out.println(
@@ -134,7 +134,7 @@ public class smokeTestCases extends Drivers {
 
 	}
 
-	@Test(priority = 9, enabled = false)
+	@Test(priority = 9, enabled = true)
 	@Title("Verifying amazon Slot Id for feed3 prerol ad call")
 	public void Smoke_Test_amazon_aaxSlot_feed3_preroladcall() throws Exception {
 		System.out.println(
@@ -146,7 +146,7 @@ public class smokeTestCases extends Drivers {
 
 	}
 
-	@Test(priority = 10, enabled = false)
+	@Test(priority = 10, enabled = true)
 	@Title("Verifying amazon Slot Id for hourly details preroll ad call")
 	public void Smoke_Test_amazon_aax_Hourly_preroll_adcall() throws Exception {
 		System.out.println(
@@ -159,7 +159,7 @@ public class smokeTestCases extends Drivers {
 
 	}
 
-	@Test(priority = 11, enabled = false)
+	@Test(priority = 11, enabled = true)
 	@Title("Verifying amazon Slot Id for maps details preroll ad cal")
 	public void Smoke_Test_amazon_aax_mapsdetails_preload_adcall() throws Exception {
 		System.out.println(
@@ -200,7 +200,7 @@ public class smokeTestCases extends Drivers {
 		System.out.println("================= Verifying feed_2 ad call tescase End =========================");
 	}
 
-	@Test(priority = 21, enabled = false)
+	@Test(priority = 21, enabled = true)
 	@Title("Verifying amazon  Slot Id for feed2 ad call")
 	public void Smoke_Test_amazon_aaxSlot_feed2_adcall() throws Exception {
 		System.out.println(
@@ -219,7 +219,7 @@ public class smokeTestCases extends Drivers {
 		System.out.println("================= Verifying feed_3 ad call tescase End =========================");
 	}
 
-	@Test(priority = 23, enabled = false)
+	@Test(priority = 23, enabled = true)
 	@Title("Verifying amazon  Slot Id for feed3 ad call")
 	public void Smoke_Test_amazon_aaxSlot_feed3_adcall() throws Exception {
 		System.out.println(
@@ -238,7 +238,7 @@ public class smokeTestCases extends Drivers {
 		System.out.println("================= Verifying feed_4 ad call tescase End =========================");
 	}
 
-	@Test(priority = 25, enabled = false)
+	@Test(priority = 25, enabled = true)
 	@Title("Verifying amazon  Slot Id for feed4 ad call")
 	public void Smoke_Test_amazon_aaxSlot_feed4_adcall() throws Exception {
 		System.out.println(
@@ -257,7 +257,7 @@ public class smokeTestCases extends Drivers {
 		System.out.println("================= Verifying feed_5 ad call tescase End =========================");
 	}
 
-	@Test(priority = 27, enabled = false)
+	@Test(priority = 27, enabled = true)
 	@Title("Verifying amazon  Slot Id for feed5 ad call")
 	public void Smoke_Test_amazon_aaxSlot_feed5_adcall() throws Exception {
 		System.out.println(
@@ -276,7 +276,7 @@ public class smokeTestCases extends Drivers {
 		System.out.println("================= Verifying feed_6 ad call tescase End =========================");
 	}
 
-	@Test(priority = 29, enabled = false)
+	@Test(priority = 29, enabled = true)
 	@Title("Verifying amazon  Slot Id for feed6 ad call")
 	public void Smoke_Test_amazon_aaxSlot_feed6_adcall() throws Exception {
 		System.out.println(
@@ -298,7 +298,7 @@ public class smokeTestCases extends Drivers {
 				"================= verifying iu value for Radar&Maps deatail card  End =========================");
 	}
 
-	@Test(priority = 31, enabled = false)
+	@Test(priority = 31, enabled = true)
 	@Title("Verifying amazon Slot Id for maps details preroll ad cal")
 	public void Smoke_Test_amazon_aax_mapsdetails_adcall() throws Exception {
 		System.out.println("================= Verify amazon aax maps detais adcall Started =========================");
@@ -316,7 +316,7 @@ public class smokeTestCases extends Drivers {
 		System.out.println("================= Verifying Video ad call testcase End==============================");
 	}
 
-	@Test(priority = 33, enabled = false)
+	@Test(priority = 33, enabled = true)
 	@Title("Verifying amazon Slot Id  video ad call")
 	public void Smoke_Test_amazon_aax_video_adcall() throws Exception {
 		System.out.println("================= Verify amazon aax video adcall Started =========================");
@@ -371,8 +371,21 @@ public class smokeTestCases extends Drivers {
 		System.out.println(
 				"================= Verifying iu value for Air Quality content page testcase  End =========================");
 	}
+	
+	
+	
+	
+	@Test(priority = 39, enabled = false)
+	@Title("Verifying amazon aax for AQ details page")
+	public void Smoke_Test_amazon_aax_Airquality_deatailcard() throws Exception {
+		System.out.println(
+				"================= Verify amazon aax for Air Quality details page Started =========================");
+		Functions.get_aaxcal_aq();
+		System.out.println("================= Verify amazon aax for Air Quality detail Page  End=========================");
+	}
+	
 
-	@Test(priority = 39, enabled = true)
+	@Test(priority = 40, enabled = true)
 	@Title("Verifying  iu value for Running content page")
 	public void Smoke_Test_Verify_health_and_activities_Running_contenPage_adcall_iu() throws Exception {
 		System.out.println(
@@ -382,7 +395,7 @@ public class smokeTestCases extends Drivers {
 				"================= Verify_health_and_activities_Running_contenPage_adcall_iu End =========================");
 	}
 
-	@Test(priority = 40, enabled = false)
+	@Test(priority = 41, enabled = true)
 	@Title("Verifying amazon slot Id for Running Bigbanner ad")
 	public void Smoke_Test_Verify_amazon_SlotId_Running_Bigbanner_ad() throws Exception {
 		System.out.println(
@@ -402,7 +415,7 @@ public class smokeTestCases extends Drivers {
 				"================= Verify_health_and_activities_Bot&beach_contenPage_adcall_iu End =========================");
 	}
 
-	@Test(priority = 42, enabled = false)
+	@Test(priority = 42, enabled = true)
 	@Title("Verifying amazon slot Id  for Boat&Beach Bigbanner ad")
 	public void Smoke_Test_Verify_amazon_SlotId_Boat_Beach_Bigbanner_ad() throws Exception {
 		System.out.println(
@@ -422,7 +435,7 @@ public class smokeTestCases extends Drivers {
 				"================= Verify_health_and_activities_Allergy_contenPage_adcall_iu End =========================");
 	}
 
-	@Test(priority = 44, enabled = false)
+	@Test(priority = 44, enabled = true)
 	@Title("Verifying amazon slot Id for Allergy Bigbanner ad")
 	public void Smoke_Test_Verify_amazon_SlotId_Allergy_Bigbanner_ad() throws Exception {
 		System.out.println(
@@ -442,7 +455,7 @@ public class smokeTestCases extends Drivers {
 				"================= Verify_health_and_activities_coldFlu_contenPage_adcall_iu End =========================");
 	}
 
-	@Test(priority = 46, enabled = false)
+	@Test(priority = 46, enabled = true)
 	@Title("Verifying amazon slot Id for Cold&Flu Bigbanner ad")
 	public void Smoke_Test_Verify_amazon_SlotId_coldFlu_Bigbanner_ad() throws Exception {
 		System.out.println(
@@ -460,9 +473,22 @@ public class smokeTestCases extends Drivers {
 		Functions.Verify_SH_detailpage_adcall_iu();
 		System.out.println("================= Verifying outdoor detailpage adcall iu End =========================");
 	}
+	
+	
+	@Test(priority = 49, enabled = true)
+	@Title("Verifying amazon slot Id for Outdoor details page")
+	public void Smoke_Test_Verify_amazon_SlotId_outdoor_details() throws Exception {
+		System.out.println(
+				"================= verifying amazon SlotId for oudoor details adcall started =========================");
+		Functions.get_aaxcal_SH_details();
+		System.out.println(
+				"================= verifying amazon SlotId for outdoor details adcall  End =========================");
+	}
+	
+	
 //need to add aax
 
-	@Test(priority = 48, enabled = true)
+	@Test(priority = 50, enabled = true)
 	@Title("Verifying iu value for hourly detailpage")
 	public void Smoke_Test_Verify_hourly_detailpage_adcall_iu() throws Exception {
 		System.out.println("================= Verifying hourly_detailpage_adcall_iu test case  Started =========================");
@@ -481,7 +507,7 @@ public class smokeTestCases extends Drivers {
 		System.out.println("================= Verifying hourly_detailpage_adcall_iu  test case  End =========================");
 	}
 
-	@Test(priority = 49, enabled = false)
+	@Test(priority = 51, enabled = true)
 	@Title("Verifying amazon Slot Id for hourly details ad call")
 	public void Smoke_Test_amazon_aax_Hourly_details_adcall() throws Exception {
 		System.out.println(
@@ -491,7 +517,7 @@ public class smokeTestCases extends Drivers {
 
 	}
 	
-	@Test(priority = 50, enabled = true)
+	@Test(priority = 52, enabled = true)
 	@Title("Verifying iu value for hourly1 bigad  detailpage")
 	public void Smoke_Test_Verify_hourly1_bigad_detailpage_adcall_iu() throws Exception {
 		System.out.println(
@@ -501,7 +527,7 @@ public class smokeTestCases extends Drivers {
 				"================= Verifying hourly1 big ad detailpage_adcall_iu test case  End =========================");
 	}
 	
-	@Test(priority =51, enabled = false)
+	@Test(priority =53, enabled = true)
 	@Title("Verifying amazon Slot Id for hourly1 big ad detailspage")
 	public void Smoke_Test_amazon_aax_Hourly1_bigaddetails_adcall() throws Exception {
 		System.out.println(
@@ -512,7 +538,7 @@ public class smokeTestCases extends Drivers {
 	}
 	//aax's
 
-	@Test(priority = 52, enabled = true)
+	@Test(priority = 54, enabled = true)
 	@Title("Verifying iu value for hourly2 bigad  detailpage")
 	public void Smoke_Test_Verify_hourly2_bigad_detailpage_adcall_iu() throws Exception {
 		System.out.println(
@@ -522,7 +548,7 @@ public class smokeTestCases extends Drivers {
 				"================= Verifying hourly2 bigad detailpage_adcall_iu test case End =========================");
 	}
 	
-	@Test(priority = 53, enabled = false)
+	@Test(priority = 55, enabled = true)
 	@Title("Verifying amazon Slot Id for hourly2 big ad detailspage")
 	public void Smoke_Test_amazon_aax_Hourly2_bigaddetails_adcall() throws Exception {
 		System.out.println(
@@ -533,7 +559,7 @@ public class smokeTestCases extends Drivers {
 	}
 	
 
-	@Test(priority = 54, enabled = true)
+	@Test(priority = 56, enabled = true)
 	@Title("Verifying iu value for hourly3 bigad  detailpage")
 	public void Smoke_Test_Verify_hourly3_bigad_detailpage_adcall_iu() throws Exception {
 		System.out.println(
@@ -545,7 +571,7 @@ public class smokeTestCases extends Drivers {
 				"================= Verifying hourly3 bigad detailpage_adcall_iu test case  End =========================");
 	}
 
-	@Test(priority = 55, enabled = false)
+	@Test(priority = 57, enabled = true)
 	@Title("Verifying amazon Slot Id for hourly3 big ad detailspagel")
 	public void Smoke_Test_amazon_aax_Hourly3_bigaddetails_adcall() throws Exception {
 		System.out.println(
@@ -554,7 +580,7 @@ public class smokeTestCases extends Drivers {
 		System.out.println("================= Verify amazon aax Hourly3 big ad call test case End =========================");
 	}
 	
-	/*@Test(priority = 60, enabled = true)
+/*	@Test(priority = 60, enabled = true)
 
 	@Title("Verifying new daily details day1 ad call")
 	public void Smoke_Test_Verifying_newdailydetails_day1adcall() throws Exception {
@@ -958,7 +984,7 @@ public class smokeTestCases extends Drivers {
 	  Functions.gettingDayofWeekFromUI(3);
 		Functions.get_aaxcal_Daily();
 		System.out.println("================= Verifying amazon slot id for  daily details day15 adcall test case End =========================");
-	}*/
+	}
 	
 	  
 	/*  @Test(priority = 0, enabled = true)
@@ -1662,15 +1688,19 @@ public class smokeTestCases extends Drivers {
 		  //CharlesFunctions.app_download_from_firebaselink();
 		AppiumFunctions.LaunchAppWithFullReset();
 		//AppiumFunctions.Kill_launch();
-		
+		Thread.sleep(5000);
 		AppFunctions.gettingApkVersion() ;
+		Thread.sleep(5000);
+		AppFunctions.enablingBranch("adsTestAutomation2");
+		AppiumFunctions.Kill_launch();
+		AppiumFunctions.Kill_launch();
 		//AppFunctions.enter_requiredLocation("10005");
 		Thread.sleep(10000);
 		//AppiumFunctions.SwipeUp_Counter_feedcards(30);
 	//	AppFunctions.selectingRequiredUserGroup("multi cards");
 		// Ad.runAppInBackground(30);
 		// AppFunctions.Kill_Launch_App();
-		// AppFunctions.enablingBranch("adsTestAutomation");
+		// AppFunctions.enablingBranch("adsTestAutomation2");
 		// Ad.runAppInBackground(30);
 		// AppFunctions.Kill_Launch_App();
 		//AppFunctions.Kill_Launch_App();
