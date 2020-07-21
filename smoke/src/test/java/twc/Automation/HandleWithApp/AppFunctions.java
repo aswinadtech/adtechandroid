@@ -1,4 +1,6 @@
 package twc.Automation.HandleWithApp;
+import java.io.File;
+import java.io.FileOutputStream;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -8,12 +10,15 @@ import io.appium.java_client.MobileBy.ByAccessibilityId;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
 
+import org.apache.commons.io.FileUtils;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -36,6 +41,8 @@ public class AppFunctions extends Drivers{
 	public static String TestName=null;
 	public static  String homelocation;
 
+	 public static String apkVersion="101";
+	
 	public static void verifyCall(String excel_sheet_name, String skiCallName) throws Exception{
 
 		String skiResortsCallURL = null;
@@ -765,8 +772,8 @@ public class AppFunctions extends Drivers{
 		startY = startY1.intValue();
 		Double endY1 = (double) (dimensions.getHeight()/6);  //  dimensions.getHeight()  0.2;  == 512.0
 		endY = endY1.intValue();
-		System.out.println("endY  - "+endY);
-		System.out.println("startY  - "+startY);
+		//System.out.println("endY  - "+endY);
+	//	System.out.println("startY  - "+startY);
 		for(int i=0;i<=x;i++){
 			Ad.swipe(0, endY, 0, startY,2000);
 		}
@@ -875,23 +882,23 @@ public class AppFunctions extends Drivers{
 		DeviceStatus device_status = new DeviceStatus();
 		int Cap = device_status.Device_Status();
 
-		String[][] exceldata = read_excel_data.exceldataread(excel_sheet_name);
-		System.out.println("Pull the screen to REFRESH is Start");
+		/*String[][] exceldata = read_excel_data.exceldataread(excel_sheet_name);
+		System.out.println("Pull the screen to REFRESH is Start");*/
 
-		WebDriverWait wait = new WebDriverWait(Ad, 10);
-		wait.until(ExpectedConditions.presenceOfElementLocated(By.id(exceldata[1][Cap])));
+		WebDriverWait wait = new WebDriverWait(Ad, 60);
+		wait.until(ExpectedConditions.presenceOfElementLocated(By.id("com.weather.Weather:id/current_conditions_temperature")));
 
 		//Temperature element
-		MobileElement temp = (MobileElement) Ad.findElementById(exceldata[1][Cap]);
+		MobileElement temp = (MobileElement) Ad.findElementById("com.weather.Weather:id/current_conditions_temperature");
 		System.out.println("Temp : "+temp.getText());
 
 		MobileElement hilo=null;
 		//HILO element
 		try{
-		hilo = (MobileElement) Ad.findElementById(exceldata[18][Cap]);
+		hilo = (MobileElement) Ad.findElementById("com.weather.Weather:id/hourly_forecast_card_view");
 		}catch(Exception e){
 		    Thread.sleep(3000);
-			hilo=(MobileElement) Ad.findElementByClassName("android.widget.RelativeLayout");
+			hilo=(MobileElement) Ad.findElementByClassName("android.widget.FrameLayout");
 		}
 		System.out.println("hilo : "+hilo.getText());
 		TouchAction action = new TouchAction(Ad);
@@ -2125,11 +2132,14 @@ public static void verify_adpresent_onvideo_page(String excel_sheet_name) throws
 	}
     public static void click_hourly_element() throws Exception
 	{
-	List<WebElement> ele=Ad.findElementsById("com.weather.Weather:id/icon");
-	ele.get(0).click();
-	// System.out.println(ele.size());
-	// for(int i=0;i<ele.size();i++){
-	// ele.get(i).click();
+	try {
+		new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementByAccessibilityId("Hourly")));
+		Ad.findElementByAccessibilityId("Hourly").click();
+	}
+	catch(Exception e) {
+		new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementByAccessibilityId("Hourly")));
+		Ad.findElementByAccessibilityId("Hourly").click();
+	}
 	}
 	public static void click_daily_element() throws Exception
 	{
@@ -2338,12 +2348,37 @@ logStep("Clicking on Airlock");
 	
 	
 	
+	
+public static void gettingApkVersion() throws Exception{
+		
+		//cliking View more Button		
+     	clickOnviewMore();
+     	//cliking on aboutthisapp
+     	clickOnAboutthisapp();
+     	apkVersion=Ad.findElementById("com.weather.Weather:id/about_version").getText();
+     	System.out.println("Android apk build number"+apkVersion);
+     	
+     	//back button cod
+     	apkVersion= apkVersion.split("Version")[1].trim();
+     
+    	AppiumFunctions.clickOnBackArrowElement();
+     	FileOutputStream fos=new FileOutputStream(new File(System.getProperty("user.dir") + "/JenkinsEmailConfig.Properties"));
+     	properties.setProperty("AppVersion",apkVersion);
+     	properties.store(fos," App Version read from app and updated");
+    fos.close();
+     	
+	}
+
+
+
+	
 public static void selectingRequiredUserGroup(String usergroup) throws Exception{
 		
 		//cliking View more Button		
      	clickOnviewMore();
      	//cliking on aboutthisapp
      	clickOnAboutthisapp();
+     	
      	 clickOnVersionnumber();
      	clickOntestmodesettings() ;
      	clickOnAirlock();
@@ -2448,6 +2483,71 @@ public static void enable_adstestadunit() throws Exception {
 			}
 		
 	}
+
+
+
+public static void ScreenShot(String Adtype,String ScreenType) throws Exception{
+	String ScreenShot = System.getProperty("user.dir")+"/Screenshots";
+	if(ScreenType.equals("Passed")){
+
+		File Screenshot = ((TakesScreenshot)Ad).getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(Screenshot, new File(ScreenShot+"/"+"/ScreenShot_"+ScreenType+" "+Adtype+".png"));
+	}else{
+		File Screenshot = ((TakesScreenshot)Ad).getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(Screenshot, new File(ScreenShot+"/"+"/ScreenShot_"+ScreenType+" "+Adtype+".png"));
+		FileUtils.copyFile(Screenshot, new File(ScreenShot+"/Failed/ScreenShot_"+ScreenType+" "+Adtype+".png"));
+
+	}
+}
+
+public static void enter_requiredLocation(String location) throws Exception {
+	new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementByAccessibilityId("Search")));	
+Ad.findElementByAccessibilityId("Search").click();
+new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.visibilityOfElementLocated(By.id("com.weather.Weather:id/search_text")));	
+Ad.findElementById("com.weather.Weather:id/search_text").sendKeys(location);
+new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("com.weather.Weather:id/title")));	
+List<WebElement> allLocations=Ad.findElementsById("com.weather.Weather:id/title");
+
+allLocations.get(0).getText();
+System.out.println(allLocations.size());
+
+for(int i=0;i<=allLocations.size();i++) {
+
+
+	if(location.contains("30124")) {
+		//System.out.println(loc.getText());
+		if(allLocations.get(i).getText().contains("Cave Spring")) {
+
+			allLocations.get(i).click();
+		Thread.sleep(3000);
+		break;
+		}
+	}
+	
+
+	if(location.contains("07095")) {
+		//System.out.println(loc.getText());
+		if(allLocations.get(i).getText().contains("Woodbridge Township")) {
+
+			allLocations.get(i).click();
+		Thread.sleep(3000);
+		break;
+		}
+	}
+	
+	if(location.contains("10005")) {
+		//System.out.println(loc.getText());
+		if(allLocations.get(i).getText().contains("New York City")) {
+
+			allLocations.get(i).click();
+		Thread.sleep(3000);
+		break;
+		}
+	}
+
+		
+}
+}
 
 }
 		
