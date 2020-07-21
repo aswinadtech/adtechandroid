@@ -656,6 +656,7 @@ public static void killADB() throws IOException, Exception{
 	}
 	public static void clickOnBackArrowElement() throws Exception
 	{
+		Thread.sleep(5000);
 		try {
 			new WebDriverWait(Ad, maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementByAccessibilityId("Navigate up")));
 			Ad.findElementByAccessibilityId("Navigate up").click();
