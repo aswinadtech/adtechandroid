@@ -743,6 +743,8 @@ AppiumFunctions.gettingApkVersion();
 Thread.sleep(5000);
 CustomParamFunctions.get_fhic_floc_value();    
 AppiumFunctions.SwipeUp_Counter(15);	
+
+Thread.sleep(15000);
 AppiumFunctions.click_hourly_element();
 Thread.sleep(5000);
 CharlesFunctions.ExportSession();
