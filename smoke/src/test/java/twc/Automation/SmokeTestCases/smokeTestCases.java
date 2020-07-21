@@ -555,7 +555,7 @@ public class smokeTestCases extends Drivers {
 		System.out.println("================= Verify amazon aax Hourly3 big ad call test case End =========================");
 	}
 	
-	@Test(priority = 60, enabled = true)
+	/*@Test(priority = 60, enabled = true)
 
 	@Title("Verifying new daily details day1 ad call")
 	public void Smoke_Test_Verifying_newdailydetails_day1adcall() throws Exception {
@@ -959,7 +959,7 @@ public class smokeTestCases extends Drivers {
 	  Functions.gettingDayofWeekFromUI(3);
 		Functions.get_aaxcal_Daily();
 		System.out.println("================= Verifying amazon slot id for  daily details day15 adcall test case End =========================");
-	}
+	}*/
 	
 	  
 	/*  @Test(priority = 0, enabled = true)
