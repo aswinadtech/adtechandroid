@@ -1030,7 +1030,8 @@ try {
 }
 catch(Exception e)
 {
-	
+	new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("com.android.packageinstaller:id/permission_allow_button")));
+	Ad.findElementById("com.android.packageinstaller:id/permission_allow_buttont").click();
 }
 }
 
