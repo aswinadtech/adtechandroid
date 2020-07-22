@@ -892,6 +892,7 @@ if(ModuleName.toString().contains("Today's Details") ) {
 	if(TodayDeatilsCount==0) {
 	AppiumFunctions.click_Todaydetails_element();
      AppiumFunctions.clickOnBackArrowElement_today();
+     Thread.sleep(10000);
      TodayDeatilsCount=1;
 	}
 }
