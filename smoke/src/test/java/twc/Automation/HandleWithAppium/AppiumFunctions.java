@@ -867,23 +867,27 @@ if(ModuleName.toString().contains("Health & Activities")) {
 	if(BoatBeachCount==0) {
 	 AppiumFunctions.click_Boat_Beach_element();
 	  AppiumFunctions.clickOnBackArrowElement();
+	   Thread.sleep(10000);
 	  BoatBeachCount=1;
 	}
 	if(RunningCount==0) {
 	 AppiumFunctions.click_Running_element();
 	 AppiumFunctions.clickOnBackArrowElement();
+	   Thread.sleep(10000);
 	 RunningCount=1;
 	}
 	
 	if(CofFluCount==0) {
 	 AppiumFunctions.click_cold_Flu_element();
 	  AppiumFunctions.clickOnBackArrowElement();
+	   Thread.sleep(10000);
 	  Thread.sleep(5000);
 	  CofFluCount=1;
 	}
 	if(AllergyCount==0) {
 	 AppiumFunctions.click_Allergy_element(); 
 	  AppiumFunctions.clickOnBackArrowElement();
+	   Thread.sleep(10000);
 	  Thread.sleep(5000);
 	  AllergyCount=1;
 }
@@ -901,6 +905,7 @@ if(ModuleName.toString().contains("Air Quality")) {
 	if(AirQualityCount==0) {
  AppiumFunctions.click_Airpollution_element();
 AppiumFunctions.clickOnBackArrowElement();
+Thread.sleep(10000);
 AirQualityCount=1;
 	}
 }
@@ -909,7 +914,7 @@ if(ModuleName.toString().contains("Outdoor Conditions")) {
 	if( outdoorcount==0)
 	click_SH_element() ;
  AppiumFunctions.clickOnBackArrowElement();
- Thread.sleep(5000);
+ Thread.sleep(10000);
  outdoorcount=1;
  
 	}
