@@ -128,7 +128,7 @@ public class regressionTestCases extends Drivers {
 		System.out.println("================= Custom Parameter Ver Verfication End =========================");
 	}
 
-	@Test(priority = 100)
+	/*@Test(priority = 100)
 	@Title("Verify custom parameter dt")
 	public void C333213_Verify_cust_param_dt() throws Exception {
 		System.out.println("================= Custom Parameter dt Verfication Started =========================");
@@ -142,7 +142,7 @@ public class regressionTestCases extends Drivers {
 		System.out.println("================= Custom Parameter mnth Verfication Started =========================");
 		Custom_Parameters_Verification.verify_daily_custom_parameters("mnth");
 		System.out.println("================= Custom Parameter mnth Verfication End =========================");
-	}
+	}*/
 //Hard code values
 
 	@Test(priority = 40)
@@ -381,13 +381,13 @@ public class regressionTestCases extends Drivers {
 
 	// UI
 
-	@Test(priority = 130)
+	/*@Test(priority = 130)
 	@Title("Verify custom parameter sev")
 	public void C333223_Verify_cust_param_sev() throws Exception {
 		System.out.println("================= Custom Parameter Sev Verfication Started =========================");
 		Custom_Parameters_Verification.parameters_Verification("sev");
 		System.out.println("================= Custom Parameter Sev Verfication End =========================");
-	}
+	}*/
 
 	// turbo call related test cases
 
