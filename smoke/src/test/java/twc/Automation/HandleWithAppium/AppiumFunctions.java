@@ -438,7 +438,7 @@ public class AppiumFunctions extends Drivers{
     			}catch(Exception e){
     				System.out.println("Location already set");
     			}
-    			
+    			Thread.sleep(10000);
     			clickONNext();
     		    ClickonIUnderstand();
         		clickOnAllow();
@@ -546,11 +546,10 @@ public static void clickOnRadarMaps() throws Exception{
 }	
 public static void click_Todaydetails_element() throws Exception
 {
-	
-	
+		
 	try {
-		new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("com.weather.Weather:id/details_button")));
-	Ad.findElementById("com.weather.Weather:id/details_button").click();
+		new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("com.weather.Weather:id/today_card_container")));
+	Ad.findElementById("com.weather.Weather:id/today_card_container").click();
 	System.out.println("today details  element clicked");
 	logStep("today details element clicked");
 	}
@@ -563,10 +562,23 @@ public static void click_Todaydetails_element() throws Exception
 			logStep("today details element clicked");
 		}
 		catch(Exception e1) {
-			new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("com.weather.Weather:id/details_button")));
-		Ad.findElementById("com.weather.Weather:id/details_button").click();
-		System.out.println("today details  element clicked");
-		logStep("today details element clicked");
+			try {
+				new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("com.weather.Weather:id/details_button")));
+				Ad.findElementById("com.weather.Weather:id/details_button").click();
+				System.out.println("today details  element clicked");
+				logStep("today details element clicked");
+			}
+			catch(Exception e3) {
+			try {
+				new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("com.weather.Weather:id/today_card_container")));
+				Ad.findElementById("com.weather.Weather:id/today_card_container").click();
+				System.out.println("today details  element clicked");
+				logStep("today details element clicked");
+			}
+			catch(Exception e4) {
+				
+			}
+			}
 		}
 	}	
 }
@@ -809,7 +821,7 @@ public static void SwipeUp_Counter_feedcards(int Counter) throws Exception{
 	for(int i=1;i<=swipeup ;i++){
 		Swipe_feed();
 
-		if(i>15) {
+		if(i>12) {
 			if(Functions.verifyElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout/android.widget.TextView"))){
 		//if(Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout/android.widget.TextView").isDisplayed()){
 		//	if(text==true) {
