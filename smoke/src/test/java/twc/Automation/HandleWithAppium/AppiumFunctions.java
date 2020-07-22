@@ -1020,8 +1020,8 @@ try {
 }
 catch(Exception e)
 {
-	new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("com.weather.Weather:id/next_button_text")));
-	Ad.findElementById("com.weather.Weather:id/next_button_text").click();
+	//new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("com.weather.Weather:id/next_button_text")));
+//	Ad.findElementById("com.weather.Weather:id/next_button_text").click();
 }
 }
 
