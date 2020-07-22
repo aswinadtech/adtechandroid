@@ -812,11 +812,17 @@ public static void SwipeUp_Counter_feedcards(int Counter) throws Exception{
 		Swipe_feed();
 
 		if(i>12) {
+			//local
+		//	if(Functions.verifyElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout/android.widget.TextView"))){
+		//	server
 			if(Functions.verifyElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout/android.widget.TextView"))){
-		//if(Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout/android.widget.TextView").isDisplayed()){
+			//if(Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout/android.widget.TextView").isDisplayed()){
 		//	if(text==true) {
-				 copyRight = Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout/android.widget.TextView").getAttribute("text");
-					if(copyRight.equalsIgnoreCase( data[1][1])) {
+				//local
+				// copyRight = Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout/android.widget.TextView").getAttribute("text");
+			//server
+				copyRight = Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout/android.widget.TextView").getAttribute("text");
+				if(copyRight.equalsIgnoreCase( data[1][1])) {
 						System.out.println(copyRight +" text is displaying on the screen");
 						i=150;
 						break;	
@@ -864,12 +870,14 @@ if(radarCount==0)
 }
 if(ModuleName.toString().contains("Health & Activities")) {
 
-	if(BoatBeachCount==0) {
-	 AppiumFunctions.click_Boat_Beach_element();
-	  AppiumFunctions.clickOnBackArrowElement();
-	   Thread.sleep(10000);
-	  BoatBeachCount=1;
+	if(AllergyCount==0) {
+		 AppiumFunctions.click_Allergy_element(); 
+		  AppiumFunctions.clickOnBackArrowElement();
+		   Thread.sleep(10000);
+		  Thread.sleep(5000);
+		  AllergyCount=1;
 	}
+
 	if(RunningCount==0) {
 	 AppiumFunctions.click_Running_element();
 	 AppiumFunctions.clickOnBackArrowElement();
@@ -884,13 +892,13 @@ if(ModuleName.toString().contains("Health & Activities")) {
 	  Thread.sleep(5000);
 	  CofFluCount=1;
 	}
-	if(AllergyCount==0) {
-	 AppiumFunctions.click_Allergy_element(); 
-	  AppiumFunctions.clickOnBackArrowElement();
-	   Thread.sleep(10000);
-	  Thread.sleep(5000);
-	  AllergyCount=1;
-}
+	if(BoatBeachCount==0) {
+		 AppiumFunctions.click_Boat_Beach_element();
+		  AppiumFunctions.clickOnBackArrowElement();
+		   Thread.sleep(10000);
+		  BoatBeachCount=1;
+		}
+
 }
 if(ModuleName.toString().contains("Today's Details") ) {
 	if(TodayDeatilsCount==0) {
