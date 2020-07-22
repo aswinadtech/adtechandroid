@@ -548,8 +548,8 @@ public static void click_Todaydetails_element() throws Exception
 {
 		
 	try {
-		new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("com.weather.Weather:id/today_card_container")));
-	Ad.findElementById("com.weather.Weather:id/today_card_container").click();
+		new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("com.weather.Weather:id/details_button")));
+	Ad.findElementById("com.weather.Weather:id/details_button").click();
 	System.out.println("today details  element clicked");
 	logStep("today details element clicked");
 	}
@@ -563,22 +563,12 @@ public static void click_Todaydetails_element() throws Exception
 		}
 		catch(Exception e1) {
 			try {
-				new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("com.weather.Weather:id/details_button")));
-				Ad.findElementById("com.weather.Weather:id/details_button").click();
-				System.out.println("today details  element clicked");
-				logStep("today details element clicked");
-			}
-			catch(Exception e3) {
-			try {
 				new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("com.weather.Weather:id/today_card_container")));
 				Ad.findElementById("com.weather.Weather:id/today_card_container").click();
 				System.out.println("today details  element clicked");
 				logStep("today details element clicked");
 			}
-			catch(Exception e4) {
-				
-			}
-			}
+			catch(Exception e3) {}
 		}
 	}	
 }
@@ -1023,15 +1013,14 @@ Ad.findElementByAccessibilityId("com.weather.Weather:id/txt_location_name").send
 
 public static void ClickonIUnderstand() throws Exception{
 try {
-	new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("com.weather.Weather:id/next_button_text")));
-	Ad.findElementById("com.weather.Weather:id/next_button_text").click();
+	new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("com.android.packageinstaller:id/permission_allow_button")));
+	Ad.findElementById("com.android.packageinstaller:id/permission_allow_buttont").click();
 
-//Thread.sleep(10000);
 }
 catch(Exception e)
 {
-	new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("com.android.packageinstaller:id/permission_allow_button")));
-	Ad.findElementById("com.android.packageinstaller:id/permission_allow_buttont").click();
+	new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("com.weather.Weather:id/next_button_text")));
+	Ad.findElementById("com.weather.Weather:id/next_button_text").click();
 }
 }
 
