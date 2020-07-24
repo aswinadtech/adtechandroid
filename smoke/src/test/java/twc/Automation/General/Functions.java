@@ -2317,7 +2317,7 @@ public static void Swipe(){
 
 }
 
-public static Map<String, String> finding_Homescreen_iu_value() throws Exception{
+public static void finding_Homescreen_iu_value() throws Exception{
 
 	Map<String , String> wfxtriggers_values = new HashMap<String, String>();
 	String wxtgValues="";
@@ -2326,20 +2326,18 @@ public static Map<String, String> finding_Homescreen_iu_value() throws Exception
 	int Cap = device_status.Device_Status();
 	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
 	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
-	System.out.println("Checking for  iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly ad call");
-	logStep("Checking for  iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly ad call");
+	System.out.println("Verifying for  iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly ad call");
+	logStep("Verofying for  iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly ad call");
 if(sb.contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly")) 
 {
 	System.out.println("/7646/app_android_us/db_display/home_screen/hourly call was trigred");
 	logStep("7646/app_android_us/db_display/home_screen/hourly call was trigred");
 }
 if(!sb.contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly")) {
-
 	System.out.println("/7646/app_android_us/db_display/home_screen/hourly call was not trigred");
 	logStep("/7646/app_android_us/db_display/home_screen/hourly call was not trigred");
     Assert.fail("/7646/app_android_us/db_display/home_screen/hourly call was not trigred");
 }
-return wfxtriggers_values;
 }
 
 public static Map<String, String> finding_VideoCard_iu_value() throws Exception{
@@ -2966,11 +2964,11 @@ public static Map<String, String> validating_WeatherFXAPI() throws Exception{
 	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();	
 	System.out.println("Verifying for https://triggers.wfxtriggers.com/ call");
 	logStep("Verifying for https://triggers.wfxtriggers.com/ call");
-	if(sb.contains("https://triggers.wfxtriggers.com")) {
+	if(sb.contains("triggers.wfxtriggers.com")) {
 	System.out.println("https://triggers.wfxtriggers.com/ url was trigred");
 	logStep("https://triggers.wfxtriggers.com/ url was trigred");
 }
-if(!sb.contains("https://triggers.wfxtriggers.com")) {
+if(!sb.contains("triggers.wfxtriggers.com")) {
 System.out.println("https://triggers.wfxtriggers.com/ url was not trigred");
 logStep("https://triggers.wfxtriggers.com/ url was not trigred");
 Assert.fail("https://triggers.wfxtriggers.com/ url was not trigred");
@@ -3024,17 +3022,16 @@ return wfxtriggers_values;
 public static void get_aaxcal_homescreen_hourly() throws Exception {
 	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
 	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
-	System.out.println("Verifying amazon \"slot\": \"869c843c-7cf8-47ae-b6ed-088057e4bc8a\"  for homescreenhourly");
-	logStep("Verifying amazon \"slot\": \"869c843c-7cf8-47ae-b6ed-088057e4bc8a\"  for air quality homescreenhourly");
-	//System.out.println("Slot Name is  : "+slotID);
+	System.out.println("Verifying amazon \"slot\": \"869c843c-7cf8-47ae-b6ed-088057e4bc8a\"  for db_display/home_screen/hourly");
+	logStep("Verifying amazon \"slot\": \"869c843c-7cf8-47ae-b6ed-088057e4bc8a\"  for db_display/home_screen/hourly");
 	if(sb.contains("869c843c-7cf8-47ae-b6ed-088057e4bc8a")) {
-	System.out.println("slotID 69c843c-7cf8-47ae-b6ed-088057e4bc8a is trigred for aax  call db_display/home_screen/hourly");
-	logStep("slotID 69c843c-7cf8-47ae-b6ed-088057e4bc8a is trigred for aax  call db_display/home_screen/hourly");
+	System.out.println("slotID 869c843c-7cf8-47ae-b6ed-088057e4bc8a is trigred for aax  call db_display/home_screen/hourly");
+	logStep("slotID 869c843c-7cf8-47ae-b6ed-088057e4bc8a is trigred for aax  call db_display/home_screen/hourly");
 	}
 	if(!sb.contains("869c843c-7cf8-47ae-b6ed-088057e4bc8a")) {
-		System.out.println("slotID 69c843c-7cf8-47ae-b6ed-088057e4bc8a is not trigred for aax call db_display/home_screen/hourly");
-		logStep("slotID 69c843c-7cf8-47ae-b6ed-088057e4bc8a is not trigred for aax call db_display/home_screen/hourly");
-		Assert.fail("slotID 69c843c-7cf8-47ae-b6ed-088057e4bc8a is not trigred for aax call db_display/home_screen/hourly");
+		System.out.println("slotID 869c843c-7cf8-47ae-b6ed-088057e4bc8a is not trigred for aax call db_display/home_screen/hourly");
+		logStep("slotID 869c843c-7cf8-47ae-b6ed-088057e4bc8a not trigred for aax call db_display/home_screen/hourly");
+		Assert.fail("slotID 869c843c-7cf8-47ae-b6ed-088057e4bc8a is not trigred for aax call db_display/home_screen/hourly");
 		}
 }
 public static void get_aaxcal_AirQuality() throws Exception {
@@ -5064,64 +5061,47 @@ public static void verifyingdailydetailiu() throws Exception {
 	logStep("iu value should not be null");
 	System.out.println("iu value should not be null");
 	
-	
-		if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day")){
-			try {
-			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day"));
+	if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day_")) {
+		
+			try {			
+			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day_"));
 	//		String required_info = Read_API_Call_Data.toString().substring(Read_API_Call_Data.toString().indexOf("&amp"));
-			 expected_data = Read_API_Call_Data.toString().substring(Read_API_Call_Data.indexOf("iu"),Read_API_Call_Data.indexOf("&sz"));
+			 expected_data = Read_API_Call_Data.toString().substring(Read_API_Call_Data.indexOf("iu"),Read_API_Call_Data.indexOf("&correlator"));
 			System.out.println("Charles data value is "+expected_data);
 			logStep("Charles data value is "+expected_data);			
-			}
+				}
 			catch(Exception e) {
 				
 			}
 		}
-		
-		if(!sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day_"+currentday1)){
-			System.out.println("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day_"+currentday1 +" was not trigered");
+	else {
+		System.out.println("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day_"+currentday1 +" was not trigered");
 		logStep("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day_"+currentday1 +" was not trigered");
-			Assert.fail("daily details ad call was not trigred");
-		}
-		
-		//systemDate();
+		Assert.fail("daily details ad call was not trigred");
+	}
 
-	/*	System.out.println("Verifying the chales data is matched with system day");
-		logStep("Verifying the chales data is matched with system day");
-		if(expected_data.contains(expectedday)) {
-			System.out.println(expected_data+" is matched with " +expectedday);
-			logStep(expected_data+" is matched with "+ expectedday);
-		}
-		else {
-			System.out.println(expected_data+" is not  matched with " +expectedday);
-			logStep(expected_data+" is not matched with "+ expectedday);
-		}*/
 	System.out.println("retriving the day from the UI");
 	logStep("retriving the day from the UI");
-	try {
- today=Ad.findElementById("com.weather.Weather:id/daily_details_day_title").getText();
-	}
-	catch(Exception e) {
-		 today=Ad.findElementById("com.weather.Weather:id/daily_details_day_title").getText();
-	}
-		String day=today.replace(today, today+1);
-		//System.out.println("day from the UI is  " +day);
-		//logStep("day from the UI is  " +day);
-		day1=day.toLowerCase();
-		System.out.println("day from the UI is " +day1);
-		logStep("day from the UI is " +day1);
+
+	System.out.println("day from the UI is " +currentday1);
+	logStep("day from the UI is " +currentday1);
+		
 		
 		System.out.println("Verifying the chales data is matched with UI");
 		logStep("Verifying the chales data is matched with UI");
-	if(expected_data.contains(day1)) {
-		System.out.println(expected_data+" is matched with " +day1);
-		logStep(expected_data+" is matched with "+ day1);
-	}
-	else{
-		System.out.println(expected_data+ " is not matched with " +day1);
-		logStep(expected_data+" is not matched with " +day1);
-		Assert.fail(expected_data+" is not matched with " +day1);
-	}
+		try {
+			if(expected_data.contains(currentday1)) {
+				System.out.println(expected_data+" is matched with " +currentday1);
+				logStep(expected_data+" is matched with "+ currentday1);
+			}
+		}
+		catch(Exception e) {
+			System.out.println(expected_data+ " is not matched with " +currentday1);
+			logStep(expected_data+" is not matched with " +currentday1);
+			Assert.fail(expected_data+" is not matched with " +currentday1);
+		}
+	
+
 	
 }
 
@@ -5144,50 +5124,49 @@ public static void verifyingdailydetailsiu1() throws Exception {
 	logStep("Checking iu from charles data");
 	logStep("iu value should not be null");
 	System.out.println("iu value should not be null");
-
 	
 	
-		if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day")){
-			try {
-			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day"));
-	//		String required_info = Read_API_Call_Data.toString().substring(Read_API_Call_Data.toString().indexOf("&amp"));
-			 expected_data = Read_API_Call_Data.toString().substring(Read_API_Call_Data.indexOf("iu"),Read_API_Call_Data.indexOf("&correlator"));
-			System.out.println("Charles data value is "+expected_data);
-			logStep("Charles data value is "+expected_data);		
+	if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day_")) {
+		
+		try {			
+		String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day_"));
+//		String required_info = Read_API_Call_Data.toString().substring(Read_API_Call_Data.toString().indexOf("&amp"));
+		 expected_data = Read_API_Call_Data.toString().substring(Read_API_Call_Data.indexOf("iu"),Read_API_Call_Data.indexOf("&correlator"));
+		System.out.println("Charles data value is "+expected_data);
+		logStep("Charles data value is "+expected_data);			
 			}
-			catch(Exception e) {
-				
-			}
+		catch(Exception e) {
+			
 		}
+	}
+else {
+	System.out.println("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day_"+currentday1 +" was not trigered");
+	logStep("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day_"+currentday1 +" was not trigered");
+	Assert.fail("daily details ad call was not trigred");
+}
 		
 		
-		if(!sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day_"+currentday1)){
-			System.out.println("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day_"+currentday1 +" was not trigered");
-		logStep("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day_"+currentday1 +" was not trigered");
-			Assert.fail("daily details ad call was not trigred");
-		}
 		
 	System.out.println("retriving the day from the UI");
 	logStep("retriving the day from the UI");
- today=Ad.findElementById("com.weather.Weather:id/daily_details_day_title").getText();
-		String day=today.replace(today, today+2);
-		//System.out.println("day from the UI is  " +day);
-		//logStep("day from the UI is  " +day);
-		day1=day.toLowerCase();
-		System.out.println("day from the UI is " +day1);
-		logStep("day from the UI is " +day1);
+ 
+		System.out.println("day from the UI is " +currentday1);
+		logStep("day from the UI is " +currentday1);
 		
 		System.out.println("Verifying the chales data is matched with UI");
 		logStep("Verifying the chales data is matched with UI");
-	if(expected_data.contains(day1)) {
-		System.out.println(expected_data+" is matched with " +day1);
-		logStep(expected_data+" is matched with "+ day1);
-	}
-	else{
-		System.out.println(expected_data+ " is not matched with " +day1);
-		logStep(expected_data+" is not matched with " +day1);
-		Assert.fail(expected_data+" is not matched with " +day1);
-	}
+		try {
+			if(expected_data.contains(currentday1)) {
+				System.out.println(expected_data+" is matched with " +currentday1);
+				logStep(expected_data+" is matched with "+ day1);
+			}
+		}
+		catch(Exception e) {
+			System.out.println(expected_data+ " is not matched with " +currentday1);
+			logStep(expected_data+" is not matched with " +currentday1);
+			Assert.fail(expected_data+" is not matched with " +currentday1);
+		}
+	
 	
 }
 
@@ -5195,68 +5174,72 @@ public static void verifyingdailydetailsiu1() throws Exception {
 public static void verifyingdailydetailsiu2() throws Exception {
 	String expected_data = null;
 	String today=null;
-	String day1=null;
-	
-	
+	String day1=null;	
 	DeviceStatus device_status = new DeviceStatus();
 	int Cap = device_status.Device_Status();
 	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
 	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
 	//String[][] exceldata=read_excel_data.exceldataread("NextGenIM");
 //	logStep("Verifying  SOD custum param for  iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fradar ad call");
+	
+	today=Ad.findElementById("com.weather.Weather:id/daily_details_day_title").getText();
+	String days=today.replace(today, today+3);
+	String currentday1=days.toLowerCase();
+	              
 	System.out.println("Checking iu from charles data");
 	logStep("Checking iu from charles data");
 	logStep("iu value should not be null");
 	System.out.println("iu value should not be null");
-	today=Ad.findElementById("com.weather.Weather:id/daily_details_day_title").getText();
-	String days=today.replace(today, today+1);
-	
-		if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day")){
-			try {
-			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day"));
-	//		String required_info = Read_API_Call_Data.toString().substring(Read_API_Call_Data.toString().indexOf("&amp"));
-			 expected_data = Read_API_Call_Data.toString().substring(Read_API_Call_Data.indexOf("iu"),Read_API_Call_Data.indexOf("&sz"));
-			System.out.println("Charles data value is "+expected_data);
-			logStep("Charles data value is "+expected_data);	
-			}
-			catch(Exception e){
-				
-			}
-		}
+
+
+	if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day_")) {
 		
-		if(!sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day_"+days)){
-			System.out.println("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day_"+days +" was not trigered");
-		logStep("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day_"+days +" was not trigered");
-			Assert.fail("daily details ad call was not trigred");
+		try {			
+		String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day_"));
+//		String required_info = Read_API_Call_Data.toString().substring(Read_API_Call_Data.toString().indexOf("&amp"));
+		 expected_data = Read_API_Call_Data.toString().substring(Read_API_Call_Data.indexOf("iu"),Read_API_Call_Data.indexOf("&correlator"));
+		System.out.println("Charles data value is "+expected_data);
+		logStep("Charles data value is "+expected_data);			
+			}
+		catch(Exception e) {
+			
 		}
+	}
+else {
+	System.out.println("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day_"+currentday1 +" was not trigered");
+	logStep("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day_"+currentday1 +" was not trigered");
+	Assert.fail("daily details ad call was not trigred");
+}
+	
 	System.out.println("retriving the day from the UI");
 	logStep("retriving the day from the UI");
- today=Ad.findElementById("com.weather.Weather:id/daily_details_day_title").getText();
-		String day=today.replace(today, today+3);
-		
-		//System.out.println("day from the UI is  " +day);
-		//logStep("day from the UI is  " +day);
-		day1=day.toLowerCase();
-		System.out.println("day from the UI is " +day1);
-		logStep("day from the UI is " +day1);
+	
+System.out.println("retriving the day from the UI");
+logStep("retriving the day from the UI");
+
+	System.out.println("day from the UI is " +currentday1);
+	logStep("day from the UI is " +currentday1);
 		
 		System.out.println("Verifying the chales data is matched with UI");
 		logStep("Verifying the chales data is matched with UI");
-	if(expected_data.contains(day1)) {
-		System.out.println(expected_data+" is matched with " +day1);
-		logStep(expected_data+" is matched with "+ day1);
-	}
-	else{
-		System.out.println(expected_data+ " is not matched with " +day1);
-		logStep(expected_data+" is not matched with " +day1);
-		Assert.fail(expected_data+" is not matched with " +day1);
-	}
+		try {
+			if(expected_data.contains(currentday1)) {
+				System.out.println(expected_data+" is matched with " +currentday1);
+				logStep(expected_data+" is matched with "+ currentday1);
+			}
+		}
+catch(Exception e) {
+	System.out.println(expected_data+ " is not matched with " +currentday1);
+	logStep(expected_data+" is not matched with " +currentday1);
+	Assert.fail(expected_data+" is not matched with " +currentday1);
+}
+
 	
 }
 public static void clickonday2() throws Exception {
 	System.out.println("Clicking  on day2");
 	logStep("Clicking  on day2");
-	Thread.sleep(3000);
+	Thread.sleep(6000);
 	try {
 	Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[2]/android.widget.LinearLayout").click();
 	Thread.sleep(3000);;
@@ -5275,7 +5258,7 @@ public static void clickonday2() throws Exception {
 public static void clickonday3() throws Exception {
 	System.out.println("Clicking  on day3");
 	logStep("Clicking  on day3");
-	Thread.sleep(3000);
+	Thread.sleep(6000);
 	try {
 	Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[3]/android.widget.LinearLayout").click();
 	Thread.sleep(3000);
@@ -5297,7 +5280,7 @@ public static void clickonday3() throws Exception {
 public static void clickonday4() throws Exception {
 	System.out.println("Clicking  on day4");
 	logStep("Clicking  on day4");
-	Thread.sleep(3000);
+	Thread.sleep(6000);
 	try {
 		Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[4]/android.widget.LinearLayout").click();
 		Thread.sleep(3000);
@@ -5320,21 +5303,21 @@ public static void clickonday4() throws Exception {
 public static void clickonday5() throws Exception {
 	System.out.println("Clicking  on day5");
 	logStep("Clicking on day5");
-	Thread.sleep(3000);
+	Thread.sleep(6000);
 	try {
-	Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[5]/android.widget.LinearLayout").click();
+	Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[4]/android.widget.LinearLayout").click();
 	Thread.sleep(3000);
 	}
 	catch(Exception e) {
-		Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[5]/android.widget.LinearLayout").click();
+		Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[4]/android.widget.LinearLayout").click();
 		Thread.sleep(3000);
 		
 	try {
-		Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[5]/android.widget.LinearLayout").click();
+		Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[4]/android.widget.LinearLayout").click();
 		Thread.sleep(3000);
 	}
 	catch(Exception e2) {
-		Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[5]/android.widget.LinearLayout").click();
+		Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[4]/android.widget.LinearLayout").click();
 		Thread.sleep(3000);
 	}
 	}
@@ -5342,20 +5325,20 @@ public static void clickonday5() throws Exception {
 public static void clickonday6() throws Exception {
 	System.out.println("Clicking  on day6");
 	logStep("Clicking on day6");
-	Thread.sleep(3000);
+	Thread.sleep(6000);
 	try {
-	Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[5]/android.widget.LinearLayout").click();
+	Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[4]/android.widget.LinearLayout").click();
 	Thread.sleep(3000);
 	}
 catch(Exception e) {
-	Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[5]/android.widget.LinearLayout").click();
+	Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[4]/android.widget.LinearLayout").click();
 	Thread.sleep(3000);
 try {
-	Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[5]/android.widget.LinearLayout").click();
+	Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[4]/android.widget.LinearLayout").click();
 	Thread.sleep(3000);
 }
 catch(Exception e2) {
-	Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[5]/android.widget.LinearLayout").click();
+	Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[4]/android.widget.LinearLayout").click();
 	Thread.sleep(3000);
 }
 }
@@ -5363,20 +5346,20 @@ catch(Exception e2) {
 public static void clickonday7() throws Exception {
 	System.out.println("Clicking  on day7");
 	logStep("Clicking on day7");
-	Thread.sleep(3000);
+	Thread.sleep(6000);
 	try {
-	Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[5]/android.widget.LinearLayout").click();
+	Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[4]/android.widget.LinearLayout").click();
 	Thread.sleep(3000);
 	}
 	catch(Exception e) {
-		Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[5]/android.widget.LinearLayout").click();
+		Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[4]/android.widget.LinearLayout").click();
 		Thread.sleep(3000);
 	try {
-		Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[5]/android.widget.LinearLayout").click();
+		Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[4]/android.widget.LinearLayout").click();
 		Thread.sleep(3000);
 	}
 	catch(Exception e2) {
-		Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[5]/android.widget.LinearLayout").click();
+		Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[4]/android.widget.LinearLayout").click();
 		Thread.sleep(3000);
 	}
 	}
@@ -5386,18 +5369,18 @@ public static void clickonday8() throws Exception {
 	logStep("Clicking on day8");
 	Thread.sleep(6000);
 	try {
-	Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[5]/android.widget.LinearLayout").click();
+	Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[4]/android.widget.LinearLayout").click();
 	Thread.sleep(6000);
 	}
 	catch(Exception e) {
-		Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[5]/android.widget.LinearLayout").click();
+		Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[4]/android.widget.LinearLayout").click();
 		Thread.sleep(3000);
 	try {
-		Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[5]/android.widget.LinearLayout").click();
+		Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[4]/android.widget.LinearLayout").click();
 		Thread.sleep(3000);
 	}
 	catch(Exception e2) {
-		Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[5]/android.widget.LinearLayout").click();
+		Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[4]/android.widget.LinearLayout").click();
 		Thread.sleep(3000);
 	}
 	}
@@ -5407,18 +5390,18 @@ public static void clickonday9() throws Exception {
 	logStep("Clicking on day9");
 	Thread.sleep(6000);
 	try {
-	Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[5]/android.widget.LinearLayout").click();
+	Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[4]/android.widget.LinearLayout").click();
 	Thread.sleep(6000);
 	}
 catch(Exception e) {
-	Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[5]/android.widget.LinearLayout").click();
+	Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[4]/android.widget.LinearLayout").click();
 	Thread.sleep(3000);
 try {
-	Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[5]/android.widget.LinearLayout").click();
+	Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[4]/android.widget.LinearLayout").click();
 	Thread.sleep(3000);
 }
 catch(Exception e2) {
-	Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[5]/android.widget.LinearLayout").click();
+	Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[4]/android.widget.LinearLayout").click();
 	Thread.sleep(3000);
 }
 }
@@ -5428,18 +5411,18 @@ public static void clickonday10() throws Exception {
 	logStep("Clicking on day10");
 	Thread.sleep(6000);
 	try {
-	Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[5]/android.widget.LinearLayout").click();
+	Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[4]/android.widget.LinearLayout").click();
 	Thread.sleep(6000);
 	}
 	catch(Exception e) {
-		Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[5]/android.widget.LinearLayout").click();
+		Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[4]/android.widget.LinearLayout").click();
 		Thread.sleep(3000);
 	try {
-		Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[5]/android.widget.LinearLayout").click();
+		Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[4]/android.widget.LinearLayout").click();
 		Thread.sleep(3000);
 	}
 	catch(Exception e2) {
-		Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[5]/android.widget.LinearLayout").click();
+		Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[4]/android.widget.LinearLayout").click();
 		Thread.sleep(3000);
 	}
 	}
@@ -5449,18 +5432,18 @@ public static void clickonday11() throws Exception {
 	logStep("Clicking on day11");
 	Thread.sleep(6000);
 	try {
-	Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[5]/android.widget.LinearLayout").click();
+	Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[4]/android.widget.LinearLayout").click();
 	Thread.sleep(6000);
 	}
 	catch(Exception e) {
-		Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[5]/android.widget.LinearLayout").click();Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[5]/android.widget.LinearLayout").click();
+		Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[4]/android.widget.LinearLayout").click();Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[5]/android.widget.LinearLayout").click();
 		Thread.sleep(3000);
 	try {
-		Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[5]/android.widget.LinearLayout").click();
+		Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[4]/android.widget.LinearLayout").click();
 		Thread.sleep(3000);
 	}
 	catch(Exception e2) {
-		Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[5]/android.widget.LinearLayout").click();
+		Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[4]/android.widget.LinearLayout").click();
 		Thread.sleep(3000);
 	}
 	}
@@ -5469,18 +5452,18 @@ public static void clickonday12() throws Exception {
 	System.out.println("Clicking  on day12");
 	logStep("Clicking on day12");
 	try {
-	Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[5]/android.widget.LinearLayout").click();
+	Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[4]/android.widget.LinearLayout").click();
 	Thread.sleep(6000);
 	}
 	catch(Exception e) {
-		Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[5]/android.widget.LinearLayout").click();
+		Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[4]/android.widget.LinearLayout").click();
 		Thread.sleep(6000);
 	try {
-		Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[5]/android.widget.LinearLayout").click();
+		Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[4]/android.widget.LinearLayout").click();
 		Thread.sleep(3000);
 	}
 	catch(Exception e2) {
-		Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[5]/android.widget.LinearLayout").click();
+		Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[4]/android.widget.LinearLayout").click();
 		Thread.sleep(3000);
 	}
 	}
@@ -5490,18 +5473,18 @@ public static void clickonday13() throws Exception {
 	logStep("Clicking on day13");
 	Thread.sleep(6000);
 try {
-	Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[5]/android.widget.LinearLayout").click();
+	Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[4]/android.widget.LinearLayout").click();
 	Thread.sleep(6000);
 }
 catch(Exception e) {
-	Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[5]/android.widget.LinearLayout").click();
+	Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[4]/android.widget.LinearLayout").click();
 	Thread.sleep(3000);
 try {
-	Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[5]/android.widget.LinearLayout").click();
+	Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[4]/android.widget.LinearLayout").click();
 	Thread.sleep(3000);
 }
 catch(Exception e2) {
-	Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[5]/android.widget.LinearLayout").click();
+	Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[4]/android.widget.LinearLayout").click();
 	Thread.sleep(3000);
 }
 }
@@ -5511,18 +5494,18 @@ public static void clickonday14() throws Exception {
 	logStep("Clicking on day14");
 	Thread.sleep(6000);
 	try {
-	Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[5]/android.widget.LinearLayout").click();
+	Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[4]/android.widget.LinearLayout").click();
 	Thread.sleep(6000);
 	}
 	catch(Exception e) {
-		Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[5]/android.widget.LinearLayout").click();
+		Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[4]/android.widget.LinearLayout").click();
 		Thread.sleep(3000);
 	try {
-		Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[5]/android.widget.LinearLayout").click();
+		Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[4]/android.widget.LinearLayout").click();
 		Thread.sleep(3000);
 	}
 	catch(Exception e2) {
-		Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[5]/android.widget.LinearLayout").click();
+		Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[4]/android.widget.LinearLayout").click();
 		Thread.sleep(3000);
 	}
 	}
@@ -5532,18 +5515,18 @@ public static void clickonday15() throws Exception {
 	logStep("Clicking on day15");
 	Thread.sleep(6000);
 	try {
-Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[6]/android.widget.LinearLayout").click();
+Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[5]/android.widget.LinearLayout").click();
 Thread.sleep(6000);
 	}
 	catch(Exception e) {
-		Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[6]/android.widget.LinearLayout").click();
+		Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[5]/android.widget.LinearLayout").click();
 		Thread.sleep(3000);
 	try {
-		Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[6]/android.widget.LinearLayout").click();
+		Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[5]/android.widget.LinearLayout").click();
 		Thread.sleep(3000);
 	}
 	catch(Exception e2) {
-		Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[6]/android.widget.LinearLayout").click();
+		Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[5]/android.widget.LinearLayout").click();
 		Thread.sleep(3000);
 	}
 	}
@@ -5869,34 +5852,34 @@ return wfxtriggers_values;
 public static void get_aaxcal_feed1() throws Exception {
 	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
 	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
-	System.out.println("Verifying amazon \"slot\": \"869c843c-7cf8-47ae-b6ed-088057e4bc8a\"  for db_display/feed/feed_1");
-	logStep("Verifying amazon \"slot\": \"869c843c-7cf8-47ae-b6ed-088057e4bc8a\"  for db_display/feed/feed_1");
+	System.out.println("Verifying amazon \"slot\": \"f4b66249-b6eb-4155-9d90-1e2b04487c99\"  for db_display/feed/feed_1");
+	logStep("Verifying amazon \"slot\": \"f4b66249-b6eb-4155-9d90-1e2b04487c99\"  for db_display/feed/feed_1");
 	//System.out.println("Slot Name is  : "+slotID);
-	if(sb.contains("869c843c-7cf8-47ae-b6ed-088057e4bc8a")) {
-	System.out.println("slotID 69c843c-7cf8-47ae-b6ed-088057e4bc8a is trigred for aax  call db_display/feed/feed_1");
-	logStep("slotID 69c843c-7cf8-47ae-b6ed-088057e4bc8a is trigred for aax  call db_display/feed/feed_1");
+	if(sb.contains("f4b66249-b6eb-4155-9d90-1e2b04487c99")) {
+	System.out.println("slotID f4b66249-b6eb-4155-9d90-1e2b04487c99 is trigred for aax  call db_display/feed/feed_1");
+	logStep("slotID f4b66249-b6eb-4155-9d90-1e2b04487c99 is trigred for aax  call db_display/feed/feed_1");
 	}
-	if(!sb.contains("869c843c-7cf8-47ae-b6ed-088057e4bc8a")) {
-		System.out.println("slotID 69c843c-7cf8-47ae-b6ed-088057e4bc8a is not trigred for aax call db_display/feed/feed_1");
-		logStep("slotID 69c843c-7cf8-47ae-b6ed-088057e4bc8a is not trigred for aax call db_display/feed/feed_1");
-		Assert.fail("slotID 69c843c-7cf8-47ae-b6ed-088057e4bc8a is not trigred for aax call db_display/feed/feed_1");
+	if(!sb.contains("f4b66249-b6eb-4155-9d90-1e2b04487c99")) {
+		System.out.println("slotID f4b66249-b6eb-4155-9d90-1e2b04487c99is not trigred for aax call db_display/feed/feed_1");
+		logStep("slotID f4b66249-b6eb-4155-9d90-1e2b04487c99 is not trigred for aax call db_display/feed/feed_1");
+		Assert.fail("slotID f4b66249-b6eb-4155-9d90-1e2b04487c99 is not trigred for aax call db_display/feed/feed_1");
 		}
 }
 
 public static void get_aaxcal_feed2() throws Exception {
 	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
 	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
-	System.out.println("Verifying amazon \"slot\": \"f4b66249-b6eb-4155-9d90-1e2b04487c99\"  for display/feed/feed_2");
-	logStep("Verifying amazon \"slot\": \"f4b66249-b6eb-4155-9d90-1e2b04487c99\"  for display/feed/feed_2");
+	System.out.println("Verifying amazon \"slot\": \"752a96eb-3198-4991-b572-17ec04883b6c\"  for display/feed/feed_2");
+	logStep("Verifying amazon \"slot\": \"752a96eb-3198-4991-b572-17ec04883b6c\"  for display/feed/feed_2");
 	//System.out.println("Slot Name is  : "+slotID);
-	if(sb.contains("f4b66249-b6eb-4155-9d90-1e2b04487c99")) {
-	System.out.println("slotID f4b66249-b6eb-4155-9d90-1e2b04487c99 is trigred for aax  call db_display/feed/feed_2");
-	logStep("slotID f4b66249-b6eb-4155-9d90-1e2b04487c99 is trigred for aax  call db_display/feed/feed_2");
+	if(sb.contains("752a96eb-3198-4991-b572-17ec04883b6c")) {
+	System.out.println("slotID 752a96eb-3198-4991-b572-17ec04883b6c is trigred for aax  call db_display/feed/feed_2");
+	logStep("slotID 752a96eb-3198-4991-b572-17ec04883b6c is trigred for aax  call db_display/feed/feed_2");
 	}
-	if(!sb.contains("f4b66249-b6eb-4155-9d90-1e2b04487c99")) {
-		System.out.println("slotID f4b66249-b6eb-4155-9d90-1e2b04487c99 is not trigred for aax call db_display/feed/feed_2");
-		logStep("slotID f4b66249-b6eb-4155-9d90-1e2b04487c99 is not trigred for aax call db_display/feed/feed_2");
-		Assert.fail("slotID f4b66249-b6eb-4155-9d90-1e2b04487c99 is not trigred for aax call db_display/feed/feed_2");
+	if(!sb.contains("752a96eb-3198-4991-b572-17ec04883b6c")) {
+		System.out.println("slotID 752a96eb-3198-4991-b572-17ec04883b6c is not trigred for aax call db_display/feed/feed_2");
+		logStep("slotID 752a96eb-3198-4991-b572-17ec04883b6c is not trigred for aax call db_display/feed/feed_2");
+		Assert.fail("slotID 752a96eb-3198-4991-b572-17ec04883b6c is not trigred for aax call db_display/feed/feed_2");
 		}
 }
 
