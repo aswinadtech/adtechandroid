@@ -316,13 +316,13 @@ public class smokeTestCases extends Drivers {
 			}
 		 
 		 	
-			@Test(priority = 20, enabled = true)
+			/*@Test(priority = 20, enabled = true)
 			@Title("Verifying Video ad call on FTL")
 			public void Smoke_Test_Case_Verify_Video_adCall_FTL() throws Exception {
 				System.out.println("================= Verifying Video ad call testcase started =========================");
 				Functions.finding_VideoCard_iu_value();
 				System.out.println("================= Verifying Video ad call testcase End==============================");
-			}
+			}*/
 		 
 		 
 			@Test(priority = 22, enabled = true)
@@ -367,7 +367,7 @@ public class smokeTestCases extends Drivers {
 				Functions.health_and_activities_Boat_beach_detailpage_adcall_iu();
 				System.out.println(
 						"================= Verify_health_and_activities_Bot&beach_contenPage_adcall_iu End =========================");
-			}
+			}*/
 			
 			@Test(priority = 30, enabled = true)
 			@Title("Verifying  Allergy content page ad call on FTL")
@@ -382,7 +382,7 @@ public class smokeTestCases extends Drivers {
 		
 			
 			
-				@Test(priority = 32, enabled = false)
+				/*@Test(priority = 32, enabled = false)
 			@Title("Verifying Cold&Flu content page ad call on FTL")
 			public void Smoke_Test_Verify_health_and_activities_coldFlu_contenPaget_adcall_FTL() throws Exception {
 				System.out.println(
