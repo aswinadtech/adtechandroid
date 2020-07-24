@@ -424,15 +424,17 @@ public class AppiumFunctions extends Drivers{
     				
     				Ad = new AndroidDriver(new URL(capabilitydata[15][Cap]), capabilities);
     				Thread.sleep(5000);
+    				
+    				/* ---End Android Device Capabilities --- */
+        			Ad.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        			//####added ths to handle allow button			
+        			clickONNext();
+        		    ClickonIUnderstand();
+            		clickOnAllow();		
+        			Thread.sleep(10000);
+        			System.out.println("Capabilities have been launched  with fullreset ");
     			}
-    			/* ---End Android Device Capabilities --- */
-    			Ad.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-    			//####added ths to handle allow button			
-    			clickONNext();
-    		    ClickonIUnderstand();
-        		clickOnAllow();		
-    			Thread.sleep(10000);
-    			System.out.println("Capabilities have been launched  with fullreset ");
+    		
     		
     		} 
     		
@@ -858,7 +860,7 @@ catch(Exception e) {
 		}*/
 		
 	
-if(ModuleName.toString().contains("Maps") ||ModuleName.toString().contains("Thunderstorms possible") || ModuleName.toString().contains("Thunderstorms ending") || ModuleName.toString().contains("Thunderstorms starts")||ModuleName.toString().contains("Dry conditions") || ModuleName.toString().contains("Thunderstorms ending") || ModuleName.toString().contains("Thunderstorms starts")  || ModuleName.toString().contains("Rain possible") || ModuleName.toString().contains("Rain starts") ||  ModuleName.toString().contains("Rain ending")) {
+if(ModuleName.toString().contains("Maps") ||ModuleName.toString().contains("Thunderstorms possible") || ModuleName.toString().contains("Thunderstorms ending") || ModuleName.toString().contains("Thunderstorms starts")||ModuleName.toString().contains("Dry conditions") || ModuleName.toString().contains("Thunderstorms ending") || ModuleName.toString().contains("Thunderstorms starts")  || ModuleName.toString().contains("Rain possible") || ModuleName.toString().contains("Thunderstorms likely") ||  ModuleName.toString().contains("Rain ending") ||  ModuleName.toString().contains("Thunderstorms likely")) {
 	//System.out.println(ModuleName.toString() +" feed card is presented on the screen");
 	if(radarCount==0)
 {
@@ -960,7 +962,7 @@ public static void Swipe(){
 
 public static void Swipe_feed(){
 	Dimension dimensions = Ad.manage().window().getSize();//throwing exception
-	Double startY1 = dimensions.getHeight() * 0.2;  
+	Double startY1 = dimensions.getHeight() * 0.3;  
 	startY = startY1.intValue();
 	Double endY1 = (double) (dimensions.getHeight()/20);  //  dimensions.getHeight()  0.2;  == 512.0
 	endY = endY1.intValue();
