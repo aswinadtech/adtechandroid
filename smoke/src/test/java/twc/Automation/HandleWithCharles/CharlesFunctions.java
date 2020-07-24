@@ -108,7 +108,7 @@ public class CharlesFunctions extends Drivers{
 
 		//app_download_from_hockeyapp();
 
-                // app_download_from_firebaselink();
+                 app_download_from_firebaselink();
 
 		driver.get(paths[9][Cap]);
 		Thread.sleep(1000);
