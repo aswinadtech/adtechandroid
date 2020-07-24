@@ -41,7 +41,7 @@ public class AppFunctions extends Drivers{
 	public static String TestName=null;
 	public static  String homelocation;
 
-	 public static String apkVersion="101";
+	 public static String apkVersion=null;
 	
 	public static void verifyCall(String excel_sheet_name, String skiCallName) throws Exception{
 
@@ -2351,14 +2351,28 @@ logStep("Clicking on Airlock");
 	
 public static void gettingApkVersion() throws Exception{
 		
-		//cliking View more Button		
+		//cliking View more Button	
+	try {
      	clickOnviewMore();
+	}
+	catch(Exception e) {
+	 	clickOnviewMore();
+	}
+	try {
      	//cliking on aboutthisapp
      	clickOnAboutthisapp();
+	}
+	catch(Exception e) {
+		//cliking on aboutthisapp
+     	clickOnAboutthisapp();
+	}
+	try {
      	apkVersion=Ad.findElementById("com.weather.Weather:id/about_version").getText();
+	}
+	catch(Exception e) {
+		apkVersion=Ad.findElementById("com.weather.Weather:id/about_version").getText();
+	}
      	System.out.println("Android apk build number ::  "+apkVersion);
-     	
-    
      apkVersion= apkVersion.split("Version:")[1].trim();
      
      	System.out.println(apkVersion);
@@ -2399,6 +2413,7 @@ public static void enablingBranch(String branchName) throws Exception{
  	clickOnAirlock();
  	clickOnBranch();
  	seletingRequiredBranch(branchName);
+ 	Ad.runAppInBackground(10);
 }
 
 public static void swipeforbranch() {
