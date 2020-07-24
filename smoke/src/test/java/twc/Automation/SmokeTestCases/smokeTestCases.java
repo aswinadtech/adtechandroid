@@ -105,7 +105,7 @@ public class smokeTestCases extends Drivers {
 	  }
 	
 	
-	@Test(priority = 110, enabled = true)
+	/*@Test(priority = 110, enabled = true)
 	@Title("Verifying amazon Slot Id for hourly details preroll ad call on killLaunch")
 	public void Smoke_Test_amazon_aax_Hourly_preroll_adcall_killLaunch() throws Exception {
 		System.out.println(
@@ -199,7 +199,7 @@ public class smokeTestCases extends Drivers {
 		System.out.println(
 				"================= Verify amazon aax slot Id for feed2 prerol adcall testcase End =========================");
 
-	}
+	}*/
 
 
 
