@@ -132,7 +132,7 @@ public class AppiumFunctions extends Drivers{
 		command.addArgument("--address", false);
 		command.addArgument("127.0.0.1");
 		command.addArgument("--port", false);
-		command.addArgument("4729");	
+		command.addArgument("4727");	
 		command.addArgument("--no-reset", false);
 		command.addArgument("--log-level", false);
 		command.addArgument("error");
@@ -395,13 +395,12 @@ public class AppiumFunctions extends Drivers{
     		
     	//killADB();
     	//	AppiumServerStop();
-    		AppiumServerStart();
+    	//	AppiumServerStart();
     		
     		DeviceStatus device_status = new DeviceStatus();
     		int Cap = device_status.Device_Status();
     		
-    	//	try {
-    			
+    	try {  			
     			String[][] capabilitydata = read_excel_data.exceldataread("Capabilities");
     			DesiredCapabilities capabilities = new DesiredCapabilities();
     			
@@ -421,41 +420,33 @@ public class AppiumFunctions extends Drivers{
     				capabilities.setCapability(capabilitydata[13][0],capabilitydata[13][Cap]);
     				//capabilities.setCapability(capabilitydata[14][0],capabilitydata[14][Cap]);
     				
-    				Thread.sleep(1000);
+    				Thread.sleep(5000);
     				
     				Ad = new AndroidDriver(new URL(capabilitydata[15][Cap]), capabilities);
-    				Thread.sleep(3000);
+    				Thread.sleep(5000);
     			}
     			/* ---End Android Device Capabilities --- */
     			Ad.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-    			//####added ths to handle allow button
-    			Thread.sleep(2000);
-    			
-    			try{
-    				if((Ad.findElementById("com.android.packageinstaller:id/permission_allow_button").isDisplayed())){
-    					Ad.findElementById("com.android.packageinstaller:id/permission_allow_button").click();
-    				}
-    			}catch(Exception e){
-    				System.out.println("Location already set");
-    			}
-    			Thread.sleep(10000);
+    			//####added ths to handle allow button			
     			clickONNext();
     		    ClickonIUnderstand();
-        		clickOnAllow();
-        		 			//######
-    			try{
-    				// WelcomeAppLaunchCooredinates();
-    			}catch(Exception e){
-
-    				}
+        		clickOnAllow();		
+    			Thread.sleep(10000);
     			System.out.println("Capabilities have been launched  with fullreset ");
-    			Thread.sleep(1000);
-    		//} 
     		
-    		/*catch (Exception e) {
+    		} 
+    		
+    		catch (Exception e) {
     			System.out.println("Unable To Launch The Appium Capabilities");
-    		}*/
+    		}
     	}
+     	
+     	
+     	
+     	
+     	
+     	
+     	
      	public static void WelcomeAppLaunchCooredinates()
      	{
      		
@@ -487,6 +478,7 @@ public class AppiumFunctions extends Drivers{
     		try {
     			new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("com.weather.Weather:id/ok_button")));
     		Ad.findElementById("com.weather.Weather:id/ok_button").click();	
+    	//	Thread.sleep(5000);
     	//	Thread.sleep(10000);
     		}
     		catch(Exception e) {
@@ -494,6 +486,7 @@ public class AppiumFunctions extends Drivers{
     			SwipeUp_Counter(1);
     			new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("com.weather.Weather:id/ok_button")));
     			Ad.findElementById("com.weather.Weather:id/ok_button").click();	
+    			//Thread.sleep(5000);
     			System.out.println("video element clicked");
     			logStep("video element clicked");
     			//Thread.sleep(10000);
@@ -502,6 +495,7 @@ public class AppiumFunctions extends Drivers{
     				try {
     					new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("com.weather.Weather:id/video_backdrop")));
     					Ad.findElementById("com.weather.Weather:id/video_backdrop").click();
+    					//Thread.sleep(5000);
     					System.out.println("video element clicked");
     	    			logStep("video element clicked");
 			}
@@ -582,7 +576,7 @@ public static void click_SH_element() throws Exception
 	}
 	catch(Exception e) {
 		try {
-			SwipeUp_Counter(1);
+			Swipe_feed();
 		new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("com.weather.Weather:id/card_dial_index2_item")));
 	 Ad.findElementById("com.weather.Weather:id/card_dial_index2_item").click();
 		System.out.println("outdoor details element clicked");
@@ -638,7 +632,7 @@ public static void click_Running_element() throws Exception
 		}
 		catch(Exception e) {
 			try {
-				SwipeUp_Counter(1);
+				Swipe_feed();
 				new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("com.weather.Weather:id/health_activities_run")));
 				Ad.findElementById("com.weather.Weather:id/health_activities_run").click();
 				System.out.println("Running element clicked");
@@ -701,7 +695,7 @@ public static void click_Allergy_element() throws Exception
 	}
 	catch(Exception e) {
 		try {	
-			SwipeUp_Counter(1);
+			Swipe_feed();
 		new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("com.weather.Weather:id/health_activities_allergy")));
 		Ad.findElementById("com.weather.Weather:id/health_activities_allergy").click();
 		System.out.println("Allergy element clicked");
@@ -744,8 +738,8 @@ public static void click_Airpollution_element() throws Exception
 			logStep("Air Quality element clicked");
 			}
 			catch(Exception e3) {
-				new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("om.weather.Weather:id/air_quality_pollutant_title")));
-				Ad.findElementById("om.weather.Weather:id/air_quality_pollutant_title").click();
+				new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("com.weather.Weather:id/air_quality_pollutant_title")));
+				Ad.findElementById("com.weather.Weather:id/air_quality_pollutant_title").click();
 				System.out.println("Air Quality element clicked");
 				logStep("Air Quality element clicked");
 			}
@@ -810,8 +804,9 @@ public static void SwipeUp_Counter_feedcards(int Counter) throws Exception{
 	System.out.println("Scroll the app till"+ data[1][1] +" is displaying on the screen");
 	for(int i=1;i<=swipeup ;i++){
 		Swipe_feed();
+		Thread.sleep(5000);
 
-		if(i>12) {
+		if(i>10) {
 			//local
 		//	if(Functions.verifyElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout/android.widget.TextView"))){
 		//	server
@@ -829,7 +824,11 @@ public static void SwipeUp_Counter_feedcards(int Counter) throws Exception{
 			}
 			}
 		}
+		
+		Thread.sleep(5000);
 		String ModuleName;
+		Thread.sleep(5000);
+
 		try {
 		if(Ad.findElementById("com.weather.Weather:id/header_title").isDisplayed()) {
 			try {
@@ -860,7 +859,8 @@ catch(Exception e) {
 		
 	
 if(ModuleName.toString().contains("Maps") ||ModuleName.toString().contains("Thunderstorms possible") || ModuleName.toString().contains("Thunderstorms ending") || ModuleName.toString().contains("Thunderstorms starts")||ModuleName.toString().contains("Dry conditions") || ModuleName.toString().contains("Thunderstorms ending") || ModuleName.toString().contains("Thunderstorms starts")  || ModuleName.toString().contains("Rain possible") || ModuleName.toString().contains("Rain starts") ||  ModuleName.toString().contains("Rain ending")) {
-if(radarCount==0)
+	//System.out.println(ModuleName.toString() +" feed card is presented on the screen");
+	if(radarCount==0)
 {
 	AppiumFunctions.clickOnRadarMaps();
 	AppiumFunctions.clickOnBackArrowElement();
@@ -870,6 +870,15 @@ if(radarCount==0)
 }
 if(ModuleName.toString().contains("Health & Activities")) {
 
+	
+	
+	if(RunningCount==0) {
+		 AppiumFunctions.click_Running_element();
+		 AppiumFunctions.clickOnBackArrowElement();
+		   Thread.sleep(10000);
+		 RunningCount=1;
+		}
+	
 	if(AllergyCount==0) {
 		 AppiumFunctions.click_Allergy_element(); 
 		  AppiumFunctions.clickOnBackArrowElement();
@@ -878,14 +887,9 @@ if(ModuleName.toString().contains("Health & Activities")) {
 		  AllergyCount=1;
 	}
 
-	if(RunningCount==0) {
-	 AppiumFunctions.click_Running_element();
-	 AppiumFunctions.clickOnBackArrowElement();
-	   Thread.sleep(10000);
-	 RunningCount=1;
-	}
+
 	
-	if(CofFluCount==0) {
+/*	if(CofFluCount==0) {
 	 AppiumFunctions.click_cold_Flu_element();
 	  AppiumFunctions.clickOnBackArrowElement();
 	   Thread.sleep(10000);
@@ -897,7 +901,7 @@ if(ModuleName.toString().contains("Health & Activities")) {
 		  AppiumFunctions.clickOnBackArrowElement();
 		   Thread.sleep(10000);
 		  BoatBeachCount=1;
-		}
+		}*/
 
 }
 if(ModuleName.toString().contains("Today's Details") ) {
@@ -956,7 +960,7 @@ public static void Swipe(){
 
 public static void Swipe_feed(){
 	Dimension dimensions = Ad.manage().window().getSize();//throwing exception
-	Double startY1 = dimensions.getHeight() * 0.3;  
+	Double startY1 = dimensions.getHeight() * 0.2;  
 	startY = startY1.intValue();
 	Double endY1 = (double) (dimensions.getHeight()/20);  //  dimensions.getHeight()  0.2;  == 512.0
 	endY = endY1.intValue();
@@ -1008,8 +1012,8 @@ public static void clickONNext() throws Exception{
 }
 public static void clickOnAllow() throws Exception{
 try {
-	new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("com.android.permissioncontroller:id/permission_allow_foreground_only_button")));
-	Ad.findElementById("com.android.permissioncontroller:id/permission_allow_foreground_only_button").click();
+	new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("com.android.packageinstaller:id/permission_allow_button")));
+	Ad.findElementById("com.android.packageinstaller:id/permission_allow_button").click();
 	//Thread.sleep(10000);
 }
 catch(Exception e) {
@@ -1027,14 +1031,13 @@ Ad.findElementByAccessibilityId("com.weather.Weather:id/txt_location_name").send
 
 public static void ClickonIUnderstand() throws Exception{
 try {
-	new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("com.android.packageinstaller:id/permission_allow_button")));
-	Ad.findElementById("com.android.packageinstaller:id/permission_allow_buttont").click();
+	new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("com.weather.Weather:id/next_button_text")));
+	Ad.findElementById("com.weather.Weather:id/next_button_text").click();
 
 }
 catch(Exception e)
 {
-	//new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("com.weather.Weather:id/next_button_text")));
-//	Ad.findElementById("com.weather.Weather:id/next_button_text").click();
+	
 }
 }
 
