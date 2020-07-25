@@ -2039,7 +2039,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 		 CharlesFunctions.startSessionBrowserData();
 		  //CharlesFunctions.app_download_from_firebaselink();
 		AppiumFunctions.LaunchAppWithFullReset();
-		Functions.closeInterstailAds();
+		//Functions.closeInterstailAds();
 		Thread.sleep(20000);
 		//AppiumFunctions.Kill_launch();
 	//	Thread.sleep(5000);
