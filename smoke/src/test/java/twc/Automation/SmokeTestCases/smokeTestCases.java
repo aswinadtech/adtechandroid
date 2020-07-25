@@ -52,356 +52,191 @@ import twc.Automation.General.Functions;
 public class smokeTestCases extends Drivers {
 //	protected String email;
 
-	// Verifying Api and feed card and amazon aax prerol calls verification
-	@Test(priority = 100, enabled = true)
-	@Title("Verifying wfxtg trigger api call url on KillLaunch")
-	public void Smoke_Test_CaseVerify_WeatherFXAPI_url_KillLaunch() throws Exception {
-		System.out.println("================= Verifying WeatherFX API url started =========================");
-		CharlesFunctions.ClearSessions();
-		CharlesFunctions.startSessionBrowserData();
-    	AppFunctions.Kill_Launch_App();
-       AppiumFunctions.ClickonIUnderstand();
-    	AppFunctions.Kill_Launch_App();
-    	Thread.sleep(10000);
-		// CharlesFunctions.startSessionBrowserData();
-		CharlesFunctions.ExportSession();
-		Functions.validating_WeatherFXAPI();
-		System.out.println("================= Verifying WeatherFX API url End =========================");
-	}
-	@Test(priority = 102, enabled = true)
-	@Title("Verifying Location/Factual  api call url on KillLaunch")
-	public void Smoke_Test_CaseVerify_Factualapi_url_KillLaunch() throws Exception {
-		System.out.println("================= Verifying WeatherFX API url started =========================");
-		Functions.validating_Fatual();
-		System.out.println("================= Verifying WeatherFX API url End =========================");
-	}
+	
 
+	/* =======================================all feed ad calls test cases started======================================================================================*/
 	
-	@Test(priority = 104, enabled = true)
-	@Title("Verifying turbo call api url on KillLaunch")
-	public void Smoke_Test_CaseVerify_turbo_url_KillLaunch() throws Exception {
-		System.out.println("================= Verifying Turbo call  API url started =========================");
-		Functions.validating_turbocallAPI();
-		System.out.println("================= Verifying Turbo call API url End =========================");
-	}
+@Test(priority = 2, enabled = true)
+@Title("Verifying Home screen marquee ad call on FTL")
+public void Smoke_Test_CaseVerify_Homescreen_marquee_adCall_FTL() throws Exception {
+	System.out.println(
+			"================= verifying iu value for home screen marquee test case started =========================");	
+	System.out.println("going to all detail and content pages");
+	logStep("going to all detail and content pages");
+ Thread.sleep(10000);
+	AppiumFunctions.SwipeUp_Counter_feedcards(40);
+	CharlesFunctions.ExportSession();
+	Functions.finding_Homescreen_marquee_iu_value();
+	System.out.println(
+			"================= verifying iu value for home screen marquee test case End =========================");
+}
 
-	@Test(priority = 106, enabled = true)
-	@Title("Verifying Lotame adcrw api call url on KillLaunch")
-	public void Smoke_Test_CaseVerify_adcrwdcntrlnet_url_KillLaunch() throws Exception {
-		System.out.println("================= Verifying Lotame ad.crwdcntrl.net url started =========================");
-		Functions.validating_adcrw();
-		System.out.println("================= Verifying Lotame ad.crwdcntrl.net url End =========================");
-	}
-	
-	
-	  @Test(priority = 108, enabled = true)	  
-	  @Title("Verifying bcp.crwdcntrl call on killLaunch" )
-	  public void Smoke_Test__Verifying_Bcp_apicall_URL_killLaunch() throws  Exception { 
-	  logStep("Verifying bcp.crwdcntrl call" ); 
-	  System.out.println("=================Verifying  bcp.crwdcntrl call testcase started =========================");	  
-	  Functions.validating_bcp_privacy_Optinmode_scenarion();
-	  System.out.println("================= Verifying  bcp.crwdcntrl call testcase End =========================" );
-	  
-	  }
-	
-	
-	/*@Test(priority = 110, enabled = true)
-	@Title("Verifying amazon Slot Id for hourly details preroll ad call on killLaunch")
-	public void Smoke_Test_amazon_aax_Hourly_preroll_adcall_killLaunch() throws Exception {
-		System.out.println(
-				"================= Verify amazon aax Hourly details preroll adcall Started =========================");
+  @Test(priority = 4, enabled = true)  
+  @Title("Verifying home screen hourly ad call on FTL") 
+  public void Smoke_Test_Verifying_homescreenhourly__adCall_FTL() throws  Exception {  
+  System.out.println("================= Verifying  home screen hourly ad call test case started ========================="); 	  
+   Functions.finding_Homescreen_iu_value();	 
+   System.out.println("================= Verifying  home screen hourly ad call test case End =========================");
+    }
 
-		logStep(" Verifying preload amazon aax for  hourly details");
-		Functions.get_aaxcal_Hourly();
-		System.out.println(
-				"================= Verify amazon aax Hourly details preroll adcall End =========================");
+@Test(priority = 6, enabled = true)
+@Title("Verifying feed_1 ad call on FTL")
+public void Smoke_Test_verifying_feed_1adcall_FTL() throws Exception {
+	System.out.println("================= Verifying feed_1 ad call tescase Started =========================");
+	Functions.verifying_feedcalls(1);
+	System.out.println("================= Verifying feed_1 ad call tescase End =========================");
+}
 
-	}
-	
-	  @Test(priority =112, enabled = true)
-		@Title("Verifying amazon Slot Id for hourly1 big ad details preroll call on killLaunch")
-		public void Smoke_Test_amazon_aax_Hourly1_bigaddetails_preroll_adcall_killLaunch() throws Exception {
-			System.out.println(
-					"================= Verify amazon aax Hourly1 details big  adcall  test case Started =========================");
-			Functions.get_aaxcal_Hourly1();
-			System.out.println("================= Verify amazon aax Hourly1 big ad details  test case  End =========================");
+@Test(priority = 8, enabled = true)
+@Title("Verifying feed_2 ad call on FTL")
+public void Smoke_Test_verifying_feed_2adcall_FTL() throws Exception {
+	System.out.println("================= Verifying feed_2 ad call tescase Started =========================");
+	Functions.verifying_feedcalls(2);
+	System.out.println("================= Verifying feed_2 ad call tescase End =========================");
+}
 
+
+@Test(priority = 10, enabled = true)
+@Title("Verifying feed_3 ad cal on FTL")
+public void Smoke_Test_verifying_feed_3adCall_FTL() throws Exception {
+	System.out.println("================= Verifying feed_3 ad call tescase Started =========================");
+	Functions.verifying_feedcalls(3);
+	System.out.println("================= Verifying feed_3 ad call tescase End =========================");
+}
+
+@Test(priority = 12, enabled = true)
+@Title("Verifying feed_4 ad call on FTL")
+public void Smoke_Test_verifying_feed_4adcall_FTL() throws Exception {
+	System.out.println("================= Verifying feed_4 ad call tescase Started =========================");
+	Functions.verifying_feedcalls(4);
+	System.out.println("================= Verifying feed_4 ad call tescase End =========================");
+}
+
+
+	@Test(priority = 14, enabled = true)
+@Title("Verifying feed_5 ad call on FTL")
+public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
+	System.out.println("================= Verifying feed_5 ad call tescase Started =========================");
+	Functions.verifying_feedcalls(5);
+	System.out.println("================= Verifying feed_5 ad call tescase End =========================");
+}
+
+
+	 @Test(priority=16,enabled = true) 
+	  @Title("Verifying daily feed card  ad call On FTL") 
+	  public void Smoke_Test_Verify_daily_feedcard_adCall_FTL() throws Exception { 
+		System.out. println("================= Verifyig daily adcall_iu Started =========================" );
+		Functions. Verify_dailycard_iu(); 
+		System.out.println("================= Verify_daily_card_adcall_iu End =========================" );
 		}
-		
-
-
-		@Test(priority = 114, enabled = true)
-		@Title("Verifying amazon Slot Id for hourly2 big ad details preroll call on killLaunch")
-		public void Smoke_Test_amazon_aax_Hourly2_bigaddetails_preroll_adcall_killLaunch() throws Exception {
-			System.out.println(
-					"================= Verifying  amazon aax Hourly2 details big  adcall  test case Started =========================");
-			Functions.get_aaxcal_Hourly2();
-			System.out.println("================= Verifying  amazon aax Hourly2  big ad details  test case  End =========================");
-
-		}
-
-
-
-		@Test(priority = 116, enabled = true)
-		@Title("Verifying amazon Slot Id for hourly3 big ad details preroll call on killLaunch")
-		public void Smoke_Test_amazon_aax_Hourly3_bigaddetails_preroll_adcall_killLaunch() throws Exception {
-			System.out.println(
-					"================= Verify amazon aax Hourly3 details big  ad call test case  Started =========================");
-			Functions.get_aaxcal_Hourly3();
-			System.out.println("================= Verify amazon aax Hourly3 big ad call test case End =========================");
-		}
-		  
-
 	
-	@Test(priority = 118, enabled = true)
-	@Title("Verifying amazon Slot Id for maps details preroll ad call on killLaunch")
-	public void Smoke_Test_amazon_aax_mapsdetails_preload_adcall() throws Exception {
-		System.out.println(
-				"================= Verify amazon aax Maps card preroll adcall Started =========================");
-
-		logStep(" Verifying preload amazon aax for  map details");
-		Functions.get_aaxcal_map_details();
-		System.out
-				.println("================= Verify amazon aax Maps card preroll adcall End =========================");
-
-	}
-
+	/* =======================================all  feed ad calls test cases End======================================================================================*/	
 	
-	 @Test(priority=120,enabled = true)  
-	  @Title("Verifying amazon slot id for home screen hourly preroll ad call on killaunch") 
-	  public void Smoke_Test_verify_amazon_Slotid_homescreenhourly_preroll_adcall_killLaunch() throws Exception { 
-	  System.out.println("================= Verifying amazon slotid home screenhourly adcall teetcase Started ========================="); 
-	  Functions.get_aaxcal_homescreen_hourly(); 
-	  System.out.println("================= Verifying amazon slotid home screenhourly adcall teetcase Started End ========================="); 
-	  }
+	 /* =======================================all details page ad calls test cases started======================================================================================*/
+	 
+	 	@Test(priority = 18, enabled = true)
+		@Title("Verifying radar&maps details page ad call On FTL")
+		public void Smoke_Test_Case_Verify_Radar_Maps_deatailspage_adCall_FTL() throws Exception {
+			System.out.println(
+					"================= verifying iu value for Radar&Maps deatail card started =========================");
+			Functions.finding_Radar_Map_card_iu_value();
+			System.out.println(
+					"================= verifying iu value for Radar&Maps deatail card  End =========================");
+		}
+	 
+	 	
+		/*@Test(priority = 20, enabled = true)
+		@Title("Verifying Video ad call on FTL")
+		public void Smoke_Test_Case_Verify_Video_adCall_FTL() throws Exception {
+			System.out.println("================= Verifying Video ad call testcase started =========================");
+			Functions.finding_VideoCard_iu_value();
+			System.out.println("================= Verifying Video ad call testcase End==============================");
+		}*/
 	 
 	 
-		@Test(priority = 122, enabled = true)
-		@Title("Verifying amazon Slot Id for feed1 prerol ad call on killLaunch")
-		public void Smoke_Test_amazon_aaxSlot_feed1_preroladcall_killLaunch() throws Exception {
+		@Test(priority = 22, enabled = true)
+		@Title("Verifying iu value Today details Page on FTL")
+		public void Smoke_Test_CaseVerify_Today_details_page_iu_FTL() throws Exception {
 			System.out.println(
-					"================= Verify amazon aax slot  Id for feed1 prerol adcall  testcase Started =========================");
-			logStep(" Verifying amazon aax slot Id for feed1");
-			Functions.get_aaxcal_feed1();
+					"================= verifying iu value for Today_details_page_iu started =========================");
+			Functions.finding_Today_detail_page_iu_value();
 			System.out.println(
-					"================= Verify amazon aax slot Id for feed1 prerol adcall testcase End =========================");
-
+					"================= verifying iu value for Today_details_page_iu End =========================");
 		}
-	
-	@Test(priority = 124, enabled = true)
-	@Title("Verifying amazon Slot Id for feed2 prerol ad call on killLaunch")
-	public void Smoke_Test_amazon_aaxSlot_feed2_preroladcall_KillLaunch() throws Exception {
-		System.out.println(
-				"================= Verify amazon aax slot  Id for feed2 prerol adcall testcase Started =========================");
-
-		logStep(" Verifying amazon aax slot Id for feed2");
-		Functions.get_aaxcal_feed2();
-		System.out.println(
-				"================= Verify amazon aax slot Id for feed2 prerol adcall testcase End =========================");
-
-	}*/
-
-
-
-	
-	
-	
-
-
-	
-	/*@Test(priority = 39, enabled = false)
-	@Title("Verifying amazon Slot Id for daily details day1 preroll ad call")
-	public void Smoke_Test_amazon_aax_Daily_day1_preroll_adcall() throws Exception {
-		System.out.println(
-				"================= Verify amazon aax Daily details day1 preroll adcall Started =========================");
-		logStep(" Verifying preload amazon aax for  daily details");
-		Functions.get_aaxcal_Daily();
-		System.out.println(
-				"================= Verify amazon aax Daily details day1 preroll adcall End =========================");
-	}*/
-
-
-
-
-	
-	//=====================================================================================================================================//
-	
-
-	
-	
-	@Test(priority = 2, enabled = true)
-	@Title("Verifying Home screen marquee ad call on FTL")
-	public void Smoke_Test_CaseVerify_Homescreen_marquee_adCall_FTL() throws Exception {
-		System.out.println(
-				"================= verifying iu value for home screen marquee test case started =========================");	
-		System.out.println("going to all detail and content pages");
-		logStep("going to all detail and content pages");
-	 Thread.sleep(10000);
-		AppiumFunctions.SwipeUp_Counter_feedcards(40);
-		CharlesFunctions.ExportSession();
-		Functions.finding_Homescreen_marquee_iu_value();
-		System.out.println(
-				"================= verifying iu value for home screen marquee test case End =========================");
-	}
-	
-	  @Test(priority = 4, enabled = true)  
-	  @Title("Verifying home screen hourly ad call on FTL") 
-	  public void Smoke_Test_Verifying_homescreenhourly__adCall_FTL() throws  Exception {  
-	  System.out.println("================= Verifying  home screen hourly ad call test case started ========================="); 	  
-	   Functions.finding_Homescreen_iu_value();	 
-	   System.out.println("================= Verifying  home screen hourly ad call test case End =========================");
-	    }
-
-	@Test(priority = 6, enabled = true)
-	@Title("Verifying feed_1 ad call on FTL")
-	public void Smoke_Test_verifying_feed_1adcall_FTL() throws Exception {
-		System.out.println("================= Verifying feed_1 ad call tescase Started =========================");
-		Functions.verifying_feedcalls(1);
-		System.out.println("================= Verifying feed_1 ad call tescase End =========================");
-	}
-
-	@Test(priority = 8, enabled = true)
-	@Title("Verifying feed_2 ad call on FTL")
-	public void Smoke_Test_verifying_feed_2adcall_FTL() throws Exception {
-		System.out.println("================= Verifying feed_2 ad call tescase Started =========================");
-		Functions.verifying_feedcalls(2);
-		System.out.println("================= Verifying feed_2 ad call tescase End =========================");
-	}
-	
-	
-	@Test(priority = 10, enabled = true)
-	@Title("Verifying feed_3 ad cal on FTL")
-	public void Smoke_Test_verifying_feed_3adCall_FTL() throws Exception {
-		System.out.println("================= Verifying feed_3 ad call tescase Started =========================");
-		Functions.verifying_feedcalls(3);
-		System.out.println("================= Verifying feed_3 ad call tescase End =========================");
-	}
-
-	@Test(priority = 12, enabled = true)
-	@Title("Verifying feed_4 ad call on FTL")
-	public void Smoke_Test_verifying_feed_4adcall_FTL() throws Exception {
-		System.out.println("================= Verifying feed_4 ad call tescase Started =========================");
-		Functions.verifying_feedcalls(4);
-		System.out.println("================= Verifying feed_4 ad call tescase End =========================");
-	}
-
-	
-		@Test(priority = 14, enabled = true)
-	@Title("Verifying feed_5 ad call on FTL")
-	public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
-		System.out.println("================= Verifying feed_5 ad call tescase Started =========================");
-		Functions.verifying_feedcalls(5);
-		System.out.println("================= Verifying feed_5 ad call tescase End =========================");
-	}
-	
-
-		 @Test(priority=16,enabled = true) 
-		  @Title("Verifying daily feed card  ad call On FTL") 
-		  public void Smoke_Test_Verify_daily_feedcard_adCall_FTL() throws Exception { 
-			System.out. println("================= Verifyig daily adcall_iu Started =========================" );
-			Functions. Verify_dailycard_iu(); 
-			System.out.println("================= Verify_daily_card_adcall_iu End =========================" );
-			}
+	 
 		
 		
+		@Test(priority = 24, enabled = true)
+		@Title("Verifying  Air Quality content page ad call on FTL")
+		public void Smoke_Test_Verify_Air_Quality_contentpage_adCall_FTL() throws Exception {
+			System.out.println(
+					"================= Verifying iu value for Air Quality content page testcase  started =========================");
+			Functions.AirQuality_detailed_adcall_iu();
+			System.out.println(
+					"================= Verifying iu value for Air Quality content page testcase  End =========================");
+		}
 		
-		 	@Test(priority = 18, enabled = true)
-			@Title("Verifying radar&maps details page ad call On FTL")
-			public void Smoke_Test_Case_Verify_Radar_Maps_deatailspage_adCall_FTL() throws Exception {
-				System.out.println(
-						"================= verifying iu value for Radar&Maps deatail card started =========================");
-				Functions.finding_Radar_Map_card_iu_value();
-				System.out.println(
-						"================= verifying iu value for Radar&Maps deatail card  End =========================");
+	    
+	/*	@Test(priority = 26, enabled = true)
+		@Title("Verifying Running content page ad call  FTL")
+		public void Smoke_Test_Verify_health_and_activities_Running_contenPage_adcall_FTL() throws Exception {
+			System.out.println(
+					"================= Verify_health_and_activities_Running_contenPage_adcall_iu Started =========================");
+			Functions.health_and_activities_Running_spotlight_adcall_iu();
+			System.out.println(
+					"================= Verify_health_and_activities_Running_contenPage_adcall_iu End =========================");
+		}
+		
+		
+ @Test(priority = 28, enabled = false)
+		@Title("Verifying Boat&Beach content page ad call on FTL")
+		public void Smoke_Test_Verify_health_and_activities_Bot_Beach_contenPage_adcall_FTL() throws Exception {
+			System.out.println(
+					"================= Verify_health_and_activities_Bot&beach_contenPage_adcall_iu Started =========================");
+			Functions.health_and_activities_Boat_beach_detailpage_adcall_iu();
+			System.out.println(
+					"================= Verify_health_and_activities_Bot&beach_contenPage_adcall_iu End =========================");
+		}*/
+		
+		@Test(priority = 30, enabled = true)
+		@Title("Verifying  Allergy content page ad call on FTL")
+		public void Smoke_Test_Verify_health_and_activities_Allergy_contenPage_adcall_FTL() throws Exception {
+			System.out.println(
+					"================= Verify_health_and_activities_Allergy_contenPage_adcall_iu Started =========================");
+			Functions.health_and_activities_Allergy_detailpage_adcall_iu();
+			System.out.println(
+					"================= Verify_health_and_activities_Allergy_contenPage_adcall_iu End =========================");
+		}
+		
+	
+		
+		
+			/*@Test(priority = 32, enabled = false)
+		@Title("Verifying Cold&Flu content page ad call on FTL")
+		public void Smoke_Test_Verify_health_and_activities_coldFlu_contenPaget_adcall_FTL() throws Exception {
+			System.out.println(
+					"================= Verify_health_and_activities_coldFlu_contenPage_adcall_iu Started =========================");
+			Functions.health_and_activities_Cold_Flu_detailpage_adcall_iu();
+			System.out.println(
+					"================= Verify_health_and_activities_coldFlu_contenPage_adcall_iu End =========================");
+		}*/
+		
+			@Test(priority = 34, enabled = true)
+			@Title("Verifying  outdoor conditions  detailed page ad call on FTL")
+			public void Smoke_Test_Verify_outdoor_detailpage_adcall_FTL() throws Exception {
+				System.out
+						.println("================= Verifying outdoor detailpage_adcall iu Started =========================");
+				Functions.Verify_SH_detailpage_adcall_iu();
+				System.out.println("================= Verifying outdoor detailpage adcall iu End =========================");
 			}
-		 
-		 	
-			/*@Test(priority = 20, enabled = true)
-			@Title("Verifying Video ad call on FTL")
-			public void Smoke_Test_Case_Verify_Video_adCall_FTL() throws Exception {
-				System.out.println("================= Verifying Video ad call testcase started =========================");
-				Functions.finding_VideoCard_iu_value();
-				System.out.println("================= Verifying Video ad call testcase End==============================");
-			}*/
-		 
-		 
-			@Test(priority = 22, enabled = true)
-			@Title("Verifying iu value Today details Page on FTL")
-			public void Smoke_Test_CaseVerify_Today_details_page_iu_FTL() throws Exception {
-				System.out.println(
-						"================= verifying iu value for Today_details_page_iu started =========================");
-				Functions.finding_Today_detail_page_iu_value();
-				System.out.println(
-						"================= verifying iu value for Today_details_page_iu End =========================");
-			}
-		 
-			
-			
-			@Test(priority = 24, enabled = true)
-			@Title("Verifying  Air Quality content page ad call on FTL")
-			public void Smoke_Test_Verify_Air_Quality_contentpage_adCall_FTL() throws Exception {
-				System.out.println(
-						"================= Verifying iu value for Air Quality content page testcase  started =========================");
-				Functions.AirQuality_detailed_adcall_iu();
-				System.out.println(
-						"================= Verifying iu value for Air Quality content page testcase  End =========================");
-			}
-			
-		    
-		/*	@Test(priority = 26, enabled = true)
-			@Title("Verifying Running content page ad call  FTL")
-			public void Smoke_Test_Verify_health_and_activities_Running_contenPage_adcall_FTL() throws Exception {
-				System.out.println(
-						"================= Verify_health_and_activities_Running_contenPage_adcall_iu Started =========================");
-				Functions.health_and_activities_Running_spotlight_adcall_iu();
-				System.out.println(
-						"================= Verify_health_and_activities_Running_contenPage_adcall_iu End =========================");
-			}
-			
-			
-	    @Test(priority = 28, enabled = false)
-			@Title("Verifying Boat&Beach content page ad call on FTL")
-			public void Smoke_Test_Verify_health_and_activities_Bot_Beach_contenPage_adcall_FTL() throws Exception {
-				System.out.println(
-						"================= Verify_health_and_activities_Bot&beach_contenPage_adcall_iu Started =========================");
-				Functions.health_and_activities_Boat_beach_detailpage_adcall_iu();
-				System.out.println(
-						"================= Verify_health_and_activities_Bot&beach_contenPage_adcall_iu End =========================");
-			}*/
-			
-			@Test(priority = 30, enabled = true)
-			@Title("Verifying  Allergy content page ad call on FTL")
-			public void Smoke_Test_Verify_health_and_activities_Allergy_contenPage_adcall_FTL() throws Exception {
-				System.out.println(
-						"================= Verify_health_and_activities_Allergy_contenPage_adcall_iu Started =========================");
-				Functions.health_and_activities_Allergy_detailpage_adcall_iu();
-				System.out.println(
-						"================= Verify_health_and_activities_Allergy_contenPage_adcall_iu End =========================");
-			}
-			
 		
 			
 			
-				/*@Test(priority = 32, enabled = false)
-			@Title("Verifying Cold&Flu content page ad call on FTL")
-			public void Smoke_Test_Verify_health_and_activities_coldFlu_contenPaget_adcall_FTL() throws Exception {
-				System.out.println(
-						"================= Verify_health_and_activities_coldFlu_contenPage_adcall_iu Started =========================");
-				Functions.health_and_activities_Cold_Flu_detailpage_adcall_iu();
-				System.out.println(
-						"================= Verify_health_and_activities_coldFlu_contenPage_adcall_iu End =========================");
-			}*/
-			
-				@Test(priority = 34, enabled = true)
-				@Title("Verifying  outdoor conditions  detailed page ad call on FTL")
-				public void Smoke_Test_Verify_outdoor_detailpage_adcall_FTL() throws Exception {
-					System.out
-							.println("================= Verifying outdoor detailpage_adcall iu Started =========================");
-					Functions.Verify_SH_detailpage_adcall_iu();
-					System.out.println("================= Verifying outdoor detailpage adcall iu End =========================");
-				}
-			
-			
+			/* =======================================all details page ad calls test cases End======================================================================================*/
+	
+	
+	
+/* =======================================hourly details ad calls test cases started======================================================================================*/
 			
 			@Test(priority = 40, enabled = true)
 			@Title("Verifying  hourly detailpage al call on FTL")
@@ -423,8 +258,7 @@ public class smokeTestCases extends Drivers {
 				
 				System.out.println("================= Verifying hourly_detailpage_adcall_iu  test case  End =========================");
 			}
-			
-			
+						
 			@Test(priority = 42, enabled = true)
 			@Title("Verifying  hourly1  detailpage bigad ad call on FTL")
 			public void Smoke_Test_Verify_hourly1_detailpage_bigad_adcall_FTL() throws Exception {
@@ -435,8 +269,6 @@ public class smokeTestCases extends Drivers {
 						"================= Verifying hourly1 big ad detailpage_adcall_iu test case  End =========================");
 			}
 
-			
-
 			@Test(priority = 44, enabled = true)
 			@Title("Verifying  hourly2  detailpage bigad ad call on FTL")
 			public void Smoke_Test_Verify_hourly2_detailpage_bigad_adcall_FTL() throws Exception {
@@ -446,8 +278,6 @@ public class smokeTestCases extends Drivers {
 				System.out.println(
 						"================= Verifying hourly2 bigad detailpage_adcall_iu test case End =========================");
 			}
-			
-			
 			
 			@Test(priority = 46, enabled = true)
 			@Title("Verifying  hourly3  detailpage bigad ad call on FTL")
@@ -461,64 +291,956 @@ public class smokeTestCases extends Drivers {
 						"================= Verifying hourly3 bigad detailpage_adcall_iu test case  End =========================");
 			}
 			
-		 
-			
-			
-			
-			
-			
+			/* =======================================hourly  details ad calls test cases End======================================================================================*/
 			
 
-	/*@Test(priority = 21, enabled = true)
-	@Title("Verifying amazon  Slot Id for feed2 ad call")
-	public void Smoke_Test_amazon_aaxSlot_feed2_adcall() throws Exception {
+			
+			/* =======================================daily details ad calls test cases started======================================================================================*/
+			
+			 @Test(priority = 50, enabled = true)
+				@Title("Verifying new daily details day1 ad call on FTL")
+				public void Smoke_Test_Verifying_newdailydetails_day1adcall_FTL() throws Exception {
+					System.out.println(
+							"================= Verifying new daily details day1 ad call tescase Started =========================");
+					CharlesFunctions.ClearSessions();
+					CharlesFunctions.startSessionBrowserData();
+					Functions.clickdailydetails();
+					Functions.closeInterstailads();
+					Functions.clickongotit();
+					CharlesFunctions.ExportSession();
+					Functions.verifyingdailydetailiu();
+					System.out.println(
+							"=================  Verifying new daily details day1 ad call tescase  End =========================");
+				}
+
+			   
+				@Test(priority = 52, enabled = true)
+				@Title("Verifying new daily details day2 ad call on FTL")
+				public void Smoke_Test_Verifying_newdailydetails_day2adcall_FTL() throws Exception {
+					System.out.println(
+							"================= Verifying new daily details day2 ad call test case Started=========================");
+					CharlesFunctions.ClearSessions();
+					CharlesFunctions.startSessionBrowserData();
+					Functions.clickonday2();
+					CharlesFunctions.ExportSession();
+					Functions.verifyingdailydetailiu();
+				//	Functions.verifyingdailydetailsiu();
+					System.out.println(
+							"================= Verifying new daily details day2 ad call test case End =========================");
+				}
+				
+			   
+				@Test(priority = 54, enabled = true)
+				@Title("Verifying new daily details day3 ad call on FTL")
+				public void Smoke_Test_Verifying_newdailydetails_day3adcall_FTL() throws Exception {
+					System.out.println(
+							"================= Verifying new daily details day3 ad call test case Started =========================");
+					CharlesFunctions.ClearSessions();
+					CharlesFunctions.startSessionBrowserData(); //
+					//Functions.finding_newDailyBidadcall_day2();
+					Functions.clickonday3();
+					CharlesFunctions.ExportSession();
+					Functions.verifyingdailydetailiu();
+					System.out.println(
+							"================= Verifying new daily details day3 ad call test case End =========================");
+				}
+				
+				
+				@Test(priority = 56, enabled = true)
+				@Title("Verifying new daily details day4 ad call on FTL")
+				public void Smoke_Test_Verifying_newdailydetails_day4adcall_FTL() throws Exception {
+					System.out.println(
+							"================= Verifying new daily details day4 ad call tescase Started =========================");
+					CharlesFunctions.ClearSessions();
+					CharlesFunctions.startSessionBrowserData(); //
+				//	Functions.finding_newDailyBidadcall_day2();
+					Functions.clickonday4();
+					CharlesFunctions.ExportSession();
+					Functions.verifyingdailydetailiu();
+					System.out.println(
+							"================= Verifying new daily details day4 ad call tescase End =========================");
+				}
+
+				@Test(priority = 58, enabled = true)
+				@Title("Verifying new daily details day5 ad call on FTL")
+				public void Smoke_Test_Verifying_newdailydetails_day5adcall_FTL() throws Exception {
+					System.out.println(
+							"================= Verifying new daily details day5 ad call tescase Started =========================");
+					CharlesFunctions.ClearSessions();
+					CharlesFunctions.startSessionBrowserData(); //
+				//	Functions.finding_newDailyBidadcall_day2();
+					Functions.clickonday5();
+					CharlesFunctions.ExportSession();
+					Functions.verifyingdailydetailiu();
+					System.out.println(
+							"================= Verifying new daily details day5 ad call tescase End =========================");
+				}
+
+				@Test(priority = 60, enabled = true)
+				@Title("Verifying new daily details day6 ad call on FTL")
+				public void Smoke_Test_Verifying_newdailydetails_day6adcall_FTL() throws Exception {
+					System.out.println(
+							"================= Verifying new daily details day6 ad call tescase Started =========================");
+					CharlesFunctions.ClearSessions();
+					CharlesFunctions.startSessionBrowserData(); //
+				//	Functions.finding_newDailyBidadcall_day2();
+					Functions.clickonday6();
+					CharlesFunctions.ExportSession();
+					Functions.verifyingdailydetailiu();
+					System.out.println(
+							"================= Verifying new daily details day6 ad call tescase End =========================");
+				}
+				
+				@Test(priority = 62, enabled = true)
+				@Title("Verifying new daily details day7 ad call on FTL")
+				public void Smoke_Test_Verifying_newdailydetails_day7adcall_FTL() throws Exception {
+					System.out.println(
+							"================= Verifying new daily details day7 ad call tescase Started =========================");
+					CharlesFunctions.ClearSessions();
+					CharlesFunctions.startSessionBrowserData(); 
+				//	Functions.finding_newDailyBidadcall_day2();
+					Functions.clickonday7();
+					CharlesFunctions.ExportSession();
+					Functions.verifyingdailydetailiu();
+					System.out.println(
+							"================= Verifying new daily details day7 ad call tescase End =========================");
+				}
+				
+				@Test(priority = 64, enabled = true)
+				@Title("Verifying new daily details day8 ad call on FTL")
+				public void Smoke_Test_Verifying_newdailydetails_day8adcall_FTL() throws Exception {
+					System.out.println(
+							"================= Verifying new daily details day8 ad call tescase Started =========================");
+					CharlesFunctions.ClearSessions();
+					CharlesFunctions.startSessionBrowserData(); //
+					//Functions.finding_newDailyBidadcall_day2();
+					Functions.clickonday8();
+					CharlesFunctions.ExportSession();
+					Functions.verifyingdailydetailsiu1();
+					System.out.println(
+							"================= Verifying new daily details day8 ad call tescase End =========================");
+				}
+				
+				
+				@Test(priority = 68, enabled = true)
+				@Title("Verifying new daily details day9 ad call on FTL")
+				public void Smoke_Test_Verifying_newdailydetails_day9adcall_FTL() throws Exception {
+					System.out.println(
+							"================= Verifying new daily details day9 ad call tescase Started =========================");
+					CharlesFunctions.ClearSessions();
+					CharlesFunctions.startSessionBrowserData(); //
+					//Functions.finding_newDailyBidadcall_day2();
+					Functions.clickonday9();
+					CharlesFunctions.ExportSession();
+					Functions.verifyingdailydetailsiu1();
+					System.out.println(
+							"================= Verifying new daily details day9 ad call tescase End =========================");
+				}
+				
+				@Test(priority = 70, enabled = true)
+				@Title("Verifying new daily details day10 ad call on FTL")
+				public void Smoke_Test_Verifying_newdailydetails_day10adcall_FTL() throws Exception {
+					System.out.println(
+							"================= Verifying new daily details day10 ad call tescase Started =========================");
+					CharlesFunctions.ClearSessions();
+					CharlesFunctions.startSessionBrowserData(); //
+				//	Functions.finding_newDailyBidadcall_day2();
+					Functions.clickonday10();
+					CharlesFunctions.ExportSession();
+					Functions.verifyingdailydetailsiu1();
+					
+					System.out.println(
+							"================= Verifying new daily details day10 ad call tescase End =========================");
+				}
+				
+				@Test(priority = 80, enabled = true)
+				@Title("Verifying new daily details day11 ad call on FTL")
+				public void Smoke_Test_Verifying_newdailydetails_day11adcall_FTL() throws Exception {
+					System.out.println(
+							"================= Verifying new daily details day11 ad call tescase Started =========================");
+					CharlesFunctions.ClearSessions();
+					CharlesFunctions.startSessionBrowserData(); //
+					//Functions.finding_newDailyBidadcall_day2();
+					Functions.clickonday11();
+					CharlesFunctions.ExportSession();
+					Functions.verifyingdailydetailsiu1();
+					System.out.println(
+							"================= Verifying new daily details day11 ad call tescase End =========================");
+				}
+				
+				@Test(priority = 82, enabled = true)
+				@Title("Verifying new daily details day12 ad call on FTL")
+				public void Smoke_Test_Verifying_newdailydetails_day12adcall_FTL() throws Exception {
+					System.out.println(
+							"================= Verifying new daily details day12 ad call tescase Started =========================");
+					CharlesFunctions.ClearSessions();
+					CharlesFunctions.startSessionBrowserData(); //
+				//	Functions.finding_newDailyBidadcall_day2();
+					Functions.clickonday12();
+					CharlesFunctions.ExportSession();
+					Functions.verifyingdailydetailsiu1();
+					System.out.println(
+							"================= Verifying new daily details day12 ad call tescase End =========================");
+				}
+				
+				@Test(priority = 84, enabled = true)
+				@Title("Verifying new daily details day13 ad call on FTL")
+				public void Smoke_Test_Verifying_newdailydetails_day13adcall_FTL() throws Exception {
+					System.out.println(
+							"================= Verifying new daily details day13 ad call tescase Started =========================");
+					CharlesFunctions.ClearSessions();
+					CharlesFunctions.startSessionBrowserData(); //
+				//	Functions.finding_newDailyBidadcall_day2();
+					Functions.clickonday13();
+					CharlesFunctions.ExportSession();
+					Functions.verifyingdailydetailsiu1();
+					System.out.println(
+							"================= Verifying new daily details day13 ad call tescase End =========================");
+				}
+				
+				@Test(priority = 86, enabled = true)
+
+				@Title("Verifying new daily details day14 ad call on FTL")
+				public void Smoke_Test_Verifying_newdailydetails_day14adcall_FTL() throws Exception {
+					System.out.println(
+							"================= Verifying new daily details day14 ad call tescase Started =========================");
+					CharlesFunctions.ClearSessions();
+					CharlesFunctions.startSessionBrowserData(); //
+				//	Functions.finding_newDailyBidadcall_day2();
+					Functions.clickonday14();
+					CharlesFunctions.ExportSession();
+					Functions.verifyingdailydetailsiu1();
+					System.out.println(
+							"================= Verifying new daily details day14 ad call tescase End =========================");
+				}
+				@Test(priority = 88, enabled = true)
+				@Title("Verifying new daily details day15 ad call on FTL")
+				public void Smoke_Test_Verifying_newdailydetails_day15adcall_FTL() throws Exception {
+					System.out.println(
+							"================= Verifying new daily details day15 ad call tescase Started =========================");
+					CharlesFunctions.ClearSessions();
+					CharlesFunctions.startSessionBrowserData(); //
+				//	Functions.finding_newDailyBidadcall_day2();
+					Functions.clickonday15();
+					CharlesFunctions.ExportSession();
+					Functions.verifyingdailydetailsiu2();
+					System.out.println(
+							"================= Verifying new daily details day15 ad call tescase End =========================");
+				}
+			   
+				
+	/*=======================================================daily details ad calls test cases End===============================================================*/
+			
+
+			
+			
+	
+			/* =======================================All feed cards amazon slot id's test cases started======================================================================================*/				
+
+				
+
+				@Test(priority = 200, enabled = true)
+				@Title("Verifying amazon Slot Id for feed1 prerol ad call")
+				public void Smoke_Test_amazon_aaxSlot_feed1_adCall() throws Exception {
+					System.out.println(
+							"================= Verify amazon aax slot  Id for feed1 prerol adcall  testcase Started =========================");
+					logStep(" Verifying amazon aax slot Id for feed1");
+					Functions.get_aaxcal_feed1();
+					System.out.println(
+							"================= Verify amazon aax slot Id for feed1 prerol adcall testcase End =========================");
+
+				}	
+				
+				
+			 @Test(priority = 202, enabled = true)
+				@Title("Verifying amazon  Slot Id for feed2 ad call")
+				public void Smoke_Test_amazon_aaxSlot_feed2_adcall() throws Exception {
+					System.out.println(
+							"================= Verify amazon aax slot  Id for feed2 adcall testcase Started =========================");
+					logStep(" Verifying amazon aax slot Id for feed2");
+					Functions.get_aaxcal_feed2();
+					System.out.println(
+							"================= Verify amazon aax slot Id for feed2l adcall testcase End =========================");
+				}
+
+				@Test(priority = 204, enabled = true)
+				@Title("Verifying amazon  Slot Id for feed3 ad call")
+				public void Smoke_Test_amazon_aaxSlot_feed3_adcall() throws Exception {
+					System.out.println(
+							"================= Verify amazon aax slot  Id for feed3 adcall testcase Started =========================");
+					logStep(" Verifying amazon aax slot Id for feed3");
+					Functions.get_aaxcal_feed3();
+					System.out.println(
+							"================= Verify amazon aax slot Id for feed3  adcall testcase End =========================");
+				}
+
+
+			    @Test(priority = 206, enabled = true)
+				@Title("Verifying amazon  Slot Id for feed4 ad call")
+				public void Smoke_Test_amazon_aaxSlot_feed4_adcall() throws Exception {
+					System.out.println(
+							"================= Verify amazon aax slot  Id for feed4 adcall testcase Started =========================");
+					logStep(" Verifying amazon aax slot Id for feed4");
+					Functions.get_aaxcal_feed4();
+					System.out.println(
+							"================= Verify amazon aax slot Id for feed4 adcall testcase End =========================");
+				}
+
+
+
+				  
+				 @Test(priority = 208, enabled = true)
+				@Title("Verifying amazon  Slot Id for feed5 ad call")
+				public void Smoke_Test_amazon_aaxSlot_feed5_adcall() throws Exception {
+					System.out.println(
+							"================= Verify amazon aax slot  Id for feed5 adcall testcase Started =========================");
+					logStep(" Verifying amazon aax slot Id for feed5");
+					Functions.get_aaxcal_feed5();
+					System.out.println(
+							"================= Verify amazon aax slot Id for feed5 adcall testcase End =========================");
+				}
+
+				 
+				 /* =======================================All feed cards amazon slot id's test cases End======================================================================================*/
+				 
+
+	
+				 
+				 /* =======================================All detail pages amazon slot id's test cases started======================================================================================*/
+				 
+
+					 @Test(priority = 210, enabled = true)
+					@Title("Verifying amazon Slot Id for maps details preroll ad cal")
+					public void Smoke_Test_amazon_aax_mapsdetails_adcall() throws Exception {
+						System.out.println("================= Verify amazon aax maps detais adcall Started =========================");
+						logStep(" Verifying preload amazon aax for  map details");
+						Functions.get_aaxcal_map_details();
+						System.out
+								.println("================= Verify amazon aax maps card preroll adcall End =========================");
+					}
+
+
+					@Test(priority = 212, enabled = true)
+					@Title("Verifying amazon Slot Id  video ad call")
+					public void Smoke_Test_amazon_aax_video_adcall() throws Exception {
+						System.out.println("================= Verify amazon aax video adcall Started =========================");
+						logStep(" Verifying preload amazon aax for  video details");
+						Functions.get_aaxcal_video_details();
+						System.out.println("================= Verify amazon aax video  adcall End =========================");
+					}
+				 
+				 
+				 
+					@Test(priority = 214, enabled = false)
+					@Title("Verifying amazon axx slot for new article")
+					public void Smoke_Test_Verify_amazon_aax_News_adcall() throws Exception {
+						System.out.println(
+								"================= verifying amazon aax slot for news article started =========================");
+						Functions.get_aaxcal_news();
+						System.out
+								.println("================= verifying amazon aax slot for news article  End =========================");
+					}
+
+
+
+					@Test(priority =216, enabled = true)
+					@Title("Verifying amazon aax for today details card")
+					public void Smoke_Test_amazon_aax_today_deatailcard() throws Exception {
+						System.out.println(
+								"================= Verify amazon aax for today detail adcard Started =========================");
+						Functions.get_aaxcal_today_details();
+						System.out.println("================= Verify amazon aax for today detail adcard End=========================");
+					}
+
+					
+					
+					
+					@Test(priority = 218, enabled = true)
+					@Title("Verifying amazon aax for AQ details page")
+					public void Smoke_Test_amazon_aax_Airquality_deatailcard() throws Exception {
+						System.out.println(
+								"================= Verify amazon aax for Air Quality details page Started =========================");
+						Functions.get_aaxcal_aq();
+						System.out.println("================= Verify amazon aax for Air Quality detail Page  End=========================");
+					}
+					
+
+
+					@Test(priority = 220, enabled = true)
+					@Title("Verifying amazon slot Id for Running Bigbanner ad")
+					public void Smoke_Test_Verify_amazon_SlotId_Running_Bigbanner_ad() throws Exception {
+						System.out.println(
+								"================= verifying amazon SlotId for Running BigBanner adcall started =========================");
+						Functions.get_aaxcal_Running_Bigbanner();
+						System.out.println(
+								"================= verifying amazon SlotId for Running BigBanner adcall  End =========================");
+					}
+
+
+
+					@Test(priority = 222, enabled = false)
+					@Title("Verifying amazon slot Id  for Boat&Beach Bigbanner ad")
+					public void Smoke_Test_Verify_amazon_SlotId_Boat_Beach_Bigbanner_ad() throws Exception {
+						System.out.println(
+								"================= verifying amazon aax SlotId for Boat&Beach BigBanner adcall started =========================");
+						Functions.get_aaxcal_Boat_Beach_Bigbanner();
+						System.out.println(
+								"================= verifying amazon SlotId for Boat&Beach BigBanner adcall End =========================");
+					}
+
+
+
+					@Test(priority = 224, enabled = true)
+					@Title("Verifying amazon slot Id for Allergy Bigbanner ad")
+					public void Smoke_Test_Verify_amazon_SlotId_Allergy_Bigbanner_ad() throws Exception {
+						System.out.println(
+								"================= verifying amazon SlotId for Allergy BigBanner adcall started =========================");
+						Functions.get_aaxcal_Allergy_Bigbanner();
+						System.out.println(
+								"================= verifying amazon SlotId for Allergy BigBanner adcall  End =========================");
+					}
+
+
+
+					@Test(priority = 226, enabled = false)
+					@Title("Verifying amazon slot Id for Cold&Flu Bigbanner ad")
+					public void Smoke_Test_Verify_amazon_SlotId_coldFlu_Bigbanner_ad() throws Exception {
+						System.out.println(
+								"================= verifying amazon SlotId for cold&Flu BigBanner adcall started =========================");
+						Functions.get_aaxcal_Cold_Flu_Bigbanner();
+						System.out.println(
+								"================= verifying amazon SlotId for cold&Flu BigBanner adcall  End =========================");
+					}
+
+
+					
+					
+					@Test(priority = 228, enabled = true)
+					@Title("Verifying amazon slot Id for Outdoor details page")
+					public void Smoke_Test_Verify_amazon_SlotId_outdoor_details() throws Exception {
+						System.out.println(
+								"================= verifying amazon SlotId for oudoor details adcall started =========================");
+						Functions.get_aaxcal_SH_details();
+						System.out.println(
+								"================= verifying amazon SlotId for outdoor details adcall  End =========================");
+					}		
+					
+					 /* =======================================All detail pages amazon slot id's test cases End======================================================================================*/
+				
+	
+					
+					 /* =======================================Hourly details amazon aax slot id's test case Started======================================================================================*/
+				
+					
+					@Test(priority = 230, enabled = true)
+					@Title("Verifying amazon Slot Id for hourly details ad call")
+					public void Smoke_Test_amazon_aax_Hourly_details_adcall() throws Exception {
+						System.out.println(
+								"================= Verify amazon aax Hourly details  adcall test case  Started =========================");
+						Functions.get_aaxcal_Hourly();
+						System.out.println("================= Verify amazon aax Hourly details  test case  End =========================");
+					}
+					
+
+					
+					@Test(priority =232, enabled = true)
+					@Title("Verifying amazon Slot Id for hourly1 big ad detailspage")
+					public void Smoke_Test_amazon_aax_Hourly1_bigaddetails_adcall() throws Exception {
+						System.out.println(
+								"================= Verify amazon aax Hourly1 details big  adcall  test case Started =========================");
+						Functions.get_aaxcal_Hourly1();
+						System.out.println("================= Verify amazon aax Hourly1 big ad details  test case  End =========================");
+
+					}
+
+					
+					@Test(priority = 234, enabled = true)
+					@Title("Verifying amazon Slot Id for hourly2 big ad detailspage")
+					public void Smoke_Test_amazon_aax_Hourly2_bigaddetails_adcall() throws Exception {
+						System.out.println(
+								"================= Verifying  amazon aax Hourly2 details big  adcall  test case Started =========================");
+						Functions.get_aaxcal_Hourly2();
+						System.out.println("================= Verifying  amazon aax Hourly2  big ad details  test case  End =========================");
+
+					}
+					
+
+
+					@Test(priority = 236, enabled = true)
+					@Title("Verifying amazon Slot Id for hourly3 big ad detailspagel")
+					public void Smoke_Test_amazon_aax_Hourly3_bigaddetails_adcall() throws Exception {
+						System.out.println(
+								"================= Verify amazon aax Hourly3 details big  ad call test case  Started =========================");
+						Functions.get_aaxcal_Hourly3();
+						System.out.println("================= Verify amazon aax Hourly3 big ad call test case End =========================");
+					}
+					
+					
+					 /* =======================================Hourly details amazon aax slot id's test case End======================================================================================*/
+					
+	
+	
+
+					 /* =======================================Daily details amazon aax slot id's test case Started======================================================================================*/
+					
+					@Test(priority = 238, enabled = false)
+					@Title("Verifying amazon Slot Id for daily details day1 ad calll")
+					public void Smoke_Test_amazon_aax_Daily_details_Day1_adcall() throws Exception {
+						System.out
+								.println("================= Verifying amazon slot id for  daily details day1 adcall test case Started =========================");
+					  Functions.gettingDayofWeekFromUI(1);
+						Functions.get_aaxcal_Daily();
+						System.out.println("================= Verifying amazon slot id for  daily details day 1 adcall test case End =========================");
+					}
+
+
+					@Test(priority = 240, enabled = false)
+					@Title("Verifying amazon Slot Id for daily details day2 ad calll")
+					public void Smoke_Test_amazon_aax_Dailydetails_Day2adcall() throws Exception {
+						System.out
+								.println("================= Verifying amazon slot id for  daily details day2  adcall test case Started =========================");
+					  Functions.gettingDayofWeekFromUI(1);
+						Functions.get_aaxcal_Daily();
+						System.out.println("================= Verifying amazon slot id for  daily details day2 adcall test case End =========================");
+					}
+
+
+					
+					@Test(priority = 242, enabled = false)
+					@Title("Verifying amazon Slot Id for daily details day3 ad calll")
+					public void Smoke_Test_amazon_aax_Dailydetails_Day3adcall() throws Exception {
+						System.out
+								.println("================= Verifying amazon slot id for  daily details day3  adcall test case Started =========================");
+					  Functions.gettingDayofWeekFromUI(1);
+						Functions.get_aaxcal_Daily();
+						System.out.println("================= Verifying amazon slot id for  daily details day3 adcall test case End =========================");
+					}
+
+
+					
+					@Test(priority = 244, enabled = false)
+					@Title("Verifying amazon Slot Id for daily details day4 ad calll")
+					public void Smoke_Test_amazon_aax_Dailydetails_Day4adcall() throws Exception {
+						System.out
+								.println("================= Verifying amazon slot id for  daily details day4  adcall test case Started =========================");
+					  Functions.gettingDayofWeekFromUI(1);
+						Functions.get_aaxcal_Daily();
+						System.out.println("================= Verifying amazon slot id for  daily details day4 adcall test case End =========================");
+					}
+
+					@Test(priority = 248, enabled = false)
+					@Title("Verifying amazon Slot Id for daily details day5 ad calll")
+					public void Smoke_Test_amazon_aax_Dailydetails_Day5adcall() throws Exception {
+						System.out
+								.println("================= Verifying amazon slot id for  daily details day5  adcall test case Started =========================");
+					  Functions.gettingDayofWeekFromUI(1);
+						Functions.get_aaxcal_Daily();
+						System.out.println("================= Verifying amazon slot id for  daily details day5 adcall test case End =========================");
+					}
+					
+					
+
+					
+				   @Test(priority = 250, enabled = false)
+					@Title("Verifying amazon Slot Id for daily details day6 ad calll")
+					public void Smoke_Test_amazon_aax_Dailydetails_Day6adcall() throws Exception {
+						System.out
+								.println("================= Verifying amazon slot id for  daily details day6  adcall test case Started =========================");
+					  Functions.gettingDayofWeekFromUI(1);
+						Functions.get_aaxcal_Daily();
+						System.out.println("================= Verifying amazon slot id for  daily details day6 adcall test case End =========================");
+					}
+
+					
+					
+				  @Test(priority = 252, enabled = false)
+					@Title("Verifying amazon Slot Id for daily details day7 ad calll")
+					public void Smoke_Test_amazon_aax_Dailydetails_Day7adcall() throws Exception {
+						System.out
+								.println("================= Verifying amazon slot id for  daily details day7  adcall test case Started =========================");
+					  Functions.gettingDayofWeekFromUI(1);
+						Functions.get_aaxcal_Daily();
+						System.out.println("================= Verifying amazon slot id for  daily details day7 adcall test case End =========================");
+					}
+
+
+					
+					@Test(priority = 254, enabled = false)
+					@Title("Verifying amazon Slot Id for daily details day8 ad calll")
+					public void Smoke_Test_amazon_aax_Dailydetails_Day8adcall() throws Exception {
+						System.out
+								.println("================= Verifying amazon slot id for  daily details day8  adcall test case Started =========================");
+					  Functions.gettingDayofWeekFromUI(2);
+						Functions.get_aaxcal_Daily();
+						System.out.println("================= Verifying amazon slot id for  daily details day8 adcall test case End =========================");
+					}
+
+					
+					
+					
+					
+					 @Test(priority = 256, enabled = false)
+					@Title("Verifying amazon Slot Id for daily details day9 ad calll")
+					public void Smoke_Test_amazon_aax_Dailydetails_Day9adcall() throws Exception {
+						System.out
+								.println("================= Verifying amazon slot id for  daily details day9  adcall test case Started =========================");
+					  Functions.gettingDayofWeekFromUI(2);
+						Functions.get_aaxcal_Daily();
+						System.out.println("================= Verifying amazon slot id for  daily details day9 adcall test case End =========================");
+					}
+
+
+					
+					
+					@Test(priority = 258, enabled = false)
+					@Title("Verifying amazon Slot Id for daily details day10  ad calll")
+					public void Smoke_Test_amazon_aax_Dailydetails_Day10adcall() throws Exception {
+						System.out
+								.println("================= Verifying amazon slot id for  daily details day10  adcall test case Started =========================");
+					  Functions.gettingDayofWeekFromUI(2);
+						Functions.get_aaxcal_Daily();
+						System.out.println("================= Verifying amazon slot id for  daily details day10 adcall test case End =========================");
+					}
+
+
+					
+					
+					@Test(priority = 260, enabled = false)
+					@Title("Verifying amazon Slot Id for daily details day11  ad calll")
+					public void Smoke_Test_amazon_aax_Dailydetails_Day11adcall() throws Exception {
+						System.out
+								.println("================= Verifying amazon slot id for  daily details day11  adcall test case Started =========================");
+					  Functions.gettingDayofWeekFromUI(2);
+						Functions.get_aaxcal_Daily();
+						System.out.println("================= Verifying amazon slot id for  daily details day11 adcall test case End =========================");
+					}
+
+					
+					@Test(priority = 262, enabled = false)
+					@Title("Verifying amazon Slot Id for daily details day12  ad calll")
+					public void Smoke_Test_amazon_aax_Dailydetails_Day12adcall() throws Exception {
+						System.out
+								.println("================= Verifying amazon slot id for  daily details day12  adcall test case Started =========================");
+					  Functions.gettingDayofWeekFromUI(2);
+						Functions.get_aaxcal_Daily();
+						System.out.println("================= Verifying amazon slot id for  daily details day12 adcall test case End =========================");
+					}
+
+					
+					
+					
+					@Test(priority = 264, enabled = false)
+					@Title("Verifying amazon Slot Id for daily details day13  ad calll")
+					public void Smoke_Test_amazon_aax_Dailydetails_Day13adcall() throws Exception {
+						System.out
+								.println("================= Verifying amazon slot id for  daily details day13  adcall test case Started =========================");
+					  Functions.gettingDayofWeekFromUI(2);
+						Functions.get_aaxcal_Daily();
+						System.out.println("================= Verifying amazon slot id for  daily details day13 adcall test case End =========================");
+					}
+
+
+					
+					
+					@Test(priority = 268, enabled = false)
+					@Title("Verifying amazon Slot Id for daily details day14  ad calll")
+					public void Smoke_Test_amazon_aax_Dailydetails_Day14adcall() throws Exception {
+						System.out
+								.println("================= Verifying amazon slot id for  daily details day14  adcall test case Started =========================");
+					  Functions.gettingDayofWeekFromUI(2);
+						Functions.get_aaxcal_Daily();
+						System.out.println("================= Verifying amazon slot id for  daily details day14 adcall test case End =========================");
+					}
+
+
+					
+
+					
+					@Test(priority = 270, enabled = false)
+					@Title("Verifying amazon Slot Id for daily details day15  ad call")
+					public void Smoke_Test_amazon_aax_Dailydetails_Day15adcall() throws Exception {
+						System.out
+								.println("================= Verifying amazon slot id for  daily details day15  adcall test case Started =========================");
+					  Functions.gettingDayofWeekFromUI(3);
+						Functions.get_aaxcal_Daily();
+						System.out.println("================= Verifying amazon slot id for  daily details day15 adcall test case End =========================");
+					}
+					
+
+	
+	
+					 /* =======================================Daily details amazon aax slot id's test case End======================================================================================*/
+	
+	
+	
+	
+		
+	
+
+	/* =======================================api  calls test cases started======================================================================================*/
+	// Verifying Api and feed card and amazon aax prerol calls verification
+	@Test(priority = 300, enabled = true)
+	@Title("Verifying wfxtg trigger api call url on KillLaunch")
+	public void Smoke_Test_CaseVerify_WeatherFXAPI_url_KillLaunch() throws Exception {
+		System.out.println("================= Verifying WeatherFX API url started =========================");
+		CharlesFunctions.ClearSessions();
+		CharlesFunctions.startSessionBrowserData();
+    	AppFunctions.Kill_Launch_App();
+       AppiumFunctions.ClickonIUnderstand();
+    	AppFunctions.Kill_Launch_App();
+    	Thread.sleep(10000);
+		// CharlesFunctions.startSessionBrowserData();
+		CharlesFunctions.ExportSession();
+		Functions.validating_WeatherFXAPI();
+		System.out.println("================= Verifying WeatherFX API url End =========================");
+	}
+	@Test(priority = 302, enabled = true)
+	@Title("Verifying Location/Factual  api call url on KillLaunch")
+	public void Smoke_Test_CaseVerify_Factualapi_url_KillLaunch() throws Exception {
+		System.out.println("================= Verifying WeatherFX API url started =========================");
+		Functions.validating_Fatual();
+		System.out.println("================= Verifying WeatherFX API url End =========================");
+	}
+
+	
+	@Test(priority = 304, enabled = true)
+	@Title("Verifying turbo call api url on KillLaunch")
+	public void Smoke_Test_CaseVerify_turbo_url_KillLaunch() throws Exception {
+		System.out.println("================= Verifying Turbo call  API url started =========================");
+		Functions.validating_turbocallAPI();
+		System.out.println("================= Verifying Turbo call API url End =========================");
+	}
+
+	@Test(priority = 306, enabled = true)
+	@Title("Verifying Lotame adcrw api call url on KillLaunch")
+	public void Smoke_Test_CaseVerify_adcrwdcntrlnet_url_KillLaunch() throws Exception {
+		System.out.println("================= Verifying Lotame ad.crwdcntrl.net url started =========================");
+		Functions.validating_adcrw();
+		System.out.println("================= Verifying Lotame ad.crwdcntrl.net url End =========================");
+	}
+	
+	
+	  @Test(priority = 308, enabled = true)	  
+	  @Title("Verifying bcp.crwdcntrl call on killLaunch" )
+	  public void Smoke_Test__Verifying_Bcp_apicall_URL_killLaunch() throws  Exception { 
+	  logStep("Verifying bcp.crwdcntrl call" ); 
+	  System.out.println("=================Verifying  bcp.crwdcntrl call testcase started =========================");	  
+	  Functions.validating_bcp_privacy_Optinmode_scenarion();
+	  System.out.println("================= Verifying  bcp.crwdcntrl call testcase End =========================" );
+	  
+	  }
+		/* =======================================api calls test cases End======================================================================================*/
+	
+	  
+	  
+		/* =======================================amazon preroll   ad calls test cases started======================================================================================*/
+	  
+	@Test(priority = 310, enabled = true)
+	@Title("Verifying amazon Slot Id for hourly details preroll ad call on killLaunch")
+	public void Smoke_Test_amazon_aax_Hourly_preroll_adcall_killLaunch() throws Exception {
 		System.out.println(
-				"================= Verify amazon aax slot  Id for feed2 adcall testcase Started =========================");
+				"================= Verify amazon aax Hourly details preroll adcall Started =========================");
+
+		logStep(" Verifying preload amazon aax for  hourly details");
+		Functions.get_aaxcal_Hourly();
+		System.out.println(
+				"================= Verify amazon aax Hourly details preroll adcall End =========================");
+
+	}
+	
+	  @Test(priority =312, enabled = true)
+		@Title("Verifying amazon Slot Id for hourly1 big ad details preroll call on killLaunch")
+		public void Smoke_Test_amazon_aax_Hourly1_bigaddetails_preroll_adcall_killLaunch() throws Exception {
+			System.out.println(
+					"================= Verify amazon aax Hourly1 details big  adcall  test case Started =========================");
+			Functions.get_aaxcal_Hourly1();
+			System.out.println("================= Verify amazon aax Hourly1 big ad details  test case  End =========================");
+
+		}
+		
+
+
+		@Test(priority = 314, enabled = true)
+		@Title("Verifying amazon Slot Id for hourly2 big ad details preroll call on killLaunch")
+		public void Smoke_Test_amazon_aax_Hourly2_bigaddetails_preroll_adcall_killLaunch() throws Exception {
+			System.out.println(
+					"================= Verifying  amazon aax Hourly2 details big  adcall  test case Started =========================");
+			Functions.get_aaxcal_Hourly2();
+			System.out.println("================= Verifying  amazon aax Hourly2  big ad details  test case  End =========================");
+
+		}
+
+
+
+		@Test(priority = 316, enabled = true)
+		@Title("Verifying amazon Slot Id for hourly3 big ad details preroll call on killLaunch")
+		public void Smoke_Test_amazon_aax_Hourly3_bigaddetails_preroll_adcall_killLaunch() throws Exception {
+			System.out.println(
+					"================= Verify amazon aax Hourly3 details big  ad call test case  Started =========================");
+			Functions.get_aaxcal_Hourly3();
+			System.out.println("================= Verify amazon aax Hourly3 big ad call test case End =========================");
+		}
+		  
+
+	
+	@Test(priority = 318, enabled = true)
+	@Title("Verifying amazon Slot Id for maps details preroll ad call on killLaunch")
+	public void Smoke_Test_amazon_aax_mapsdetails_preload_adcall() throws Exception {
+		System.out.println(
+				"================= Verify amazon aax Maps card preroll adcall Started =========================");
+
+		logStep(" Verifying preload amazon aax for  map details");
+		Functions.get_aaxcal_map_details();
+		System.out
+				.println("================= Verify amazon aax Maps card preroll adcall End =========================");
+
+	}
+
+	
+	 @Test(priority=320,enabled = true)  
+	  @Title("Verifying amazon slot id for home screen hourly preroll ad call on killaunch") 
+	  public void Smoke_Test_verify_amazon_Slotid_homescreenhourly_preroll_adcall_killLaunch() throws Exception { 
+	  System.out.println("================= Verifying amazon slotid home screenhourly adcall teetcase Started ========================="); 
+	  Functions.get_aaxcal_homescreen_hourly(); 
+	  System.out.println("================= Verifying amazon slotid home screenhourly adcall teetcase Started End ========================="); 
+	  }
+	 
+	 
+		@Test(priority = 322, enabled = true)
+		@Title("Verifying amazon Slot Id for feed1 prerol ad call on killLaunch")
+		public void Smoke_Test_amazon_aaxSlot_feed1_preroladcall_killLaunch() throws Exception {
+			System.out.println(
+					"================= Verify amazon aax slot  Id for feed1 prerol adcall  testcase Started =========================");
+			logStep(" Verifying amazon aax slot Id for feed1");
+			Functions.get_aaxcal_feed1();
+			System.out.println(
+					"================= Verify amazon aax slot Id for feed1 prerol adcall testcase End =========================");
+
+		}
+	
+	@Test(priority = 324, enabled = true)
+	@Title("Verifying amazon Slot Id for feed2 prerol ad call on killLaunch")
+	public void Smoke_Test_amazon_aaxSlot_feed2_preroladcall_KillLaunch() throws Exception {
+		System.out.println(
+				"================= Verify amazon aax slot  Id for feed2 prerol adcall testcase Started =========================");
+
 		logStep(" Verifying amazon aax slot Id for feed2");
 		Functions.get_aaxcal_feed2();
 		System.out.println(
-				"================= Verify amazon aax slot Id for feed2l adcall testcase End =========================");
-	}*/
+				"================= Verify amazon aax slot Id for feed2 prerol adcall testcase End =========================");
 
+	}
 
-	/*@Test(priority = 23, enabled = true)
-	@Title("Verifying amazon  Slot Id for feed3 ad call")
-	public void Smoke_Test_amazon_aaxSlot_feed3_adcall() throws Exception {
+	
+	@Test(priority = 326, enabled = false)
+	@Title("Verifying amazon Slot Id for daily details preroll ad call")
+	public void Smoke_Test_amazon_aax_Daily_details_preroll_adcall() throws Exception {
 		System.out.println(
-				"================= Verify amazon aax slot  Id for feed3 adcall testcase Started =========================");
-		logStep(" Verifying amazon aax slot Id for feed3");
-		Functions.get_aaxcal_feed3();
+				"================= Verify amazon aax Daily details  preroll adcall Started =========================");
+		logStep(" Verifying preload amazon aax for  daily details");
+		Functions.get_aaxcal_Daily();
 		System.out.println(
-				"================= Verify amazon aax slot Id for feed3  adcall testcase End =========================");
-	}*/
+				"================= Verify amazon aax Daily details preroll adcall End =========================");
+	}
 
 
-/*	@Test(priority = 25, enabled = true)
-	@Title("Verifying amazon  Slot Id for feed4 ad call")
-	public void Smoke_Test_amazon_aaxSlot_feed4_adcall() throws Exception {
-		System.out.println(
-				"================= Verify amazon aax slot  Id for feed4 adcall testcase Started =========================");
-		logStep(" Verifying amazon aax slot Id for feed4");
-		Functions.get_aaxcal_feed4();
-		System.out.println(
-				"================= Verify amazon aax slot Id for feed4 adcall testcase End =========================");
-	}*/
+		/* =======================================amazon preroll  ad calls test cases End======================================================================================*/
 
+	
 
+	
 
 	  
-	/*@Test(priority = 6, enabled = true)
-	@Title("Verifying amazon  Slot Id for feed5 ad call")
-	public void Smoke_Test_amazon_aaxSlot_feed5_adcall() throws Exception {
-		System.out.println(
-				"================= Verify amazon aax slot  Id for feed5 adcall testcase Started =========================");
-		logStep(" Verifying amazon aax slot Id for feed5");
-		Functions.get_aaxcal_feed5();
-		System.out.println(
-				"================= Verify amazon aax slot Id for feed5 adcall testcase End =========================");
-	}*/
+	  
+		
+		 
+					
+							
+		
+				
+				
+				
+			
+	 
 
-	/*@Test(priority = 7, enabled = true)
+		
+		
+		
+
+		
+		
+		
+		
+		
+			
+	
+		
+		
+		 /* =======================================pull to refresh test case Started======================================================================================*/
+		 @Test(priority = 350, enabled = true)		  
+		  @Title("Verifying  home screen hourly  ad call pull to refrersh scenario on killLaunch") 
+		  public  void Smoke_Test_Verifying_homescreenhourly_pulltoreresh_scenario_killLaunch() throws  Exception {	 
+		  logStep("Verifying home screen hourly  ad call pull to refrersh scenario");
+		  System.out.
+		  println("================= Verifying  home screen hourly  ad  call pull to refrersh scenario started =========================" ); 
+		 AppFunctions.Kill_Launch_App();
+		  CharlesFunctions.ClearSessions();
+		  CharlesFunctions.startSessionBrowserData();
+		  AppFunctions.Pull_To_Refresh("Pulltorefresh");
+		  AppFunctions.Pull_To_Refresh("Pulltorefresh");
+		  CharlesFunctions.ExportSession(); 
+		  Functions.finding_Homescreen_iu_value();	 
+		  System.out. println("=================  Verifying  home screen hourly  ad  call pull to refrersh scenario  End =========================" ); 
+		  }
+		  
+		  @Test(priority = 352, enabled = true)
+		  
+		  @Title("Verifying  home screen marquee call pull to refrersh scenario") public
+		  void Smoke_Test_Verifying_homescreenmarquee__pulltoreresh_scenario() throws
+		  Exception {
+		  logStep("Verifying  home screen marquee call pull to refrersh scenario");
+		  System.out. println("================= Verifying  home screen marquee call pull to refrersh scenario started =========================");
+		  Functions.finding_Homescreen_marquee_iu_value(); 
+		  System.out.println("================= Verifying  home screen marquee call pull to refrersh scenario  End =========================" );  
+		  }
+		
+		  /* =======================================pull to refresh test case End======================================================================================*/
+		  
+		  
+		  
+		  /* =======================================Location adding scenario test case Started======================================================================================*/
+		  @Test(priority = 354, enabled = true)	  
+		  @Title("Verifying  home screen hourly  ad call when user enter new location") 
+		  public  void Smoke_Test_Verifying_homescreenhourly_adcall_enter_newLocation_scenario() throws  Exception {	 
+		  logStep("Verifying home screen hourly  ad call when user enter new location");
+		  System.out.
+		  println("================= Verifying  home scren hourly  ad  call when user enter new location scenario started =========================" ); 
+		  CharlesFunctions.ClearSessions();
+		  CharlesFunctions.startSessionBrowserData();
+		  AppFunctions.enter_requiredLocation("30124");
+		  CharlesFunctions.ExportSession(); 
+		  Functions.finding_Homescreen_iu_value();	 
+
+		  System.out. println("=================Verifying  home scren hourly ad call when user enter new location scenario  End =========================" ); 
+		  }
+		  
+		  @Test(priority = 356, enabled = true)	  
+		  @Title("Verifying  home screen marquee call when user enter new location") public
+		  void Smoke_Test_Verifying_homescreenmarquee__enter_newLocation_scenario() throws
+		  Exception {
+		  logStep("Verifying  home screen marquee call backgroud launch scenario");
+		  System.out. println("================= Verifying  home screen marquee call when user enter new location scenario started =========================");
+		  Functions.finding_Homescreen_marquee_iu_value(); 
+		  System.out.println("================= Verifying  home screen marquee call when user enter new location scenario   End =========================" );  
+		  }
+		
+		
+		  /* =======================================Location adding scenario test case End======================================================================================*/
+	 
+	 
+	 
+	 
+	/* @Test(priority = 7, enabled = true)
 	@Title("Verifying feed_6 ad call on FTL")
 	public void Smoke_Test_verifying_feed_6adcall_FTL() throws Exception {
 		System.out.println("================= Verifying feed_6 ad call tescase Started =========================");
@@ -526,6 +1248,17 @@ public class smokeTestCases extends Drivers {
 		System.out.println("================= Verifying feed_6 ad call tescase End =========================");
 	}*/
 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
 	/*@Test(priority = 29, enabled = true)
 	@Title("Verifying amazon  Slot Id for feed6 ad call")
 	public void Smoke_Test_amazon_aaxSlot_feed6_adcall() throws Exception {
@@ -540,26 +1273,6 @@ public class smokeTestCases extends Drivers {
 
 
 
-	/*@Test(priority = 31, enabled = true)
-	@Title("Verifying amazon Slot Id for maps details preroll ad cal")
-	public void Smoke_Test_amazon_aax_mapsdetails_adcall() throws Exception {
-		System.out.println("================= Verify amazon aax maps detais adcall Started =========================");
-		logStep(" Verifying preload amazon aax for  map details");
-		Functions.get_aaxcal_map_details();
-		System.out
-				.println("================= Verify amazon aax maps card preroll adcall End =========================");
-	}*/
-
-
-
-	/*@Test(priority = 33, enabled = true)
-	@Title("Verifying amazon Slot Id  video ad call")
-	public void Smoke_Test_amazon_aax_video_adcall() throws Exception {
-		System.out.println("================= Verify amazon aax video adcall Started =========================");
-		logStep(" Verifying preload amazon aax for  video details");
-		Functions.get_aaxcal_video_details();
-		System.out.println("================= Verify amazon aax video  adcall End =========================");
-	}*/
 
 	/*@Test(priority = 34, enabled = false)
 	@Title("Verifying iu value for news detailpage ad call iu")
@@ -567,159 +1280,20 @@ public class smokeTestCases extends Drivers {
 		System.out.println("================= Verify_News_detailpage_adcall_iu Started =========================");
 		Functions.Verify_News_detailpage_adcall_iu();
 		System.out.println("================= Verify_News_detailpage_adcall_iu End =========================");
-	}
-
-	@Test(priority = 35, enabled = false)
-	@Title("Verifying amazon axx slot for new article")
-	public void Smoke_Test_Verify_amazon_aax_News_adcall() throws Exception {
-		System.out.println(
-				"================= verifying amazon aax slot for news article started =========================");
-		Functions.get_aaxcal_news();
-		System.out
-				.println("================= verifying amazon aax slot for news article  End =========================");
 	}*/
 
 
 
-	/*@Test(priority = 37, enabled = true)
-	@Title("Verifying amazon aax for today details card")
-	public void Smoke_Test_amazon_aax_today_deatailcard() throws Exception {
-		System.out.println(
-				"================= Verify amazon aax for today detail adcard Started =========================");
-		Functions.get_aaxcal_today_details();
-		System.out.println("================= Verify amazon aax for today detail adcard End=========================");
-	}*/
-
-
 	
 	
-	
-	/*@Test(priority = 39, enabled = true)
-	@Title("Verifying amazon aax for AQ details page")
-	public void Smoke_Test_amazon_aax_Airquality_deatailcard() throws Exception {
-		System.out.println(
-				"================= Verify amazon aax for Air Quality details page Started =========================");
-		Functions.get_aaxcal_aq();
-		System.out.println("================= Verify amazon aax for Air Quality detail Page  End=========================");
-	}*/
-	
 
-
-	/*@Test(priority = 41, enabled = true)
-	@Title("Verifying amazon slot Id for Running Bigbanner ad")
-	public void Smoke_Test_Verify_amazon_SlotId_Running_Bigbanner_ad() throws Exception {
-		System.out.println(
-				"================= verifying amazon SlotId for Running BigBanner adcall started =========================");
-		Functions.get_aaxcal_Running_Bigbanner();
-		System.out.println(
-				"================= verifying amazon SlotId for Running BigBanner adcall  End =========================");
-	}*/
-
-
-
-	/*@Test(priority = 42, enabled = false)
-	@Title("Verifying amazon slot Id  for Boat&Beach Bigbanner ad")
-	public void Smoke_Test_Verify_amazon_SlotId_Boat_Beach_Bigbanner_ad() throws Exception {
-		System.out.println(
-				"================= verifying amazon aax SlotId for Boat&Beach BigBanner adcall started =========================");
-		Functions.get_aaxcal_Boat_Beach_Bigbanner();
-		System.out.println(
-				"================= verifying amazon SlotId for Boat&Beach BigBanner adcall End =========================");
-	}*/
-
-
-
-
-
-				/*@Test(priority = 30, enabled = true)
-				@Title("Verifying amazon slot Id for Allergy Bigbanner ad")
-				public void Smoke_Test_Verify_amazon_SlotId_Allergy_Bigbanner_ad() throws Exception {
-					System.out.println(
-							"================= verifying amazon SlotId for Allergy BigBanner adcall started =========================");
-					Functions.get_aaxcal_Allergy_Bigbanner();
-					System.out.println(
-							"================= verifying amazon SlotId for Allergy BigBanner adcall  End =========================");
-				}*/
-
-	/*@Test(priority = 46, enabled = false)
-	@Title("Verifying amazon slot Id for Cold&Flu Bigbanner ad")
-	public void Smoke_Test_Verify_amazon_SlotId_coldFlu_Bigbanner_ad() throws Exception {
-		System.out.println(
-				"================= verifying amazon SlotId for cold&Flu BigBanner adcall started =========================");
-		Functions.get_aaxcal_Cold_Flu_Bigbanner();
-		System.out.println(
-				"================= verifying amazon SlotId for cold&Flu BigBanner adcall  End =========================");
-	}*/
-
-
-	
-	
-	/*@Test(priority = 49, enabled = true)
-	@Title("Verifying amazon slot Id for Outdoor details page")
-	public void Smoke_Test_Verify_amazon_SlotId_outdoor_details() throws Exception {
-		System.out.println(
-				"================= verifying amazon SlotId for oudoor details adcall started =========================");
-		Functions.get_aaxcal_SH_details();
-		System.out.println(
-				"================= verifying amazon SlotId for outdoor details adcall  End =========================");
-	}*/
-	
 	
 //need to add aax
 
 
 	
 	
-	
-	/*@Test(priority = 51, enabled = true)
-	@Title("Verifying amazon Slot Id for hourly details ad call")
-	public void Smoke_Test_amazon_aax_Hourly_details_adcall() throws Exception {
-		System.out.println(
-				"================= Verify amazon aax Hourly details  adcall test case  Started =========================");
-		Functions.get_aaxcal_Hourly();
-		System.out.println("================= Verify amazon aax Hourly details  test case  End =========================");
 
-	}*/
-	
-
-	
-	/*@Test(priority =53, enabled = true)
-	@Title("Verifying amazon Slot Id for hourly1 big ad detailspage")
-	public void Smoke_Test_amazon_aax_Hourly1_bigaddetails_adcall() throws Exception {
-		System.out.println(
-				"================= Verify amazon aax Hourly1 details big  adcall  test case Started =========================");
-		Functions.get_aaxcal_Hourly1();
-		System.out.println("================= Verify amazon aax Hourly1 big ad details  test case  End =========================");
-
-	}*/
-	
-	
-	
-	
-	//aax's
-
-
-	
-	/*@Test(priority = 55, enabled = true)
-	@Title("Verifying amazon Slot Id for hourly2 big ad detailspage")
-	public void Smoke_Test_amazon_aax_Hourly2_bigaddetails_adcall() throws Exception {
-		System.out.println(
-				"================= Verifying  amazon aax Hourly2 details big  adcall  test case Started =========================");
-		Functions.get_aaxcal_Hourly2();
-		System.out.println("================= Verifying  amazon aax Hourly2  big ad details  test case  End =========================");
-
-	}*/
-	
-
-
-	/*@Test(priority = 57, enabled = true)
-	@Title("Verifying amazon Slot Id for hourly3 big ad detailspagel")
-	public void Smoke_Test_amazon_aax_Hourly3_bigaddetails_adcall() throws Exception {
-		System.out.println(
-				"================= Verify amazon aax Hourly3 details big  ad call test case  Started =========================");
-		Functions.get_aaxcal_Hourly3();
-		System.out.println("================= Verify amazon aax Hourly3 big ad call test case End =========================");
-	}*/
 	  
 	/*	 @Test(priority = 50, enabled = true)
 	  
@@ -816,481 +1390,10 @@ public class smokeTestCases extends Drivers {
 	
 	
 	
-   @Test(priority = 50, enabled = true)
-	@Title("Verifying new daily details day1 ad call on FTL")
-	public void Smoke_Test_Verifying_newdailydetails_day1adcall_FTL() throws Exception {
-		System.out.println(
-				"================= Verifying new daily details day1 ad call tescase Started =========================");
-		CharlesFunctions.ClearSessions();
-		CharlesFunctions.startSessionBrowserData();
-		Functions.clickdailydetails();
-		Functions.closeInterstailads();
-		Functions.clickongotit();
-		CharlesFunctions.ExportSession();
-		Functions.verifyingdailydetailiu();
-		System.out.println(
-				"=================  Verifying new daily details day1 ad call tescase  End =========================");
-	}
+  	
+	
+		  
 
-   
-	@Test(priority = 52, enabled = true)
-	@Title("Verifying new daily details day2 ad call on FTL")
-	public void Smoke_Test_Verifying_newdailydetails_day2adcall_FTL() throws Exception {
-		System.out.println(
-				"================= Verifying new daily details day2 ad call test case Started=========================");
-		CharlesFunctions.ClearSessions();
-		CharlesFunctions.startSessionBrowserData();
-		Functions.clickonday2();
-		CharlesFunctions.ExportSession();
-		Functions.verifyingdailydetailiu();
-	//	Functions.verifyingdailydetailsiu();
-		System.out.println(
-				"================= Verifying new daily details day2 ad call test case End =========================");
-	}
-	
-   
-	@Test(priority = 54, enabled = true)
-	@Title("Verifying new daily details day3 ad call on FTL")
-	public void Smoke_Test_Verifying_newdailydetails_day3adcall_FTL() throws Exception {
-		System.out.println(
-				"================= Verifying new daily details day3 ad call test case Started =========================");
-		CharlesFunctions.ClearSessions();
-		CharlesFunctions.startSessionBrowserData(); //
-		//Functions.finding_newDailyBidadcall_day2();
-		Functions.clickonday3();
-		CharlesFunctions.ExportSession();
-		Functions.verifyingdailydetailiu();
-		System.out.println(
-				"================= Verifying new daily details day3 ad call test case End =========================");
-	}
-	
-	
-	@Test(priority = 56, enabled = true)
-	@Title("Verifying new daily details day4 ad call on FTL")
-	public void Smoke_Test_Verifying_newdailydetails_day4adcall_FTL() throws Exception {
-		System.out.println(
-				"================= Verifying new daily details day4 ad call tescase Started =========================");
-		CharlesFunctions.ClearSessions();
-		CharlesFunctions.startSessionBrowserData(); //
-	//	Functions.finding_newDailyBidadcall_day2();
-		Functions.clickonday4();
-		CharlesFunctions.ExportSession();
-		Functions.verifyingdailydetailiu();
-		System.out.println(
-				"================= Verifying new daily details day4 ad call tescase End =========================");
-	}
-
-	@Test(priority = 58, enabled = true)
-	@Title("Verifying new daily details day5 ad call on FTL")
-	public void Smoke_Test_Verifying_newdailydetails_day5adcall_FTL() throws Exception {
-		System.out.println(
-				"================= Verifying new daily details day5 ad call tescase Started =========================");
-		CharlesFunctions.ClearSessions();
-		CharlesFunctions.startSessionBrowserData(); //
-	//	Functions.finding_newDailyBidadcall_day2();
-		Functions.clickonday5();
-		CharlesFunctions.ExportSession();
-		Functions.verifyingdailydetailiu();
-		System.out.println(
-				"================= Verifying new daily details day5 ad call tescase End =========================");
-	}
-
-	@Test(priority = 60, enabled = true)
-	@Title("Verifying new daily details day6 ad call on FTL")
-	public void Smoke_Test_Verifying_newdailydetails_day6adcall_FTL() throws Exception {
-		System.out.println(
-				"================= Verifying new daily details day6 ad call tescase Started =========================");
-		CharlesFunctions.ClearSessions();
-		CharlesFunctions.startSessionBrowserData(); //
-	//	Functions.finding_newDailyBidadcall_day2();
-		Functions.clickonday6();
-		CharlesFunctions.ExportSession();
-		Functions.verifyingdailydetailiu();
-		System.out.println(
-				"================= Verifying new daily details day6 ad call tescase End =========================");
-	}
-	
-	@Test(priority = 62, enabled = true)
-	@Title("Verifying new daily details day7 ad call on FTL")
-	public void Smoke_Test_Verifying_newdailydetails_day7adcall_FTL() throws Exception {
-		System.out.println(
-				"================= Verifying new daily details day7 ad call tescase Started =========================");
-		CharlesFunctions.ClearSessions();
-		CharlesFunctions.startSessionBrowserData(); 
-	//	Functions.finding_newDailyBidadcall_day2();
-		Functions.clickonday7();
-		CharlesFunctions.ExportSession();
-		Functions.verifyingdailydetailiu();
-		System.out.println(
-				"================= Verifying new daily details day7 ad call tescase End =========================");
-	}
-	
-	@Test(priority = 64, enabled = true)
-	@Title("Verifying new daily details day8 ad call on FTL")
-	public void Smoke_Test_Verifying_newdailydetails_day8adcall_FTL() throws Exception {
-		System.out.println(
-				"================= Verifying new daily details day8 ad call tescase Started =========================");
-		CharlesFunctions.ClearSessions();
-		CharlesFunctions.startSessionBrowserData(); //
-		//Functions.finding_newDailyBidadcall_day2();
-		Functions.clickonday8();
-		CharlesFunctions.ExportSession();
-		Functions.verifyingdailydetailsiu1();
-		System.out.println(
-				"================= Verifying new daily details day8 ad call tescase End =========================");
-	}
-	
-	
-	@Test(priority = 68, enabled = true)
-	@Title("Verifying new daily details day9 ad call on FTL")
-	public void Smoke_Test_Verifying_newdailydetails_day9adcall_FTL() throws Exception {
-		System.out.println(
-				"================= Verifying new daily details day9 ad call tescase Started =========================");
-		CharlesFunctions.ClearSessions();
-		CharlesFunctions.startSessionBrowserData(); //
-		//Functions.finding_newDailyBidadcall_day2();
-		Functions.clickonday9();
-		CharlesFunctions.ExportSession();
-		Functions.verifyingdailydetailsiu1();
-		System.out.println(
-				"================= Verifying new daily details day9 ad call tescase End =========================");
-	}
-	
-	@Test(priority = 70, enabled = true)
-	@Title("Verifying new daily details day10 ad call on FTL")
-	public void Smoke_Test_Verifying_newdailydetails_day10adcall_FTL() throws Exception {
-		System.out.println(
-				"================= Verifying new daily details day10 ad call tescase Started =========================");
-		CharlesFunctions.ClearSessions();
-		CharlesFunctions.startSessionBrowserData(); //
-	//	Functions.finding_newDailyBidadcall_day2();
-		Functions.clickonday10();
-		CharlesFunctions.ExportSession();
-		Functions.verifyingdailydetailsiu1();
-		
-		System.out.println(
-				"================= Verifying new daily details day10 ad call tescase End =========================");
-	}
-	
-	@Test(priority = 80, enabled = true)
-	@Title("Verifying new daily details day11 ad call on FTL")
-	public void Smoke_Test_Verifying_newdailydetails_day11adcall_FTL() throws Exception {
-		System.out.println(
-				"================= Verifying new daily details day11 ad call tescase Started =========================");
-		CharlesFunctions.ClearSessions();
-		CharlesFunctions.startSessionBrowserData(); //
-		//Functions.finding_newDailyBidadcall_day2();
-		Functions.clickonday11();
-		CharlesFunctions.ExportSession();
-		Functions.verifyingdailydetailsiu1();
-		System.out.println(
-				"================= Verifying new daily details day11 ad call tescase End =========================");
-	}
-	
-	@Test(priority = 82, enabled = true)
-	@Title("Verifying new daily details day12 ad call on FTL")
-	public void Smoke_Test_Verifying_newdailydetails_day12adcall_FTL() throws Exception {
-		System.out.println(
-				"================= Verifying new daily details day12 ad call tescase Started =========================");
-		CharlesFunctions.ClearSessions();
-		CharlesFunctions.startSessionBrowserData(); //
-	//	Functions.finding_newDailyBidadcall_day2();
-		Functions.clickonday12();
-		CharlesFunctions.ExportSession();
-		Functions.verifyingdailydetailsiu1();
-		System.out.println(
-				"================= Verifying new daily details day12 ad call tescase End =========================");
-	}
-	
-	@Test(priority = 84, enabled = true)
-	@Title("Verifying new daily details day13 ad call on FTL")
-	public void Smoke_Test_Verifying_newdailydetails_day13adcall_FTL() throws Exception {
-		System.out.println(
-				"================= Verifying new daily details day13 ad call tescase Started =========================");
-		CharlesFunctions.ClearSessions();
-		CharlesFunctions.startSessionBrowserData(); //
-	//	Functions.finding_newDailyBidadcall_day2();
-		Functions.clickonday13();
-		CharlesFunctions.ExportSession();
-		Functions.verifyingdailydetailsiu1();
-		System.out.println(
-				"================= Verifying new daily details day13 ad call tescase End =========================");
-	}
-	
-	@Test(priority = 86, enabled = true)
-
-	@Title("Verifying new daily details day14 ad call on FTL")
-	public void Smoke_Test_Verifying_newdailydetails_day14adcall_FTL() throws Exception {
-		System.out.println(
-				"================= Verifying new daily details day14 ad call tescase Started =========================");
-		CharlesFunctions.ClearSessions();
-		CharlesFunctions.startSessionBrowserData(); //
-	//	Functions.finding_newDailyBidadcall_day2();
-		Functions.clickonday14();
-		CharlesFunctions.ExportSession();
-		Functions.verifyingdailydetailsiu1();
-		System.out.println(
-				"================= Verifying new daily details day14 ad call tescase End =========================");
-	}
-	@Test(priority = 88, enabled = true)
-	@Title("Verifying new daily details day15 ad call on FTL")
-	public void Smoke_Test_Verifying_newdailydetails_day15adcall_FTL() throws Exception {
-		System.out.println(
-				"================= Verifying new daily details day15 ad call tescase Started =========================");
-		CharlesFunctions.ClearSessions();
-		CharlesFunctions.startSessionBrowserData(); //
-	//	Functions.finding_newDailyBidadcall_day2();
-		Functions.clickonday15();
-		CharlesFunctions.ExportSession();
-		Functions.verifyingdailydetailsiu2();
-		System.out.println(
-				"================= Verifying new daily details day15 ad call tescase End =========================");
-	}
-   
-	
-	
-	
-	/*@Test(priority = 61, enabled = false)
-	@Title("Verifying amazon Slot Id for daily details day1 ad calll")
-	public void Smoke_Test_amazon_aax_Daily_details_Day1_adcall() throws Exception {
-		System.out
-				.println("================= Verifying amazon slot id for  daily details day1 adcall test case Started =========================");
-	  Functions.gettingDayofWeekFromUI(1);
-		Functions.get_aaxcal_Daily();
-		System.out.println("================= Verifying amazon slot id for  daily details day 1 adcall test case End =========================");
-	}*/
-//aax 15 days
-
-	/*@Test(priority = 63, enabled = false)
-	@Title("Verifying amazon Slot Id for daily details day2 ad calll")
-	public void Smoke_Test_amazon_aax_Dailydetails_Day2adcall() throws Exception {
-		System.out
-				.println("================= Verifying amazon slot id for  daily details day2  adcall test case Started =========================");
-	  Functions.gettingDayofWeekFromUI(1);
-		Functions.get_aaxcal_Daily();
-		System.out.println("================= Verifying amazon slot id for  daily details day2 adcall test case End =========================");
-	}*/
-
-
-	
-	/*@Test(priority = 65, enabled = false)
-	@Title("Verifying amazon Slot Id for daily details day3 ad calll")
-	public void Smoke_Test_amazon_aax_Dailydetails_Day3adcall() throws Exception {
-		System.out
-				.println("================= Verifying amazon slot id for  daily details day3  adcall test case Started =========================");
-	  Functions.gettingDayofWeekFromUI(1);
-		Functions.get_aaxcal_Daily();
-		System.out.println("================= Verifying amazon slot id for  daily details day3 adcall test case End =========================");
-	}*/
-
-
-	
-	/*@Test(priority = 67, enabled = false)
-	@Title("Verifying amazon Slot Id for daily details day4 ad calll")
-	public void Smoke_Test_amazon_aax_Dailydetails_Day4adcall() throws Exception {
-		System.out
-				.println("================= Verifying amazon slot id for  daily details day4  adcall test case Started =========================");
-	  Functions.gettingDayofWeekFromUI(1);
-		Functions.get_aaxcal_Daily();
-		System.out.println("================= Verifying amazon slot id for  daily details day4 adcall test case End =========================");
-	}*/
-	
-
-	/*@Test(priority = 69, enabled = false)
-	@Title("Verifying amazon Slot Id for daily details day5 ad calll")
-	public void Smoke_Test_amazon_aax_Dailydetails_Day5adcall() throws Exception {
-		System.out
-				.println("================= Verifying amazon slot id for  daily details day5  adcall test case Started =========================");
-	  Functions.gettingDayofWeekFromUI(1);
-		Functions.get_aaxcal_Daily();
-		System.out.println("================= Verifying amazon slot id for  daily details day5 adcall test case End =========================");
-	}*/
-	
-	
-
-	
-	/*@Test(priority = 71, enabled = false)
-	@Title("Verifying amazon Slot Id for daily details day6 ad calll")
-	public void Smoke_Test_amazon_aax_Dailydetails_Day6adcall() throws Exception {
-		System.out
-				.println("================= Verifying amazon slot id for  daily details day6  adcall test case Started =========================");
-	  Functions.gettingDayofWeekFromUI(1);
-		Functions.get_aaxcal_Daily();
-		System.out.println("================= Verifying amazon slot id for  daily details day6 adcall test case End =========================");
-	}*/
-
-	
-	
-/*	@Test(priority = 73, enabled = false)
-	@Title("Verifying amazon Slot Id for daily details day7 ad calll")
-	public void Smoke_Test_amazon_aax_Dailydetails_Day7adcall() throws Exception {
-		System.out
-				.println("================= Verifying amazon slot id for  daily details day7  adcall test case Started =========================");
-	  Functions.gettingDayofWeekFromUI(1);
-		Functions.get_aaxcal_Daily();
-		System.out.println("================= Verifying amazon slot id for  daily details day7 adcall test case End =========================");
-	}*/
-
-
-	
-	/*@Test(priority = 75, enabled = false)
-	@Title("Verifying amazon Slot Id for daily details day8 ad calll")
-	public void Smoke_Test_amazon_aax_Dailydetails_Day8adcall() throws Exception {
-		System.out
-				.println("================= Verifying amazon slot id for  daily details day8  adcall test case Started =========================");
-	  Functions.gettingDayofWeekFromUI(2);
-		Functions.get_aaxcal_Daily();
-		System.out.println("================= Verifying amazon slot id for  daily details day8 adcall test case End =========================");
-	}*/
-
-	
-	
-	
-	
-	/*@Test(priority = 77, enabled = false)
-	@Title("Verifying amazon Slot Id for daily details day9 ad calll")
-	public void Smoke_Test_amazon_aax_Dailydetails_Day9adcall() throws Exception {
-		System.out
-				.println("================= Verifying amazon slot id for  daily details day9  adcall test case Started =========================");
-	  Functions.gettingDayofWeekFromUI(2);
-		Functions.get_aaxcal_Daily();
-		System.out.println("================= Verifying amazon slot id for  daily details day9 adcall test case End =========================");
-	}*/
-
-
-	
-	
-	/*@Test(priority = 79, enabled = false)
-	@Title("Verifying amazon Slot Id for daily details day10  ad calll")
-	public void Smoke_Test_amazon_aax_Dailydetails_Day10adcall() throws Exception {
-		System.out
-				.println("================= Verifying amazon slot id for  daily details day10  adcall test case Started =========================");
-	  Functions.gettingDayofWeekFromUI(2);
-		Functions.get_aaxcal_Daily();
-		System.out.println("================= Verifying amazon slot id for  daily details day10 adcall test case End =========================");
-	}*/
-
-
-	
-	
-	/*@Test(priority = 81, enabled = false)
-	@Title("Verifying amazon Slot Id for daily details day11  ad calll")
-	public void Smoke_Test_amazon_aax_Dailydetails_Day11adcall() throws Exception {
-		System.out
-				.println("================= Verifying amazon slot id for  daily details day11  adcall test case Started =========================");
-	  Functions.gettingDayofWeekFromUI(2);
-		Functions.get_aaxcal_Daily();
-		System.out.println("================= Verifying amazon slot id for  daily details day11 adcall test case End =========================");
-	}*/
-
-	
-	/*@Test(priority = 83, enabled = false)
-	@Title("Verifying amazon Slot Id for daily details day12  ad calll")
-	public void Smoke_Test_amazon_aax_Dailydetails_Day12adcall() throws Exception {
-		System.out
-				.println("================= Verifying amazon slot id for  daily details day12  adcall test case Started =========================");
-	  Functions.gettingDayofWeekFromUI(2);
-		Functions.get_aaxcal_Daily();
-		System.out.println("================= Verifying amazon slot id for  daily details day12 adcall test case End =========================");
-	}*/
-
-	
-	
-	
-	/*@Test(priority = 85, enabled = false)
-	@Title("Verifying amazon Slot Id for daily details day13  ad calll")
-	public void Smoke_Test_amazon_aax_Dailydetails_Day13adcall() throws Exception {
-		System.out
-				.println("================= Verifying amazon slot id for  daily details day13  adcall test case Started =========================");
-	  Functions.gettingDayofWeekFromUI(2);
-		Functions.get_aaxcal_Daily();
-		System.out.println("================= Verifying amazon slot id for  daily details day13 adcall test case End =========================");
-	}*/
-
-
-	
-	
-	/*@Test(priority = 87, enabled = false)
-	@Title("Verifying amazon Slot Id for daily details day14  ad calll")
-	public void Smoke_Test_amazon_aax_Dailydetails_Day14adcall() throws Exception {
-		System.out
-				.println("================= Verifying amazon slot id for  daily details day14  adcall test case Started =========================");
-	  Functions.gettingDayofWeekFromUI(2);
-		Functions.get_aaxcal_Daily();
-		System.out.println("================= Verifying amazon slot id for  daily details day14 adcall test case End =========================");
-	}*/
-
-
-	
-
-	
-	/*@Test(priority = 89, enabled = false)
-	@Title("Verifying amazon Slot Id for daily details day15  ad calll")
-	public void Smoke_Test_amazon_aax_Dailydetails_Day15adcall() throws Exception {
-		System.out
-				.println("================= Verifying amazon slot id for  daily details day15  adcall test case Started =========================");
-	  Functions.gettingDayofWeekFromUI(3);
-		Functions.get_aaxcal_Daily();
-		System.out.println("================= Verifying amazon slot id for  daily details day15 adcall test case End =========================");
-	}*/
-	
-	  
-	 @Test(priority = 150, enabled = true)
-  
-	  @Title("Verifying  home screen hourly  ad call pull to refrersh scenario on killLaunch") 
-	  public  void Smoke_Test_Verifying_homescreenhourly_pulltoreresh_scenario_killLaunch() throws  Exception {	 
-	  logStep("Verifying home screen hourly  ad call pull to refrersh scenario");
-	  System.out.
-	  println("================= Verifying  home screen hourly  ad  call pull to refrersh scenario started =========================" ); 
-	 AppFunctions.Kill_Launch_App();
-	  CharlesFunctions.ClearSessions();
-	  CharlesFunctions.startSessionBrowserData();
-	  AppFunctions.Pull_To_Refresh("Pulltorefresh");
-	  AppFunctions.Pull_To_Refresh("Pulltorefresh");
-	  CharlesFunctions.ExportSession(); 
-	  Functions.finding_Homescreen_iu_value();	 
-	  System.out. println("=================  Verifying  home screen hourly  ad  call pull to refrersh scenario  End =========================" ); 
-	  }
-	  
-	  @Test(priority = 152, enabled = true)
-	  
-	  @Title("Verifying  home screen marquee call pull to refrersh scenario") public
-	  void Smoke_Test_Verifying_homescreenmarquee__pulltoreresh_scenario() throws
-	  Exception {
-	  logStep("Verifying  home screen marquee call pull to refrersh scenario");
-	  System.out. println("================= Verifying  home screen marquee call pull to refrersh scenario started =========================");
-	  Functions.finding_Homescreen_marquee_iu_value(); 
-	  System.out.println("================= Verifying  home screen marquee call pull to refrersh scenario  End =========================" );  
-	  }
-	
-	  
-	  
-	  
-	  @Test(priority = 154, enabled = true)	  
-	  @Title("Verifying  home screen hourly  ad call when user enter new location") 
-	  public  void Smoke_Test_Verifying_homescreenhourly_adcall_enter_newLocation_scenario() throws  Exception {	 
-	  logStep("Verifying home screen hourly  ad call when user enter new location");
-	  System.out.
-	  println("================= Verifying  home scren hourly  ad  call when user enter new location scenario started =========================" ); 
-	  CharlesFunctions.ClearSessions();
-	  CharlesFunctions.startSessionBrowserData();
-	  AppFunctions.enter_requiredLocation("30124");
-	  CharlesFunctions.ExportSession(); 
-	  Functions.finding_Homescreen_iu_value();	 
-
-	  System.out. println("=================Verifying  home scren hourly ad call when user enter new location scenario  End =========================" ); 
-	  }
-	  
-	  @Test(priority = 156, enabled = true)	  
-	  @Title("Verifying  home screen marquee call when user enter new location") public
-	  void Smoke_Test_Verifying_homescreenmarquee__enter_newLocation_scenario() throws
-	  Exception {
-	  logStep("Verifying  home screen marquee call backgroud launch scenario");
-	  System.out. println("================= Verifying  home screen marquee call when user enter new location scenario started =========================");
-	  Functions.finding_Homescreen_marquee_iu_value(); 
-	  System.out.println("================= Verifying  home screen marquee call when user enter new location scenario   End =========================" );  
-	  }
-	
 	  
 	/*  @Test(priority = 0, enabled = true)	  
 	  @Title("Verifying feed_1 ad  app backgroud launch call scenario") 
@@ -1936,6 +2039,7 @@ public class smokeTestCases extends Drivers {
 		 CharlesFunctions.startSessionBrowserData();
 		  //CharlesFunctions.app_download_from_firebaselink();
 		AppiumFunctions.LaunchAppWithFullReset();
+		Functions.closeInterstailAds();
 		Thread.sleep(20000);
 		//AppiumFunctions.Kill_launch();
 	//	Thread.sleep(5000);
