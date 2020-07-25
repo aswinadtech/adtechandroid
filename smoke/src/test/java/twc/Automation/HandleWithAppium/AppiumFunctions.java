@@ -810,15 +810,15 @@ public static void SwipeUp_Counter_feedcards(int Counter) throws Exception{
 
 		if(i>10) {
 			//local
-		//	if(Functions.verifyElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout/android.widget.TextView"))){
-		//	server
 			if(Functions.verifyElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout/android.widget.TextView"))){
+		//	server
+			//if(Functions.verifyElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout/android.widget.TextView"))){
 			//if(Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout/android.widget.TextView").isDisplayed()){
-		//	if(text==true) {
+	//	if(text==true) {
 				//local
-				// copyRight = Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout/android.widget.TextView").getAttribute("text");
+				 copyRight = Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout/android.widget.TextView").getAttribute("text");
 			//server
-				copyRight = Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout/android.widget.TextView").getAttribute("text");
+			//	copyRight = Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup[2]/androidx.recyclerview.widget.RecyclerView/android.widget.LinearLayout/android.widget.TextView").getAttribute("text");
 				if(copyRight.equalsIgnoreCase( data[1][1])) {
 						System.out.println(copyRight +" text is displaying on the screen");
 						i=150;
@@ -872,15 +872,7 @@ if(ModuleName.toString().contains("Maps") ||ModuleName.toString().contains("Thun
 }
 if(ModuleName.toString().contains("Health & Activities")) {
 
-	
-	
-	if(RunningCount==0) {
-		 AppiumFunctions.click_Running_element();
-		 AppiumFunctions.clickOnBackArrowElement();
-		   Thread.sleep(10000);
-		 RunningCount=1;
-		}
-	
+
 	if(AllergyCount==0) {
 		 AppiumFunctions.click_Allergy_element(); 
 		  AppiumFunctions.clickOnBackArrowElement();
@@ -889,6 +881,14 @@ if(ModuleName.toString().contains("Health & Activities")) {
 		  AllergyCount=1;
 	}
 
+	
+/*	if(RunningCount==0) {
+		 AppiumFunctions.click_Running_element();
+		 AppiumFunctions.clickOnBackArrowElement();
+		   Thread.sleep(10000);
+		 RunningCount=1;
+		}*/
+	
 
 	
 /*	if(CofFluCount==0) {
@@ -1090,8 +1090,12 @@ public static void clickOnBackArrowElement_today() throws Exception
 		Ad.findElementById("com.weather.Weather:id/trending_up_navigation_icon").click();    
 	}
 	catch(Exception e) {
-		new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementByAccessibilityId("Navigate up")));
-		Ad.findElementByAccessibilityId("Navigate up").click();
+		try {
+		new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("com.weather.Weather:id/trending_up_navigation_icon")));
+		Ad.findElementById("com.weather.Weather:id/trending_up_navigation_icon").click();  
+		}catch(Exception e1) {
+			
+		}
 	}
 }
 public static void getFeedCardsListAndNavigateToThem(boolean includeDetailsPages) throws Exception {
