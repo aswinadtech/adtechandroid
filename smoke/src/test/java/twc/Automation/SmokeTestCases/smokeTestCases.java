@@ -422,7 +422,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 				}
 				
 				
-				@Test(priority = 68, enabled = true)
+				@Test(priority = 66, enabled = true)
 				@Title("Verifying new daily details day9 ad call on FTL")
 				public void Smoke_Test_Verifying_newdailydetails_day9adcall_FTL() throws Exception {
 					System.out.println(
@@ -437,7 +437,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 							"================= Verifying new daily details day9 ad call tescase End =========================");
 				}
 				
-				@Test(priority = 70, enabled = true)
+				@Test(priority = 68, enabled = true)
 				@Title("Verifying new daily details day10 ad call on FTL")
 				public void Smoke_Test_Verifying_newdailydetails_day10adcall_FTL() throws Exception {
 					System.out.println(
@@ -453,7 +453,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 							"================= Verifying new daily details day10 ad call tescase End =========================");
 				}
 				
-				@Test(priority = 80, enabled = true)
+				@Test(priority = 70, enabled = true)
 				@Title("Verifying new daily details day11 ad call on FTL")
 				public void Smoke_Test_Verifying_newdailydetails_day11adcall_FTL() throws Exception {
 					System.out.println(
@@ -468,7 +468,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 							"================= Verifying new daily details day11 ad call tescase End =========================");
 				}
 				
-				@Test(priority = 82, enabled = true)
+				@Test(priority = 72, enabled = true)
 				@Title("Verifying new daily details day12 ad call on FTL")
 				public void Smoke_Test_Verifying_newdailydetails_day12adcall_FTL() throws Exception {
 					System.out.println(
@@ -483,7 +483,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 							"================= Verifying new daily details day12 ad call tescase End =========================");
 				}
 				
-				@Test(priority = 84, enabled = true)
+				@Test(priority = 74, enabled = true)
 				@Title("Verifying new daily details day13 ad call on FTL")
 				public void Smoke_Test_Verifying_newdailydetails_day13adcall_FTL() throws Exception {
 					System.out.println(
@@ -498,7 +498,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 							"================= Verifying new daily details day13 ad call tescase End =========================");
 				}
 				
-				@Test(priority = 86, enabled = true)
+				@Test(priority = 76, enabled = true)
 
 				@Title("Verifying new daily details day14 ad call on FTL")
 				public void Smoke_Test_Verifying_newdailydetails_day14adcall_FTL() throws Exception {
@@ -513,7 +513,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 					System.out.println(
 							"================= Verifying new daily details day14 ad call tescase End =========================");
 				}
-				@Test(priority = 88, enabled = true)
+				@Test(priority = 78, enabled = true)
 				@Title("Verifying new daily details day15 ad call on FTL")
 				public void Smoke_Test_Verifying_newdailydetails_day15adcall_FTL() throws Exception {
 					System.out.println(
@@ -539,7 +539,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 
 				
 
-				@Test(priority = 200, enabled = true)
+				@Test(priority = 3, enabled = true)
 				@Title("Verifying amazon Slot Id for feed1 prerol ad call")
 				public void Smoke_Test_amazon_aaxSlot_feed1_adCall() throws Exception {
 					System.out.println(
@@ -552,7 +552,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 				}	
 				
 				
-			 @Test(priority = 202, enabled = true)
+			 @Test(priority = 5, enabled = true)
 				@Title("Verifying amazon  Slot Id for feed2 ad call")
 				public void Smoke_Test_amazon_aaxSlot_feed2_adcall() throws Exception {
 					System.out.println(
@@ -563,7 +563,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 							"================= Verify amazon aax slot Id for feed2l adcall testcase End =========================");
 				}
 
-				@Test(priority = 204, enabled = true)
+				@Test(priority = 7, enabled = true)
 				@Title("Verifying amazon  Slot Id for feed3 ad call")
 				public void Smoke_Test_amazon_aaxSlot_feed3_adcall() throws Exception {
 					System.out.println(
@@ -575,7 +575,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 				}
 
 
-			    @Test(priority = 206, enabled = true)
+			    @Test(priority = 9, enabled = true)
 				@Title("Verifying amazon  Slot Id for feed4 ad call")
 				public void Smoke_Test_amazon_aaxSlot_feed4_adcall() throws Exception {
 					System.out.println(
@@ -589,7 +589,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 
 
 				  
-				 @Test(priority = 208, enabled = true)
+				 @Test(priority = 11, enabled = true)
 				@Title("Verifying amazon  Slot Id for feed5 ad call")
 				public void Smoke_Test_amazon_aaxSlot_feed5_adcall() throws Exception {
 					System.out.println(
@@ -609,7 +609,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 				 /* =======================================All detail pages amazon slot id's test cases started======================================================================================*/
 				 
 
-					 @Test(priority = 210, enabled = true)
+					 @Test(priority = 19, enabled = true)
 					@Title("Verifying amazon Slot Id for maps details preroll ad cal")
 					public void Smoke_Test_amazon_aax_mapsdetails_adcall() throws Exception {
 						System.out.println("================= Verify amazon aax maps detais adcall Started =========================");
@@ -620,7 +620,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 					}
 
 
-					@Test(priority = 212, enabled = true)
+					@Test(priority = 21, enabled = true)
 					@Title("Verifying amazon Slot Id  video ad call")
 					public void Smoke_Test_amazon_aax_video_adcall() throws Exception {
 						System.out.println("================= Verify amazon aax video adcall Started =========================");
@@ -631,7 +631,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 				 
 				 
 				 
-					@Test(priority = 214, enabled = false)
+					@Test(priority = 23, enabled = false)
 					@Title("Verifying amazon axx slot for new article")
 					public void Smoke_Test_Verify_amazon_aax_News_adcall() throws Exception {
 						System.out.println(
@@ -643,7 +643,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 
 
 
-					@Test(priority =216, enabled = true)
+					@Test(priority =25, enabled = true)
 					@Title("Verifying amazon aax for today details card")
 					public void Smoke_Test_amazon_aax_today_deatailcard() throws Exception {
 						System.out.println(
@@ -655,7 +655,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 					
 					
 					
-					@Test(priority = 218, enabled = true)
+					@Test(priority = 27, enabled = true)
 					@Title("Verifying amazon aax for AQ details page")
 					public void Smoke_Test_amazon_aax_Airquality_deatailcard() throws Exception {
 						System.out.println(
@@ -666,7 +666,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 					
 
 
-					/*@Test(priority = 220, enabled = true)
+					/*@Test(priority = 29, enabled = true)
 					@Title("Verifying amazon slot Id for Running Bigbanner ad")
 					public void Smoke_Test_Verify_amazon_SlotId_Running_Bigbanner_ad() throws Exception {
 						System.out.println(
@@ -678,7 +678,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 
 
 
-					/*@Test(priority = 222, enabled = false)
+					/*@Test(priority = 31, enabled = false)
 					@Title("Verifying amazon slot Id  for Boat&Beach Bigbanner ad")
 					public void Smoke_Test_Verify_amazon_SlotId_Boat_Beach_Bigbanner_ad() throws Exception {
 						System.out.println(
@@ -690,7 +690,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 
 
 
-					@Test(priority = 224, enabled = true)
+					@Test(priority = 33, enabled = true)
 					@Title("Verifying amazon slot Id for Allergy Bigbanner ad")
 					public void Smoke_Test_Verify_amazon_SlotId_Allergy_Bigbanner_ad() throws Exception {
 						System.out.println(
@@ -702,7 +702,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 
 
 
-					/*@Test(priority = 226, enabled = true)
+					/*@Test(priority = 35, enabled = true)
 					@Title("Verifying amazon slot Id for Cold&Flu Bigbanner ad")
 					public void Smoke_Test_Verify_amazon_SlotId_coldFlu_Bigbanner_ad() throws Exception {
 						System.out.println(
@@ -715,7 +715,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 
 					
 					
-					@Test(priority = 228, enabled = true)
+					@Test(priority = 37, enabled = true)
 					@Title("Verifying amazon slot Id for Outdoor details page")
 					public void Smoke_Test_Verify_amazon_SlotId_outdoor_details() throws Exception {
 						System.out.println(
@@ -732,7 +732,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 					 /* =======================================Hourly details amazon aax slot id's test case Started======================================================================================*/
 				
 					
-					@Test(priority = 230, enabled = true)
+					@Test(priority = 41, enabled = true)
 					@Title("Verifying amazon Slot Id for hourly details ad call")
 					public void Smoke_Test_amazon_aax_Hourly_details_adcall() throws Exception {
 						System.out.println(
@@ -743,7 +743,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 					
 
 					
-					@Test(priority =232, enabled = true)
+					@Test(priority =43, enabled = true)
 					@Title("Verifying amazon Slot Id for hourly1 big ad detailspage")
 					public void Smoke_Test_amazon_aax_Hourly1_bigaddetails_adcall() throws Exception {
 						System.out.println(
@@ -754,7 +754,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 					}
 
 					
-					@Test(priority = 234, enabled = true)
+					@Test(priority = 45, enabled = true)
 					@Title("Verifying amazon Slot Id for hourly2 big ad detailspage")
 					public void Smoke_Test_amazon_aax_Hourly2_bigaddetails_adcall() throws Exception {
 						System.out.println(
@@ -766,7 +766,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 					
 
 
-					@Test(priority = 236, enabled = true)
+					@Test(priority = 47, enabled = true)
 					@Title("Verifying amazon Slot Id for hourly3 big ad detailspagel")
 					public void Smoke_Test_amazon_aax_Hourly3_bigaddetails_adcall() throws Exception {
 						System.out.println(
@@ -783,7 +783,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 
 					 /* =======================================Daily details amazon aax slot id's test case Started======================================================================================*/
 					
-					@Test(priority = 238, enabled = true)
+					@Test(priority = 51, enabled = true)
 					@Title("Verifying amazon Slot Id for daily details day1 ad calll")
 					public void Smoke_Test_amazon_aax_Daily_details_Day1_adcall() throws Exception {
 						System.out
@@ -794,7 +794,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 					}
 
 
-					@Test(priority = 240, enabled = true)
+					@Test(priority = 53, enabled = true)
 					@Title("Verifying amazon Slot Id for daily details day2 ad calll")
 					public void Smoke_Test_amazon_aax_Dailydetails_Day2adcall() throws Exception {
 						System.out
@@ -806,7 +806,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 
 
 					
-					@Test(priority = 242, enabled = true)
+					@Test(priority = 55, enabled = true)
 					@Title("Verifying amazon Slot Id for daily details day3 ad calll")
 					public void Smoke_Test_amazon_aax_Dailydetails_Day3adcall() throws Exception {
 						System.out
@@ -818,7 +818,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 
 
 					
-					@Test(priority = 244, enabled = false)
+					@Test(priority = 57, enabled = false)
 					@Title("Verifying amazon Slot Id for daily details day4 ad calll")
 					public void Smoke_Test_amazon_aax_Dailydetails_Day4adcall() throws Exception {
 						System.out
@@ -828,7 +828,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 						System.out.println("================= Verifying amazon slot id for  daily details day4 adcall test case End =========================");
 					}
 
-					@Test(priority = 248, enabled = true)
+					@Test(priority = 59, enabled = true)
 					@Title("Verifying amazon Slot Id for daily details day5 ad calll")
 					public void Smoke_Test_amazon_aax_Dailydetails_Day5adcall() throws Exception {
 						System.out
@@ -853,7 +853,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 
 					
 					
-				  @Test(priority = 252, enabled = true)
+				  @Test(priority = 61, enabled = true)
 					@Title("Verifying amazon Slot Id for daily details day7 ad calll")
 					public void Smoke_Test_amazon_aax_Dailydetails_Day7adcall() throws Exception {
 						System.out
@@ -865,7 +865,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 
 
 					
-					@Test(priority = 254, enabled = true)
+					@Test(priority = 63, enabled = true)
 					@Title("Verifying amazon Slot Id for daily details day8 ad calll")
 					public void Smoke_Test_amazon_aax_Dailydetails_Day8adcall() throws Exception {
 						System.out
@@ -879,7 +879,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 					
 					
 					
-					 @Test(priority = 256, enabled = true)
+					 @Test(priority = 65, enabled = true)
 					@Title("Verifying amazon Slot Id for daily details day9 ad calll")
 					public void Smoke_Test_amazon_aax_Dailydetails_Day9adcall() throws Exception {
 						System.out
@@ -892,7 +892,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 
 					
 					
-					@Test(priority = 258, enabled = true)
+					@Test(priority = 67, enabled = true)
 					@Title("Verifying amazon Slot Id for daily details day10  ad calll")
 					public void Smoke_Test_amazon_aax_Dailydetails_Day10adcall() throws Exception {
 						System.out
@@ -905,7 +905,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 
 					
 					
-					@Test(priority = 260, enabled = true)
+					@Test(priority = 69, enabled = true)
 					@Title("Verifying amazon Slot Id for daily details day11  ad calll")
 					public void Smoke_Test_amazon_aax_Dailydetails_Day11adcall() throws Exception {
 						System.out
@@ -916,7 +916,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 					}
 
 					
-					@Test(priority = 262, enabled = true)
+					@Test(priority = 71, enabled = true)
 					@Title("Verifying amazon Slot Id for daily details day12  ad calll")
 					public void Smoke_Test_amazon_aax_Dailydetails_Day12adcall() throws Exception {
 						System.out
@@ -929,7 +929,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 					
 					
 					
-					@Test(priority = 264, enabled = true)
+					@Test(priority = 73, enabled = true)
 					@Title("Verifying amazon Slot Id for daily details day13  ad calll")
 					public void Smoke_Test_amazon_aax_Dailydetails_Day13adcall() throws Exception {
 						System.out
@@ -942,7 +942,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 
 					
 					
-					@Test(priority = 268, enabled = true)
+					@Test(priority = 75, enabled = true)
 					@Title("Verifying amazon Slot Id for daily details day14  ad calll")
 					public void Smoke_Test_amazon_aax_Dailydetails_Day14adcall() throws Exception {
 						System.out
@@ -956,7 +956,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 					
 
 					
-					@Test(priority = 270, enabled = true)
+					@Test(priority = 77, enabled = true)
 					@Title("Verifying amazon Slot Id for daily details day15  ad call")
 					public void Smoke_Test_amazon_aax_Dailydetails_Day15adcall() throws Exception {
 						System.out
@@ -1217,7 +1217,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 		  println("================= Verifying  home scren hourly  ad  call when user enter new location scenario started =========================" ); 
 		  CharlesFunctions.ClearSessions();
 		  CharlesFunctions.startSessionBrowserData();
-		  AppFunctions.enter_requiredLocation("30124");
+		  AppFunctions.enter_requiredLocation("New York City");
 		  CharlesFunctions.ExportSession(); 
 		  Functions.finding_Homescreen_iu_value();	 
 
