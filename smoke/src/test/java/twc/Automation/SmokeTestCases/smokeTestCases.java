@@ -841,7 +841,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 					
 
 					
-				   @Test(priority = 250, enabled = true)
+				   @Test(priority = 61, enabled = true)
 					@Title("Verifying amazon Slot Id for daily details day6 ad calll")
 					public void Smoke_Test_amazon_aax_Dailydetails_Day6adcall() throws Exception {
 						System.out
@@ -853,7 +853,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 
 					
 					
-				  @Test(priority = 61, enabled = true)
+				  @Test(priority = 63, enabled = true)
 					@Title("Verifying amazon Slot Id for daily details day7 ad calll")
 					public void Smoke_Test_amazon_aax_Dailydetails_Day7adcall() throws Exception {
 						System.out
@@ -865,7 +865,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 
 
 					
-					@Test(priority = 63, enabled = true)
+					@Test(priority = 65, enabled = true)
 					@Title("Verifying amazon Slot Id for daily details day8 ad calll")
 					public void Smoke_Test_amazon_aax_Dailydetails_Day8adcall() throws Exception {
 						System.out
@@ -879,7 +879,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 					
 					
 					
-					 @Test(priority = 65, enabled = true)
+					 @Test(priority = 67, enabled = true)
 					@Title("Verifying amazon Slot Id for daily details day9 ad calll")
 					public void Smoke_Test_amazon_aax_Dailydetails_Day9adcall() throws Exception {
 						System.out
@@ -892,7 +892,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 
 					
 					
-					@Test(priority = 67, enabled = true)
+					@Test(priority = 69, enabled = true)
 					@Title("Verifying amazon Slot Id for daily details day10  ad calll")
 					public void Smoke_Test_amazon_aax_Dailydetails_Day10adcall() throws Exception {
 						System.out
@@ -905,7 +905,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 
 					
 					
-					@Test(priority = 69, enabled = true)
+					@Test(priority = 71, enabled = true)
 					@Title("Verifying amazon Slot Id for daily details day11  ad calll")
 					public void Smoke_Test_amazon_aax_Dailydetails_Day11adcall() throws Exception {
 						System.out
@@ -916,7 +916,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 					}
 
 					
-					@Test(priority = 71, enabled = true)
+					@Test(priority = 73, enabled = true)
 					@Title("Verifying amazon Slot Id for daily details day12  ad calll")
 					public void Smoke_Test_amazon_aax_Dailydetails_Day12adcall() throws Exception {
 						System.out
@@ -929,7 +929,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 					
 					
 					
-					@Test(priority = 73, enabled = true)
+					@Test(priority = 75, enabled = true)
 					@Title("Verifying amazon Slot Id for daily details day13  ad calll")
 					public void Smoke_Test_amazon_aax_Dailydetails_Day13adcall() throws Exception {
 						System.out
@@ -942,7 +942,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 
 					
 					
-					@Test(priority = 75, enabled = true)
+					@Test(priority = 77, enabled = true)
 					@Title("Verifying amazon Slot Id for daily details day14  ad calll")
 					public void Smoke_Test_amazon_aax_Dailydetails_Day14adcall() throws Exception {
 						System.out
@@ -956,7 +956,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 					
 
 					
-					@Test(priority = 77, enabled = true)
+					@Test(priority = 79, enabled = true)
 					@Title("Verifying amazon Slot Id for daily details day15  ad call")
 					public void Smoke_Test_amazon_aax_Dailydetails_Day15adcall() throws Exception {
 						System.out
@@ -2035,6 +2035,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 		// AppiumFunctions.UnInstallApp();
 		 //AppiumFunctions.AppiumServerStop(); 
 		// AppiumFunctions.AppiumServerStart();	 
+		 CharlesFunctions.ClearSessions();
 		 CharlesFunctions.ClearSessions();
 		 CharlesFunctions.startSessionBrowserData();
 		  //CharlesFunctions.app_download_from_firebaselink();
