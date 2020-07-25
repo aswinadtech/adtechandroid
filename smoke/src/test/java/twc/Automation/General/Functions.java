@@ -3158,16 +3158,16 @@ public static void  gettingDayofWeekFromUI(int i) throws Exception {
 public static void get_aaxcal_Daily() throws Exception {	
 	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
 	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
-	System.out.println("Verifying amazon \"slot Id\": \"f063079f-11ac-45b5-b4fc-bb76d54b50b2\"  for db_display/details/10day_"+currentday);
-	logStep("Verifying amazon \"slot Id\": \"f063079f-11ac-45b5-b4fc-bb76d54b50b2\"   for db_display/details/10day_"+currentday);
-	if(sb.contains("f063079f-11ac-45b5-b4fc-bb76d54b50b2")) {
-	System.out.println("f063079f-11ac-45b5-b4fc-bb76d54b50b2 is trigred for aax  call db_display/details/10day_"+currentday);
-	logStep("f063079f-11ac-45b5-b4fc-bb76d54b50b2 is trigred for aax  call db_display/details/10day_"+currentday);
+	System.out.println("Verifying amazon \"slot Id\": \"6c5a145d-9198-48f4-adfd-08f05557eace\"  for db_display/details/10day_"+currentday);
+	logStep("Verifying amazon \"slot Id\": \"6c5a145d-9198-48f4-adfd-08f05557eace\"   for db_display/details/10day_"+currentday);
+	if(sb.contains("6c5a145d-9198-48f4-adfd-08f05557eace")) {
+	System.out.println("6c5a145d-9198-48f4-adfd-08f05557eace is trigred for aax  call db_display/details/10day_"+currentday);
+	logStep("6c5a145d-9198-48f4-adfd-08f05557eace is trigred for aax  call db_display/details/10day_"+currentday);
 	}
-	if(!sb.contains("f063079f-11ac-45b5-b4fc-bb76d54b50b2")) {
-		System.out.println("slotID f063079f-11ac-45b5-b4fc-bb76d54b50b2 is not trigred for db_display/details/10day_"+currentday);
-		logStep("slotID f063079f-11ac-45b5-b4fc-bb76d54b50b2 is not trigred for db_display/details/10day_"+currentday);
-		Assert.fail("slotID f063079f-11ac-45b5-b4fc-bb76d54b50b2 is not trigred for db_display/details/10day_"+currentday);
+	if(!sb.contains("6c5a145d-9198-48f4-adfd-08f05557eace")) {
+		System.out.println("slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_"+currentday);
+		logStep("slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_"+currentday);
+		Assert.fail("slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for db_display/details/10day_"+currentday);
 		}
 }
 public static void get_aaxcal_map_details() throws Exception {
