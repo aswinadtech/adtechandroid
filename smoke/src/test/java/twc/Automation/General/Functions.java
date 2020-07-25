@@ -5752,6 +5752,7 @@ public static void clickonday11() throws Exception {
 public static void clickonday12() throws Exception {
 	System.out.println("Clicking  on day12");
 	logStep("Clicking on day12");
+	Thread.sleep(6000);
 	try {
 	Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.widget.LinearLayout/android.widget.HorizontalScrollView/android.widget.LinearLayout/androidx.appcompat.app.ActionBar.Tab[5]/android.widget.LinearLayout").click();
 	Thread.sleep(6000);
