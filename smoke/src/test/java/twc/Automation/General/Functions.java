@@ -5113,6 +5113,7 @@ public static void verifyingdailydetailsiu1() throws Exception {
 	int Cap = device_status.Device_Status();
 	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
 	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
+
 	//String[][] exceldata=read_excel_data.exceldataread("NextGenIM");
 //	logStep("Verifying  SOD custum param for  iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fcard%2Fradar ad call");
 	
@@ -6253,7 +6254,7 @@ public static void get_aaxcal_feed6() throws Exception {
 		}
 }
 
-public static void closeInterstailads() throws Exception {
+public static void closeInterstailads_old() throws Exception {
 	
 	  System.out.println("close the interstial ad on screen");
 		try {
@@ -6291,7 +6292,7 @@ public static void closeInterstailads() throws Exception {
 	}
 
 
-public static void closeInterstailAds() throws Exception {
+public static void closeInterstailads() throws Exception {
 System.out.println("Checking for interstial ad is displayed or not on the screen");
 	try{
 		Ad.findElementByAccessibilityId("Interstitial close button").click();
@@ -6313,7 +6314,28 @@ System.out.println("Checking for interstial ad is displayed or not on the screen
 							Ad.findElementByName("CLOSE").click();
 					 }
 					 catch(Exception e5) {
+						 try {
 						 Ad.findElementByClassName("android.widget.ImageButton");
+						 }
+						 catch(Exception e6){
+							 try {
+								 Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[1]/android.view.View/android.view.View/android.view.View/android.view.View[3]/android.view.View[3]/android.view.View/android.view.View[5]/android.view.View");
+							 }catch(Exception e7) {
+								 try {
+									 Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[1]/android.view.View/android.view.View/android.view.View/android.view.View[8]/android.view.View/android.view.View");
+								 }catch(Exception e8) {
+									 try {
+										 Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[1]/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View[6]/android.view.View");
+									 }catch(Exception e9) {
+										 try {
+											 Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[1]/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View[6]/android.view.View");
+										 }catch(Exception e10) {
+											 
+										 }
+									 }
+								 }
+							 }
+						 }
 					 }
 				 }
 			}
