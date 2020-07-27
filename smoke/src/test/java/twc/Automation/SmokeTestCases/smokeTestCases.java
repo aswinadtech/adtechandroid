@@ -818,7 +818,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 
 
 					
-					@Test(priority = 57, enabled = false)
+					@Test(priority = 57, enabled = true)
 					@Title("Verifying amazon Slot Id for daily details day4 ad calll")
 					public void Smoke_Test_amazon_aax_Dailydetails_Day4adcall() throws Exception {
 						System.out
@@ -2040,7 +2040,6 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 		 CharlesFunctions.startSessionBrowserData();
 		  //CharlesFunctions.app_download_from_firebaselink();
 		AppiumFunctions.LaunchAppWithFullReset();
-		//Functions.closeInterstailAds();
 		Thread.sleep(20000);
 		//AppiumFunctions.Kill_launch();
 	//	Thread.sleep(5000);
@@ -2052,7 +2051,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 		//AppFunctions.enter_requiredLocation("10005");
 		Thread.sleep(10000);
 		//AppiumFunctions.SwipeUp_Counter_feedcards(30);
-	//	AppFunctions.selectingRequiredUserGroup("multi cards");
+	//AppFunctions.selectingRequiredUserGroup("multi cards");
 		// Ad.runAppInBackground(30);
 		// AppFunctions.Kill_Launch_App();
 		// AppFunctions.enablingBranch("adsTestAutomation2");
