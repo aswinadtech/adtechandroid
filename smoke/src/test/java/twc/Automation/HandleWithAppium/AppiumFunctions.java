@@ -948,7 +948,8 @@ if(ModuleName.toString().contains("Outdoor Conditions")) {
 	
 			
 		}
-			}	
+		}
+	}
 }
 public static void Swipe(){
 	Dimension dimensions = Ad.manage().window().getSize();//throwing exception
