@@ -410,12 +410,12 @@ public class AppiumFunctions extends Drivers{
     				capabilities.setCapability(capabilitydata[2][0], capabilitydata[2][Cap]); 
     				capabilities.setCapability(capabilitydata[3][0], capabilitydata[3][Cap]);
     				capabilities.setCapability(capabilitydata[7][0], capabilitydata[7][Cap]); 
-    				capabilities.setCapability(capabilitydata[9][0], capabilitydata[9][Cap]);
+    				//capabilities.setCapability(capabilitydata[9][0], capabilitydata[9][Cap]);
     				capabilities.setCapability(capabilitydata[10][0],capabilitydata[10][Cap]);
     				capabilities.setCapability(capabilitydata[12][0],capabilitydata[12][Cap]);
     	//	capabilities.setCapability("appActivity","com.weather.Weather.splash.SplashScreenActivity");
     				//capabilities.setCapability("appActivity","com.weather.android.daybreak.MainActivity");
-    			//	capabilities.setCapability("automationName","UiAutomator2");
+    				capabilities.setCapability("automationName","UiAutomator2");
     				System.out.println("app : "+capabilitydata[10][Cap]);
     				capabilities.setCapability(capabilitydata[13][0],capabilitydata[13][Cap]);
     				//capabilities.setCapability(capabilitydata[14][0],capabilitydata[14][Cap]);
