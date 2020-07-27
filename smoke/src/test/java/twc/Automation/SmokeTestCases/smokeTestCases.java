@@ -145,13 +145,13 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 		}
 	 
 	 	
-		@Test(priority = 20, enabled = true)
+		/*@Test(priority = 20, enabled = true)
 		@Title("Verifying Video ad call on FTL")
 		public void Smoke_Test_Case_Verify_Video_adCall_FTL() throws Exception {
 			System.out.println("================= Verifying Video ad call testcase started =========================");
 			Functions.finding_VideoCard_iu_value();
 			System.out.println("================= Verifying Video ad call testcase End==============================");
-		}
+		}*/
 	 
 	 
 		@Test(priority = 22, enabled = true)
@@ -1209,7 +1209,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 		  
 		  
 		  /* =======================================Location adding scenario test case Started======================================================================================*/
-		  @Test(priority = 354, enabled = true)	  
+		 /* @Test(priority = 354, enabled = true)	  
 		  @Title("Verifying  home screen hourly  ad call when user enter new location") 
 		  public  void Smoke_Test_Verifying_homescreenhourly_adcall_enter_newLocation_scenario() throws  Exception {	 
 		  logStep("Verifying home screen hourly  ad call when user enter new location");
@@ -1232,7 +1232,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 		  System.out. println("================= Verifying  home screen marquee call when user enter new location scenario started =========================");
 		  Functions.finding_Homescreen_marquee_iu_value(); 
 		  System.out.println("================= Verifying  home screen marquee call when user enter new location scenario   End =========================" );  
-		  }
+		  }*/
 		
 		
 		  /* =======================================Location adding scenario test case End======================================================================================*/
