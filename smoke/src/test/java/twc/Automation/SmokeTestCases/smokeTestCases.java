@@ -690,7 +690,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 
 
 
-					@Test(priority = 33, enabled = true)
+				/*	@Test(priority = 33, enabled = true)
 					@Title("Verifying amazon slot Id for Allergy Bigbanner ad")
 					public void Smoke_Test_Verify_amazon_SlotId_Allergy_Bigbanner_ad() throws Exception {
 						System.out.println(
@@ -698,7 +698,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 						Functions.get_aaxcal_Allergy_Bigbanner();
 						System.out.println(
 								"================= verifying amazon SlotId for Allergy BigBanner adcall  End =========================");
-					}
+					}*/
 
 
 
