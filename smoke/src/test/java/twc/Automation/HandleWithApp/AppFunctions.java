@@ -2533,9 +2533,9 @@ for(int i=0;i<=allLocations.size();i++) {
 	if(location.contains("New York City")) {
 		//System.out.println(loc.getText());
 		if(allLocations.get(i).getText().contains("New York City")) {
-
+			Thread.sleep(6000);
 			allLocations.get(i).click();
-		Thread.sleep(3000);
+		Thread.sleep(6000);
 		break;
 		}
 	}
@@ -2544,9 +2544,9 @@ for(int i=0;i<=allLocations.size();i++) {
 	if(location.contains("07095")) {
 		//System.out.println(loc.getText());
 		if(allLocations.get(i).getText().contains("Woodbridge Township")) {
-
+			Thread.sleep(6000);
 			allLocations.get(i).click();
-		Thread.sleep(3000);
+			Thread.sleep(6000);
 		break;
 		}
 	}
