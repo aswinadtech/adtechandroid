@@ -3265,17 +3265,17 @@ public static void get_aaxcal_Boat_Beach_spotlight() throws Exception {
 public static void get_aaxcal_SH_details() throws Exception {
 	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
 	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
-	System.out.println("Verifying amazon \"slotId\": \"6767bf53-0d81-4bf5-a121-e60099e4064c\"  for  call display/content/");
-	logStep("Verifying amazon \"slotId\": \"6767bf53-0d81-4bf5-a121-e60099e4064c\"  for call display/content/flu");
+	System.out.println("Verifying amazon \"slotId\": \"6767bf53-0d81-4bf5-a121-e60099e4064c\"  for  db_display/details/season");
+	logStep("Verifying amazon \"slotId\": \"6767bf53-0d81-4bf5-a121-e60099e4064c\"  for call db_display/details/season");
 	//System.out.println("Slot Name is  : "+slotID);
 	if(sb.contains("6767bf53-0d81-4bf5-a121-e60099e4064c")) {
-	System.out.println("6767bf53-0d81-4bf5-a121-e60099e4064c is trigred for aax  call display/content/flu");
-	logStep("6767bf53-0d81-4bf5-a121-e60099e4064c is trigred for aax  call display/content/flu");
+	System.out.println("6767bf53-0d81-4bf5-a121-e60099e4064c is trigred for aax  call db_display/details/season");
+	logStep("6767bf53-0d81-4bf5-a121-e60099e4064c is trigred for aax  call db_display/details/season");
 	}
 	if(!sb.contains("6767bf53-0d81-4bf5-a121-e60099e4064c")) {
-		System.out.println("slotId 6767bf53-0d81-4bf5-a121-e60099e4064c  is not trigred for aax call display/content/flu");
-		logStep("slotId 6767bf53-0d81-4bf5-a121-e60099e4064c  is not trigred for aax call display/content/flu");
-		Assert.fail("slotId 6767bf53-0d81-4bf5-a121-e60099e4064c is not trigred for aax call display/content/flu");
+		System.out.println("slotId 6767bf53-0d81-4bf5-a121-e60099e4064c  is not trigred for aax call db_display/details/season");
+		logStep("slotId 6767bf53-0d81-4bf5-a121-e60099e4064c  is not trigred for aax call db_display/details/season");
+		Assert.fail("slotId 6767bf53-0d81-4bf5-a121-e60099e4064c is not trigred for aax call db_display/details/season");
 		}
 }
 
