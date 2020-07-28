@@ -631,7 +631,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 				 
 				 
 				 
-					@Test(priority = 23, enabled = false)
+					/*@Test(priority = 23, enabled = false)
 					@Title("Verifying amazon axx slot for new article")
 					public void Smoke_Test_Verify_amazon_aax_News_adcall() throws Exception {
 						System.out.println(
@@ -639,7 +639,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 						Functions.get_aaxcal_news();
 						System.out
 								.println("================= verifying amazon aax slot for news article  End =========================");
-					}
+					}*/
 
 
 
@@ -994,13 +994,13 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 		Functions.validating_WeatherFXAPI();
 		System.out.println("================= Verifying WeatherFX API url End =========================");
 	}
-	@Test(priority = 302, enabled = true)
+	/*@Test(priority = 302, enabled = true)
 	@Title("Verifying Location/Factual  api call url on KillLaunch")
 	public void Smoke_Test_CaseVerify_Factualapi_url_KillLaunch() throws Exception {
 		System.out.println("================= Verifying WeatherFX API url started =========================");
 		Functions.validating_Fatual();
 		System.out.println("================= Verifying WeatherFX API url End =========================");
-	}
+	}*/
 
 	
 	@Test(priority = 304, enabled = true)
