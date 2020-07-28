@@ -112,13 +112,13 @@ public class regressionTestCases extends Drivers {
 		System.out.println("================= Custom Parameter ORD Verfication End =========================");
 	}
 
-	@Test(priority = 1)
+	/*@Test(priority = 1)
 	@Title("Verify custom parameter rmid")
 	public void C333204_Verify_cust_param_rmid() throws Exception {
 		System.out.println("================= Custom Parameter Rmid Verfication Started =========================");
 		Custom_Parameters_Verification.parameters_Verification("rmid");
 		System.out.println("================= Custom Parameter Rmid Verfication End =========================");
-	}
+	}*/
 
 	@Test(priority = 26)
 	@Title("Verify custom parameter ver")
