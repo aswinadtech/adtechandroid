@@ -300,6 +300,15 @@ public class Custom_Parameters_Verification extends Drivers{
 											Assert.fail("st Value not matched");
 										}
 									}
+										else if(ParamType.equals("env") && custParam.equals("env")){
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
+										Param_val = CustomParamFunctions.validate_not_null_results("env",feed);
+										if(Param_val.equals("Fail") && feedAd.contains("details")){
+											logStep(custParam+" should not be null");
+											logStep(custParam+" can be nl");
+											Assert.fail("ch Value not matched");
+										}
+									}
 									else if(ParamType.equals("cc") && custParam.equals("cc")){
 										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_dsx_results("cc",feed);
