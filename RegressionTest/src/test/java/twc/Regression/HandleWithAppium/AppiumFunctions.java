@@ -670,12 +670,16 @@ public static void killADB() throws IOException, Exception{
 				Ad.findElementByAccessibilityId("Navigate up").click();
 			}
 			catch(Exception e1) {
-			new WebDriverWait(Ad, maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("com.weather.Weather:id/fake_toolbar_back_button")));
-		     Ad.findElementById("com.weather.Weather:id/fake_toolbar_back_button").click();
+			try {
+				new WebDriverWait(Ad, maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementByAccessibilityId("Navigate up")));
+				Ad.findElementByAccessibilityId("Navigate up").click();
+			}
+			catch(Exception e4) {
+				System.out.println("BackArrowElement not clicked");
+			}
 			}
 		}
 }
-	
 	public static void clickOnBackArrowElement_today() throws Exception
 	{
 		try {
