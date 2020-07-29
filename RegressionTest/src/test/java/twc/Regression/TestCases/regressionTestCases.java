@@ -558,6 +558,14 @@ public class regressionTestCases extends Drivers {
 		System.out.println("================= Custom Parameter fltmpc Verfication End =========================");
 	}
 
+	@Test(priority = 22)
+	@Title("Verify custom parameter env")
+	public void C333213_Verify_cust_param_env() throws Exception {
+		System.out.println("================= Custom Parameter env Verfication Started =========================");
+		Custom_Parameters_Verification.parameters_Verification("env");
+		System.out.println("================= Custom Parameter env Verfication End =========================");
+	}
+	
 	/*
 	 * @Test(priority=78)
 	 * 
