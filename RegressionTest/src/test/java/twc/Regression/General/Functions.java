@@ -1552,10 +1552,10 @@ public class Functions extends Drivers{
 	public static void enableSignificantweatherforecast_Notifications()  throws Exception{
 		 clickOnNotificationsBellIcon();
 		 clickOnManage();
-			Thread.sleep(6000);
+			Thread.sleep(10000);
 			
-			//Ad.findElementById("com.weather.Weather:id/my_alerts_layout_0").click();
-			Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.viewpager.widget.ViewPager/android.widget.ScrollView/android.widget.LinearLayout/android.widget.ListView/android.widget.RelativeLayout[1]/android.widget.TextView[1]").click();
+			Ad.findElementById("com.weather.Weather:id/my_alerts_layout_0").click();
+			//Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.viewpager.widget.ViewPager/android.widget.ScrollView/android.widget.LinearLayout/android.widget.ListView/android.widget.RelativeLayout[1]/android.widget.TextView[1]").click();
 			Thread.sleep(6000);
 		/*	List<WebElement> notifications;
 			
@@ -1584,29 +1584,30 @@ public class Functions extends Drivers{
 	
 	
 	
-	public static void enable_Alert_Notifications_light(String Notification)  throws Exception{
+	public static void enable_Alert_Notifications(String Notification)  throws Exception{
 		 clickOnNotificationsBellIcon();
 		 clickOnManage();
 			Thread.sleep(2000);
-			//Ad.findElementById("com.weather.Weather:id/my_alerts_layout_3").click();
-			Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.viewpager.widget.ViewPager/android.widget.ScrollView[3]/android.widget.LinearLayout/android.widget.ListView/android.widget.RelativeLayout[4]/android.widget.TextView[1]").click();
+		//	Ad.findElementById("com.weather.Weather:id/my_alerts_layout_3").click();
+			//Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.viewpager.widget.ViewPager/android.widget.ScrollView[3]/android.widget.LinearLayout/android.widget.ListView/android.widget.RelativeLayout[4]/android.widget.TextView[1]").click();
 			Thread.sleep(6000);
-			/*List<WebElement> notifications;
+			List<WebElement> notifications;
 			
 				Thread.sleep(5000);
-				notifications=Ad.findElementsById("com.weather.Weather:id/my_alerts_layout_3");
+				notifications=Ad.findElementsById("android.widget.TextView");
 		for(WebElement weather:notifications) {	
 			Thread.sleep(6000);
 			if(weather.getText().equalsIgnoreCase(Notification)) {
 				Thread.sleep(6000);
 				//System.out.println(weather.getAttribute("text"));
 				weather.click();
-				Thread.sleep(6000);*/
+				Thread.sleep(6000);
 				enbleAlertSwitch();
 				clickBackButtonAlerts();
 				clickBackButtonAlerts();
 			}			
-			
+		}
+	}
 	
 	public static void enable_Alert_Notifications_bn(String Notification)  throws Exception{
 		 clickOnNotificationsBellIcon();
