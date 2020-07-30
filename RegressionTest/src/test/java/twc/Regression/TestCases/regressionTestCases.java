@@ -862,6 +862,7 @@ public void  C333207_Verify_cust_param_hmid() throws Exception{
 	  AppiumFunctions.Kill_Launch_App(); 
 	  Thread.sleep(15000);
 	  Thread.sleep(3000);
+	  //Functions.enable_Alert_Notifications("Significant weather forecast");
 		Functions.enableSignificantweatherforecast_Notifications();
 	  Functions.clickAlerts(); 
 	  //Functions.click_thunderstorm();
@@ -1002,7 +1003,7 @@ public void Before_Test() throws Exception {
 		// CharlesFunctions.startSessionBrowserData();
 		// AppiumFunctions.LaunchApp();
 AppiumFunctions.LaunchAppWithFullReset();
-Thread.sleep(15000);
+/*Thread.sleep(15000);
 AppiumFunctions.gettingApkVersion();
 Thread.sleep(5000);
 //CustomParamFunctions.get_fhic_floc_value();    
@@ -1011,8 +1012,7 @@ Thread.sleep(15000);
 AppiumFunctions.click_hourly_element();
  Thread.sleep(5000);
  AppiumFunctions.click_daily_element();
-CharlesFunctions.ExportSession();
-		// Thread.sleep(30000);
+CharlesFunctions.ExportSession();*/
 		// CustomParamFunctions.get_fhic_floc_value();      
 		//AppiumFunctions.SwipeUp_Counter(15);	
 	 //AppiumFunctions.clickOnVideoElement();
