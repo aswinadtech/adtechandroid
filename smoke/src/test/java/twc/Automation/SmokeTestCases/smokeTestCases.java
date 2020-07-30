@@ -64,7 +64,7 @@ public void Smoke_Test_CaseVerify_Homescreen_marquee_adCall_FTL() throws Excepti
 	System.out.println("going to all detail and content pages");
 	logStep("going to all detail and content pages");
  Thread.sleep(10000);
-	AppiumFunctions.SwipeUp_Counter_feedcards(40);
+	AppiumFunctions.SwipeUp_Counter_feedcards(20);
 	CharlesFunctions.ExportSession();
 	Functions.finding_Homescreen_marquee_iu_value();
 	System.out.println(
