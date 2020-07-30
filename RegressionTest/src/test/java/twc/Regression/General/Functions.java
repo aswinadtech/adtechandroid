@@ -2509,6 +2509,7 @@ public static void  Verifythunderstormalert() throws Exception{
 			
 			if(expectedValues.contains("thunderstm")) {
 				System.out.println("thunderstorm push notification alert cust param value is "     +Alert);
+				logStep("thunderstorm push notification alert cust param value is "     +Alert);
 			}
 			else {
 				System.out.println("thunderstorm push notification alert cust param value is "      + Alert);
