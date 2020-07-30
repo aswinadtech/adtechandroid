@@ -777,7 +777,7 @@ public void  C333207_Verify_cust_param_hmid() throws Exception{
 	
 	
 	  
-	  @Test(priority=501)
+	 /* @Test(priority=501)
 	  @Title("Verifying Winter breaking news alert push notification") 
 	  public void Smoke_Test_WinterBreakingNews_Alert_Pushnotification() throws Exception {
 	   System.out. println("================= Verifying Winter breaking news alert push notification Started =========================");
@@ -796,7 +796,7 @@ public void  C333207_Verify_cust_param_hmid() throws Exception{
 	  Functions.finding_BreakingNews_iu_value();
 	  Functions.VerifyWBNAlert(); 
 	  System.out.println("================= Verifying Winter breaking news alert push notification End =========================");
-	  }
+	  }*/
 	 
 	 
 	  @Test(priority=502)  
