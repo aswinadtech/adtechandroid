@@ -3,6 +3,10 @@ package twc.Regression.General;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.Reader;
 import java.security.PublicKey;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -37,6 +41,7 @@ import org.testng.Assert;
 
 import twc.Regression.General.DeviceStatus;
 import twc.Regression.HandleWithAppium.AppiumFunctions;
+
 import twc.Regression.Driver.Drivers;
 import twc.Regression.ReadDataFromFile.read_excel_data;
 import twc.Regression.ReadDataFromFile.read_xml_data_into_buffer;
@@ -54,8 +59,7 @@ public class Functions extends Drivers{
 	public static String[] homescreenfeedad;
 	public static String[] Deatailpagead;
 	public static String adType;
-
-
+	  public static final int maxTimeout = 60;
 	public static void validate_API_Call_With_PubAds_Call(String excel_sheet_name) throws Exception{
 
 		String apicall_results=null;
@@ -721,20 +725,6 @@ public class Functions extends Drivers{
 
 
 
-
-	public static Boolean verifyElement(By by) {
-		try {
-			// Get the element using the Unique identifier of the element
-			Ad.findElement(by);
-		} catch (NoSuchElementException e) {
-			// Return false if element is not found
-			return false;
-		} catch (Exception e) {
-			return false;
-		}
-		// Return true if element is found
-		return true;
-	}
 
 
 
@@ -1518,4 +1508,1241 @@ public class Functions extends Drivers{
 
 
 	}
+	
+	public static void selectCurrentLocationOnPushNotifications()  {
+		try {
+			if(Ad.findElementById("android:id/button1").isDisplayed()) {
+		if(Ad.findElementById("android:id/button1").getText().contains("SELECT LOCATION"));
+		Ad.findElementById("android:id/button1").click();
+			}
+		
+		}
+		catch(Exception e) {
+			
+					Ad.findElementById("com.weather.Weather:id/checkbox").click();
+					System.out.println("enabled the checkbox");
+				}
+			
+	}
+	public static void clickOnNotificationsBellIcon() throws Exception  {
+		System.out.println("Clicking alerts notification Icon");
+		logStep("Clicking alerts notification Icon");
+		try {
+			Ad.findElementByAccessibilityId("Go to Alerts and Notifications").click();
+			Thread.sleep(5000);
+		}
+		catch(Exception e) {
+			Ad.findElementById("com.weather.Weather:id/notifications_icon").click();
+			Thread.sleep(5000);
+		}
+	}
+	
+	public static void clickOnManage() throws Exception  {
+		System.out.println("Clicking on Manage button");
+		logStep("Clicking on Manage button");
+		try {
+			Ad.findElementByAccessibilityId("Manage").click();
+			Thread.sleep(5000);
+		}
+		catch(Exception e) {
+			Ad.findElementByAccessibilityId("Manage").click();
+			Thread.sleep(5000);
+		}
+	}
+	public static void enableSignificantweatherforecast_Notifications()  throws Exception{
+		 clickOnNotificationsBellIcon();
+		 clickOnManage();
+			Thread.sleep(6000);
+			
+			Ad.findElementById("com.weather.Weather:id/my_alerts_layout_0").click();
+			Thread.sleep(6000);
+		/*	List<WebElement> notifications;
+			
+
+				Thread.sleep(5000);
+				try {
+					notifications=Ad.findElementsById("com.weather.Weather:id/my_alerts_layout_0");
+				}
+				catch(Exception e) {
+					notifications=Ad.findElementsById("com.weather.Weather:id/my_alerts_layout_0");
+				}
+			
+		for(WebElement weather:notifications) {	
+			Thread.sleep(6000);
+			if(weather.getText().equalsIgnoreCase("Significant weather forecast")) {
+				Thread.sleep(6000);
+				weather.click();*/
+			   enbleAlertSwitch();
+			selectCurrentLocationOnPushNotifications();
+			clickBackButtonAlerts();
+			clickBackButtonAlerts();
+			}			
+			
+	
+	
+	
+	
+	
+	public static void enable_Alert_Notifications_light(String Notification)  throws Exception{
+		 clickOnNotificationsBellIcon();
+		 clickOnManage();
+			Thread.sleep(2000);
+			Ad.findElementById("com.weather.Weather:id/my_alerts_layout_3").click();
+			Thread.sleep(6000);
+			/*List<WebElement> notifications;
+			
+				Thread.sleep(5000);
+				notifications=Ad.findElementsById("com.weather.Weather:id/my_alerts_layout_3");
+		for(WebElement weather:notifications) {	
+			Thread.sleep(6000);
+			if(weather.getText().equalsIgnoreCase(Notification)) {
+				Thread.sleep(6000);
+				//System.out.println(weather.getAttribute("text"));
+				weather.click();
+				Thread.sleep(6000);*/
+				enbleAlertSwitch();
+				clickBackButtonAlerts();
+				clickBackButtonAlerts();
+			}			
+			
+	
+	public static void enable_Alert_Notifications_bn(String Notification)  throws Exception{
+		 clickOnNotificationsBellIcon();
+		 clickOnManage();
+			Thread.sleep(6000);
+			Ad.findElementById("com.weather.Weather:id/my_alerts_layout_5").click();
+			Thread.sleep(6000);
+			/*List<WebElement> notifications;
+			
+				Thread.sleep(5000);
+				notifications=Ad.findElementsById("com.weather.Weather:id/my_alerts_layout_5");
+		for(WebElement weather:notifications) {	
+			Thread.sleep(6000);
+			if(weather.getText().equalsIgnoreCase(Notification)) {
+				Thread.sleep(6000);
+				//System.out.println(weather.getAttribute("text"));
+				weather.click();
+				Thread.sleep(6000);*/
+				enbleAlertSwitch();
+				clickBackButtonAlerts();
+				clickBackButtonAlerts();
+			}			
+			
+	
+	
+	public static void enable_Alert_Notifications_rtr(String Notification)  throws Exception{
+		 clickOnNotificationsBellIcon();
+		 clickOnManage();
+			Thread.sleep(6000);
+		 Ad.findElementById("com.weather.Weather:id/my_alerts_layout_2").click();
+			Thread.sleep(6000);
+			/*Thread.sleep(2000);
+			List<WebElement> notifications;
+			
+				Thread.sleep(5000);
+				notifications=Ad.findElementsById("com.weather.Weather:id/my_alerts_layout_2");
+		for(WebElement weather:notifications) {	
+			Thread.sleep(6000);
+			if(weather.getText().equalsIgnoreCase(Notification)) {
+				Thread.sleep(6000);
+				//System.out.println(weather.getAttribute("text"));
+				weather.click();*/
+				Thread.sleep(6000);
+				enbleAlertSwitch();
+				clickBackButtonAlerts();
+				clickBackButtonAlerts();
+			}			
+			
+	
+	public static void push() throws Exception {
+		// selectCurrentLocationOnPushNotifications();
+	
+		
+			clickBackButtonAlerts();
+		
+	}
+	
+	
+	public static void enablePushalerts()  throws Exception{
+		
+		//clicking menu button
+		//click the view more
+				try {
+				Ad.findElementByAccessibilityId("Go to Alerts and Notifications").click();
+				Thread.sleep(2000);
+				}
+				catch(Exception e) {
+					Ad.findElementById("com.weather.Weather:id/notifications_icon").click();
+					Thread.sleep(3000);
+				}
+				//click manage button
+				
+					Ad.findElementByAccessibilityId("Manage").click();
+					Thread.sleep(2000);
+					
+			//click significant forecast alert
+					try {
+						Ad.findElementById("com.weather.Weather:id/my_alerts_layout_0").click();
+						Thread.sleep(2000);
+						}
+						catch(Exception e) {
+							
+								List<WebElement> airlock=Ad.findElementsByClassName("android.widget.RelativeLayout");
+								airlock.get(0).click();
+								Thread.sleep(3000);
+						}		
+					enbleAlertSwitch();
+					
+					
+					Ad.findElementById("android:id/button1").click();
+					
+					Thread.sleep(3000);
+					
+					
+				/*	try {
+						Ad.findElementById("com.weather.Weather:id/checkbox").click();
+						Thread.sleep(2000);
+						}
+						catch(Exception e) {
+							
+								Ad.findElementByClassName("android.widget.TextView").click();
+								Thread.sleep(3000);
+						}	*/
+					clickBackButtonAlerts();
+					//enable lighting alerts
+					try {
+						Ad.findElementById("com.weather.Weather:id/my_alerts_layout_3").click();
+						Thread.sleep(2000);
+						}
+						catch(Exception e) {
+							
+								List<WebElement> airlock=Ad.findElementsByClassName("android.widget.RelativeLayout");
+								airlock.get(3).click();
+								Thread.sleep(3000);
+						}	
+					enbleAlertSwitch();
+					clickBackButtonAlerts();
+					
+					//enable daily rain &Snow  alerts
+					try {
+						Ad.findElementById("com.weather.Weather:id/my_alerts_layout_6").click();
+						Thread.sleep(2000);
+						}
+						catch(Exception e) {
+							
+								List<WebElement> airlock=Ad.findElementsByClassName("android.widget.RelativeLayout");
+								airlock.get(6).click();
+								Thread.sleep(3000);
+						}	
+					enbleAlertSwitch();
+					Ad.findElementById("com.weather.Weather:id/checkbox").click();
+					Thread.sleep(3000);
+					
+					clickBackButtonAlerts();
+					Thread.sleep(3000);
+					//enable daily pollen alert
+					try {
+						Ad.findElementById("com.weather.Weather:id/my_alerts_layout_7").click();
+						Thread.sleep(2000);
+						}
+						catch(Exception e) {
+							
+								List<WebElement> airlock=Ad.findElementsByClassName("android.widget.RelativeLayout");
+								airlock.get(7).click();
+								Thread.sleep(3000);
+						}	
+					enbleAlertSwitch();
+					
+					clickBackButtonAlerts();
+					clickBackButtonAlerts();
+
+	}
+
+public static void enbleAlertSwitch() throws Exception {
+	
+	String on_off=Ad.findElementById("com.weather.Weather:id/alert_switch").getText();
+	if(on_off.contains("Off OFF")) {
+		Ad.findElementById("com.weather.Weather:id/alert_switch").click();
+		Thread.sleep(3000);
+	}
+	if(on_off.contains("On ON")) {
+		
+		Thread.sleep(3000);
+	}
+	
+}
+
+public static void clickBackButtonAlerts() throws Exception {
+	//enble alert swtich
+	try {
+	Ad.findElementByAccessibilityId("Navigate up").click(); 
+		Thread.sleep(3000);
+		
+	}
+	catch(Exception e) {
+		Ad.findElementByClassName("android.widget.ImageButton").click();
+		Thread.sleep(3000);
+	}
+}
+
+
+//clicking alerts
+public static void clickAelrtsadwd() throws Exception {
+	
+	//click the view more
+			try {
+			Ad.findElementByAccessibilityId("View More").click();
+			Thread.sleep(2000);
+			}
+			catch(Exception e) {
+				Ad.findElementById("com.weather.Weather:id/more_icon").click();
+				Thread.sleep(3000);
+			}
+}
+
+
+public static void clickbreakingnewsAlert() throws Exception {
+	try {
+		List<WebElement> airlock=Ad.findElementsById("android:id/text1");
+		airlock.get(3).click();
+		Thread.sleep(3000);
+	
+	}
+	catch(Exception e) {
+		List<WebElement> airlock=Ad.findElementsByClassName("android.widget.TextView");
+		airlock.get(3).click();
+		Thread.sleep(3000);
+	}
+}
+
+public static void clickrealtimerainAlert() throws Exception {
+	try {
+		List<WebElement> airlock=Ad.findElementsById("android:id/text1");
+		airlock.get(4).click();
+		Thread.sleep(3000);
+	
+	}
+	catch(Exception e) {
+		List<WebElement> airlock=Ad.findElementsByClassName("android.widget.TextView");
+		airlock.get(4).click();
+		Thread.sleep(3000);
+	}
+}
+public static void clickrealtimelightningAlert() throws Exception {
+	try {
+		List<WebElement> airlock=Ad.findElementsById("android:id/text1");
+		airlock.get(5).click();
+		Thread.sleep(3000);
+	
+	}
+	catch(Exception e) {
+		List<WebElement> airlock=Ad.findElementsByClassName("android.widget.TextView");
+		airlock.get(5).click();
+		Thread.sleep(3000);
+	}	
+}
+public static void clickheavyrainfallAlert() throws Exception {
+	try {
+		List<WebElement> airlock=Ad.findElementsById("android:id/text1");
+		airlock.get(6).click();
+		Thread.sleep(3000);
+	
+	}
+	catch(Exception e) {
+		List<WebElement> airlock=Ad.findElementsByClassName("android.widget.TextView");
+		airlock.get(6).click();
+		Thread.sleep(3000);
+	}	
+}
+public static void clickthunderstormAlert() throws Exception {
+	try {
+		List<WebElement> airlock=Ad.findElementsById("android:id/text1");
+		airlock.get(7).click();
+		Thread.sleep(3000);
+	
+	}
+	catch(Exception e) {
+		List<WebElement> airlock=Ad.findElementsByClassName("android.widget.TextView");
+		airlock.get(7).click();
+		Thread.sleep(3000);
+	}	
+}
+
+public static void clickhightheatAlert() throws Exception {
+	try {
+		List<WebElement> airlock=Ad.findElementsById("android:id/text1");
+		airlock.get(8).click();
+		Thread.sleep(3000);
+	
+	}
+	catch(Exception e) {
+		List<WebElement> airlock=Ad.findElementsByClassName("android.widget.TextView");
+		airlock.get(8).click();
+		Thread.sleep(3000);
+	}	
+}
+
+public static void clickhighwindAlert() throws Exception {
+	try {
+		List<WebElement> airlock=Ad.findElementsById("android:id/text1");
+		airlock.get(9).click();
+		Thread.sleep(3000);
+	
+	}
+	catch(Exception e) {
+		List<WebElement> airlock=Ad.findElementsByClassName("android.widget.TextView");
+		airlock.get(9).click();
+		Thread.sleep(3000);
+	}	
+}
+public static void clickdensefogAlert() throws Exception {
+	try {
+		List<WebElement> airlock=Ad.findElementsById("android:id/text1");
+		airlock.get(10).click();
+		Thread.sleep(3000);
+	
+	}
+	catch(Exception e) {
+		List<WebElement> airlock=Ad.findElementsByClassName("android.widget.TextView");
+		airlock.get(10).click();
+		Thread.sleep(3000);
+	}	
+}
+public static void clickverycoldlert() throws Exception {
+	try {
+		List<WebElement> airlock=Ad.findElementsById("android:id/text1");
+		airlock.get(11).click();
+		Thread.sleep(3000);
+	
+	}
+	catch(Exception e) {
+		List<WebElement> airlock=Ad.findElementsByClassName("android.widget.TextView");
+		airlock.get(11).click();
+		Thread.sleep(3000);
+	}	
+}
+
+public static void clickheavysnowfalllert() throws Exception {
+	try {
+		List<WebElement> airlock=Ad.findElementsById("android:id/text1");
+		airlock.get(12).click();
+	
+	}
+	catch(Exception e) {
+		Thread.sleep(3000);
+		List<WebElement> airlock=Ad.findElementsByClassName("android.widget.TextView");
+		airlock.get(12).click();
+		Thread.sleep(3000);
+	}	
+}
+
+public static void clickicealert() throws Exception {
+	try {
+		List<WebElement> airlock=Ad.findElementsById("android:id/text1");
+		airlock.get(13).click();
+		Thread.sleep(3000);
+	
+	}
+	catch(Exception e) {
+		List<WebElement> airlock=Ad.findElementsByClassName("android.widget.TextView");
+		airlock.get(13).click();
+		Thread.sleep(3000);
+	}	
+}
+
+public static void clickwinterbreakingalert() throws Exception {
+	try {
+		List<WebElement> airlock=Ad.findElementsById("android:id/text1");
+		airlock.get(12).click();
+		Thread.sleep(3000);
+	
+	}
+	catch(Exception e) {
+		List<WebElement> airlock=Ad.findElementsByClassName("android.widget.TextView");
+		airlock.get(12).click();
+		Thread.sleep(3000);
+	}	
+}
+
+public static void clickfluxtomorrowalert() throws Exception {
+	try {
+		List<WebElement> airlock=Ad.findElementsById("android:id/text1");
+		airlock.get(13).click();
+		Thread.sleep(3000);
+	
+	}
+	catch(Exception e) {
+		List<WebElement> airlock=Ad.findElementsByClassName("android.widget.TextView");
+		airlock.get(13).click();
+		Thread.sleep(3000);
+	}	
+}
+public static void clickfluxtodayalert() throws Exception {
+	try {
+		List<WebElement> airlock=Ad.findElementsById("android:id/text1");
+		airlock.get(14).click();
+		Thread.sleep(3000);
+	
+	}
+	catch(Exception e) {
+		List<WebElement> airlock=Ad.findElementsByClassName("android.widget.TextView");
+		airlock.get(14).click();
+		Thread.sleep(3000);
+	}	
+}
+
+public static void swipefornotification() {
+
+	try {
+	TouchAction ta=new TouchAction(Ad);
+	Ad.swipe(688, 52, 642, 1579,2000);	
+	}
+	catch(Exception e) {
+		try {
+			TouchAction ta=new TouchAction(Ad);
+			Ad.swipe(688, 52, 642, 1579,2000);	
+		}
+		catch(Exception e1) {
+			try {
+				TouchAction ta=new TouchAction(Ad);
+				Ad.swipe(688, 52, 642, 1579,2000);		
+			}catch(Exception e4) {
+				
+			}
+		}
+	}
+}
+
+
+public static void click_BN() throws Exception {
+Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[4]").click();
+	System.out.println("breaking news alert was clicked");
+	logStep("breaking news alert was clicked");
+	Thread.sleep(5000);
+
+}
+
+
+public static void click_RTR() throws Exception {
+	Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[5]").click();
+	System.out.println("real time rain alert was clicked");
+	logStep("real time rain alert was clicked");
+	Thread.sleep(5000);
+	
+}
+
+public static void click_thunderstorm() throws Exception {
+	
+	Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[8]").click();
+	System.out.println("thunderstorm alert  alert was clicked");
+	logStep("thunderstorm alert  alert was clicked");
+	Thread.sleep(5000);
+}
+
+public static void click_severe() throws Exception {
+
+	Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.ListView/android.widget.TextView[1]").click();
+	Thread.sleep(3000);
+	System.out.println("severe alert  was clicked");
+	logStep("severe alert  was clicked");
+
+}
+public static void clickOnRequiredPushNotification(String notification) throws Exception {
+
+try {
+	
+	List<WebElement> notifications=Ad.findElementsById("android:id/text1");
+	Thread.sleep(5000);
+	for(WebElement ChooseAlertTypel:notifications) {
+		Thread.sleep(5000);
+		if(ChooseAlertTypel.getAttribute("text").equalsIgnoreCase(notification)) {
+			Thread.sleep(5000);
+			try {
+				System.out.println(notification +" was clicked");
+				logStep(notification +" was clicked");
+			ChooseAlertTypel.click();
+			ChooseAlertTypel.click();
+			ChooseAlertTypel.click();
+			}catch(Exception e5) {
+				//System.out.println(notification +" was clicked");
+				//logStep(notification +" was clicked");
+
+			}
+	
+	//	Thread.sleep(5000);
+		break;
+}
+	}
+}
+	catch(Exception e){
+		
+	
+		}
+	}
+
+
+
+
+public static void  finding_BreakingNews_iu_value() throws Exception{
+
+	Map<String , String> wfxtriggers_values = new HashMap<String, String>();
+	String wxtgValues="";
+
+	DeviceStatus device_status = new DeviceStatus();
+	int Cap = device_status.Device_Status();
+	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+	String sb = read_xml_data_into_buffer.read_xml_file_into_buffer_string();
+if(sb.contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fbreaking")) {
+	System.out.println("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fbreaking ad call was trigred");
+	logStep("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fbreaking ad call was trigred ");
+}
+if(!sb.contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fbreaking")) {
+System.out.println("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fbreakingad call was not trigred");
+logStep("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fbreakingad call was not trigred");
+Assert.fail("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fbreaking was not trigred");
+}
+
+}
+
+
+
+
+public static void  VerifyBNAlert() throws Exception{
+	
+	DeviceStatus device_status = new DeviceStatus();
+	int Cap = device_status.Device_Status();
+	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
+		if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fbreaking")){
+			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fbreaking"));
+			String required_info = Read_API_Call_Data.toString().substring(Read_API_Call_Data.toString().indexOf("cust_params="));
+			String expected_data = required_info.toString().substring(required_info.indexOf("alert%3D"),required_info.indexOf("%26atfid"));			
+			//6sod%3Dno%
+			String expectedValues = expected_data.toString();
+			String Alert=expectedValues.replaceAll("%3D", "=");
+			
+			if(expectedValues.contains("breaking")) {
+				logStep("Breaking news push notification alert cust param value is "     +Alert);
+				System.out.println("Breaking news push notification alert cust param value is "     +Alert);
+			}
+			else {
+				System.out.println("Breaking news push notification alert cust param value is"      + Alert);
+				logStep("Breaking news push notification alert cust param value is"      + Alert);
+				Assert.fail("Beaking news push notification alert cust param value is"      + Alert);
+			}
+			//System.out.println(expectedValues);
+			
+		}
+	
+}
+
+
+public static String read_xml_file_into_buffer_string()throws Exception{
+	
+	DeviceStatus device_status = new DeviceStatus();
+	int Cap = device_status.Device_Status();
+	
+	String[][] paths = read_excel_data.exceldataread("Paths");
+	String xml_file_path=null;
+	File folder = new File(paths[4][Cap]);
+	File[] listOfFiles = folder.listFiles();
+	String Filename = null;
+	for (File file : listOfFiles) {
+		if (file.isFile()) {
+			Filename = file.getName();
+			xml_file_path = paths[4][Cap]+Filename;
+			System.out.println("XML File Name is : "+Filename);
+		}
+	}
+	
+	StringBuilder sb=null;
+	
+	try {
+		File xmlFile = new File(xml_file_path); 
+		Reader fileReader = new FileReader(xmlFile); 
+		BufferedReader bufReader = new BufferedReader(fileReader); 
+		sb = new StringBuilder(); 
+		String line = bufReader.readLine(); 
+		while( (line=bufReader.readLine()) != null)
+		{ 
+			sb.append(line).append("\n"); 
+		} 
+		bufReader.close();
+	} catch (Exception e) {
+		System.out.println("No Data Found in XML File");
+	}
+	return sb.toString();
+	
+}
+
+public static Boolean verifyElement(By by) {
+	try {
+		// Get the element using the Unique identifier of the element
+		Ad.findElement(by);
+	} catch (NoSuchElementException e) {
+		// Return false if element is not found
+		return false;
+	}  catch (Exception e) {
+		return false;
+	}
+	//Return true if element is found
+	return true;
+}
+
+
+public static void clickAlerts() throws Exception{
+	
+	//cliking View more Button		
+ 	clickOnviewMore();
+ 	//cliking on aboutthisapp
+ 	clickOnAboutthisapp();	
+ 	 clickOnVersionnumber();
+ 	clickOntestmodesettings() ;
+ 	
+ 	clickOnAlerts();
+ 
+ 	
+}
+
+public static void clickOnviewMore() {
+Functions.verifyElement(ByAccessibilityId("View More"));
+	try {
+	System.out.println("Clicking on View More");
+	logStep("Clicking on View More");
+	new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementByAccessibilityId("View More")));
+	Ad.findElementByAccessibilityId("View More").click();
+	//Thread.sleep(5000);
+	}
+	catch(Exception e) {
+		try {
+			new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementByAccessibilityId("View More")));
+			Ad.findElementByAccessibilityId("View More").click();
+		}
+		catch(Exception e1) {
+			
+		}
+	}
+}
+
+public static void clickOnAboutthisapp() throws Exception {
+//	Functions.verifyElement(ByAccessibilityId("About this App"));
+	try {
+	System.out.println("Clicking on About this App");
+	logStep("Clicking on About this App");
+	new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementByAccessibilityId("About this App")));
+	Ad.findElementByAccessibilityId("About this App").click();
+	//About this App
+//	Thread.sleep(5000);
+	}
+	catch(Exception e) {	
+		new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("com.weather.Weather:id/item_about")));
+		Ad.findElementById("com.weather.Weather:id/item_about").click();
+	Thread.sleep(5000);
+	}
+}
+
+
+
+public static void clickOnVersionnumber() throws Exception {
+try {
+	//Thread.sleep(15000);
+	Functions.verifyElement(By.id("com.weather.Weather:id/test_mode_settings"));
+		//Thread.sleep(15000);
+		System.out.println("Clicking on test mode settings");
+		logStep("Clicking on test mode settings");
+		//Thread.sleep(15000);
+		new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("com.weather.Weather:id/test_mode_settings")));
+		Ad.findElementById("com.weather.Weather:id/test_mode_settings").click();
+		//Thread.sleep(5000);		
+}
+catch(Exception e) {
+System.out.println("Clicking on BuildNumber till test mode settings option is displaying");
+logStep("Clicking on BuildNumber till test mode settings option is displaying");	
+for(int i=1;i<10;i++) {
+	 //Thread.sleep(7000);
+	 new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("com.weather.Weather:id/about_version")));
+	Ad.findElementById("com.weather.Weather:id/about_version").click();
+	 //Thread.sleep(6000);
+}
+}
+}
+
+public static void clickOntestmodesettings() throws Exception {
+	try {
+		Functions.verifyElement(By.id("com.weather.Weather:id/test_mode_settings"));
+		if(Ad.findElementById("com.weather.Weather:id/test_mode_settings").isDisplayed())
+			//Thread.sleep(5000);
+			System.out.println("Clicking on test mode settings");
+			logStep("Clicking on test mode settings");
+		//Thread.sleep(5000);
+			new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("com.weather.Weather:id/test_mode_settings")));
+			Ad.findElementById("com.weather.Weather:id/test_mode_settings").click();
+		}
+
+	catch(Exception e) {
+		
+	}
+}
+
+
+
+public static void clickOnAlertNotificatons( String pushNotifications) throws Exception {
+	
+	//clicking on Airlock
+	try {
+		Thread.sleep(5000);
+
+System.out.println("Clicking push alert notification alert on device");
+logStep("Clicking push alert notification alert on device");
+Thread.sleep(5000);
+	 List<WebElement> all=Ad.findElementsById("android:id/title");
+	Thread.sleep(5000);
+	 for(WebElement Airlock:all) {
+		if( Airlock.getAttribute("text").equalsIgnoreCase(pushNotifications)) {
+			System.out.println(pushNotifications +" alert is generated on the screen");
+			 logStep(pushNotifications +" alert is generated on the screen");
+			// System.out.println(Airlock.getAttribute("text"));
+			new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Airlock));
+			Airlock.click();
+	 Thread.sleep(5000);
+			 break;
+		 }
+		else{
+			System.out.println(pushNotifications +" push notification is not generated on the device");
+			 logStep(pushNotifications +" push notification is not generated on the device");
+			 Assert.fail(pushNotifications +"push notification is not generated on the device");
+			 
+		}
+	 }
+	}
+	catch(Exception e) {
+		Thread.sleep(5000);
+		System.out.println(pushNotifications +" alert is not generated");
+		 logStep(pushNotifications +" alert is not generated");
+	
+}
+}
+
+
+
+public static void clickOnAlertType( String AlertType) throws Exception {
+	
+	//clicking on Airlock
+	try {
+		Thread.sleep(5000);
+
+System.out.println("Clicking on required alert type");
+logStep("Clicking on required alert type");
+Thread.sleep(5000);	
+	// List<WebElement> all=Ad.findElementsById("android:id/text1");
+ List<WebElement> all=Ad.findElementsByClassName("android.widget.TextView");
+
+	Thread.sleep(5000);
+	 for(WebElement Airlock:all) {
+		if( Airlock.getText().equalsIgnoreCase(AlertType)) {
+			new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Airlock));
+			Airlock.click();
+			System.out.println("Clicked the "+ AlertType);
+			logStep("Clicked the "+ AlertType);
+	 Thread.sleep(5000);
+			 break;
+		 }
+	 }
+	}
+	catch(Exception e) {
+		System.out.println("need to click");
+		Thread.sleep(10000);
+}
+}
+
+
+public static void clickOnAlerts() throws Exception {
+	
+	//clicking on Airlock
+	try {
+		Thread.sleep(5000);
+System.out.println("Clicking on Alerts");
+logStep("Clicking on Alerts");
+WebElement all=(WebElement) Ad.findElementsById("android:id/title").get(4);
+all.click();
+Thread.sleep(5000);
+	}
+	catch(Exception e) {
+		Thread.sleep(5000);
+		 List<WebElement> all=Ad.findElementsById("android:id/title");
+		Thread.sleep(5000);
+		 for(WebElement Airlock:all) {
+			if( Airlock.getAttribute("text").equalsIgnoreCase("Alerts")) {
+				new WebDriverWait(Ad, Functions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Airlock));
+				Airlock.click();
+		 Thread.sleep(5000);
+				 break;
+			 }
+		 }
+ }
+}
+
+
+public static void clickOnRTRnotification() {
+	
+	String text=Ad.findElementById("android:id/title").getText();
+	if(text.contains("Real-time")) {
+		System.out.println(text +"alert generated");
+		Ad.findElementById("android:id/title").click();
+	}
+	else{
+		System.out.println(text+"alert is not generated");
+		Assert.fail(text+"alert is not generated");
+	}
+}
+public static Map<String, String> finding_Radar_Map_card_iu_value() throws Exception{
+
+	Map<String , String> wfxtriggers_values = new HashMap<String, String>();
+	String wxtgValues="";
+
+	DeviceStatus device_status = new DeviceStatus();
+	int Cap = device_status.Device_Status();
+	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
+if(sb.contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps")) {
+	System.out.println("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps call was trigred");
+	logStep("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps call was trigred");
+}
+if(!sb.contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps")) {
+System.out.println("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps call was not  trigred");
+logStep("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps call was not  trigred");
+Assert.fail("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps call was not trigred");
+}
+return wfxtriggers_values;
+}
+public static void  VerifyRTRAlert() throws Exception{
+	
+	DeviceStatus device_status = new DeviceStatus();
+	int Cap = device_status.Device_Status();
+	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
+		if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps")){
+			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps"));
+			String required_info = Read_API_Call_Data.toString().substring(Read_API_Call_Data.toString().indexOf("cust_params="));
+			String expected_data = required_info.toString().substring(required_info.indexOf("alert%3D"),required_info.indexOf("%26atfid"));			
+			//6sod%3Dno%
+			String expectedValues = expected_data.toString();
+			String Alert=expectedValues.replaceAll("%3D", "=");
+			
+			if(expectedValues.contains("real")) {
+				System.out.println("real time rain  push notification alert cust param value is "     +Alert);
+				logStep("real time rain  push notification alert cust param value is "     +Alert);
+			}
+			else {
+				System.out.println("real time rain  push notification alert cust param value is "      + Alert);
+				logStep("real time rain  push notification alert cust param value is "      + Alert);
+				Assert.fail("real time rain  push notification alert cust param value is "      + Alert);
+			}
+			//System.out.println(expectedValues);
+			
+		}
+}
+
+public static Map<String, String> finding_hourly_details_card_iu_value() throws Exception{
+
+	Map<String , String> wfxtriggers_values = new HashMap<String, String>();
+	String wxtgValues="";
+
+	DeviceStatus device_status = new DeviceStatus();
+	int Cap = device_status.Device_Status();
+	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
+if(sb.contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly")) {
+	System.out.println("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly ad call was trigred");
+	logStep("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly ad call was trigred");
+}
+if(!sb.contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly")) {
+System.out.println("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly ad call was not  trigred");
+logStep("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly ad call was not  trigred");
+Assert.fail("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly ad call was not  trigred");
+}
+return wfxtriggers_values;
+
+}
+
+public static void  Verifyheavyrainfallalert() throws Exception{
+	
+	DeviceStatus device_status = new DeviceStatus();
+	int Cap = device_status.Device_Status();
+	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
+		if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly")){
+			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly"));
+			String required_info = Read_API_Call_Data.toString().substring(Read_API_Call_Data.toString().indexOf("cust_params="));
+			String expected_data = required_info.toString().substring(required_info.indexOf("alert%3D"),required_info.indexOf("%26atfid"));			
+			//6sod%3Dno%
+			String expectedValues = expected_data.toString();
+			String Alert=expectedValues.replaceAll("%3D", "=");
+			
+			if(expectedValues.contains("heavyrain")) {
+				System.out.println("rain/snow push notification alert cust param value is "     +Alert);
+				logStep("rain/snow push notification alert cust param value is "     +Alert);
+			}
+			else {
+				System.out.println("heavy rain fall push notification alert cust param value is "      + Alert);
+				logStep("heavy rain fall  push notification alert cust param value is "      + Alert);
+				Assert.fail("heavy rain fall push notification alert cust param value is "      + Alert);
+			}
+			//System.out.println(expectedValues);
+			
+		}
+}
+
+public static void  Verifythunderstormalert() throws Exception{
+	
+	DeviceStatus device_status = new DeviceStatus();
+	int Cap = device_status.Device_Status();
+	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
+		if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly")){
+			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly"));
+			String required_info = Read_API_Call_Data.toString().substring(Read_API_Call_Data.toString().indexOf("cust_params="));
+			String expected_data = required_info.toString().substring(required_info.indexOf("alert%3D"),required_info.indexOf("%26atfid"));			
+			//6sod%3Dno%
+			String expectedValues = expected_data.toString();
+			String Alert=expectedValues.replaceAll("%3D", "=");
+			
+			if(expectedValues.contains("thunderstm")) {
+				System.out.println("thunderstorm push notification alert cust param value is "     +Alert);
+			}
+			else {
+				System.out.println("thunderstorm push notification alert cust param value is "      + Alert);
+				Assert.fail("thunderstorm push notification alert cust param value is "      + Alert);
+			}
+			//System.out.println(expectedValues);
+			
+		}
+}
+
+public static Map<String, String> finding_daily_details_card_iu_value() throws Exception{
+
+	Map<String , String> wfxtriggers_values = new HashMap<String, String>();
+	String wxtgValues="";
+	String expected_data = null;
+	String today = null;
+	try {
+    today=Ad.findElementById("com.weather.Weather:id/daily_details_day_title").getText();
+	}catch(Exception e) {
+		
+	}
+	String days=today.replace(today, today+1);
+	//System.out.println("day from the UI is  " +day);
+	//logStep("day from the UI is  " +day);
+	String currentday1=days.toLowerCase();
+	DeviceStatus device_status = new DeviceStatus();
+	
+	
+	int Cap = device_status.Device_Status();
+	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
+	if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day_")) {
+		
+			try {			
+			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day_"));
+	//		String required_info = Read_API_Call_Data.toString().substring(Read_API_Call_Data.toString().indexOf("&amp"));
+			 expected_data = Read_API_Call_Data.toString().substring(Read_API_Call_Data.indexOf("iu"),Read_API_Call_Data.indexOf("&correlator"));
+			System.out.println("Charles data value is "+expected_data);
+			logStep("Charles data value is "+expected_data);			
+				}
+			catch(Exception e) {
+				
+			}
+		}
+	else {
+		System.out.println("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day_"+currentday1 +" was not trigered");
+		logStep("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day_"+currentday1 +" was not trigered");
+		Assert.fail("daily details ad call was not trigred");
+	}
+
+return wfxtriggers_values;
+}
+
+public static void  Verifyheavysnowfallalert() throws Exception{
+	
+	DeviceStatus device_status = new DeviceStatus();
+	int Cap = device_status.Device_Status();
+	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
+		if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day")){
+			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day"));
+			String required_info = Read_API_Call_Data.toString().substring(Read_API_Call_Data.toString().indexOf("cust_params="));
+			String expected_data = required_info.toString().substring(required_info.indexOf("alert%3D"),required_info.indexOf("%26atfid"));			
+			//6sod%3Dno%
+			String expectedValues = expected_data.toString();
+			String Alert=expectedValues.replaceAll("%3D", "=");
+			
+			if(expectedValues.contains("heavysnow")) {
+				System.out.println("heavy snowfall push notification alert cust param value is "     +Alert);
+				logStep("heavy snowfall push notification alert cust param value is "     +Alert);
+			}
+			else {
+				System.out.println("heavy snowfall cold push notification alert cust param value is "      + Alert);
+				logStep("heavy snowfall cold push notification alert cust param value is "      + Alert);
+				Assert.fail("heavy snowfall push notification alert cust param value is "      + Alert);
+			}
+			//System.out.println(expectedValues);
+			
+		}
+}
+
+public static Map<String, String> findind_alertsiu_value() throws Exception{
+
+	Map<String , String> wfxtriggers_values = new HashMap<String, String>();
+	String wxtgValues="";
+
+	DeviceStatus device_status = new DeviceStatus();
+	int Cap = device_status.Device_Status();
+	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
+if(sb.contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Falerts")) {
+	System.out.println("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Falerts ad call was trigred");
+	logStep("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Falerts ad call was trigred");
+}
+if(!sb.contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Falerts")) {
+System.out.println("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Falerts ad call was not  trigred");
+logStep("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Falerts ad call was not  trigred");
+Assert.fail("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Falerts ad call was not  trigred");
+}
+return wfxtriggers_values;
+}
+
+
+public static void  VerifysevereAlert() throws Exception{
+	
+	DeviceStatus device_status = new DeviceStatus();
+	int Cap = device_status.Device_Status();
+	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
+		if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Falerts")){
+			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Falerts"));
+			String required_info = Read_API_Call_Data.toString().substring(Read_API_Call_Data.toString().indexOf("cust_params="));
+			String expected_data = required_info.toString().substring(required_info.indexOf("alert%3D"),required_info.indexOf("%26atfid"));			
+			//6sod%3Dno%
+			String expectedValues = expected_data.toString();
+			String Alert=expectedValues.replaceAll("%3D", "=");
+			
+			if(expectedValues.contains("severe")) {
+				System.out.println("Severe push notification alert cust param value is "     +Alert);
+				logStep("Severe push notification alert cust param value is "     +Alert);
+			}
+			else {
+				System.out.println("Severe push notification alert cust param value is"      + Alert);
+				logStep("Severe push notification alert cust param value is"      + Alert);
+				Assert.fail("Severe push notification alert cust param value is"      + Alert);
+			}
+			//System.out.println(expectedValues);
+			
+		}
+	
+}
+
+
+public static void  Verifyicealert() throws Exception{
+	
+	DeviceStatus device_status = new DeviceStatus();
+	int Cap = device_status.Device_Status();
+	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
+		if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day")){
+			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2F10day"));
+			String required_info = Read_API_Call_Data.toString().substring(Read_API_Call_Data.toString().indexOf("cust_params="));
+			String expected_data = required_info.toString().substring(required_info.indexOf("alert%3D"),required_info.indexOf("%26atfid"));			
+			//6sod%3Dno%
+			String expectedValues = expected_data.toString();
+			String Alert=expectedValues.replaceAll("%3D", "=");
+			
+			if(expectedValues.contains("ice")) {
+				System.out.println("ice push notification alert cust param value is "     +Alert);
+				logStep("ice push notification alert cust param value is "     +Alert);
+			}
+			else {
+				System.out.println("ice push notification alert cust param value is "      + Alert);
+				logStep("ice push notification alert cust param value is "      + Alert);
+				Assert.fail("ice push notification alert cust param value is "      + Alert);
+			}
+			//System.out.println(expectedValues);
+			
+		}
+}
+public static void  VerifyWBNAlert() throws Exception{
+	
+	DeviceStatus device_status = new DeviceStatus();
+	int Cap = device_status.Device_Status();
+	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
+		if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fbreaking")){
+			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fbreaking"));
+			String required_info = Read_API_Call_Data.toString().substring(Read_API_Call_Data.toString().indexOf("cust_params="));
+			String expected_data = required_info.toString().substring(required_info.indexOf("alert%3D"),required_info.indexOf("%26atfid"));			
+			//6sod%3Dno%
+			String expectedValues = expected_data.toString();
+			String Alert=expectedValues.replaceAll("%3D", "=");
+			
+			if(expectedValues.contains("breaking")) {
+				System.out.println("Winter Breaking news push notification alert cust param value is "     +Alert);
+				logStep("Winter Breaking news push notification alert cust param value is "     +Alert);
+			}
+			else {
+				System.out.println("Winter Breaking news push notification alert cust param value is"      + Alert);
+				logStep("Winter Breaking news push notification alert cust param value is"      + Alert);
+				Assert.fail("Winter Beaking news push notification alert cust param value is"      + Alert);
+			}
+			//System.out.println(expectedValues);
+			
+		}
+	
+}
+
+public static void  VerifyRTLAlert() throws Exception{
+		
+		DeviceStatus device_status = new DeviceStatus();
+		int Cap = device_status.Device_Status();
+		read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+		String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
+			if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps")){
+				String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps"));
+				String required_info = Read_API_Call_Data.toString().substring(Read_API_Call_Data.toString().indexOf("cust_params="));
+				String expected_data = required_info.toString().substring(required_info.indexOf("alert%3D"),required_info.indexOf("%26atfid"));			
+				//6sod%3Dno%
+				String expectedValues = expected_data.toString();
+				String Alert=expectedValues.replaceAll("%3D", "=");
+				
+				if(expectedValues.contains("lightning")) {
+					System.out.println("real time lightning  push notification alert cust param value is "     +Alert);
+					logStep("real time lightning  push notification alert cust param value is "     +Alert);
+				}
+				else {
+					System.out.println("real time lightning  push notification alert cust param value is "      + Alert);
+					logStep("real time lightning  push notification alert cust param value is "      + Alert);
+					Assert.fail("real time lightning  push notification alert cust param value is "      + Alert);
+				}
+				//System.out.println(expectedValues);
+				
+			}
+	}
+public static void clickNotification(String notification) throws Exception {
+	
+	String text=Ad.findElementById("android:id/title").getText();
+		Thread.sleep(5000);
+			if(text.contains(notification)) {
+			Ad.findElementById("android:id/title").click();
+				Thread.sleep(3000);
+			}
+		}
+		
+private static By ByAccessibilityId(String string) {
+	// TODO Auto-generated method stub
+	return null;
+}
+
+public static void tapping() {
+	Ad.tap(1, 763, 2296, 3000);
+}
+
+
 }
