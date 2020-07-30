@@ -1554,7 +1554,8 @@ public class Functions extends Drivers{
 		 clickOnManage();
 			Thread.sleep(6000);
 			
-			Ad.findElementById("com.weather.Weather:id/my_alerts_layout_0").click();
+			//Ad.findElementById("com.weather.Weather:id/my_alerts_layout_0").click();
+			Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.viewpager.widget.ViewPager/android.widget.ScrollView/android.widget.LinearLayout/android.widget.ListView/android.widget.RelativeLayout[1]/android.widget.TextView[1]").click();
 			Thread.sleep(6000);
 		/*	List<WebElement> notifications;
 			
@@ -1587,7 +1588,8 @@ public class Functions extends Drivers{
 		 clickOnNotificationsBellIcon();
 		 clickOnManage();
 			Thread.sleep(2000);
-			Ad.findElementById("com.weather.Weather:id/my_alerts_layout_3").click();
+			//Ad.findElementById("com.weather.Weather:id/my_alerts_layout_3").click();
+			Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.viewpager.widget.ViewPager/android.widget.ScrollView[3]/android.widget.LinearLayout/android.widget.ListView/android.widget.RelativeLayout[4]/android.widget.TextView[1]").click();
 			Thread.sleep(6000);
 			/*List<WebElement> notifications;
 			
@@ -1610,7 +1612,8 @@ public class Functions extends Drivers{
 		 clickOnNotificationsBellIcon();
 		 clickOnManage();
 			Thread.sleep(6000);
-			Ad.findElementById("com.weather.Weather:id/my_alerts_layout_5").click();
+			//Ad.findElementById("com.weather.Weather:id/my_alerts_layout_5").click();
+			Ad.findElementByXPath("\"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.viewpager.widget.ViewPager/android.widget.ScrollView[4]/android.widget.LinearLayout/android.widget.ListView/android.widget.RelativeLayout[6]/android.widget.TextView[1]").click();
 			Thread.sleep(6000);
 			/*List<WebElement> notifications;
 			
@@ -1634,7 +1637,8 @@ public class Functions extends Drivers{
 		 clickOnNotificationsBellIcon();
 		 clickOnManage();
 			Thread.sleep(6000);
-		 Ad.findElementById("com.weather.Weather:id/my_alerts_layout_2").click();
+	//Ad.findElementById("com.weather.Weather:id/my_alerts_layout_2").click();
+			Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.viewpager.widget.ViewPager/android.widget.ScrollView[2]/android.widget.LinearLayout/android.widget.ListView/android.widget.RelativeLayout[3]/android.widget.TextView[1]").click();
 			Thread.sleep(6000);
 			/*Thread.sleep(2000);
 			List<WebElement> notifications;
