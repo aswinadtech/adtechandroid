@@ -3210,11 +3210,11 @@ public static void get_aaxcal_today_details() throws Exception {
 	logStep("Verifying amazon \"slotId\": \"8d4e513d-9ae1-4b32-9468-9be0f434262f\"   for db_display/details/today");
 	//System.out.println("Slot Name is  : "+slotID);
 	if(sb.contains("8d4e513d-9ae1-4b32-9468-9be0f434262f")) {
-	System.out.println("SlotId 8d4e513d-9ae1-4b32-9468-9be0f434262f is trigred fordb_display/details/today");
+	System.out.println("SlotId 8d4e513d-9ae1-4b32-9468-9be0f434262f is trigred for db_display/details/today");
 	logStep("SlotId 8d4e513d-9ae1-4b32-9468-9be0f434262f is trigred for db_display/details/today");
 	
 	}
-	if(!sb.contains("8d4e513d-9ae1-4b32-9468-9be0f434262f ")) {
+	if(!sb.contains("8d4e513d-9ae1-4b32-9468-9be0f434262f")) {
 		System.out.println("slotId 8d4e513d-9ae1-4b32-9468-9be0f434262f  is not trigred for db_display/details/today");
 		logStep("slotId 8d4e513d-9ae1-4b32-9468-9be0f434262f  is not trigred not trigred fot  db_display/details/today");
 		Assert.fail("slotId 8d4e513d-9ae1-4b32-9468-9be0f434262f  is not trigred for db_display/details/today");
