@@ -171,7 +171,7 @@ public class Custom_Parameters_Verification extends Drivers{
 									if(ParamType.equals("tmp") && custParam.equals("tmp")){
 										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_results("tmp",feed);
-										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
+										if(Param_val.equals("Fail") && feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("tmp Value not matched");
@@ -180,7 +180,7 @@ public class Custom_Parameters_Verification extends Drivers{
 									else if(ParamType.equals("tmpr") && custParam.equals("tmpr")){
 										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_results("tmpr",feed);
-										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
+										if(Param_val.equals("Fail") &&   feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("tmpr Value not matched");
@@ -190,13 +190,10 @@ public class Custom_Parameters_Verification extends Drivers{
 									else if(ParamType.equals("cnd") && custParam.equals("cnd")){
 										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_results("cnd",feed);
-										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
-										//if(Param_val.contains("Fail") && feed==allfeeds ) {
-										//if(!Param_val.equals("Pass") && feed == feedcount){
-										//if(Param_val.contains("Fail")) {
-										//    logStep(custParam+" should not be empty");
-										   // logStep(custParam+" can be nl");
-										//	validate_CustomParameter.sf.assertTrue(false);
+										if(Param_val.equals("Fail") &&  feedAd.contains("details")){
+										
+										   logStep(custParam+" should not be empty");
+										   logStep(custParam+" can be nl");
 									     	Assert.fail("cnd Value not matched");
 										}
 									}
@@ -213,7 +210,7 @@ public class Custom_Parameters_Verification extends Drivers{
 									else if(ParamType.equals("hmid") && custParam.equals("hmid")){
 										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_results("hmid",feed);
-										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
+										if(Param_val.equals("Fail") &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("hmid Value not matched");
@@ -222,7 +219,7 @@ public class Custom_Parameters_Verification extends Drivers{
 									else if(ParamType.equals("wind") && custParam.equals("wind")){
 										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_results("wind",feed);
-										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
+										if(Param_val.equals("Fail") &&  feedAd.contains("details")){
 											//logStep(custParam+" should not be null");
 											//logStep(custParam+" can be nl");
 											Assert.fail("wind Value not matched");
@@ -231,7 +228,7 @@ public class Custom_Parameters_Verification extends Drivers{
 									else if(ParamType.equals("uv") && custParam.equals("uv")){
 										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_results("uv",feed);
-										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
+										if(Param_val.equals("Fail") && feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("uv Value not matched");
@@ -240,7 +237,7 @@ public class Custom_Parameters_Verification extends Drivers{
 									else if(ParamType.equals("fltmpc") && custParam.equals("fltmpc")){
 										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_results("fltmpc",feed);
-										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
+										if(Param_val.equals("Fail") &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("fltmpc Value not matched");
@@ -249,7 +246,7 @@ public class Custom_Parameters_Verification extends Drivers{
 									else if(ParamType.equals("tmpc") && custParam.equals("tmpc")){
 										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_results("tmpc",feed);
-										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
+										if(Param_val.equals("Fail") && feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("tmpc Value not matched");
@@ -258,7 +255,7 @@ public class Custom_Parameters_Verification extends Drivers{
 									else if(ParamType.equals("dma") && custParam.equals("dma")){
 										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_dsx_results("dma",feed);
-										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
+										if(Param_val.equals("Fail") &&  feedAd.contains("details")){
 											//logStep(custParam+" should not be null");
 											//logStep(custParam+" can be nl");
 											Assert.fail("dma Value not matched");
@@ -267,7 +264,7 @@ public class Custom_Parameters_Verification extends Drivers{
 									else if(ParamType.equals("zip") && custParam.equalsIgnoreCase("zip")){
 										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_dsx_results("zip",feed);
-										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
+										if(Param_val.equals("Fail") &&  feedAd.contains("details")){
 											Assert.fail("zip Value not matched");
 										}
 									}
@@ -284,7 +281,7 @@ public class Custom_Parameters_Verification extends Drivers{
 									else if(ParamType.equals("ct") && custParam.equals("ct")){
 										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_dsx_results("ct",feed);
-										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
+										if(Param_val.equals("Fail") &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("ct Value not matched");
@@ -294,25 +291,16 @@ public class Custom_Parameters_Verification extends Drivers{
 										logStep("Verifing :"+feedAd+" Pub Ad Call custParam              "+            custParam);
 										//Param_val = CustomParamFunctions.validate_dsx_results("st",feed);
 										Param_val = CustomParamFunctions.validate_not_null_results("st",feed);
-										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
+										if(Param_val.equals("Fail") && feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("st Value not matched");
 										}
 									}
-										else if(ParamType.equals("env") && custParam.equals("env")){
-										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
-										Param_val = CustomParamFunctions.validate_not_null_results("env",feed);
-										if(Param_val.equals("Fail") && feedAd.contains("details")){
-											logStep(custParam+" should not be null");
-											logStep(custParam+" can be nl");
-											Assert.fail("ch Value not matched");
-										}
-									}
 									else if(ParamType.equals("cc") && custParam.equals("cc")){
 										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_dsx_results("cc",feed);
-										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
+										if(Param_val.equals("Fail") &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("cc Value not matched");
@@ -322,7 +310,7 @@ public class Custom_Parameters_Verification extends Drivers{
 										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_wfxtg_results("wfxtg",feed);
 									//	System.out.println("Param_val "+Param_val);
-										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
+										if(Param_val.equals("Fail") && feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("wfxtg Value not matched");
@@ -332,7 +320,7 @@ public class Custom_Parameters_Verification extends Drivers{
 										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_wfxtg_results("cfxtg",feed);
 									//	System.out.println("Param_val "+Param_val);
-										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
+										if(Param_val.equals("Fail") && feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("cfxtg Value not matched");
@@ -341,7 +329,7 @@ public class Custom_Parameters_Verification extends Drivers{
 									else if(ParamType.equals("zcs") && custParam.equals("zcs")){
 										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_wfxtg_results("zcs",feed);
-										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
+										if(Param_val.equals("Fail") &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("zcs Value not matched");
@@ -350,7 +338,7 @@ public class Custom_Parameters_Verification extends Drivers{
 									else if(ParamType.equals("hzcs") && custParam.equals("hzcs")){
 										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_wfxtg_results("hzcs",feed);
-										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
+										if(Param_val.equals("Fail") &&   feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("hzcs Value not matched");
@@ -359,7 +347,7 @@ public class Custom_Parameters_Verification extends Drivers{
 									else if(ParamType.equals("nzcs") && custParam.equals("nzcs")){
 										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_wfxtg_results("nzcs",feed);
-										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
+										if(Param_val.equals("Fail") &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("nzcs Value not matched");
@@ -368,7 +356,7 @@ public class Custom_Parameters_Verification extends Drivers{
 									else if(ParamType.equals("fgeo") && custParam.equals("fgeo")){
 										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_not_null_results("fgeo",feed);
-										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
+										if(Param_val.equals("Fail") &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("fgeo Value not matched");
@@ -386,7 +374,7 @@ public class Custom_Parameters_Verification extends Drivers{
 									else if(ParamType.equals("sg") && custParam.equals("sg")){
 										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_lotame_results("sg",feed);
-										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
+										if(Param_val.equals("Fail") &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("sg Value not matched");
@@ -395,7 +383,7 @@ public class Custom_Parameters_Verification extends Drivers{
 									else if(ParamType.equals("locale") && custParam.equals("locale")){
 										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_dsxcms_results("locale",feed);
-										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
+										if(Param_val.equals("Fail") &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("locale Value not matched");
@@ -405,7 +393,7 @@ public class Custom_Parameters_Verification extends Drivers{
 										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 									//	Param_val = CustomParamFunctions.validate_wfxtg_results("hlzip",feed);
 										Param_val = CustomParamFunctions.validate_hard_code_results("hlzip",feed);
-										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
+										if(Param_val.equals("Fail") &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("hlzip Value not matched");
@@ -414,7 +402,7 @@ public class Custom_Parameters_Verification extends Drivers{
 									else if(ParamType.equals("lang") && custParam.equals("lang")){
 										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_hard_code_results("lang",feed);
-										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
+										if(Param_val.equals("Fail") && feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("lang Value not matched");
@@ -423,7 +411,7 @@ public class Custom_Parameters_Verification extends Drivers{
 									else if(ParamType.equals("plat") && custParam.equals("plat")){
 										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_hard_code_results("plat",feed);
-										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
+										if(Param_val.equals("Fail") &&  feedAd.contains("details")){
 										//if(!Param_val.equals("Pass") && feed == feedcount){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" should not be empty");
@@ -447,7 +435,7 @@ public class Custom_Parameters_Verification extends Drivers{
 									else if(ParamType.equals("ftl") && custParam.equals("ftl")){
 										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_hard_code_results("ftl",feed);
-										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
+										if(Param_val.equals("Fail") &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("ftl Value not matched");
@@ -456,7 +444,7 @@ public class Custom_Parameters_Verification extends Drivers{
 									else if(ParamType.equals("pos") && custParam.equals("pos")){
 										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_hard_code_results("pos",feed);
-										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
+										if(Param_val.equals("Fail") && feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("pos Value not matched");
@@ -467,7 +455,7 @@ public class Custom_Parameters_Verification extends Drivers{
 										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_hard_code_zip_results("zip",feed);
 									//	Param_val = CustomParamFunctions.validate_not_null_results("zip",feed);
-										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
+										if(Param_val.equals("Fail") &&  feedAd.contains("details")){
 										//if(!Param_val.equals("Pass") && feed == feedcount){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" should not be empty");
@@ -477,7 +465,7 @@ public class Custom_Parameters_Verification extends Drivers{
 									else if(ParamType.equals("tile") && custParam.equals("tile")){
 										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_hard_code_results("tile",feed);
-										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
+										if(Param_val.equals("Fail") &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("tile Value not matched");
@@ -486,7 +474,7 @@ public class Custom_Parameters_Verification extends Drivers{
 									else if(ParamType.equals("par") && custParam.equals("par")){
 										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_hard_code_results("par",feed);
-										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
+										if(Param_val.equals("Fail") &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("par Value not matched");
@@ -495,7 +483,7 @@ public class Custom_Parameters_Verification extends Drivers{
 									else if(ParamType.equals("vw") && custParam.equals("vw")){
 										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_not_null_results("vw",feed);
-										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
+										if(Param_val.equals("Fail") &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("vw Value not matched");
@@ -504,7 +492,7 @@ public class Custom_Parameters_Verification extends Drivers{
 									else if(ParamType.equals("aid") && custParam.equals("aid")){
 										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_not_null_results("aid",feed);
-										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
+										if(Param_val.equals("Fail") && feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("aid Value not matched");
@@ -533,7 +521,7 @@ public class Custom_Parameters_Verification extends Drivers{
 									else if(ParamType.equals("adid") && custParam.equals("adid")){
 										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                  custParam);
 										Param_val = CustomParamFunctions.validate_not_null_results("adid",feed);
-										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
+										if(Param_val.equals("Fail") &&  feedAd.contains("details")){
 									//	if(!Param_val.equals("Pass") && feed == feedcount){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" should not be empty");
@@ -543,7 +531,7 @@ public class Custom_Parameters_Verification extends Drivers{
 									else if(ParamType.equals("ord") && custParam.equals("ord")){
 										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                  custParam);
 										Param_val = CustomParamFunctions.validate_not_null_results("ord",feed);
-										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
+										if(Param_val.equals("Fail") && feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("ord Value not matched");
@@ -552,7 +540,7 @@ public class Custom_Parameters_Verification extends Drivers{
 									else if(ParamType.equals("a") && custParam.equals("a")){
 										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                   custParam);
 										Param_val = CustomParamFunctions.validate_not_null_results("a",feed);
-										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
+										if(Param_val.equals("Fail") && feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("a Value not matched");
@@ -561,7 +549,17 @@ public class Custom_Parameters_Verification extends Drivers{
 									else if(ParamType.equals("ch") && custParam.equals("ch")){
 										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_not_null_results("ch",feed);
-										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
+										if(Param_val.equals("Fail") &&  feedAd.contains("details")){
+											logStep(custParam+" should not be null");
+											logStep(custParam+" can be nl");
+											Assert.fail("ch Value not matched");
+										}
+									}
+									
+									else if(ParamType.equals("env") && custParam.equals("env")){
+										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
+										Param_val = CustomParamFunctions.validate_not_null_results("env",feed);
+										if(Param_val.equals("Fail") && feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("ch Value not matched");
@@ -570,7 +568,7 @@ public class Custom_Parameters_Verification extends Drivers{
 									else if(ParamType.equals("fam") && custParam.equals("fam")){
 										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_not_null_results("fam",feed);
-										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
+										if(Param_val.equals("Fail") &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("fam Value not matched");
@@ -579,7 +577,7 @@ public class Custom_Parameters_Verification extends Drivers{
 									else if(ParamType.equals("g") && custParam.equals("g")){
 										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_not_null_results("g",feed);
-										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
+										if(Param_val.equals("Fail") && feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("g Value not matched");
@@ -588,7 +586,7 @@ public class Custom_Parameters_Verification extends Drivers{
 									else if(ParamType.equals("layer") && custParam.equals("layer")){
 										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_not_null_results("layer",feed);
-										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
+										if(Param_val.equals("Fail") &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("layer Value not matched");
@@ -606,7 +604,7 @@ public class Custom_Parameters_Verification extends Drivers{
 									else if(ParamType.equals("tf") && custParam.equals("tf")){
 										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_not_null_results("tf",feed);
-										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
+										if(Param_val.equals("Fail") &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("tf Value not matched");
@@ -615,7 +613,7 @@ public class Custom_Parameters_Verification extends Drivers{
 									else if(ParamType.equals("ver") && custParam.equals("ver")){
 										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_not_null_results("ver",feed);
-										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
+										if(Param_val.equals("Fail") && feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("ver Value not matched");
@@ -625,7 +623,7 @@ public class Custom_Parameters_Verification extends Drivers{
 										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 									Param_val = CustomParamFunctions.validate_not_null_results("dynght",feed);
 										//Param_val = CustomParamFunctions.validate_results("dynght",feed);
-										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
+										if(Param_val.equals("Fail") &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("dynght Value not matched");
@@ -634,7 +632,7 @@ public class Custom_Parameters_Verification extends Drivers{
 									else if(ParamType.equals("bn") && custParam.equals("bn")){
 										logStep("Verified Feed:"+feedAd+" Pub Ad Call "+custParam+" Custm_Parameter Expected value presented");
 										Param_val = CustomParamFunctions.validate_not_null_results("bn",feed);
-										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
+										if(Param_val.equals("Fail") &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("bn Value not matched");
@@ -643,7 +641,7 @@ public class Custom_Parameters_Verification extends Drivers{
 									else if(ParamType.equals("fhic") && custParam.equals("fhic")){
 										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_results("fhic",feed);
-										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
+										if(Param_val.equals("Fail") &&  feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("fhic Value not matched");
@@ -653,7 +651,7 @@ public class Custom_Parameters_Verification extends Drivers{
 									else if(ParamType.equals("floc") && custParam.equals("floc")){
 										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                 custParam);
 										Param_val = CustomParamFunctions.validate_results("floc",feed);
-										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
+										if(Param_val.equals("Fail") && feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("floc Value not matched");
@@ -662,7 +660,7 @@ public class Custom_Parameters_Verification extends Drivers{
 									else if(ParamType.equals("sev") && custParam.equals("sev")){
 										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +               custParam );
 										Param_val = CustomParamFunctions.validate_results("sev",feed);
-										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
+										if(Param_val.equals("Fail") && feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("sev Value not matched");
@@ -671,7 +669,7 @@ public class Custom_Parameters_Verification extends Drivers{
 									else if(ParamType.equals("plln") && custParam.equals("plln")){
 										logStep("Verifing :"+feedAd+" Pub Ad Call custParam"      +                custParam);
 										Param_val = CustomParamFunctions.validate_results("plln",feed);
-										if(Param_val.equals("Fail") && feed == 3 &&  feedAd.contains("details")){
+										if(Param_val.equals("Fail") && feedAd.contains("details")){
 											logStep(custParam+" should not be null");
 											logStep(custParam+" can be nl");
 											Assert.fail("plln Value not matched");
@@ -705,7 +703,7 @@ public class Custom_Parameters_Verification extends Drivers{
 				else{
 					logStep(feedAd +" is not generated");
 					System.out.println("Feed values have not been generated");
-					Assert.fail(feedAd +" is not generated");
+				//	Assert.fail(feedAd +" is not generated");
 					
 				}
 			}	
