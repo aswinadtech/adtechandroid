@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 
 import ru.yandex.qatools.allure.annotations.Title;
 import twc.Automation.HandleMapLocal.MapLocalFunctions;
+
 //import twc.Automation.HandleMapLocal.MapLocalFunctions;
 import twc.Regression.CustomParamValidation.CustomParamFunctions;
 import twc.Regression.CustomParamValidation.validate_CustomParameter;
@@ -79,7 +80,6 @@ public class regressionTestCases extends Drivers {
 	}*/
 
 	// Not null
-
 	@Test(priority = 21)
 	@Title("Verify custom parameter adid")
 	public void C333213_Verify_cust_param_adid() throws Exception {
@@ -95,16 +95,25 @@ public class regressionTestCases extends Drivers {
 		Custom_Parameters_Verification.parameters_Verification("aid");
 		System.out.println("================= Custom Parameter Aid Verfication End =========================");
 	}
+	
+	/*@Test(priority = 22)
+	@Title("Verify custom parameter env")
+	public void C333244_Verify_cust_param_env() throws Exception {
+		System.out.println("================= Custom Parameter env Verfication Started =========================");
+		Custom_Parameters_Verification.parameters_Verification("env");
+		System.out.println("================= Custom Parameter env Verfication End =========================");
+	}*/
 
-	@Test(priority = 23)
+
+	/*@Test(priority = 23)
 	@Title("Verify custom parameter st")
 	public void C333219_Verify_cust_param_st() throws Exception {
 		System.out.println("================= Custom Parameter St Verfication Started =========================");
 		Custom_Parameters_Verification.parameters_Verification("st");
 		System.out.println("================= Custom Parameter St Verfication End =========================");
-	}
+	}*/
 
-	@Test(priority = 24)
+	@Test(priority = 25)
 	@Title("Verify custom parameter ord")
 	public void C333200_Verify_cust_param_ord() throws Exception {
 		System.out.println("================= Custom Parameter ORD Verfication Started =========================");
@@ -112,37 +121,65 @@ public class regressionTestCases extends Drivers {
 		System.out.println("================= Custom Parameter ORD Verfication End =========================");
 	}
 
-	/*@Test(priority = 1)
+	@Test(priority = 26)
 	@Title("Verify custom parameter rmid")
 	public void C333204_Verify_cust_param_rmid() throws Exception {
 		System.out.println("================= Custom Parameter Rmid Verfication Started =========================");
 		Custom_Parameters_Verification.parameters_Verification("rmid");
 		System.out.println("================= Custom Parameter Rmid Verfication End =========================");
-	}*/
+	}
 
-	@Test(priority = 26)
+	@Test(priority = 27)
 	@Title("Verify custom parameter ver")
 	public void C333219_Verify_cust_param_ver() throws Exception {
 		System.out.println("================= Custom Parameter Ver Verfication Started =========================");
 		Custom_Parameters_Verification.parameters_Verification("ver");
 		System.out.println("================= Custom Parameter Ver Verfication End =========================");
 	}
+	
 
-	/*@Test(priority = 100)
+	 /* @Test(priority=29)  
+	  @Title("Verify custom parameter ftl") 
+	  public void C333215_Verify_cust_param_ftl() throws Exception{ 
+		  System.out.println("================= Custom Parameter Ftl Verfication Started =========================" );
+	  Custom_Parameters_Verification.parameters_Verification("ftl"); 
+	  System.out. println("================= Custom Parameter Ftl Verfication End =========================");  
+	  }
+	  @Test(priority=30)
+	  @Title("Verify custom parameter g") 
+	  public void C333236_Verify_cust_param_g()  throws Exception{ 
+	 System.out. println("================= Custom Parameter G Verfication Started =========================");
+	 Custom_Parameters_Verification.parameters_Verification("g"); 
+	 System.out.println("================= Custom Parameter G Verfication End =========================" );
+	 }*/
+
+	@Test(priority = 31)
 	@Title("Verify custom parameter dt")
-	public void C333213_Verify_cust_param_dt() throws Exception {
+	public void C333213_Verify_cust_param_dt_day1_adCall() throws Exception {
 		System.out.println("================= Custom Parameter dt Verfication Started =========================");
 		Custom_Parameters_Verification.verify_daily_custom_parameters("dt");
 		System.out.println("================= Custom Parameter dt Verfication End =========================");
 	}
 
-	@Test(priority = 101)
+	@Test(priority = 32)
 	@Title("Verify custom parameter mnth")
-	public void C333213_Verify_cust_param_mnth() throws Exception {
+	public void C333213_Verify_cust_param_mnth_day1_adCall() throws Exception {
 		System.out.println("================= Custom Parameter mnth Verfication Started =========================");
 		Custom_Parameters_Verification.verify_daily_custom_parameters("mnth");
 		System.out.println("================= Custom Parameter mnth Verfication End =========================");
-	}*/
+		
+	}
+	@Test(priority = 33)
+	@Title("Verify custom parameter tf")
+	public void C658716_Verify_cust_param_tf() throws Exception {
+		System.out.println("================= Custom Parameter Tf Verfication Started =========================");
+		Custom_Parameters_Verification.parameters_Verification("tf");
+		System.out.println("================= Custom Parameter Tf Verfication End =========================");
+	}
+
+	
+	
+	
 //Hard code values
 
 	@Test(priority = 40)
@@ -177,8 +214,14 @@ public class regressionTestCases extends Drivers {
 		System.out.println("================= Custom Parameter Tile Verfication End =========================");
 	}
 
+	
+	
+	
+	
+	
+
 	// turbo call values
-	@Test(priority = 1)
+	@Test(priority = 60)
 	@Title("Verify custom parameter cnd")
 	public void C333216_Verify_cust_param_cnd() throws Exception {
 		System.out.println("================= Custom Parameter Cnd Verfication Started =========================");
@@ -219,11 +262,11 @@ public class regressionTestCases extends Drivers {
 		System.out.println("================= Custom Parameter Cc Verfication End =========================");
 	}
 
-	@Test(priority = 1)
+	@Test(priority = 65)
 	@Title("Verify custom parameter fhic")
 	public void C333232_Verify_cust_param_fhic() throws Exception {
 		System.out.println("================= Custom Parameter Fhic Verfication Started =========================");
-		Custom_Parameters_Verification.parameters_Verification("fhic");
+		//Custom_Parameters_Verification.parameters_Verification("fhic");
 		System.out.println("================= Custom Parameter Fhic Verfication End =========================");
 	}
 
@@ -231,7 +274,7 @@ public class regressionTestCases extends Drivers {
 	@Title("Verify custom parameter floc")
 	public void C333238_Verify_cust_param_floc() throws Exception {
 		System.out.println("================= Custom Parameter Floc Verfication Started =========================");
-		Custom_Parameters_Verification.parameters_Verification("floc");
+	//	Custom_Parameters_Verification.parameters_Verification("floc");
 		System.out.println("================= Custom Parameter Floc Verfication End =========================");
 	}
 
@@ -269,10 +312,44 @@ public class regressionTestCases extends Drivers {
 		System.out.println(
 				"================= Custom Parameter Zip Verfication  from turbo call End =========================");
 	}
+	
+	/*@Test(priority=73) 
+	  @Title("Verify custom parameter hmid") 
+public void  C333207_Verify_cust_param_hmid() throws Exception{ 
+	  System.out.println("================= Custom Parameter Hmid Verfication Started =========================");
+	  Custom_Parameters_Verification.parameters_Verification("hmid"); 
+	  System.out.println("================= Custom Parameters Hmid Verfication End =========================" );
+	  }*/
 
+	@Test(priority = 74)
+	@Title("Verify custom parameter wind")
+	public void C333221_Verify_cust_param_wind() throws Exception {
+		System.out.println("================= Custom Parameter Wind Verfication Started =========================");
+		Custom_Parameters_Verification.parameters_Verification("wind");
+		System.out.println("================= Custom Parameter Wind Verfication End =========================");
+	}
+
+	@Test(priority = 75)
+	@Title("Verify custom parameter uv")
+	public void C333224_Verify_cust_param_uv() throws Exception {
+		System.out.println("================= Custom Parameter Uv Verfication Started =========================");
+		Custom_Parameters_Verification.parameters_Verification("uv");
+		System.out.println("================= Custom Parameter Uv Verfication End =========================");
+	}
+
+	@Test(priority = 76)
+	@Title("Verify custom parameter fltmpc")
+	public void C333232_Verify_cust_param_fltmpc() throws Exception {
+		System.out.println("================= Custom Parameter fltmpc Verfication Started =========================");
+		Custom_Parameters_Verification.parameters_Verification("fltmpc");
+		System.out.println("================= Custom Parameter fltmpc Verfication End =========================");
+	}
+
+	
+	
 	// wfxtg call
 
-	@Test(priority = 80)
+	@Test(priority = 90)
 	@Title("Verify custom parameter wfxtg")
 	public void C333228_Verify_cust_param_wfxtg() throws Exception {
 		System.out.println("================= Custom Parameter Wfxtg Verfication Started =========================");
@@ -468,14 +545,7 @@ public class regressionTestCases extends Drivers {
 	 * println("================= Custom Parameter Fam Verfication End ========================="
 	 * ); }
 	 * 
-	 * @Test(priority=7)
-	 * 
-	 * @Title("Verify custom parameter g") public void C333236_Verify_cust_param_g()
-	 * throws Exception{ System.out.
-	 * println("================= Custom Parameter G Verfication Started ========================="
-	 * ); Custom_Parameters_Verification.parameters_Verification("g"); System.out.
-	 * println("================= Custom Parameter G Verfication End ========================="
-	 * ); }
+
 	 * 
 	 * @Test(priority=8)
 	 * 
@@ -488,26 +558,12 @@ public class regressionTestCases extends Drivers {
 	 * ); }
 	 */
 
-	@Test(priority = 11)
-	@Title("Verify custom parameter tf")
-	public void C658716_Verify_cust_param_tf() throws Exception {
-		System.out.println("================= Custom Parameter Tf Verfication Started =========================");
-		Custom_Parameters_Verification.parameters_Verification("tf");
-		System.out.println("================= Custom Parameter Tf Verfication End =========================");
-	}
+
 
 //Validating Hard code values
 
-	/*
-	 * @Test(priority=26)
-	 * 
-	 * @Title("Verify custom parameter ftl") public void
-	 * C333215_Verify_cust_param_ftl() throws Exception{ System.out.
-	 * println("================= Custom Parameter Ftl Verfication Started ========================="
-	 * ); Custom_Parameters_Verification.parameters_Verification("ftl"); System.out.
-	 * println("================= Custom Parameter Ftl Verfication End ========================="
-	 * ); }
-	 */
+	 
+
 
 	/*
 	 * @Test(priority=29)
@@ -522,50 +578,9 @@ public class regressionTestCases extends Drivers {
 
 //turbo call related test cases
 
-	/*
-	 * @Test(priority=73)
-	 * 
-	 * @Title("Verify custom parameter hmid") public void
-	 * C333207_Verify_cust_param_hmid() throws Exception{ System.out.
-	 * println("================= Custom Parameter Hmid Verfication Started ========================="
-	 * ); Custom_Parameters_Verification.parameters_Verification("hmid");
-	 * System.out.
-	 * println("================= Custom Parameters Hmid Verfication End ========================="
-	 * ); }
-	 */
 
-	@Test(priority = 74)
-	@Title("Verify custom parameter wind")
-	public void C333221_Verify_cust_param_wind() throws Exception {
-		System.out.println("================= Custom Parameter Wind Verfication Started =========================");
-		Custom_Parameters_Verification.parameters_Verification("wind");
-		System.out.println("================= Custom Parameter Wind Verfication End =========================");
-	}
+  
 
-	@Test(priority = 75)
-	@Title("Verify custom parameter uv")
-	public void C333224_Verify_cust_param_uv() throws Exception {
-		System.out.println("================= Custom Parameter Uv Verfication Started =========================");
-		Custom_Parameters_Verification.parameters_Verification("uv");
-		System.out.println("================= Custom Parameter Uv Verfication End =========================");
-	}
-
-	@Test(priority = 76)
-	@Title("Verify custom parameter fltmpc")
-	public void C333232_Verify_cust_param_fltmpc() throws Exception {
-		System.out.println("================= Custom Parameter fltmpc Verfication Started =========================");
-		Custom_Parameters_Verification.parameters_Verification("fltmpc");
-		System.out.println("================= Custom Parameter fltmpc Verfication End =========================");
-	}
-
-	@Test(priority = 22)
-	@Title("Verify custom parameter env")
-	public void C333213_Verify_cust_param_env() throws Exception {
-		System.out.println("================= Custom Parameter env Verfication Started =========================");
-		Custom_Parameters_Verification.parameters_Verification("env");
-		System.out.println("================= Custom Parameter env Verfication End =========================");
-	}
-	
 	/*
 	 * @Test(priority=78)
 	 * 
@@ -732,11 +747,252 @@ public class regressionTestCases extends Drivers {
 	 * ); }
 	 */
 
+	
+	
+	
+	/*###### Push Notifications#######################################################*/
+	
+	
+	 @Test(priority=500,enabled=true)  
+	  @Title("Verifying Breaking news alert push notification") public void
+	  Smoke_Test_Verify_Breakingnews_Alert_Pushnotification() throws Exception {
+  	System.out.println("================= Verifying Breaking news alert push notification Started =========================");  // Functions.testmode_settings(); 
+
+  	AppiumFunctions.Kill_Launch_App();
+	// Functions.enable_Alert_Notifications_bn("Breaking News");
+   Functions.clickAlerts();
+ // Functions.click_BN();
+     Functions.clickOnAlertType("breaking news alert");
+  // Functions.clickOnRequiredPushNotification("breaking news alert");
+	  Functions.swipefornotification();
+	  CharlesFunctions.ClearSessions();
+	  CharlesFunctions.startSessionBrowserData();
+		  Functions.clickOnAlertNotificatons("Breaking News");
+	//  Functions.clickNotification("Breaking");
+	  CharlesFunctions.ExportSessions();
+	  Functions.finding_BreakingNews_iu_value();
+	  Functions.VerifyBNAlert();
+	  System.out.println("================= Verifying Breaking news alert push notification End ========================="); 
+	  }
+	
+	
+	  
+	  @Test(priority=501)
+	  @Title("Verifying Winter breaking news alert push notification") 
+	  public void Smoke_Test_WinterBreakingNews_Alert_Pushnotification() throws Exception {
+	   System.out. println("================= Verifying Winter breaking news alert push notification Started =========================");
+	   Functions.tapping();
+	   AppiumFunctions.Kill_Launch_App(); 
+	   Functions.clickAlerts(); 
+	   Thread.sleep(3000);
+	  AppiumFunctions.Swipe_feed();
+	   Functions.clickOnAlertType("winter breaking news alert");
+		//  Functions.clickOnAlertNotificatons("winter breaking news alert");
+		  Functions.swipefornotification();
+		  CharlesFunctions.ClearSessions();
+		  CharlesFunctions.startSessionBrowserData();
+		  Functions.clickOnAlertNotificatons("Breaking News");
+	  CharlesFunctions.ExportSessions(); 
+	  Functions.finding_BreakingNews_iu_value();
+	  Functions.VerifyWBNAlert(); 
+	  System.out.println("================= Verifying Winter breaking news alert push notification End =========================");
+	  }
+	 
+	 
+	  @Test(priority=502)  
+	  @Title("Verifying Real time rain alert push notification") public void
+	  Smoke_Test_Verify_Realtimerain_Alert_Pushnotification() throws Exception {
+	  
+	  System.out.
+	  println("================= Verifying Real time rain alert push notificationStarted =========================" ); 
+	  Functions.tapping();
+	  AppiumFunctions.Kill_Launch_App();
+	  Thread.sleep(3000);
+		 Functions.enable_Alert_Notifications_rtr("Real-time rain");
+	  Functions.clickAlerts();
+	 // Functions.click_RTR();
+	  Functions.clickOnAlertType("real time rain alert");
+	 //  Functions.clickOnRequiredPushNotification("real time rain alert");
+	 // Functions.clickOnRequiredPushNotification("real time rain alert");
+	  Functions.swipefornotification();
+	  CharlesFunctions.ClearSessions();
+	  CharlesFunctions.startSessionBrowserData();
+	  Functions.clickOnAlertNotificatons("Real-time rain");
+	  CharlesFunctions.ExportSessions();
+	  Functions.finding_Radar_Map_card_iu_value(); 
+	  Functions.VerifyRTRAlert();
+	  System.out.println("================= Verifying Real time rain alert push notification End =========================");
+	  }
+	
+	  
+	  
+	/*  @Test(priority=503)
+	  @Title("Verifying real time lightning alert push notification")
+	  public void Smoke_Test_Verify_RealtimeLightning_Alert_Pushnotification() throws Exception { 
+		  System.out. println("================= Verifying real time lightning aler push notification Started ========================="); 
+		  Functions.tapping();
+		  AppiumFunctions.Kill_Launch_App(); 
+		  Thread.sleep(3000);
+		  Functions.enable_Alert_Notifications_light("Lightning strikes");
+		  Functions.clickAlerts(); 
+		  Functions.clickOnAlertType("real time lightning alert");
+	  Functions.swipefornotification();
+	  CharlesFunctions.ClearSessions();
+	  CharlesFunctions.startSessionBrowserData();
+	  Functions.clickOnAlertNotificatons("Lightning Strike");
+	  CharlesFunctions.ExportSessions();
+	  Functions.finding_Radar_Map_card_iu_value(); 
+	  Functions.VerifyRTLAlert();
+	  System.out.println("================= Verifying real time lightning alert push notification End ========================="
+	  ); 
+	  }*/
+
+	  
+	  
+	  
+	  
+  @Test(priority=504)
+	  
+	  @Title("Verifying Thunderstorm alert push notification") public void
+	  Smoke_Test_Verify_thunderstorm_Alert_Pushnotification() throws Exception {
+	  System.out.
+	  println("================= Verifying thunderstorm alert push notification Started =========================" ); 
+	 // Thread.sleep(15000);
+	  Functions.tapping();
+	  AppiumFunctions.Kill_Launch_App(); 
+	  Thread.sleep(15000);
+	  Thread.sleep(3000);
+		Functions.enableSignificantweatherforecast_Notifications();
+	  Functions.clickAlerts(); 
+	  //Functions.click_thunderstorm();
+	// Functions.clickOnRequiredPushNotification("thunderstorm alert");
+	   Functions.clickOnAlertType("thunderstorm alert");
+	  Functions.swipefornotification(); 
+	  CharlesFunctions.ClearSessions();
+	  CharlesFunctions.startSessionBrowserData();
+	  Functions.clickOnAlertNotificatons("Thunderstorm");
+	  CharlesFunctions.ExportSessions();
+	  Functions.finding_hourly_details_card_iu_value();
+	  Functions.Verifythunderstormalert(); 
+	  System.out.println("================= Verifying thunderstorm alert push notification End =========================");
+	  }
+  
+
+  @Test(priority=505)
+  @Title("Verifying Heavy rain fall alert push notification") public void
+  Smoke_Test_Verify_heavyrainfall_Alert_Pushnotification() throws Exception {
+  System.out.
+  println("================= Verifying heavy rain fall alert push notification Started =========================");
+  Functions.tapping();
+  AppiumFunctions.Kill_Launch_App();
+  Thread.sleep(3000);
+  Functions.clickAlerts(); 
+  Functions.clickOnAlertType("heavy rainfall alert");
+ //  Functions.clickOnAlertType("heavy rainfall alert");
+  Functions.swipefornotification();
+  CharlesFunctions.ClearSessions();
+  CharlesFunctions.startSessionBrowserData();
+  Functions.clickOnAlertNotificatons("Heavy Rainfall");
+  CharlesFunctions.ExportSessions();
+  Functions.finding_hourly_details_card_iu_value();
+  Functions.Verifyheavyrainfallalert(); 
+  System.out.println("================= Verifying heavy rain fall alert push notification End =========================");
+  
+  }
+
+  @Test(priority=506)
+  @Title("Verifying heavy snowfall alert push notification") public void
+  Smoke_Test_Verify_heavysnowfall_Alert_Pushnotification() throws Exception {
+  System.out.
+  println("================= Verifying heavy snowfall alert push notification Started =========================");
+  Functions.tapping();
+  AppiumFunctions.Kill_Launch_App(); 
+  Thread.sleep(3000);
+  Functions.clickAlerts(); 
+  Functions.clickOnAlertType("heavy snowfall alert");
+  Functions.swipefornotification(); 
+  CharlesFunctions.ClearSessions();
+  CharlesFunctions.startSessionBrowserData();
+  Functions.clickOnAlertNotificatons("Heavy Snowfall");
+  CharlesFunctions.ExportSessions();
+  Functions.finding_daily_details_card_iu_value();
+  Functions.Verifyheavysnowfallalert();
+System.out.println("================= Verifying heavy snowfall alert push notification End ========================="
+  ); }
+  
+  
+  
+  
+  @Test(priority=507)
+  
+  @Title("Verifying ice alert push notification") 
+  public void Smoke_Test_Verify_ice_Alert_Pushnotification() throws Exception { 
+	  System.out.println("================= Verifying ice alert push notification Started ========================= ");
+	  Functions.tapping();
+	  AppiumFunctions.Kill_Launch_App();
+	  Thread.sleep(3000);
+	  Functions.clickAlerts(); 
+//  AppiumFunctions.SwipeUp_Counter(1);
+	  Functions.clickOnAlertType("ice alert");
+  Functions.swipefornotification();
+  CharlesFunctions.ClearSessions();
+  CharlesFunctions.startSessionBrowserData();
+  Functions.clickOnAlertNotificatons("Ice");
+  CharlesFunctions.ExportSessions();
+  Functions.finding_daily_details_card_iu_value(); 
+  Functions.Verifyicealert(); 
+  System.out. println("================= Verifying ice alert push notification End =========================");
+  }
+  
+  
+  
+  
+  
+ /* @Test(priority=8)
+  @Title("Verifying Severe alert push notification") public void
+  Smoke_Test_Verify_Severe_Alert_Pushnotification() throws Exception {
+  System.out.
+  println("================= Verifying Severe alert push notification Started =========================" ); 
+  Functions.tapping();
+  AppiumFunctions.Kill_Launch_App();
+  Thread.sleep(3000);
+  Functions.clickAlerts(); 
+ // Functions.click_severe();
+//  Functions.clickOnRequiredPushNotification("severe alert");
+  Functions.clickOnAlertType("severe alert");
+  Functions.swipefornotification();
+  CharlesFunctions.ClearSessions();
+  CharlesFunctions.startSessionBrowserData();
+  Functions.clickOnAlertNotificatons("Severe");
+  CharlesFunctions.ExportSessions();
+  Functions.findind_alertsiu_value();
+  Functions.VerifysevereAlert();
+  System.out.println("================= Verifying Severe alert push notification End ========================="
+  ); 
+  }*/
+	  
+
+  
+
+
+ 
+	
+	
+	 
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+     
 	@BeforeTest
 public void Before_Test() throws Exception {
 
 		CharlesFunctions.charlesOpen();
-		 AppiumFunctions.UnInstallApp();
+	//	 AppiumFunctions.UnInstallApp();
 		CharlesFunctions.openCharlesBrowser();
 		// System.out.println("setting contentmode to normal");
 		// MapLocalFunctions.contentModeModule("severe1");
@@ -750,11 +1006,11 @@ Thread.sleep(15000);
 AppiumFunctions.gettingApkVersion();
 Thread.sleep(5000);
 //CustomParamFunctions.get_fhic_floc_value();    
-AppiumFunctions.SwipeUp_Counter(15);	
-
+AppiumFunctions.SwipeUp_Counter(15);
 Thread.sleep(15000);
 AppiumFunctions.click_hourly_element();
-Thread.sleep(5000);
+ Thread.sleep(5000);
+ AppiumFunctions.click_daily_element();
 CharlesFunctions.ExportSession();
 		// Thread.sleep(30000);
 		// CustomParamFunctions.get_fhic_floc_value();      
