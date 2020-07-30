@@ -948,7 +948,7 @@ System.out.println("================= Verifying heavy snowfall alert push notifi
   
   
   
-  @Test(priority=8)
+  @Test(priority=508)
   @Title("Verifying Severe alert push notification") public void
   Smoke_Test_Verify_Severe_Alert_Pushnotification() throws Exception {
   System.out.
