@@ -2472,7 +2472,7 @@ public static void  Verifyheavyrainfallalert() throws Exception{
 	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
 	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
 		if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly")){
-			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly"));
+			String Read_API_Call_Data = sb.toString().substring(sb.toString().indexOf("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fhourly"));
 			String required_info = Read_API_Call_Data.toString().substring(Read_API_Call_Data.toString().indexOf("cust_params="));
 			String expected_data = required_info.toString().substring(required_info.indexOf("alert%3D"),required_info.indexOf("%26atfid"));			
 			//6sod%3Dno%
