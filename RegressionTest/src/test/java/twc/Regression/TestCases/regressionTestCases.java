@@ -826,7 +826,7 @@ public void  C333207_Verify_cust_param_hmid() throws Exception{
 	
 	  
 	  
-	/*  @Test(priority=503)
+	 @Test(priority=503)
 	  @Title("Verifying real time lightning alert push notification")
 	  public void Smoke_Test_Verify_RealtimeLightning_Alert_Pushnotification() throws Exception { 
 		  System.out. println("================= Verifying real time lightning aler push notification Started ========================="); 
@@ -845,7 +845,7 @@ public void  C333207_Verify_cust_param_hmid() throws Exception{
 	  Functions.VerifyRTLAlert();
 	  System.out.println("================= Verifying real time lightning alert push notification End ========================="
 	  ); 
-	  }*/
+	  }
 
 	  
 	  
@@ -948,7 +948,7 @@ System.out.println("================= Verifying heavy snowfall alert push notifi
   
   
   
- /* @Test(priority=8)
+  @Test(priority=8)
   @Title("Verifying Severe alert push notification") public void
   Smoke_Test_Verify_Severe_Alert_Pushnotification() throws Exception {
   System.out.
@@ -969,7 +969,7 @@ System.out.println("================= Verifying heavy snowfall alert push notifi
   Functions.VerifysevereAlert();
   System.out.println("================= Verifying Severe alert push notification End ========================="
   ); 
-  }*/
+  }
 	  
 
   
