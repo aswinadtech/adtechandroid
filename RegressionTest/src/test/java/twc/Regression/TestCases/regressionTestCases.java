@@ -759,7 +759,7 @@ public void  C333207_Verify_cust_param_hmid() throws Exception{
   	System.out.println("================= Verifying Breaking news alert push notification Started =========================");  // Functions.testmode_settings(); 
 
   	AppiumFunctions.Kill_Launch_App();
-	// Functions.enable_Alert_Notifications_bn("Breaking News");
+	Functions.enable_Alert_Notifications_bn("Breaking News");
    Functions.clickAlerts();
  // Functions.click_BN();
      Functions.clickOnAlertType("breaking news alert");
@@ -808,7 +808,7 @@ public void  C333207_Verify_cust_param_hmid() throws Exception{
 	  Functions.tapping();
 	  AppiumFunctions.Kill_Launch_App();
 	  Thread.sleep(3000);
-	//	 Functions.enable_Alert_Notifications_rtr("Real-time rain");
+	 Functions.enable_Alert_Notifications_rtr("Real-time rain");
 	  Functions.clickAlerts();
 	 // Functions.click_RTR();
 	  Functions.clickOnAlertType("real time rain alert");
