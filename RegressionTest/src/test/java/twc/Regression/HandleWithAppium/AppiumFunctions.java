@@ -518,7 +518,7 @@ public static void killADB() throws IOException, Exception{
 				capabilities.setCapability(capabilitydata[2][0], capabilitydata[2][Cap]); 
 				capabilities.setCapability(capabilitydata[3][0], capabilitydata[3][Cap]);
 				capabilities.setCapability(capabilitydata[7][0], capabilitydata[7][Cap]); 
-				capabilities.setCapability(capabilitydata[9][0], capabilitydata[9][Cap]);
+				//capabilities.setCapability(capabilitydata[9][0], capabilitydata[9][Cap]);
 				capabilities.setCapability(capabilitydata[10][0],capabilitydata[10][Cap]);
 				capabilities.setCapability(capabilitydata[12][0],capabilitydata[12][Cap]);
 				capabilities.setCapability(capabilitydata[13][0],capabilitydata[13][Cap]);
@@ -552,6 +552,8 @@ public static void killADB() throws IOException, Exception{
 		
 		try {
 			
+			
+			
 			String[][] capabilitydata = read_excel_data.exceldataread("Capabilities");
 			DesiredCapabilities capabilities = new DesiredCapabilities();
 			
@@ -561,28 +563,27 @@ public static void killADB() throws IOException, Exception{
 				capabilities.setCapability(capabilitydata[2][0], capabilitydata[2][Cap]); 
 				capabilities.setCapability(capabilitydata[3][0], capabilitydata[3][Cap]);
 				capabilities.setCapability(capabilitydata[7][0], capabilitydata[7][Cap]); 
-				//capabilities.setCapability(capabilitydata[9][0], capabilitydata[9][Cap]);
+				capabilities.setCapability(capabilitydata[9][0], capabilitydata[9][Cap]);
 				capabilities.setCapability(capabilitydata[10][0],capabilitydata[10][Cap]);
-				capabilities.setCapability(capabilitydata[12][0],capabilitydata[12][Cap]);
-			//	capabilities.setCapability("appActivity","com.weather.Weather.splash.SplashScreenActivity");
-				//capabilities.setCapability("appActivity","com.weather.android.daybreak.MainActivity");
-					capabilities.setCapability("noReset","true");
-			capabilities.setCapability("automationName","UiAutomator2");
+				//capabilities.setCapability(capabilitydata[12][0],capabilitydata[12][Cap]);
+			//capabilities.setCapability("appActivity","com.weather.Weather.splash.SplashScreenActivity");
 				
+				//capabilities.setCapability("appActivity","com.weather.android.daybreak.MainActivity");
+			capabilities.setCapability("noReset","true");
+			capabilities.setCapability("automationName","UiAutomator2");
 				System.out.println("app : "+capabilitydata[10][Cap]);
-				logStep("app : "+capabilitydata[10][Cap]);
 				capabilities.setCapability(capabilitydata[13][0],capabilitydata[13][Cap]);
 				//capabilities.setCapability(capabilitydata[14][0],capabilitydata[14][Cap]);
 				
-				Thread.sleep(10000);
+				Thread.sleep(2000);
 				
 				Ad = new AndroidDriver(new URL(capabilitydata[15][Cap]), capabilities);
-				Thread.sleep(30000);
+				Thread.sleep(3000);
 			}
 			/* ---End Android Device Capabilities --- */
-		//	Ad.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+			Ad.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 			//####added ths to handle allow button
-		//	Thread.sleep(10000);
+			Thread.sleep(20000);
 			
         	clickONNext();
 		    ClickonIUnderstand();
@@ -675,11 +676,12 @@ public static void killADB() throws IOException, Exception{
 				Ad.findElementByAccessibilityId("Navigate up").click();
 			}
 			catch(Exception e4) {
-				System.out.println("BackArrowElement not clicked");
+				System.out.println("BackArrowElemen not clicked");
 			}
 			}
 		}
 }
+	
 	public static void clickOnBackArrowElement_today() throws Exception
 	{
 		try {
@@ -956,13 +958,18 @@ public static void killADB() throws IOException, Exception{
 		System.out.println("clicking daily deatils");
      	logStep("clicking daily details element");
 		try {
-		
-		Ad.findElementByAccessibilityId("Daily").click();
+			Ad.findElementByAccessibilityId("Daily").click();
 		Thread.sleep(3000);
 			
 	}
 	catch(Exception e) {
-			
+			try {
+				
+			}
+			catch(Exception e1) {
+				Ad.findElementByAccessibilityId("Daily").click();
+				Thread.sleep(3000);
+			}
 	}
 	}
 	public static void ClickonIUnderstand() throws Exception{
@@ -1063,6 +1070,29 @@ public static void gettingApkVersion() throws Exception{
     fos.close();
      	
 	}
+
+public static void Kill_Launch_App() throws Exception{
+try {
+	Ad.closeApp();
+	Ad.launchApp();
+	Thread.sleep(15000);
+	}
+catch(Exception e) {
+Ad.closeApp();
+Ad.launchApp();
+Thread.sleep(15000);
+try {
+	Ad.closeApp();
+	Ad.launchApp();
+	Thread.sleep(15000);
+}
+catch(Exception e1) {
+	Ad.closeApp();
+	Ad.launchApp();
+	Thread.sleep(15000);
+}
+}
+}
 
 	public static void scrollToElement(AndroidDriver driver, String elementName, boolean scrollDown){
 		String listID = ((RemoteWebElement) driver.findElementByAndroidUIAutomator("new UiSelector().className(\"android.widget.ListView\")")).getId();
