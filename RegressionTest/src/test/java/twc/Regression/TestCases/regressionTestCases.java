@@ -121,13 +121,13 @@ public class regressionTestCases extends Drivers {
 		System.out.println("================= Custom Parameter ORD Verfication End =========================");
 	}
 
-	@Test(priority = 26)
+	/*@Test(priority = 26)
 	@Title("Verify custom parameter rmid")
 	public void C333204_Verify_cust_param_rmid() throws Exception {
 		System.out.println("================= Custom Parameter Rmid Verfication Started =========================");
 		Custom_Parameters_Verification.parameters_Verification("rmid");
 		System.out.println("================= Custom Parameter Rmid Verfication End =========================");
-	}
+	}*/
 
 	@Test(priority = 27)
 	@Title("Verify custom parameter ver")
@@ -808,7 +808,7 @@ public void  C333207_Verify_cust_param_hmid() throws Exception{
 	  Functions.tapping();
 	  AppiumFunctions.Kill_Launch_App();
 	  Thread.sleep(3000);
-		 Functions.enable_Alert_Notifications_rtr("Real-time rain");
+	//	 Functions.enable_Alert_Notifications_rtr("Real-time rain");
 	  Functions.clickAlerts();
 	 // Functions.click_RTR();
 	  Functions.clickOnAlertType("real time rain alert");
