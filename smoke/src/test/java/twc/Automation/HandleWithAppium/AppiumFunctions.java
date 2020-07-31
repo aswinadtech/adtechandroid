@@ -420,10 +420,10 @@ public class AppiumFunctions extends Drivers{
     				capabilities.setCapability(capabilitydata[13][0],capabilitydata[13][Cap]);
     				//capabilities.setCapability(capabilitydata[14][0],capabilitydata[14][Cap]);
     				
-    				Thread.sleep(5000);
+    				Thread.sleep(50000);
     				
     				Ad = new AndroidDriver(new URL(capabilitydata[15][Cap]), capabilities);
-    				Thread.sleep(5000);
+    				Thread.sleep(50000);
     				
     				/* ---End Android Device Capabilities --- */
         			Ad.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
