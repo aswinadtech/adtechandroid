@@ -64,7 +64,7 @@ public void Smoke_Test_CaseVerify_Homescreen_marquee_adCall_FTL() throws Excepti
 	System.out.println("going to all detail and content pages");
 	logStep("going to all detail and content pages");
  Thread.sleep(10000);
-	AppiumFunctions.SwipeUp_Counter_feedcards(20);
+	AppiumFunctions.SwipeUp_Counter_feedcards(35);
 	CharlesFunctions.ExportSession();
 	Functions.finding_Homescreen_marquee_iu_value();
 	System.out.println(
@@ -715,7 +715,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 
 					
 					
-					@Test(priority = 37, enabled = true)
+					/*@Test(priority = 37, enabled = true)
 					@Title("Verifying amazon slot Id for Outdoor details page")
 					public void Smoke_Test_Verify_amazon_SlotId_outdoor_details() throws Exception {
 						System.out.println(
@@ -723,7 +723,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 						Functions.get_aaxcal_SH_details();
 						System.out.println(
 								"================= verifying amazon SlotId for outdoor details adcall  End =========================");
-					}		
+					}	*/	
 					
 					 /* =======================================All detail pages amazon slot id's test cases End======================================================================================*/
 				
@@ -994,13 +994,13 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 		Functions.validating_WeatherFXAPI();
 		System.out.println("================= Verifying WeatherFX API url End =========================");
 	}
-	/*@Test(priority = 302, enabled = true)
+	@Test(priority = 302, enabled = true)
 	@Title("Verifying Location/Factual  api call url on KillLaunch")
 	public void Smoke_Test_CaseVerify_Factualapi_url_KillLaunch() throws Exception {
 		System.out.println("================= Verifying WeatherFX API url started =========================");
 		Functions.validating_Fatual();
 		System.out.println("================= Verifying WeatherFX API url End =========================");
-	}*/
+	}
 
 	
 	@Test(priority = 304, enabled = true)
@@ -1011,7 +1011,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 		System.out.println("================= Verifying Turbo call API url End =========================");
 	}
 
-	/*@Test(priority = 306, enabled = true)
+	@Test(priority = 306, enabled = true)
 	@Title("Verifying Lotame adcrw api call url on KillLaunch")
 	public void Smoke_Test_CaseVerify_adcrwdcntrlnet_url_KillLaunch() throws Exception {
 		System.out.println("================= Verifying Lotame ad.crwdcntrl.net url started =========================");
@@ -1028,7 +1028,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 	  Functions.validating_bcp_privacy_Optinmode_scenarion();
 	  System.out.println("================= Verifying  bcp.crwdcntrl call testcase End =========================" );
 	  
-	  }*/
+	  }
 		/* =======================================api calls test cases End======================================================================================*/
 	
 	  
@@ -1562,7 +1562,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 
 
 	  
-	/*  @Test(priority = 92, enabled = true)  
+	 @Test(priority = 92, enabled = true)  
 	  @Title("Verifying SOD Cust param value for  Feed ad call when user selecting Optoutmode scenario in privacy card"  )
 	  public void  Smoke_Test_Verifying_SOD_Cust_Param_Feedad_Optoutmode_scenario() throws Exception {
 	  logStep("Verifying SOD Cust param value for  Feed ad call when user selecting Optoutmode scenario in privacy card" ); 
@@ -1570,7 +1570,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 	  Functions.validate_SOD_Cust_param_feed_Optoutmode(); 
 	  System.out.println("================= Verifying SOD CUST_PARAM value for Feed ad call  when user selecting Optoutmode scenario in privacy card End =========================");
 	  }*/
-	  
+	 
 	  
 	/*  @Test(priority = 93, enabled = true)	  
 	  @Title("Verifying SOD Cust param value for maps detaill page ad call when user selecting Optoutmode scenario in privacy card" )
@@ -1635,12 +1635,12 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 	  System.out. println("================= Verifying RDP value for video  ad call  when user selecting Optoutmode scenario in privacy card started =========================");
 	  Functions.validate_RDP_video_ad_Optoutmode();
 	  System.out. println("================= Verifying RDP value for video ad call when user selecting Optoutmode scenario in privacy card End =========================");
-	  }
+	  }*/
 	  
 	  
 	  
 	  
-      @Test(priority = 99, enabled = true)	  
+     /* @Test(priority = 99, enabled = true)	  
 	  @Title("Selecting the  Optin mode in the privacy card") public void
 	  Smoke_Test_Selecting_Optin_mode_scenario() throws Exception {
 	  logStep("Selecting the  Optin mode in the privacy card");
