@@ -420,14 +420,13 @@ public class AppiumFunctions extends Drivers{
     				capabilities.setCapability(capabilitydata[13][0],capabilitydata[13][Cap]);
     				//capabilities.setCapability(capabilitydata[14][0],capabilitydata[14][Cap]);
     				
-    				Thread.sleep(50000);
+    				Thread.sleep(5000);
     				
     				Ad = new AndroidDriver(new URL(capabilitydata[15][Cap]), capabilities);
     				Thread.sleep(50000);
     				
     				/* ---End Android Device Capabilities --- */
         			Ad.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
-				Thread.sleep(60000);
         			//####added ths to handle allow button			
         			clickONNext();
         		    ClickonIUnderstand();
@@ -843,7 +842,7 @@ catch(Exception e) {
 }
 	System.out.println(ModuleName.toString() +" feed card is presented on the screen");
 	
-	if(ModuleName.toString().contains("Top Stories") ||ModuleName.toString().contains("Low Stories")) {
+	if(ModuleName.toString().contains("Top Stories") ||ModuleName.toString().contains("Low Stories") || ModuleName.toString().contains("Videos")) {
 		if(videoCount==0) {
 		AppiumFunctions.clickOnVideoElement();
 	AppiumFunctions.clickOnBackArrowElement();
