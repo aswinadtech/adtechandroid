@@ -426,7 +426,7 @@ public class AppiumFunctions extends Drivers{
     				Thread.sleep(5000);
     				
     				/* ---End Android Device Capabilities --- */
-        			Ad.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        			Ad.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
         			//####added ths to handle allow button			
         			clickONNext();
         		    ClickonIUnderstand();
