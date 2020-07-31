@@ -575,13 +575,13 @@ public static void killADB() throws IOException, Exception{
 				capabilities.setCapability(capabilitydata[13][0],capabilitydata[13][Cap]);
 				//capabilities.setCapability(capabilitydata[14][0],capabilitydata[14][Cap]);
 				
-				Thread.sleep(2000);
+				Thread.sleep(30000);
 				
 				Ad = new AndroidDriver(new URL(capabilitydata[15][Cap]), capabilities);
-				Thread.sleep(3000);
+				Thread.sleep(50000);
 			}
 			/* ---End Android Device Capabilities --- */
-			Ad.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+			Ad.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 			//####added ths to handle allow button
 			Thread.sleep(20000);
 			
