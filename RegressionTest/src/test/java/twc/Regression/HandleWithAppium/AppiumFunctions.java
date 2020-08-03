@@ -26,8 +26,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
-
+import org.testng.Assert;
 //import twc.Automation.RetryAnalyzer.RetryAnalyzer;
 import twc.Regression.Driver.Drivers;
 import twc.Regression.ReadDataFromFile.read_excel_data;
@@ -618,18 +617,28 @@ public static void killADB() throws IOException, Exception{
 		Thread.sleep(3000);	
 	}
 	public static void clickOnRadarMaps() throws Exception{
-		System.out.println("clicking maps element");
-		logStep("clicking maps element");
 		try {
-		Ad.findElementById("com.weather.Weather:id/frameTime").click();
-		Thread.sleep(2000);		
-		}
-		catch(Exception e) {
-			Ad.tap(1, 272,1157, 2000);
-			//Ad.findElementById("com.weather.Weather:id/radar_map_image").click();
-			Thread.sleep(2000);
-		}
-	}	
+			new WebDriverWait(Ad, AppiumFunctions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("com.weather.Weather:id/details_button")));
+					Ad.findElementById("com.weather.Weather:id/details_button").click();	
+					System.out.println("maps element clicked");
+	    			logStep("maps element clicked");
+					}
+					catch(Exception e) {
+						try {
+							SwipeUp_Counter(1);
+							new WebDriverWait(Ad, AppiumFunctions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("com.weather.Weather:id/details_button")));
+							Ad.findElementById("com.weather.Weather:id/details_button").click();	
+							System.out.println("maps element clicked");
+			    			logStep("maps element clicked");
+						}
+						catch(Exception e1) {
+							new WebDriverWait(Ad, AppiumFunctions.maxTimeout).until(ExpectedConditions.elementToBeClickable(Ad.findElementById("com.weather.Weather:id/radar_map_image")));
+							Ad.findElementById("com.weather.Weather:id/radar_map_image").click();
+							System.out.println("maps element clicked");
+			    			logStep("maps element clicked");
+						}
+					}
+}	
 	public static void click_Todaydetails_element() throws Exception
 	{
 		System.out.println("clicking today element");
@@ -724,6 +733,73 @@ public static void killADB() throws IOException, Exception{
 	}
 	
 	
+	
+	public static void SwipeUp_Counter_privacy(int Counter) throws Exception{
+		
+		int swipeup = Counter;
+		System.out.println("Scroll the app till privacy card  is displaying on the screen");
+		for(int i=1;i<=swipeup ;i++){
+			Swipe_feed_privacy();
+if(i==swipeup) {
+	System.out.println("privacy card is not presenred on the screen");
+	logStep("privacy card is not presenred on the screen");
+	Assert.fail("privacy card is not presenred on the screen");
+}
+			String ModuleName;
+			try {
+			if(Ad.findElementById("com.weather.Weather:id/header_title").isDisplayed()) {
+				try {
+	 ModuleName=Ad.findElementById("com.weather.Weather:id/header_title").getAttribute("text");
+				}
+	catch(Exception e) {
+	 ModuleName=Ad.findElementById("com.weather.Weather:id/header_title").getText();
+	}
+		System.out.println(ModuleName.toString() +" feed card is presented on the screen");
+		
+		if(ModuleName.toString().contains("Privacy")) {
+			System.out.println("privacy card is  presenred on the screen");
+			logStep("privacy card is  presenred on the screen");
+			System.out.println("Clicking privacy arrow button");
+			logStep("Clicking privacy arrow button");
+			try {
+			    Ad.findElementById("com.weather.Weather:id/privacy_card_personal_info_container").click();
+			    Thread.sleep(60000);
+			}
+			catch(Exception e) {
+				try {
+				Swipe_feed();
+			    Ad.findElementById("com.weather.Weather:id/privacy_card_personal_info_container").click();
+			    Thread.sleep(60000);
+				}
+				catch(Exception e2) {
+					
+				}
+			}
+		i=150;
+		break;
+		
+			}
+			}
+			
+			
+			}
+
+			
+
+			catch(Exception e) {
+				try {
+					Swipe_feed();
+				Ad.findElementById("com.weather.Weather:id/header_title").isDisplayed();
+				}
+				catch(Exception e1) {
+					Swipe_feed();
+				}
+		
+				
+			}
+				}	
+}
+	
 	public static void SwipeUp_Counter(int Counter) throws Exception{
 		
 		int radarCount=0;
@@ -765,7 +841,7 @@ public static void killADB() throws IOException, Exception{
 	}
 		System.out.println(ModuleName.toString() +" feed card is presented on the screen");
 		
-		if(ModuleName.toString().contains("Top Stories") ||ModuleName.toString().contains("Low Stories")) {
+		if(ModuleName.toString().contains("Top Stories") ||ModuleName.toString().contains("Low Stories") || ModuleName.toString().contains("Videos")) {
 			if(videoCount==0) {
 			AppiumFunctions.clickOnVideoElement();
 		AppiumFunctions.clickOnBackArrowElement();
@@ -857,9 +933,155 @@ public static void killADB() throws IOException, Exception{
 				}	
 }
 	
+	
+	
+public static void SwipeUp_Counter_videos_maps(int Counter) throws Exception{
+		
+		int radarCount=0;
+		int MorNewsCount=0;
+		int TodayDeatilsCount=0;
+		int HealthActivities=0;
+		int  RunningCount=0;
+		int BoatBeachCount=0;
+		int AllergyCount=0;
+		int CofFluCount=0;
+		int videoCount=0;
+		int  outdoorcount=0;
+		int AirQualityCount=0;
+		
+		
+		
+		
+
+		String[][] data = read_excel_data.exceldataread("General");
+		//System.out.println("Copy right text is: " + data[1][1]);
+
+
+		String copyRight = null;
+		
+		int swipeup = Counter;
+	//System.out.println("swipeup");
+		System.out.println("Scroll the app till"+ data[1][1] +" is displaying on the screen");
+		for(int i=1;i<=swipeup ;i++){
+			Swipe_feed();
+
+			String ModuleName;
+			try {
+			if(Ad.findElementById("com.weather.Weather:id/header_title").isDisplayed()) {
+				try {
+	 ModuleName=Ad.findElementById("com.weather.Weather:id/header_title").getAttribute("text");
+				}
+	catch(Exception e) {
+	 ModuleName=Ad.findElementById("com.weather.Weather:id/header_title").getText();
+	}
+		System.out.println(ModuleName.toString() +" feed card is presented on the screen");
+		
+		/*if(ModuleName.toString().contains("Top Stories") ||ModuleName.toString().contains("Low Stories") || ModuleName.toString().contains("Videos")) {
+			if(videoCount==0) {
+			AppiumFunctions.clickOnVideoElement();
+		AppiumFunctions.clickOnBackArrowElement();
+
+	//	Functions.closeInterstailads() ;
+		
+			}
+			}*/
+		
+		/*if(ModuleName.toString().contains("More News")) {
+			if(MorNewsCount==0) {
+			AppiumFunctions.clickOnVideoElement();
+		AppiumFunctions.clickOnBackArrowElement();
+		Functions.closeInterstailads() ;
+		MorNewsCount=1;
+			}
+			}*/
+			
+	if(ModuleName.toString().contains("Maps") ||ModuleName.toString().contains("Thunderstorms possible") || ModuleName.toString().contains("Thunderstorms ending") || ModuleName.toString().contains("Thunderstorms starts")||ModuleName.toString().contains("Dry conditions") || ModuleName.toString().contains("Thunderstorms ending") || ModuleName.toString().contains("Thunderstorms starts")  || ModuleName.toString().contains("Rain possible") || ModuleName.toString().contains("Rain starts") ||  ModuleName.toString().contains("Rain ending") || ModuleName.toString().contains("Thunderstorms likely") || ModuleName.toString().contains("Thunderstorms possible") || ModuleName.toString().contains("Thunderstorms ending") || ModuleName.toString().contains("Thunderstorms starts")||ModuleName.toString().contains("Dry conditions") || ModuleName.toString().contains("Thunderstorms ending") || ModuleName.toString().contains("Thunderstorms will continue")) {
+	if(radarCount==0)
+	{
+		AppiumFunctions.clickOnRadarMaps();
+		AppiumFunctions.clickOnBackArrowElement();
+		radarCount=1;
+		i=150;
+		break;
+		//Functions.closeInterstailads();
+	
+	}
+	}
+/*	if(ModuleName.toString().contains("Health & Activities")) {
+
+		if(BoatBeachCount==0) {
+		 AppiumFunctions.click_Boat_Beach_element();
+		  AppiumFunctions.clickOnBackArrowElement();
+		  BoatBeachCount=1;
+		}
+		if(RunningCount==0) {
+		 AppiumFunctions.click_Running_element();
+		 AppiumFunctions.clickOnBackArrowElement();
+		 RunningCount=1;
+		}
+		
+		if(CofFluCount==0) {
+		 AppiumFunctions.click_cold_Flu_element();
+		  AppiumFunctions.clickOnBackArrowElement();
+		  Thread.sleep(5000);
+		  CofFluCount=1;
+		}
+		if(AllergyCount==0) {
+		 AppiumFunctions.click_Allergy_element(); 
+		  AppiumFunctions.clickOnBackArrowElement();
+		  Thread.sleep(5000);
+		  AllergyCount=1;
+	}
+	}
+	if(ModuleName.toString().contains("Today's Details") ) {
+		if(TodayDeatilsCount==0) {
+		AppiumFunctions.click_Todaydetails_element();
+	     AppiumFunctions.clickOnBackArrowElement_today();
+	     TodayDeatilsCount=1;
+		}
+	}
+
+	if(ModuleName.toString().contains("Air Quality")) {
+		if(AirQualityCount==0) {
+	 AppiumFunctions.click_Airpollution_element();
+	AppiumFunctions.clickOnBackArrowElement();
+	AirQualityCount=1;
+		}
+	}*/
+
+	
+			
+			}
+	}
+			
+
+			catch(Exception e) {
+				try {
+					Swipe_feed();
+				Ad.findElementById("com.weather.Weather:id/header_title").isDisplayed();
+				}
+				catch(Exception e1) {
+					Swipe_feed();
+				}
+		
+				
+			}
+				}	
+}
+
 	public static void Swipe_feed(){
 		Dimension dimensions = Ad.manage().window().getSize();//throwing exception
 		Double startY1 = dimensions.getHeight() * 0.3;  
+		startY = startY1.intValue();
+		Double endY1 = (double) (dimensions.getHeight()/20);  //  dimensions.getHeight()  0.2;  == 512.0
+		endY = endY1.intValue();
+		Ad.swipe(0, startY, 0, endY,2000);
+
+	}
+	
+	public static void Swipe_feed_privacy(){
+		Dimension dimensions = Ad.manage().window().getSize();//throwing exception
+		Double startY1 = dimensions.getHeight() * 0.5;  
 		startY = startY1.intValue();
 		Double endY1 = (double) (dimensions.getHeight()/20);  //  dimensions.getHeight()  0.2;  == 512.0
 		endY = endY1.intValue();
