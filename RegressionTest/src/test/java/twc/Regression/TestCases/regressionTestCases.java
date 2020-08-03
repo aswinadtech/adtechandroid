@@ -1316,7 +1316,7 @@ public void  C333207_Verify_cust_param_hmid() throws Exception{
 	  Thread.sleep(15000);
 	  Thread.sleep(15000);
 	  //Functions.enable_Alert_Notifications("Significant weather forecast");
-		Functions.enableSignificantweatherforecast_Notifications();
+		//Functions.enableSignificantweatherforecast_Notifications();
 	  Functions.clickAlerts(); 
 	  //Functions.click_thunderstorm();
 	// Functions.clickOnRequiredPushNotification("thunderstorm alert");
