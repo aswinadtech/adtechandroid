@@ -1556,7 +1556,7 @@ public class Functions extends Drivers{
 			
 			Ad.findElementById("com.weather.Weather:id/my_alerts_layout_0").click();
 			//Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.view.ViewGroup/androidx.viewpager.widget.ViewPager/android.widget.ScrollView/android.widget.LinearLayout/android.widget.ListView/android.widget.RelativeLayout[1]/android.widget.TextView[1]").click();
-			Thread.sleep(6000);
+			Thread.sleep(15000);
 		/*	List<WebElement> notifications;
 			
 
@@ -1765,10 +1765,11 @@ public class Functions extends Drivers{
 
 public static void enbleAlertSwitch() throws Exception {
 	
+	Thread.sleep(15000);
 	String on_off=Ad.findElementById("com.weather.Weather:id/alert_switch").getText();
 	if(on_off.contains("Off OFF")) {
 		Ad.findElementById("com.weather.Weather:id/alert_switch").click();
-		Thread.sleep(3000);
+		Thread.sleep(10000);
 	}
 	if(on_off.contains("On ON")) {
 		
@@ -2102,9 +2103,9 @@ if(sb.contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fbreaking"))
 	logStep("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fbreaking ad call was trigred ");
 }
 if(!sb.contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fbreaking")) {
-System.out.println("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fbreakingad call was not trigred");
-logStep("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fbreakingad call was not trigred");
-Assert.fail("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fbreaking was not trigred");
+System.out.println("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fbreaking ad call was not trigred");
+logStep("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fbreaking ad call was not trigred");
+Assert.fail("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fbreaking ad call was not trigred");
 }
 
 }
@@ -2758,22 +2759,11 @@ public static  void Verify_Privacy_Card_onScreen() throws Exception{
 	for(int i=0;i<20;i++)
 	{
 		try {
-		Swipe_Conter(20);
-		Thread.sleep(8000);   
-	  Module=Ad.findElementById("com.weather.Weather:id/header_title").getText();
-		System.out.println("checking for privacy  Module on the Screen");
-		logStep("checking for privacy  Module on the Screen");
-		if(Module.contains("Privacy")) {
-		System.out.println("Privacy Module Presented on the Screen");
-		logStep("Privacy Module Presented on the Screen");
-		i=21;
-		break;
+		AppiumFunctions.SwipeUp_Counter(i);
 	}
-		}
+		
 		catch(Exception e) {
-		logStep("Privacy Module not Presented on the Screen");
-		System.out.println("Privacy Module not Presented on the Screen");
-		Assert.fail("Privacy Module not Presented on the Screen");
+		
 		}
 	}		
 	}
@@ -2785,21 +2775,8 @@ public static  void Verify_Privacy_Card_onScreen() throws Exception{
 		int swipe = Counter;
 
 		for(int i=1;i<=swipe ;i++){
-			//Thread.sleep(2000);
-			//Swipe();
-			try{
-				Thread.sleep(2000);
-				if(Ad.findElementByName("Name any course, dish, or ingredient").isDisplayed()){
-				//System.out.println("Watson ad presented");
-					break;
-				}
-			}catch (Exception e){
-				Swipe();
-				//System.out.println("watson ad not present");
-			}
-
-
-			//Thread.sleep(2000);
+AppiumFunctions.Swipe_feed();
+			Thread.sleep(2000);
 		}
 	
 }
@@ -2808,11 +2785,11 @@ public static  void Verify_Privacy_Card_onScreen() throws Exception{
 public static  void selecting_opt_out_mode() throws Exception{
 		
 		//Clicking privacy arrow button
-		System.out.println("Clicking privacy arrow button");
+		/*System.out.println("Clicking privacy arrow button");
 		logStep("Clicking privacy arrow button");
-	    Ad.findElementById("com.weather.Weather:id/privacy_card_personal_info_container").click();
+	    Ad.findElementById("com.weather.Weather:id/privacy_card_personal_info_container").click();*/
 	    Thread.sleep(8000);
-		Swipe_Conter(3);
+		Swipe_Conter(10);
 		 Thread.sleep(10000);
 		 TouchAction ta=new TouchAction(Ad);
 		 ta.tap(480, 1369).perform();
@@ -2827,7 +2804,7 @@ public static void SwipeUp_Counter_video_maps_feedcards(int Counter) throws Exce
 	int swipeup = Counter;
 //System.out.println("swipeup");
 	for(int i=1;i<=swipeup ;i++){
-		Swipe();
+		AppiumFunctions.Swipe_feed();
 		String ModuleName;
 		try {
 		if(Ad.findElementById("com.weather.Weather:id/header_title").isDisplayed()) {
@@ -2839,7 +2816,7 @@ catch(Exception e) {
 }
 	System.out.println(ModuleName.toString() +" feed card is presented on the screen");
 	
-	if(ModuleName.toString().contains("Top Stories") ||ModuleName.toString().contains("Low Stories")) {
+	if(ModuleName.toString().contains("Top Stories") ||ModuleName.toString().contains("Low Stories") || ModuleName.toString().contains("Videos")){
 		
 		AppiumFunctions.clickOnVideoElement();
 	AppiumFunctions.clickOnBackArrowElement();
@@ -2879,6 +2856,7 @@ public static void Verify_video_ad_call_Optoutmode( )throws Exception{
 
 	if(!sb.contains("%2F7646%2Fapp_android_us%2Fvideo")) {
 	System.out.println("/7646/app_android_us/video call was not trigred");
+	logStep("/7646/app_android_us/video call was not trigred");
 	Assert.fail("/7646/app_android_us/video call was not trigred");
 
 	}
@@ -2958,14 +2936,14 @@ read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer()
 	//CharlesFunctions.ExportSession();
 	System.out.println("Verifying  iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps ad call");
 	logStep("Verifying iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps ad calll");
-if(sb.contains("%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps")) {
-	System.out.println("/7646/app_android_us/db_display/details/maps call was trigred");
-	logStep("/7646/app_android_us/db_display/details/maps call was trigred");
+if(sb.contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps")) {
+	System.out.println("iu=/7646/app_android_us/db_display/details/maps call was trigred");
+	logStep("iu=/7646/app_android_us/db_display/details/maps call was trigred");
 }
-if(!sb.contains("%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps")) {
-	System.out.println("/7646/app_android_us/db_display/details/maps call was not trigred");
-	logStep("/7646/app_android_us/db_display/details/maps call was not trigred");
-Assert.fail("/7646/app_android_us/db_display/details/maps call was not trigred");
+if(!sb.contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps")) {
+	System.out.println("iu=/7646/app_android_us/db_display/details/maps call was not trigred");
+	logStep("iu=/7646/app_android_us/db_display/details/maps call was not trigred");
+Assert.fail("iu=/7646/app_android_us/db_display/details/maps call was not trigred");
 }
 }
 
@@ -3066,13 +3044,13 @@ public static void validating_aax_privacy_Optoutmode_scenario() throws Exception
 	logStep("Verifying for amazon aax calls");
 	//System.out.println("Slot Name is  : "+slotID);
 	if(sb.contains("752a96eb-3198-4991-b572-17ec04883b6c")) {
-	System.out.println("amazon aax is trigreed for privacy Optoutmode scenario");
-	logStep("amazon slotid 752a96eb-3198-4991-b572-17ec04883b6c is trigred");
-	Assert.fail("amazon slotid 752a96eb-3198-4991-b572-17ec04883b6c is trigred");
+	System.out.println("amazon aax slot id's are  trigreed for privacy Optoutmode scenario");
+	logStep("amazon aax slot id's are  trigreed for privacy Optoutmode scenario");
+	Assert.fail("amazon aax slot id's are  trigreed for privacy Optoutmode scenario");
 	}
 	if(!sb.contains("752a96eb-3198-4991-b572-17ec04883b6c")) {
-	logStep("amazon aax calls are  not trigreed for privacy Optoutmode scenario");
-	System.out.println("amazon aax calls are  not trigreed for privacy Optoutmode scenario");
+	logStep("amazon aax slot id's are  not trigreed for privacy Optoutmode scenario");
+	System.out.println("amazon aax slot id's are  not trigreed for privacy Optoutmode scenario");
 		
 		}
 	
@@ -3109,10 +3087,10 @@ public static void validate_SOD_Cust_param_homescreenHourly_Optoutmode() throws 
 	int Cap = device_status.Device_Status();
 	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
 	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
-	String[][] exceldata=read_excel_data.exceldataread("NextGenIM");
+	//String[][] exceldata=read_excel_data.exceldataread("NextGenIM");
 	logStep("Verifying  SOD custum param for  iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly ad call");
-		if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%%2Fhourly ")){
-			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf(" u=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly "));
+		if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly")){
+			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly"));
 			String required_info = Read_API_Call_Data.toString().substring(Read_API_Call_Data.toString().indexOf("cust_params="));
 			String expected_data = required_info.toString().substring(required_info.indexOf("sod%3D"),required_info.indexOf("%26tmp%3D"));
 			
@@ -3141,7 +3119,7 @@ public static void validate_SOD_Cust_param_homescreen_Optoutmode() throws Except
 	int Cap = device_status.Device_Status();
 	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
 	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
-	String[][] exceldata=read_excel_data.exceldataread("NextGenIM");
+	//String[][] exceldata=read_excel_data.exceldataread("NextGenIM");
 	logStep("Verifying  SOD custum param for  iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_1 ad call");
 		if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_1")){
 			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_1"));
@@ -3236,7 +3214,7 @@ public static void validate_SOD_Cust_param_deatiledfeed_Optoutmode() throws Exce
 	int Cap = device_status.Device_Status();
 	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
 	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
-	String[][] exceldata=read_excel_data.exceldataread("NextGenIM");
+//	String[][] exceldata=read_excel_data.exceldataread("NextGenIM");
 	logStep("Verifying  SOD custum param for iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps ad call");
 		if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps")){
 			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps"));
@@ -3303,7 +3281,7 @@ public static void validate_RDP_homescreen_Optoutmode() throws Exception {
 		if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_1")){
 			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_1"));
 		
-		if	(Read_API_Call_Data.contains("rdp=1")){
+		if(sb.contains("rdp=1")){
 			System.out.println("RDP value for iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_1 ad call is " +"1");	
 			logStep("RDP value for feed_1 ad call is " +"1");
 			}
@@ -3327,9 +3305,9 @@ public static void validate_RDP_homescreenmarquee_Optoutmode() throws Exception 
 		if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fmarquee")){
 			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fmarquee"));
 		
-		if	(Read_API_Call_Data.contains("rdp=1")){
+		if(sb.contains("rdp=1")){
 			System.out.println("RDP value for iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fmarquee ad call is " +"1");	
-			logStep("RDP value for feed_1 ad call is " +"1");
+			logStep("RDP value for iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fmarquee  ad call is " +"1");
 			}
 		else {
 				System.out.println("RDP  value for iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fmarquee ad call is not matchged with"     +"1");
@@ -3352,7 +3330,7 @@ public static void validate_RDP_homescrenhourly_Optoutmode() throws Exception {
 		if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly")){
 			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly"));
 		
-		if	(Read_API_Call_Data.contains("rdp=1")){
+		if	(sb.contains("rdp=1")){
 			System.out.println("RDP value for iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly ad call is " +"1");	
 			logStep("RDP value for feed_1 ad call is " +"1");
 			}
@@ -3401,7 +3379,7 @@ public static void validate_RDP_detailed_feed_Optoutmode() throws Exception {
 		if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps")){
 			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps"));
 		
-		if(Read_API_Call_Data.contains("rdp")){
+		if(sb.contains("rdp")){
 			System.out.println("RDP value for  iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps ad call is " +"1");	
 			logStep("RDP value for iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps ad call is " +"1");
 			}
@@ -3425,7 +3403,7 @@ public static void validate_RDP_video_ad_Optoutmode() throws Exception {
 		if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fvideo")){
 			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf("iu=%2F7646%2Fapp_android_us%2Fvideo"));
 		
-		if	(Read_API_Call_Data.contains("rdp=1")){
+		if	(sb.contains("rdp=1")){
 			System.out.println("RDP value for iu=%2F7646%2Fapp_android_us%2Fvideo  ad call is " +"1");	
 			logStep("RDP value for iu=%2F7646%2Fapp_android_us%2Fvideo ad call is " +"1");
 			}
@@ -3450,24 +3428,20 @@ public static void finding_Homescreen_iu_value() throws Exception{
 	logStep("Verofying for  iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly ad call");
 if(sb.contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly")) 
 {
-	System.out.println("/7646/app_android_us/db_display/home_screen/hourly call was trigred");
+	System.out.println("iu=/7646/app_android_us/db_display/home_screen/hourly call was trigred");
 	logStep("7646/app_android_us/db_display/home_screen/hourly call was trigred");
 }
 if(!sb.contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly")) {
-	System.out.println("/7646/app_android_us/db_display/home_screen/hourly call was not trigred");
-	logStep("/7646/app_android_us/db_display/home_screen/hourly call was not trigred");
-    Assert.fail("/7646/app_android_us/db_display/home_screen/hourly call was not trigred");
+	System.out.println("iu=/7646/app_android_us/db_display/home_screen/hourly call was not trigred");
+	logStep("iu=/7646/app_android_us/db_display/home_screen/hourly call was not trigred");
+    Assert.fail("iu=/7646/app_android_us/db_display/home_screen/hourly call was not trigred");
 }
 }
 
 public static  void selecting_opt_in_mode() throws Exception{
 	
-	//Clicking privacy arrow button
-	System.out.println("Clicking privacy arrow button");
-	logStep("Clicking privacy arrow button");
-    Ad.findElementById("com.weather.Weather:id/privacy_card_personal_information_view").click();
-    Thread.sleep(8000);
-	Swipe_Conter(3);
+	   Thread.sleep(8000);
+			Swipe_Conter(10);
 	 Thread.sleep(30000);
 	  //Selecting  Opt out  mode option in privacy card
 		System.out.println("Selecting  Opt in  mode option in privacy card");
@@ -3475,7 +3449,7 @@ public static  void selecting_opt_in_mode() throws Exception{
 	  TouchAction ta=new TouchAction(Ad);
 	 ta.tap(347, 1070).perform();
 	 Ad.findElementById("com.weather.Weather:id/popup_positive_button").click();
-	    Thread.sleep(8000);
+	    Thread.sleep(10000);
    //Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View/android.view.View[1]/android.view.View[4]/android.widget.ListView/android.view.View[2]").click();	
 }
 
@@ -3575,14 +3549,14 @@ public static void validating_aax_privacy_Optinmode_scenario() throws Exception{
 	logStep("Verifying for amazon aax calls");
 	//System.out.println("Slot Name is  : "+slotID);
 	if(sb.contains("869c843c-7cf8-47ae-b6ed-088057e4bc8a")) {
-	System.out.println("amazon aax are  trigreed for privacy Optinmode scenario");
-	logStep("amazon aax are  trigreed for privacy Optinmode scenario");
+	System.out.println("amazon aax slot id's are  trigreed for privacy Optinmode scenario");
+	logStep("amazon aax slot id's are  trigreed for privacy Optinmode scenario");
 	
 	}
 	if(!sb.contains("869c843c-7cf8-47ae-b6ed-088057e4bc8a")) {
-		System.out.println("amazon aax is not trigreed for privacy Optinmode scenario");
-		logStep("amazon aax is not trigreed for privacy Optinmode scenario");
-		Assert.fail("amazon aax is not   trigreed for privacy Optinmode scenario");
+		System.out.println("amazon aax slot id's  are  not trigreed for privacy Optinmode scenario");
+		logStep("amazon aax slot id's  are  not trigreed for privacy Optinmode scenario");
+		Assert.fail("amazon aax slot id's  are  not trigreed for privacy Optinmode scenario");
 		
 		}
 	
@@ -3754,7 +3728,7 @@ public static void validate_RDP_homescreen_Optinmode() throws Exception {
 		if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fmarquee")){
 			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fmarquee"));
 		
-		if	(Read_API_Call_Data.contains("rdp=1")){
+		if	(sb.contains("rdp=1")){
 			System.out.println("RDP key word preseted in iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fmarquee call url");	
 			logStep("RDP key word preseted in iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fmarquee call url");
 			Assert.fail("RDP key word preseted in iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fmarquee call url");
@@ -3778,7 +3752,7 @@ public static void validate_RDP_homescreenhourly_Optinmode() throws Exception {
 		if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly")){
 			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly"));
 		
-		if	(Read_API_Call_Data.contains("rdp=1")){
+		if(sb.contains("rdp=1")){
 			System.out.println("RDP key word preseted in iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly call url");	
 			logStep("RDP key word preseted in iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly call url");
 			Assert.fail("RDP key word preseted in iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fhome_screen%2Fhourly call url");
@@ -3803,8 +3777,8 @@ public static void validate_RDP_feed_Optinmode() throws Exception {
 		if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_1")){
 			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_1"));
 		
-		if	(Read_API_Call_Data.contains("rdp")){
-			System.out.println("RDP key word preseted in feed ad call");	
+		if(sb.contains("rdp=1")){
+			System.out.println("RDP key word preseted in iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_1 ad call url");	
 			logStep("RDP key word preseted in iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_1 ad call url");
 			Assert.fail("RDP key word preseted in iu=%2F7646%2Fapp_android_us%2Fdb_display%2Ffeed%2Ffeed_1 ad call url");
 			}
@@ -3828,7 +3802,7 @@ public static void validate_RDP_detailed_feed_Optinmode() throws Exception {
 		if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps")){
 			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps"));
 		
-		if	(Read_API_Call_Data.contains("rdp")){
+		if(sb.contains("rdp=1")){
 			System.out.println("RDP key word preseted in iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps ad call url");	
 			logStep("RDP key word preseted in iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps ad call url");
 			Assert.fail("RDP key word preseted in iu=%2F7646%2Fapp_android_us%2Fdb_display%2Fdetails%2Fmaps ad call url");
@@ -3853,7 +3827,7 @@ public static void validate_RDP_video_ad_Optinmode() throws Exception {
 		if(sb.toString().contains("iu=%2F7646%2Fapp_android_us%2Fvideo")){
 			String Read_API_Call_Data = sb.toString().substring(sb.toString().lastIndexOf("iu=%2F7646%2Fapp_android_us%2Fvideo"));
 		
-		if	(Read_API_Call_Data.contains("rdp")){
+		if	(sb.contains("rdp=1")){
 			System.out.println("RDP key word preseted in iu=%2F7646%2Fapp_android_us%2Fvideo ad call url");	
 			logStep("RDP key word preseted in iu=%2F7646%2Fapp_android_us%2Fvideo ad call url");
 			Assert.fail("RDP key word preseted in iu=%2F7646%2Fapp_android_us%2Fvideo ad call url");
