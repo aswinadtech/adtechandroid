@@ -23,7 +23,7 @@ import twc.Regression.utils.DeleteFiles;
 public class regressionTestCases extends Drivers {
 
 	// video ad call custum parameters
-	@Test(priority = 1)
+	/*@Test(priority = 1)
 	@Title("Verify custom parameter cmsid")
 	public void C344257_Verify_Video_Url_Parameter_cmsid() throws Exception {
 		System.out.println("================= Custom Parameter Cmsid Verfication Started =========================");
@@ -77,7 +77,7 @@ public class regressionTestCases extends Drivers {
 		System.out.println("================= Verify Content URL for video call Started =========================");
 		Custom_Parameters_Verification.verify_video_request("content_url");
 		System.out.println("================= Verify Content URL for video call  End =========================");
-	}
+	}*/
 
 	// Not null
 	@Test(priority = 21)
@@ -95,7 +95,6 @@ public class regressionTestCases extends Drivers {
 		Custom_Parameters_Verification.parameters_Verification("aid");
 		System.out.println("================= Custom Parameter Aid Verfication End =========================");
 	}
-	
 	/*@Test(priority = 22)
 	@Title("Verify custom parameter env")
 	public void C333244_Verify_cust_param_env() throws Exception {
@@ -129,7 +128,7 @@ public class regressionTestCases extends Drivers {
 		System.out.println("================= Custom Parameter Rmid Verfication End =========================");
 	}*/
 
-	@Test(priority = 27)
+@Test(priority = 27)
 	@Title("Verify custom parameter ver")
 	public void C333219_Verify_cust_param_ver() throws Exception {
 		System.out.println("================= Custom Parameter Ver Verfication Started =========================");
@@ -153,7 +152,7 @@ public class regressionTestCases extends Drivers {
 	 System.out.println("================= Custom Parameter G Verfication End =========================" );
 	 }*/
 
-	@Test(priority = 31)
+@Test(priority = 31)
 	@Title("Verify custom parameter dt")
 	public void C333213_Verify_cust_param_dt_day1_adCall() throws Exception {
 		System.out.println("================= Custom Parameter dt Verfication Started =========================");
@@ -748,56 +747,62 @@ public void  C333207_Verify_cust_param_hmid() throws Exception{
 	 */
 
 	
-	@Test(priority = 400, enabled = true)  
+	@Test(priority =400, enabled = true)  
 	  @Title("Verifying Privacy Card is present on the screen") public void
 	  Smoke_Test_Verify_PrivacyCard_onScreen() throws Exception {	  
 	 System.out. println("=================Verifying Privacy Card is present on the screen testcase started =========================" ); 
 	 AppiumFunctions. Kill_Launch_App();
 	//  AppFunctions. Kill_Launch_App();
-	  Thread.sleep(10000);	  
-	  Functions.Verify_Privacy_Card_onScreen();	  
+	  Thread.sleep(40000);	  
+	  AppiumFunctions.SwipeUp_Counter_privacy(25);
+	  //Functions.Verify_Privacy_Card_onScreen();	  
 	  System.out. println("================= Verifying Privacy Card is present on the screen testcase End =========================" );
 	  }
 	  
-	  @Test(priority = 401, enabled = true,dependsOnMethods={"Smoke_Test_Verify_PrivacyCard_onScreen"})	  
+	  @Test(priority = 401, enabled = true)	  
 	  @Title("Selecting the  Optout mode in the privacy card") public void
 	  Smoke_Test_Selecting_Opt_out_mode_scenario() throws Exception {	  
 	 System.out. println("=================Slecting Opt out mode scenario in privacy card testcase started =========================" );
-	  Thread.sleep(10000); 
+	  Thread.sleep(20000); 
 	  Functions.selecting_opt_out_mode(); 
 	  System.out.println("kill launch the app for two times");
 	  AppiumFunctions.Kill_Launch_App(); 
 	  CharlesFunctions.ClearSessions();
+	  Thread.sleep(30000); 
 	   AppiumFunctions.Kill_Launch_App();  
 	   CharlesFunctions.ClearSessions();
 	  System.out.println("================= Slecting Optout mode scenario in privacy card  testcase End =========================");	  
 	  }
 	  
-	  @Test(priority = 402, enabled = true)	  
-	  @Title("Verifying video call when user selecting Optoutmode scenario in privacy card") 
-	  public void Smoke_Test__Smoke_Test_Verifying_videoadcall_Optoutmode_scenario() throws   Exception {
-	System.out. println("=================Verifying video Feed ad call when user selecting Optoutmode scenario in privacy card started =========================" );
-	  logStep("Verifying video call when user selecting Optoutmode scenario in privacy card"); 
-	  CharlesFunctions.ClearSessions();
-	  CharlesFunctions.ClearSessions();
-	  CharlesFunctions.startSessionBrowserData(); 
-	   AppiumFunctions.Kill_Launch_App();  
-	  Functions.SwipeUp_Counter_video_maps_feedcards(10);
-	  CharlesFunctions.ExportSession();
-	  Functions.Verify_video_ad_call_Optoutmode(); 
-	  System.out.println("================= Verifying video ad call when user selecting Optoutmode scenario in privacy card End =========================" );  
-	  }
-	  
-	  @Test(priority = 403, enabled = true)
+	  @Test(priority = 402, enabled = true)
 	  @Title("Verifying feed_1 ad call when user selecting Optoutmode scenario in privacy card") 
 	  public void Smoke_Test_Verifying_Feedadcall_Optoutmode_scenario() throws   Exception {
 	  System.out. println("=================Verifying Feed_1 ad call when user selecting Optoutmode scenario in privacy card started =========================" );
 	  logStep("Verifying feed_1 ad call when user selecting Optoutmode scenario in privacy card");
+	  CharlesFunctions.ClearSessions();
+	  CharlesFunctions.ClearSessions();
+	  CharlesFunctions.startSessionBrowserData(); 
+	   AppiumFunctions.Kill_Launch_App();  
+		  Thread.sleep(30000); 
+		  AppiumFunctions.SwipeUp_Counter_videos_maps(20);
+	//  Functions.SwipeUp_Counter_video_maps_feedcards(10);
+	  CharlesFunctions.ExportSession();
 	  Functions.verifying_feedcalls(1);
 	  System.out. println("================= Verifying Feed_1 ad call when user selecting Optoutmode scenario in privacy card End =========================" ); 
 	  }
 	  
-	  @Test(priority = 404, enabled = true)	  
+	  /*@Test(priority = 403, enabled = true)	  
+	  @Title("Verifying video call when user selecting Optoutmode scenario in privacy card") 
+	  public void Smoke_Test__Smoke_Test_Verifying_videoadcall_Optoutmode_scenario() throws   Exception {
+	System.out. println("=================Verifying video Feed ad call when user selecting Optoutmode scenario in privacy card started =========================" );
+	  logStep("Verifying video call when user selecting Optoutmode scenario in privacy card"); 	
+	  Functions.Verify_video_ad_call_Optoutmode(); 
+	  System.out.println("================= Verifying video ad call when user selecting Optoutmode scenario in privacy card End =========================" );  
+	  }*/
+	  
+
+	  
+	  @Test(priority =404, enabled = true)	  
 	  @Title("Verifying  maps detail page ad call when user selecting Optoutmode scenario in privacy card" )
 	  public void Smoke_Test_Verifying_Radar_Maps_detailpageadcall_Optoutmode_scenario()  throws Exception {
 	   logStep("Verifying   maps detail page ad call when user selecting Optoutmode scenario in privacy card" );
@@ -844,7 +849,7 @@ public void  C333207_Verify_cust_param_hmid() throws Exception{
 	  System.out.println("================= Verifying amazon prerol slot id's when user selecting Optoutmode scenario in privacy card End =========================");  
 	  }
 	  
-	  @Test(priority = 409, enabled = true)  
+	  @Test(priority =409, enabled = true)  
 	  @Title("Verifying home screen hourly ad call  when user selecting Optoutmode scenario in privacy card" ) 
 	  public void  Smoke_Test__Verifying_homescreenhourly_adCalls_Optoutmode_scenario() throws Exception {
    System.out.println("=================Verifying home screen hourly  ad call when user selecting Optoutmode scenario in privacy card started =========================" );
@@ -902,14 +907,14 @@ public void  C333207_Verify_cust_param_hmid() throws Exception{
 	  System.out. println("================= Verifying SOD CUST_PARAM value for  detailed Feed ad call  when user selecting Optoutmode scenario in privacy card End =========================" );
 	  }
 	  
-	  @Test(priority = 415, enabled = true)	  
+	 /* @Test(priority = 415, enabled = true)	  
 	  @Title("Verifying SOD Cust param value for video call when user selecting Optoutmode scenario in privacy card" ) 
 	  public void Smoke_Test_Verifying_SOD_Cust_Param_videoad_Optoutmode_scenario() throws Exception {
 	  logStep("Verifying SOD Cust param value for video call when user selecting Optoutmode scenario in privacy card" ); 
 	  System.out. println("================= Verifying SOD CUST_PARAM value for video ad call  when user selecting Optoutmode scenario in privacy card started =========================" );
 	  Functions.validate_SOD_Cust_param_video_Optoutmode(); 
 	  System.out.println("================= Verifying SOD CUST_PARAM value for video ad call  when user selecting Optoutmode scenario in privacy card End ========================="); 
-	  }
+	  }*/
 	  
 	  @Test(priority = 416, enabled = true)  
 	  @Title("Verifying RDP  value for feed_1 call when user selecting Optoutmode scenario in privacy card" ) 
@@ -949,26 +954,27 @@ public void  C333207_Verify_cust_param_hmid() throws Exception{
 	  System.out.println("================= Verifying RDP value for detailed feed ad call when user selecting Optoutmode scenario in privacy card End =========================");
 	  }
 	  
-	  @Test(priority = 420, enabled = true)	  
+	/*  @Test(priority = 420, enabled = true)	  
 	  @Title("Verifying RDP  value forvideo  ad call when user selecting Optoutmode scenario in privacy card" ) 
 	  public void Smoke_Test_Verifying_RDP_value_video_adcall_Optoutmode_scenario() throws Exception {
 	  logStep("Verifying RDP  value forvideo  ad call when user selecting Optoutmode scenario in privacy card" );  
 	  System.out. println("================= Verifying RDP value for video  ad call  when user selecting Optoutmode scenario in privacy card started =========================");
 	  Functions.validate_RDP_video_ad_Optoutmode();
 	  System.out. println("================= Verifying RDP value for video ad call when user selecting Optoutmode scenario in privacy card End =========================");
-	  }
+	  }*/
 	  
 	
 	////////optinmode////////
 	  
-	  @Test(priority = 450, enabled = true)	  
+	  @Test(priority = 440, enabled = true)	  
 	  @Title("Selecting the  Optin mode in the privacy card") public void
 	  Smoke_Test_Selecting_Optin_mode_scenario() throws Exception {
 	  logStep("Selecting the  Optin mode in the privacy card");
       System.out. println("=================Slecting Optin mode scenario in privacy card testcase started =========================");
-	    AppiumFunctions.Kill_Launch_App(); 
-	    Thread.sleep(10000);
-	  Functions.Verify_Privacy_Card_onScreen(); 
+ 	 AppiumFunctions. Kill_Launch_App();
+ 	//  AppFunctions. Kill_Launch_App();
+ 	  Thread.sleep(40000);	  
+ 	  AppiumFunctions.SwipeUp_Counter_privacy(25);
 	  Thread.sleep(10000); 
 	  Functions.selecting_opt_in_mode();
 	  AppiumFunctions.Kill_Launch_App();
@@ -980,33 +986,35 @@ public void  C333207_Verify_cust_param_hmid() throws Exception{
 	  
 
 	  
-	  @Test(priority = 451, enabled = true)  
-	  @Title("Verifying video ad call when user selecting Optin mode scenario in privacy card" ) 
-	  public void  Smoke_Test__Smoke_Test_Verifying_videoadcall_Optin_mode_scenario() throws Exception {
-	  logStep("Verifying video call when user selecting Optin mode scenario in privacy card" ); 
-	  System.out.println("=================Verifying video  ad call when user selecting Optin mode scenario in privacy card started =========================");
+	  @Test(priority = 441, enabled = true)
+	  @Title("Verifying feed_1 ad call when user selecting Optin mode scenario in privacy card" )
+	  public void Smoke_Test_Verifying_Feed_1_adcall_Optin_mode_scenario() throws Exception {  
+	  logStep("Verifying feed_1 ad call when user selecting Optin mode scenario in privacy card"); 
+	  System.out.println("=================Verifying feed1 ad call when user selecting Optin mode scenario in privacy card started =========================");
 	  CharlesFunctions.ClearSessions();
 	  CharlesFunctions.ClearSessions();
 	  CharlesFunctions.startSessionBrowserData(); 
 	  AppiumFunctions.Kill_Launch_App();	  
 	  Thread.sleep(10000);
-	  Functions.SwipeUp_Counter_video_maps_feedcards(10);
+	  AppiumFunctions.SwipeUp_Counter_videos_maps(20);
 	  CharlesFunctions.ExportSession();
-	  Functions.Verify_video_ad_call_Optoutmode(); 
-	  System.out. println("================= Verifying video ad call when user selecting Optin mode scenario in privacy card End =========================" );	  
-	  }
-	  
-	  @Test(priority = 452, enabled = true)
-	  @Title("Verifying feed_1 ad call when user selecting Optin mode scenario in privacy card" )
-	  public void Smoke_Test_Verifying_Feed_1_adcall_Optin_mode_scenario() throws Exception {  
-	  logStep("Verifying feed_1 ad call when user selecting Optin mode scenario in privacy card"); 
-	  System.out.println("=================Verifying feed1 ad call when user selecting Optin mode scenario in privacy card started =========================");
 	  Functions.verifying_feedcalls(1); 
 	  System.out.println("================= Verifying feed1 ad call when user selecting Optin mode scenario in privacy card End =========================" ); 
 	  }
 	  
+	/*  @Test(priority = 442, enabled = true)  
+	  @Title("Verifying video ad call when user selecting Optin mode scenario in privacy card" ) 
+	  public void  Smoke_Test__Smoke_Test_Verifying_videoadcall_Optin_mode_scenario() throws Exception {
+	  logStep("Verifying video call when user selecting Optin mode scenario in privacy card" ); 
+	  System.out.println("=================Verifying video  ad call when user selecting Optin mode scenario in privacy card started =========================");
+	  Functions.Verify_video_ad_call_Optoutmode(); 
+	  System.out. println("================= Verifying video ad call when user selecting Optin mode scenario in privacy card End =========================" );	  
+	  }*/
 	  
-	  @Test(priority = 453, enabled = true)	  
+	
+	  
+	  
+	  @Test(priority = 443, enabled = true)	  
 	  @Title("Verifying maps details page ad call when user selecting Optin mode scenario in privacy card" ) 
 	  public void Smoke_Test_Verifying_maps_detailpageadcall_Optin_mode_scenario() throws Exception {
 	  logStep("Verifying details page ad call when user selecting Optin mode scenario in privacy card"  );
@@ -1015,7 +1023,7 @@ public void  C333207_Verify_cust_param_hmid() throws Exception{
 	  System.out. println("================= Verifying detail page  Feed ad call when user selecting Optin mode scenario in privacy card End ========================="  );
 	  }
 	  
-	  @Test(priority = 454, enabled = true)	  
+	  @Test(priority = 444, enabled = true)	  
 	  @Title("Verifying BCP  call when user selecting Optin mode scenario in privacy card" )
 	  public void Smoke_Test__Verifying_Bcp_apicall_Opti_mode_scenario() throws  Exception { 
 	  logStep("Verifying BCP  call when user selecting Optin mode scenario in privacy card" ); 
@@ -1025,7 +1033,7 @@ public void  C333207_Verify_cust_param_hmid() throws Exception{
 	  
 	  }
 	  
-	  @Test(priority = 455, enabled = true)	  
+	  @Test(priority = 445, enabled = true)	  
 	  @Title("Verifying adcrw api call when user selecting Optin mode scenario in privacy card") 
 	  public void Smoke_Test__Verifying_adcrw_apicall_Optin_mode_scenario() throws Exception {
 	  logStep("Verifying adcrw api call when user selecting Optin mode scenario in privacy card" );	  
@@ -1114,14 +1122,14 @@ public void  C333207_Verify_cust_param_hmid() throws Exception{
 	  System.out.println("================= Verifying SOD CUST_PARAM value for  maps detailed Feed ad call  when user selecting Optin mode scenario in privacy card End =========================" );
 	  }
 	  
-	  @Test(priority = 464, enabled = true)	  
+	 /* @Test(priority = 464, enabled = true)	  
 	  @Title("Verifying SOD Cust param value for video ad call when user selecting Optin mode scenario in privacy card") 
 	  public void Smoke_Test_Verifying_SOD_Cust_Param_videoad_Optin_mode_scenario() throws Exception {
 	  logStep("Verifying SOD Cust param value for video ad call when user selecting Optin mode scenario in privacy card");
 	  System.out.println("================= Verifying SOD CUST_PARAM value for video ad call  when user selecting Optin mode scenario in privacy card started =========================" );
 	  Functions.validate_SOD_Cust_param_video_Optinmode();
 	  System.out.println("================= Verifying SOD CUST_PARAM value for video ad call  when user selecting Optin mode scenario in privacy card End =========================" );
-	  }
+	  }*/
 	  
 	  @Test(priority = 465, enabled = true)	  
 	  @Title("Verifying RDP  value for home screen  marquee call when user selecting Optin mode scenario in privacy card") 
@@ -1133,7 +1141,7 @@ public void  C333207_Verify_cust_param_hmid() throws Exception{
 	  System.out. println("================= Verifying RDP value for homescreen marquee call when user selecting Optin mode scenario in privacy card End =========================");
     }
 	  
-	  @Test(priority = 466, enabled = true)	  
+	  @Test(priority = 465, enabled = true)	  
 	  @Title("Verifying RDP  value for home screen  hourly call when user selecting Optin mode scenario in privacy card") 
 	  public void
 	  Smoke_Test_Verifying_RDP_value_homescreenhourly_Optin_mode_scenario() throws  Exception {
@@ -1142,7 +1150,7 @@ public void  C333207_Verify_cust_param_hmid() throws Exception{
 	  Functions.validate_RDP_homescreenhourly_Optinmode();
 	  System.out. println("================= Verifying RDP value for homescreen hourly call when user selecting Optin mode scenario in privacy card End =========================");
     }
-	  @Test(priority = 467, enabled = true)	  
+	  @Test(priority = 466, enabled = true)	  
 	  @Title("Verifying RDP  value for feed_1 ad call when user selecting Optin mode scenario in privacy card")
 	  public void Smoke_Test_Verifying_RDP_value_feed_1ad_Optin_mode_scenario()  throws Exception {	
 	  logStep("Verifying RDP  value for feed_1 ad call when user selecting Optin mode scenario in privacy card" );  
@@ -1152,7 +1160,7 @@ public void  C333207_Verify_cust_param_hmid() throws Exception{
 	  }
 	  
 	  
-	  @Test(priority = 468, enabled = true)
+	  @Test(priority = 467, enabled = true)
 	  @Title("Verifying RDP value for maps detailed page ad call when user selecting Optin mode scenario in privacy card" ) 
 	  public void Smoke_Test_Verifying_RDP_value_mapsdetailed_feedad_Optinmode_scenario()  throws Exception {
 	  logStep("Verifying RDP value for maps detailed page ad call when user selecting Optin mode scenario in privacy card" ); 
@@ -1161,14 +1169,14 @@ public void  C333207_Verify_cust_param_hmid() throws Exception{
 	   System.out. println("================= Verifying RDP value for maps detailes ad call when user selecting Optin mode scenario in privacy card End =========================" );
 	   }
 	  
-	  @Test(priority = 469, enabled = true)  
+	/*  @Test(priority = 468, enabled = true)  
 	  @Title("Verifying RDP value for video  ad call  url when user selecting Optin mode scenario in privacy card" ) 
 	  public void Smoke_Test_Verifying_RDP_value_video_adcall_Optin_mode_scenario() throws  Exception {	  
 	 System.out. println("================= Verifying RDP value for video  ad call url  when user selecting Optin mode scenario in privacy card started =========================" );
 	  logStep("Verifying RDP  value for video  ad call url when user selecting Optin mode scenario in privacy card");
 	  Functions.validate_RDP_video_ad_Optinmode(); 
 	  System.out. println("================= Verifying RDP value for video ad call url when user selecting Optin mode scenario in privacy card End =========================" );
-	  }
+	  }*/
 	  
 	
 	
@@ -1306,7 +1314,7 @@ public void  C333207_Verify_cust_param_hmid() throws Exception{
 	  Functions.tapping();
 	  AppiumFunctions.Kill_Launch_App(); 
 	  Thread.sleep(15000);
-	  Thread.sleep(3000);
+	  Thread.sleep(15000);
 	  //Functions.enable_Alert_Notifications("Significant weather forecast");
 		Functions.enableSignificantweatherforecast_Notifications();
 	  Functions.clickAlerts(); 
@@ -1448,6 +1456,7 @@ public void Before_Test() throws Exception {
 		// CharlesFunctions.startSessionBrowserData();
 		// AppiumFunctions.LaunchApp();
 AppiumFunctions.LaunchAppWithFullReset();
+AppiumFunctions.Kill_Launch_App();
 Thread.sleep(15000);
 AppiumFunctions.gettingApkVersion();
 Thread.sleep(5000);
