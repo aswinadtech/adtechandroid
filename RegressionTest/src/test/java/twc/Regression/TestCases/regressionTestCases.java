@@ -1190,7 +1190,148 @@ public void  C333207_Verify_cust_param_hmid() throws Exception{
 	
 	
 	
+	  
+	  
+	  ////Interstail ads/////
+	  
+	  @Test(priority =600, enabled = true)
+	  @Title("Verifying Hourly  details Interstal ads") 
+	  public void Smoke_Test_Verify_Hourlydetails_interstial_ads() throws Exception {
+	 System.out.println( "================= Verifying Hourly details Interstal ads test case  Started =========================");
+	 //Functions.settheTimer(); // Functions.enable_QA_Usergroup(); //
+	//  AppiumFunctions.Kill_Launch_App(); //AppiumFunctions.Kill_launch();
+	  Thread.sleep(20000);
+	 Ad.resetApp();
+	  Thread.sleep(40000);
+	  AppiumFunctions.clickONNext();
+	  AppiumFunctions. ClickonIUnderstand();
+	  AppiumFunctions.clickOnAllow();
+	  CharlesFunctions.ClearSessions();
+	  CharlesFunctions.startSessionBrowserData();
+	  Thread.sleep(250000);
+	  AppiumFunctions.click_hourly_element();
+	  Functions.wiatfor5secindetails();
+	  CharlesFunctions.ExportSessions();
+	  Functions.Verify_hourly_detailpage_interstitial_adcall();
+	  Functions.click_home_element();
+	//  Ad.runAppInBackground(10);
+	  Functions.handleInterstailads();
+	  Functions.closeInterstailads();
+	/*  Functions.settheTimer();
+	  CharlesFunctions.ClearSessions();
+	  CharlesFunctions.startSessionBrowserData();
+	  AppiumFunctions.click_hourly_element();
+	  Functions.wiatfor5secindetails();
+	  CharlesFunctions.ExportSessions();
+	  Functions.Verify_hourly_detailpage_interstitial_adcall1();
+	  Functions.click_home_element(); 
+	  Functions.handleInterstailads();
+	 Functions.closeInterstailads();*/
+	  
+	  }
+	  
+	  @Title("Verifying daily  details Interstal ads")
+	  
+	  @Test(priority = 601, enabled = true) public void
+	  Smoke_Test_Verify_daily_details_interstial_ads() throws Exception {
+	  System.out.
+	  println("================= Verifying daily details Interstal ads test case  Started ========================="
+	  );
+	  Ad.resetApp();
+	  Thread.sleep(40000);
+	  AppiumFunctions.clickONNext();
+	  AppiumFunctions. ClickonIUnderstand();
+	  AppiumFunctions.clickOnAllow();
+	  CharlesFunctions.ClearSessions();
+	  CharlesFunctions.startSessionBrowserData();
+	  Thread.sleep(25000);
+	  AppiumFunctions.click_daily_element();
+	  Functions.wiatfor5secindetails(); 
+	  CharlesFunctions.ExportSessions();
+	  Functions.Verify_daily_detailpage_interstitial_adcall();
+	  Functions.click_home_element();
+	//  Ad.runAppInBackground(10);
+	  Functions.handleInterstailads();
+	  Functions.closeInterstailads();
+	 /* Functions.settheTimer();
+	  CharlesFunctions.ClearSessions(); 
+	  CharlesFunctions.startSessionBrowserData();
+	  AppiumFunctions.click_daily_element();
+	  Functions.wiatfor5secindetails();
+	  CharlesFunctions.ExportSessions();
+	  Functions.Verify_daily_detailpage_interstitial_adcall1();
+	  Functions.click_home_element();
+	  Functions.handleInterstailads();
+	  Functions.closeInterstailads();*/
+	  System.out.println("=================Verifying daily details Interstal ads test case  End =========================");
+	  }
+	  
+	  
+	  @Title("Verifying maps details Interstal ads")
+	  @Test(priority = 602, enabled = true) public void
+	  Smoke_Test_Verify_radar_details_interstial_ads() throws Exception {
+	 System.out.println("================= Verifying maps details Interstal ads test case  Started =========================");
+	 Ad.resetApp();
+	  Thread.sleep(40000);
+	  AppiumFunctions.clickONNext();
+	  AppiumFunctions. ClickonIUnderstand();
+	  AppiumFunctions.clickOnAllow();
+	  CharlesFunctions.ClearSessions();
+	  CharlesFunctions.startSessionBrowserData();
+	  Thread.sleep(25000);
+	  AppiumFunctions.SwipeUp_Counter_videos_maps(20);
+	  Functions.wiatfor5secindetails();
+	  CharlesFunctions.ExportSessions();
+	  Functions.Verify_maps_detailpage_interstitial_adcall();
+	//  Functions.click_home_element();
+	//  Ad.runAppInBackground(10);
+	  Functions.handleInterstailads();
+	  Functions.closeInterstailads();
+	/*  Functions.settheTimer();
+	  CharlesFunctions.ClearSessions();
+	  CharlesFunctions.startSessionBrowserData();
+	  AppiumFunctions.SwipeUp_Counter_videos_maps(20);
+	  CharlesFunctions.ExportSessions();
+	  Functions.Verify_maps_detailpage_interstitial_adcall1();
+	  Functions.click_home_element(); 
+	  Functions.handleInterstailads();
+	  Functions.closeInterstailads();	 */ 
 	
+	  System.out. println("=================Verifying maps details Interstal ads test case  End =========================" );
+	  }
+	  
+	  @Title("Verifying video details Interstal ads")  
+	  @Test(priority = 603, enabled = true) 
+	  public void Smoke_Test_Verify_video_details_interstial_ads() throws Exception {
+	 System.out.println("================= Verifying video details Interstal ads test case  Started =========================" );  
+	 Ad.resetApp();
+	 Thread.sleep(40000);
+	  AppiumFunctions.clickONNext();
+	  AppiumFunctions. ClickonIUnderstand();
+	  AppiumFunctions.clickOnAllow();
+	  CharlesFunctions.ClearSessions();
+	  CharlesFunctions.startSessionBrowserData();
+	  Thread.sleep(25000);
+	  Functions.click_video_interstitial();
+	  Functions.wiatfor5secindetails();
+	  Functions.Verify_video_detailpage_interstitial_adcall();
+	  Functions.clickBackButtonAlerts(); 
+	 // Ad.runAppInBackground(10);
+	  Functions.handleInterstailads();
+	  Functions.closeInterstailads();
+	  /*Functions.settheTimer();
+	  CharlesFunctions.ClearSessions(); 
+	  CharlesFunctions.startSessionBrowserData();
+	  AppiumFunctions.SwipeUp_Counter(15);
+	  Functions.wiatfor5secindetails();
+	  CharlesFunctions.ExportSessions();
+	  Functions.Verify_video_detailpage_interstitial_adcall1();
+	  Functions.clickBackButtonAlerts(); 
+	  Functions.handleInterstailads();
+	  Functions.closeInterstailads(); */
+	  System.out.println("=================Verifying video details Interstal ads test case  End =========================" );
+	  }
+	 
 	
 	
 	
@@ -1221,6 +1362,7 @@ public void  C333207_Verify_cust_param_hmid() throws Exception{
 	  CharlesFunctions.ClearSessions();
 	  CharlesFunctions.startSessionBrowserData();
 		  Functions.clickOnAlertNotificatons("Breaking News");
+		  Thread.sleep(10000);
 	//  Functions.clickNotification("Breaking");
 	  CharlesFunctions.ExportSessions();
 	  Functions.finding_BreakingNews_iu_value();
@@ -1316,7 +1458,7 @@ public void  C333207_Verify_cust_param_hmid() throws Exception{
 	  Thread.sleep(15000);
 	  Thread.sleep(15000);
 	  //Functions.enable_Alert_Notifications("Significant weather forecast");
-		//Functions.enableSignificantweatherforecast_Notifications();
+		Functions.enableSignificantweatherforecast_Notifications();
 	  Functions.clickAlerts(); 
 	  //Functions.click_thunderstorm();
 	// Functions.clickOnRequiredPushNotification("thunderstorm alert");
@@ -1466,6 +1608,7 @@ Thread.sleep(15000);
 AppiumFunctions.click_hourly_element();
  Thread.sleep(5000);
  AppiumFunctions.click_daily_element();
+ AppiumFunctions.closeInterstailads();
 CharlesFunctions.ExportSession();
 		// CustomParamFunctions.get_fhic_floc_value();      
 		//AppiumFunctions.SwipeUp_Counter(15);	
@@ -1497,7 +1640,7 @@ CharlesFunctions.ExportSession();
 	}
 
 	//@AfterTest
-	//public void After_Test() throws Exception {
+//	public void After_Test() throws Exception {
 		// validate_CustomParameter.sf.assertAll();
 		// DeleteFiles.deleteFiles(new Fi
 		// le("/Users/monocept/Documents/workspace_luna/RegressionTest/ExpectedMapLocal/"));
@@ -1506,7 +1649,8 @@ CharlesFunctions.ExportSession();
 		// File("/Users/monocept/Documents/workspace_luna/RegressionTest/ExpectedMapLocal/"));
 		// DeleteFiles.delete(new
 		// File("/Users/monocept/Documents/workspace_luna/RegressionTest/ExpectedMapLocal/"));
-//		CharlesFunctions.BrowserClosed();
-//		CharlesFunctions.charlesClose();
+ 	//CharlesFunctions.BrowserClosed();
+	//CharlesFunctions.charlesClose();
+	//Ad.quit();
 	//}
 }
