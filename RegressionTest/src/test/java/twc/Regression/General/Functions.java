@@ -2301,8 +2301,15 @@ public static void clickOnAlertNotificatons( String pushNotifications) throws Ex
 System.out.println("Clicking push alert notification alert on device");
 logStep("Clicking push alert notification alert on device");
 Thread.sleep(5000);
-	 List<WebElement> all=Ad.findElementsById("android:id/title");
+List<WebElement> all;
+try {
+	  all=Ad.findElementsById("android:id/title");
 	Thread.sleep(5000);
+}
+catch(Exception e) {
+ all=Ad.findElementsById("android:id/inbox_text0");
+		Thread.sleep(5000);
+}
 	 for(WebElement Airlock:all) {
 		if( Airlock.getAttribute("text").equalsIgnoreCase(pushNotifications)) {
 			System.out.println(pushNotifications +" alert is generated on the screen");
@@ -2486,8 +2493,8 @@ public static void  Verifyheavyrainfallalert() throws Exception{
 			String Alert=expectedValues.replaceAll("%3D", "=");
 			
 			if(expectedValues.contains("heavyrain")) {
-				System.out.println("rain/snow push notification alert cust param value is "     +Alert);
-				logStep("rain/snow push notification alert cust param value is "     +Alert);
+				System.out.println("heavy rain fall push notification alert cust param value is "     +Alert);
+				logStep("heavy rain fall push notification alert cust param value is "     +Alert);
 			}
 			else {
 				System.out.println("heavy rain fall push notification alert cust param value is "      + Alert);
@@ -3815,6 +3822,240 @@ public static void validate_RDP_detailed_feed_Optinmode() throws Exception {
 		}
 }
 
+public static void wiatfor5secindetails() throws Exception {
+	System.out.println("wait for 5 sec in details page");
+	Thread.sleep(20000);
+}
+
+public static Map<String, String> Verify_hourly_detailpage_interstitial_adcall() throws Exception{
+
+	Map<String , String> wfxtriggers_values = new HashMap<String, String>();
+	String wxtgValues="";
+	DeviceStatus device_status = new DeviceStatus();
+	int Cap = device_status.Device_Status();
+	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();	
+	System.out.println("checking for hourly  details interstitial ad call");
+	Drivers.logStep("checking for hourly  details interstitial ad call");
+	if(sb.contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Finterstitial%2Fhourly")) {
+	System.out.println("iu=/7646/app_android_us/db_display/interstitial/hourly call was trigred");
+	Drivers.logStep("iu=/7646/app_android_us/db_display/interstitial/hourly call was trigred");
+	System.out.println("continue further validations");
+	logStep("continue further validations");
+}
+if(!sb.contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Finterstitial%2Fhourly")) {
+System.out.println("iu=/7646/app_android_us/db_display/interstitial/hourlycall was not trigred");
+Drivers.logStep("iu=/7646/app_android_us/db_display/interstitial/hourly call was not trigred");
+Assert.fail("iu=/7646/app_android_us/db_display/interstitial/hourly call was not trigred");
+System.out.println("no need for further validations");
+}
+
+return wfxtriggers_values;
+}
+public static void click_home_element() throws Exception
+{
+	System.out.println("clicking the homescreen");
+	logStep("clicking the homescreen");
+try {
+	List<WebElement> ele=Ad.findElementsById("com.weather.Weather:id/icon");
+	ele.get(2).click();
+	Thread.sleep(2000);
+//Ad.findElementsById("com.weather.Weather:id/icon").get(2).click();
+}
+catch(Exception e) {
+	Ad.findElementByAccessibilityId("Personalized home screen").click();
+	Thread.sleep(2000);
+}
+}
+public static void handleInterstailads() throws Exception {
+	System.out.println("checking interstitial ad presented or not on the device");
+	try {
+	if(Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[1]/android.view.View/android.view.View/android.view.View/android.view.View[8]").isDisplayed())
+	{
+		System.out.println("Intersitial ad was dispalyed on the screen");
+	}
+		
+	}
+	catch(Exception e1) {
+		try {
+			if(Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[1]/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View[6]").isDisplayed())
+			{
+				System.out.println("Intersitial ad was dispalyed on the screen");
+			
+			}}
+		catch(Exception e2) {
+			try {
+				if(Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[1]/android.view.View/android.view.View/android.view.View/android.view.View[3]/android.view.View[3]/android.view.View/android.view.View[5]/android.view.View").isDisplayed())
+				{
+					System.out.println("Intersitial ad was dispalyed on the screen");
+				}}
+			catch(Exception e3) {
+				try {
+					if(Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View[5]/android.view.View").isDisplayed())
+					{
+						System.out.println("Intersitial ad was dispalyed on the screen");
+					}}
+				catch(Exception e5) {
+					try {
+						if(Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View[5]/android.view.View").isDisplayed())
+						{
+							System.out.println("Intersitial ad was dispalyed on the screen");
+						}}
+					catch(Exception e8) {
+						try {
+							if(Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[1]/android.view.View/android.view.View/android.view.View/android.view.View[3]/android.view.View[2]/android.view.View[2]/android.view.View[4]/android.view.View").isDisplayed())
+							{
+								System.out.println("Intersitial ad was dispalyed on the screen");
+							}}
+						catch(Exception e9) {
+					System.out.println("Intersitial ad was not dispalyed on the screen");
+					System.out.println("no need to go same details page and check interstitial ad call");
+					Assert.fail("Intersitial ad was not dispalyed on the screen");
+						}
+					}
+				}
+			}
+		}
+	}
+	
+
+	
+}
+public static void closeInterstailads() throws Exception {
+	
+	  System.out.println("close the interstial ad on screen");
+		try {
+			if(Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[1]/android.view.View/android.view.View/android.view.View/android.view.View[8]").isDisplayed())
+			{
+				Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[1]/android.view.View/android.view.View/android.view.View/android.view.View[8]").click();
+			}
+			}
+			catch(Exception e1) {
+				try {
+					if(Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[1]/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View[6]").isDisplayed())
+					{
+						Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[1]/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View[6]").click();
+					}}
+				catch(Exception e2) {
+					try {
+						if(Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[1]/android.view.View/android.view.View/android.view.View/android.view.View[3]/android.view.View[3]/android.view.View/android.view.View[5]/android.view.View").isDisplayed())
+						{
+							Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[1]/android.view.View/android.view.View/android.view.View/android.view.View[3]/android.view.View[3]/android.view.View/android.view.View[5]/android.view.View").click();
+						}}
+					catch(Exception e3) {
+						try {
+							if(Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View[5]/android.view.View").isDisplayed())
+							{
+								Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View/android.view.View/android.view.View[2]/android.view.View[5]/android.view.View").click();
+							}}
+						catch(Exception e5) {
+							try {
+								if(Ad.findElementByAccessibilityId("Interstitial close button").isDisplayed())
+								{
+									Ad.findElementByAccessibilityId("Interstitial close button").click();
+								}}
+							catch(Exception e6) {
+								try {
+									if(Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[1]/android.view.View/android.view.View/android.view.View/android.view.View[3]/android.view.View[2]/android.view.View[2]/android.view.View[4]/android.view.View").isDisplayed())
+									{
+										Ad.findElementByXPath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.RelativeLayout/android.widget.FrameLayout/android.webkit.WebView/android.webkit.WebView/android.view.View/android.view.View[1]/android.view.View/android.view.View/android.view.View/android.view.View[3]/android.view.View[2]/android.view.View[2]/android.view.View[4]/android.view.View").click();
+									}}
+								catch(Exception e9) {
+							System.out.println("Intersitial ad was not dispalyed on the screen");
+								}
+							}
+						}
+					}
+				
+				}
+				}
+
+	}
+
+public static void settheTimer() throws Exception {
+	logStep("current system time");
+	System.out.println("current system time");
+	long millis=System. currentTimeMillis();
+	java. util. Date date=new java. util. Date(millis);
+	//logStep(date);
+	System. out. println(date);
+	logStep("wait for 3 minutes for getting agian interstitial ad call");
+	System.out.println("wait for 3 minutes for getting again interstitial ad call");
+	Thread.sleep(180000);
+	logStep("completed the 3 minutes need to go same details");
+	System.out.println("completed the 3 minutes need to go same details");
+	long millis1=System. currentTimeMillis();
+	java. util. Date date1=new java. util. Date(millis1);
+	//logStep(date1);
+	System. out. println(date1);
+    logStep("current system time");
+	System.out.println("current system time");
+	logStep("current system time");
+}
+
+public static Map<String, String> Verify_daily_detailpage_interstitial_adcall() throws Exception{
+
+	Map<String , String> wfxtriggers_values = new HashMap<String, String>();
+	String wxtgValues="";
+	DeviceStatus device_status = new DeviceStatus();
+	int Cap = device_status.Device_Status();
+	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();	
+	if(sb.contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Finterstitial%2F10day")) {
+	System.out.println("iu=/7646/app_android_us/db_display/interstitial/10day call was trigred");
+	System.out.println("continue further validations");
+	logStep("continue further validations");
+}
+if(!sb.contains("%2F7646%2Fapp_android_us%2Fdb_display%2Finterstitial%2F10day")) {
+System.out.println("iu=/7646/app_android_us/db_display/interstitial/10day call was not trigred");
+System.out.println("no need to go further validations");
+logStep("no need for further validations");
+
+Assert.fail("iu=/7646/app_android_us/db_display/interstitial/10day call was not trigred");
+}
+return wfxtriggers_values;
+}
+public static Map<String, String> Verify_daily_detailpage_interstitial_adcall1() throws Exception{
+
+	Map<String , String> wfxtriggers_values = new HashMap<String, String>();
+	String wxtgValues="";
+	DeviceStatus device_status = new DeviceStatus();
+	int Cap = device_status.Device_Status();
+	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();	
+	if(sb.contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Finterstitial%2F10day")) {
+	System.out.println("/7646/app_android_us/db_display/interstitial/10day call was trigred");
+}
+if(!sb.contains("%2F7646%2Fapp_android_us%2Fdb_display%2Finterstitial%2F10day")) {
+System.out.println("/7646/app_android_us/db_display/interstitial/10day call was not trigred");
+Assert.fail("/7646/app_android_us/db_display/interstitial/10day call was not trigred");
+}
+return wfxtriggers_values;
+}
+public static Map<String, String> Verify_hourly_detailpage_interstitial_adcall1() throws Exception{
+
+	Map<String , String> wfxtriggers_values = new HashMap<String, String>();
+	String wxtgValues="";
+	DeviceStatus device_status = new DeviceStatus();
+	int Cap = device_status.Device_Status();
+	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();	
+	System.out.println("chekcking for hourly  details interstitial ad call");
+	Drivers.logStep("chekcking for hourly  details interstitial ad call");
+	if(sb.contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Finterstitial%2Fhourly")) {
+	System.out.println("/7646/app_android_us/db_display/interstitial/hourly call was trigred");
+	Drivers.logStep("/7646/app_android_us/db_display/interstitial/hourly call was trigred");
+
+}
+if(!sb.contains("%2F7646%2Fapp_android_us%2Fdb_display%2Finterstitial%2Fhourly")) {
+System.out.println("/7646/app_android_us/db_display/interstitial/hourly call was not trigred");
+Drivers.logStep("/7646/app_android_us/db_display/interstitial/hourly call was not trigred");
+Assert.fail("/7646/app_android_us/db_display/interstitial/hourly call was not trigred");
+
+}
+
+return wfxtriggers_values;
+}
 
 public static void validate_RDP_video_ad_Optinmode() throws Exception {
 	
@@ -3839,6 +4080,108 @@ public static void validate_RDP_video_ad_Optinmode() throws Exception {
 			
 		}
 }
+public static void Verify_maps_detailpage_interstitial_adcall() throws Exception{
+System.out.println("checking for maps details interstitial ads");
+	Map<String , String> wfxtriggers_values = new HashMap<String, String>();
+	String wxtgValues="";
+	DeviceStatus device_status = new DeviceStatus();
+	int Cap = device_status.Device_Status();
+	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();	
+	if(sb.contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Finterstitial%2Fmaps")) {
+	System.out.println("iu=/7646/app_android_us/db_display/interstitial/maps call was trigred");
+	logStep("iu=/7646/app_android_us/db_display/interstitial/maps call was trigred");
+	System.out.println("continue for further validations");
+	logStep("continue for further validations");
+	
+}
+if(!sb.contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Finterstitial%2Fmaps")) {
+System.out.println("iu=/7646/app_android_us/db_display/interstitial/maps call was not trigred");
+logStep("iu=/7646/app_android_us/db_display/interstitial/maps call was not trigred");
+System.out.println("no need to do further validations");
+logStep("no need to do further validations");
+Assert.fail("iu=/7646/app_android_us/db_display/interstitial/maps call was not trigred");
 
+}
 
+}
+
+public static void Verify_maps_detailpage_interstitial_adcall1() throws Exception{
+System.out.println("checking for maps details interstitial ads");
+	Map<String , String> wfxtriggers_values = new HashMap<String, String>();
+	String wxtgValues="";
+	DeviceStatus device_status = new DeviceStatus();
+	int Cap = device_status.Device_Status();
+	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();	
+	if(sb.contains("iu=%2F7646%2Fapp_android_us%2Fdb_display%2Finterstitial%2Fmaps")) {
+	System.out.println("/7646/app_android_us/db_display/interstitial/maps call was trigred");
+	logStep("/7646/app_android_us/db_display/interstitial/maps call was trigred");
+	
+	
+}
+if(!sb.contains("%2F7646%2Fapp_android_us%2Fdb_display%2Finterstitial%2Fmaps")) {
+System.out.println("/7646/app_android_us/db_display/interstitial/maps call was not trigred");
+Assert.fail("/7646/app_android_us/db_display/interstitial/maps call was not trigred");
+logStep("/7646/app_android_us/db_display/interstitial/maps call was not trigred");
+}
+
+}
+public static void Verify_video_detailpage_interstitial_adcall() throws Exception{
+    System.out.println("Checking for video interstitial ad call");
+    logStep("Checking for video interstitial ad call");
+	Map<String , String> wfxtriggers_values = new HashMap<String, String>();
+	String wxtgValues="";
+	DeviceStatus device_status = new DeviceStatus();
+	int Cap = device_status.Device_Status();
+	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
+	
+	//iu=%2F7646%2Fapp_android_us%2Fvideo
+	///7646/app_android_us/interstitial/video
+	if(sb.contains("iu=%2F7646%2Fapp_android_us%2Finterstitial%2Fvideo")) {
+	System.out.println("/7646/app_android_us/interstitial/video call was trigred");
+	logStep("/7646/app_android_us/interstitial/video call was trigred");
+	System.out.println("continue further validations");
+	logStep("continue further validations");
+	
+	
+}
+if(!sb.contains("=%2F7646%2Fapp_android_us%2Finterstitial%2Fvideo")) {
+System.out.println("/7646/app_android_us/interstitial/video call was not trigred");
+Assert.fail("/7646/app_android_us/interstitial/video call was not trigred");
+logStep("/7646/app_android_us/interstitial/video call was not trigred");
+System.out.println("no need for further validations");
+logStep("no need for further validations");
+}
+
+}
+public static void click_video_interstitial() throws Exception {
+	Ad.findElementByAccessibilityId("Isaias").click();
+	Thread.sleep(3000);
+}
+public static void Verify_video_detailpage_interstitial_adcall1() throws Exception{
+    System.out.println("Checking for video interstitial ad call");
+    logStep("Checking for video interstitial ad call");
+	Map<String , String> wfxtriggers_values = new HashMap<String, String>();
+	String wxtgValues="";
+	DeviceStatus device_status = new DeviceStatus();
+	int Cap = device_status.Device_Status();
+	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+	String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
+	
+	//iu=%2F7646%2Fapp_android_us%2Fvideo
+	///7646/app_android_us/interstitial/video
+	if(sb.contains("iu=%2F7646%2Fapp_android_us%2Finterstitial%2Fvideo")) {
+	System.out.println("iu=/7646/app_android_us/interstitial/video call was trigred");
+	logStep("iu=/7646/app_android_us/interstitial/video call was trigred");	
+}
+if(!sb.contains("iu=%2F7646%2Fapp_android_us%2Finterstitial%2Fvideo")) {
+System.out.println("iu=/7646/app_android_us/interstitial/video call was not trigred");
+logStep("iu=/7646/app_android_us/interstitial/video call was not trigred");
+Assert.fail("iu=/7646/app_android_us/interstitial/video call was not trigred");
+
+}
+
+}
 }
