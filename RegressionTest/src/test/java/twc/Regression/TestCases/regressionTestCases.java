@@ -786,6 +786,7 @@ public void  C333207_Verify_cust_param_hmid() throws Exception{
 		  Thread.sleep(30000); 
 		  AppiumFunctions.SwipeUp_Counter_videos_maps(20);
 	//  Functions.SwipeUp_Counter_video_maps_feedcards(10);
+		  
 	  CharlesFunctions.ExportSession();
 	  Functions.verifying_feedcalls(1);
 	  System.out. println("================= Verifying Feed_1 ad call when user selecting Optoutmode scenario in privacy card End =========================" ); 
@@ -1598,8 +1599,10 @@ public void Before_Test() throws Exception {
 		// CharlesFunctions.startSessionBrowserData();
 		// AppiumFunctions.LaunchApp();
 AppiumFunctions.LaunchAppWithFullReset();
+CharlesFunctions.ClearSessions();
+CharlesFunctions.startSessionBrowserData();
 AppiumFunctions.Kill_Launch_App();
-Thread.sleep(15000);
+Thread.sleep(30000);
 AppiumFunctions.gettingApkVersion();
 Thread.sleep(5000);
 //CustomParamFunctions.get_fhic_floc_value();    
