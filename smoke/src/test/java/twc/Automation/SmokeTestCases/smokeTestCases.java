@@ -783,7 +783,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 
 					 /* =======================================Daily details amazon aax slot id's test case Started======================================================================================*/
 					
-					@Test(priority = 51, enabled = true)
+					/*@Test(priority = 51, enabled = true)
 					@Title("Verifying amazon Slot Id for daily details day1 ad calll")
 					public void Smoke_Test_amazon_aax_Daily_details_Day1_adcall() throws Exception {
 						System.out
@@ -964,7 +964,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 					  Functions.gettingDayofWeekFromUI(3);
 						Functions.get_aaxcal_Daily();
 						System.out.println("================= Verifying amazon slot id for  daily details day15 adcall test case End =========================");
-					}
+					}*/
 					
 
 	
