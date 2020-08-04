@@ -1035,7 +1035,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 	  
 		/* =======================================amazon preroll   ad calls test cases started======================================================================================*/
 	  
-	@Test(priority = 310, enabled = true)
+	/*@Test(priority = 310, enabled = true)
 	@Title("Verifying amazon Slot Id for hourly details preroll ad call on killLaunch")
 	public void Smoke_Test_amazon_aax_Hourly_preroll_adcall_killLaunch() throws Exception {
 		System.out.println(
@@ -1141,7 +1141,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 		Functions.get_aaxcal_Daily();
 		System.out.println(
 				"================= Verify amazon aax Daily details preroll adcall End =========================");
-	}
+	}*/
 
 
 		/* =======================================amazon preroll  ad calls test cases End======================================================================================*/
