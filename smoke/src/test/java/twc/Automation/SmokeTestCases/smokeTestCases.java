@@ -539,7 +539,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 
 				
 
-				@Test(priority = 3, enabled = true)
+				/*@Test(priority = 3, enabled = true)
 				@Title("Verifying amazon Slot Id for feed1 prerol ad call")
 				public void Smoke_Test_amazon_aaxSlot_feed1_adCall() throws Exception {
 					System.out.println(
@@ -598,7 +598,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 					Functions.get_aaxcal_feed5();
 					System.out.println(
 							"================= Verify amazon aax slot Id for feed5 adcall testcase End =========================");
-				}
+				}*/
 
 				 
 				 /* =======================================All feed cards amazon slot id's test cases End======================================================================================*/
@@ -609,7 +609,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 				 /* =======================================All detail pages amazon slot id's test cases started======================================================================================*/
 				 
 
-					 @Test(priority = 19, enabled = true)
+					/* @Test(priority = 19, enabled = true)
 					@Title("Verifying amazon Slot Id for maps details preroll ad cal")
 					public void Smoke_Test_amazon_aax_mapsdetails_adcall() throws Exception {
 						System.out.println("================= Verify amazon aax maps detais adcall Started =========================");
@@ -627,7 +627,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 						logStep(" Verifying preload amazon aax for  video details");
 						Functions.get_aaxcal_video_details();
 						System.out.println("================= Verify amazon aax video  adcall End =========================");
-					}
+					}*/
 				 
 				 
 				 
@@ -643,7 +643,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 
 
 
-					@Test(priority =25, enabled = true)
+					/*@Test(priority =25, enabled = true)
 					@Title("Verifying amazon aax for today details card")
 					public void Smoke_Test_amazon_aax_today_deatailcard() throws Exception {
 						System.out.println(
@@ -662,7 +662,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 								"================= Verify amazon aax for Air Quality details page Started =========================");
 						Functions.get_aaxcal_aq();
 						System.out.println("================= Verify amazon aax for Air Quality detail Page  End=========================");
-					}
+					}*/
 					
 
 
@@ -732,7 +732,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 					 /* =======================================Hourly details amazon aax slot id's test case Started======================================================================================*/
 				
 					
-					@Test(priority = 41, enabled = true)
+					/*@Test(priority = 41, enabled = true)
 					@Title("Verifying amazon Slot Id for hourly details ad call")
 					public void Smoke_Test_amazon_aax_Hourly_details_adcall() throws Exception {
 						System.out.println(
@@ -773,7 +773,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 								"================= Verify amazon aax Hourly3 details big  ad call test case  Started =========================");
 						Functions.get_aaxcal_Hourly3();
 						System.out.println("================= Verify amazon aax Hourly3 big ad call test case End =========================");
-					}
+					}*/
 					
 					
 					 /* =======================================Hourly details amazon aax slot id's test case End======================================================================================*/
