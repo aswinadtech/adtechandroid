@@ -999,6 +999,7 @@ public static void SwipeUp_Counter_videos_maps(int Counter) throws Exception{
 	if(radarCount==0)
 	{
 		AppiumFunctions.clickOnRadarMaps();
+		Thread.sleep(25000);
 		AppiumFunctions.clickOnBackArrowElement();
 		radarCount=1;
 		i=150;
