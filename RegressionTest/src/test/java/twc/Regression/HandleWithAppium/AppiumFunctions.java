@@ -541,57 +541,58 @@ public static void killADB() throws IOException, Exception{
 	}
 	@SuppressWarnings("rawtypes")
 	public static void LaunchAppWithFullReset() throws Exception{
+	
 		
-	/*killADB();
-		AppiumServerStop();
-		AppiumServerStart();*/
+	//killADB();
+	//	AppiumServerStop();
+	//	AppiumServerStart();
 		
 		DeviceStatus device_status = new DeviceStatus();
 		int Cap = device_status.Device_Status();
 		
-		try {
-			
-			
-			
+	try {  			
 			String[][] capabilitydata = read_excel_data.exceldataread("Capabilities");
 			DesiredCapabilities capabilities = new DesiredCapabilities();
 			
 			/* --- Start Android Device Capabilities --- */
 			if(Cap == 2){
-				capabilities.setCapability(capabilitydata[1][0], capabilitydata[1][Cap]);
+			//	capabilities.setCapability(capabilitydata[1][0], capabilitydata[1][Cap]);
 				capabilities.setCapability(capabilitydata[2][0], capabilitydata[2][Cap]); 
 				capabilities.setCapability(capabilitydata[3][0], capabilitydata[3][Cap]);
 				capabilities.setCapability(capabilitydata[7][0], capabilitydata[7][Cap]); 
 				capabilities.setCapability(capabilitydata[9][0], capabilitydata[9][Cap]);
-				//capabilities.setCapability(capabilitydata[10][0],capabilitydata[10][Cap]);
-				//capabilities.setCapability(capabilitydata[12][0],capabilitydata[12][Cap]);
-			capabilities.setCapability("appActivity","com.weather.Weather.splash.SplashScreenActivity");
-				
-				//capabilities.setCapability("appActivity","com.weather.android.daybreak.MainActivity");
-			capabilities.setCapability("noReset","true");
-			capabilities.setCapability("automationName","UiAutomator2");
-				//System.out.println("app : "+capabilitydata[10][Cap]);
+			//	capabilities.setCapability(capabilitydata[10][0],capabilitydata[10][Cap]);
+				capabilities.setCapability(capabilitydata[12][0],capabilitydata[12][Cap]);
+		
+	capabilities.setCapability("appActivity","com.weather.Weather.app.SplashScreenActivity");
+		//	capabilities.setCapability("appActivity","com.weather.android.daybreak.MainActivity");
+		//	capabilities.setCapability("automationName","UiAutomator2");
+			//	System.out.println("app : "+capabilitydata[10][Cap]);
 				capabilities.setCapability(capabilitydata[13][0],capabilitydata[13][Cap]);
 				//capabilities.setCapability(capabilitydata[14][0],capabilitydata[14][Cap]);
 				
-				Thread.sleep(30000);
-				
+				Thread.sleep(5000);
+			
 				Ad = new AndroidDriver(new URL(capabilitydata[15][Cap]), capabilities);
 				Thread.sleep(50000);
+				
+				/* ---End Android Device Capabilities --- */
+    			Ad.manage().timeouts().implicitlyWait(80, TimeUnit.SECONDS);
+    			//####added ths to handle allow button			
+    			clickONNext();
+    		    ClickonIUnderstand();
+        		clickOnAllow();		
+    			Thread.sleep(10000);
+    			System.out.println("Capabilities have been launched  with fullreset ");
 			}
-			/* ---End Android Device Capabilities --- */
-			Ad.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-			//####added ths to handle allow button
-			Thread.sleep(20000);
-			
-        	clickONNext();
-		    ClickonIUnderstand();
-    		clickOnAllow();
-    		System.out.println("Capabilities have been launched  with fullreset ");
-			Thread.sleep(5000);
-		} catch (Exception e) {
+		
+		
+		} 
+		
+		catch (Exception e) {
 			System.out.println("Unable To Launch The Appium Capabilities");
 		}
+	
 	}
 	public static void clickOnVideoElement() throws Exception{
 		System.out.println("clicking video element");
