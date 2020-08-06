@@ -1195,7 +1195,7 @@ public void  C333207_Verify_cust_param_hmid() throws Exception{
 	  
 	  ////Interstail ads/////
 	  
-	  @Test(priority =600, enabled = true)
+	  @Test(priority =600, enabled = false)
 	  @Title("Verifying Hourly  details Interstal ads") 
 	  public void Smoke_Test_Verify_Hourlydetails_interstial_ads() throws Exception {
 	 System.out.println( "================= Verifying Hourly details Interstal ads test case  Started =========================");
@@ -1232,8 +1232,7 @@ public void  C333207_Verify_cust_param_hmid() throws Exception{
 	  }
 	  
 	  @Title("Verifying daily  details Interstal ads")
-	  
-	  @Test(priority = 601, enabled = true) public void
+	  @Test(priority = 601, enabled = false) public void
 	  Smoke_Test_Verify_daily_details_interstial_ads() throws Exception {
 	  System.out.
 	  println("================= Verifying daily details Interstal ads test case  Started ========================="
@@ -1268,8 +1267,8 @@ public void  C333207_Verify_cust_param_hmid() throws Exception{
 	  }
 	  
 	  
-	  @Title("Verifying maps details Interstal ads")
-	  @Test(priority = 602, enabled = true) public void
+	 @Title("Verifying maps details Interstal ads")
+	  @Test(priority = 602, enabled = false) public void
 	  Smoke_Test_Verify_radar_details_interstial_ads() throws Exception {
 	 System.out.println("================= Verifying maps details Interstal ads test case  Started =========================");
 	 Ad.resetApp();
@@ -1301,8 +1300,8 @@ public void  C333207_Verify_cust_param_hmid() throws Exception{
 	  System.out. println("=================Verifying maps details Interstal ads test case  End =========================" );
 	  }
 	  
-	  @Title("Verifying video details Interstal ads")  
-	  @Test(priority = 603, enabled = true) 
+	 @Title("Verifying video details Interstal ads")  
+	  @Test(priority = 603, enabled = false) 
 	  public void Smoke_Test_Verify_video_details_interstial_ads() throws Exception {
 	 System.out.println("================= Verifying video details Interstal ads test case  Started =========================" );  
 	 Ad.resetApp();
@@ -1313,8 +1312,9 @@ public void  C333207_Verify_cust_param_hmid() throws Exception{
 	  CharlesFunctions.ClearSessions();
 	  CharlesFunctions.startSessionBrowserData();
 	  Thread.sleep(25000);
-	  Functions.click_video_interstitial();
+	  Functions.click_video_interstitial(); 
 	  Functions.wiatfor5secindetails();
+	  CharlesFunctions.ExportSessions();
 	  Functions.Verify_video_detailpage_interstitial_adcall();
 	  Functions.clickBackButtonAlerts(); 
 	 // Ad.runAppInBackground(10);
@@ -1348,7 +1348,7 @@ public void  C333207_Verify_cust_param_hmid() throws Exception{
 	/*###### Push Notifications#######################################################*/
 	
 	
-	 @Test(priority=500,enabled=true)  
+	 @Test(priority=500,enabled=false)  
 	  @Title("Verifying Breaking news alert push notification") public void
 	  Smoke_Test_Verify_Breakingnews_Alert_Pushnotification() throws Exception {
   	System.out.println("================= Verifying Breaking news alert push notification Started =========================");  // Functions.testmode_settings(); 
@@ -1395,7 +1395,7 @@ public void  C333207_Verify_cust_param_hmid() throws Exception{
 	  }*/
 	 
 	 
-	  @Test(priority=502)  
+	  @Test(priority=502,enabled=false)  
 	  @Title("Verifying Real time rain alert push notification") public void
 	  Smoke_Test_Verify_Realtimerain_Alert_Pushnotification() throws Exception {
 	  
@@ -1422,7 +1422,7 @@ public void  C333207_Verify_cust_param_hmid() throws Exception{
 	
 	  
 	  
-	/* @Test(priority=503)
+	/* @Test(priority=503,enabled=false)
 	  @Title("Verifying real time lightning alert push notification")
 	  public void Smoke_Test_Verify_RealtimeLightning_Alert_Pushnotification() throws Exception { 
 		  System.out. println("================= Verifying real time lightning aler push notification Started ========================="); 
@@ -1447,7 +1447,7 @@ public void  C333207_Verify_cust_param_hmid() throws Exception{
 	  
 	  
 	  
-  @Test(priority=504)
+  @Test(priority=504,enabled=false)
 	  
 	  @Title("Verifying Thunderstorm alert push notification") public void
 	  Smoke_Test_Verify_thunderstorm_Alert_Pushnotification() throws Exception {
@@ -1475,7 +1475,7 @@ public void  C333207_Verify_cust_param_hmid() throws Exception{
 	  }
   
 
-  @Test(priority=505)
+  @Test(priority=505,enabled=false)
   @Title("Verifying Heavy rain fall alert push notification") public void
   Smoke_Test_Verify_heavyrainfall_Alert_Pushnotification() throws Exception {
   System.out.
@@ -1497,7 +1497,7 @@ public void  C333207_Verify_cust_param_hmid() throws Exception{
   
   }
 
-  @Test(priority=506)
+  @Test(priority=506,enabled=false)
   @Title("Verifying heavy snowfall alert push notification") public void
   Smoke_Test_Verify_heavysnowfall_Alert_Pushnotification() throws Exception {
   System.out.
@@ -1520,7 +1520,7 @@ System.out.println("================= Verifying heavy snowfall alert push notifi
   
   
   
-  @Test(priority=507)
+  @Test(priority=507,enabled=false)
   
   @Title("Verifying ice alert push notification") 
   public void Smoke_Test_Verify_ice_Alert_Pushnotification() throws Exception { 
@@ -1545,7 +1545,7 @@ System.out.println("================= Verifying heavy snowfall alert push notifi
   
   
   
-  @Test(priority=508)
+  @Test(priority=508,enabled=false)
   @Title("Verifying Severe alert push notification") public void
   Smoke_Test_Verify_Severe_Alert_Pushnotification() throws Exception {
   System.out.
@@ -1589,7 +1589,7 @@ System.out.println("================= Verifying heavy snowfall alert push notifi
 public void Before_Test() throws Exception {
 
 		CharlesFunctions.charlesOpen();
-	//	 AppiumFunctions.UnInstallApp();
+	 AppiumFunctions.UnInstallApp();
 		CharlesFunctions.openCharlesBrowser();
 		// System.out.println("setting contentmode to normal");
 		// MapLocalFunctions.contentModeModule("severe1");
@@ -1602,7 +1602,9 @@ AppiumFunctions.LaunchAppWithFullReset();
 CharlesFunctions.ClearSessions();
 CharlesFunctions.startSessionBrowserData();
 AppiumFunctions.Kill_Launch_App();
-Thread.sleep(30000);
+Thread.sleep(25000);
+AppiumFunctions. ClickonIUnderstand();
+Thread.sleep(10000);
 AppiumFunctions.gettingApkVersion();
 Thread.sleep(5000);
 //CustomParamFunctions.get_fhic_floc_value();    
