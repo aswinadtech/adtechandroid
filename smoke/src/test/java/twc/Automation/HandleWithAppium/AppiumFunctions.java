@@ -343,54 +343,9 @@ public class AppiumFunctions extends Drivers{
 	}
 	
 	
-	//launch app with full reset
 	
 	
-	@SuppressWarnings("rawtypes")
-	public static void LaunchAppWithFullReset(String Reset) throws Exception{
-		
-		
-		
-		DeviceStatus device_status = new DeviceStatus();
-		int Cap = device_status.Device_Status();
-		
-		try {
-			
-			String[][] capabilitydata = read_excel_data.exceldataread("Capabilities");
-			DesiredCapabilities capabilities = new DesiredCapabilities();
-			
-			/* --- Start Android Device Capabilities --- */
-			if(Cap == 2){
-			capabilities.setCapability(capabilitydata[1][0], capabilitydata[1][Cap]);
-			capabilities.setCapability(capabilitydata[2][0], capabilitydata[2][Cap]); 
-			capabilities.setCapability(capabilitydata[3][0], capabilitydata[3][Cap]);
-			capabilities.setCapability(capabilitydata[7][0], capabilitydata[7][Cap]); 
-			//capabilities.setCapability(capabilitydata[9][0], Reset);
-			capabilities.setCapability("appActivity","com.weather.Weather.app.SplashScreenActivity");
-			capabilities.setCapability("automationName","UiAutomator2");
-			capabilities.setCapability(capabilitydata[10][0],capabilitydata[10][Cap]);
-			capabilities.setCapability(capabilitydata[12][0],capabilitydata[12][Cap]);
-			capabilities.setCapability(capabilitydata[13][0],capabilitydata[13][Cap]);
-			capabilities.setCapability(capabilitydata[14][0],capabilitydata[14][Cap]);
-			Thread.sleep(10000); 
-			Ad = new AndroidDriver(new URL(capabilitydata[15][Cap]), capabilities);
-			Thread.sleep(10000); 
-			}
-			/* ---End Android Device Capabilities --- */
-			Ad.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		//	Thread.sleep(20000);
-			After_launch();
-			
-			
-			System.out.println("Capabilities have been launched  with fullreset with - "+Reset);
-		//	Thread.sleep(5000);
-		} 
-			catch (Exception e) {
-			System.out.println("Unable To Launch The Appium Capabilities");
-		}
-	}
-	
-     	@SuppressWarnings("rawtypes")
+     		@SuppressWarnings("rawtypes")
 	   public static void LaunchAppWithFullReset() throws Exception{
     		
     	//killADB();
@@ -406,22 +361,23 @@ public class AppiumFunctions extends Drivers{
     			
     			/* --- Start Android Device Capabilities --- */
     			if(Cap == 2){
-    				capabilities.setCapability(capabilitydata[1][0], capabilitydata[1][Cap]);
+    			//	capabilities.setCapability(capabilitydata[1][0], capabilitydata[1][Cap]);
     				capabilities.setCapability(capabilitydata[2][0], capabilitydata[2][Cap]); 
     				capabilities.setCapability(capabilitydata[3][0], capabilitydata[3][Cap]);
     				capabilities.setCapability(capabilitydata[7][0], capabilitydata[7][Cap]); 
     				capabilities.setCapability(capabilitydata[9][0], capabilitydata[9][Cap]);
-    				//capabilities.setCapability(capabilitydata[10][0],capabilitydata[10][Cap]);
+    			//	capabilities.setCapability(capabilitydata[10][0],capabilitydata[10][Cap]);
     				capabilities.setCapability(capabilitydata[12][0],capabilitydata[12][Cap]);
-    	     	capabilities.setCapability("appActivity","com.weather.Weather.splash.SplashScreenActivity");
-    				//capabilities.setCapability("appActivity","com.weather.android.daybreak.MainActivity");
-    				capabilities.setCapability("automationName","UiAutomator2");
-    				System.out.println("app : "+capabilitydata[10][Cap]);
+    		
+    	capabilities.setCapability("appActivity","com.weather.Weather.app.SplashScreenActivity");
+    		//	capabilities.setCapability("appActivity","com.weather.android.daybreak.MainActivity");
+    		//	capabilities.setCapability("automationName","UiAutomator2");
+    			//	System.out.println("app : "+capabilitydata[10][Cap]);
     				capabilities.setCapability(capabilitydata[13][0],capabilitydata[13][Cap]);
     				//capabilities.setCapability(capabilitydata[14][0],capabilitydata[14][Cap]);
     				
     				Thread.sleep(5000);
-    				
+    			
     				Ad = new AndroidDriver(new URL(capabilitydata[15][Cap]), capabilities);
     				Thread.sleep(50000);
     				
@@ -442,6 +398,7 @@ public class AppiumFunctions extends Drivers{
     			System.out.println("Unable To Launch The Appium Capabilities");
     		}
     	}
+     	
      	
      	
      	
