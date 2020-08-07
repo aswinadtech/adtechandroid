@@ -1024,7 +1024,7 @@ public void  C333207_Verify_cust_param_hmid() throws Exception{
 	  System.out. println("================= Verifying detail page  Feed ad call when user selecting Optin mode scenario in privacy card End ========================="  );
 	  }
 	  
-	  @Test(priority = 444, enabled = true)	  
+	  /*@Test(priority = 444, enabled = true)	  
 	  @Title("Verifying BCP  call when user selecting Optin mode scenario in privacy card" )
 	  public void Smoke_Test__Verifying_Bcp_apicall_Opti_mode_scenario() throws  Exception { 
 	  logStep("Verifying BCP  call when user selecting Optin mode scenario in privacy card" ); 
@@ -1051,7 +1051,7 @@ public void  C333207_Verify_cust_param_hmid() throws Exception{
 	   Functions.validating_Fatualcall_privacy_Optinmode_scenarion(); 
 	   System.out. println("================= Verifying Fatcual api call when user selecting Oppinmode scenario in privacy card End =========================" );
 	 
-	  }
+	  }*/
 	  
 	  @Test(priority =457, enabled = true)	  
 	  @Title("Verifying amazon prerol slot id's  when user selecting Optin mode scenario in privacy card" ) 
