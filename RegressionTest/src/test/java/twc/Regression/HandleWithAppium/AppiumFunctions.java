@@ -846,8 +846,6 @@ if(i==swipeup) {
 			if(videoCount==0) {
 			AppiumFunctions.clickOnVideoElement();
 		AppiumFunctions.clickOnBackArrowElement();
-		i=150;
-		break;
 	//	Functions.closeInterstailads() ;
 		
 			}
