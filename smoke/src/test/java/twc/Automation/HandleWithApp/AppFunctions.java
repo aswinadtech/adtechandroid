@@ -328,7 +328,7 @@ public class AppFunctions extends Drivers{
 		//CharlesFunctions.startSessionBrowserData();
 		//AppiumFunctions.LaunchApp();
 		Ad.quit();
-		AppiumFunctions.LaunchAppWithFullReset("false");
+		//AppiumFunctions.LaunchAppWithFullReset("false");
 		//AppiumFunctions.LaunchApp();
 		//loginModule.login();
 		Thread.sleep(8000);
