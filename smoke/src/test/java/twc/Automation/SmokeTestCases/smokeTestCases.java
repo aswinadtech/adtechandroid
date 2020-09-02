@@ -1011,13 +1011,13 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 		System.out.println("================= Verifying Turbo call API url End =========================");
 	}
 
-	@Test(priority = 306, enabled = true)
+	/*@Test(priority = 306, enabled = true)
 	@Title("Verifying Lotame adcrw api call url on KillLaunch")
 	public void Smoke_Test_CaseVerify_adcrwdcntrlnet_url_KillLaunch() throws Exception {
 		System.out.println("================= Verifying Lotame ad.crwdcntrl.net url started =========================");
 		Functions.validating_adcrw();
 		System.out.println("================= Verifying Lotame ad.crwdcntrl.net url End =========================");
-	}
+	}*/
 	
 	
 	  @Test(priority = 308, enabled = true)	  
