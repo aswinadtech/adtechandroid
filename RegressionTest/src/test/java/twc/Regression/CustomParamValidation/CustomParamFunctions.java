@@ -630,7 +630,7 @@ public class CustomParamFunctions extends Drivers {
 			
 			
 			
-		/*	for(Object key:((HashMap) obj).keySet()){
+			for(Object key:((HashMap) obj).keySet()){
 				
 				expected_map_results.put(jsonObservation.get, value);
 				
@@ -638,7 +638,7 @@ public class CustomParamFunctions extends Drivers {
 				
 					expected_map_results.put(key.toString(), ((ArrayList) obj).get((Integer) key).toString());
 			
-				}*/
+				}
 	
 		
 	
