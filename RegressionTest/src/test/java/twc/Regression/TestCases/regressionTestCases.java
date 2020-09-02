@@ -261,13 +261,13 @@ public class regressionTestCases extends Drivers {
 		System.out.println("================= Custom Parameter Cc Verfication End =========================");
 	}
 
-	@Test(priority = 65)
+	/*@Test(priority = 65)
 	@Title("Verify custom parameter fhic")
 	public void C333232_Verify_cust_param_fhic() throws Exception {
 		System.out.println("================= Custom Parameter Fhic Verfication Started =========================");
 		Custom_Parameters_Verification.parameters_Verification("fhic");
 		System.out.println("================= Custom Parameter Fhic Verfication End =========================");
-	}
+	}*/
 
 	/*@Test(priority = 66)
 	@Title("Verify custom parameter floc")
@@ -1180,7 +1180,7 @@ Thread.sleep(15000);
 AppiumFunctions.click_hourly_element();
  Thread.sleep(5000);
  AppiumFunctions.click_daily_element();
- AppiumFunctions.closeInterstailads();
+// AppiumFunctions.closeInterstailads();
 CharlesFunctions.ExportSession();
 		// CustomParamFunctions.get_fhic_floc_value();      
 		//AppiumFunctions.SwipeUp_Counter(15);	
