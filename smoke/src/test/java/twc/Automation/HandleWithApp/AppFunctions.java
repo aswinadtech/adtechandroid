@@ -124,7 +124,7 @@ public class AppFunctions extends Drivers{
 		//CharlesFunctions.startSessionBrowserData();
 		//AppiumFunctions.LaunchApp();
 		Ad.quit();
-		AppiumFunctions.LaunchAppWithFullReset("true");
+		//AppiumFunctions.LaunchAppWithFullReset("true");
 		CharlesFunctions.ExportSession();	
 		Thread.sleep(5000);
 		//Reading Adone from api call
