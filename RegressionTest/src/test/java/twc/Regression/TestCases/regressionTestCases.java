@@ -23,7 +23,7 @@ import twc.Regression.utils.DeleteFiles;
 public class regressionTestCases extends Drivers {
 
 	// video ad call custum parameters
-	/*@Test(priority = 1)
+	@Test(priority = 1)
 	@Title("Verify custom parameter cmsid")
 	public void C344257_Verify_Video_Url_Parameter_cmsid() throws Exception {
 		System.out.println("================= Custom Parameter Cmsid Verfication Started =========================");
@@ -77,10 +77,10 @@ public class regressionTestCases extends Drivers {
 		System.out.println("================= Verify Content URL for video call Started =========================");
 		Custom_Parameters_Verification.verify_video_request("content_url");
 		System.out.println("================= Verify Content URL for video call  End =========================");
-	}*/
+	}
 
 	// Not null
-	@Test(priority = 21)
+	/*@Test(priority = 21)
 	@Title("Verify custom parameter adid")
 	public void C333213_Verify_cust_param_adid() throws Exception {
 		System.out.println("================= Custom Parameter adid Verfication Started =========================");
@@ -94,7 +94,7 @@ public class regressionTestCases extends Drivers {
 		System.out.println("================= Custom Parameter Aid Verfication Started =========================");
 		Custom_Parameters_Verification.parameters_Verification("aid");
 		System.out.println("================= Custom Parameter Aid Verfication End =========================");
-	}
+	}*/
 	/*@Test(priority = 22)
 	@Title("Verify custom parameter env")
 	public void C333244_Verify_cust_param_env() throws Exception {
@@ -265,17 +265,17 @@ public class regressionTestCases extends Drivers {
 	@Title("Verify custom parameter fhic")
 	public void C333232_Verify_cust_param_fhic() throws Exception {
 		System.out.println("================= Custom Parameter Fhic Verfication Started =========================");
-		//Custom_Parameters_Verification.parameters_Verification("fhic");
+		Custom_Parameters_Verification.parameters_Verification("fhic");
 		System.out.println("================= Custom Parameter Fhic Verfication End =========================");
 	}
 
-	@Test(priority = 66)
+	/*@Test(priority = 66)
 	@Title("Verify custom parameter floc")
 	public void C333238_Verify_cust_param_floc() throws Exception {
 		System.out.println("================= Custom Parameter Floc Verfication Started =========================");
 	//	Custom_Parameters_Verification.parameters_Verification("floc");
 		System.out.println("================= Custom Parameter Floc Verfication End =========================");
-	}
+	}*/
 
 	@Test(priority = 67)
 	@Title("Verify custom parameter tmp")
@@ -348,13 +348,13 @@ public void  C333207_Verify_cust_param_hmid() throws Exception{
 	
 	// wfxtg call
 
-	/*@Test(priority = 90)
+	@Test(priority = 90)
 	@Title("Verify custom parameter wfxtg")
 	public void C333228_Verify_cust_param_wfxtg() throws Exception {
 		System.out.println("================= Custom Parameter Wfxtg Verfication Started =========================");
 		Custom_Parameters_Verification.parameters_Verification("wfxtg");
 		System.out.println("================= Custom Parameter Wfxtg Verfication End =========================");
-	}*/
+	}
 
 	/*
 	 * @Test(priority=81)
@@ -1151,33 +1151,8 @@ public void  C333207_Verify_cust_param_hmid() throws Exception{
 	  Functions.validate_RDP_homescreenhourly_Optinmode();
 	  System.out. println("================= Verifying RDP value for homescreen hourly call when user selecting Optin mode scenario in privacy card End =========================");
     }
-	  @Test(priority = 466, enabled = true)	  
-	  @Title("Verifying RDP  value for feed_1 ad call when user selecting Optin mode scenario in privacy card")
-	  public void Smoke_Test_Verifying_RDP_value_feed_1ad_Optin_mode_scenario()  throws Exception {	
-	  logStep("Verifying RDP  value for feed_1 ad call when user selecting Optin mode scenario in privacy card" );  
-	  System.out. println("================= Verifying RDP value for feed_1 ad  call  when user selecting Optin mode scenario in privacy card started =========================" );
-	  Functions.validate_RDP_feed_Optinmode();
-	  System.out.println("================= Verifying RDP value for feed_1 ad call when user selecting Optin mode scenario in privacy card End ========================="); 
-	  }
-	  
-	  
-	  @Test(priority = 467, enabled = true)
-	  @Title("Verifying RDP value for maps detailed page ad call when user selecting Optin mode scenario in privacy card" ) 
-	  public void Smoke_Test_Verifying_RDP_value_mapsdetailed_feedad_Optinmode_scenario()  throws Exception {
-	  logStep("Verifying RDP value for maps detailed page ad call when user selecting Optin mode scenario in privacy card" ); 
-	  System.out.println("================= Verifying RDP value for maps detailes ad call  when user selecting Optin mode scenario in privacy card started =========================");
-	   Functions.validate_RDP_detailed_feed_Optinmode(); 
-	   System.out. println("================= Verifying RDP value for maps detailes ad call when user selecting Optin mode scenario in privacy card End =========================" );
-	   }
-	  
-	/*  @Test(priority = 468, enabled = true)  
-	  @Title("Verifying RDP value for video  ad call  url when user selecting Optin mode scenario in privacy card" ) 
-	  public void Smoke_Test_Verifying_RDP_value_video_adcall_Optin_mode_scenario() throws  Exception {	  
-	 System.out. println("================= Verifying RDP value for video  ad call url  when user selecting Optin mode scenario in privacy card started =========================" );
-	  logStep("Verifying RDP  value for video  ad call url when user selecting Optin mode scenario in privacy card");
-	  Functions.validate_RDP_video_ad_Optinmode(); 
-	  System.out. println("================= Verifying RDP value for video ad call url when user selecting Optin mode scenario in privacy card End =========================" );
-	  }*/
+	
+
 	  
 	
 	
