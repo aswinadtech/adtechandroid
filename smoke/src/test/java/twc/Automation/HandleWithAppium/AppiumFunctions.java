@@ -799,14 +799,14 @@ catch(Exception e) {
 }
 	System.out.println(ModuleName.toString() +" feed card is presented on the screen");
 	
-	if(ModuleName.toString().contains("Top Stories") ||ModuleName.toString().contains("Low Stories") || ModuleName.toString().contains("Videos")) {
+	/*if(ModuleName.toString().contains("Top Stories") ||ModuleName.toString().contains("Low Stories") || ModuleName.toString().contains("Videos")) {
 		if(videoCount==0) {
 		AppiumFunctions.clickOnVideoElement();
 	AppiumFunctions.clickOnBackArrowElement();
-	Functions.closeInterstailads() ;
+	//Functions.closeInterstailads() ;
 	videoCount=1;
 		}
-		}
+		}*/
 	
 	/*if(ModuleName.toString().contains("More News")) {
 		if(MorNewsCount==0) {
@@ -824,7 +824,7 @@ if(ModuleName.toString().contains("Maps") ||ModuleName.toString().contains("Thun
 {
 	AppiumFunctions.clickOnRadarMaps();
 	AppiumFunctions.clickOnBackArrowElement();
-	Functions.closeInterstailads();
+	//Functions.closeInterstailads();
 	radarCount=1;
 }
 }
