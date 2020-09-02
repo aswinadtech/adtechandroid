@@ -535,7 +535,7 @@ public class CustomParamFunctions extends Drivers {
 	}
 
 
-	public static Map<String, String> get_turbo_call_value() throws Exception{
+	/*public static Map<String, String> get_turbo_call_value() throws Exception{
 
 		DeviceStatus device_status = new DeviceStatus();
 		int Cap = device_status.Device_Status();
@@ -643,6 +643,49 @@ public class CustomParamFunctions extends Drivers {
 		
 	
 	return expected_map_results;
+}*/
+	
+	public static Map<String, String> get_turbo_call_value() throws Exception{
+				DeviceStatus device_status = new DeviceStatus();
+		int Cap = device_status.Device_Status();
+
+		Map<String , String> expected_map_results = new HashMap<String, String>();
+
+		String expectedValues =null;
+		String[][] exceldata = read_excel_data.exceldataread_Custom_Parameters("Cust_Param","TurboCall");
+
+		//		read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+		//		String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
+
+		if(sb.toString().contains(exceldata[1][Cap])){
+			String Read_API_Call_Data = sb.toString().substring(sb.toString().indexOf(exceldata[3][Cap]));
+			String required_info = Read_API_Call_Data.toString().substring(Read_API_Call_Data.toString().
+					indexOf(exceldata[3][Cap]));
+			required_info=required_info.replaceAll(" decoded=\"true\"", "");
+			String expected_data =required_info.toString().substring(required_info.indexOf(", \"v3-wx-observations-current\": "),required_info.indexOf("  , \"v3-wx-forecast-daily-15day\": "));
+			//String expected_data = required_info.toString().substring(required_info.indexOf(exceldata[4][Cap])+9,
+			//required_info.indexOf(exceldata[5][Cap]));
+			expectedValues = expected_data.toString();
+              expectedValues = expected_data.toString();
+			
+			expectedValues=expectedValues.replaceAll("\"cloudCeiling\":null,", "");
+			expectedValues=expectedValues.replaceFirst(",", "");
+			expectedValues=expectedValues.replace(expectedValues,"{" + expectedValues + "}" );
+
+			JSONParser parser = new JSONParser();
+			Object obj = parser.parse(expectedValues);
+			JSONObject jsonObject = (JSONObject) obj;
+
+			JSONObject jsonObservation = (JSONObject) jsonObject.get("v3-wx-observations-current");
+			for(Object key:jsonObservation.keySet()){
+				if(jsonObservation.get(key) != null){
+					expected_map_results.put(key.toString(), jsonObservation.get(key).toString());
+				}
+			}
+		}
+		return expected_map_results;
+
+		
 }
 
 	public static Map<String, String> get_plln_from_turbo_call() throws Exception{
