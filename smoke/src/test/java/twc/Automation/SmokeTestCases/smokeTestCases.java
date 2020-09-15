@@ -1138,7 +1138,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 		System.out.println(
 				"================= Verify amazon aax Daily details  preroll adcall Started =========================");
 		logStep(" Verifying preload amazon aax for  daily details");
-		Functions.get_aaxcal_Daily();
+		Functions.get_aaxcal_Daily1();
 		System.out.println(
 				"================= Verify amazon aax Daily details preroll adcall End =========================");
 	}
