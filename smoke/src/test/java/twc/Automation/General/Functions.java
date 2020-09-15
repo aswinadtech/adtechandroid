@@ -3154,6 +3154,22 @@ public static void  gettingDayofWeekFromUI(int i) throws Exception {
 	String days=today.replace(today, today+i);
 	currentday=days.toLowerCase();
 }
+	
+public static void get_aaxcal_Daily1() throws Exception {	
+read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
+String sb = xml_data_into_buffer.read_xml_file_into_buffer_string();
+System.out.println("Verifying amazon \"slot Id\": \"6c5a145d-9198-48f4-adfd-08f05557eace\"  for daily details");
+logStep("Verifying amazon \"slot Id\": \"6c5a145d-9198-48f4-adfd-08f05557eace\"   for  daily details\"");
+if(sb.contains("6c5a145d-9198-48f4-adfd-08f05557eace")) {
+System.out.println("6c5a145d-9198-48f4-adfd-08f05557eace is trigred for aax  call for daily details");
+logStep("6c5a145d-9198-48f4-adfd-08f05557eace is trigred for aax  call  for daily details");
+}
+if(!sb.contains("6c5a145d-9198-48f4-adfd-08f05557eace")) {
+	System.out.println("slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for for daily details");
+	logStep("slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred  for daily details");
+	Assert.fail("slotID 6c5a145d-9198-48f4-adfd-08f05557eace is not trigred for daily details");
+	}
+}
 
 public static void get_aaxcal_Daily() throws Exception {	
 	read_xml_data_into_buffer xml_data_into_buffer = new read_xml_data_into_buffer();
