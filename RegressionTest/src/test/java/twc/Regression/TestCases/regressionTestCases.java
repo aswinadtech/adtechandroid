@@ -8,7 +8,6 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import ru.yandex.qatools.allure.annotations.Title;
-import twc.Automation.HandleMapLocal.MapLocalFunctions;
 
 //import twc.Automation.HandleMapLocal.MapLocalFunctions;
 import twc.Regression.CustomParamValidation.CustomParamFunctions;
@@ -224,7 +223,7 @@ public class regressionTestCases extends Drivers {
 	@Title("Verify custom parameter cnd")
 	public void C333216_Verify_cust_param_cnd() throws Exception {
 		System.out.println("================= Custom Parameter Cnd Verfication Started =========================");
-		Custom_Parameters_Verification.parameters_Verification("cnd");
+		//Custom_Parameters_Verification.parameters_Verification("cnd");
 
 		System.out.println("================= Custom Parameter Cnd Verfication End =========================");
 	}
