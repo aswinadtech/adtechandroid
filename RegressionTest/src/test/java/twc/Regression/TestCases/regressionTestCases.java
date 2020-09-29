@@ -180,7 +180,7 @@ public class regressionTestCases extends Drivers {
 	@Title("Verify custom parameter fcnd")
 	public void C333213_Verify_cust_param_fcnd_day1_adCall() throws Exception {
 		System.out.println("================= Custom Parameter fcnd Verfication Started =========================");
-		Custom_Parameters_Verification.verify_daily_custom_parameters("fcnd");
+		//Custom_Parameters_Verification.verify_daily_custom_parameters("fcnd");
 		System.out.println("================= Custom Parameter fcnd Verfication End =========================");
 	}
 
@@ -188,7 +188,7 @@ public class regressionTestCases extends Drivers {
 	@Title("Verify custom parameter fdynght")
 	public void C333213_Verify_cust_param_fdynght_day1_adCall() throws Exception {
 		System.out.println("================= Custom Parameter fdynght Verfication Started =========================");
-		Custom_Parameters_Verification.verify_daily_custom_parameters("fdynght");
+		//Custom_Parameters_Verification.verify_daily_custom_parameters("fdynght");
 		System.out.println("================= Custom Parameter fdynght Verfication End =========================");
 		
 	}
