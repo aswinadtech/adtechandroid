@@ -3861,6 +3861,118 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 	 */
 
 	//
+	
+	@Test(priority = 1000, enabled = true)
+	@Title("Verifying daily integrated details  iu value")
+	public void Smoke_Test_Verify_DailyDetails_Integratedadcall_iu() throws Exception {
+		System.out.println("================= Verifying daily detials integrated ad call test case Started =========================");	
+		System.out.println("Verifying daily details integrated ad call test case Started");
+		logStep("Verifying daily details integrated ad call test case started");
+	 //  Thread.sleep(10000);
+	  // AppiumFunctions.LaunchAppWithFullReset();
+	 //  AppFunctions.selectingRequiredUserGroup("AdsTestAdUnitOnly");
+	//   AppFunctions.selectingRequiredUserGroups("IDD");
+	
+	//	Thread.sleep(20000);
+		//CharlesFunctions.ExportSession();
+	
+		
+		System.out.println("================= Verifying daily detials integrated ad call test case End =========================");
+	}
+	
+	
+	@Test(priority = 1001, enabled = true)
+	@Title("Verifying daily details integrated ad call sz value")
+	public void Smoke_Test_Verify_DailyDetails_Integratedadcall_Size() throws Exception {
+		System.out.println("================= Verifying daily detials integrated ad call size test case Started =========================");	
+		//System.out.println("Verifying daily details integrated ad call size test case Started");
+		//logStep("Verifying daily details integrated ad call size test case started");
+	  // Thread.sleep(10000);
+	  // AppiumFunctions.LaunchAppWithFullReset();
+	 //  AppFunctions.selectingRequiredUserGroup("AdsTestAdUnitOnly");
+	//   AppFunctions.selectingRequiredUserGroups("IDD");
+	
+	//	Thread.sleep(20000);
+		//CharlesFunctions.ExportSession();
+	//   System.out.println("iu= was trigred");
+	  // logStep("iu= was trigred");
+		
+		System.out.println("================= Verifying daily detials integrated ad call test case End =========================");
+	}
+	
+	
+	
+	
+	@Test(priority = 1003, enabled = true)
+	@Title("Verifying daily  integrated details ad call response")
+	public void Smoke_Test_Verify_DailyDetails_Response() throws Exception {
+		System.out.println("================= Verifying daily detials integrated ad call size test case Started =========================");	
+	
+		
+		System.out.println("================= Verifying daily detials integrated ad call test case End =========================");
+	}
+	
+	@Test(priority = 1003, enabled = true)
+	@Title("Verifying daily  integrated details FG  assest call URL")
+	public void Smoke_Test_Verify_DailyIntegratedDetails_FG_Assest_URL() throws Exception {
+		System.out.println("================= Verifying daily detials integrated ad call size test case Started =========================");	
+	
+		
+		System.out.println("================= Verifying daily detials integrated ad call test case End =========================");
+	}
+	
+	
+	@Test(priority = 1005, enabled = true)
+	@Title("Verifying daily  integrated details BG assest  call URL")
+	public void Smoke_Test_Verify_DailyIntegratedDetails_BG_Assest_URL() throws Exception {
+		System.out.println("================= Verifying daily detials integrated ad call size test case Started =========================");	
+	
+		
+		System.out.println("================= Verifying daily detials integrated ad call test case End =========================");
+	}
+	
+	
+	
+	
+	@Test(priority = 1005, enabled = true)
+	@Title("Verifying daily  integrated details fcnd custum param")
+	public void Smoke_Test_Verify_DailyIntegratedDetails_fcnd_custum_param() throws Exception {
+		System.out.println("================= Verifying daily detials integrated ad call size test case Started =========================");	
+	
+		
+		System.out.println("================= Verifying daily detials integrated ad call test case End =========================");
+	}
+	
+	
+	@Test(priority = 1006, enabled = true)
+	@Title("Verifying daily  integrated details fdynght custum param")
+	public void Smoke_Test_Verify_DailyIntegratedDetails_fdynght_custum_param() throws Exception {
+		System.out.println("================= Verifying daily detials integrated ad call size test case Started =========================");	
+	
+		
+		System.out.println("================= Verifying daily detials integrated ad call test case End =========================");
+	}
+	
+	
+	@Test(priority = 1006, enabled = true)
+	@Title("Verifying daily  integrated details dt custum param")
+	public void Smoke_Test_Verify_DailyDetails_dt_custum_param() throws Exception {
+		System.out.println("================= Verifying daily detials integrated ad call size test case Started =========================");	
+	
+		
+		System.out.println("================= Verifying daily detials integrated ad call test case End =========================");
+	}
+	
+	
+	@Test(priority = 1006, enabled = true)
+	@Title("Verifying daily  integrated details mnth custum param")
+	public void Smoke_Test_Verify_DailyDetails_mnth_custum_param() throws Exception {
+		System.out.println("================= Verifying daily detials integrated ad call size test case Started =========================");	
+	
+		
+		System.out.println("================= Verifying daily detials integrated ad call test case End =========================");
+	}
+
 
 	@AfterTest
 	public void After_Test() throws Exception {
