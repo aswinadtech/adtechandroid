@@ -3904,7 +3904,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 	 logStep("Checking IM ad is loading on the screen");
 		 Thread.sleep(60000);
 	 Thread.sleep(60000);
-	 Thread.sleep(60000)
+	 Thread.sleep(60000);
 	 		attachScreen();
 	 		 	System.out.println("IM ad is presented on the screen");
 	 logStep("IM ad is presented on the screen");
