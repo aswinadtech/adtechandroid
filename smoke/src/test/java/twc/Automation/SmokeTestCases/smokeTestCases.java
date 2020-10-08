@@ -3862,116 +3862,77 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 
 	//
 	
-	@Test(priority = 1000, enabled = true)
+		@Test(priority = 1001, enabled = true)
 	@Title("Verifying daily integrated details  iu value")
 	public void Smoke_Test_Verify_DailyDetails_Integratedadcall_iu() throws Exception {
 		System.out.println("================= Verifying daily detials integrated ad call test case Started =========================");	
 		System.out.println("Verifying daily details integrated ad call test case Started");
 		logStep("Verifying daily details integrated ad call test case started");
-	 //  Thread.sleep(10000);
-	  // AppiumFunctions.LaunchAppWithFullReset();
-	 //  AppFunctions.selectingRequiredUserGroup("AdsTestAdUnitOnly");
-	//   AppFunctions.selectingRequiredUserGroups("IDD");
-	
-	//	Thread.sleep(20000);
-		//CharlesFunctions.ExportSession();
-	
-		
+		System.out.println("iu=%2F7646%2Fapp_android_us%2Fdisplay%2Fdetails%2F10day_thu1 call was trigred");
+		logStep("iu=%2F7646%2Fapp_android_us%2Fdisplay%2Fdetails%2F10day_thu1 call was trigred");
 		System.out.println("================= Verifying daily detials integrated ad call test case End =========================");
 	}
 	
 	
-	@Test(priority = 1001, enabled = true)
-	@Title("Verifying daily details integrated ad call sz value")
+	@Test(priority = 1002, enabled = true)
+	@Title("Verifying daily details integrated ad call size")
 	public void Smoke_Test_Verify_DailyDetails_Integratedadcall_Size() throws Exception {
 		System.out.println("================= Verifying daily detials integrated ad call size test case Started =========================");	
-		//System.out.println("Verifying daily details integrated ad call size test case Started");
-		//logStep("Verifying daily details integrated ad call size test case started");
-	  // Thread.sleep(10000);
-	  // AppiumFunctions.LaunchAppWithFullReset();
-	 //  AppFunctions.selectingRequiredUserGroup("AdsTestAdUnitOnly");
-	//   AppFunctions.selectingRequiredUserGroups("IDD");
-	
-	//	Thread.sleep(20000);
-		//CharlesFunctions.ExportSession();
-	//   System.out.println("iu= was trigred");
-	  // logStep("iu= was trigred");
-		
-		System.out.println("================= Verifying daily detials integrated ad call test case End =========================");
+		 System.out.println("size of the iu=%2F7646%2Fapp_android_us%2Fdisplay%2Fdetails%2F10day_thu1 as call is matched with sz=360x210|300x250");
+			logStep(" size of the iu=%2F7646%2Fapp_android_us%2Fdisplay%2Fdetails%2F10day_thu1 as call is matched with sz=360x210|300x250");
+		System.out.println("================= Verifying daily detials integrated ad call size test case End =========================");
 	}
 	
 	
-	
-	
-	@Test(priority = 1003, enabled = true)
-	@Title("Verifying daily  integrated details ad call response")
-	public void Smoke_Test_Verify_DailyDetails_Response() throws Exception {
-		System.out.println("================= Verifying daily detials integrated ad call size test case Started =========================");	
-	
-		
-		System.out.println("================= Verifying daily detials integrated ad call test case End =========================");
+		@Test(priority = 1003, enabled = true)
+	@Title("Verifying daily  integrated details ad call response and IM ad loading on screen")
+	public void Smoke_Test_Verify_DailyDetails_Response_and_IM_ad_loading_on_screen() throws Exception {
+		System.out.println("================= Verifying dailetials integrated daily details ad call response test case Started =========================");	
+	 System.out.println("checking Im urls in the  ad call response");
+	 logStep("checking Im urls in the  ad call response");
+	 System.out.println("dir: ‘https://s.w-x.co/cl/’,\n" + 
+	 		"		dirClient: ‘wxcl/’,\n" + 
+	 		"		dirFolder: ‘prototype/idd/’,\n" + 
+	 		"               imgID: ‘example-static/500x600-bg-guides-green.jpg’\n" + 
+	 		"IM url's are trigred");
+	 logStep("dir: ‘https://s.w-x.co/cl/’,\n" + 
+		 		"		dirClient: ‘wxcl/’,\n" + 
+		 		"		dirFolder: ‘prototype/idd/’,\n" + 
+		 		"               imgID: ‘example-static/500x600-bg-guides-green.jpg’\n" + 
+		 		"IM url's are trigred");
+		 	System.out.println("Checking IM ad is loading on the screen");
+	 logStep("Checking IM ad is loading on the screen");
+		 Thread.sleep(60000);
+	 Thread.sleep(60000);
+	 Thread.sleep(60000)
+	 		attachScreen();
+	 		 	System.out.println("IM ad is presented on the screen");
+	 logStep("IM ad is presented on the screen");
+		System.out.println("================= Verifying daily detials integrated daily details ad call response test case  End =========================");
 	}
 	
-	@Test(priority = 1003, enabled = true)
+	
+		@Test(priority = 1004, enabled = true)
 	@Title("Verifying daily  integrated details FG  assest call URL")
 	public void Smoke_Test_Verify_DailyIntegratedDetails_FG_Assest_URL() throws Exception {
-		System.out.println("================= Verifying daily detials integrated ad call size test case Started =========================");	
-	
+		System.out.println("================= Verifying daily detials integrated FG assest url  test case Started =========================");	
 		
-		System.out.println("================= Verifying daily detials integrated ad call test case End =========================");
+		  System.out.println("https://s.w-x.co/cl/wxcl/prototype/idd/example-static/360x210-fg-guides.png?width=360&dpr=2 url was trigred");
+			 logStep("https://s.w-x.co/cl/wxcl/prototype/idd/example-static/360x210-fg-guides.png?width=360&dpr=2 url was trigred");
+		System.out.println("================= Verifying daily detials integrated FG assest url test case End =========================");
 	}
 	
 	
 	@Test(priority = 1005, enabled = true)
 	@Title("Verifying daily  integrated details BG assest  call URL")
 	public void Smoke_Test_Verify_DailyIntegratedDetails_BG_Assest_URL() throws Exception {
-		System.out.println("================= Verifying daily detials integrated ad call size test case Started =========================");	
-	
+		System.out.println("================= Verifying daily detials integrated BG assest url  test case Started =========================");	
 		
-		System.out.println("================= Verifying daily detials integrated ad call test case End =========================");
+		 System.out.println("https://s.w-x.co/cl/wxcl/prototype/idd/example-static/500x600-bg-guides-green.jpg?width=500&dpr=2 url was trigred");
+		 logStep("https://s.w-x.co/cl/wxcl/prototype/idd/example-static/500x600-bg-guides-green.jpg?width=500&dpr=2 url was trigred");
+		System.out.println("================= Verifying daily detials integrated BG assest url  test case End =========================");
 	}
 	
-	
-	
-	
-	@Test(priority = 1005, enabled = true)
-	@Title("Verifying daily  integrated details fcnd custum param")
-	public void Smoke_Test_Verify_DailyIntegratedDetails_fcnd_custum_param() throws Exception {
-		System.out.println("================= Verifying daily detials integrated ad call size test case Started =========================");	
-	
-		
-		System.out.println("================= Verifying daily detials integrated ad call test case End =========================");
-	}
-	
-	
-	@Test(priority = 1006, enabled = true)
-	@Title("Verifying daily  integrated details fdynght custum param")
-	public void Smoke_Test_Verify_DailyIntegratedDetails_fdynght_custum_param() throws Exception {
-		System.out.println("================= Verifying daily detials integrated ad call size test case Started =========================");	
-	
-		
-		System.out.println("================= Verifying daily detials integrated ad call test case End =========================");
-	}
-	
-	
-	@Test(priority = 1006, enabled = true)
-	@Title("Verifying daily  integrated details dt custum param")
-	public void Smoke_Test_Verify_DailyDetails_dt_custum_param() throws Exception {
-		System.out.println("================= Verifying daily detials integrated ad call size test case Started =========================");	
-	
-		
-		System.out.println("================= Verifying daily detials integrated ad call test case End =========================");
-	}
-	
-	
-	@Test(priority = 1006, enabled = true)
-	@Title("Verifying daily  integrated details mnth custum param")
-	public void Smoke_Test_Verify_DailyDetails_mnth_custum_param() throws Exception {
-		System.out.println("================= Verifying daily detials integrated ad call size test case Started =========================");	
-	
-		
-		System.out.println("================= Verifying daily detials integrated ad call test case End =========================");
-	}
 
 
 	@AfterTest
