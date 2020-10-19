@@ -22,7 +22,7 @@ import twc.Regression.utils.DeleteFiles;
 public class regressionTestCases extends Drivers {
 
 	// video ad call custum parameters
-	@Test(priority = 1)
+	/*@Test(priority = 1)
 	@Title("Verify custom parameter cmsid")
 	public void C344257_Verify_Video_Url_Parameter_cmsid() throws Exception {
 		System.out.println("================= Custom Parameter Cmsid Verfication Started =========================");
@@ -76,10 +76,10 @@ public class regressionTestCases extends Drivers {
 		System.out.println("================= Verify Content URL for video call Started =========================");
 		Custom_Parameters_Verification.verify_video_request("content_url");
 		System.out.println("================= Verify Content URL for video call  End =========================");
-	}
+	}*/
 
 	// Not null
-	/*@Test(priority = 21)
+	@Test(priority = 21)
 	@Title("Verify custom parameter adid")
 	public void C333213_Verify_cust_param_adid() throws Exception {
 		System.out.println("================= Custom Parameter adid Verfication Started =========================");
@@ -93,7 +93,7 @@ public class regressionTestCases extends Drivers {
 		System.out.println("================= Custom Parameter Aid Verfication Started =========================");
 		Custom_Parameters_Verification.parameters_Verification("aid");
 		System.out.println("================= Custom Parameter Aid Verfication End =========================");
-	}*/
+	}
 	/*@Test(priority = 22)
 	@Title("Verify custom parameter env")
 	public void C333244_Verify_cust_param_env() throws Exception {
