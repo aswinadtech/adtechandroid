@@ -3933,6 +3933,319 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 		System.out.println("================= Verifying daily detials integrated BG assest url  test case End =========================");
 	}
 	
+	
+	//Watson moment cards test cases//
+	
+	@Test(priority = 2000, enabled = true)
+	@Title("Verifying watson Flu card iu value")
+	public void Smoke_Test_Verify_watson_FluCard_iu() throws Exception {
+		System.out.println("================= Verifying watson flu card iu value   test case Started =========================");	
+		
+		System.out.println("================= Verifying watson flu card iu value  test case End =========================");
+	}
+	
+	@Test(priority = 2002, enabled = true)
+	@Title("Verifying watson Allergy card iu value")
+	public void Smoke_Test_Verify_watson_AllergyCard_iu() throws Exception {
+		System.out.println("================= Verifying watson Allergy card iu value   test case Started =========================");	
+		
+		System.out.println("================= Verifying Allergy  card iu value  test case End =========================");
+	}
+	
+	@Test(priority = 2004, enabled = true)
+	@Title("Verifying watson Allergy card iu value")
+	public void Smoke_Test_Verify_Weekendcard_iu() throws Exception {
+		System.out.println("================= Verifying Weekend card iu value   test case Started =========================");	
+		
+		System.out.println("================= Verifying Weekend  card iu value  test case End =========================");
+	}
+
+	@Test(priority = 2006, enabled = true)
+	@Title("Verifying Week Ahead  card iu value")
+	public void Smoke_Test_Verify_Week_Ahead_Card_iu() throws Exception {
+		System.out.println("================= Verifying Week Ahead card iu value   test case Started =========================");	
+		
+		System.out.println("================= Verifying Week Ahead card  iu value  test case End =========================");
+	}
+	
+	
+	
+	@Test(priority = 2008, enabled = true)
+	@Title("Verifying  Weekend card iu value")
+	public void Smoke_Test_Verify_Weekend_Card_iu() throws Exception {
+		System.out.println("================= Verifying Weekend card iu value   test case Started =========================");	
+		
+		System.out.println("================= Verifying Weekend  card iu value  test case End =========================");
+	}
+	
+	
+	@Test(priority = 2010, enabled = true)
+	@Title("Verifying  Weekend cardad call size")
+	public void Smoke_Test_Verify_Size_Weekend_Card_adcall() throws Exception {
+		System.out.println("================= Validate Weekend_Ad_Size test case Started =========================");	
+	
+		System.out.println("================= Validate Weekend_Ad_Size test caseEnd =========================");
+	}
+	
+	
+	@Test(priority = 2012, enabled = true)
+	@Title("Verifying  Week Ahead ad call size")
+	public void Smoke_Test_Verify_Size_WeekAhead_Card_adcall() throws Exception {
+		System.out.println("================= Validate WeekAhead _Ad_Size test case Started =========================");	
+		
+		System.out.println("================= Validate WeekAhead_Ad_Size test caseEnd =========================");
+	}
+	
+	
+	@Test(priority = 2014, enabled = true)
+	@Title("Verifying  WM Allergy ad call size")
+	public void Smoke_Test_Verify_Size_WM_Allergy_Card_adcall() throws Exception {
+		System.out.println("================= Validate WM Allergy_Ad_Size test case Started =========================");	
+		
+		System.out.println("================= Validate WM Allergy_Ad_Size test caseEnd =========================");
+	}
+	
+	
+	@Test(priority = 2016, enabled = true)
+	@Title("Verifying  WM Flu ad call size")
+	public void Smoke_Test_Verify_Size_WM_Flu_Card_adcall() throws Exception {
+		System.out.println("================= Validate WM Flu_Ad_Size test case Started =========================");	
+		
+		System.out.println("================= Validate WM Flu_Ad_Size test caseEnd =========================");
+	}
+	
+	@Test(priority = 2018, enabled = true)
+	@Title("Verifying  WM Flu card ad call response")
+	public void Smoke_Test_Verify_response_WM_Flu_Card_adcall() throws Exception {
+		System.out.println("================= Validate WM Flu card ad call response test case Started =========================");	
+	
+		System.out.println("================= Validate WM Flu card ad call response test case End =========================");
+	}
+	
+	@Test(priority = 2020, enabled = true)
+	@Title("Verifying  WM Allergy card ad call response")
+	public void Smoke_Test_Verify_response_WM_Allergy_Card_adcall() throws Exception {
+		System.out.println("================= Validate WM Allergy card ad call response test case Started =========================");	
+	
+		System.out.println("================= Validate WM Allergy card ad call response test case End =========================");
+	}
+	
+	
+	@Test(priority = 2022, enabled = true)
+	@Title("Verifying  weekAhead card ad call response")
+	public void Smoke_Test_Verify_response__WeekAhead_Card_adcall() throws Exception {
+		System.out.println("================= Validate Week_Ahead card ad call response test case Started =========================");	
+	
+		System.out.println("================= Validate Week_Ahead card ad call response test case End =========================");
+	}
+	
+	
+	@Test(priority = 2024, enabled = true)
+	@Title("Verifying  weekend card ad call response")
+	public void Smoke_Test_Verify_response__Weekend_Card_adcall() throws Exception {
+		System.out.println("================= Validate Weekend card ad call response test case Started =========================");	
+		
+		System.out.println("================= Validate Weekend card ad call response test case End =========================");
+	}
+	
+	
+	@Test(priority = 2026, enabled = true)
+	@Title("Verifying Weekend card ad call pos_Custom param")
+	public void Smoke_Test_Weekend_pos_Custom_param() throws Exception {
+		System.out.println("================= Validate Weekend card ad call pos custom param test case Started =========================");	
+		
+		System.out.println("================= Validate Weekend card ad call pos custom param test case End =========================");
+	}
+	
+	@Test(priority = 2028, enabled = true)
+	@Title("Verifying WeekAhead card ad call pos_Custom param")
+	public void Smoke_Test_WeekAhead_pos_Custom_param() throws Exception {
+		System.out.println("================= Validate WeekAhead card ad call pos custom param test case Started =========================");	
+		
+		System.out.println("================= Validate WeekAhe card ad call pos custom param test case End =========================");
+	}
+	
+	
+	@Test(priority = 2030, enabled = true)
+	@Title("Verifying WM allergy card ad call pos_Custom param")
+	public void Smoke_Test_WM_Allergy_pos_Custom_param() throws Exception {
+		System.out.println("================= Validate WM Allergy card ad call pos custom param test case Started =========================");	
+		
+		System.out.println("================= Validate WM Allergy card ad call pos custom param test case End =========================");
+	}
+	
+	@Test(priority = 2032, enabled = true)
+	@Title("Verifying WM Flu card ad call pos_Custom param")
+	public void Smoke_Test_WM_Flu_pos_Custom_param() throws Exception {
+		System.out.println("================= Validate WM Flu card ad call pos custom param test case Started =========================");	
+		
+		System.out.println("================= Validate WM Flu  card ad call pos custom param test case End =========================");
+	}
+	
+	
+	
+	
+	
+	///////Breraking News Test cases started////////
+	
+	@Test(priority = 2500, enabled = true)
+	@Title("Enabling Preconfiguration for Severe1 Breaking News Card")
+	public void enable_PreConfiguration_for_servere1_BreakingNewsCard() throws Exception {
+		System.out.println("****** Enable Preconfiguration for Severe1 Breaking News Card");
+		
+	}
+
+	@Test(priority = 2502, enabled = true)
+	@Title("Verify BreakingNews Severe1 ad call iu")
+	public void Verify_BreakingNews_Severe1_AdCall() throws Exception {	
+    	System.out.println("****** Breaking News Severe1 Adcall verification test case Started");
+    	
+    	System.out.println("****** Breaking News Severe1 Adcall verification test case end");
+
+	}
+
+	
+	@Test(priority = 2504, enabled = true)
+	@Title("Validating 'bn' custom parameter of BreakingNews Severe1 call ")
+	public void Validate_BreakingNews_Severe1_bn_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating bn custom parameter of Breaking News Severe1 call test case started");
+	
+		System.out.println("****** Validating bn custom parameter of Breaking News Severe1 call test case end");
+
+
+
+	}
+
+
+	@Test(priority = 2506, enabled = true)
+	@Title("Validating 'pos' custom parameter of BreakingNews Severe1 call ")
+	public void Validate_BreakingNews_Severe1_pos_Custom_param() throws Exception {
+		System.out.println("****** Validating pos custom parameter of Breaking News Severe1 call test case started");
+		
+		System.out.println("****** Validating pos custom parameter of Breaking News Severe1 call test case end");
+
+	
+
+	}
+
+	@Test(priority = 2508, enabled = true)
+	@Title("Verify BreakingNews Severe1 Video1 ad call iu")
+	public void Verify_BreakingNews_Video1_Severe1_AdCall() throws Exception {
+		System.out.println("****** Breaking News Severe1 Video1 Adcall verification test case Started");
+	 
+		System.out.println("****** Breaking News Severe1 Video1 Adcall verification test case end");
+		
+
+	}
+
+	
+	@Test(priority = 2510, enabled = true)
+	@Title("Validating 'bn' custom parameter of BreakingNews Severe1 Video1 call ")
+	public void Validate_BreakingNews_Video1_Severe1_bn_Custom_param() throws Exception {
+		System.out.println("****** Validating bn custom parameter of Breaking News Severe1 Video1 call test case started");
+	
+		System.out.println("****** Validating bn custom parameter of Breaking News Severe1 Video1 call test case end");
+
+	
+
+	}
+
+	@Test(priority = 2512, enabled = true)
+	@Description("Validating 'ref' custom parameter of BreakingNews Severe1 Video1 call ")
+	public void Validate_BreakingNews_Video1_Severe1_ref_Custom_param() throws Exception {
+		System.out.println("****** Validating ref custom parameter of Breaking News Severe1 Video1 call test case started");
+		
+		System.out.println("****** Validating ref custom parameter of Breaking News Severe1 Video1 call test case end");
+
+
+
+	}
+
+	@Test(priority = 2514, enabled = true)
+	@Description("Enabling Preconfiguration for Severe2 Breaking News Card")
+	public void enable_PreConfiguration_for_servere2_BreakingNewsCard() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Enable Preconfiguration for Severe2 Breaking News Card test case started");
+		logStep("Enable Preconfiguration for Severe2 Breaking News Card");
+		
+		
+		System.out.println("****** Enable Preconfiguration for Severe2 Breaking News Card test case end");
+
+	}
+
+	@Test(priority = 2516, enabled = true)
+	@Description("Verify BreakingNews Severe2 ad call iu")
+	public void Verify_BreakingNews_Severe2_AdCall() throws Exception {
+		System.out.println("****** Breaking News Severe2 Adcall verification test case Started");
+		System.out.println("****** Breaking News Severe1 Adcall verification test case Started");
+    	
+		System.out.println("****** Breaking News Severe2 Adcall verification test case End");
+		
+	}
+
+
+	
+	
+	
+	@Test(priority = 2518, enabled = true)
+	@Description("Validating 'bn' custom parameter of BreakingNews Severe2 call ")
+	public void Validate_BreakingNews_Severe2_bn_Custom_param() throws Exception {
+		System.out.println("==============================================");
+		System.out.println("****** Validating bn custom parameter of Breaking News Severe2 call test case started");
+		
+		System.out.println("****** Validating bn custom parameter of Breaking News Severe2 call test case End");
+
+	
+
+	}
+
+
+	@Test(priority = 2520, enabled = true)
+	@Description("Validating 'pos' custom parameter of BreakingNews Severe2 call ")
+	public void Validate_BreakingNews_Severe2_pos_Custom_param() throws Exception {
+		System.out.println("****** Validating pos custom parameter of Breaking News Severe2 test case started");
+		
+		System.out.println("****** Validating pos custom parameter of Breaking News Severe2 test case End");
+
+	
+
+	}
+
+	@Test(priority = 2522, enabled = true)
+	@Description("Verify BreakingNews Severe2 Video1 ad call iu")
+	public void Verify_BreakingNews_Video1_Severe2_AdCall() throws Exception {
+    System.out.println("Breaking News Severe2 Video1 Adcall verification test case Started");
+  
+    System.out.println("Breaking News Severe2 Video1 Adcall verification test case End");
+		
+	}
+
+	/*
+	 * This method validates bn custom parameter of Breaking News Severe2 Video1
+	 * call
+	 */
+	@Test(priority = 2524, enabled = true)
+	@Description("Validating 'bn' custom parameter of BreakingNews Severe2 Video1 call ")
+	public void Validate_BreakingNews_Video1_Severe2_bn_Custom_param() throws Exception {
+		System.out.println("Validating bn custom parameter of Breaking News Severe2 Video1 call test case started");
+		
+		
+		System.out.println("Validating bn custom parameter of Breaking News Severe2 Video1 call test case End");
+	}
+
+
+	@Test(priority = 2526, enabled = true)
+	@Description("Validating 'ref' custom parameter of BreakingNews Severe2 Video1 call ")
+	public void Validate_BreakingNews_Video1_Severe2_ref_Custom_param() throws Exception {
+		
+		System.out.println("Validating ref custom parameter of Breaking News Severe2 Video1 call test case started");
+		
+		System.out.println("Validating ref custom parameter of Breaking News Severe2 Video1 call test case End");
+		
+
+	}
+
 
 
 	@AfterTest
