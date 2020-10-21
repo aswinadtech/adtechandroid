@@ -48,7 +48,7 @@ import twc.Automation.HandleWithAppium.AppiumFunctions;
 import twc.Automation.HandleWithCharles.CharlesFunctions;
 import twc.Automation.RetryAnalyzer.RetryAnalyzer;
 import twc.Automation.General.Functions;
-
+import ru.yandex.qatools.allure.annotations.Description;
 public class smokeTestCases extends Drivers {
 //	protected String email;
 
@@ -4108,12 +4108,10 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 	@Test(priority = 2504, enabled = true)
 	@Title("Validating 'bn' custom parameter of BreakingNews Severe1 call ")
 	public void Validate_BreakingNews_Severe1_bn_Custom_param() throws Exception {
-		System.out.println("==============================================");
+	
 		System.out.println("****** Validating bn custom parameter of Breaking News Severe1 call test case started");
 	
 		System.out.println("****** Validating bn custom parameter of Breaking News Severe1 call test case end");
-
-
 
 	}
 
@@ -4206,9 +4204,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 	public void Validate_BreakingNews_Severe2_pos_Custom_param() throws Exception {
 		System.out.println("****** Validating pos custom parameter of Breaking News Severe2 test case started");
 		
-		System.out.println("****** Validating pos custom parameter of Breaking News Severe2 test case End");
-
-	
+		System.out.println("****** Validating pos custom parameter of Breaking News Severe2 test case End");	
 
 	}
 
@@ -4221,12 +4217,9 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 		
 	}
 
-	/*
-	 * This method validates bn custom parameter of Breaking News Severe2 Video1
-	 * call
-	 */
+	
 	@Test(priority = 2524, enabled = true)
-	@Description("Validating 'bn' custom parameter of BreakingNews Severe2 Video1 call ")
+	@Description("Validating bn custom parameter of BreakingNews Severe2 Video1 call ")
 	public void Validate_BreakingNews_Video1_Severe2_bn_Custom_param() throws Exception {
 		System.out.println("Validating bn custom parameter of Breaking News Severe2 Video1 call test case started");
 		
@@ -4236,7 +4229,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 
 
 	@Test(priority = 2526, enabled = true)
-	@Description("Validating 'ref' custom parameter of BreakingNews Severe2 Video1 call ")
+	@Description("Validating ref custom parameter of BreakingNews Severe2 Video1 call ")
 	public void Validate_BreakingNews_Video1_Severe2_ref_Custom_param() throws Exception {
 		
 		System.out.println("Validating ref custom parameter of Breaking News Severe2 Video1 call test case started");
