@@ -3952,7 +3952,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 		System.out.println("================= Verifying Allergy  card iu value  test case End =========================");
 	}
 	
-	@Test(priority = 2004, enabled = true)
+	/*@Test(priority = 2004, enabled = true)
 	@Title("Verifying watson Allergy card iu value")
 	public void Smoke_Test_Verify_Weekendcard_iu() throws Exception {
 		System.out.println("================= Verifying Weekend card iu value   test case Started =========================");	
@@ -3966,11 +3966,11 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 		System.out.println("================= Verifying Week Ahead card iu value   test case Started =========================");	
 		
 		System.out.println("================= Verifying Week Ahead card  iu value  test case End =========================");
-	}
+	}*/
 	
 	
 	
-	@Test(priority = 2008, enabled = true)
+	/*@Test(priority = 2008, enabled = true)
 	@Title("Verifying  Weekend card iu value")
 	public void Smoke_Test_Verify_Weekend_Card_iu() throws Exception {
 		System.out.println("================= Verifying Weekend card iu value   test case Started =========================");	
@@ -3994,7 +3994,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 		System.out.println("================= Validate WeekAhead _Ad_Size test case Started =========================");	
 		
 		System.out.println("================= Validate WeekAhead_Ad_Size test caseEnd =========================");
-	}
+	}*/
 	
 	
 	@Test(priority = 2014, enabled = true)
@@ -4031,7 +4031,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 	}
 	
 	
-	@Test(priority = 2022, enabled = true)
+	/*@Test(priority = 2022, enabled = true)
 	@Title("Verifying  weekAhead card ad call response")
 	public void Smoke_Test_Verify_response__WeekAhead_Card_adcall() throws Exception {
 		System.out.println("================= Validate Week_Ahead card ad call response test case Started =========================");	
@@ -4063,7 +4063,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 		System.out.println("================= Validate WeekAhead card ad call pos custom param test case Started =========================");	
 		
 		System.out.println("================= Validate WeekAhe card ad call pos custom param test case End =========================");
-	}
+	}*/
 	
 	
 	@Test(priority = 2030, enabled = true)
