@@ -3866,6 +3866,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 	@Title("Verifying daily integrated details  iu value")
 	public void Smoke_Test_Verify_DailyDetails_Integratedadcall_iu() throws Exception {
 		System.out.println("================= Verifying daily detials integrated ad call test case Started =========================");	
+		Thread.sleep(15000);
 		System.out.println("Verifying daily details integrated ad call test case Started");
 		logStep("Verifying daily details integrated ad call test case started");
 		System.out.println("iu=%2F7646%2Fapp_android_us%2Fdisplay%2Fdetails%2F10day_thu1 call was trigred");
@@ -3940,7 +3941,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 	@Title("Verifying watson Flu card iu value")
 	public void Smoke_Test_Verify_watson_FluCard_iu() throws Exception {
 		System.out.println("================= Verifying watson flu card iu value   test case Started =========================");	
-		
+				Thread.sleep(20000);
 		System.out.println("================= Verifying watson flu card iu value  test case End =========================");
 	}
 	
@@ -4099,7 +4100,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 	@Title("Verify BreakingNews Severe1 ad call iu")
 	public void Verify_BreakingNews_Severe1_AdCall() throws Exception {	
     	System.out.println("****** Breaking News Severe1 Adcall verification test case Started");
-    	
+    			Thread.sleep(25000);
     	System.out.println("****** Breaking News Severe1 Adcall verification test case end");
 
 	}
