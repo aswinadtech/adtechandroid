@@ -4239,6 +4239,26 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 		
 
 	}
+	@Test(priority = 3000, enabled = true)
+		@Title("Verify Allergy Details Spot Light ad call iu")
+	public void Verify_AllergyDetails_Spotlight_AdCall() throws Exception {
+		
+	}
+
+	
+	@Test(priority = 3002, enabled = true)
+		@Title("Validating 'pos' custom parameter of Allergy Details Spot Light call ")
+	public void Validate_AllergyDetails_Spotlight_pos_Custom_param() throws Exception {
+		
+
+	}
+
+	@Test(priority = 3003, enabled = true)
+		@Title("Validating Allergy Details Spot Light call Ad sz parameter")
+	public void Validate_AllergyDetails_Spotlight_Ad_Size() throws Exception {
+	
+
+	}
 
 
 
