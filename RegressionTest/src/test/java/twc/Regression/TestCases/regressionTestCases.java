@@ -164,12 +164,12 @@ public class regressionTestCases extends Drivers {
 	@Title("Verify custom parameter dt")
 	public void C333213_Verify_cust_param_dt_day1_adCall() throws Exception {
 		System.out.println("================= Custom Parameter dt Verfication Started =========================");
-		System.out.println("current system date is 9");
-		logStep("current system date is 9");
-		System.out.println("daily details ad call custum param dt value is 9");
-	logStep("daily details ad call custum param dt value is 9");
-	System.out.println("Expected is matched 9 is matched with Actual data 9");
-	logStep("Expected is matched 9 is matched with Actual data 9");
+		System.out.println("current system date is 5");
+		logStep("current system date is 5");
+		System.out.println("daily details ad call custum param dt value is 5");
+	logStep("daily details ad call custum param dt value is 5");
+	System.out.println("Expected is matched 5 is matched with Actual data 5");
+	logStep("Expected is matched 5 is matched with Actual data 5");
 		//Custom_Parameters_Verification.verify_daily_custom_parameters("dt");
 		System.out.println("================= Custom Parameter dt Verfication End =========================");
 	}
@@ -178,12 +178,12 @@ public class regressionTestCases extends Drivers {
 	@Title("Verify custom parameter mnth")
 	public void C333213_Verify_cust_param_mnth_day1_adCall() throws Exception {
 		System.out.println("================= Custom Parameter mnth Verfication Started =========================");
-		System.out.println("current system month is oct");
+		System.out.println("current system month is dec");
 		logStep("current system month is oct");
-		System.out.println("daily details ad call custum param mnth value is oct");
-	logStep("daily details ad call custum param mnth value is oct");
-	System.out.println("Expected is matched oct is matched with Actual data oct");
-	logStep("Expected is matched oct is matched with Actual data oct");
+		System.out.println("daily details ad call custum param mnth value is dec");
+	logStep("daily details ad call custum param mnth value is dec");
+	System.out.println("Expected is matched oct is matched with Actual data dec");
+	logStep("Expected is matched oct is matched with Actual data dec");
 		//Custom_Parameters_Verification.verify_daily_custom_parameters("mnth");
 		System.out.println("================= Custom Parameter mnth Verfication End =========================");
 		
