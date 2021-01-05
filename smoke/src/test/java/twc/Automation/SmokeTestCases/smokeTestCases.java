@@ -307,6 +307,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 					Functions.clickdailydetails();
 					//Functions.closeInterstailads();
 					Functions.clickongotit();
+						Thread.sleep(5000);
 					CharlesFunctions.ExportSession();
 					Functions.verifyingdailydetailiu();
 					System.out.println(
@@ -322,6 +323,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 					CharlesFunctions.ClearSessions();
 					CharlesFunctions.startSessionBrowserData();
 					Functions.clickonday2();
+						Thread.sleep(5000);
 					CharlesFunctions.ExportSession();
 					Functions.verifyingdailydetailiu();
 				//	Functions.verifyingdailydetailsiu();
@@ -339,6 +341,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 					CharlesFunctions.startSessionBrowserData(); //
 					//Functions.finding_newDailyBidadcall_day2();
 					Functions.clickonday3();
+						Thread.sleep(5000);
 					CharlesFunctions.ExportSession();
 					Functions.verifyingdailydetailiu();
 					System.out.println(
@@ -355,6 +358,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 					CharlesFunctions.startSessionBrowserData(); //
 				//	Functions.finding_newDailyBidadcall_day2();
 					Functions.clickonday4();
+						Thread.sleep(5000);
 					CharlesFunctions.ExportSession();
 					Functions.verifyingdailydetailiu();
 					System.out.println(
@@ -370,6 +374,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 					CharlesFunctions.startSessionBrowserData(); //
 				//	Functions.finding_newDailyBidadcall_day2();
 					Functions.clickonday5();
+						Thread.sleep(5000);
 					CharlesFunctions.ExportSession();
 					Functions.verifyingdailydetailiu();
 					System.out.println(
@@ -385,6 +390,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 					CharlesFunctions.startSessionBrowserData(); //
 				//	Functions.finding_newDailyBidadcall_day2();
 					Functions.clickonday6();
+						Thread.sleep(5000);
 					CharlesFunctions.ExportSession();
 					Functions.verifyingdailydetailiu();
 					System.out.println(
@@ -400,6 +406,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 					CharlesFunctions.startSessionBrowserData(); 
 				//	Functions.finding_newDailyBidadcall_day2();
 					Functions.clickonday7();
+						Thread.sleep(5000);
 					CharlesFunctions.ExportSession();
 					Functions.verifyingdailydetailiu();
 					System.out.println(
@@ -415,6 +422,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 					CharlesFunctions.startSessionBrowserData(); //
 					//Functions.finding_newDailyBidadcall_day2();
 					Functions.clickonday8();
+						Thread.sleep(5000);
 					CharlesFunctions.ExportSession();
 					Functions.verifyingdailydetailsiu1();
 					System.out.println(
@@ -431,6 +439,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 					CharlesFunctions.startSessionBrowserData(); //
 					//Functions.finding_newDailyBidadcall_day2();
 					Functions.clickonday9();
+						Thread.sleep(5000);
 					CharlesFunctions.ExportSession();
 					Functions.verifyingdailydetailsiu1();
 					System.out.println(
@@ -446,6 +455,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 					CharlesFunctions.startSessionBrowserData(); //
 				//	Functions.finding_newDailyBidadcall_day2();
 					Functions.clickonday10();
+						Thread.sleep(5000);
 					CharlesFunctions.ExportSession();
 					Functions.verifyingdailydetailsiu1();
 					
@@ -462,6 +472,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 					CharlesFunctions.startSessionBrowserData(); //
 					//Functions.finding_newDailyBidadcall_day2();
 					Functions.clickonday11();
+						Thread.sleep(5000);
 					CharlesFunctions.ExportSession();
 					Functions.verifyingdailydetailsiu1();
 					System.out.println(
@@ -477,6 +488,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 					CharlesFunctions.startSessionBrowserData(); //
 				//	Functions.finding_newDailyBidadcall_day2();
 					Functions.clickonday12();
+						Thread.sleep(5000);
 					CharlesFunctions.ExportSession();
 					Functions.verifyingdailydetailsiu1();
 					System.out.println(
@@ -492,6 +504,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 					CharlesFunctions.startSessionBrowserData(); //
 				//	Functions.finding_newDailyBidadcall_day2();
 					Functions.clickonday13();
+						Thread.sleep(5000);
 					CharlesFunctions.ExportSession();
 					Functions.verifyingdailydetailsiu1();
 					System.out.println(
@@ -508,6 +521,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 					CharlesFunctions.startSessionBrowserData(); //
 				//	Functions.finding_newDailyBidadcall_day2();
 					Functions.clickonday14();
+						Thread.sleep(5000);
 					CharlesFunctions.ExportSession();
 					Functions.verifyingdailydetailsiu1();
 					System.out.println(
@@ -522,6 +536,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 					CharlesFunctions.startSessionBrowserData(); //
 				//	Functions.finding_newDailyBidadcall_day2();
 					Functions.clickonday15();
+						Thread.sleep(5000);
 					CharlesFunctions.ExportSession();
 					Functions.verifyingdailydetailsiu2();
 					System.out.println(
@@ -1188,6 +1203,7 @@ public void Smoke_Test_verifying_feed_5adCall_FTL() throws Exception {
 		  CharlesFunctions.startSessionBrowserData();
 		  AppFunctions.Pull_To_Refresh("Pulltorefresh");
 		  AppFunctions.Pull_To_Refresh("Pulltorefresh");
+			  	Thread.sleep(15000);
 		  CharlesFunctions.ExportSession(); 
 		  Functions.finding_Homescreen_iu_value();	 
 		  System.out. println("=================  Verifying  home screen hourly  ad  call pull to refrersh scenario  End =========================" ); 
