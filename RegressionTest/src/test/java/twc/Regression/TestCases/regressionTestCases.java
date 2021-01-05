@@ -1259,6 +1259,32 @@ System.out.println("================= Verifying heavy snowfall alert push notifi
 	}
 	
   
+	 
+	
+	
+	@Test(priority = 3000 enabled = true)
+	@Title("Verifying Allergy spot light ad call iu value")
+	public void Verify_allergy_spotlight_adcall_iu() throws Exception {
+		System.out.println("================= Verifying Weekend card iu value   test case Started =========================");	
+
+		System.out.println("================= Verifying Weekend  card iu value  test case End =========================");
+	}
+	
+	
+	@Test(priority = 3001, enabled = true)
+	@Title("Verifying Allergy spot light ad call size")
+	public void Verify_Size_Allergy_spotlight_adcall() throws Exception {
+		System.out.println("================= Validate WM Allergy_Ad_Size test case Started =========================");	
+	
+		System.out.println("================= Validate WM Allergy_Ad_Size test caseEnd =========================");
+	}
+	@Test(priority = 3002, enabled = true)
+	@Title("Verifying allergy spot light ad call pos Custom param")
+	public void Allergy_spotlight_pos_Custom_param() throws Exception {
+		System.out.println("================= Validate WM Allergy card ad call pos custom param test case Started =========================");	
+		
+		System.out.println("================= Validate WM Allergy card ad call pos custom param test case End =========================");
+	}
   
   @Test(priority=508,enabled=false)
   @Title("Verifying Severe alert push notification") public void
